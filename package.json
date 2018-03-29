@@ -19,6 +19,10 @@
     "gatsby": "^1.9.243",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-typescript": "^1.4.19",
+    "prettier": "^1.11.1",
     "tslint": "^5.9.1"
+  },
+  "prettier": {
+    "printWidth": 128
   }
 }
