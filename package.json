@@ -1,0 +1,24 @@
+{
+  "name": "@heydovetail/website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Dovetail's public website",
+  "scripts": {
+    "start": "gatsby develop",
+    "develop": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:heydovetail/website.git"
+  },
+  "author": "Bradley Ayers <brad@dovetailapp.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@heydovetail/tslint-config": "^1.1.0",
+    "gatsby": "^1.9.243",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-typescript": "^1.4.19",
+    "tslint": "^5.9.1"
+  }
+}
