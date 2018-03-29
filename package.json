@@ -19,8 +19,17 @@
     "gatsby": "^1.9.243",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-typescript": "^1.4.19",
+    "husky": "^0.14.3",
     "prettier": "^1.11.1",
+    "tslib": "^1.9.0",
     "tslint": "^5.9.1"
+  },
+  "lint-staged": {
+    "*.tsx": [
+      "prettier --write",
+      "tslint -p tsconfig.json --fix",
+      "git add"
+    ]
   },
   "prettier": {
     "printWidth": 128
