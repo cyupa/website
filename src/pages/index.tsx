@@ -1,5 +1,5 @@
 import * as React from "react";
-import { styled } from "../util/styled";
+import { Blue } from "../components/Blue";
 
 export default class extends React.Component {
   public render() {
@@ -16,7 +16,3 @@ export default class extends React.Component {
     );
   }
 }
-
-const Blue = styled("span", {
-  color: "blue"
-});
