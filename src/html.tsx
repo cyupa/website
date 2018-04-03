@@ -36,7 +36,6 @@ class Html extends React.Component<HtmlProps> {
         <body>
           <div id="___gatsby" dangerouslySetInnerHTML={{ __html: this.props.body }} />
           {this.props.postBodyComponents}
-          HELLO WORLD
         </body>
       </html>
     );
