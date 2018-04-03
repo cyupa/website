@@ -9,7 +9,8 @@
     "generate:svgs": "svg-to-react src",
     "precommit": "lint-staged",
     "start": "gatsby develop",
-    "storybook": "ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook"
+    "storybook": "ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook",
+    "test": "./node_modules/.bin/tslint -p tsconfig.json && ./node_modules/.bin/jest --runInBand && npm run build"
   },
   "repository": {
     "type": "git",
@@ -23,21 +24,46 @@
     "@heydovetail/tslint-config": "^1.1.0",
     "@storybook/addon-storyshots": "^3.4.0",
     "@storybook/react": "^3.4.0",
+    "@types/jest": "^22.2.2",
     "@types/react": "^15.6.15",
     "@types/react-dom": "^15.5.7",
     "@types/storybook__react": "^3.0.7",
     "awesome-typescript-loader": "^4.0.1",
-    "gatsby": "^1.9.243",
+    "babel-loader": "^6.4.1",
+    "gatsby": "^1.9.244",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-typescript": "^1.4.19",
     "husky": "^0.14.3",
+    "jest": "^22.4.3",
+    "jest-cli": "^22.4.3",
     "lint-staged": "^7.0.0",
     "prettier": "^1.11.1",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "react-test-renderer": "^15.6.2",
+    "ts-jest": "^22.4.2",
     "ts-node": "^5.0.1",
     "tslint": "^5.9.1",
     "typescript": "^2.8.1",
-    "typestyle": "^1.7.2",
-    "webpack": "^3.11.0"
+    "typestyle": "^1.7.2"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      },
+      "NODE_ENV": "test"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "tsx",
+      "json"
+    ],
+    "testRegex": "src/.*(/__specs__/.*|\\.spec)\\.tsx?$",
+    "transform": {
+      "\\.tsx?$": "ts-jest"
+    }
   },
   "lint-staged": {
     "*.tsx": [
