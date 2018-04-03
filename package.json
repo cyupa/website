@@ -6,6 +6,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "generate:svgs": "svg-to-react src",
     "precommit": "lint-staged",
     "start": "gatsby develop"
   },
@@ -17,6 +18,7 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "@heydovetail/editorconfig": "^2.0.0",
+    "@heydovetail/svg-to-react": "^1.0.1",
     "@heydovetail/tslint-config": "^1.1.0",
     "@types/react": "^15.6.15",
     "@types/react-dom": "^15.5.7",
