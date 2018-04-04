@@ -1,10 +1,9 @@
 import * as React from "react";
 import { BORDER_RADIUS, COLORS } from "../../../constants";
 import { styled } from "../../../util/styled";
-import IconArrowRightMini from "../../icons/feather/IconArrowRightMini";
 import { Flex } from "../../layout/Flex";
-import { Flow } from "../../layout/Flow";
 import { Item } from "../../layout/Item";
+import { ActionTextWithArrow } from "../../util/ActionTextWithArrow";
 
 interface Props {
   image: React.ReactNode;
@@ -24,13 +23,8 @@ export class UseCaseCard extends React.PureComponent<Props> {
               <Item style={{ lineHeight: "24px", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
                 {text}
               </Item>
-              <Item style={{ color: COLORS.purple, fontWeight: 500, lineHeight: "24px" }}>
-                <Flow gap={4}>
-                  <Item>Learn more</Item>
-                  <Item>
-                    <IconArrowRightMini />
-                  </Item>
-                </Flow>
+              <Item>
+                <ActionTextWithArrow />
               </Item>
             </Flex>
           </Item>
