@@ -3,7 +3,7 @@ import { cssRule } from "typestyle";
 import "../src/globalstyles";
 
 cssRule("body", {
-  margin: "16px"
+  margin: "48px"
 });
 
 const req = require.context("../src", true, /.*\.stories.tsx$/);

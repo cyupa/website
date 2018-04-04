@@ -1,5 +1,5 @@
 import * as React from "react";
-import { BORDER_RADIUS, COLORS } from "../../../constants";
+import { BORDER_RADIUS, BOX_SHADOW_FOCUS, COLORS } from "../../../constants";
 import { styled } from "../../../util/styled";
 import { Flex } from "../../layout/Flex";
 import { Item } from "../../layout/Item";
@@ -45,6 +45,10 @@ const Link = styled("a", {
   $nest: {
     "&:hover": {
       backgroundColor: COLORS.p08
+    },
+    "&:focus": {
+      backgroundColor: COLORS.p08,
+      boxShadow: BOX_SHADOW_FOCUS
     }
   }
 });

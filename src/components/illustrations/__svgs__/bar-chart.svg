@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="320px" viewBox="0 0 400 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>snippet/bar-chart</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="snippet/bar-chart" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(16.000000, 48.000000)">
+            <g transform="translate(0.000000, 5.000000)" fill="#7B7194" font-family="SFUIText-Semibold, SF UI Text" font-size="12" font-weight="500">
+                <text id="Navigation">
+                    <tspan x="48.6308594" y="11">Navigation</tspan>
+                </text>
+                <text id="Search">
+                    <tspan x="70.6328125" y="51">Search</tspan>
+                </text>
+                <text id="General-usability">
+                    <tspan x="12.7304688" y="91">General usability</tspan>
+                </text>
+                <text id="Wayfinding">
+                    <tspan x="44.828125" y="131">Wayfinding</tspan>
+                </text>
+                <text id="Other-products">
+                    <tspan x="21.8535156" y="171">Other products</tspan>
+                </text>
+                <text id="Feature-requests">
+                    <tspan x="11.40625" y="211">Feature requests</tspan>
+                </text>
+            </g>
+            <g transform="translate(136.000000, 0.000000)" id="Rectangle">
+                <rect fill="#F84F77" x="0" y="0" width="112" height="24" rx="3"></rect>
+                <rect fill="#512DA8" x="0" y="40" width="232" height="24" rx="3"></rect>
+                <rect fill="#5182F8" x="0" y="80" width="80" height="24" rx="3"></rect>
+                <rect fill="#009688" x="0" y="120" width="128" height="24" rx="3"></rect>
+                <rect fill="#1EB8C1" x="0" y="160" width="32" height="24" rx="3"></rect>
+                <rect fill="#512DA8" x="0" y="200" width="112" height="24" rx="3"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

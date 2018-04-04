@@ -1,12 +1,12 @@
 import * as React from "react";
-import { BREAKPOINT_TABLET } from "../../../constants";
-import PictogramFeedback from "../../icons/pictograms/PictogramFeedback";
-import PictogramQda from "../../icons/pictograms/PictogramQda";
-import PictogramRepository from "../../icons/pictograms/PictogramRepository";
-import PictogramResearch from "../../icons/pictograms/PictogramResearch";
-import { Grid } from "../../layout/Grid";
-import { MediaToggle } from "../../util/MediaToggle";
-import { UseCaseCard } from "../UseCaseCard";
+import PictogramFeedback from "../../components/icons/pictograms/PictogramFeedback";
+import PictogramQda from "../../components/icons/pictograms/PictogramQda";
+import PictogramRepository from "../../components/icons/pictograms/PictogramRepository";
+import PictogramResearch from "../../components/icons/pictograms/PictogramResearch";
+import { Grid } from "../../components/layout/Grid";
+import { UseCaseCard } from "../../components/site/UseCaseCard";
+import { MediaToggle } from "../../components/util/MediaToggle";
+import { BREAKPOINT_TABLET } from "../../constants";
 
 export class UseCases extends React.PureComponent {
   public render() {
