@@ -3,9 +3,5 @@ module.exports = {
   siteMetadata: {
     siteName: "Dovetail"
   },
-  plugins: [
-    // Add typescript stack into webpack
-    "gatsby-plugin-typescript",
-    "gatsby-plugin-typestyle"
-  ]
+  plugins: ["gatsby-plugin-react-next", "gatsby-plugin-typescript", "gatsby-plugin-typestyle"]
 };
