@@ -10,13 +10,13 @@ export default createSvg((width = 48, height = 48) => {
   return (
     <svg width={width} height={height} viewBox="0 0 48 48">
       <defs>
-        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="a">
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="ac3437cb26e63cfda">
           <stop stopColor="#512DA8" offset="0%" />
           <stop stopColor="#7457B9" offset="100%" />
         </linearGradient>
       </defs>
       <g fill="none" fillRule="evenodd">
-        <circle fill="url(#a)" cx={24} cy={24} r={24} />
+        <circle fill="url(#ac3437cb26e63cfda)" cx={24} cy={24} r={24} />
         <path
           d="M27.725 33.28c-.507 1.894-1.812 6.762-4.71 5.985l-5.312-1.423c-2.163-.58-2.219-5.242-1.57-7.668 1.51-5.635-4.045-8.083-2.332-14.477 1.714-6.394 8.72-8.658 14.428-7.128 5.708 1.53 10.406 7.177 8.755 13.34-1.652 6.163-7.749 5.734-9.259 11.371z"
           fill="#FFF"
