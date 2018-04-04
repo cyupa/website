@@ -1,4 +1,4 @@
-import { BORDER_RADIUS, COLORS, Z_INDEX_HIGHEST } from "dovetail/variables";
+import { BORDER_RADIUS, COLORS, Z_INDEX_HIGHEST } from "../../../constants";
 
 export const error = {
   background: COLORS.orange,

@@ -1,8 +1,8 @@
-import { storiesOf } from "dovetail/util/stories";
-import { styledViaProps } from "dovetail/util/styled";
-import { BORDER_RADIUS, COLORS } from "dovetail/variables";
+import { storiesOf } from "@storybook/react";
 import * as React from "react";
 import { Masonry, MasonryItem } from "../";
+import { BORDER_RADIUS, COLORS } from "../../../../constants";
+import { styledViaProps } from "../../../../util/styled";
 
 storiesOf("Layout/Masonry", module)
   .add("default", () => {
@@ -51,7 +51,7 @@ const Box = styledViaProps(
   "div",
   ({ height }: { height: number }) => JSON.stringify({ height }),
   ({ height }) => ({
-    backgroundColor: COLORS.g600,
+    backgroundColor: COLORS.i60,
     borderRadius: BORDER_RADIUS,
     height: `${height}px`,
     width: "100%"

@@ -20,18 +20,22 @@ export class Header extends React.PureComponent {
           </Item>
           <Item>
             <div style={{ color: COLORS.i60 }}>
-              <Flex gap={8}>
+              <Flex gap={16}>
                 <Item>
-                  <SubtleButton onClick={() => {}}>Use cases</SubtleButton>
-                </Item>
-                <Item>
-                  <SubtleButton onClick={() => {}}>Pricing</SubtleButton>
-                </Item>
-                <Item>
-                  <SubtleButton onClick={() => {}}>Support</SubtleButton>
-                </Item>
-                <Item>
-                  <SubtleButton onClick={() => {}}>Log in</SubtleButton>
+                  <Flex>
+                    <Item>
+                      <SubtleButton onClick={() => {}}>Use cases</SubtleButton>
+                    </Item>
+                    <Item>
+                      <SubtleButton onClick={() => {}}>Pricing</SubtleButton>
+                    </Item>
+                    <Item>
+                      <SubtleButton onClick={() => {}}>Support</SubtleButton>
+                    </Item>
+                    <Item>
+                      <SubtleButton onClick={() => {}}>Log in</SubtleButton>
+                    </Item>
+                  </Flex>
                 </Item>
                 <Item>
                   <Button color={COLORS.purple} height={32} onClick={() => {}}>

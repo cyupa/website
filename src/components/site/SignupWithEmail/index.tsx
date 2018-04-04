@@ -1,8 +1,8 @@
 import * as React from "react";
 import { COLORS } from "../../../constants";
 import { Button } from "../../forms/Button";
+import { TextInput } from "../../forms/TextInput";
 import { Flex } from "../../layout/Flex";
-import { Flow } from "../../layout/Flow";
 import { Item } from "../../layout/Item";
 import { SmallText } from "../../util/SmallText";
 
@@ -11,13 +11,16 @@ export class SignupWithEmail extends React.PureComponent {
     return (
       <Flex gap={24} layout="column">
         <Item>
-          <Flow>
+          <Flex gap={8}>
             <Item>
+              <TextInput placeholder="you@company.com" />
+            </Item>
+            <Item style={{ flexGrow: 0 }}>
               <Button color={COLORS.purple} onClick={() => {}}>
                 Try now for free
               </Button>
             </Item>
-          </Flow>
+          </Flex>
         </Item>
         <Item>
           <SmallText>14 day free trial, no credit card required.</SmallText>

@@ -1,7 +1,7 @@
-import { Item } from "dovetail/ui/layout/Item";
-import { storiesOf } from "dovetail/util/stories";
+import { storiesOf } from "@storybook/react";
 import * as React from "react";
 import { Flow } from "../";
+import { Item } from "../../Item";
 
 storiesOf("Layout/Flow", module)
   .add("default gaps", () => (

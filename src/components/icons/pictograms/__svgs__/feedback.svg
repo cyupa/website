@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>solution/feedback</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-1">
+            <stop stop-color="#5182F8" offset="0%"></stop>
+            <stop stop-color="#749BF9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="solution/feedback" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="url(#linearGradient-1)" cx="24" cy="24" r="24"></circle>
+        <g id="Group" transform="translate(8.000000, 12.000000)" fill-rule="nonzero">
+            <path d="M4.83005061,17.9266587 C3.82954801,17.7255022 0.461189244,17.0549807 0.161038462,16.1497767 C-0.172462405,15.1104684 -0.00571197145,13.6688471 0.828040198,10.1150832 C1.56174211,6.76247567 2.3287941,-0.210947945 5.43035217,0.0237345806 C8.76536085,0.325469256 31.9770213,1 31.9770213,5.58906305 C31.9770213,8.64843841 30.9846808,12.7854174 29,18 C28.6678394,19.8454724 27.3345061,20.6788057 25,20.5 C21.8000001,20.1001988 13.4007036,19.2011565 12,19 C11.8834701,18.9886402 7.70211093,24.3816371 3.5,23.9793242 C3.36657458,23.97744 3.24711016,23.8957858 3.19630345,23.771747 C3.14549674,23.6477081 3.17312922,23.505165 3.26654939,23.4093809 C3.86685095,22.6718073 5.06350122,19.6700146 5.13020139,18.2954455 C5.13106291,18.0890999 5.00110364,17.9439387 4.83005061,17.9266587 Z" id="Shape" fill="#FFFFFF"></path>
+            <path d="M25,20.5 C27.5,21 29,19 29,18 C24,19 19,18 14.129815,17.0116135 C13.5928542,16.9163344 12.8829159,17.5791299 12,19 C18,19.6666667 22.3333333,20.1666667 25,20.5 Z" id="Shape" fill="#B9CDFC"></path>
+            <circle id="Oval" fill="#B9CDFC" cx="9" cy="9" r="2"></circle>
+            <circle id="Oval" fill="#B9CDFC" cx="16" cy="10" r="2"></circle>
+            <circle id="Oval" fill="#B9CDFC" cx="23" cy="11" r="2"></circle>
+        </g>
+    </g>
+</svg>

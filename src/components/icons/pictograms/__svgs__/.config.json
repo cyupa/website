@@ -1,0 +1,3 @@
+{
+  "moduleNameTemplate": "Pictogram{capitalizedCamelBaseNameNoExt}.tsx"
+}
