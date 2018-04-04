@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput styles snapshots error 1`] = `
+Array [
+  Object {
+    "$nest": Object {
+      "&::placeholder, &::-webkit-input-placeholder": Object {
+        "color": "#a19dac",
+      },
+      "&:focus": Object {
+        "boxShadow": "0 0 0 1px rgba(20, 11, 47, .1), 0 0 0 4px rgba(91, 147, 255, .25)",
+      },
+      "&:hover": Object {
+        "boxShadow": "0 0 0 1px rgba(20, 11, 47, .15), 0 2px 4px -2px rgba(0, 0, 0, .2)",
+      },
+    },
+    "backgroundColor": "#fff",
+    "border": "none",
+    "borderRadius": "3px",
+    "boxShadow": "0 0 0 1px rgba(20, 11, 47, .1), 0 2px 4px -2px rgba(0, 0, 0, .2)",
+    "boxSizing": "border-box",
+    "color": "#140b2f",
+    "fontSize": "14px",
+    "fontWeight": 500,
+    "height": "40px",
+    "lineHeight": "20px",
+    "outline": "none",
+    "padding": "0 12px",
+    "whiteSpace": "pre-wrap",
+    "width": "100%",
+  },
+]
+`;
+
+exports[`TextInput styles snapshots normal 1`] = `
+Array [
+  Object {
+    "$nest": Object {
+      "&::placeholder, &::-webkit-input-placeholder": Object {
+        "color": "#a19dac",
+      },
+      "&:focus": Object {
+        "boxShadow": "0 0 0 1px rgba(20, 11, 47, .1), 0 0 0 4px rgba(91, 147, 255, .25)",
+      },
+      "&:hover": Object {
+        "boxShadow": "0 0 0 1px rgba(20, 11, 47, .15), 0 2px 4px -2px rgba(0, 0, 0, .2)",
+      },
+    },
+    "backgroundColor": "#fff",
+    "border": "none",
+    "borderRadius": "3px",
+    "boxShadow": "0 0 0 1px rgba(20, 11, 47, .1), 0 2px 4px -2px rgba(0, 0, 0, .2)",
+    "boxSizing": "border-box",
+    "color": "#140b2f",
+    "fontSize": "14px",
+    "fontWeight": 500,
+    "height": "40px",
+    "lineHeight": "20px",
+    "outline": "none",
+    "padding": "0 12px",
+    "whiteSpace": "pre-wrap",
+    "width": "100%",
+  },
+]
+`;

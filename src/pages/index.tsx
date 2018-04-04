@@ -1,17 +1,25 @@
 import * as React from "react";
-import { Blue } from "../components/Blue";
+import { Center } from "../components/layout/Center";
+import { Container } from "../components/layout/Container";
+import { Header } from "../components/site/Header";
+import { HeroTextOnly } from "../components/site/HeroTextOnly";
+import { SignupWithEmail } from "../components/site/SignupWithEmail";
+import { TYPICAL_PAGE_WIDTH } from "../constants";
+import "../globalstyles";
 
-export default class extends React.Component {
+export default class extends React.PureComponent {
   public render() {
     return (
       <div>
-        <h1>Hello Typescript world!</h1>
-        <p>
-          This site is named{" "}
-          <Blue>
-            <strong>Dovetail</strong>
-          </Blue>
-        </p>
+        <Header />
+        <Container maxWidth={TYPICAL_PAGE_WIDTH}>
+          <HeroTextOnly>Customer feedback &amp; research software for teams.</HeroTextOnly>
+          <Container maxWidth={TYPICAL_PAGE_WIDTH / 3}>
+            <Center>
+              <SignupWithEmail />
+            </Center>
+          </Container>
+        </Container>
       </div>
     );
   }

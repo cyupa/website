@@ -6,8 +6,8 @@ interface Props {
   verticalPadding?: number;
 }
 
-const DEFAULT_HORIZONTAL_PADDING = 16;
-const DEFAULT_VERTICAL_PADDING = 8;
+const DEFAULT_HORIZONTAL_PADDING = 24;
+const DEFAULT_VERTICAL_PADDING = 24;
 
 export const Container = styledViaProps(
   "div",

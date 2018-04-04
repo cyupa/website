@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput snapshots empty 1`] = `
+<input
+  autoFocus={undefined}
+  className="f11l8cg7"
+  defaultValue={undefined}
+  maxLength={undefined}
+  onBlur={undefined}
+  onChange={undefined}
+  onKeyDown={undefined}
+  placeholder={undefined}
+  value={undefined}
+/>
+`;
+
+exports[`TextInput snapshots error 1`] = `
+<span
+  className="f19wd7ts FrozenStyled_0 "
+>
+  <input
+    autoFocus={undefined}
+    className="f11l8cg7"
+    defaultValue={undefined}
+    maxLength={undefined}
+    onBlur={undefined}
+    onChange={undefined}
+    onKeyDown={undefined}
+    placeholder={undefined}
+    value={undefined}
+  />
+  <span
+    className="fwc669b FrozenStyled_1 "
+  >
+    Invalid value
+  </span>
+</span>
+`;
+
+exports[`TextInput snapshots on change 1`] = `
+<input
+  autoFocus={undefined}
+  className="f11l8cg7"
+  defaultValue={undefined}
+  maxLength={undefined}
+  onBlur={undefined}
+  onChange={[Function]}
+  onKeyDown={undefined}
+  placeholder={undefined}
+  value={undefined}
+/>
+`;
+
+exports[`TextInput snapshots placeholder 1`] = `
+<input
+  autoFocus={undefined}
+  className="f11l8cg7"
+  defaultValue={undefined}
+  maxLength={undefined}
+  onBlur={undefined}
+  onChange={undefined}
+  onKeyDown={undefined}
+  placeholder="First name"
+  value={undefined}
+/>
+`;
+
+exports[`TextInput snapshots value 1`] = `
+<input
+  autoFocus={undefined}
+  className="f11l8cg7"
+  defaultValue={undefined}
+  maxLength={undefined}
+  onBlur={undefined}
+  onChange={undefined}
+  onKeyDown={undefined}
+  placeholder={undefined}
+  value="Bradley Ayers"
+/>
+`;
