@@ -7,12 +7,15 @@ import IconMenu from "../../icons/feather/IconMenu";
 import { Flex } from "../../layout/Flex";
 import { Item } from "../../layout/Item";
 import { Justify } from "../../layout/Justify";
+import { Layer } from "../../layout/Layer";
+import { Portal } from "../../layout/Portal";
 import { FlipFlop } from "../../util/FlipFlop";
 import { Hide } from "../../util/Hide";
 import { Show } from "../../util/Show";
 import { Sticky } from "../../util/Sticky";
-import { MobileNav } from "../MobileNav";
 import Logo from "./Logo";
+import { MobileNav } from "./MobileNav";
+import { UseCasesDropdown } from "./UseCasesDropdown";
 
 export class Header extends React.PureComponent {
   public render() {
@@ -32,7 +35,22 @@ export class Header extends React.PureComponent {
                     <Item>
                       <Flex gap={8}>
                         <Item>
-                          <SubtleButton onClick={() => {}}>Use cases</SubtleButton>
+                          <FlipFlop>
+                            {({ active, toggle }) => (
+                              <>
+                                <SubtleButton id="UseCasesDropdown" onClick={toggle}>
+                                  Use cases
+                                </SubtleButton>
+                                {active ? (
+                                  <Portal>
+                                    <Layer align="right" onDismissAttempt={toggle} parentId="UseCasesDropdown">
+                                      <UseCasesDropdown />
+                                    </Layer>
+                                  </Portal>
+                                ) : null}
+                              </>
+                            )}
+                          </FlipFlop>
                         </Item>
                         <Item>
                           <SubtleButton onClick={() => {}}>Pricing</SubtleButton>

@@ -1,6 +1,6 @@
 import * as React from "react";
-import { COLORS } from "../../../constants";
-import { styled } from "../../../util/styled";
+import { COLORS } from "../../constants";
+import { styled } from "../../util/styled";
 import LogoAtlassian from "./LogoAtlassian";
 import LogoCsiro from "./LogoCsiro";
 import LogoDeloitte from "./LogoDeloitte";

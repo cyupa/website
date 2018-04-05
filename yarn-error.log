@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn run storybook
+  /usr/local/bin/node /usr/local/bin/yarn run jest -u
 
 PATH: 
   /Users/humphreybc/Code/google-cloud-sdk/bin:/usr/local/sbin:/Users/humphreybc/.rbenv/shims:/Users/humphreybc/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -56,7 +56,7 @@ npm manifest:
     },
     "dependencies": {
       "@heydovetail/editorconfig": "^2.0.0",
-      "@heydovetail/svg-to-react": "^1.0.1",
+      "@heydovetail/svg-to-react": "^1.0.3",
       "@heydovetail/tslint-config": "^1.1.0",
       "@storybook/addon-storyshots": "^3.4.0",
       "@storybook/react": "^3.4.0",
@@ -68,7 +68,6 @@ npm manifest:
       "@types/react-test-renderer": "^16.0.1",
       "@types/react-transition-group": "^1.1.2",
       "@types/storybook__addon-actions": "^3.0.3",
-      "react-responsive": "^1.3.4",
       "@types/storybook__react": "^3.0.7",
       "awesome-typescript-loader": "^4.0.1",
       "babel-loader": "^6.4.1",
@@ -84,6 +83,7 @@ npm manifest:
       "react": "^16.3.1",
       "react-dom": "^16.3.1",
       "react-resize-detector": "^1.1.0",
+      "react-responsive": "^1.3.4",
       "react-test-renderer": "^16.3.1",
       "react-transition-group": "^1.2.0",
       "ts-jest": "^22.4.2",
@@ -121,9 +121,9 @@ Lockfile:
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/@heydovetail/editorconfig/-/editorconfig-2.0.0.tgz#341fbc7edbc735534f2176159b00d9e8534c6489"
   
-  "@heydovetail/svg-to-react@^1.0.1":
-    version "1.0.2"
-    resolved "https://registry.yarnpkg.com/@heydovetail/svg-to-react/-/svg-to-react-1.0.2.tgz#d4b4616f9def02b2b2bd764e0a6648b8e4683ff5"
+  "@heydovetail/svg-to-react@^1.0.3":
+    version "1.0.3"
+    resolved "https://registry.yarnpkg.com/@heydovetail/svg-to-react/-/svg-to-react-1.0.3.tgz#d2eb6756df3ea71168ebb0c7a942403d5ce0cefb"
     dependencies:
       ajv "^6.4.0"
       chalk "^2.3.2"
@@ -11706,7 +11706,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook
+  Arguments: -c /Users/humphreybc/Code/dovetail-website/node_modules/.bin/jest -u
   Directory: /Users/humphreybc/Code/dovetail-website
   Output:
   

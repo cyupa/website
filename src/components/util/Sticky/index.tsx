@@ -37,7 +37,7 @@ export class Sticky extends React.PureComponent<Props, State> {
     const element = findDomNode(this);
     if (element instanceof Element) {
       const rect = element.getBoundingClientRect();
-      this.setState({ shadow: window.scrollY > rect.bottom });
+      this.setState({ shadow: window.scrollY > rect.top });
     }
   };
 

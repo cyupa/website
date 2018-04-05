@@ -8,6 +8,7 @@ import { Container } from "../components/layout/Container";
 import { Flex } from "../components/layout/Flex";
 import { Item } from "../components/layout/Item";
 import { FeatureHero } from "../components/site/FeatureHero";
+import { Footer } from "../components/site/Footer";
 import { Header } from "../components/site/Header";
 import { SignupWithEmail } from "../components/site/SignupWithEmail";
 import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../constants";
@@ -18,7 +19,7 @@ import { UseCases } from "../sections/UseCases";
 export default class extends React.PureComponent {
   public render() {
     return (
-      <div>
+      <>
         <Header />
         <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={48}>
           <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
@@ -31,9 +32,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <Container maxWidth={TYPICAL_PAGE_WIDTH / 2}>
-                    <Center>
-                      <SignupWithEmail />
-                    </Center>
+                    <SignupWithEmail />
                   </Container>
                 </Item>
               </Flex>
@@ -80,9 +79,24 @@ export default class extends React.PureComponent {
             <Item>
               <SocialProof />
             </Item>
+            <Item>
+              <Container maxWidth={TYPICAL_PAGE_WIDTH / 2}>
+                <Flex gap={64} layout="column">
+                  <Item>
+                    <Center>
+                      <h2>Start a 14 day free trial</h2>
+                    </Center>
+                  </Item>
+                  <Item>
+                    <SignupWithEmail />
+                  </Item>
+                </Flex>
+              </Container>
+            </Item>
           </Flex>
         </Container>
-      </div>
+        <Footer />
+      </>
     );
   }
 }
