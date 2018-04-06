@@ -92,12 +92,10 @@ export const SubtleButtonStyle = styledViaProps(
 
     $nest: {
       "&:hover": {
-        backgroundColor: "rgba(36, 18, 77, 0.04)",
-        color: COLORS.purple
+        backgroundColor: "rgba(36, 18, 77, 0.04)"
       },
       "&:active": {
-        backgroundColor: "rgba(36, 18, 77, 0.08)",
-        color: COLORS.purple
+        backgroundColor: "rgba(36, 18, 77, 0.08)"
       },
       "&:focus": {
         boxShadow: BOX_SHADOW_FOCUS

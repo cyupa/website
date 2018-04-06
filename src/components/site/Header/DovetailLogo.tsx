@@ -6,10 +6,10 @@
 import { createSvg } from "@heydovetail/svg-to-react";
 import * as React from "react";
 
-export default createSvg((width = 128, height = 32) => {
+export default createSvg((width = 128, height = 32, color) => {
   return (
     <svg width={width} height={height} viewBox="0 0 128 32">
-      <g fill="#512DA8" fillRule="evenodd">
+      <g fill={color} fillRule="evenodd">
         <path d="M15 30c3.846 0 7.464-2.34 9.5-6 2.036-3.66.5-8.5 2.5-11.5s5-3.5 5-4-2.25 0-3-.75S27.5 6 26 6s-2.652 1.545-3.123 3.379C20.279 18.493 12.77 25.398 3.5 27c5.103 2 8.936 3 11.5 3z" />
         <path
           d="M0 7.04c4.5 5.46 11 7.48 18.077 6.143C16.112 16.32 13 20.5 9.038 22 1 19.75 0 9.257 0 7.04zm19 3.46C9.5 12 4 8.5 1.5 5c0 0-.05-2.048 0-2 4.75 4.5 9.238 7 18.5 5.5l-1 2z"

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { COLORS } from "../../../constants";
-import { styled } from "../../../util/styled";
+import { styledViaProps } from "../../../util/styled";
 import { Button } from "../../forms/Button";
 import { SubtleButton } from "../../forms/SubtleButton";
 import IconMenu from "../../icons/feather/IconMenu";
@@ -13,23 +13,29 @@ import { FlipFlop } from "../../util/FlipFlop";
 import { Hide } from "../../util/Hide";
 import { Show } from "../../util/Show";
 import { Sticky } from "../../util/Sticky";
-import Logo from "./Logo";
+import DovetailLogo from "./DovetailLogo";
 import { MobileNav } from "./MobileNav";
 import { UseCasesDropdown } from "./UseCasesDropdown";
 
-export class Header extends React.PureComponent {
+interface Props {
+  theme?: "light" | "dark";
+}
+
+export class Header extends React.PureComponent<Props> {
   public render() {
+    const { theme = "light" } = this.props;
+
     return (
       <Sticky stickOnMobile>
-        <Wrapper>
+        <Wrapper color={theme === "light" ? COLORS.white : COLORS.indigo}>
           <Justify>
             <Item>
               <SubtleButton onClick={() => {}}>
-                <Logo />
+                <DovetailLogo color={theme === "light" ? COLORS.purple : COLORS.white} />
               </SubtleButton>
             </Item>
             <Item>
-              <div style={{ color: COLORS.i60 }}>
+              <div style={{ color: theme === "light" ? COLORS.i60 : COLORS.i20 }}>
                 <Hide device="tablet">
                   <Flex gap={16}>
                     <Item>
@@ -64,7 +70,7 @@ export class Header extends React.PureComponent {
                       </Flex>
                     </Item>
                     <Item>
-                      <Button color={COLORS.purple} height={32} onClick={() => {}}>
+                      <Button color={theme === "light" ? COLORS.purple : COLORS.p80} height={32} onClick={() => {}}>
                         Sign up
                       </Button>
                     </Item>
@@ -91,7 +97,11 @@ export class Header extends React.PureComponent {
   }
 }
 
-const Wrapper = styled("div", {
-  backgroundColor: COLORS.white,
-  padding: "16px 24px"
-});
+const Wrapper = styledViaProps(
+  "div",
+  ({ color }: { color: string }) => JSON.stringify({ color }),
+  ({ color }) => ({
+    backgroundColor: color,
+    padding: "16px 24px"
+  })
+);

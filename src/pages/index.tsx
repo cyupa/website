@@ -21,7 +21,7 @@ export default class extends React.PureComponent {
     return (
       <>
         <Header />
-        <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={48}>
+        <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={128}>
           <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
             <Item>
               <Flex gap={32} layout="column">
