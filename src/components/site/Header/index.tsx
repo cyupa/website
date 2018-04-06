@@ -18,24 +18,24 @@ import { MobileNav } from "./MobileNav";
 import { UseCasesDropdown } from "./UseCasesDropdown";
 
 interface Props {
-  theme?: "light" | "dark";
+  dark?: boolean;
 }
 
 export class Header extends React.PureComponent<Props> {
   public render() {
-    const { theme = "light" } = this.props;
+    const { dark = false } = this.props;
 
     return (
       <Sticky stickOnMobile>
-        <Wrapper color={theme === "light" ? COLORS.white : COLORS.indigo}>
+        <Wrapper color={!dark ? COLORS.white : COLORS.indigo}>
           <Justify>
             <Item>
               <SubtleButton onClick={() => {}}>
-                <DovetailLogo color={theme === "light" ? COLORS.purple : COLORS.white} />
+                <DovetailLogo color={!dark ? COLORS.purple : COLORS.white} />
               </SubtleButton>
             </Item>
             <Item>
-              <div style={{ color: theme === "light" ? COLORS.i60 : COLORS.i20 }}>
+              <div style={{ color: !dark ? COLORS.i60 : COLORS.i20 }}>
                 <Hide device="tablet">
                   <Flex gap={16}>
                     <Item>
@@ -70,7 +70,7 @@ export class Header extends React.PureComponent<Props> {
                       </Flex>
                     </Item>
                     <Item>
-                      <Button color={theme === "light" ? COLORS.purple : COLORS.p80} height={32} onClick={() => {}}>
+                      <Button color={!dark ? COLORS.purple : COLORS.p80} height={32} onClick={() => {}}>
                         Sign up
                       </Button>
                     </Item>

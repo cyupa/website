@@ -4,4 +4,4 @@ import { Header } from "../";
 
 storiesOf("Site/Header", module)
   .add("light", () => <Header />)
-  .add("dark", () => <Header theme="dark" />);
+  .add("dark", () => <Header dark />);
