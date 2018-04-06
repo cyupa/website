@@ -17,11 +17,6 @@
     <g id="snippet/line-chart" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Group" transform="translate(16.000000, 16.000000)">
             <g id="Lines">
-                <path d="M0,240 L368,240" id="Path-5" stroke="#E7E6EA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6,8"></path>
-                <path d="M0,192 L368,192" id="Path-5" stroke="#E7E6EA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6,8"></path>
-                <path d="M0,144 L368,144" id="Path-5" stroke="#E7E6EA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6,8"></path>
-                <path d="M0,96 L368,96" id="Path-5" stroke="#E7E6EA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6,8"></path>
-                <path d="M0,48 L368,48" id="Path-5" stroke="#E7E6EA" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6,8"></path>
                 <path d="M184,288 L184,0" id="Path-6" stroke="#C4C2CB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path d="M0,192 C29.6666667,134 60.3333333,105 92,105 C139.5,105 145,142 184,156.5 C210,166.166667 240.666667,157.666667 276,131" id="Path-4" stroke="#1EB8C1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
                 <g id="Oval">

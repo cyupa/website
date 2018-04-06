@@ -10,24 +10,17 @@ export default createSvg((width = 400, height = 320) => {
   return (
     <svg width={width} height={height} viewBox="0 0 400 320" xmlnsXlink="http://www.w3.org/1999/xlink">
       <defs>
-        <circle id="ae76e0c46d0fa699a" cx={184} cy={156} r={4} />
-        <circle id="ae76e0c46d0fa699b" cx={184} cy={207} r={4} />
-        <circle id="ae76e0c46d0fa699c" cx={184} cy={253} r={4} />
-        <rect id="ae76e0c46d0fa699e" x={8} y={12} width={144} height={112} rx={3} />
-        <filter x="-27.1%" y="-29.5%" width="154.2%" height="169.6%" filterUnits="objectBoundingBox" id="ae76e0c46d0fa699d">
+        <circle id="a7d00ff08a29f7b1a" cx={184} cy={156} r={4} />
+        <circle id="a7d00ff08a29f7b1b" cx={184} cy={207} r={4} />
+        <circle id="a7d00ff08a29f7b1c" cx={184} cy={253} r={4} />
+        <rect id="a7d00ff08a29f7b1e" x={8} y={12} width={144} height={112} rx={3} />
+        <filter x="-27.1%" y="-29.5%" width="154.2%" height="169.6%" filterUnits="objectBoundingBox" id="a7d00ff08a29f7b1d">
           <feOffset dy={6} in="SourceAlpha" result="shadowOffsetOuter1" />
           <feGaussianBlur stdDeviation={12} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
           <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0" in="shadowBlurOuter1" />
         </filter>
       </defs>
       <g fill="none" fillRule="evenodd">
-        <path
-          d="M16 256h368M16 208h368M16 160h368M16 112h368M16 64h368"
-          stroke="#E7E6EA"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeDasharray="6,8"
-        />
         <path d="M200 304V16" stroke="#C4C2CB" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
         <path
           d="M16 208c29.667-58 60.333-87 92-87 47.5 0 53 37 92 51.5 26 9.667 56.667 1.167 92-25.5"
@@ -37,7 +30,7 @@ export default createSvg((width = 400, height = 320) => {
           strokeLinejoin="round"
         />
         <g transform="translate(16 16)">
-          <use fill="#FFF" xlinkHref="#ae76e0c46d0fa699a" />
+          <use fill="#FFF" xlinkHref="#a7d00ff08a29f7b1a" />
           <circle stroke="#1EB8C1" strokeWidth={3} cx={184} cy={156} r={5.5} />
         </g>
         <path
@@ -48,7 +41,7 @@ export default createSvg((width = 400, height = 320) => {
           strokeLinejoin="round"
         />
         <g transform="translate(16 16)">
-          <use fill="#FFF" xlinkHref="#ae76e0c46d0fa699b" />
+          <use fill="#FFF" xlinkHref="#a7d00ff08a29f7b1b" />
           <circle stroke="#5B93FF" strokeWidth={3} cx={184} cy={207} r={5.5} />
         </g>
         <path
@@ -59,12 +52,12 @@ export default createSvg((width = 400, height = 320) => {
           strokeLinejoin="round"
         />
         <g transform="translate(16 16)">
-          <use fill="#FFF" xlinkHref="#ae76e0c46d0fa699c" />
+          <use fill="#FFF" xlinkHref="#a7d00ff08a29f7b1c" />
           <circle stroke="#F84F77" strokeWidth={3} cx={184} cy={253} r={5.5} />
         </g>
         <g transform="translate(208 24)">
-          <use fill="#000" filter="url(#ae76e0c46d0fa699d)" xlinkHref="#ae76e0c46d0fa699e" />
-          <use fill="#FFF" xlinkHref="#ae76e0c46d0fa699e" />
+          <use fill="#000" filter="url(#a7d00ff08a29f7b1d)" xlinkHref="#a7d00ff08a29f7b1e" />
+          <use fill="#FFF" xlinkHref="#a7d00ff08a29f7b1e" />
           <rect fill="#140B2F" width={160} height={128} rx={3} />
           <path fill="#FAFAFB" opacity={0.1} d="M0 0h160v32H0z" />
           <path
