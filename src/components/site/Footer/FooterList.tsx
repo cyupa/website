@@ -22,8 +22,8 @@ export class FooterList extends React.PureComponent<Props> {
         <Item>
           <Heading>{heading}</Heading>
         </Item>
-        {items.map(item => (
-          <Item>
+        {items.map((item, i) => (
+          <Item key={i}>
             <ListItem href={item.location}>{item.label}</ListItem>
           </Item>
         ))}

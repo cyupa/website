@@ -1,14 +1,14 @@
 import * as React from "react";
+import LogoAtlassian from "../../components/icons/customers/LogoAtlassian";
+import LogoCsiro from "../../components/icons/customers/LogoCsiro";
+import LogoDeloitte from "../../components/icons/customers/LogoDeloitte";
+import LogoEnigma from "../../components/icons/customers/LogoEnigma";
+import LogoFreshworks from "../../components/icons/customers/LogoFreshworks";
+import LogoNike from "../../components/icons/customers/LogoNike";
+import LogoUniqa from "../../components/icons/customers/LogoUniqa";
+import LogoWestpac from "../../components/icons/customers/LogoWestpac";
 import { COLORS } from "../../constants";
 import { styled } from "../../util/styled";
-import LogoAtlassian from "./LogoAtlassian";
-import LogoCsiro from "./LogoCsiro";
-import LogoDeloitte from "./LogoDeloitte";
-import LogoEnigma from "./LogoEnigma";
-import LogoFreshworks from "./LogoFreshworks";
-import LogoIdeo from "./LogoIdeo";
-import LogoNike from "./LogoNike";
-import LogoUniqa from "./LogoUniqa";
 
 export class Customers extends React.PureComponent {
   public render() {
@@ -36,7 +36,7 @@ export class Customers extends React.PureComponent {
           <LogoFreshworks />
         </Logo>
         <Logo>
-          <LogoIdeo />
+          <LogoWestpac />
         </Logo>
       </Wrapper>
     );

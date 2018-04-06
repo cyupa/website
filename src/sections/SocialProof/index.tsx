@@ -3,10 +3,10 @@ import { Center } from "../../components/layout/Center";
 import { Flex } from "../../components/layout/Flex";
 import { Grid } from "../../components/layout/Grid";
 import { Item } from "../../components/layout/Item";
-import { Customers } from "../../components/site/Customers";
 import { Testimonial } from "../../components/site/Testimonial";
 import { MediaToggle } from "../../components/util/MediaToggle";
 import { BREAKPOINT_TABLET, TYPICAL_VERTICAL_GAP } from "../../constants";
+import { Customers } from "../Customers";
 
 export class SocialProof extends React.PureComponent {
   public render() {
