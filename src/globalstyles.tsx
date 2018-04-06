@@ -53,3 +53,8 @@ cssRule("button, input, textarea", {
 cssRule("::-webkit-input-placeholder", {
   color: COLORS.dp40
 });
+
+// Thanks, Mozilla
+cssRule("::-moz-focus-inner", {
+  border: "0 !important"
+});
