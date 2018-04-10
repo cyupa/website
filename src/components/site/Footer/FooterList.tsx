@@ -1,4 +1,6 @@
+import Link from "gatsby-link";
 import * as React from "react";
+import { style } from "typestyle/lib";
 import { COLORS } from "../../../constants";
 import { styled } from "../../../util/styled";
 import { Flex } from "../../layout/Flex";
@@ -24,7 +26,9 @@ export class FooterList extends React.PureComponent<Props> {
         </Item>
         {items.map((item, i) => (
           <Item key={i}>
-            <ListItem href={item.location}>{item.label}</ListItem>
+            <Link className={linkClassName} to={item.location}>
+              {item.label}
+            </Link>
           </Item>
         ))}
       </Flex>
@@ -39,7 +43,7 @@ const Heading = styled("h5", {
   margin: 0
 });
 
-const ListItem = styled("a", {
+const linkClassName = style({
   color: COLORS.purple,
   fontSize: "14px",
 
