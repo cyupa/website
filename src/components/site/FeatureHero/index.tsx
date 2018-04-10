@@ -32,11 +32,9 @@ export class FeatureHero extends React.PureComponent<Props> {
               <p style={{ opacity: LIGHT_TEXT_OPACITY }}>{text}</p>
             </Item>
             <Item>
-              {location !== undefined ? (
-                <Link to={location}>
-                  <ActionTextWithArrow />
-                </Link>
-              ) : null}
+              <Link to={location !== undefined ? location : "/users/sign_up"}>
+                <ActionTextWithArrow text={location !== undefined ? "Learn more" : "Try free for 14 days"} />
+              </Link>
             </Item>
           </Flex>
         </Text>

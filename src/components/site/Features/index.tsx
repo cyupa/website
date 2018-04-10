@@ -14,8 +14,8 @@ export class Features extends React.PureComponent<Props> {
     return (
       <Wrapper>
         {features.map((f, i) => (
-          <Inner large={large}>
-            {large ? <FeatureLarge key={i} text={f.text} title={f.title} /> : <Feature key={i} text={f.text} title={f.title} />}
+          <Inner key={i} large={large}>
+            {large ? <FeatureLarge text={f.text} title={f.title} /> : <Feature text={f.text} title={f.title} />}
           </Inner>
         ))}
       </Wrapper>

@@ -4,7 +4,6 @@ import IllustrationAnnotationsFeedback from "../../components/illustrations/Illu
 import IllustrationBoard from "../../components/illustrations/IllustrationBoard";
 import IllustrationForm from "../../components/illustrations/IllustrationForm";
 import IllustrationProjectsFeedback from "../../components/illustrations/IllustrationProjectsFeedback";
-import IllustrationSecurity from "../../components/illustrations/IllustrationSecurity";
 import IllustrationSentimentChart from "../../components/illustrations/IllustrationSentimentChart";
 import IllustrationSentimentText from "../../components/illustrations/IllustrationSentimentText";
 import IllustrationSpace from "../../components/illustrations/IllustrationSpace";
@@ -21,6 +20,7 @@ import Wave from "../../components/site/Wave/Wave";
 import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../../constants";
 import { CenteredSignUp } from "../../sections/CenteredSignUp";
 import { Integrations } from "../../sections/Integrations";
+import { Security } from "../../sections/Security";
 import { SocialProof } from "../../sections/SocialProof";
 
 export default class extends React.PureComponent {
@@ -210,43 +210,7 @@ export default class extends React.PureComponent {
           <Item>
             <Wave />
             <DarkContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
-              <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
-                <Item>
-                  <FeatureHero
-                    image={<IllustrationSecurity />}
-                    imagePosition="right"
-                    text="Dovetail is built on modern cloud infrastructure with security features designed to ensure the safety of your data."
-                    title="We take your privacy and security seriously."
-                  />
-                </Item>
-                <Item>
-                  <Features
-                    features={[
-                      {
-                        text:
-                          "Upload a spreadsheet to quickly create notes, tags, or insights. Import images, audio recordings, and video with our bulk file uploader.",
-                        title: "Data import"
-                      },
-                      {
-                        text:
-                          "You own your data. Download PDFs of your notes and insights, and easily export your tags to a spreadsheet for backup or further analysis elsewhere.",
-                        title: "Data export"
-                      },
-                      {
-                        text:
-                          "Dovetail is GDPR compliant with a privacy-by-design architecture, the right to be forgotten, data portability features, and more.",
-                        title: "GDPR"
-                      },
-                      {
-                        text:
-                          "We use Stripe for payments. Stripe has been audited by an independent PCI Qualified Security Assessor and is certified as a PCI Level 1 Service Provider.",
-                        title: "PCI DSS"
-                      }
-                    ]}
-                    large
-                  />
-                </Item>
-              </Flex>
+              <Security />
             </DarkContainer>
           </Item>
           <Item>
