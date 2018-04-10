@@ -71,7 +71,7 @@ export class Footer extends React.PureComponent {
                     <SmallText>© Dovetail Research Pty Ltd</SmallText>
                   </Item>
                   <Item>
-                    <SmallText>Made in Australia, with a little help from New Zealand</SmallText>
+                    <SmallText>Made in 🐨Australia and 🥝New Zealand</SmallText>
                   </Item>
                 </Flex>
               </Item>
