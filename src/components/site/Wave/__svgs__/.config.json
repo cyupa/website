@@ -1,0 +1,4 @@
+{
+  "color": "#000",
+  "moduleNameTemplate": "{capitalizedCamelBaseNameNoExt}.tsx"
+}

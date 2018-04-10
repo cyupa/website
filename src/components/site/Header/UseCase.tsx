@@ -1,6 +1,7 @@
+import Link from "gatsby-link";
 import * as React from "react";
+import { style } from "typestyle";
 import { BORDER_RADIUS, BOX_SHADOW_FOCUS, COLORS } from "../../../constants";
-import { styled } from "../../../util/styled";
 import { Flex } from "../../layout/Flex";
 import { Item } from "../../layout/Item";
 
@@ -14,7 +15,7 @@ export class UseCase extends React.PureComponent<Props> {
   public render() {
     const { image, location, title } = this.props;
     return (
-      <Link href={location}>
+      <Link className={linkClassName} to={location}>
         <Flex gap={16} layout="column">
           <Item>{image}</Item>
           <Item>{title}</Item>
@@ -24,7 +25,7 @@ export class UseCase extends React.PureComponent<Props> {
   }
 }
 
-const Link = styled("a", {
+const linkClassName = style({
   borderRadius: BORDER_RADIUS,
   color: COLORS.indigo,
   display: "block",

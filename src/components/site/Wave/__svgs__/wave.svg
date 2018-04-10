@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1200px" height="112px" viewBox="0 0 1200 112" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
     <title>Rectangle 7</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Footer" fill="#F8F7FC">
+        <g id="Footer" fill="#000000">
             <g id="Rectangle-7">
                 <path d="M0,41.3590034 C105.333333,13.7863345 219.333333,5.47016136e-15 342,0 C526,0 672.972196,96.1721404 852.5,96.1721404 C972.185203,96.1721404 1088.01854,77.9010948 1200,41.3590034 L1200,112 L0,112 L0,41.3590034 Z"></path>
             </g>

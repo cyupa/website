@@ -1,5 +1,5 @@
-import { storiesOf } from "@storybook/react";
 import * as React from "react";
+import { storiesOf } from "src/util/stories";
 import { HeroText } from "../";
 
 storiesOf("Site/HeroText", module).add("default", () => (

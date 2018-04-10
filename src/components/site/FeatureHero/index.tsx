@@ -1,6 +1,7 @@
+import Link from "gatsby-link";
 import * as React from "react";
 import { extend, media } from "typestyle";
-import { BREAKPOINT_TABLET, COLORS } from "../../../constants";
+import { BREAKPOINT_TABLET, LIGHT_TEXT_OPACITY } from "../../../constants";
 import { styledViaProps } from "../../../util/styled";
 import { Flex } from "../../layout/Flex";
 import { Item } from "../../layout/Item";
@@ -28,16 +29,14 @@ export class FeatureHero extends React.PureComponent<Props> {
               <h2>{title}</h2>
             </Item>
             <Item>
-              <p style={{ color: COLORS.i60 }}>{text}</p>
+              <p style={{ opacity: LIGHT_TEXT_OPACITY }}>{text}</p>
             </Item>
             <Item>
               {location !== undefined ? (
-                <a href={location}>
+                <Link to={location}>
                   <ActionTextWithArrow />
-                </a>
-              ) : (
-                <ActionTextWithArrow />
-              )}
+                </Link>
+              ) : null}
             </Item>
           </Flex>
         </Text>

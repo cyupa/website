@@ -6,14 +6,14 @@ import { Flex } from "../../layout/Flex";
 import { Flow } from "../../layout/Flow";
 import { Item } from "../../layout/Item";
 import { SmallText } from "../../util/SmallText";
+import Wave from "../Wave/Wave";
 import { FooterList } from "./FooterList";
-import Wave from "./Wave";
 
 export class Footer extends React.PureComponent {
   public render() {
     return (
       <>
-        <Wave />
+        <Wave color={COLORS.p04} />
         <Wrapper>
           <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={64}>
             <Flex gap={64} layout="column">

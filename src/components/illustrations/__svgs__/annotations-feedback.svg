@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="832px" height="536px" viewBox="0 0 832 536" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>snippet/annotations-feedback</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="2" y="2" width="276" height="212" rx="3"></rect>
+        <filter x="-2.5%" y="-2.4%" width="105.1%" height="106.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="280" height="216" rx="3"></rect>
+        <filter x="-1.6%" y="-1.6%" width="103.2%" height="104.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="2" y="2" width="276" height="132" rx="3"></rect>
+        <filter x="-2.5%" y="-3.8%" width="105.1%" height="110.6%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-7" x="0" y="0" width="280" height="136" rx="3"></rect>
+        <filter x="-1.6%" y="-2.6%" width="103.2%" height="106.6%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-9" x="2" y="2" width="244" height="164" rx="3"></rect>
+        <filter x="-2.9%" y="-3.0%" width="105.7%" height="108.5%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-11" x="0" y="0" width="248" height="168" rx="3"></rect>
+        <filter x="-1.8%" y="-2.1%" width="103.6%" height="105.4%" filterUnits="objectBoundingBox" id="filter-12">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-13" x="2" y="2" width="236" height="164" rx="3"></rect>
+        <filter x="-3.0%" y="-3.0%" width="105.9%" height="108.5%" filterUnits="objectBoundingBox" id="filter-14">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-15" x="0" y="0" width="240" height="168" rx="3"></rect>
+        <filter x="-1.9%" y="-2.1%" width="103.8%" height="105.4%" filterUnits="objectBoundingBox" id="filter-16">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-17" x="2" y="2" width="244" height="164" rx="3"></rect>
+        <filter x="-2.9%" y="-3.0%" width="105.7%" height="108.5%" filterUnits="objectBoundingBox" id="filter-18">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-19" x="0" y="0" width="248" height="168" rx="3"></rect>
+        <filter x="-1.8%" y="-2.1%" width="103.6%" height="105.4%" filterUnits="objectBoundingBox" id="filter-20">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-21" x="2" y="2" width="244" height="132" rx="3"></rect>
+        <filter x="-2.9%" y="-3.8%" width="105.7%" height="110.6%" filterUnits="objectBoundingBox" id="filter-22">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-23" x="0" y="0" width="248" height="136" rx="3"></rect>
+        <filter x="-1.8%" y="-2.6%" width="103.6%" height="106.6%" filterUnits="objectBoundingBox" id="filter-24">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-25" x="2" y="2" width="236" height="164" rx="3"></rect>
+        <filter x="-3.0%" y="-3.0%" width="105.9%" height="108.5%" filterUnits="objectBoundingBox" id="filter-26">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-27" x="0" y="0" width="240" height="168" rx="3"></rect>
+        <filter x="-1.9%" y="-2.1%" width="103.8%" height="105.4%" filterUnits="objectBoundingBox" id="filter-28">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="snippet/annotations-feedback" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(16.000000, 16.000000)">
+            <g id="Card" transform="translate(0.000000, 40.000000)">
+                <g id="component/card">
+                    <g id="Shadow">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Card" stroke-linecap="square">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <rect stroke-opacity="0.098194067" stroke="#140B2F" stroke-width="1" x="-0.5" y="-0.5" width="281" height="217" rx="3"></rect>
+                    </g>
+                </g>
+                <text id="Intercom-conversatio" opacity="0.5" font-family="SFUIText-Semibold, SF UI Text" font-size="12" font-weight="500" fill="#24124D">
+                    <tspan x="56" y="32">Intercom conversation</tspan>
+                </text>
+                <g id="integrations/intercom" transform="translate(16.000000, 16.000000)" fill="#1F8DED">
+                    <g id="intercom">
+                        <path d="M20.8000312,13.195125 C20.7952848,13.6335832 20.4384995,13.986527 20.0000156,13.986527 C19.5615317,13.986527 19.2047465,13.6335832 19.2,13.195125 L19.2,6 C19.2047465,5.56154178 19.5615317,5.20859797 20.0000156,5.20859797 C20.4384995,5.20859797 20.7952848,5.56154178 20.8000312,6 L20.8000312,13.195125 Z M20.5208437,18.2025937 C20.3971875,18.3084375 17.4336562,20.79525 12,20.79525 C6.5664375,20.79525 3.603,18.3083437 3.47934375,18.2025 C3.14394656,17.9148998 3.10512546,17.4098898 3.392625,17.0744063 C3.67947459,16.7394938 4.18329687,16.6999865 4.51884375,16.9860938 C4.5658125,17.0254688 7.2121875,19.195125 12.0000938,19.195125 C16.8480938,19.195125 19.4535,17.0098125 19.4792812,16.9877813 C19.8140625,16.70025 20.3200312,16.738875 20.607375,17.0745 C20.8949738,17.4099162 20.8562337,17.9149643 20.5208437,18.2025938 Z M3.19996875,6 C3.20471522,5.56154178 3.56150047,5.20859797 3.99998438,5.20859797 C4.43846828,5.20859797 4.79525353,5.56154178 4.8,6 L4.8,13.195125 C4.79525353,13.6335832 4.43846828,13.986527 3.99998438,13.986527 C3.56150047,13.986527 3.20471522,13.6335832 3.19996875,13.195125 L3.19996875,6 Z M7.20009375,4.39996875 C7.20678479,3.96293326 7.56297579,3.61215382 8.0000625,3.61215382 C8.43714921,3.61215382 8.79334021,3.96293326 8.80003125,4.39996875 L8.80003125,15.0875625 C8.79334021,15.524598 8.43714921,15.8753774 8.0000625,15.8753774 C7.56297579,15.8753774 7.20678479,15.524598 7.20009375,15.0875625 L7.20009375,4.4000625 L7.20009375,4.39996875 Z M11.2000313,3.99515625 C11.2000064,3.78298372 11.2842806,3.57949409 11.4343092,3.42946546 C11.5843378,3.27943682 11.7878275,3.19516263 12,3.1951875 C12.2121888,3.19513776 12.4157025,3.27940097 12.5657514,3.4294323 C12.7158003,3.57946363 12.8000874,3.78296748 12.8000625,3.99515625 L12.8000625,15.595125 C12.795316,16.0335832 12.4385308,16.386527 12.0000469,16.386527 C11.561563,16.386527 11.2047777,16.0335832 11.2000312,15.595125 L11.2000312,3.99515625 Z M15.2000625,4.39996875 C15.2067535,3.96293326 15.5629445,3.61215382 16.0000312,3.61215382 C16.437118,3.61215382 16.793309,3.96293326 16.8,4.39996875 L16.8,15.0875625 C16.793309,15.524598 16.437118,15.8753774 16.0000312,15.8753774 C15.5629445,15.8753774 15.2067535,15.524598 15.2000625,15.0875625 L15.2000625,4.4000625 L15.2000625,4.39996875 Z M21,0 L3,0 C1.34315625,0 0,1.34315625 0,3 L0,21 C0,22.65675 1.34315625,24 3,24 L21,24 C22.6568438,24 24,22.65675 24,21 L24,3 C24,1.34315625 22.6568438,0 21,0 Z" id="Shape" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+                <rect id="Rectangle-9" fill="#DCD5EE" x="16" y="64" width="248" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#DCD5EE" x="16" y="96" width="136" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#DCD5EE" x="16" y="160" width="136" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#5182F8" x="168" y="96" width="96" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#5182F8" x="16" y="128" width="248" height="12" rx="3"></rect>
+            </g>
+            <g id="Card" transform="translate(0.000000, 229.000000)">
+                <g id="component/card" transform="translate(0.000000, 43.000000)">
+                    <g id="Shadow">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    </g>
+                    <g id="Card" stroke-linecap="square">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                        <rect stroke-opacity="0.098194067" stroke="#140B2F" stroke-width="1" x="-0.5" y="-0.5" width="281" height="137" rx="3"></rect>
+                    </g>
+                </g>
+                <g id="integrations/typeform" transform="translate(16.000000, 59.000000)">
+                    <g id="typeform" transform="translate(4.500000, 0.000000)">
+                        <polygon id="Shape" fill="#89C6BE" fill-rule="nonzero" points="12.7339754 0.0768353808 15.0768354 0.0768353808 15.0768354 23.9604324 12.7339754 23.9604324"></polygon>
+                        <path d="M0.0240589681,5.51646192 L2.96007862,5.51646192 L2.96007862,0.0505945946 L6.85114496,0.0505945946 L6.85114496,5.51646192 L10.3670565,5.51646192 L10.3670565,8.51392629 L6.85114496,8.51392629 L6.85114496,18.2471351 C6.85114496,18.6699361 6.8682457,19.0348894 6.90244717,19.3401671 C6.93623587,19.6462113 7.01596069,19.9044914 7.14109091,20.1162457 C7.2662801,20.3276462 7.45362162,20.4863292 7.70470762,20.5921769 C7.95473219,20.6980835 8.29598034,20.750801 8.72862899,20.750801 C9.00153317,20.750801 9.27479115,20.7453759 9.54769533,20.7329926 C9.82089435,20.7217297 10.0937985,20.6802162 10.3670565,20.6100442 L10.3670565,23.7133563 C9.93446683,23.759941 9.51343489,23.8068796 9.10413759,23.8545258 C8.68479249,23.9015708 8.26313539,23.9250181 7.84115971,23.9247568 C6.81688452,23.9247568 5.99203931,23.8243342 5.36627027,23.625317 C4.74002948,23.4255332 4.25136118,23.1311646 3.89879115,22.7433317 C3.54545455,22.3554398 3.30675184,21.8674791 3.18162162,21.2795086 C3.05607862,20.6925995 2.98225061,20.0223686 2.96001966,19.2698771 L2.96001966,8.51398526 L0.0240589681,8.51398526 L0.0240589681,5.51646192" id="Shape" fill="#33393F" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+                <text id="Typeform-entry" opacity="0.5" font-family="SFUIText-Semibold, SF UI Text" font-size="12" font-weight="500" fill="#24124D">
+                    <tspan x="56" y="75">Typeform entry</tspan>
+                </text>
+                <text id="Typeform-entry" font-family="Rubik-Medium, Rubik" font-size="12" font-weight="400" fill="#24124D">
+                    <tspan x="616" y="11">Typeform entry</tspan>
+                </text>
+                <rect id="Rectangle-9" fill="#DCD5EE" x="16" y="107" width="248" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#DCD5EE" x="16" y="139" width="136" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#009688" x="168" y="139" width="96" height="12" rx="3"></rect>
+            </g>
+            <g id="Card" transform="translate(296.000000, 0.000000)">
+                <g id="component/card">
+                    <g id="Shadow">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-9"></use>
+                    </g>
+                    <g id="Card" stroke-linecap="square">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-11"></use>
+                        <rect stroke-opacity="0.098194067" stroke="#140B2F" stroke-width="1" x="-0.5" y="-0.5" width="249" height="169" rx="3"></rect>
+                    </g>
+                </g>
+                <text id="Typeform-entry" opacity="0.5" font-family="SFUIText-Semibold, SF UI Text" font-size="12" font-weight="500" fill="#24124D">
+                    <tspan x="56" y="32">Typeform entry</tspan>
+                </text>
+                <g id="integrations/typeform" transform="translate(16.000000, 16.000000)">
+                    <g id="typeform" transform="translate(4.500000, 0.000000)">
+                        <polygon id="Shape" fill="#89C6BE" fill-rule="nonzero" points="12.7339754 0.0768353808 15.0768354 0.0768353808 15.0768354 23.9604324 12.7339754 23.9604324"></polygon>
+                        <path d="M0.0240589681,5.51646192 L2.96007862,5.51646192 L2.96007862,0.0505945946 L6.85114496,0.0505945946 L6.85114496,5.51646192 L10.3670565,5.51646192 L10.3670565,8.51392629 L6.85114496,8.51392629 L6.85114496,18.2471351 C6.85114496,18.6699361 6.8682457,19.0348894 6.90244717,19.3401671 C6.93623587,19.6462113 7.01596069,19.9044914 7.14109091,20.1162457 C7.2662801,20.3276462 7.45362162,20.4863292 7.70470762,20.5921769 C7.95473219,20.6980835 8.29598034,20.750801 8.72862899,20.750801 C9.00153317,20.750801 9.27479115,20.7453759 9.54769533,20.7329926 C9.82089435,20.7217297 10.0937985,20.6802162 10.3670565,20.6100442 L10.3670565,23.7133563 C9.93446683,23.759941 9.51343489,23.8068796 9.10413759,23.8545258 C8.68479249,23.9015708 8.26313539,23.9250181 7.84115971,23.9247568 C6.81688452,23.9247568 5.99203931,23.8243342 5.36627027,23.625317 C4.74002948,23.4255332 4.25136118,23.1311646 3.89879115,22.7433317 C3.54545455,22.3554398 3.30675184,21.8674791 3.18162162,21.2795086 C3.05607862,20.6925995 2.98225061,20.0223686 2.96001966,19.2698771 L2.96001966,8.51398526 L0.0240589681,8.51398526 L0.0240589681,5.51646192" id="Shape" fill="#33393F" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+                <rect id="Rectangle-9" fill="#DCD5EE" x="16" y="64" width="216" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#DCD5EE" x="16" y="96" width="136" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#009688" x="16" y="128" width="96" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#009688" x="168" y="96" width="64" height="12" rx="3"></rect>
+            </g>
+            <g id="Card" transform="translate(560.000000, 24.000000)">
+                <g id="component/card">
+                    <g id="Shadow">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-13"></use>
+                    </g>
+                    <g id="Card" stroke-linecap="square">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-16)" xlink:href="#path-15"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-15"></use>
+                        <rect stroke-opacity="0.098194067" stroke="#140B2F" stroke-width="1" x="-0.5" y="-0.5" width="241" height="169" rx="3"></rect>
+                    </g>
+                </g>
+                <g id="integrations/zendesk" transform="translate(16.000000, 16.000000)" fill="#719C40">
+                    <g id="zendesk">
+                        <path d="M21.1735313,14.2646324 C20.12325,14.8613123 18.9801563,15.1450435 17.8557188,15.1450435 C17.1227813,15.1450435 16.3973438,15.0220079 15.7846875,14.775083 C14.6645625,15.7973123 13.4592188,16.5133281 12.8524688,16.845913 C13.7314688,18.2568854 15.1289063,19.3414387 16.8557813,19.7767589 C17.3778628,19.9086249 17.9139616,19.9751774 18.4520625,19.9749249 C19.6329375,19.9749249 20.7692813,19.6476522 21.7350938,19.1215494 C21.8780367,18.562117 21.9500524,17.9865546 21.9494063,17.4087273 C21.9494063,16.3415336 21.6972188,15.2629565 21.1735313,14.2646324 M19.8049687,5.85011858 C19.6062187,7.19222134 19.0320937,8.38558103 18.2280937,9.27348617 C18.2702812,9.50912253 18.29925,9.76733597 18.29925,10.037502 C18.2955,11.6069881 17.4951562,12.9722372 16.4952187,14.0710198 C16.781625,14.1070672 17.0700937,14.1272727 17.3564062,14.1272727 C18.7821562,14.1272727 20.218875,13.6650119 21.434625,12.7065296 C22.8388125,11.5919051 23.6836875,10.0194783 23.9277187,8.41631621 C22.9819687,7.1576917 21.5925937,6.25470356 20.0445937,5.86074308 C19.9644375,5.8433834 19.8910312,5.81113043 19.8094687,5.79690119 L19.8049687,5.85021344 M18.7494375,4.70257708 C18.7494375,2.89527273 18.0463125,1.25748617 16.9455,0.0716205534 L16.849875,0.0716205534 C15.2699063,0.0716205534 13.8857813,0.639841897 12.6306563,1.78890119 C13.8300938,3.07911462 14.2610625,4.7153834 14.2610625,6.35079842 C14.2610625,6.48294071 14.2566563,6.61356522 14.2529063,6.7403004 C14.518465,6.67253872 14.7912839,6.63825502 15.0651563,6.63822925 L15.1364063,6.63822925 C16.168125,6.65928854 17.2080938,7.17799209 17.8045313,8.15506719 C18.402375,7.14488538 18.7495313,5.9666087 18.7495313,4.70257708 M6.82940625,0.190956522 C6.7306875,0.190956522 6.6365625,0.190956522 6.60159375,0.171509881 C5.52253125,1.37075099 4.8740625,2.95532016 4.8740625,4.68161265 C4.8740625,4.70627668 4.8740625,4.72733597 4.86525,4.74090119 C4.94015625,4.74090119 5.0158125,4.73862451 5.09296875,4.73862451 C6.91096875,4.73862451 8.57475,5.47114625 9.753375,6.65027668 C10.7429062,6.72085375 11.7554062,7.25226877 12.28875,8.30675099 C12.5750625,7.74004743 13.000125,7.32578656 13.4488125,7.1141502 C13.4488125,7.03901976 13.4518125,6.96028458 13.4518125,6.88297233 C13.4518125,5.03506719 12.696,3.19171542 11.2258125,1.8744664 C9.961875,0.74115415 8.3923125,0.190956522 6.82940625,0.190956522 M8.683125,6.74485375 C7.68984375,6.1586087 6.549,5.82991304 5.3510625,5.82991304 C4.96678125,5.82991304 4.5751875,5.86368379 4.188,5.93501976 C2.42775,6.25470356 0.95615625,7.24543874 0,8.5484585 C0.2596875,10.1606324 1.1015625,11.6782292 2.461125,12.75083 C3.45440625,11.4028458 4.8459375,10.5321107 6.28425,10.2529328 C6.28425,10.1846324 6.28125,10.1080791 6.28125,10.0360791 C6.27825,8.20999209 7.39978125,7.07886166 8.683125,6.74485375 M2.85871875,14.2804743 C2.33278125,15.2816443 2.08209375,16.3527273 2.08209375,17.4117628 C2.08209375,18.045249 2.17040625,18.6703874 2.30690625,19.227415 C3.28145731,19.767525 4.37490519,20.0501726 5.4860625,20.0492016 C6.01790625,20.0492016 6.55715625,19.9846957 7.10090625,19.8502767 C6.93403125,19.2416443 6.853125,18.6344348 6.853125,18.0317787 C6.853125,16.5981344 7.30265625,15.2223557 8.09925,14.0830672 C7.33153125,13.2446798 6.68025,12.2524269 6.4125,11.1303083 C4.93640625,11.6835415 3.65090625,12.7650593 2.85871875,14.2803794 M12.0454688,23.9655652 C13.5312188,23.3155731 14.78625,22.1222134 15.4827188,20.5235099 C13.7886563,19.8135652 12.5371875,18.4805692 11.9038125,16.941913 C11.3623125,16.6589407 9.96478125,15.8671304 8.6911875,14.6819289 C8.20693381,15.6323642 7.95416354,16.6861369 7.9539375,17.7554466 C7.9539375,18.6659289 8.132625,19.5920632 8.53021875,20.4777866 C9.26015625,22.1327431 10.570125,23.3359684 12.0454688,23.9655652" id="Shape" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+                <text id="Zendesk-ticket" opacity="0.5" font-family="SFUIText-Semibold, SF UI Text" font-size="12" font-weight="500" fill="#24124D">
+                    <tspan x="56" y="32">Zendesk ticket</tspan>
+                </text>
+                <rect id="Rectangle-9" fill="#DCD5EE" x="16" y="64" width="208" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#5182F8" x="16" y="96" width="136" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#DCD5EE" x="16" y="128" width="208" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#DCD5EE" x="168" y="96" width="56" height="12" rx="3"></rect>
+            </g>
+            <g id="Card" transform="translate(296.000000, 184.000000)">
+                <g id="component/card">
+                    <g id="Shadow">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-18)" xlink:href="#path-17"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-17"></use>
+                    </g>
+                    <g id="Card" stroke-linecap="square">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-20)" xlink:href="#path-19"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-19"></use>
+                        <rect stroke-opacity="0.098194067" stroke="#140B2F" stroke-width="1" x="-0.5" y="-0.5" width="249" height="169" rx="3"></rect>
+                    </g>
+                </g>
+                <text id="Zendesk-ticket" opacity="0.5" font-family="SFUIText-Semibold, SF UI Text" font-size="12" font-weight="500" fill="#24124D">
+                    <tspan x="56" y="32">Zendesk ticket</tspan>
+                </text>
+                <g id="integrations/zendesk" transform="translate(16.000000, 16.000000)" fill="#719C40">
+                    <g id="zendesk">
+                        <path d="M21.1735313,14.2646324 C20.12325,14.8613123 18.9801563,15.1450435 17.8557188,15.1450435 C17.1227813,15.1450435 16.3973438,15.0220079 15.7846875,14.775083 C14.6645625,15.7973123 13.4592188,16.5133281 12.8524688,16.845913 C13.7314688,18.2568854 15.1289063,19.3414387 16.8557813,19.7767589 C17.3778628,19.9086249 17.9139616,19.9751774 18.4520625,19.9749249 C19.6329375,19.9749249 20.7692813,19.6476522 21.7350938,19.1215494 C21.8780367,18.562117 21.9500524,17.9865546 21.9494063,17.4087273 C21.9494063,16.3415336 21.6972188,15.2629565 21.1735313,14.2646324 M19.8049687,5.85011858 C19.6062187,7.19222134 19.0320937,8.38558103 18.2280937,9.27348617 C18.2702812,9.50912253 18.29925,9.76733597 18.29925,10.037502 C18.2955,11.6069881 17.4951562,12.9722372 16.4952187,14.0710198 C16.781625,14.1070672 17.0700937,14.1272727 17.3564062,14.1272727 C18.7821562,14.1272727 20.218875,13.6650119 21.434625,12.7065296 C22.8388125,11.5919051 23.6836875,10.0194783 23.9277187,8.41631621 C22.9819687,7.1576917 21.5925937,6.25470356 20.0445937,5.86074308 C19.9644375,5.8433834 19.8910312,5.81113043 19.8094687,5.79690119 L19.8049687,5.85021344 M18.7494375,4.70257708 C18.7494375,2.89527273 18.0463125,1.25748617 16.9455,0.0716205534 L16.849875,0.0716205534 C15.2699063,0.0716205534 13.8857813,0.639841897 12.6306563,1.78890119 C13.8300938,3.07911462 14.2610625,4.7153834 14.2610625,6.35079842 C14.2610625,6.48294071 14.2566563,6.61356522 14.2529063,6.7403004 C14.518465,6.67253872 14.7912839,6.63825502 15.0651563,6.63822925 L15.1364063,6.63822925 C16.168125,6.65928854 17.2080938,7.17799209 17.8045313,8.15506719 C18.402375,7.14488538 18.7495313,5.9666087 18.7495313,4.70257708 M6.82940625,0.190956522 C6.7306875,0.190956522 6.6365625,0.190956522 6.60159375,0.171509881 C5.52253125,1.37075099 4.8740625,2.95532016 4.8740625,4.68161265 C4.8740625,4.70627668 4.8740625,4.72733597 4.86525,4.74090119 C4.94015625,4.74090119 5.0158125,4.73862451 5.09296875,4.73862451 C6.91096875,4.73862451 8.57475,5.47114625 9.753375,6.65027668 C10.7429062,6.72085375 11.7554062,7.25226877 12.28875,8.30675099 C12.5750625,7.74004743 13.000125,7.32578656 13.4488125,7.1141502 C13.4488125,7.03901976 13.4518125,6.96028458 13.4518125,6.88297233 C13.4518125,5.03506719 12.696,3.19171542 11.2258125,1.8744664 C9.961875,0.74115415 8.3923125,0.190956522 6.82940625,0.190956522 M8.683125,6.74485375 C7.68984375,6.1586087 6.549,5.82991304 5.3510625,5.82991304 C4.96678125,5.82991304 4.5751875,5.86368379 4.188,5.93501976 C2.42775,6.25470356 0.95615625,7.24543874 0,8.5484585 C0.2596875,10.1606324 1.1015625,11.6782292 2.461125,12.75083 C3.45440625,11.4028458 4.8459375,10.5321107 6.28425,10.2529328 C6.28425,10.1846324 6.28125,10.1080791 6.28125,10.0360791 C6.27825,8.20999209 7.39978125,7.07886166 8.683125,6.74485375 M2.85871875,14.2804743 C2.33278125,15.2816443 2.08209375,16.3527273 2.08209375,17.4117628 C2.08209375,18.045249 2.17040625,18.6703874 2.30690625,19.227415 C3.28145731,19.767525 4.37490519,20.0501726 5.4860625,20.0492016 C6.01790625,20.0492016 6.55715625,19.9846957 7.10090625,19.8502767 C6.93403125,19.2416443 6.853125,18.6344348 6.853125,18.0317787 C6.853125,16.5981344 7.30265625,15.2223557 8.09925,14.0830672 C7.33153125,13.2446798 6.68025,12.2524269 6.4125,11.1303083 C4.93640625,11.6835415 3.65090625,12.7650593 2.85871875,14.2803794 M12.0454688,23.9655652 C13.5312188,23.3155731 14.78625,22.1222134 15.4827188,20.5235099 C13.7886563,19.8135652 12.5371875,18.4805692 11.9038125,16.941913 C11.3623125,16.6589407 9.96478125,15.8671304 8.6911875,14.6819289 C8.20693381,15.6323642 7.95416354,16.6861369 7.9539375,17.7554466 C7.9539375,18.6659289 8.132625,19.5920632 8.53021875,20.4777866 C9.26015625,22.1327431 10.570125,23.3359684 12.0454688,23.9655652" id="Shape" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+                <rect id="Rectangle-9" fill="#DCD5EE" x="16" y="64" width="208" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#DCD5EE" x="16" y="96" width="136" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#5182F8" x="168" y="96" width="56" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#5182F8" x="16" y="128" width="96" height="12" rx="3"></rect>
+            </g>
+            <g id="Card" transform="translate(296.000000, 368.000000)">
+                <g id="component/card">
+                    <g id="Shadow">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-22)" xlink:href="#path-21"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-21"></use>
+                    </g>
+                    <g id="Card" stroke-linecap="square">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-24)" xlink:href="#path-23"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-23"></use>
+                        <rect stroke-opacity="0.098194067" stroke="#140B2F" stroke-width="1" x="-0.5" y="-0.5" width="249" height="137" rx="3"></rect>
+                    </g>
+                </g>
+                <g id="integrations/slack" transform="translate(16.000000, 16.000000)">
+                    <g id="slack">
+                        <path d="M15.559125,1.4848125 C15.1944375,0.36215625 13.988625,-0.2521875 12.8661562,0.1126875 C11.7435,0.477375 11.1291563,1.6831875 11.4940313,2.80565625 L17.0203125,19.808625 C17.3998125,20.8574063 18.5326875,21.4467187 19.6201875,21.1337812 C20.7545625,20.80725 21.4459688,19.6024687 21.084,18.4884375 L15.559125,1.4848125" id="Shape" fill="#DFA22F" fill-rule="nonzero"></path>
+                        <path d="M6.9961875,4.267125 C6.6313125,3.1445625 5.42559375,2.53021875 4.303125,2.89490625 C3.180375,3.2596875 2.5659375,4.46540625 2.93090625,5.5880625 L8.45728125,22.591125 C8.8366875,23.6398125 9.96965625,24.2292188 11.0571562,23.916 C12.1914375,23.5896563 12.8828437,22.384875 12.520875,21.2706563 L6.9961875,4.267125" id="Shape" fill="#3CB187" fill-rule="nonzero"></path>
+                        <path d="M22.5151875,15.5667187 C23.6378437,15.2020313 24.252,13.9964063 23.8873125,12.8736563 C23.522625,11.7511875 22.3168125,11.13675 21.1943438,11.5015313 L4.191375,17.028 C3.14259375,17.4073125 2.55328125,18.5401875 2.86621875,19.6276875 C3.19275,20.7619687 4.39753125,21.4534687 5.5115625,21.0915 L22.5151875,15.5668125" id="Shape" fill="#CE1E5B" fill-rule="nonzero"></path>
+                        <polyline id="Shape" fill="#392538" fill-rule="nonzero" points="7.735125 20.3690625 11.7989062 19.0486875 10.4783438 14.9844375 6.41428125 16.305375 7.735125 20.3691563"></polyline>
+                        <path d="M16.2981563,17.5866562 C17.8345313,17.087625 19.2625313,16.6235625 20.3620313,16.2662812 L19.0412813,12.2012812 L14.9772188,13.5222187 L16.2981563,17.5866562" id="Shape" fill="#BB242A" fill-rule="nonzero"></path>
+                        <path d="M19.732875,7.0036875 C20.8554375,6.639 21.4697813,5.43328125 21.1050938,4.31053125 C20.7404062,3.1880625 19.5345937,2.57371875 18.4119375,2.93840625 L1.408875,8.46496875 C0.3601875,8.84409375 -0.22921875,9.9770625 0.084,11.0645625 C0.41034375,12.19875 1.615125,12.89025 2.72934375,12.5282813 L19.732875,7.00359375" id="Shape" fill="#72C5CD" fill-rule="nonzero"></path>
+                        <path d="M4.9520625,11.8062187 C6.05878125,11.4465937 7.48565625,10.9829062 9.0165,10.4856562 C8.51746875,8.94909375 8.05340625,7.52109375 7.696125,6.42140625 L3.631125,7.74253125 L4.9520625,11.8062187" id="Shape" fill="#248C73" fill-rule="nonzero"></path>
+                        <path d="M13.515,9.024 L17.579625,7.70325 C17.1394003,6.34823162 16.6991191,4.99323162 16.2587812,3.63825 L12.1940625,4.959375 L13.515,9.024" id="Shape" fill="#62803A" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+                <text id="Slack-message" opacity="0.5" font-family="SFUIText-Semibold, SF UI Text" font-size="12" font-weight="500" fill="#24124D">
+                    <tspan x="56" y="32">Slack message</tspan>
+                </text>
+                <rect id="Rectangle-9" fill="#5182F8" x="16" y="64" width="208" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#DCD5EE" x="16" y="96" width="136" height="12" rx="3"></rect>
+            </g>
+            <g id="Card" transform="translate(560.000000, 208.000000)">
+                <g id="component/card">
+                    <g id="Shadow">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-26)" xlink:href="#path-25"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-25"></use>
+                    </g>
+                    <g id="Card" stroke-linecap="square">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-28)" xlink:href="#path-27"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-27"></use>
+                        <rect stroke-opacity="0.098194067" stroke="#140B2F" stroke-width="1" x="-0.5" y="-0.5" width="241" height="169" rx="3"></rect>
+                    </g>
+                </g>
+                <g id="integrations/intercom" transform="translate(16.000000, 16.000000)" fill="#1F8DED">
+                    <g id="intercom">
+                        <path d="M20.8000312,13.195125 C20.7952848,13.6335832 20.4384995,13.986527 20.0000156,13.986527 C19.5615317,13.986527 19.2047465,13.6335832 19.2,13.195125 L19.2,6 C19.2047465,5.56154178 19.5615317,5.20859797 20.0000156,5.20859797 C20.4384995,5.20859797 20.7952848,5.56154178 20.8000312,6 L20.8000312,13.195125 Z M20.5208437,18.2025937 C20.3971875,18.3084375 17.4336562,20.79525 12,20.79525 C6.5664375,20.79525 3.603,18.3083437 3.47934375,18.2025 C3.14394656,17.9148998 3.10512546,17.4098898 3.392625,17.0744063 C3.67947459,16.7394938 4.18329687,16.6999865 4.51884375,16.9860938 C4.5658125,17.0254688 7.2121875,19.195125 12.0000938,19.195125 C16.8480938,19.195125 19.4535,17.0098125 19.4792812,16.9877813 C19.8140625,16.70025 20.3200312,16.738875 20.607375,17.0745 C20.8949738,17.4099162 20.8562337,17.9149643 20.5208437,18.2025938 Z M3.19996875,6 C3.20471522,5.56154178 3.56150047,5.20859797 3.99998438,5.20859797 C4.43846828,5.20859797 4.79525353,5.56154178 4.8,6 L4.8,13.195125 C4.79525353,13.6335832 4.43846828,13.986527 3.99998438,13.986527 C3.56150047,13.986527 3.20471522,13.6335832 3.19996875,13.195125 L3.19996875,6 Z M7.20009375,4.39996875 C7.20678479,3.96293326 7.56297579,3.61215382 8.0000625,3.61215382 C8.43714921,3.61215382 8.79334021,3.96293326 8.80003125,4.39996875 L8.80003125,15.0875625 C8.79334021,15.524598 8.43714921,15.8753774 8.0000625,15.8753774 C7.56297579,15.8753774 7.20678479,15.524598 7.20009375,15.0875625 L7.20009375,4.4000625 L7.20009375,4.39996875 Z M11.2000313,3.99515625 C11.2000064,3.78298372 11.2842806,3.57949409 11.4343092,3.42946546 C11.5843378,3.27943682 11.7878275,3.19516263 12,3.1951875 C12.2121888,3.19513776 12.4157025,3.27940097 12.5657514,3.4294323 C12.7158003,3.57946363 12.8000874,3.78296748 12.8000625,3.99515625 L12.8000625,15.595125 C12.795316,16.0335832 12.4385308,16.386527 12.0000469,16.386527 C11.561563,16.386527 11.2047777,16.0335832 11.2000312,15.595125 L11.2000312,3.99515625 Z M15.2000625,4.39996875 C15.2067535,3.96293326 15.5629445,3.61215382 16.0000312,3.61215382 C16.437118,3.61215382 16.793309,3.96293326 16.8,4.39996875 L16.8,15.0875625 C16.793309,15.524598 16.437118,15.8753774 16.0000312,15.8753774 C15.5629445,15.8753774 15.2067535,15.524598 15.2000625,15.0875625 L15.2000625,4.4000625 L15.2000625,4.39996875 Z M21,0 L3,0 C1.34315625,0 0,1.34315625 0,3 L0,21 C0,22.65675 1.34315625,24 3,24 L21,24 C22.6568438,24 24,22.65675 24,21 L24,3 C24,1.34315625 22.6568438,0 21,0 Z" id="Shape" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+                <text id="Intercom-conversatio" opacity="0.5" font-family="SFUIText-Semibold, SF UI Text" font-size="12" font-weight="500" fill="#24124D">
+                    <tspan x="56" y="32">Intercom conversation</tspan>
+                </text>
+                <rect id="Rectangle-9" fill="#DCD5EE" x="16" y="128" width="96" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#DCD5EE" x="128" y="128" width="96" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#F84F77" x="16" y="96" width="136" height="12" rx="3"></rect>
+                <rect id="Rectangle-9" fill="#F84F77" x="16" y="64" width="208" height="12" rx="3"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

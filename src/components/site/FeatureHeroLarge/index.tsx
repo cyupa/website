@@ -1,5 +1,5 @@
 import * as React from "react";
-import { COLORS } from "../../../constants";
+import { LIGHT_TEXT_OPACITY } from "../../../constants";
 import { Center } from "../../layout/Center";
 import { Flex } from "../../layout/Flex";
 import { Item } from "../../layout/Item";
@@ -21,7 +21,7 @@ export class FeatureHeroLarge extends React.PureComponent<Props> {
           <h2>{title}</h2>
         </Item>
         <Item>
-          <p style={{ color: COLORS.i60 }}>{text}</p>
+          <p style={{ opacity: LIGHT_TEXT_OPACITY }}>{text}</p>
         </Item>
         <Item>{image}</Item>
       </Flex>

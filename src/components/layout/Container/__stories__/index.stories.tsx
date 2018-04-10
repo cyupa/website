@@ -1,5 +1,5 @@
-import { storiesOf } from "@storybook/react";
 import * as React from "react";
+import { storiesOf } from "src/util/stories";
 import { Container } from "../";
 
 storiesOf("Layout/Container", module)

@@ -1,9 +1,7 @@
 import * as React from "React";
 import { Helmet } from "react-helmet";
-import { Container } from "../components/layout/Container";
 import { Footer } from "../components/site/Footer";
 import { Header } from "../components/site/Header";
-import { TYPICAL_PAGE_WIDTH } from "../constants";
 import "../globalstyles";
 import { styled } from "../util/styled";
 
@@ -24,9 +22,7 @@ export default class extends React.PureComponent<Props> {
         </Helmet>
         <Header />
         <Site>
-          <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={64}>
-            {this.props.children()}
-          </Container>
+          {this.props.children()}
           <Footer />
         </Site>
       </>
