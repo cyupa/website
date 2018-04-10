@@ -6,7 +6,7 @@
 import { createSvg } from "@heydovetail/svg-to-react";
 import * as React from "react";
 
-export default createSvg((width = 160, height = 72, color) => {
+export default createSvg((width = 160, height = 72) => {
   return (
     <svg width={width} height={height} viewBox="0 0 160 72">
       <g fill="#000" fillRule="nonzero">

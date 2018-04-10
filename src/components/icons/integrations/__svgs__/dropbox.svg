@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>integrations/dropbox</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="integrations/dropbox" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dropbox" transform="translate(0.000000, 2.000000)" fill="#007EE5" fill-rule="nonzero">
+            <path d="M14.1197365,0.0567613636 L0,9.33267045 L9.76297412,17.1990341 L24,8.35357955 L14.1197365,0.0567613636 Z M0,25.0659091 L14.1197365,34.3418182 L24,26.0439773 L9.76297412,17.1990909 L0,25.0659091 Z M24,26.0439773 L33.8802635,34.3418182 L48,25.0659091 L38.2370259,17.1990341 L24,26.0439773 Z" id="Shape"></path>
+            <path d="M48,9.33267045 L33.8802635,0.0567613636 L24,8.35363636 L38.2370259,17.1990909 L48,9.33267045 Z M24.0289694,27.829375 L14.1197365,36.1026705 L9.87936,33.3169886 L9.87936,36.4396591 L24.0289694,44.9767045 L38.1786353,36.4396591 L38.1786353,33.3169318 L33.9382588,36.1026705 L24.0289694,27.829375 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

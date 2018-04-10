@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>integrations/jira</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="91.8666124%" y1="40.3276956%" x2="28.2635218%" y2="81.6596195%" id="linearGradient-1">
+            <stop stop-color="#0052CC" offset="18%"></stop>
+            <stop stop-color="#2684FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="3878%" y1="2561.06905%" x2="5439%" y2="1905.36835%" id="linearGradient-2">
+            <stop stop-color="#0052CC" offset="18%"></stop>
+            <stop stop-color="#2684FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="integrations/jira" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="jira" fill-rule="nonzero">
+            <path d="M46.9621622,22.5852632 L25.8162162,1.99578947 L23.7664865,0 L7.84864865,15.4989474 L0.570810811,22.5852632 C-0.187987143,23.3250127 -0.187987143,24.5234083 0.570810811,25.2631579 L15.1135135,39.4231579 L23.7664865,47.8484211 L39.6843243,32.3494737 L39.9308108,32.1094737 L46.9621622,25.2631579 C47.7209601,24.5234083 47.7209601,23.3250127 46.9621622,22.5852632 Z M23.7664865,30.9978947 L16.5016216,23.9242105 L23.7664865,16.8505263 L31.0313514,23.9242105 L23.7664865,30.9978947 Z" id="Shape" fill="#2684FF"></path>
+            <path d="M23.7664865,16.8505263 C19.0099967,12.2186602 18.9868153,4.71649216 23.7145946,0.0568421053 L7.81621622,15.5305263 L16.4691892,23.9557895 L23.7664865,16.8505263 Z" id="Shape" fill="url(#linearGradient-1)"></path>
+            <path d="M31.0508108,23.9052632 L23.7664865,30.9978947 C26.0622895,33.2319525 27.352173,36.262783 27.352173,39.4231579 C27.352173,42.5835328 26.0622895,45.6143633 23.7664865,47.8484211 L39.7037838,32.3305263 L31.0508108,23.9052632 Z" id="Shape" fill="url(#linearGradient-2)"></path>
+        </g>
+    </g>
+</svg>

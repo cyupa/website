@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>integrations/trello</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0091E6" offset="0%"></stop>
+            <stop stop-color="#0079BF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="integrations/trello" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="trello" fill-rule="nonzero">
+            <rect id="Rectangle-path" fill="url(#linearGradient-1)" x="0" y="0" width="48" height="48" rx="3"></rect>
+            <path d="M30,6 L39,6 C40.6568542,6 42,7.34314575 42,9 L42,24 C42,25.6568542 40.6568542,27 39,27 L30,27 C28.3431458,27 27,25.6568542 27,24 L27,9 C27,7.34314575 28.3431458,6 30,6 Z" id="Rectangle-path" fill="#FFFFFF"></path>
+            <path d="M9,5.99983629 L18.0000181,5.99983629 C19.6568723,5.99983629 21.0000181,7.34298204 21.0000181,8.99983629 L21.0000181,36.0002609 C21.0000181,37.6571151 19.6568723,39.0002609 18.0000181,39.0002609 L9,39.0002609 C7.34314575,39.0002609 6,37.6571151 6,36.0002609 L6,8.99983629 C6,7.34298204 7.34314575,5.99983629 9,5.99983629 Z" id="Rectangle-path" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

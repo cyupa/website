@@ -1,0 +1,3 @@
+{
+  "moduleNameTemplate": "Integration{capitalizedCamelBaseNameNoExt}.tsx"
+}

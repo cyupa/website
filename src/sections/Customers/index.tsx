@@ -48,7 +48,7 @@ const Wrapper = styled("div", {
   display: "flex",
   flexWrap: "wrap",
   justifyContent: "center",
-  margin: "-32px"
+  margin: "0 -32px"
 });
 
 const Logo = styled("div", {

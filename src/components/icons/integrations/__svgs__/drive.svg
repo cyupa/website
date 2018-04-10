@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>integrations/drive</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="integrations/drive" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="drive" transform="translate(0.000000, 3.000000)" fill-rule="nonzero">
+            <polygon id="Shape" fill="#3777E3" points="7.99529086 41.9997648 15.9894848 27.9998544 47.9687867 27.9998544 39.9738615 41.9997648"></polygon>
+            <polygon id="Shape" fill="#FFCF63" points="31.9796676 27.9998544 47.9687867 27.9998544 31.9796676 0 15.9894848 0"></polygon>
+            <polygon id="Shape" fill="#11A861" points="0 27.9998544 7.99529086 41.9997648 23.98441 13.999944 15.9894848 0"></polygon>
+        </g>
+    </g>
+</svg>
