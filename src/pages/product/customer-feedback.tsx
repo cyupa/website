@@ -82,7 +82,6 @@ export default class extends React.PureComponent {
                   <FeatureHero
                     image={<IllustrationSentimentText />}
                     imagePosition="right"
-                    location="/users/new"
                     text="Dovetail automatically analyzes the sentiment of incoming customer feedback and applies the relevant tags for you at the sentence level."
                     title="Automatically analyze feedback sentiment."
                   />

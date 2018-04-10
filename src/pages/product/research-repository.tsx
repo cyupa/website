@@ -17,7 +17,7 @@ import { Features } from "../../components/site/Features";
 import { Hero } from "../../components/site/Hero";
 import { LightContainer } from "../../components/site/LightContainer";
 import Wave from "../../components/site/Wave/Wave";
-import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../../constants";
+import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../../constants";
 import { CenteredSignUp } from "../../sections/CenteredSignUp";
 import { Security } from "../../sections/Security";
 import { SocialProof } from "../../sections/SocialProof";
@@ -52,6 +52,12 @@ export default class extends React.PureComponent {
                     title="Store images, audio, video, and more."
                   />
                 </Item>
+              </Flex>
+            </LightContainer>
+          </Item>
+          <Item>
+            <LightContainer backgroundColor={COLORS.p04} maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP}>
+              <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
                 <Item>
                   <FeatureHeroLarge
                     image={<IllustrationBoardLarge />}
@@ -77,6 +83,12 @@ export default class extends React.PureComponent {
                     ]}
                   />
                 </Item>
+              </Flex>
+            </LightContainer>
+          </Item>
+          <Item>
+            <LightContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
+              <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
                 <Item>
                   <FeatureHero
                     image={<IllustrationProjectsResearch />}

@@ -1,9 +1,10 @@
 import * as React from "react";
 import { COLORS } from "../../../constants";
-import { styled } from "../../../util/styled";
+import { styledViaProps } from "../../../util/styled";
 import { Container } from "../../layout/Container";
 
 interface Props {
+  backgroundColor?: string;
   horizontalPadding?: number;
   maxWidth?: number;
   verticalPadding?: number;
@@ -11,18 +12,26 @@ interface Props {
 
 export class LightContainer extends React.PureComponent<Props> {
   public render() {
+    const { backgroundColor = COLORS.white } = this.props;
+
     return (
-      <Wrapper>
+      <Wrapper backgroundColor={backgroundColor}>
         <Container {...this.props} />
       </Wrapper>
     );
   }
 }
 
-const Wrapper = styled("div", {
-  $nest: {
-    a: {
-      color: COLORS.purple
+const Wrapper = styledViaProps(
+  "div",
+  ({ backgroundColor }: { backgroundColor: string }) => JSON.stringify({ backgroundColor }),
+  ({ backgroundColor }) => ({
+    backgroundColor: backgroundColor,
+
+    $nest: {
+      a: {
+        color: COLORS.purple
+      }
     }
-  }
-});
+  })
+);
