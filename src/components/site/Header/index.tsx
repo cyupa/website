@@ -1,8 +1,10 @@
 import * as React from "react";
 import { COLORS } from "../../../constants";
+import { locations } from "../../../routing/locations";
 import { styledViaProps } from "../../../util/styled";
 import { Button } from "../../forms/Button";
 import { SubtleButton } from "../../forms/SubtleButton";
+import { SubtleButtonLink } from "../../forms/SubtleButtonLink";
 import IconChevronDown from "../../icons/feather/IconChevronDown";
 import IconMenu from "../../icons/feather/IconMenu";
 import { Flex } from "../../layout/Flex";
@@ -32,9 +34,9 @@ export class Header extends React.PureComponent<Props> {
         <Wrapper color={!dark ? COLORS.white : COLORS.indigo}>
           <Justify>
             <Item>
-              <SubtleButton onClick={() => {}}>
+              <SubtleButtonLink height={40} location={locations.home()}>
                 <DovetailLogo color={!dark ? COLORS.purple : COLORS.white} />
-              </SubtleButton>
+              </SubtleButtonLink>
             </Item>
             <Item>
               <div style={{ color: !dark ? COLORS.i60 : COLORS.i20 }}>
@@ -66,13 +68,13 @@ export class Header extends React.PureComponent<Props> {
                           </FlipFlop>
                         </Item>
                         <Item>
-                          <SubtleButton onClick={() => {}}>Pricing</SubtleButton>
+                          <SubtleButtonLink location={locations.pricing()}>Pricing</SubtleButtonLink>
                         </Item>
                         <Item>
-                          <SubtleButton onClick={() => {}}>Support</SubtleButton>
+                          <SubtleButtonLink location={locations.help()}>Support</SubtleButtonLink>
                         </Item>
                         <Item>
-                          <SubtleButton onClick={() => {}}>Log in</SubtleButton>
+                          <SubtleButtonLink location={locations.logIn()}>Log in</SubtleButtonLink>
                         </Item>
                       </Flex>
                     </Item>
@@ -109,6 +111,6 @@ const Wrapper = styledViaProps(
   ({ color }: { color: string }) => JSON.stringify({ color }),
   ({ color }) => ({
     backgroundColor: color,
-    padding: "16px 24px"
+    padding: "12px 24px"
   })
 );

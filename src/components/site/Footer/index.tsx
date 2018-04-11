@@ -1,5 +1,6 @@
 import * as React from "react";
 import { COLORS, TYPICAL_PAGE_WIDTH } from "../../../constants";
+import { locations } from "../../../routing/locations";
 import { styled } from "../../../util/styled";
 import { Container } from "../../layout/Container";
 import { Flex } from "../../layout/Flex";
@@ -23,10 +24,10 @@ export class Footer extends React.PureComponent {
                     <FooterList
                       heading="Use cases"
                       items={[
-                        { label: "Feedback management", location: "/product/customer-feedback" },
-                        { label: "Research repository", location: "/product/research-repository" },
-                        { label: "Qualitative data analysis", location: "/product/qda" },
-                        { label: "Collaborative user research", location: "/product/user-research" }
+                        { label: "Feedback management", location: locations.customerFeedback() },
+                        { label: "Research repository", location: locations.researchRepository() },
+                        { label: "Qualitative data analysis", location: locations.qualitativeDataAnalysis() },
+                        { label: "Collaborative user research", location: locations.userResearch() }
                       ]}
                     />
                   </Item>
@@ -34,10 +35,10 @@ export class Footer extends React.PureComponent {
                     <FooterList
                       heading="Useful links"
                       items={[
-                        { label: "Home", location: "/" },
-                        { label: "Features", location: "/product/features" },
-                        { label: "Pricing", location: "/product/pricing" },
-                        { label: "Support", location: "/help" }
+                        { label: "Home", location: locations.home() },
+                        { label: "Features", location: locations.features() },
+                        { label: "Pricing", location: locations.pricing() },
+                        { label: "Support", location: locations.help() }
                       ]}
                     />
                   </Item>
@@ -45,10 +46,10 @@ export class Footer extends React.PureComponent {
                     <FooterList
                       heading="Resources"
                       items={[
-                        { label: "Guides", location: "/guides" },
-                        { label: "Privacy", location: "/legal/privacy" },
-                        { label: "Security", location: "/product/security" },
-                        { label: "Terms", location: "/legal" }
+                        { label: "Guides", location: locations.guides() },
+                        { label: "Privacy", location: locations.legal() },
+                        { label: "Security", location: locations.security() },
+                        { label: "Terms", location: locations.legal() }
                       ]}
                     />
                   </Item>
@@ -56,10 +57,10 @@ export class Footer extends React.PureComponent {
                     <FooterList
                       heading="Company"
                       items={[
-                        { label: "About", location: "/company/about" },
-                        { label: "Press", location: "/company/press" },
-                        { label: "Blog", location: "https://dovetail.blog" },
-                        { label: "Slack", location: "https://slack.dovetailapp.com" }
+                        { label: "About", location: locations.about() },
+                        { label: "Press", location: locations.press() },
+                        { label: "Blog", location: locations.blog() },
+                        { label: "Slack", location: locations.slack() }
                       ]}
                     />
                   </Item>

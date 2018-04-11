@@ -1,4 +1,5 @@
 import * as React from "react";
+import { locations } from "../../../routing/locations";
 import { Dropdown } from "../../dropdown/Dropdown";
 import PictogramFeedback from "../../icons/pictograms/PictogramFeedback";
 import PictogramQda from "../../icons/pictograms/PictogramQda";
@@ -14,10 +15,22 @@ export class UseCasesDropdown extends React.PureComponent {
       <Dropdown maxWidth={360}>
         <Container horizontalPadding={16} verticalPadding={8}>
           <Grid gap={0}>
-            <UseCase image={<PictogramFeedback />} location="/product/customer-feedback" title="Customer feedback management" />
-            <UseCase image={<PictogramRepository />} location="/product/research-repository" title="User research repository" />
-            <UseCase image={<PictogramQda />} location="/product/qda" title="Qualitative data analysis" />
-            <UseCase image={<PictogramResearch />} location="/product/user-research" title="Collaborative user research" />
+            <UseCase
+              image={<PictogramFeedback />}
+              location={locations.customerFeedback()}
+              title="Customer feedback management"
+            />
+            <UseCase
+              image={<PictogramRepository />}
+              location={locations.researchRepository()}
+              title="User research repository"
+            />
+            <UseCase
+              image={<PictogramQda />}
+              location={locations.qualitativeDataAnalysis()}
+              title="Qualitative data analysis"
+            />
+            <UseCase image={<PictogramResearch />} location={locations.userResearch()} title="Collaborative user research" />
           </Grid>
         </Container>
       </Dropdown>

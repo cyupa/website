@@ -1,13 +1,14 @@
-import Link from "gatsby-link";
 import * as React from "react";
 import { style } from "typestyle";
 import { BORDER_RADIUS, BOX_SHADOW_FOCUS, COLORS } from "../../../constants";
+import { LocationLink } from "../../../routing/LocationLink";
+import { LocationDescriptor } from "../../../routing/locations";
 import { Flex } from "../../layout/Flex";
 import { Item } from "../../layout/Item";
 
 interface Props {
   image: React.ReactNode;
-  location: string;
+  location: LocationDescriptor;
   title: string;
 }
 
@@ -15,12 +16,12 @@ export class UseCase extends React.PureComponent<Props> {
   public render() {
     const { image, location, title } = this.props;
     return (
-      <Link className={linkClassName} to={location}>
+      <LocationLink className={linkClassName} location={location}>
         <Flex gap={16} layout="column">
           <Item>{image}</Item>
           <Item>{title}</Item>
         </Flex>
-      </Link>
+      </LocationLink>
     );
   }
 }

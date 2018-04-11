@@ -1,14 +1,15 @@
-import Link from "gatsby-link";
 import * as React from "react";
 import { style } from "typestyle/lib";
 import { COLORS } from "../../../constants";
+import { LocationLink } from "../../../routing/LocationLink";
+import { LocationDescriptor } from "../../../routing/locations";
 import { styled } from "../../../util/styled";
 import { Flex } from "../../layout/Flex";
 import { Item } from "../../layout/Item";
 
 interface FooterItem {
   label: string;
-  location: string;
+  location: LocationDescriptor;
 }
 
 interface Props {
@@ -26,9 +27,9 @@ export class FooterList extends React.PureComponent<Props> {
         </Item>
         {items.map((item, i) => (
           <Item key={i}>
-            <Link className={linkClassName} to={item.location}>
+            <LocationLink className={linkClassName} location={item.location}>
               {item.label}
-            </Link>
+            </LocationLink>
           </Item>
         ))}
       </Flex>
