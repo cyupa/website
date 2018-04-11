@@ -98,9 +98,11 @@ export class Header extends React.PureComponent<Props> {
               <FlipFlop>
                 {({ active, toggle }) => (
                   <>
-                    <SubtleButton onClick={toggle}>
-                      <IconMenu />
-                    </SubtleButton>
+                    <Color dark={dark}>
+                      <SubtleButton onClick={toggle}>
+                        <IconMenu />
+                      </SubtleButton>
+                    </Color>
                     {active ? <MobileNav onDismiss={toggle} /> : null}
                   </>
                 )}

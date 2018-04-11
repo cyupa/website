@@ -30,7 +30,7 @@ export class Hero extends React.PureComponent<Props> {
             {children !== undefined ? <Item>{children}</Item> : null}
             {showSignUp ? (
               <Item>
-                <Flow gap={24}>
+                <Flow gap={24} rowGap={24}>
                   <Item>
                     <Button color={COLORS.purple} onClick={() => {}}>
                       Try now for free
