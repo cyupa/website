@@ -3,7 +3,7 @@ import { COLORS, TYPICAL_PAGE_WIDTH } from "../../../constants";
 import { styled } from "../../../util/styled";
 import { Container } from "../../layout/Container";
 import { Flex } from "../../layout/Flex";
-import { Flow } from "../../layout/Flow";
+import { GridWrap } from "../../layout/GridWrap";
 import { Item } from "../../layout/Item";
 import { SmallText } from "../../util/SmallText";
 import Wave from "../Wave/Wave";
@@ -18,7 +18,7 @@ export class Footer extends React.PureComponent {
           <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={64}>
             <Flex gap={64} layout="column">
               <Item>
-                <Flow gap={64} rowGap={64}>
+                <GridWrap gap={96}>
                   <Item>
                     <FooterList
                       heading="Use cases"
@@ -43,17 +43,6 @@ export class Footer extends React.PureComponent {
                   </Item>
                   <Item>
                     <FooterList
-                      heading="Company"
-                      items={[
-                        { label: "About", location: "/company/about" },
-                        { label: "Press", location: "/company/press" },
-                        { label: "Blog", location: "https://dovetail.blog" },
-                        { label: "Slack", location: "https://slack.dovetailapp.com" }
-                      ]}
-                    />
-                  </Item>
-                  <Item>
-                    <FooterList
                       heading="Resources"
                       items={[
                         { label: "Guides", location: "/guides" },
@@ -63,7 +52,18 @@ export class Footer extends React.PureComponent {
                       ]}
                     />
                   </Item>
-                </Flow>
+                  <Item>
+                    <FooterList
+                      heading="Company"
+                      items={[
+                        { label: "About", location: "/company/about" },
+                        { label: "Press", location: "/company/press" },
+                        { label: "Blog", location: "https://dovetail.blog" },
+                        { label: "Slack", location: "https://slack.dovetailapp.com" }
+                      ]}
+                    />
+                  </Item>
+                </GridWrap>
               </Item>
               <Item>
                 <Flex gap={8} layout="column">

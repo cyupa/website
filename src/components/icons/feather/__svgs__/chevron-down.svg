@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/chevron-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons/chevron-down">
+            <rect id="Rectangle" fill="#FFFFFF" opacity="0.0119451993" x="0" y="0" width="24" height="24"></rect>
+            <g id="chevron-down" transform="translate(8.000000, 10.000000)" stroke-linecap="round" stroke-width="2" stroke="#7B7194" stroke-linejoin="round">
+                <polyline id="Shape" points="0 0 4.5 4.5 9 0"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -42,6 +42,13 @@ cssRule("h3", {
   margin: 0
 });
 
+cssRule("h4", {
+  fontSize: "16px",
+  fontWeight: 500,
+  lineHeight: "24px",
+  margin: 0
+});
+
 cssRule("a", {
   color: "inherit",
   outline: "none",

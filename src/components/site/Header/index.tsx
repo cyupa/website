@@ -3,8 +3,10 @@ import { COLORS } from "../../../constants";
 import { styledViaProps } from "../../../util/styled";
 import { Button } from "../../forms/Button";
 import { SubtleButton } from "../../forms/SubtleButton";
+import IconChevronDown from "../../icons/feather/IconChevronDown";
 import IconMenu from "../../icons/feather/IconMenu";
 import { Flex } from "../../layout/Flex";
+import { Flow } from "../../layout/Flow";
 import { Item } from "../../layout/Item";
 import { Justify } from "../../layout/Justify";
 import { Layer } from "../../layout/Layer";
@@ -39,13 +41,18 @@ export class Header extends React.PureComponent<Props> {
                 <Hide device="tablet">
                   <Flex gap={16}>
                     <Item>
-                      <Flex gap={8}>
+                      <Flex gap={4}>
                         <Item>
                           <FlipFlop>
                             {({ active, toggle }) => (
                               <>
                                 <SubtleButton id="UseCasesDropdown" onClick={toggle}>
-                                  Use cases
+                                  <Flow gap={4}>
+                                    <Item>Use cases</Item>
+                                    <Item>
+                                      <IconChevronDown />
+                                    </Item>
+                                  </Flow>
                                 </SubtleButton>
                                 {active ? (
                                   <Portal>

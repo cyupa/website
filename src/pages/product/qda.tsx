@@ -2,22 +2,14 @@ import * as React from "react";
 import { Helmet } from "react-helmet";
 import IllustrationAnalysis from "../../components/illustrations/IllustrationAnalysis";
 import IllustrationAnnotationEdit from "../../components/illustrations/IllustrationAnnotationEdit";
-import IllustrationAnnotationsFeedback from "../../components/illustrations/IllustrationAnnotationsFeedback";
 import IllustrationAnnotationsResearch from "../../components/illustrations/IllustrationAnnotationsResearch";
 import IllustrationBarChart from "../../components/illustrations/IllustrationBarChart";
-import IllustrationBoard from "../../components/illustrations/IllustrationBoard";
 import IllustrationBoardLarge from "../../components/illustrations/IllustrationBoardLarge";
 import IllustrationEditor from "../../components/illustrations/IllustrationEditor";
 import IllustrationFiles from "../../components/illustrations/IllustrationFiles";
-import IllustrationForm from "../../components/illustrations/IllustrationForm";
 import IllustrationImport from "../../components/illustrations/IllustrationImport";
 import IllustrationInsights from "../../components/illustrations/IllustrationInsights";
-import IllustrationProjectsFeedback from "../../components/illustrations/IllustrationProjectsFeedback";
 import IllustrationProjectsResearch from "../../components/illustrations/IllustrationProjectsResearch";
-import IllustrationSentimentChart from "../../components/illustrations/IllustrationSentimentChart";
-import IllustrationSentimentText from "../../components/illustrations/IllustrationSentimentText";
-import IllustrationSpace from "../../components/illustrations/IllustrationSpace";
-import IllustrationTeam from "../../components/illustrations/IllustrationTeam";
 import { Flex } from "../../components/layout/Flex";
 import { Item } from "../../components/layout/Item";
 import { DarkContainer } from "../../components/site/DarkContainer";
@@ -31,6 +23,7 @@ import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../../constant
 import { CenteredSignUp } from "../../sections/CenteredSignUp";
 import { Security } from "../../sections/Security";
 import { SocialProof } from "../../sections/SocialProof";
+import { UseCases } from "../../sections/UseCases";
 
 export default class extends React.PureComponent {
   public render() {
@@ -196,6 +189,9 @@ export default class extends React.PureComponent {
               <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
                 <Item>
                   <SocialProof />
+                </Item>
+                <Item>
+                  <UseCases showTitle />
                 </Item>
                 <Item>
                   <CenteredSignUp />

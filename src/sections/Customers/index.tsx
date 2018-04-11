@@ -7,50 +7,38 @@ import LogoFreshworks from "../../components/icons/customers/LogoFreshworks";
 import LogoNike from "../../components/icons/customers/LogoNike";
 import LogoUniqa from "../../components/icons/customers/LogoUniqa";
 import LogoWestpac from "../../components/icons/customers/LogoWestpac";
-import { COLORS } from "../../constants";
-import { styled } from "../../util/styled";
+import { GridWrap } from "../../components/layout/GridWrap";
+import { Item } from "../../components/layout/Item";
 
 export class Customers extends React.PureComponent {
   public render() {
     return (
-      <Wrapper>
-        <Logo>
+      <GridWrap gap={64} justifyContent="center">
+        <Item>
           <LogoAtlassian />
-        </Logo>
-        <Logo>
+        </Item>
+        <Item>
           <LogoDeloitte />
-        </Logo>
-        <Logo>
+        </Item>
+        <Item>
           <LogoNike />
-        </Logo>
-        <Logo>
+        </Item>
+        <Item>
           <LogoUniqa />
-        </Logo>
-        <Logo>
+        </Item>
+        <Item>
           <LogoCsiro />
-        </Logo>
-        <Logo>
+        </Item>
+        <Item>
           <LogoEnigma />
-        </Logo>
-        <Logo>
+        </Item>
+        <Item>
           <LogoFreshworks />
-        </Logo>
-        <Logo>
+        </Item>
+        <Item>
           <LogoWestpac />
-        </Logo>
-      </Wrapper>
+        </Item>
+      </GridWrap>
     );
   }
 }
-
-const Wrapper = styled("div", {
-  color: COLORS.i80,
-  display: "flex",
-  flexWrap: "wrap",
-  justifyContent: "center",
-  margin: "0 -32px"
-});
-
-const Logo = styled("div", {
-  margin: "32px"
-});

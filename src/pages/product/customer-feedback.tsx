@@ -22,6 +22,7 @@ import { CenteredSignUp } from "../../sections/CenteredSignUp";
 import { Integrations } from "../../sections/Integrations";
 import { Security } from "../../sections/Security";
 import { SocialProof } from "../../sections/SocialProof";
+import { UseCases } from "../../sections/UseCases";
 
 export default class extends React.PureComponent {
   public render() {
@@ -217,6 +218,9 @@ export default class extends React.PureComponent {
               <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
                 <Item>
                   <SocialProof />
+                </Item>
+                <Item>
+                  <UseCases showTitle />
                 </Item>
                 <Item>
                   <CenteredSignUp />
