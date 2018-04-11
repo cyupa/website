@@ -19,6 +19,7 @@ import { LightContainer } from "../../components/site/LightContainer";
 import Wave from "../../components/site/Wave/Wave";
 import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../../constants";
 import { CenteredSignUp } from "../../sections/CenteredSignUp";
+import { Integrations } from "../../sections/Integrations";
 import { Security } from "../../sections/Security";
 import { SocialProof } from "../../sections/SocialProof";
 import { UseCases } from "../../sections/UseCases";
@@ -118,6 +119,14 @@ export default class extends React.PureComponent {
                         title: "Insights"
                       }
                     ]}
+                  />
+                </Item>
+                <Item>
+                  <FeatureHeroLarge
+                    center={false}
+                    image={<Integrations />}
+                    text="Import emails, survey results, support tickets, tweets, Facebook posts, and app reviews via Zapier."
+                    title="All of your research data in one place."
                   />
                 </Item>
                 <Item>
