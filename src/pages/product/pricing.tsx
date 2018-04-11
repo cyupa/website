@@ -1,5 +1,5 @@
 import * as React from "react";
-import { SubtleButton } from "../../components/forms/SubtleButton";
+import { SubtleButtonLink } from "../../components/forms/SubtleButtonLink";
 import IconArrowRightMini from "../../components/icons/feather/IconArrowRightMini";
 import { Center } from "../../components/layout/Center";
 import { Flex } from "../../components/layout/Flex";
@@ -9,6 +9,7 @@ import { HeroText } from "../../components/site/HeroText";
 import { LightContainer } from "../../components/site/LightContainer";
 import { PricingCard } from "../../components/site/PricingCard";
 import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../../constants";
+import { locations } from "../../routing/locations";
 import { CenteredSignUp } from "../../sections/CenteredSignUp";
 import { FrequentlyAskedQuestions } from "../../sections/FrequentlyAskedQuestions";
 import { SocialProof } from "../../sections/SocialProof";
@@ -32,14 +33,14 @@ export default class extends React.PureComponent {
               </Item>
               <Item>
                 <Center>
-                  <SubtleButton color={COLORS.i60} onClick={() => {}}>
+                  <SubtleButtonLink color={COLORS.i60} location={locations.features()}>
                     <Flow gap={4}>
                       <Item>See all features</Item>
                       <Item>
                         <IconArrowRightMini />
                       </Item>
                     </Flow>
-                  </SubtleButton>
+                  </SubtleButtonLink>
                 </Center>
               </Item>
             </Flex>

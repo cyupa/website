@@ -31,7 +31,7 @@ export class Header extends React.PureComponent<Props> {
 
     return (
       <Sticky stickOnMobile>
-        <Wrapper color={!dark ? COLORS.white : COLORS.indigo}>
+        <Wrapper dark={dark}>
           <Justify>
             <Item>
               <SubtleButtonLink height={40} location={locations.home()}>
@@ -108,9 +108,9 @@ export class Header extends React.PureComponent<Props> {
 
 const Wrapper = styledViaProps(
   "div",
-  ({ color }: { color: string }) => JSON.stringify({ color }),
-  ({ color }) => ({
-    backgroundColor: color,
+  ({ dark }: { dark: boolean }) => JSON.stringify({ dark }),
+  ({ dark }) => ({
+    backgroundColor: dark ? COLORS.indigo : COLORS.white,
     padding: "12px 24px"
   })
 );
