@@ -60,6 +60,15 @@ cssRule("p", {
   margin: 0
 });
 
+cssRule("b, strong", {
+  fontWeight: 500
+});
+
+cssRule("li", {
+  lineHeight: "28px",
+  margin: "8px 0"
+});
+
 cssRule("button, input, textarea", {
   fontFamily: FONT_FAMILY
 });

@@ -24,6 +24,14 @@ module.exports = {
           windows: false
         }
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: "./src/markdown/help",
+        name: "help-articles"
+      }
+    },
+    `gatsby-transformer-remark`
   ]
 };

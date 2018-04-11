@@ -1,24 +1,14 @@
 import * as React from "react";
-import { styled } from "../../../util/styled";
-import { Center } from "../../layout/Center";
 
 interface Props {
+  center?: boolean;
+  maxWidth?: number;
   text: string;
 }
 
 export class HeroText extends React.PureComponent<Props> {
   public render() {
-    const { text } = this.props;
-    return (
-      <Center>
-        <Heading>
-          <h1>{text}</h1>
-        </Heading>
-      </Center>
-    );
+    const { center = true, maxWidth, text } = this.props;
+    return <h1 style={{ marginTop: "32px", maxWidth: maxWidth, textAlign: center ? "center" : "left" }}>{text}</h1>;
   }
 }
-
-const Heading = styled("div", {
-  marginTop: "32px"
-});

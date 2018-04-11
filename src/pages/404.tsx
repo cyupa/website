@@ -5,6 +5,7 @@ import { Container } from "../components/layout/Container";
 import { Flex } from "../components/layout/Flex";
 import { Flow } from "../components/layout/Flow";
 import { Item } from "../components/layout/Item";
+import { HeroText } from "../components/site/HeroText";
 import { COLORS, LIGHT_TEXT_OPACITY, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../constants";
 import { locations } from "../routing/locations";
 
@@ -13,13 +14,13 @@ export default class extends React.PureComponent {
     return (
       <>
         <Helmet>
-          <title>Dovetail – 404</title>
+          <title>404 – Dovetail</title>
         </Helmet>
         <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
-          <div style={{ marginTop: "32px", maxWidth: "416px" }}>
+          <div style={{ maxWidth: TYPICAL_PAGE_WIDTH / 2 }}>
             <Flex gap={40} layout="column">
               <Item>
-                <h1>Sorry, this page doesn’t exist.</h1>
+                <HeroText center={false} maxWidth={416} text="Sorry, this page doesn’t exist." />
               </Item>
               <Item>
                 <p style={{ opacity: LIGHT_TEXT_OPACITY }}>

@@ -30,7 +30,7 @@ export default class extends React.PureComponent {
     return (
       <>
         <Helmet>
-          <title>Dovetail – Easily analyze qualitative data in the cloud</title>
+          <title>Easily analyze qualitative data in the cloud – Dovetail</title>
         </Helmet>
         <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
           <Item>

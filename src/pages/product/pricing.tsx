@@ -21,7 +21,7 @@ export default class extends React.PureComponent {
     return (
       <>
         <Helmet>
-          <title>Dovetail – Pricing</title>
+          <title>Pricing – Dovetail</title>
         </Helmet>
         <LightContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={64}>
           <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
