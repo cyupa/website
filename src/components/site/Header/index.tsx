@@ -136,7 +136,7 @@ const Color = styledViaProps(
   ({ dark }: { dark: boolean }) => JSON.stringify({ dark }),
   ({ dark }) => ({
     color: dark ? COLORS.white : COLORS.i60,
-    opacity: dark ? 0.8 : 1.0,
+    opacity: dark ? 0.9 : 1.0,
 
     $nest: {
       "&:hover": {

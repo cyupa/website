@@ -1,10 +1,10 @@
 import * as React from "react";
-import { COLORS, TYPICAL_PAGE_WIDTH } from "../../../constants";
+import { COLORS, LIGHT_TEXT_OPACITY, TYPICAL_PAGE_WIDTH } from "../../../constants";
 import { locations } from "../../../routing/locations";
 import { styled } from "../../../util/styled";
 import { Container } from "../../layout/Container";
 import { Flex } from "../../layout/Flex";
-import { GridWrap } from "../../layout/GridWrap";
+import { Flow } from "../../layout/Flow";
 import { Item } from "../../layout/Item";
 import { DarkContainer } from "../DarkContainer";
 import { LightContainer } from "../LightContainer";
@@ -22,7 +22,7 @@ export class Footer extends React.PureComponent<Props> {
     const footer = (
       <Flex gap={64} layout="column">
         <Item>
-          <GridWrap gap={64}>
+          <Flow gap={64} rowGap={64}>
             <Item>
               <FooterList
                 heading="Use cases"
@@ -67,7 +67,7 @@ export class Footer extends React.PureComponent<Props> {
                 ]}
               />
             </Item>
-          </GridWrap>
+          </Flow>
         </Item>
         <Item>
           <Flex gap={8} layout="column">
@@ -84,7 +84,7 @@ export class Footer extends React.PureComponent<Props> {
 
     if (dark) {
       return (
-        <DarkContainer>
+        <DarkContainer horizontalPadding={0} verticalPadding={0}>
           <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={64}>
             {footer}
           </Container>
@@ -94,7 +94,7 @@ export class Footer extends React.PureComponent<Props> {
       return (
         <>
           <Wave color={COLORS.p04} />
-          <LightContainer backgroundColor={COLORS.p04}>
+          <LightContainer backgroundColor={COLORS.p04} horizontalPadding={0} verticalPadding={0}>
             <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={64}>
               {footer}
             </Container>
@@ -108,5 +108,5 @@ const FooterFinePrint = styled("p", {
   color: "inherit",
   fontSize: "12px",
   fontWeight: 500,
-  opacity: 0.6
+  opacity: LIGHT_TEXT_OPACITY
 });

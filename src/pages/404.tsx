@@ -5,7 +5,7 @@ import { Container } from "../components/layout/Container";
 import { Flex } from "../components/layout/Flex";
 import { Flow } from "../components/layout/Flow";
 import { Item } from "../components/layout/Item";
-import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../constants";
+import { COLORS, LIGHT_TEXT_OPACITY, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../constants";
 import { locations } from "../routing/locations";
 
 export default class extends React.PureComponent {
@@ -22,7 +22,7 @@ export default class extends React.PureComponent {
                 <h1>Sorry, this page doesn’t exist.</h1>
               </Item>
               <Item>
-                <p style={{ opacity: 0.6 }}>
+                <p style={{ opacity: LIGHT_TEXT_OPACITY }}>
                   It may have been moved or deleted. Check the URL is correct in the address bar. Get in touch with us if you
                   continue to have issues.
                 </p>

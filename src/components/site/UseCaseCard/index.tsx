@@ -18,7 +18,7 @@ export class UseCaseCard extends React.PureComponent<Props> {
     const { image, location, text } = this.props;
     return (
       <LocationLink className={linkClassName} location={location}>
-        <Flex gap={24}>
+        <Flex alignItems="center" gap={24}>
           <Item style={{ flexGrow: 0 }}>{image}</Item>
           <Item style={{ minWidth: 0 }}>
             <Flex gap={8} layout="column">

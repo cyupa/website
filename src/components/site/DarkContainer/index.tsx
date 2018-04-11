@@ -1,5 +1,5 @@
 import * as React from "react";
-import { COLORS, TYPICAL_VERTICAL_GAP } from "../../../constants";
+import { COLORS, LIGHT_TEXT_OPACITY, TYPICAL_VERTICAL_GAP } from "../../../constants";
 import { styledViaProps } from "../../../util/styled";
 import { Container } from "../../layout/Container";
 
@@ -40,7 +40,7 @@ const Wrapper = styledViaProps(
         color: COLORS.p60
       },
       p: {
-        opacity: 0.6
+        opacity: LIGHT_TEXT_OPACITY
       }
     }
   })

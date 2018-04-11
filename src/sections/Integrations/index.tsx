@@ -31,7 +31,7 @@ export class Integrations extends React.PureComponent {
     return (
       // Since we’re using this as an “Illustration” in FeautureHeroLarge
       // We want it to line up with the other illustrations which are not full bleed
-      <div style={{ margin: "24px 0" }}>
+      <div style={{ margin: "64px 0" }}>
         <GridWrap gap={64} justifyContent="center">
           <Item>
             <IntegrationBuffer />
