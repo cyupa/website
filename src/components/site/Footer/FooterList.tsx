@@ -49,7 +49,7 @@ const linkClassName = style({
   fontSize: "14px",
 
   $nest: {
-    "&:hover": {
+    "&:focus, &:hover": {
       textDecoration: "underline"
     }
   }

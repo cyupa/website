@@ -19,7 +19,7 @@ export class Footer extends React.PureComponent {
           <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={64}>
             <Flex gap={64} layout="column">
               <Item>
-                <GridWrap gap={96}>
+                <GridWrap gap={64}>
                   <Item>
                     <FooterList
                       heading="Use cases"
@@ -36,8 +36,8 @@ export class Footer extends React.PureComponent {
                       heading="Useful links"
                       items={[
                         { label: "Home", location: locations.home() },
-                        { label: "Features", location: locations.features() },
                         { label: "Pricing", location: locations.pricing() },
+                        { label: "All features", location: locations.features() },
                         { label: "Support", location: locations.help() }
                       ]}
                     />
@@ -46,10 +46,10 @@ export class Footer extends React.PureComponent {
                     <FooterList
                       heading="Resources"
                       items={[
-                        { label: "Guides", location: locations.guides() },
-                        { label: "Privacy", location: locations.legal() },
-                        { label: "Security", location: locations.security() },
-                        { label: "Terms", location: locations.legal() }
+                        { label: "Research guides", location: locations.guides() },
+                        { label: "Privacy Policy", location: locations.legal() },
+                        { label: "Terms of Service", location: locations.legal() },
+                        { label: "Security", location: locations.security() }
                       ]}
                     />
                   </Item>
@@ -57,8 +57,8 @@ export class Footer extends React.PureComponent {
                     <FooterList
                       heading="Company"
                       items={[
-                        { label: "About", location: locations.about() },
-                        { label: "Press", location: locations.press() },
+                        { label: "About us", location: locations.about() },
+                        { label: "Press kit", location: locations.press() },
                         { label: "Blog", location: locations.blog() },
                         { label: "Slack", location: locations.slack() }
                       ]}
