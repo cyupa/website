@@ -10,6 +10,7 @@ import { Item } from "../../components/layout/Item";
 import { UseCaseCard } from "../../components/site/UseCaseCard";
 import { MediaToggle } from "../../components/util/MediaToggle";
 import { BREAKPOINT_TABLET, TYPICAL_VERTICAL_GAP } from "../../constants";
+import { locations } from "../../routing/locations";
 
 interface Props {
   showTitle?: boolean;
@@ -25,10 +26,18 @@ export class UseCases extends React.PureComponent<Props> {
         narrow={<Grid gap={32} gridTemplateColumns="1fr" />}
         wide={<Grid gap={32} gridTemplateColumns="1fr 1fr" />}
       >
-        <UseCaseCard image={<PictogramFeedback />} location="/product/customer-feedback" text="Customer feedback management" />
-        <UseCaseCard image={<PictogramRepository />} location="/product/research-repository" text="User research repository" />
-        <UseCaseCard image={<PictogramQda />} location="/product/qda" text="Qualitative data analysis" />
-        <UseCaseCard image={<PictogramResearch />} location="/product/user-research" text="Collaborative user research" />
+        <UseCaseCard
+          image={<PictogramFeedback />}
+          location={locations.customerFeedback()}
+          text="Customer feedback management"
+        />
+        <UseCaseCard
+          image={<PictogramRepository />}
+          location={locations.researchRepository()}
+          text="User research repository"
+        />
+        <UseCaseCard image={<PictogramQda />} location={locations.qualitativeDataAnalysis()} text="Qualitative data analysis" />
+        <UseCaseCard image={<PictogramResearch />} location={locations.userResearch()} text="Collaborative user research" />
       </MediaToggle>
     );
 

@@ -1,6 +1,7 @@
 import * as React from "react";
 import { COLORS } from "../../../constants";
-import { Button } from "../../forms/Button";
+import { locations } from "../../../routing/locations";
+import { ButtonLink } from "../../forms/ButtonLink";
 import { TextInput } from "../../forms/TextInput";
 import { Center } from "../../layout/Center";
 import { Flex } from "../../layout/Flex";
@@ -18,9 +19,9 @@ export class SignupWithEmail extends React.PureComponent {
                 <TextInput placeholder="you@company.com" />
               </Item>
               <Item style={{ flexGrow: 0 }}>
-                <Button color={COLORS.purple} onClick={() => {}}>
+                <ButtonLink color={COLORS.purple} location={locations.signUp()}>
                   Try now for free
-                </Button>
+                </ButtonLink>
               </Item>
             </Flex>
           </Item>

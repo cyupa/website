@@ -1,7 +1,7 @@
-import Link from "gatsby-link";
 import * as React from "react";
 import { extend, media } from "typestyle";
 import { BREAKPOINT_TABLET, LIGHT_TEXT_OPACITY } from "../../../constants";
+import { LocationDescriptor, locations } from "../../../routing/locations";
 import { styledViaProps } from "../../../util/styled";
 import { Flex } from "../../layout/Flex";
 import { Item } from "../../layout/Item";
@@ -13,14 +13,15 @@ const GAP = "72px";
 interface Props {
   image: React.ReactNode;
   imagePosition?: "left" | "right";
-  location?: string;
+  location?: LocationDescriptor;
+  linkText?: string;
   text: string;
   title: string;
 }
 
 export class FeatureHero extends React.PureComponent<Props> {
   public render() {
-    const { image, imagePosition = "right", location, text, title } = this.props;
+    const { image, imagePosition = "right", location, linkText = "Try free for 14 days", text, title } = this.props;
     return (
       <Wrapper imagePosition={imagePosition}>
         <Text imagePosition={imagePosition}>
@@ -31,10 +32,8 @@ export class FeatureHero extends React.PureComponent<Props> {
             <Item>
               <p style={{ opacity: LIGHT_TEXT_OPACITY }}>{text}</p>
             </Item>
-            <Item>
-              <Link to={location !== undefined ? location : "/users/sign_up"}>
-                <ActionTextWithArrow text={location !== undefined ? "Learn more" : "Try free for 14 days"} />
-              </Link>
+            <Item style={{ marginLeft: "-8px" }}>
+              <ActionTextWithArrow location={location !== undefined ? location : locations.signUp()} text={linkText} />
             </Item>
           </Flex>
         </Text>

@@ -5,6 +5,7 @@ import { Item } from "../../components/layout/Item";
 import { FeatureHero } from "../../components/site/FeatureHero";
 import { Features } from "../../components/site/Features";
 import { TYPICAL_VERTICAL_GAP } from "../../constants";
+import { locations } from "../../routing/locations";
 
 export class Security extends React.PureComponent {
   public render() {
@@ -14,7 +15,7 @@ export class Security extends React.PureComponent {
           <FeatureHero
             image={<IllustrationSecurity />}
             imagePosition="right"
-            location="/product/security"
+            location={locations.security()}
             text="Dovetail is built on modern cloud infrastructure with security features designed to ensure the safety of your data."
             title="We take your privacy and security seriously."
           />

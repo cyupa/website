@@ -2,7 +2,7 @@ import * as React from "react";
 import { COLORS } from "../../../constants";
 import { locations } from "../../../routing/locations";
 import { styledViaProps } from "../../../util/styled";
-import { Button } from "../../forms/Button";
+import { ButtonLink } from "../../forms/ButtonLink";
 import { SubtleButton } from "../../forms/SubtleButton";
 import { SubtleButtonLink } from "../../forms/SubtleButtonLink";
 import IconChevronDown from "../../icons/feather/IconChevronDown";
@@ -79,9 +79,9 @@ export class Header extends React.PureComponent<Props> {
                       </Flex>
                     </Item>
                     <Item>
-                      <Button color={!dark ? COLORS.purple : COLORS.p80} height={32} onClick={() => {}}>
+                      <ButtonLink color={!dark ? COLORS.purple : COLORS.p80} height={32} location={locations.signUp()}>
                         Sign up
-                      </Button>
+                      </ButtonLink>
                     </Item>
                   </Flex>
                 </Hide>

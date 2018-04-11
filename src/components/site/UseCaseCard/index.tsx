@@ -1,14 +1,15 @@
-import Link from "gatsby-link";
 import * as React from "react";
 import { style } from "typestyle";
 import { BORDER_RADIUS, BOX_SHADOW_FOCUS, COLORS } from "../../../constants";
+import { LocationLink } from "../../../routing/LocationLink";
+import { LocationDescriptor } from "../../../routing/locations";
 import { Flex } from "../../layout/Flex";
 import { Item } from "../../layout/Item";
 import { ActionTextWithArrow } from "../../util/ActionTextWithArrow";
 
 interface Props {
   image: React.ReactNode;
-  location: string;
+  location: LocationDescriptor;
   text: string;
 }
 
@@ -16,7 +17,7 @@ export class UseCaseCard extends React.PureComponent<Props> {
   public render() {
     const { image, location, text } = this.props;
     return (
-      <Link className={linkClassName} to={location}>
+      <LocationLink className={linkClassName} location={location}>
         <Flex gap={24}>
           <Item style={{ flexGrow: 0 }}>{image}</Item>
           <Item style={{ minWidth: 0 }}>
@@ -32,13 +33,13 @@ export class UseCaseCard extends React.PureComponent<Props> {
               >
                 {text}
               </Item>
-              <Item style={{ color: COLORS.purple }}>
+              <Item style={{ color: COLORS.purple, fontWeight: 500 }}>
                 <ActionTextWithArrow />
               </Item>
             </Flex>
           </Item>
         </Flex>
-      </Link>
+      </LocationLink>
     );
   }
 }
