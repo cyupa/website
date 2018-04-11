@@ -1,5 +1,6 @@
 import * as React from "React";
 import { Helmet } from "react-helmet";
+import { Footer } from "../components/site/Footer";
 import { Header } from "../components/site/Header";
 import { COLORS } from "../constants";
 import "../globalstyles";
@@ -22,6 +23,7 @@ export default class extends React.PureComponent<Props> {
         </Helmet>
         <Header dark />
         <Site>{this.props.children()}</Site>
+        <Footer dark />
       </>
     );
   }
@@ -30,7 +32,6 @@ export default class extends React.PureComponent<Props> {
 const Site = styled("div", {
   backgroundColor: COLORS.indigo,
   color: COLORS.white,
-  height: "calc(100vh - 64px)",
   position: "relative",
   overflow: "hidden"
 });

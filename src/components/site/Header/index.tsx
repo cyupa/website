@@ -34,9 +34,11 @@ export class Header extends React.PureComponent<Props> {
         <Wrapper dark={dark}>
           <Justify>
             <Item>
-              <SubtleButtonLink height={40} location={locations.home()}>
-                <DovetailLogo color={!dark ? COLORS.purple : COLORS.white} />
-              </SubtleButtonLink>
+              <Color dark={dark}>
+                <SubtleButtonLink height={40} location={locations.home()}>
+                  <DovetailLogo color={dark ? COLORS.white : COLORS.purple} />
+                </SubtleButtonLink>
+              </Color>
             </Item>
             <Item>
               <Hide device="tablet">
@@ -47,14 +49,16 @@ export class Header extends React.PureComponent<Props> {
                         <FlipFlop>
                           {({ active, toggle }) => (
                             <>
-                              <SubtleButton id="UseCasesDropdown" onClick={toggle}>
-                                <Flow gap={4}>
-                                  <Item>Use cases</Item>
-                                  <Item>
-                                    <IconChevronDown />
-                                  </Item>
-                                </Flow>
-                              </SubtleButton>
+                              <Color dark={dark}>
+                                <SubtleButton id="UseCasesDropdown" onClick={toggle}>
+                                  <Flow gap={4}>
+                                    <Item>Use cases</Item>
+                                    <Item>
+                                      <IconChevronDown />
+                                    </Item>
+                                  </Flow>
+                                </SubtleButton>
+                              </Color>
                               {active ? (
                                 <Portal>
                                   <Layer align="right" onDismissAttempt={toggle} parentId="UseCasesDropdown">
@@ -67,13 +71,19 @@ export class Header extends React.PureComponent<Props> {
                         </FlipFlop>
                       </Item>
                       <Item>
-                        <SubtleButtonLink location={locations.pricing()}>Pricing</SubtleButtonLink>
+                        <Color dark={dark}>
+                          <SubtleButtonLink location={locations.pricing()}>Pricing</SubtleButtonLink>
+                        </Color>
                       </Item>
                       <Item>
-                        <SubtleButtonLink location={locations.help()}>Support</SubtleButtonLink>
+                        <Color dark={dark}>
+                          <SubtleButtonLink location={locations.help()}>Support</SubtleButtonLink>
+                        </Color>
                       </Item>
                       <Item>
-                        <SubtleButtonLink location={locations.logIn()}>Log in</SubtleButtonLink>
+                        <Color dark={dark}>
+                          <SubtleButtonLink location={locations.logIn()}>Log in</SubtleButtonLink>
+                        </Color>
                       </Item>
                     </Flex>
                   </Item>
@@ -111,5 +121,20 @@ const Wrapper = styledViaProps(
     backgroundColor: dark ? COLORS.indigo : COLORS.white,
     color: COLORS.i60,
     padding: "12px 24px"
+  })
+);
+
+const Color = styledViaProps(
+  "div",
+  ({ dark }: { dark: boolean }) => JSON.stringify({ dark }),
+  ({ dark }) => ({
+    color: dark ? COLORS.white : COLORS.i60,
+    opacity: dark ? 0.8 : 1.0,
+
+    $nest: {
+      "&:hover": {
+        opacity: 1.0
+      }
+    }
   })
 );

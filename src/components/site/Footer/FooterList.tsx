@@ -38,7 +38,6 @@ export class FooterList extends React.PureComponent<Props> {
 }
 
 const Heading = styled("h5", {
-  color: COLORS.indigo,
   fontSize: "14px",
   fontWeight: 500,
   margin: 0

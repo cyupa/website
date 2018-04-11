@@ -5,7 +5,7 @@ import { Container } from "../components/layout/Container";
 import { Flex } from "../components/layout/Flex";
 import { Flow } from "../components/layout/Flow";
 import { Item } from "../components/layout/Item";
-import { COLORS, TYPICAL_PAGE_WIDTH } from "../constants";
+import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../constants";
 import { locations } from "../routing/locations";
 
 export default class extends React.PureComponent {
@@ -13,10 +13,10 @@ export default class extends React.PureComponent {
     return (
       <>
         <Helmet>
-          <title>Dovetail – 404 page not found</title>
+          <title>Dovetail – 404</title>
         </Helmet>
-        <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={0}>
-          <div style={{ marginTop: "96px", maxWidth: "416px" }}>
+        <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
+          <div style={{ marginTop: "32px", maxWidth: "416px" }}>
             <Flex gap={40} layout="column">
               <Item>
                 <h1>Sorry, this page doesn’t exist.</h1>

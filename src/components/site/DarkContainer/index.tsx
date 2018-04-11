@@ -37,7 +37,7 @@ const Wrapper = styledViaProps(
 
     $nest: {
       a: {
-        color: COLORS.b60
+        color: COLORS.p60
       }
     }
   })
