@@ -10,7 +10,7 @@ import { locations } from "../../routing/locations";
 export class Security extends React.PureComponent {
   public render() {
     return (
-      <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+      <Flex gap={TYPICAL_VERTICAL_GAP / 2} layout="column">
         <Item>
           <FeatureHero
             image={<IllustrationSecurity />}
