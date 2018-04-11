@@ -16,7 +16,8 @@ export class Security extends React.PureComponent {
             image={<IllustrationSecurity />}
             imagePosition="right"
             location={locations.security()}
-            text="Dovetail is built on modern cloud infrastructure with security features designed to ensure the safety of your data."
+            linkText="Learn more"
+            text="Dovetail is built on modern cloud infrastructure with privacy and security features designed to ensure the safety of your data."
             title="We take your privacy and security seriously."
           />
         </Item>

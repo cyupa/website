@@ -38,6 +38,9 @@ const Wrapper = styledViaProps(
     $nest: {
       a: {
         color: COLORS.p60
+      },
+      p: {
+        opacity: 0.6
       }
     }
   })
