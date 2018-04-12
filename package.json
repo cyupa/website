@@ -32,10 +32,11 @@
       "json"
     ],
     "moduleNameMapper": {
+      ".*\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/.jest/imageMock.tsx",
       "@heydovetail/website/(.*)": "<rootDir>/src/$1"
     },
     "setupFiles": [
-      "./.jest/setup.tsx"
+      "<rootDir>/.jest/setup.tsx"
     ],
     "testRegex": "src/.*(/__specs__/.*|\\.spec)\\.tsx?$",
     "transform": {
