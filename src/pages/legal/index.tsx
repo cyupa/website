@@ -11,6 +11,7 @@ import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../../constants";
 import { legalCategories } from "../../util/categories";
 
 interface Props {
+  // tslint:disable-next-line:no-any
   data: any;
 }
 
