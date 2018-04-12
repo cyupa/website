@@ -40,7 +40,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationNotes />}
+                    image={<IllustrationNotes size="100%" />}
                     imagePosition="right"
                     text="Take interview notes and testing observations directly in our rich text editor. Keep your notes, tags, and insights together in one place."
                     title="Centralize user research notes."
@@ -48,7 +48,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationFiles />}
+                    image={<IllustrationFiles size="100%" />}
                     imagePosition="left"
                     text="Drag &amp; drop photos, screenshots, audio recordings, videos, and more into notes and keep the context around the file."
                     title="Store images, audio, video, and more."
@@ -56,7 +56,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHeroLarge
-                    image={<IllustrationBoardLarge />}
+                    image={<IllustrationBoardLarge size="100%" />}
                     text="Use a drag &amp; drop board to organize your research notes, tags, insights, and files."
                     title="Organize everything on an intuitive board."
                   />
@@ -81,7 +81,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationProjectsResearch />}
+                    image={<IllustrationProjectsResearch size="100%" />}
                     imagePosition="left"
                     text="Split research into projects with self-contained notes, tags, and insights. Archive projects when they’re completed to let everyone know."
                     title="Use projects for  research initiatives."
@@ -89,7 +89,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationBarChart />}
+                    image={<IllustrationBarChart size="100%" />}
                     imagePosition="right"
                     text="Tag patterns across your data. Visualize your research with beautiful charts, ready to drop into your presentation."
                     title="Understand your project at a glance."
@@ -97,7 +97,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationInsights />}
+                    image={<IllustrationInsights size="100%" />}
                     imagePosition="left"
                     text="Create insights during the analysis process and store them with the source material. Learn from other projects and past research."
                     title="Summarize your  research with insights."
@@ -131,7 +131,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationTeam />}
+                    image={<IllustrationTeam size="100%" />}
                     imagePosition="right"
                     text="Invite as many people as you like to create projects, collaborate on research analysis, and consume your research insights."
                     title="Collaborate in the cloud, not on a network drive."

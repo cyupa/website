@@ -41,7 +41,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationEditor />}
+                    image={<IllustrationEditor size="100%" />}
                     imagePosition="right"
                     text="Identify patterns across qualitative data with our rich text document editor. Select text and quickly annotate sentences with tags."
                     title="Add inline tags to qualitative data."
@@ -55,7 +55,7 @@ export default class extends React.PureComponent {
               <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
                 <Item>
                   <FeatureHeroLarge
-                    image={<IllustrationAnnotationsResearch />}
+                    image={<IllustrationAnnotationsResearch size="100%" />}
                     text="View any tag to see a reverse view showing all the tagged text."
                     title="See all of your annotations in one view."
                   />
@@ -68,7 +68,7 @@ export default class extends React.PureComponent {
               <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
                 <Item>
                   <FeatureHero
-                    image={<IllustrationAnnotationEdit />}
+                    image={<IllustrationAnnotationEdit size="100%" />}
                     imagePosition="left"
                     text="Refactor your tag system as you go. Select multiple annotations and add, replace, or remove tags in a few clicks."
                     title="Manage tags with powerful bulk editing."
@@ -94,7 +94,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationFiles />}
+                    image={<IllustrationFiles size="100%" />}
                     imagePosition="right"
                     text="Drag &amp; drop photos, screenshots, audio recordings, videos, and more into notes and keep the context around the file."
                     title="Import images, audio, and video files."
@@ -102,14 +102,14 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHeroLarge
-                    image={<IllustrationBoardLarge />}
+                    image={<IllustrationBoardLarge size="100%" />}
                     text="Use a drag & drop board to organize your research notes, tags, insights, and files."
                     title="Organize everything on an intuitive board."
                   />
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationProjectsResearch />}
+                    image={<IllustrationProjectsResearch size="100%" />}
                     imagePosition="left"
                     text="Split research into projects with self-contained notes, tags, and insights. Archive projects when they’re completed to let everyone know."
                     title="Use projects for  research initiatives."
@@ -135,7 +135,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationImport />}
+                    image={<IllustrationImport size="100%" />}
                     imagePosition="right"
                     text="Upload a spreadsheet to quickly create notes, tags, or insights. Import images, audio, and video with our bulk file uploader."
                     title="Upload a spreadsheet of data to analyze."
@@ -143,7 +143,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationBarChart />}
+                    image={<IllustrationBarChart size="100%" />}
                     imagePosition="left"
                     text="Visualize and filter your tags with beautiful charts, ready to screenshot and drop into your research presentation."
                     title="Understand your research at a glance."
@@ -151,7 +151,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationInsights />}
+                    image={<IllustrationInsights size="100%" />}
                     imagePosition="right"
                     text="Create insights during the analysis process and store them with the source material. Learn from other projects and past research."
                     title="Summarize your  research with insights."

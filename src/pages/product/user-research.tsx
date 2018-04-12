@@ -39,7 +39,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationRealtime />}
+                    image={<IllustrationRealtime size="100%" />}
                     imagePosition="right"
                     text="Take notes with your teammates during customer interviews &amp; user testing sessions and tag sentences as you go."
                     title="Collaborate on research notes in real time."
@@ -47,14 +47,14 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHeroLarge
-                    image={<IllustrationBoardLarge />}
+                    image={<IllustrationBoardLarge size="100%" />}
                     text="Use a drag &amp; drop board to organize your research notes, tags, insights, and files."
                     title="Keep everyone in sync with a research board."
                   />
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationProjectsResearch />}
+                    image={<IllustrationProjectsResearch size="100%" />}
                     imagePosition="right"
                     text="Split research into projects with self-contained notes, tags, and insights. Archive projects when they’re completed to let everyone know."
                     title="Learn from other research projects."
@@ -86,7 +86,7 @@ export default class extends React.PureComponent {
               <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
                 <Item>
                   <FeatureHero
-                    image={<IllustrationTeam />}
+                    image={<IllustrationTeam size="100%" />}
                     imagePosition="right"
                     text="Invite as many people as you like to join your team, contribute to notes, collaborate on analysis, and consume your insights."
                     title="Get everyone onboard."
@@ -118,7 +118,7 @@ export default class extends React.PureComponent {
               <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
                 <Item>
                   <FeatureHero
-                    image={<IllustrationEditor />}
+                    image={<IllustrationEditor size="100%" />}
                     imagePosition="right"
                     text="Identify patterns across qualitative data with our rich text document editor. Select text and quickly annotate sentences with tags."
                     title="Add inline tags to qualitative data."
@@ -126,14 +126,14 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHeroLarge
-                    image={<IllustrationAnnotationsResearch />}
+                    image={<IllustrationAnnotationsResearch size="100%" />}
                     text="View any tag to see a reverse view showing all the tagged text."
                     title="See all of your annotations in one view."
                   />
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationBarChart />}
+                    image={<IllustrationBarChart size="100%" />}
                     imagePosition="left"
                     text="Tag patterns across your data. Visualize your research with beautiful charts, ready to drop into your presentation."
                     title="Understand your research at a glance."
