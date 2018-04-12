@@ -1,5 +1,5 @@
 import { BORDER_RADIUS, COLORS } from "@heydovetail/website/constants";
-import { styledViaProps } from "../../../util/styled";
+import { styledViaProps } from "@heydovetail/website/util/styled";
 
 export const Card = styledViaProps(
   "div",
