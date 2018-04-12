@@ -16,7 +16,7 @@ exports.onCreatePage = async ({ page, boundActionCreators }) => {
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
-  const template = path.resolve(`src/templates/documentation.tsx`);
+  const template = path.resolve(`src/templates/document.tsx`);
 
   return graphql(`
     {

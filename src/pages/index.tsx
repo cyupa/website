@@ -38,7 +38,7 @@ export default class extends React.PureComponent {
           </Item>
           <Item>
             <FeatureHero
-              image={<IllustrationLineChart />}
+              image={<IllustrationLineChart size="100%" />}
               imagePosition="right"
               location={locations.customerFeedback()}
               linkText="Learn more"
@@ -48,7 +48,7 @@ export default class extends React.PureComponent {
           </Item>
           <Item>
             <FeatureHero
-              image={<IllustrationBoard />}
+              image={<IllustrationBoard size="100%" />}
               imagePosition="left"
               location={locations.researchRepository()}
               linkText="Learn more"
@@ -58,7 +58,7 @@ export default class extends React.PureComponent {
           </Item>
           <Item>
             <FeatureHero
-              image={<IllustrationBarChart />}
+              image={<IllustrationBarChart size="100%" />}
               imagePosition="right"
               location={locations.qualitativeDataAnalysis()}
               linkText="Learn more"
@@ -68,7 +68,7 @@ export default class extends React.PureComponent {
           </Item>
           <Item>
             <FeatureHero
-              image={<IllustrationTeam />}
+              image={<IllustrationTeam size="100%" />}
               imagePosition="left"
               location={locations.userResearch()}
               linkText="Learn more"

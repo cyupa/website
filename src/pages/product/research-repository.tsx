@@ -159,7 +159,7 @@ export default class extends React.PureComponent {
             </LightContainer>
           </Item>
           <Item>
-            <Wave />
+            <Wave size="100%" />
             <DarkContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
               <Security />
             </DarkContainer>

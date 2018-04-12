@@ -48,7 +48,7 @@ export class Security extends React.PureComponent {
       <Flex gap={TYPICAL_VERTICAL_GAP / 2} layout="column">
         <Item>
           <FeatureHero
-            image={<IllustrationSecurity />}
+            image={<IllustrationSecurity size="100%" />}
             imagePosition="right"
             location={locations.security()}
             linkText="Learn more"

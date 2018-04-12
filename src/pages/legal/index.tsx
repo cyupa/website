@@ -8,7 +8,7 @@ import { Masonry } from "../../components/layout/Masonry";
 import { HeroText } from "../../components/site/HeroText";
 import { PageGroup } from "../../components/site/PageGroup";
 import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../../constants";
-import { helpCategories } from "../../util/categories";
+import { legalCategories } from "../../util/categories";
 
 interface Props {
   data: any;
@@ -29,10 +29,7 @@ export default class extends React.PureComponent<Props> {
             <Item>
               <Flex gap={24} layout="column">
                 <Item>
-                  <HeroText
-                    title="Help and support"
-                    text="Running into problems? Browse our help articles below or contact us."
-                  />
+                  <HeroText title="Terms and Policies" text="One place for our legal documentation and policies." />
                 </Item>
               </Flex>
             </Item>
@@ -47,7 +44,7 @@ export default class extends React.PureComponent<Props> {
                         title: edge.node.frontmatter.title,
                         path: edge.node.frontmatter.path
                       }))}
-                      title={helpCategories[category]}
+                      title={legalCategories[category]}
                     />
                   )
                 }))}
@@ -62,10 +59,10 @@ export default class extends React.PureComponent<Props> {
 }
 
 export const pageQuery = graphql`
-  query HelpIndexQuery {
+  query LegalIndexQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { fileAbsolutePath: { regex: "/(help)/.*\\.md$/" } }
+      filter: { fileAbsolutePath: { regex: "/(legal)/.*\\.md$/" } }
     ) {
       edges {
         node {

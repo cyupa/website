@@ -2,7 +2,7 @@ import * as React from "react";
 import { extend, media } from "typestyle";
 import { BREAKPOINT_TABLET, LIGHT_TEXT_OPACITY } from "../../../constants";
 import { LocationDescriptor, locations } from "../../../routing/locations";
-import { styledViaProps } from "../../../util/styled";
+import { styled, styledViaProps } from "../../../util/styled";
 import { Flex } from "../../layout/Flex";
 import { Item } from "../../layout/Item";
 import { ActionTextWithArrow } from "../../util/ActionTextWithArrow";
@@ -37,7 +37,7 @@ export class FeatureHero extends React.PureComponent<Props> {
             </Item>
           </Flex>
         </Text>
-        {image}
+        <Image>{image}</Image>
       </Wrapper>
     );
   }
@@ -68,9 +68,23 @@ const Text = styledViaProps(
   ({ imagePosition }) =>
     extend(
       {
+        maxWidth: "360px",
         marginLeft: imagePosition === "left" ? GAP : undefined,
         marginRight: imagePosition === "right" ? GAP : undefined
       },
-      media({ maxWidth: BREAKPOINT }, { margin: `${GAP} 0 0 0` })
+      media({ maxWidth: BREAKPOINT }, { margin: `${GAP} 0 0 0`, maxWidth: "100%" })
     )
+);
+
+const Image = styled(
+  "div",
+  {
+    minWidth: "400px"
+  },
+  media(
+    { maxWidth: BREAKPOINT },
+    {
+      minWidth: "100%"
+    }
+  )
 );

@@ -48,7 +48,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationForm />}
+                    image={<IllustrationForm size="100%" />}
                     imagePosition="left"
                     text="Create a feedback form and get feedback directly from users. Theme it to match your brand without needing a developer."
                     title="Customize your own feedback form."
@@ -76,12 +76,12 @@ export default class extends React.PureComponent {
             </LightContainer>
           </Item>
           <Item>
-            <Wave />
+            <Wave size="100%" />
             <DarkContainer maxWidth={TYPICAL_PAGE_WIDTH} overflowBottom verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
               <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
                 <Item>
                   <FeatureHero
-                    image={<IllustrationSentimentText />}
+                    image={<IllustrationSentimentText size="100%" />}
                     imagePosition="right"
                     text="Dovetail automatically analyzes the sentiment of incoming customer feedback and applies the relevant tags for you at the sentence level."
                     title="Automatically analyze feedback sentiment."
@@ -89,7 +89,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationSentimentChart />}
+                    image={<IllustrationSentimentChart size="100%" />}
                     imagePosition="left"
                     text="Keep track of changes in customer satisfaction and anticipate popular feature requests with powerful historical charts."
                     title="Measure changes in feedback over time."
@@ -146,7 +146,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationBoard />}
+                    image={<IllustrationBoard size="100%" />}
                     imagePosition="right"
                     text="Use a Trello-style Kanban board to organize your customer feedback. Drag &amp; drop to reorder or automatically sort lists in a single click."
                     title="Organize everything on an intuitive board."
@@ -172,7 +172,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationProjectsFeedback />}
+                    image={<IllustrationProjectsFeedback size="100%" />}
                     imagePosition="left"
                     text="Split feedback into projects and share them with the rest of the organization. Archive old projects when they’re no longer relevant."
                     title="Create projects to organize feedback."
@@ -180,7 +180,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationTeam />}
+                    image={<IllustrationTeam size="100%" />}
                     imagePosition="right"
                     text="Invite as many people as you like to browse feedback, collaborate on analysis, and consume insights with the original context."
                     title="Get customer feedback in front of your team."
@@ -208,7 +208,7 @@ export default class extends React.PureComponent {
             </LightContainer>
           </Item>
           <Item>
-            <Wave />
+            <Wave size="100%" />
             <DarkContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
               <Security />
             </DarkContainer>

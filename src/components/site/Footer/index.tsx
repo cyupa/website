@@ -23,7 +23,7 @@ export class Footer extends React.PureComponent<Props> {
       <Flex gap={64} layout="column">
         <Item>
           <Flow gap={64} rowGap={64}>
-            <Item>
+            <Item style={{ verticalAlign: "top" }}>
               <FooterList
                 heading="Use cases"
                 items={[
@@ -34,7 +34,7 @@ export class Footer extends React.PureComponent<Props> {
                 ]}
               />
             </Item>
-            <Item>
+            <Item style={{ verticalAlign: "top" }}>
               <FooterList
                 heading="Useful links"
                 items={[
@@ -45,18 +45,17 @@ export class Footer extends React.PureComponent<Props> {
                 ]}
               />
             </Item>
-            <Item>
+            <Item style={{ verticalAlign: "top" }}>
               <FooterList
                 heading="Resources"
                 items={[
                   { label: "Research guides", location: locations.guides() },
-                  { label: "Privacy Policy", location: locations.legal() },
-                  { label: "Terms of Service", location: locations.legal() },
+                  { label: "Terms and Policies", location: locations.legal() },
                   { label: "Security", location: locations.security() }
                 ]}
               />
             </Item>
-            <Item>
+            <Item style={{ verticalAlign: "top" }}>
               <FooterList
                 heading="Company"
                 items={[
@@ -93,7 +92,7 @@ export class Footer extends React.PureComponent<Props> {
     } else
       return (
         <>
-          <Wave color={COLORS.p04} />
+          <Wave color={COLORS.p04} size="100%" />
           <LightContainer backgroundColor={COLORS.p04} horizontalPadding={0} verticalPadding={0}>
             <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={64}>
               {footer}
