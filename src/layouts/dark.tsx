@@ -1,4 +1,4 @@
-import * as React from "React";
+import * as React from "react";
 import { Footer } from "../components/site/Footer";
 import { Header } from "../components/site/Header";
 import { COLORS } from "../constants";
