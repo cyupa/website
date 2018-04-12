@@ -10,7 +10,8 @@
     "precommit": "lint-staged",
     "start": "gatsby develop",
     "storybook": "ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook",
-    "test": "./node_modules/.bin/tslint -p tsconfig.json && ./node_modules/.bin/jest --runInBand && npm run build && ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook --smoke-test"
+    "test":
+      "./node_modules/.bin/tslint -p tsconfig.json && ./node_modules/.bin/jest --runInBand && npm run build && ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook --smoke-test"
   },
   "repository": {
     "type": "git",
@@ -25,23 +26,14 @@
       },
       "NODE_ENV": "test"
     },
-    "moduleFileExtensions": [
-      "js",
-      "ts",
-      "tsx",
-      "json"
-    ],
+    "moduleFileExtensions": ["js", "ts", "tsx", "json"],
     "testRegex": "src/.*(/__specs__/.*|\\.spec)\\.tsx?$",
     "transform": {
       "\\.tsx?$": "ts-jest"
     }
   },
   "lint-staged": {
-    "*.tsx": [
-      "prettier --write",
-      "tslint -p tsconfig.json --fix",
-      "git add"
-    ]
+    "*.tsx": ["prettier --write", "tslint -p tsconfig.json --fix", "git add"]
   },
   "prettier": {
     "printWidth": 128
@@ -53,6 +45,7 @@
     "@storybook/addon-storyshots": "^3.4.0",
     "@storybook/react": "^3.4.0",
     "@types/jest": "^22.2.2",
+    "@types/lodash.groupby": "^4.6.3",
     "@types/react": "^16.3.4",
     "@types/react-dom": "^16.0.4",
     "@types/react-helmet": "^5.0.5",
@@ -78,6 +71,7 @@
     "jest": "^22.4.3",
     "jest-cli": "^22.4.3",
     "lint-staged": "^7.0.0",
+    "lodash.groupby": "^4.6.0",
     "prettier": "^1.11.1",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",

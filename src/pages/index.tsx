@@ -24,7 +24,7 @@ export default class extends React.PureComponent {
           <Item>
             <Flex gap={32} layout="column">
               <Item>
-                <HeroText text="Customer feedback &amp; research software for teams." />
+                <HeroText title="Customer feedback &amp; research software for teams." />
               </Item>
               <Item>
                 <Container maxWidth={TYPICAL_PAGE_WIDTH / 2}>

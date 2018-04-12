@@ -24,7 +24,7 @@ export default function DocumentationTemplate({ data }) {
           <Breadcrumbs crumbs={[{ location: locations.help(), text: "All help articles" }, { text: frontmatter.title }]} />
           <Flex gap={24} layout="column">
             <Item>
-              <HeroText center={false} text={frontmatter.title} />
+              <HeroText center={false} title={frontmatter.title} />
             </Item>
             <Item>
               <Date>Last updated {frontmatter.date}</Date>

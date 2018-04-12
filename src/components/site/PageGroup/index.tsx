@@ -28,7 +28,7 @@ export class PageGroup extends React.PureComponent<Props> {
           </Item>
           {pages.map(page => (
             <Item>
-              <LocationLink location={internal(page.path)} presentation="text">
+              <LocationLink location={internal(page.path)} presentation="text" style={{ lineHeight: "24px" }}>
                 {page.title}
               </LocationLink>
             </Item>
@@ -40,7 +40,7 @@ export class PageGroup extends React.PureComponent<Props> {
 }
 
 const Wrapper = styled("div", {
-  backgroundColor: COLORS.white,
+  backgroundColor: COLORS.p04,
   borderRadius: BORDER_RADIUS,
   padding: "32px"
 });

@@ -20,7 +20,7 @@ export default class extends React.PureComponent {
           <div style={{ maxWidth: TYPICAL_PAGE_WIDTH / 2 }}>
             <Flex gap={40} layout="column">
               <Item>
-                <HeroText center={false} maxWidth={416} text="Sorry, this page doesn’t exist." />
+                <HeroText center={false} maxWidth={416} title="Sorry, this page doesn’t exist." />
               </Item>
               <Item>
                 <p style={{ opacity: LIGHT_TEXT_OPACITY }}>
