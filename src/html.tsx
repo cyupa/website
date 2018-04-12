@@ -33,6 +33,7 @@ class Html extends React.PureComponent<Props> {
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
           <title>Customer feedback &amp; research software for teams – Dovetail</title>
           <link rel="canonical" href="https://dovetailapp.com" />
+          <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet" />
           {headComponents}
           {css}
         </head>
