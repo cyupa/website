@@ -1,0 +1,1 @@
+export = "IMAGE_MOCK";
