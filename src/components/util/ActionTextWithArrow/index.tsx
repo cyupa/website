@@ -1,9 +1,9 @@
+import { SubtleButtonLink } from "@heydovetail/website/components/forms/SubtleButtonLink";
+import IconArrowRightMini from "@heydovetail/website/components/icons/feather/IconArrowRightMini";
+import { Flow } from "@heydovetail/website/components/layout/Flow";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { LocationDescriptor } from "@heydovetail/website/routing/locations";
 import * as React from "react";
-import { LocationDescriptor } from "../../../routing/locations";
-import { SubtleButtonLink } from "../../forms/SubtleButtonLink";
-import IconArrowRightMini from "../../icons/feather/IconArrowRightMini";
-import { Flow } from "../../layout/Flow";
-import { Item } from "../../layout/Item";
 
 interface Props {
   location?: LocationDescriptor;

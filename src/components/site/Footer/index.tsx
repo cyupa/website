@@ -1,11 +1,11 @@
+import { Container } from "@heydovetail/website/components/layout/Container";
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Flow } from "@heydovetail/website/components/layout/Flow";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { COLORS, LIGHT_TEXT_OPACITY, TYPICAL_PAGE_WIDTH } from "@heydovetail/website/constants";
+import { locations } from "@heydovetail/website/routing/locations";
+import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
-import { COLORS, LIGHT_TEXT_OPACITY, TYPICAL_PAGE_WIDTH } from "../../../constants";
-import { locations } from "../../../routing/locations";
-import { styled } from "../../../util/styled";
-import { Container } from "../../layout/Container";
-import { Flex } from "../../layout/Flex";
-import { Flow } from "../../layout/Flow";
-import { Item } from "../../layout/Item";
 import { DarkContainer } from "../DarkContainer";
 import { LightContainer } from "../LightContainer";
 import Wave from "../Wave/Wave";

@@ -1,4 +1,4 @@
-import { storiesOf } from "@dovetailapp/website/util/stories";
+import { storiesOf } from "@heydovetail/website/util/stories";
 import { action } from "@storybook/addon-actions";
 import * as React from "react";
 import { TextInput } from "../";

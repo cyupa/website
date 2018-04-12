@@ -1,7 +1,7 @@
+import { assertReactSnapshot } from "@heydovetail/website/util/test";
 import "jest";
 import * as React from "react";
 import { TextInput } from "../";
-import { assertReactSnapshot } from "../../../../util/test";
 
 describe(TextInput.name, () => {
   describe("snapshots", () => {

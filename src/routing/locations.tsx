@@ -1,4 +1,4 @@
-import { queryBuilder } from "../util/url";
+import { queryBuilder } from "@heydovetail/website/util/url";
 
 /**
  * Represents an internal URL (i.e. one within the Dovetail application).

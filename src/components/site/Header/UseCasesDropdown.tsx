@@ -1,12 +1,12 @@
+import { Dropdown } from "@heydovetail/website/components/dropdown/Dropdown";
+import PictogramFeedback from "@heydovetail/website/components/icons/pictograms/PictogramFeedback";
+import PictogramQda from "@heydovetail/website/components/icons/pictograms/PictogramQda";
+import PictogramRepository from "@heydovetail/website/components/icons/pictograms/PictogramRepository";
+import PictogramResearch from "@heydovetail/website/components/icons/pictograms/PictogramResearch";
+import { Container } from "@heydovetail/website/components/layout/Container";
+import { Grid } from "@heydovetail/website/components/layout/Grid";
+import { locations } from "@heydovetail/website/routing/locations";
 import * as React from "react";
-import { locations } from "../../../routing/locations";
-import { Dropdown } from "../../dropdown/Dropdown";
-import PictogramFeedback from "../../icons/pictograms/PictogramFeedback";
-import PictogramQda from "../../icons/pictograms/PictogramQda";
-import PictogramRepository from "../../icons/pictograms/PictogramRepository";
-import PictogramResearch from "../../icons/pictograms/PictogramResearch";
-import { Container } from "../../layout/Container";
-import { Grid } from "../../layout/Grid";
 import { UseCase } from "./UseCase";
 
 export class UseCasesDropdown extends React.PureComponent {

@@ -1,6 +1,6 @@
+import { OnEsc } from "@heydovetail/website/components/util/OnEsc";
+import { BORDER_RADIUS, Z_INDEX_HIGH } from "@heydovetail/website/constants";
 import * as React from "react";
-import { BORDER_RADIUS, Z_INDEX_HIGH } from "../../../constants";
-import { OnEsc } from "../../util/OnEsc";
 
 interface Props {
   align: "left" | "right";

@@ -1,6 +1,6 @@
+import { LocationLink } from "@heydovetail/website/routing/LocationLink";
+import { LocationDescriptor } from "@heydovetail/website/routing/locations";
 import * as React from "react";
-import { LocationLink } from "../../../routing/LocationLink";
-import { LocationDescriptor } from "../../../routing/locations";
 import { buttonBaseStyles, SubtleButtonStyle } from "../styles";
 
 interface Props {

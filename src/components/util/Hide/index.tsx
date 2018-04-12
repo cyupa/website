@@ -1,6 +1,6 @@
+import { BREAKPOINT_PHABLET, BREAKPOINT_PHONE, BREAKPOINT_TABLET } from "@heydovetail/website/constants";
 import * as React from "react";
 import * as MediaQuery from "react-responsive";
-import { BREAKPOINT_PHABLET, BREAKPOINT_PHONE, BREAKPOINT_TABLET } from "../../../constants";
 
 interface Props {
   children: React.ReactNode;

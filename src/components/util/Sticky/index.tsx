@@ -1,8 +1,8 @@
+import { BOX_SHADOW_BORDER_LIGHTER, BOX_SHADOW_STICKY, BREAKPOINT_PHONE, Z_INDEX_LOW } from "@heydovetail/website/constants";
+import { findDomNode } from "@heydovetail/website/util/dom";
+import { styledViaProps } from "@heydovetail/website/util/styled";
 import * as React from "react";
 import { extend, media } from "typestyle";
-import { BOX_SHADOW_BORDER_LIGHTER, BOX_SHADOW_STICKY, BREAKPOINT_PHONE, Z_INDEX_LOW } from "../../../constants";
-import { findDomNode } from "../../../util/dom";
-import { styledViaProps } from "../../../util/styled";
 
 interface Props {
   stickOnMobile?: boolean;

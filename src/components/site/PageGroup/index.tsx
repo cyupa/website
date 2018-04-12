@@ -1,10 +1,10 @@
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { BORDER_RADIUS, COLORS } from "@heydovetail/website/constants";
+import { LocationLink } from "@heydovetail/website/routing/LocationLink";
+import { internal } from "@heydovetail/website/routing/locations";
+import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
-import { BORDER_RADIUS, COLORS } from "../../../constants";
-import { LocationLink } from "../../../routing/LocationLink";
-import { internal } from "../../../routing/locations";
-import { styled } from "../../../util/styled";
-import { Flex } from "../../layout/Flex";
-import { Item } from "../../layout/Item";
 
 interface Page {
   path: string;

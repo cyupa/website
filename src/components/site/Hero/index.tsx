@@ -1,12 +1,12 @@
+import { Button } from "@heydovetail/website/components/forms/Button";
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Flow } from "@heydovetail/website/components/layout/Flow";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { Hide } from "@heydovetail/website/components/util/Hide";
+import { SmallText } from "@heydovetail/website/components/util/SmallText";
+import { COLORS } from "@heydovetail/website/constants";
+import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
-import { COLORS } from "../../../constants";
-import { styled } from "../../../util/styled";
-import { Button } from "../../forms/Button";
-import { Flex } from "../../layout/Flex";
-import { Flow } from "../../layout/Flow";
-import { Item } from "../../layout/Item";
-import { Hide } from "../../util/Hide";
-import { SmallText } from "../../util/SmallText";
 
 interface Props {
   children?: React.ReactNode;

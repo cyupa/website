@@ -1,8 +1,8 @@
+import { COLORS } from "@heydovetail/website/constants";
+import { assertExhausted } from "@heydovetail/website/util/assertExhausted";
 import Link from "gatsby-link";
 import * as React from "react";
 import { style } from "typestyle";
-import { COLORS } from "../constants";
-import { assertExhausted } from "../util/assertExhausted";
 import { LocationDescriptor, url } from "./locations";
 
 interface LocationLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {

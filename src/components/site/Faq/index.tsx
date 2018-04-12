@@ -1,9 +1,9 @@
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
+import { LocationLink } from "@heydovetail/website/routing/LocationLink";
+import { LocationDescriptor } from "@heydovetail/website/routing/locations";
 import * as React from "react";
-import { LIGHT_TEXT_OPACITY } from "../../../constants";
-import { LocationLink } from "../../../routing/LocationLink";
-import { LocationDescriptor } from "../../../routing/locations";
-import { Flex } from "../../layout/Flex";
-import { Item } from "../../layout/Item";
 
 interface Props {
   answer: string;

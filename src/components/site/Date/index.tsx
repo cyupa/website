@@ -1,5 +1,5 @@
-import { BORDER_RADIUS, COLORS } from "../../../constants";
-import { styled } from "../../../util/styled";
+import { BORDER_RADIUS, COLORS } from "@heydovetail/website/constants";
+import { styled } from "@heydovetail/website/util/styled";
 
 export const Date = styled("span", {
   backgroundColor: COLORS.i04,

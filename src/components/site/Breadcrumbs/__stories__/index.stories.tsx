@@ -1,6 +1,6 @@
+import { storiesOf } from "@heydovetail/website/util/stories";
 import * as React from "react";
 import { Breadcrumbs } from "../";
-import { storiesOf } from "../../../../util/stories";
 
 storiesOf("Site/Breadcrumbs", module).add("default", () => (
   <Breadcrumbs

@@ -1,20 +1,20 @@
+import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
+import IllustrationBoard from "@heydovetail/website/components/illustrations/IllustrationBoard";
+import IllustrationLineChart from "@heydovetail/website/components/illustrations/IllustrationLineChart";
+import IllustrationTeam from "@heydovetail/website/components/illustrations/IllustrationTeam";
+import { Container } from "@heydovetail/website/components/layout/Container";
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
+import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
+import { SignupWithEmail } from "@heydovetail/website/components/site/SignupWithEmail";
+import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { locations } from "@heydovetail/website/routing/locations";
+import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
+import { SocialProof } from "@heydovetail/website/sections/SocialProof";
+import { UseCases } from "@heydovetail/website/sections/UseCases";
 import * as React from "react";
-import IllustrationBarChart from "../components/illustrations/IllustrationBarChart";
-import IllustrationBoard from "../components/illustrations/IllustrationBoard";
-import IllustrationLineChart from "../components/illustrations/IllustrationLineChart";
-import IllustrationTeam from "../components/illustrations/IllustrationTeam";
-import { Container } from "../components/layout/Container";
-import { Flex } from "../components/layout/Flex";
-import { Item } from "../components/layout/Item";
-import { FeatureHero } from "../components/site/FeatureHero";
-import { HeroText } from "../components/site/HeroText";
-import { LightContainer } from "../components/site/LightContainer";
-import { SignupWithEmail } from "../components/site/SignupWithEmail";
-import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../constants";
-import { locations } from "../routing/locations";
-import { CenteredSignUp } from "../sections/CenteredSignUp";
-import { SocialProof } from "../sections/SocialProof";
-import { UseCases } from "../sections/UseCases";
 
 export default class extends React.PureComponent {
   public render() {

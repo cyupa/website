@@ -1,11 +1,11 @@
+import { Center } from "@heydovetail/website/components/layout/Center";
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Grid } from "@heydovetail/website/components/layout/Grid";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { Testimonial } from "@heydovetail/website/components/site/Testimonial";
+import { MediaToggle } from "@heydovetail/website/components/util/MediaToggle";
+import { BREAKPOINT_TABLET, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
 import * as React from "react";
-import { Center } from "../../components/layout/Center";
-import { Flex } from "../../components/layout/Flex";
-import { Grid } from "../../components/layout/Grid";
-import { Item } from "../../components/layout/Item";
-import { Testimonial } from "../../components/site/Testimonial";
-import { MediaToggle } from "../../components/util/MediaToggle";
-import { BREAKPOINT_TABLET, TYPICAL_VERTICAL_GAP } from "../../constants";
 import { Customers } from "../Customers";
 
 export class SocialProof extends React.PureComponent {

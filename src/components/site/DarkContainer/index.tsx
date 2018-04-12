@@ -1,7 +1,7 @@
+import { Container } from "@heydovetail/website/components/layout/Container";
+import { COLORS, LIGHT_TEXT_OPACITY, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { styledViaProps } from "@heydovetail/website/util/styled";
 import * as React from "react";
-import { COLORS, LIGHT_TEXT_OPACITY, TYPICAL_VERTICAL_GAP } from "../../../constants";
-import { styledViaProps } from "../../../util/styled";
-import { Container } from "../../layout/Container";
 
 interface Props {
   horizontalPadding?: number;

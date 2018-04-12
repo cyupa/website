@@ -1,9 +1,9 @@
-import { storiesOf } from "@dovetailapp/website/util/stories";
+import IllustrationBoard from "@heydovetail/website/components/illustrations/IllustrationBoard";
+import IllustrationLineChart from "@heydovetail/website/components/illustrations/IllustrationLineChart";
+import { locations } from "@heydovetail/website/routing/locations";
+import { storiesOf } from "@heydovetail/website/util/stories";
 import * as React from "react";
 import { FeatureHero } from "../";
-import { locations } from "../../../../routing/locations";
-import IllustrationBoard from "../../../illustrations/IllustrationBoard";
-import IllustrationLineChart from "../../../illustrations/IllustrationLineChart";
 
 storiesOf("Site/FeatureHero", module)
   .add("default", () => (

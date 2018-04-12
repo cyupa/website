@@ -1,13 +1,13 @@
+import { ButtonLink } from "@heydovetail/website/components/forms/ButtonLink";
+import { Container } from "@heydovetail/website/components/layout/Container";
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Flow } from "@heydovetail/website/components/layout/Flow";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { COLORS, LIGHT_TEXT_OPACITY, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { locations } from "@heydovetail/website/routing/locations";
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import { ButtonLink } from "../components/forms/ButtonLink";
-import { Container } from "../components/layout/Container";
-import { Flex } from "../components/layout/Flex";
-import { Flow } from "../components/layout/Flow";
-import { Item } from "../components/layout/Item";
-import { HeroText } from "../components/site/HeroText";
-import { COLORS, LIGHT_TEXT_OPACITY, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../constants";
-import { locations } from "../routing/locations";
 
 export default class extends React.PureComponent {
   public render() {
