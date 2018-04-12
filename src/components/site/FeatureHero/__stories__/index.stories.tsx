@@ -1,5 +1,5 @@
+import { storiesOf } from "@dovetailapp/website/util/stories";
 import * as React from "react";
-import { storiesOf } from "src/util/stories";
 import { FeatureHero } from "../";
 import { locations } from "../../../../routing/locations";
 import IllustrationBoard from "../../../illustrations/IllustrationBoard";

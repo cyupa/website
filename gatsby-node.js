@@ -44,3 +44,15 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     });
   });
 };
+
+exports.modifyWebpackConfig = ({ config, env }) => {
+  config.merge({
+    resolve: {
+      alias: {
+        "@dovetailapp/website": path.resolve(__dirname, "./src")
+      }
+    }
+  });
+
+  return config;
+};

@@ -42,8 +42,8 @@ export class PricingCard extends React.PureComponent<Props> {
         </Price>
         <Features>
           <Flex gap={24} layout="column">
-            {features.map(feature => (
-              <Item>
+            {features.map((feature, i) => (
+              <Item key={i}>
                 <Flex alignItems="center" gap={24}>
                   <Item style={{ flexGrow: 0 }}>
                     <IconCheckCircle color={COLORS.green} />

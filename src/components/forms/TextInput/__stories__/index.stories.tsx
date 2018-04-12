@@ -1,6 +1,6 @@
+import { storiesOf } from "@dovetailapp/website/util/stories";
 import { action } from "@storybook/addon-actions";
 import * as React from "react";
-import { storiesOf } from "src/util/stories";
 import { TextInput } from "../";
 
 storiesOf("Form/TextInput", module)

@@ -1,6 +1,6 @@
+import { zeroes } from "@dovetailapp/website/util/array";
 import * as React from "react";
 import ReactResizeDetector from "react-resize-detector";
-import { zeroes } from "../../../util/array";
 
 export interface MasonryItem {
   id: string;
@@ -46,12 +46,14 @@ export class Masonry extends React.PureComponent<Props, State> {
               </div>
             ))
           : null}
-        <ReactResizeDetector
-          handleWidth
-          onResize={width => {
-            this.setState({ containerWidth: width });
-          }}
-        />
+        {process.env.NODE_ENV === "test" ? null : (
+          <ReactResizeDetector
+            handleWidth
+            onResize={width => {
+              this.setState({ containerWidth: width });
+            }}
+          />
+        )}
       </div>
     );
   }
