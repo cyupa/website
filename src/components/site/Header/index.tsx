@@ -140,6 +140,7 @@ const Color = styledViaProps(
 
     $nest: {
       "&:hover": {
+        color: dark ? COLORS.white : COLORS.purple,
         opacity: 1.0
       }
     }
