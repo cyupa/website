@@ -62,6 +62,9 @@ const Content = styled("div", {
     h3: {
       marginTop: "48px"
     },
+    h5: {
+      fontWeight: 500
+    },
     code: {
       backgroundColor: COLORS.i04,
       borderRadius: BORDER_RADIUS,
