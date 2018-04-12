@@ -26,11 +26,13 @@ export class LocationLink extends React.Component<LocationLinkProps> {
     const presentationClassName = this.presentationClassName(presentation);
     const combinedClassName = `${presentationClassName} ${className}`;
 
-    return (
-      <Link
-        to={url(location)}
+    return location.internal ? (
+      <Link to={url(location)} className={combinedClassName} {...other} />
+    ) : (
+      <a
         className={combinedClassName}
-        target={location.internal ? undefined : location.openInNewTab === true ? "_blank" : "_self"}
+        href={url(location)}
+        target={location.openInNewTab === true ? "_blank" : "_self"}
         {...other}
       />
     );
