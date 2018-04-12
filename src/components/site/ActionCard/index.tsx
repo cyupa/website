@@ -1,10 +1,10 @@
-import { ButtonLink } from "@dovetailapp/website/components/forms/ButtonLink";
-import { Card } from "@dovetailapp/website/components/layout/Card";
-import { COLORS, LIGHT_TEXT_OPACITY } from "@dovetailapp/website/constants";
+import { ButtonLink } from "@heydovetail/website/components/forms/ButtonLink";
+import { Card } from "@heydovetail/website/components/layout/Card";
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { COLORS, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
+import { LocationDescriptor } from "@heydovetail/website/routing/locations";
 import * as React from "react";
-import { LocationDescriptor } from "../../../routing/locations";
-import { Flex } from "../../layout/Flex";
-import { Item } from "../../layout/Item";
 
 interface Props {
   buttonText: string;

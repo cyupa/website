@@ -1,4 +1,4 @@
-import { BORDER_RADIUS, COLORS } from "@dovetailapp/website/constants";
+import { BORDER_RADIUS, COLORS } from "@heydovetail/website/constants";
 import { styledViaProps } from "../../../util/styled";
 
 export const Card = styledViaProps(
