@@ -84,7 +84,7 @@ export function isLocationDescriptor(x: object | undefined): x is LocationDescri
   );
 }
 
-function internal(
+export function internal(
   path: string,
   opts?: { query?: InternalLocationDescriptor["query"]; hash?: InternalLocationDescriptor["hash"] } | null
 ): InternalLocationDescriptor {
