@@ -65,11 +65,11 @@ export class LocationLink extends React.Component<LocationLinkProps> {
   // When used in the context of "bold" the link should be rendered purple and bold.
   private static readonly boldStyle = style({
     color: COLORS.purple,
-    fontWeight: 700,
+    fontWeight: 500,
 
     $nest: {
       "&:hover, &:focus": {
-        color: COLORS.p80
+        textDecoration: "underline"
       }
     }
   });
@@ -80,7 +80,7 @@ export class LocationLink extends React.Component<LocationLinkProps> {
 
     $nest: {
       "&:hover, &:focus": {
-        color: COLORS.p80
+        textDecoration: "underline"
       }
     }
   });
@@ -92,7 +92,8 @@ export class LocationLink extends React.Component<LocationLinkProps> {
 
     $nest: {
       "&:hover, &:focus": {
-        color: COLORS.p80
+        color: COLORS.purple,
+        textDecoration: "underline"
       }
     }
   });

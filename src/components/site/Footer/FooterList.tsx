@@ -1,6 +1,5 @@
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
-import { COLORS } from "@heydovetail/website/constants";
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
 import { styled } from "@heydovetail/website/util/styled";
@@ -27,7 +26,7 @@ export class FooterList extends React.PureComponent<Props> {
         </Item>
         {items.map((item, i) => (
           <Item key={i}>
-            <LocationLink className={linkClassName} location={item.location}>
+            <LocationLink className={linkClassName} location={item.location} presentation="text">
               {item.label}
             </LocationLink>
           </Item>
@@ -44,12 +43,5 @@ const Heading = styled("h5", {
 });
 
 const linkClassName = style({
-  color: COLORS.purple,
-  fontSize: "14px",
-
-  $nest: {
-    "&:focus, &:hover": {
-      textDecoration: "underline"
-    }
-  }
+  fontSize: "14px"
 });

@@ -29,10 +29,10 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <p>
-                    We’re a bootstrapped startup founded by two ex-Atlassians. We first launched Dovetail in October 2016, and
-                    have been going ever since. We believe that deeply understanding your customers is the secret ingredient to
-                    making great products, so we created Dovetail to help thousands of teams organize, analyze, and share their
-                    customer feedback &amp; user research.
+                    We’re a self-funded startup created by two ex-Atlassians, based in Sydney, Australia. We launched the first
+                    version of Dovetail in October 2016, and we’ve been going ever since. We believe that deeply understanding
+                    your customers is the secret ingredient to making great products, so we created Dovetail to help thousands
+                    of teams organize, analyze, and share their customer feedback &amp; user research.
                   </p>
                 </Item>
                 <Item>

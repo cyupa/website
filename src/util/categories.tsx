@@ -19,7 +19,7 @@ export const legalCategories = {
   policies: "Policies"
 };
 
-const helpCategoriesOrder = ["start", "import", "account", "team", "export", "billing", "misc"];
+const helpCategoriesOrder = ["start", "import", "team", "billing", "account", "export", "misc"];
 const legalCategoriesOrder = ["terms", "policies"];
 
 export function generateDocumentCategoryGroups(edges: {}, section: "help" | "legal"): MasonryItem[] {

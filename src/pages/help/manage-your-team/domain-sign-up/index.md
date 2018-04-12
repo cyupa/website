@@ -2,7 +2,7 @@
 category: "team"
 path: "/help/domain-sign-up"
 date: "2018-04-11"
-title: "Enable domain-restricted sign up"
+title: "Turn on domain-restricted sign up"
 ---
 
 ![Screenshot showing a ‘join team’ screen in Dovetail](./join-team.png)

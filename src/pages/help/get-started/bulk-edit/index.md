@@ -2,7 +2,7 @@
 category: "start"
 path: "/help/bulk-edit"
 date: "2018-04-11"
-title: "Bulk edit annotations and merge tags"
+title: "Edit annotations and merge tags"
 ---
 
 ![Bulk editing annotations](./bulk-edit.png)

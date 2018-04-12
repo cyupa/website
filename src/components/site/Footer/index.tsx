@@ -49,7 +49,7 @@ export class Footer extends React.PureComponent<Props> {
               <FooterList
                 heading="Legal"
                 items={[
-                  { label: "Terms and Policies", location: locations.legal() },
+                  { label: "Terms and policies", location: locations.legal() },
                   { label: "Customer Terms", location: locations.termsCustomer() },
                   { label: "Privacy Policy", location: locations.privacy() },
                   { label: "User Terms", location: locations.termsUser() }

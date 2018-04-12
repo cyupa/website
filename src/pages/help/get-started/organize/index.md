@@ -2,7 +2,7 @@
 category: "start"
 path: "/help/organize"
 date: "2018-04-11"
-title: "Organize your content"
+title: "Tips for organizing your content"
 ---
 
 Dovetail has tags, notes, insights, groups, projects, and teams. There are many ways to organize your content using these concepts. From bottom to top, here’s an explanation of each concept:
