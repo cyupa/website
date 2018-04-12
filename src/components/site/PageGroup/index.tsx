@@ -26,8 +26,8 @@ export class PageGroup extends React.PureComponent<Props> {
           <Item>
             <h3>{title}</h3>
           </Item>
-          {pages.map(page => (
-            <Item>
+          {pages.map((page, i) => (
+            <Item key={i}>
               <LocationLink location={internal(page.path)} presentation="text" style={{ lineHeight: "24px" }}>
                 {page.title}
               </LocationLink>

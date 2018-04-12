@@ -1,5 +1,5 @@
+import { storiesOf } from "@dovetailapp/website/util/stories";
 import * as React from "react";
-import { storiesOf } from "src/util/stories";
 import { Features } from "../";
 
 storiesOf("Site/Features", module).add("default", () => (

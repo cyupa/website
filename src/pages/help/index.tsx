@@ -10,6 +10,7 @@ import { PageGroup } from "../../components/site/PageGroup";
 import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../../constants";
 
 interface Props {
+  // tslint:disable-next-line:no-any
   data: any;
 }
 

@@ -10,8 +10,7 @@
     "precommit": "lint-staged",
     "start": "gatsby develop",
     "storybook": "ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook",
-    "test":
-      "./node_modules/.bin/tslint -p tsconfig.json && ./node_modules/.bin/jest --runInBand && npm run build && ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook --smoke-test"
+    "test": "./node_modules/.bin/tslint -p tsconfig.json && ./node_modules/.bin/jest --runInBand && ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook --smoke-test"
   },
   "repository": {
     "type": "git",
@@ -26,14 +25,29 @@
       },
       "NODE_ENV": "test"
     },
-    "moduleFileExtensions": ["js", "ts", "tsx", "json"],
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "tsx",
+      "json"
+    ],
+    "moduleNameMapper": {
+      "@dovetailapp/website/(.*)": "<rootDir>/src/$1"
+    },
+    "setupFiles": [
+      "./.jest/setup.tsx"
+    ],
     "testRegex": "src/.*(/__specs__/.*|\\.spec)\\.tsx?$",
     "transform": {
       "\\.tsx?$": "ts-jest"
     }
   },
   "lint-staged": {
-    "*.tsx": ["prettier --write", "tslint -p tsconfig.json --fix", "git add"]
+    "*.tsx": [
+      "prettier --write",
+      "tslint -p tsconfig.json --fix",
+      "git add"
+    ]
   },
   "prettier": {
     "printWidth": 128
@@ -70,7 +84,7 @@
     "husky": "^0.14.3",
     "jest": "^22.4.3",
     "jest-cli": "^22.4.3",
-    "lint-staged": "^7.0.0",
+    "lint-staged": "^7.0.4",
     "lodash.groupby": "^4.6.0",
     "prettier": "^1.11.1",
     "react": "^16.3.1",
