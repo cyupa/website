@@ -32,7 +32,10 @@ jobs:
       - <<: *install_node_modules
       - <<: *cache_node_modules
       - run: yarn run build
-      - persist_to_workspace
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
 
   test:
     <<: *docker
