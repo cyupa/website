@@ -49,7 +49,7 @@ exports.modifyWebpackConfig = ({ config, env }) => {
   config.merge({
     resolve: {
       alias: {
-        "@dovetailapp/website": path.resolve(__dirname, "./src")
+        "@heydovetail/website": path.resolve(__dirname, "./src")
       }
     }
   });

@@ -1,4 +1,4 @@
-import { styledViaProps } from "../../../util/styled";
+import { styledViaProps } from "@heydovetail/website/util/styled";
 
 interface Props {
   alignItems?: "flex-start" | "flex-end" | "baseline" | "center" | "stretch";

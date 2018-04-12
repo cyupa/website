@@ -1,12 +1,12 @@
+import { ButtonLink } from "@heydovetail/website/components/forms/ButtonLink";
+import { TextInput } from "@heydovetail/website/components/forms/TextInput";
+import { Center } from "@heydovetail/website/components/layout/Center";
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { SmallText } from "@heydovetail/website/components/util/SmallText";
+import { COLORS } from "@heydovetail/website/constants";
+import { locations } from "@heydovetail/website/routing/locations";
 import * as React from "react";
-import { COLORS } from "../../../constants";
-import { locations } from "../../../routing/locations";
-import { ButtonLink } from "../../forms/ButtonLink";
-import { TextInput } from "../../forms/TextInput";
-import { Center } from "../../layout/Center";
-import { Flex } from "../../layout/Flex";
-import { Item } from "../../layout/Item";
-import { SmallText } from "../../util/SmallText";
 
 export class SignupWithEmail extends React.PureComponent {
   public render() {

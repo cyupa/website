@@ -1,10 +1,10 @@
+import { Center } from "@heydovetail/website/components/layout/Center";
+import { Container } from "@heydovetail/website/components/layout/Container";
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { SignupWithEmail } from "@heydovetail/website/components/site/SignupWithEmail";
+import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
 import * as React from "react";
-import { Center } from "../../components/layout/Center";
-import { Container } from "../../components/layout/Container";
-import { Flex } from "../../components/layout/Flex";
-import { Item } from "../../components/layout/Item";
-import { SignupWithEmail } from "../../components/site/SignupWithEmail";
-import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../../constants";
 
 export class CenteredSignUp extends React.PureComponent {
   public render() {

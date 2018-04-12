@@ -1,16 +1,16 @@
+import PictogramFeedback from "@heydovetail/website/components/icons/pictograms/PictogramFeedback";
+import PictogramQda from "@heydovetail/website/components/icons/pictograms/PictogramQda";
+import PictogramRepository from "@heydovetail/website/components/icons/pictograms/PictogramRepository";
+import PictogramResearch from "@heydovetail/website/components/icons/pictograms/PictogramResearch";
+import { Center } from "@heydovetail/website/components/layout/Center";
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Grid } from "@heydovetail/website/components/layout/Grid";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { UseCaseCard } from "@heydovetail/website/components/site/UseCaseCard";
+import { MediaToggle } from "@heydovetail/website/components/util/MediaToggle";
+import { BREAKPOINT_TABLET, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { locations } from "@heydovetail/website/routing/locations";
 import * as React from "react";
-import PictogramFeedback from "../../components/icons/pictograms/PictogramFeedback";
-import PictogramQda from "../../components/icons/pictograms/PictogramQda";
-import PictogramRepository from "../../components/icons/pictograms/PictogramRepository";
-import PictogramResearch from "../../components/icons/pictograms/PictogramResearch";
-import { Center } from "../../components/layout/Center";
-import { Flex } from "../../components/layout/Flex";
-import { Grid } from "../../components/layout/Grid";
-import { Item } from "../../components/layout/Item";
-import { UseCaseCard } from "../../components/site/UseCaseCard";
-import { MediaToggle } from "../../components/util/MediaToggle";
-import { BREAKPOINT_TABLET, TYPICAL_VERTICAL_GAP } from "../../constants";
-import { locations } from "../../routing/locations";
 
 interface Props {
   showTitle?: boolean;

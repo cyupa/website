@@ -1,4 +1,4 @@
-import { zeroes } from "@dovetailapp/website/util/array";
+import { zeroes } from "@heydovetail/website/util/array";
 import * as React from "react";
 import ReactResizeDetector from "react-resize-detector";
 

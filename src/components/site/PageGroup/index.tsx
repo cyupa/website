@@ -1,9 +1,9 @@
-import { Card } from "@dovetailapp/website/components/layout/Card";
+import { Card } from "@heydovetail/website/components/layout/Card";
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { LocationLink } from "@heydovetail/website/routing/LocationLink";
+import { internal } from "@heydovetail/website/routing/locations";
 import * as React from "react";
-import { LocationLink } from "../../../routing/LocationLink";
-import { internal } from "../../../routing/locations";
-import { Flex } from "../../layout/Flex";
-import { Item } from "../../layout/Item";
 
 interface Page {
   path: string;

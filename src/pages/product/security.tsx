@@ -1,16 +1,16 @@
+import { ButtonLink } from "@heydovetail/website/components/forms/ButtonLink";
+import IllustrationSecurity from "@heydovetail/website/components/illustrations/IllustrationSecurity";
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Flow } from "@heydovetail/website/components/layout/Flow";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
+import { Features } from "@heydovetail/website/components/site/Features";
+import { Hero } from "@heydovetail/website/components/site/Hero";
+import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { locations } from "@heydovetail/website/routing/locations";
+import { ADVANCED_SECURITY_FEATURES, BASE_SECURITY_FEATURES } from "@heydovetail/website/sections/Security";
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import { ButtonLink } from "../../components/forms/ButtonLink";
-import IllustrationSecurity from "../../components/illustrations/IllustrationSecurity";
-import { Flex } from "../../components/layout/Flex";
-import { Flow } from "../../components/layout/Flow";
-import { Item } from "../../components/layout/Item";
-import { DarkContainer } from "../../components/site/DarkContainer";
-import { Features } from "../../components/site/Features";
-import { Hero } from "../../components/site/Hero";
-import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../../constants";
-import { locations } from "../../routing/locations";
-import { ADVANCED_SECURITY_FEATURES, BASE_SECURITY_FEATURES } from "../../sections/Security";
 
 export default class extends React.PureComponent {
   public render() {

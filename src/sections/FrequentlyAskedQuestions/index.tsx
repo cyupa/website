@@ -1,8 +1,8 @@
+import { GridWrap } from "@heydovetail/website/components/layout/GridWrap";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { Faq } from "@heydovetail/website/components/site/Faq";
+import { locations } from "@heydovetail/website/routing/locations";
 import * as React from "react";
-import { GridWrap } from "../../components/layout/GridWrap";
-import { Item } from "../../components/layout/Item";
-import { Faq } from "../../components/site/Faq";
-import { locations } from "../../routing/locations";
 
 export class FrequentlyAskedQuestions extends React.PureComponent {
   public render() {

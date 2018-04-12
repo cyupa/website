@@ -5,8 +5,8 @@ import {
   BOX_SHADOW_FOCUS,
   BOX_SHADOW_SITTING,
   COLORS
-} from "../../constants";
-import { styledViaProps } from "../../util/styled";
+} from "@heydovetail/website/constants";
+import { styledViaProps } from "@heydovetail/website/util/styled";
 
 const DISABLED_OPACITY = 0.5;
 

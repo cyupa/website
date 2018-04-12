@@ -1,17 +1,17 @@
-import { ActionCard } from "@dovetailapp/website/components/site/ActionCard";
-import { locations } from "@dovetailapp/website/routing/locations";
-import { sortComparatorAsc } from "@dovetailapp/website/util/array";
+import { Container } from "@heydovetail/website/components/layout/Container";
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { Masonry } from "@heydovetail/website/components/layout/Masonry";
+import { ActionCard } from "@heydovetail/website/components/site/ActionCard";
+import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { PageGroup } from "@heydovetail/website/components/site/PageGroup";
+import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { locations } from "@heydovetail/website/routing/locations";
+import { sortComparatorAsc } from "@heydovetail/website/util/array";
+import { helpCategories, helpCategoriesOrder } from "@heydovetail/website/util/categories";
 import groupBy = require("lodash.groupby");
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import { Container } from "../../components/layout/Container";
-import { Flex } from "../../components/layout/Flex";
-import { Item } from "../../components/layout/Item";
-import { Masonry } from "../../components/layout/Masonry";
-import { HeroText } from "../../components/site/HeroText";
-import { PageGroup } from "../../components/site/PageGroup";
-import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../../constants";
-import { helpCategories, helpCategoriesOrder } from "../../util/categories";
 
 interface Props {
   // tslint:disable-next-line:no-any

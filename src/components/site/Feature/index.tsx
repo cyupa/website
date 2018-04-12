@@ -1,9 +1,9 @@
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { BREAKPOINT_TABLET, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
+import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
 import { media } from "typestyle";
-import { BREAKPOINT_TABLET, LIGHT_TEXT_OPACITY } from "../../../constants";
-import { styled } from "../../../util/styled";
-import { Flex } from "../../layout/Flex";
-import { Item } from "../../layout/Item";
 
 export interface FeatureProps {
   text: string;

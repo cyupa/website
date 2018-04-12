@@ -1,6 +1,6 @@
+import { COLORS } from "@heydovetail/website/constants";
+import { styledViaProps } from "@heydovetail/website/util/styled";
 import * as React from "react";
-import { COLORS } from "../../../constants";
-import { styledViaProps } from "../../../util/styled";
 
 interface Props {
   gap?: number;

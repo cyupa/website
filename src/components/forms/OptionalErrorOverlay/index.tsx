@@ -1,5 +1,5 @@
+import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
-import { styled } from "../../../util/styled";
 import * as styles from "./styles";
 
 interface Props {

@@ -1,4 +1,4 @@
-import { styledViaProps } from "../../../util/styled";
+import { styledViaProps } from "@heydovetail/website/util/styled";
 import { Item } from "../Item";
 
 interface Props {

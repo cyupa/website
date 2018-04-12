@@ -1,7 +1,7 @@
+import { BORDER_RADIUS, BOX_SHADOW_BORDER, BOX_SHADOW_LIFTED, COLORS } from "@heydovetail/website/constants";
 import * as React from "react";
 import { CSSTransitionGroup } from "react-transition-group";
 import { classes, style } from "typestyle";
-import { BORDER_RADIUS, BOX_SHADOW_BORDER, BOX_SHADOW_LIFTED, COLORS } from "../../../constants";
 
 interface Props {
   autofocus?: boolean;

@@ -1,15 +1,15 @@
+import { Container } from "@heydovetail/website/components/layout/Container";
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { Breadcrumbs } from "@heydovetail/website/components/site/Breadcrumbs";
+import { Date } from "@heydovetail/website/components/site/Date";
+import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { BORDER_RADIUS, COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { locations } from "@heydovetail/website/routing/locations";
+import { helpCategories } from "@heydovetail/website/util/categories";
+import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import { Container } from "../components/layout/Container";
-import { Flex } from "../components/layout/Flex";
-import { Item } from "../components/layout/Item";
-import { Breadcrumbs } from "../components/site/Breadcrumbs";
-import { Date } from "../components/site/Date";
-import { HeroText } from "../components/site/HeroText";
-import { BORDER_RADIUS, COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../constants";
-import { locations } from "../routing/locations";
-import { helpCategories } from "../util/categories";
-import { styled } from "../util/styled";
 
 export default function DocumentTemplate({ data }) {
   const { markdownRemark } = data;

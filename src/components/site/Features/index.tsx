@@ -1,6 +1,6 @@
+import { GridWrap } from "@heydovetail/website/components/layout/GridWrap";
+import { Item } from "@heydovetail/website/components/layout/Item";
 import * as React from "react";
-import { GridWrap } from "../../layout/GridWrap";
-import { Item } from "../../layout/Item";
 import { Feature, FeatureProps } from "../Feature";
 import { FeatureLarge } from "../FeatureLarge";
 

@@ -1,7 +1,7 @@
-import { storiesOf } from "@dovetailapp/website/util/stories";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { storiesOf } from "@heydovetail/website/util/stories";
 import * as React from "react";
 import { Flex } from "../";
-import { Item } from "../../Item";
 
 storiesOf("Layout/Flex", module)
   .add("row", () => (

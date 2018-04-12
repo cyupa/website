@@ -1,8 +1,8 @@
+import { Center } from "@heydovetail/website/components/layout/Center";
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import * as React from "react";
-import { LIGHT_TEXT_OPACITY } from "../../../constants";
-import { Center } from "../../layout/Center";
-import { Flex } from "../../layout/Flex";
-import { Item } from "../../layout/Item";
 
 interface Props {
   center?: boolean;

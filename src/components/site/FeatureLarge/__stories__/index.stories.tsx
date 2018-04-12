@@ -1,4 +1,4 @@
-import { storiesOf } from "@dovetailapp/website/util/stories";
+import { storiesOf } from "@heydovetail/website/util/stories";
 import * as React from "react";
 import { FeatureLarge } from "../";
 

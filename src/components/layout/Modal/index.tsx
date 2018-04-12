@@ -1,12 +1,12 @@
+import { SubtleButton } from "@heydovetail/website/components/forms/SubtleButton";
+import IconCross from "@heydovetail/website/components/icons/feather/IconCross";
+import { BodyOverflow } from "@heydovetail/website/components/util/BodyOverflow";
+import { OnEsc } from "@heydovetail/website/components/util/OnEsc";
+import { COLORS, PAGE_PADDING_BOTTOM, Z_INDEX_HIGH } from "@heydovetail/website/constants";
+import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
 import { CSSTransitionGroup } from "react-transition-group";
 import { style } from "typestyle";
-import { COLORS, PAGE_PADDING_BOTTOM, Z_INDEX_HIGH } from "../../../constants";
-import { styled } from "../../../util/styled";
-import { SubtleButton } from "../../forms/SubtleButton";
-import IconCross from "../../icons/feather/IconCross";
-import { BodyOverflow } from "../../util/BodyOverflow";
-import { OnEsc } from "../../util/OnEsc";
 import { Container } from "../Container";
 import { Flex } from "../Flex";
 import { Portal } from "../Portal";

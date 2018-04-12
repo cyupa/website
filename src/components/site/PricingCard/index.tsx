@@ -1,11 +1,11 @@
+import { Button } from "@heydovetail/website/components/forms/Button";
+import IconCheckCircle from "@heydovetail/website/components/icons/feather/IconCheckCircle";
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { SmallText } from "@heydovetail/website/components/util/SmallText";
+import { BORDER_RADIUS, COLORS } from "@heydovetail/website/constants";
+import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
-import { BORDER_RADIUS, COLORS } from "../../../constants";
-import { styled } from "../../../util/styled";
-import { Button } from "../../forms/Button";
-import IconCheckCircle from "../../icons/feather/IconCheckCircle";
-import { Flex } from "../../layout/Flex";
-import { Item } from "../../layout/Item";
-import { SmallText } from "../../util/SmallText";
 
 interface Props {
   features: string[];

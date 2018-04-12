@@ -1,8 +1,8 @@
-import { storiesOf } from "@dovetailapp/website/util/stories";
+import { BORDER_RADIUS, COLORS } from "@heydovetail/website/constants";
+import { storiesOf } from "@heydovetail/website/util/stories";
+import { styledViaProps } from "@heydovetail/website/util/styled";
 import * as React from "react";
 import { Masonry, MasonryItem } from "../";
-import { BORDER_RADIUS, COLORS } from "../../../../constants";
-import { styledViaProps } from "../../../../util/styled";
 
 storiesOf("Layout/Masonry", module)
   .add("default", () => {

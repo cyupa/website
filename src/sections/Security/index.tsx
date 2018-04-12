@@ -1,11 +1,11 @@
+import IllustrationSecurity from "@heydovetail/website/components/illustrations/IllustrationSecurity";
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
+import { Features } from "@heydovetail/website/components/site/Features";
+import { TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { locations } from "@heydovetail/website/routing/locations";
 import * as React from "react";
-import IllustrationSecurity from "../../components/illustrations/IllustrationSecurity";
-import { Flex } from "../../components/layout/Flex";
-import { Item } from "../../components/layout/Item";
-import { FeatureHero } from "../../components/site/FeatureHero";
-import { Features } from "../../components/site/Features";
-import { TYPICAL_VERTICAL_GAP } from "../../constants";
-import { locations } from "../../routing/locations";
 
 export const BASE_SECURITY_FEATURES = [
   {

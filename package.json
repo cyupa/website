@@ -32,7 +32,7 @@
       "json"
     ],
     "moduleNameMapper": {
-      "@dovetailapp/website/(.*)": "<rootDir>/src/$1"
+      "@heydovetail/website/(.*)": "<rootDir>/src/$1"
     },
     "setupFiles": [
       "./.jest/setup.tsx"

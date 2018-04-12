@@ -1,20 +1,20 @@
+import { SubtleButtonLink } from "@heydovetail/website/components/forms/SubtleButtonLink";
+import IconArrowRightMini from "@heydovetail/website/components/icons/feather/IconArrowRightMini";
+import { Center } from "@heydovetail/website/components/layout/Center";
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Flow } from "@heydovetail/website/components/layout/Flow";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
+import { PricingCard } from "@heydovetail/website/components/site/PricingCard";
+import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { locations } from "@heydovetail/website/routing/locations";
+import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
+import { FrequentlyAskedQuestions } from "@heydovetail/website/sections/FrequentlyAskedQuestions";
+import { SocialProof } from "@heydovetail/website/sections/SocialProof";
+import { UseCases } from "@heydovetail/website/sections/UseCases";
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import { SubtleButtonLink } from "../../components/forms/SubtleButtonLink";
-import IconArrowRightMini from "../../components/icons/feather/IconArrowRightMini";
-import { Center } from "../../components/layout/Center";
-import { Flex } from "../../components/layout/Flex";
-import { Flow } from "../../components/layout/Flow";
-import { Item } from "../../components/layout/Item";
-import { HeroText } from "../../components/site/HeroText";
-import { LightContainer } from "../../components/site/LightContainer";
-import { PricingCard } from "../../components/site/PricingCard";
-import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../../constants";
-import { locations } from "../../routing/locations";
-import { CenteredSignUp } from "../../sections/CenteredSignUp";
-import { FrequentlyAskedQuestions } from "../../sections/FrequentlyAskedQuestions";
-import { SocialProof } from "../../sections/SocialProof";
-import { UseCases } from "../../sections/UseCases";
 
 export default class extends React.PureComponent {
   public render() {

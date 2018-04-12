@@ -1,8 +1,8 @@
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { Modal } from "@heydovetail/website/components/layout/Modal";
+import { UseCases } from "@heydovetail/website/sections/UseCases";
 import * as React from "react";
-import { UseCases } from "../../../sections/UseCases";
-import { Flex } from "../../layout/Flex";
-import { Item } from "../../layout/Item";
-import { Modal } from "../../layout/Modal";
 
 interface Props {
   onDismiss: () => void;
