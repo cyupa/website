@@ -1,5 +1,5 @@
 import * as React from "react";
-import { COLORS, LIGHT_TEXT_OPACITY, TYPICAL_PAGE_WIDTH } from "../../../constants";
+import { COLORS, LIGHT_TEXT_OPACITY, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../../../constants";
 import { locations } from "../../../routing/locations";
 import { styled } from "../../../util/styled";
 import { Container } from "../../layout/Container";
@@ -36,22 +36,13 @@ export class Footer extends React.PureComponent<Props> {
             </Item>
             <Item style={{ verticalAlign: "top" }}>
               <FooterList
-                heading="Useful links"
-                items={[
-                  { label: "Home", location: locations.home() },
-                  { label: "Pricing", location: locations.pricing() },
-                  { label: "All features", location: locations.features() },
-                  { label: "Support", location: locations.help() }
-                ]}
-              />
-            </Item>
-            <Item style={{ verticalAlign: "top" }}>
-              <FooterList
                 heading="Resources"
                 items={[
-                  { label: "Research guides", location: locations.guides() },
-                  { label: "Terms and Policies", location: locations.legal() },
-                  { label: "Security", location: locations.security() }
+                  { label: "All features", location: locations.features() },
+                  { label: "Guides", location: locations.guides() },
+                  { label: "Legal", location: locations.legal() },
+                  { label: "Security", location: locations.security() },
+                  { label: "Support", location: locations.help() }
                 ]}
               />
             </Item>
@@ -60,8 +51,8 @@ export class Footer extends React.PureComponent<Props> {
                 heading="Company"
                 items={[
                   { label: "About us", location: locations.about() },
-                  { label: "Press kit", location: locations.press() },
                   { label: "Blog", location: locations.blog() },
+                  { label: "Press kit", location: locations.press() },
                   { label: "Slack", location: locations.slack() }
                 ]}
               />
@@ -83,22 +74,24 @@ export class Footer extends React.PureComponent<Props> {
 
     if (dark) {
       return (
-        <DarkContainer horizontalPadding={0} verticalPadding={0}>
-          <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={64}>
-            {footer}
-          </Container>
-        </DarkContainer>
+        <div style={{ marginTop: TYPICAL_VERTICAL_GAP / 2 }}>
+          <DarkContainer horizontalPadding={0} verticalPadding={0}>
+            <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={64}>
+              {footer}
+            </Container>
+          </DarkContainer>
+        </div>
       );
     } else
       return (
-        <>
+        <div style={{ marginTop: TYPICAL_VERTICAL_GAP / 2 }}>
           <Wave color={COLORS.p04} size="100%" />
           <LightContainer backgroundColor={COLORS.p04} horizontalPadding={0} verticalPadding={0}>
             <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={64}>
               {footer}
             </Container>
           </LightContainer>
-        </>
+        </div>
       );
   }
 }

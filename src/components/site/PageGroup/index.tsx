@@ -1,8 +1,7 @@
+import { Card } from "@dovetailapp/website/components/layout/Card";
 import * as React from "react";
-import { BORDER_RADIUS, COLORS } from "../../../constants";
 import { LocationLink } from "../../../routing/LocationLink";
 import { internal } from "../../../routing/locations";
-import { styled } from "../../../util/styled";
 import { Flex } from "../../layout/Flex";
 import { Item } from "../../layout/Item";
 
@@ -21,7 +20,7 @@ export class PageGroup extends React.PureComponent<Props> {
     const { pages, title } = this.props;
 
     return (
-      <Wrapper>
+      <Card padding={32}>
         <Flex gap={16} layout="column">
           <Item>
             <h3>{title}</h3>
@@ -34,13 +33,7 @@ export class PageGroup extends React.PureComponent<Props> {
             </Item>
           ))}
         </Flex>
-      </Wrapper>
+      </Card>
     );
   }
 }
-
-const Wrapper = styled("div", {
-  backgroundColor: COLORS.p04,
-  borderRadius: BORDER_RADIUS,
-  padding: "32px"
-});

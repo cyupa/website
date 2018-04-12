@@ -21,7 +21,7 @@ export class FooterList extends React.PureComponent<Props> {
   public render() {
     const { heading, items } = this.props;
     return (
-      <Flex gap={16} layout="column">
+      <Flex gap={12} layout="column">
         <Item>
           <Heading>{heading}</Heading>
         </Item>

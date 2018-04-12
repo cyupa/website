@@ -1,3 +1,6 @@
+import { ActionCard } from "@dovetailapp/website/components/site/ActionCard";
+import { locations } from "@dovetailapp/website/routing/locations";
+import { sortComparatorAsc } from "@dovetailapp/website/util/array";
 import groupBy = require("lodash.groupby");
 import * as React from "react";
 import { Helmet } from "react-helmet";
@@ -8,9 +11,10 @@ import { Masonry } from "../../components/layout/Masonry";
 import { HeroText } from "../../components/site/HeroText";
 import { PageGroup } from "../../components/site/PageGroup";
 import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../../constants";
-import { legalCategories } from "../../util/categories";
+import { legalCategories, legalCategoriesOrder } from "../../util/categories";
 
 interface Props {
+  // tslint:disable-next-line:no-any
   data: any;
 }
 
@@ -18,38 +22,47 @@ export default class extends React.PureComponent<Props> {
   public render() {
     const { data: { allMarkdownRemark: { edges } } } = this.props;
     const categories = groupBy(edges, edge => edge.node.frontmatter.category);
+    const categoryCards = Object.keys(categories)
+      .map((category, i) => ({
+        id: `${i}`,
+        node: (
+          <PageGroup
+            pages={categories[category].map(edge => ({
+              title: edge.node.frontmatter.title,
+              path: edge.node.frontmatter.path
+            }))}
+            title={legalCategories[category]}
+          />
+        ),
+        sortKey: legalCategoriesOrder.indexOf(category)
+      }))
+      .sort(sortComparatorAsc(card => card.sortKey));
+
+    categoryCards.splice(2, 0, {
+      id: "contact",
+      node: (
+        <ActionCard
+          title="Contact us"
+          text="Get in touch with us if you have questions about our legal documents."
+          buttonText="Email us"
+          buttonLocation={locations.email()}
+        />
+      ),
+      sortKey: 0
+    });
 
     return (
       <>
         <Helmet>
-          <title>Help and support – Dovetail</title>
+          <title>Terms and Policies – Dovetail</title>
         </Helmet>
         <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
-          <Flex gap={TYPICAL_VERTICAL_GAP / 2} layout="column">
+          <Flex gap={48} layout="column">
             <Item>
-              <Flex gap={24} layout="column">
-                <Item>
-                  <HeroText title="Terms and Policies" text="One place for our legal documentation and policies." />
-                </Item>
-              </Flex>
+              <HeroText title="Terms and Policies" text="One place for our legal documentation and policies." />
             </Item>
             <Item>
-              <Masonry
-                gap={32}
-                items={Object.keys(categories).map((category, i) => ({
-                  id: `${i}`,
-                  node: (
-                    <PageGroup
-                      pages={categories[category].map(edge => ({
-                        title: edge.node.frontmatter.title,
-                        path: edge.node.frontmatter.path
-                      }))}
-                      title={legalCategories[category]}
-                    />
-                  )
-                }))}
-                minColumnWidth={256}
-              />
+              <Masonry gap={32} items={categoryCards} minColumnWidth={256} />
             </Item>
           </Flex>
         </Container>

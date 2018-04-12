@@ -1,3 +1,6 @@
+export const helpCategoriesOrder = ["start", "import", "account", "team", "export", "billing", "misc"];
+export const legalCategoriesOrder = ["terms", "policies"];
+
 export const helpCategories = {
   start: "Get started",
   import: "Import your data",

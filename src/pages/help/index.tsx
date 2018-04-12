@@ -1,3 +1,6 @@
+import { ActionCard } from "@dovetailapp/website/components/site/ActionCard";
+import { locations } from "@dovetailapp/website/routing/locations";
+import { sortComparatorAsc } from "@dovetailapp/website/util/array";
 import groupBy = require("lodash.groupby");
 import * as React from "react";
 import { Helmet } from "react-helmet";
@@ -8,7 +11,7 @@ import { Masonry } from "../../components/layout/Masonry";
 import { HeroText } from "../../components/site/HeroText";
 import { PageGroup } from "../../components/site/PageGroup";
 import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../../constants";
-import { helpCategories } from "../../util/categories";
+import { helpCategories, helpCategoriesOrder } from "../../util/categories";
 
 interface Props {
   // tslint:disable-next-line:no-any
@@ -19,6 +22,34 @@ export default class extends React.PureComponent<Props> {
   public render() {
     const { data: { allMarkdownRemark: { edges } } } = this.props;
     const categories = groupBy(edges, edge => edge.node.frontmatter.category);
+    const categoryCards = Object.keys(categories)
+      .map((category, i) => ({
+        id: `${i}`,
+        node: (
+          <PageGroup
+            pages={categories[category].map(edge => ({
+              title: edge.node.frontmatter.title,
+              path: edge.node.frontmatter.path
+            }))}
+            title={helpCategories[category]}
+          />
+        ),
+        sortKey: helpCategoriesOrder.indexOf(category)
+      }))
+      .sort(sortComparatorAsc(card => card.sortKey));
+
+    categoryCards.splice(1, 0, {
+      id: "contact",
+      node: (
+        <ActionCard
+          title="Contact support"
+          text="Get in touch with us. We’ll respond quickly and help you get everything sorted."
+          buttonText="Email support"
+          buttonLocation={locations.email()}
+        />
+      ),
+      sortKey: 0
+    });
 
     return (
       <>
@@ -26,34 +57,12 @@ export default class extends React.PureComponent<Props> {
           <title>Help and support – Dovetail</title>
         </Helmet>
         <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
-          <Flex gap={TYPICAL_VERTICAL_GAP / 2} layout="column">
+          <Flex gap={48} layout="column">
             <Item>
-              <Flex gap={24} layout="column">
-                <Item>
-                  <HeroText
-                    title="Help and support"
-                    text="Running into problems? Browse our help articles below or contact us."
-                  />
-                </Item>
-              </Flex>
+              <HeroText title="Help and support" text="Running into problems? Browse our help articles below or contact us." />
             </Item>
             <Item>
-              <Masonry
-                gap={32}
-                items={Object.keys(categories).map((category, i) => ({
-                  id: `${i}`,
-                  node: (
-                    <PageGroup
-                      pages={categories[category].map(edge => ({
-                        title: edge.node.frontmatter.title,
-                        path: edge.node.frontmatter.path
-                      }))}
-                      title={helpCategories[category]}
-                    />
-                  )
-                }))}
-                minColumnWidth={256}
-              />
+              <Masonry gap={32} items={categoryCards} minColumnWidth={256} />
             </Item>
           </Flex>
         </Container>
