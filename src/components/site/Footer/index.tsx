@@ -40,9 +40,19 @@ export class Footer extends React.PureComponent<Props> {
                 items={[
                   { label: "All features", location: locations.features() },
                   { label: "Guides", location: locations.guides() },
-                  { label: "Legal", location: locations.legal() },
                   { label: "Security", location: locations.security() },
                   { label: "Support", location: locations.help() }
+                ]}
+              />
+            </Item>
+            <Item style={{ verticalAlign: "top" }}>
+              <FooterList
+                heading="Legal"
+                items={[
+                  { label: "Terms and Policies", location: locations.legal() },
+                  { label: "Customer Terms", location: locations.termsCustomer() },
+                  { label: "Privacy Policy", location: locations.privacy() },
+                  { label: "User Terms", location: locations.termsUser() }
                 ]}
               />
             </Item>
@@ -62,10 +72,13 @@ export class Footer extends React.PureComponent<Props> {
         <Item>
           <Flex gap={8} layout="column">
             <Item>
+              <FooterFinePrint>Made in Australia by 🐨Auzzies and 🥝Kiwis</FooterFinePrint>
+            </Item>
+            <Item>
               <FooterFinePrint>© Dovetail Research Pty Ltd</FooterFinePrint>
             </Item>
             <Item>
-              <FooterFinePrint>Made in 🐨Australia and 🥝New Zealand</FooterFinePrint>
+              <FooterFinePrint>ABN: 84 615 270 025</FooterFinePrint>
             </Item>
           </Flex>
         </Item>

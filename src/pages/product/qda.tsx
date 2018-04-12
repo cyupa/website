@@ -1,3 +1,7 @@
+import * as aurelia from "@heydovetail/website/avatars/aurelia.jpg";
+import * as erik from "@heydovetail/website/avatars/erik.jpg";
+import * as pascal from "@heydovetail/website/avatars/pascal.jpg";
+import * as tina from "@heydovetail/website/avatars/tina.jpg";
 import IllustrationAnalysis from "@heydovetail/website/components/illustrations/IllustrationAnalysis";
 import IllustrationAnnotationEdit from "@heydovetail/website/components/illustrations/IllustrationAnnotationEdit";
 import IllustrationAnnotationsResearch from "@heydovetail/website/components/illustrations/IllustrationAnnotationsResearch";
@@ -188,7 +192,42 @@ export default class extends React.PureComponent {
             <LightContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
               <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
                 <Item>
-                  <SocialProof />
+                  <SocialProof
+                    testimonials={[
+                      {
+                        company: "Enigma",
+                        image: pascal,
+                        name: "Pascal",
+                        quote:
+                          "I just spent the entire day in Dovetail, love it. Looking forward to seeing the evolution of Dovetail and I hope it’s growing.",
+                        role: "Design Researcher"
+                      },
+                      {
+                        company: "PageCloud",
+                        image: erik,
+                        name: "Erik",
+                        quote:
+                          "Loving the product. Tagging has been a breeze and re-organizing my thoughts using Dovetail has been easier than any other platform I’ve used!",
+                        role: "User Researcher"
+                      },
+                      {
+                        company: "Pinterest",
+                        image: aurelia,
+                        name: "Aurelia",
+                        quote:
+                          "Highlighting text to tag is great! I love that I can add multiple tags to highlighted text. It’s super easy.",
+                        role: "UX Researcher"
+                      },
+                      {
+                        company: "MacMillan Learning",
+                        image: tina,
+                        name: "Tina",
+                        quote:
+                          "I have to say I am really loving Dovetail and the potential it has in gathering and sharing qualitative data and insights!",
+                        role: "UX Designer"
+                      }
+                    ]}
+                  />
                 </Item>
                 <Item>
                   <UseCases showTitle />

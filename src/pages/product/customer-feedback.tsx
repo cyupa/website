@@ -1,3 +1,5 @@
+import * as abhilash from "@heydovetail/website/avatars/abhilash.jpg";
+import * as erik from "@heydovetail/website/avatars/erik.jpg";
 import IllustrationAnnotationsFeedback from "@heydovetail/website/components/illustrations/IllustrationAnnotationsFeedback";
 import IllustrationBoard from "@heydovetail/website/components/illustrations/IllustrationBoard";
 import IllustrationForm from "@heydovetail/website/components/illustrations/IllustrationForm";
@@ -217,7 +219,26 @@ export default class extends React.PureComponent {
             <LightContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
               <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
                 <Item>
-                  <SocialProof />
+                  <SocialProof
+                    testimonials={[
+                      {
+                        company: "Freshworks",
+                        image: abhilash,
+                        name: "Abhilash",
+                        quote:
+                          "My team has started using Dovetail even more and the amount of productivity increase we are witnessing is amazing. The turnaround time for customer interviews to be converted to reports has reduced immensely and the quality of our reports have also improved a lot. Your app is simply too good!",
+                        role: "Senior Researcher"
+                      },
+                      {
+                        company: "PageCloud",
+                        image: erik,
+                        name: "Erik",
+                        quote:
+                          "Loving the product. Tagging has been a breeze and re-organizing my thoughts using Dovetail has been easier than any other platform I’ve used!",
+                        role: "User Researcher"
+                      }
+                    ]}
+                  />
                 </Item>
                 <Item>
                   <UseCases showTitle />

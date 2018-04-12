@@ -1,3 +1,6 @@
+import * as basheera from "@heydovetail/website/avatars/basheera.jpg";
+import * as michael from "@heydovetail/website/avatars/michael.jpg";
+import * as tina from "@heydovetail/website/avatars/tina.jpg";
 import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
 import IllustrationBoardLarge from "@heydovetail/website/components/illustrations/IllustrationBoardLarge";
 import IllustrationFiles from "@heydovetail/website/components/illustrations/IllustrationFiles";
@@ -168,7 +171,34 @@ export default class extends React.PureComponent {
             <LightContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
               <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
                 <Item>
-                  <SocialProof />
+                  <SocialProof
+                    testimonials={[
+                      {
+                        company: "DemandLogic",
+                        image: basheera,
+                        name: "Basheera",
+                        quote:
+                          "I've got to say, playing around with Dovetail I felt a deep unwinding of tension - it seems like the answer to the need I had for a lightweight but powerful and affordable insights repository that makes the value of qualitative research plain as day.",
+                        role: "Design Lead"
+                      },
+                      {
+                        company: "Onist",
+                        image: michael,
+                        name: "Michael",
+                        quote:
+                          "I’m just loving Dovetail for qualitative user feedback documentation and analysis. It’s just a lovely experience. I don’t know what impresses me more… the app or the team and how they are building it 👏👏👏",
+                        role: "VP of Product"
+                      },
+                      {
+                        company: "MacMillan Learning",
+                        image: tina,
+                        name: "Tina",
+                        quote:
+                          "I have to say I am really loving Dovetail and the potential it has in gathering and sharing qualitative data and insights!",
+                        role: "UX Designer"
+                      }
+                    ]}
+                  />
                 </Item>
                 <Item>
                   <UseCases showTitle />
