@@ -5,6 +5,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-next",
+    "gatsby-plugin-sharp",
     "gatsby-plugin-typescript",
     "gatsby-plugin-typestyle",
     {
@@ -26,12 +27,27 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        path: "./src/markdown/help",
+        path: "./src/pages/help",
         name: "help-articles"
       }
     },
-    `gatsby-transformer-remark`
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 660
+            }
+          }
+        ]
+      }
+    }
   ]
 };

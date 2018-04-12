@@ -42,22 +42,36 @@ Once you’ve got your CSV file ready, open the project you’d like to import y
 
 Click **Upload a CSV file with data**:
 
+![Import data modal dialog](./import-modal.png)
+
 Choose a **CSV file (.csv)** from your computer:
 
+![OS X file picker dialog](./choose-file.png)
+
 Decide which column to map to the note title. Open the **select menu** and choose **Title** for that column. In this case, we’ve picked the ‘author’ column:
+
+![Column mapping interface](./map-first-column.png)
 
 Decide which column to map to the body. This will be the content of the note or insight. If you’re importing tags, you don’t need to select a column for body.
 
 Open the **select menu** and choose **Body** for that column:
 
+![Column mapping interface](./map-second-column.png)
+
 If you’d like to analyze the sentiment of your data, keep the **Automatically analyze sentiment** checkbox checked. Dovetail will add ‘Positive’ and ‘Negative’ tags to sentences that express a strong positive or negative sentiment. Sentiment analysis is only available on imported notes, not tags or insights.
 
-[Learn more about sentiment analysis]()
+[Learn more about sentiment analysis](/help/sentiment)
 
 Open the **select menu** after ‘as’ and decide wheneter you’d like to import your data as notes (default), tags, or insights:
 
+![Column mapping interface](./choose-type.png)
+
 Open the next **select menu** and choose what group to put the imported data in:
+
+![Column mapping interface](./choose-group.png)
 
 Click **Import rows**. Your data will start importing. You can continue using Dovetail while this is happening; just don’t close your browser window.
 
 Once the import has finished, **refresh** to see everything you’ve imported. In this case, the author is the note title, their review is the body, and sentiment analysis has added a few ‘Positive’ and ‘Negative’ tags for us:
+
+![List of imported notes](./import-complete.png)

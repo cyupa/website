@@ -4,6 +4,8 @@ date: "2018-04-11"
 title: "See tag usage as a bar or line chart"
 ---
 
+![Bar chart](./charts-bar.png)
+
 Understand your project at a glance by combining the power of annotations on qualitative data with a quantitative visualization as a bar chart or line chart.
 
 In a project, click **Charts** to get started.
@@ -18,13 +20,17 @@ Dovetail’s charts can show three metrics, each of which give you a slightly di
 
 ## Bar chart
 
+![Bar chart](./charts-bar.png)
+
 The bar chart is the default visualization. It displays your selected metric at the current point in time. On the bar chart, tags are interactive. Just click on a bar to open that tag, however, note that bars showing groups are not interactive.
 
 ## Line chart
 
+![Line chart](./charts-line.png)
+
 The line chart is historical. It shows your selected metric over time. This can help you see changes in your data over time.
 
-For example, if you’re collecting user feedback, the line chart lets you keep track of increases or decreases in feature requests, or customer satisfaction through [automatic sentiment analysis](#{sentiment_help_url}).
+For example, if you’re collecting user feedback, the line chart lets you keep track of increases or decreases in feature requests, or customer satisfaction through [automatic sentiment analysis](/help/sentiment).
 
 ## Filtering
 

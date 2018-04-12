@@ -32,4 +32,4 @@ A single project can have multiple forms. For each feedback form, you can choose
 
 ## Embed on your website
 
-[You’ll need to add some code to your website](). Once you’ve done that, changes will take effect immediately and you won’t need to update the code again.
+[You’ll need to add some code to your website](/help/form-code). Once you’ve done that, changes will take effect immediately and you won’t need to update the code again.

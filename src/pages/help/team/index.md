@@ -14,7 +14,7 @@ You can remove yourself from a team. When you do this, we’ll immediately creat
 
 To remove yourself from the team:
 
-1.  Visit the **[team page]()**.
+1.  Visit the **[team members page](/team/members)**.
 1.  Click the **✕** next to yourself.
 1.  Click **Remove**.
 
@@ -30,7 +30,7 @@ The team admin can remove anyone from the team. When you remove someone, they wi
 
 To remove someone from your team:
 
-1.  Visit the **[team page]()**.
+1.  Visit the **[team members page](/team/members)**.
 1.  Click the **✕** next to someone.
 1.  Click **Remove**.
 

@@ -14,4 +14,4 @@ A few more things to note:
 * Your data will not be deleted unless you specifically request us to do so.
 * If you do choose to subscribe again, the price may have changed.
 
-Please read our [Customer Terms of Service]() for more information.
+Please read our [Customer Terms of Service](/legal/customer-terms) for more information.

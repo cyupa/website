@@ -42,6 +42,15 @@ const Content = styled("div", {
     p: {
       margin: "16px 0"
     },
+    a: {
+      color: COLORS.purple,
+
+      $nest: {
+        "&:hover": {
+          textDecoration: "underline"
+        }
+      }
+    },
     h2: {
       marginTop: "64px"
     },
@@ -49,9 +58,26 @@ const Content = styled("div", {
       marginTop: "48px"
     },
     code: {
-      backgroundColor: COLORS.i08,
+      backgroundColor: COLORS.i04,
       borderRadius: BORDER_RADIUS,
       padding: "0 4px"
+    },
+    blockquote: {
+      borderLeft: `2px solid ${COLORS.indigo}`,
+      padding: "0 32px",
+      margin: "32px",
+      fontStyle: "italic"
+    },
+    hr: {
+      backgroundColor: COLORS.i04,
+      border: 0,
+      margin: "32px 0",
+      height: "2px"
+    },
+    ".gatsby-resp-image-wrapper": {
+      borderRadius: BORDER_RADIUS,
+      margin: "32px 0",
+      overflow: "hidden"
     }
   }
 });

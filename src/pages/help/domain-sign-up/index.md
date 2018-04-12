@@ -4,7 +4,9 @@ date: "2018-04-11"
 title: "Enable domain-restricted sign up"
 ---
 
-Domain-restricted sign up makes it easy for your colleagues to join an existing team on Dovetail. When someone with a verified email address from your domain signs up for Dovetail, they’ll be prompted to join your team as part of the sign up flow.
+![Screenshot showing a ‘join team’ screen in Dovetail](./join-team.png)
+
+Domain-restricted sign up makes it easy for your colleagues to join an existing team. When someone with a verified email address from your domain signs up for Dovetail, they’ll be prompted to join your team as part of the sign up flow.
 
 The following criteria must be met:
 

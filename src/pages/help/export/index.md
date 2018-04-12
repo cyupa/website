@@ -4,6 +4,8 @@ date: "2018-04-11"
 title: "Download a spreadsheet of annotations"
 ---
 
+![Download a spreadsheet of annotations](./export.gif)
+
 Dovetail supports exporting individual notes and insights, along with all unique annotations you’ve created in a project.
 
 ## Exporting annotations

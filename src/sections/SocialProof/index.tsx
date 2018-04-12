@@ -1,4 +1,5 @@
 import * as React from "react";
+import abhilash from "../../avatars/abhilash.jpg";
 import { Center } from "../../components/layout/Center";
 import { Flex } from "../../components/layout/Flex";
 import { Grid } from "../../components/layout/Grid";
@@ -32,7 +33,7 @@ export class SocialProof extends React.PureComponent {
             />
             <Testimonial
               company="Freshworks"
-              image="https://s3.amazonaws.com/dovetail-dev/users/photos/ac37696c-66bf-11e7-bcc5-22000b774824/medium.jpg"
+              image={abhilash}
               name="Abhilash"
               quote="My team has started using Dovetail even more and the amount of productivity increase we are witnessing is amazing. Your app is simply too good!"
               role="Senior Researcher"

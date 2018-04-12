@@ -10,7 +10,7 @@ Sentiment analysis is when software analyzes text and determines whether it expr
 
 Dovetail will add _Positive_ and _Negative_ tags to sentences in notes that express a strong positive or negative sentiment. For example, let’s say you had the following piece of user feedback:
 
-> _“Hi guys. I love the product overall. It has a very clean design. But I really hate that I can’t search my data.”_
+> “Hi guys. I love the product overall. It has a very clean design. But I really hate that I can’t search my data.”
 
 “I love the product overall” and “It has a very clean design” are strongly positive, so they will be tagged with _Positive_. “But I really hate that I can’t search my data” is negative, so it will be tagged with _Negative_. “Hi guys” will not be tagged because it does not show a strong sentiment either way.
 

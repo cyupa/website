@@ -89,7 +89,7 @@ export class Header extends React.PureComponent<Props> {
                 </Item>
                 <Item>
                   <ButtonLink color={!dark ? COLORS.purple : COLORS.p80} height={32} location={locations.signUp()}>
-                    Sign up
+                    Try now
                   </ButtonLink>
                 </Item>
               </Flex>

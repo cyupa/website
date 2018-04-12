@@ -4,6 +4,8 @@ date: "2018-04-11"
 title: "Bulk edit annotations and merge tags"
 ---
 
+![Bulk editing annotations](./bulk-edit.png)
+
 Dovetail offers a powerful annotations bulk editing mode to help you move annotations around and re-organize your tags and insights. Using bulk editing, you can merge two tags or insights together, add annotations to insights, or remove a tag or insight from multiple annotations at once.
 
 To enter bulk editing mode, visit a tag or insight and click the checkbox on an annotation card. The blue bulk editing header will appear at the top of the screen. To cancel what you’re doing, click the back arrow in the top left of the screen.
