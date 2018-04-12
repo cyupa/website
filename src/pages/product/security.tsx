@@ -10,41 +10,7 @@ import { Features } from "../../components/site/Features";
 import { Hero } from "../../components/site/Hero";
 import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "../../constants";
 import { locations } from "../../routing/locations";
-
-export const BASE_SECURITY_FEATURES = [
-  {
-    text:
-      "Data is encrypted while moving between us and your browser with Transport Level Security (TLS), and encrypted at rest in our database.",
-    title: "Data encryption"
-  },
-  {
-    text:
-      "Easily import notes, tags, insights, and files. Download PDFs of your notes and insights and export your tags to a spreadsheet.",
-    title: "Import and export"
-  },
-  {
-    text:
-      "Dovetail is GDPR compliant with a privacy-by-design architecture, the right to be forgotten, data portability features, and more.",
-    title: "GDPR"
-  },
-  {
-    text:
-      "Our payments provider Stripe has been audited by an independent PCI Qualified Security Assessor and is certified as a PCI Level 1 Service Provider.",
-    title: "PCI DSS"
-  }
-];
-
-const ADVANCED_SECURITY_FEATURES = [
-  {
-    text:
-      "Our access logic is written in the database. Robust policy-based access controls minimize risk and improve auditing.",
-    title: "Database-level security"
-  },
-  {
-    text: "Cross-site request forgery prevention helps to protect users from attacks from other websites they might visit.",
-    title: "CSRF prevention"
-  }
-];
+import { ADVANCED_SECURITY_FEATURES, BASE_SECURITY_FEATURES } from "../../sections/Security";
 
 export default class extends React.PureComponent {
   public render() {
