@@ -3,6 +3,7 @@ category: "start"
 path: "/help/bulk-edit"
 date: "2018-04-11"
 title: "Edit and merge annotations"
+weight: 3
 ---
 
 ![Bulk editing annotations](./bulk-edit.png)

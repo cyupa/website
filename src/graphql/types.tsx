@@ -15,6 +15,7 @@ export interface HelpIndexQuery {
           date: string | null;
           path: string | null;
           title: string | null;
+          weight: number | null;
         } | null;
       } | null;
     } | null> | null;
@@ -35,6 +36,7 @@ export interface LegalIndexQuery {
           date: string | null;
           path: string | null;
           title: string | null;
+          weight: number | null;
         } | null;
       } | null;
     } | null> | null;

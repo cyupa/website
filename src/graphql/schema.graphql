@@ -1933,6 +1933,7 @@ type frontmatter_2 {
   ): Date
   _PARENT: String
   parent: String
+  weight: Int
 }
 
 enum HeadingLevels {
@@ -2126,6 +2127,7 @@ input markdownRemarkConnectionFrontmatterInputObject_2 {
   date: markdownRemarkConnectionFrontmatterDateQueryString_2
   _PARENT: markdownRemarkConnectionFrontmatterParentQueryString_3
   parent: markdownRemarkConnectionFrontmatterParentQueryString_4
+  weight: markdownRemarkConnectionFrontmatterWeightQueryInteger_2
 }
 
 input markdownRemarkConnectionFrontmatterParentQueryString_3 {
@@ -2154,6 +2156,11 @@ input markdownRemarkConnectionFrontmatterTitleQueryString_2 {
   ne: String
   regex: String
   glob: String
+}
+
+input markdownRemarkConnectionFrontmatterWeightQueryInteger_2 {
+  eq: Int
+  ne: Int
 }
 
 input markdownRemarkConnectionIdQueryString_2 {
@@ -2217,6 +2224,7 @@ enum MarkdownRemarkConnectionSortByFieldsEnum {
   frontmatter___date
   frontmatter____PARENT
   frontmatter___parent
+  frontmatter___weight
   excerpt
   fileAbsolutePath
   html
@@ -2246,6 +2254,7 @@ enum markdownRemarkDistinctEnum {
   frontmatter___date
   frontmatter____PARENT
   frontmatter___parent
+  frontmatter___weight
   excerpt
   fileAbsolutePath
 }
@@ -2290,6 +2299,7 @@ input markdownRemarkFrontmatterInputObject_2 {
   date: markdownRemarkFrontmatterDateQueryString_2
   _PARENT: markdownRemarkFrontmatterParentQueryString_3
   parent: markdownRemarkFrontmatterParentQueryString_4
+  weight: markdownRemarkFrontmatterWeightQueryInteger_2
 }
 
 input markdownRemarkFrontmatterParentQueryString_3 {
@@ -2318,6 +2328,11 @@ input markdownRemarkFrontmatterTitleQueryString_2 {
   ne: String
   regex: String
   glob: String
+}
+
+input markdownRemarkFrontmatterWeightQueryInteger_2 {
+  eq: Int
+  ne: Int
 }
 
 """A connection to a list of items."""
@@ -2357,6 +2372,7 @@ enum markdownRemarkGroupEnum {
   frontmatter___date
   frontmatter____PARENT
   frontmatter___parent
+  frontmatter___weight
   excerpt
   fileAbsolutePath
 }

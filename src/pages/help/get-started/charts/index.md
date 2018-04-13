@@ -3,6 +3,7 @@ category: "start"
 path: "/help/charts"
 date: "2018-04-11"
 title: "See tag usage as a bar or line chart"
+weight: 4
 ---
 
 ![Bar chart](./charts-bar.png)
