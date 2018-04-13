@@ -17,7 +17,7 @@ export default class extends React.PureComponent {
     return (
       <>
         <Helmet>
-          <title>Security – Dovetail</title>
+          <title>Security and privacy – Dovetail</title>
         </Helmet>
         <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
           <Item>
