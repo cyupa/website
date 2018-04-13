@@ -3,7 +3,6 @@ import * as ben from "@heydovetail/website/avatars/ben.jpg";
 import * as erik from "@heydovetail/website/avatars/erik.jpg";
 import IllustrationAnnotationsFeedback from "@heydovetail/website/components/illustrations/IllustrationAnnotationsFeedback";
 import IllustrationBoard from "@heydovetail/website/components/illustrations/IllustrationBoard";
-import IllustrationForm from "@heydovetail/website/components/illustrations/IllustrationForm";
 import IllustrationProjectsFeedback from "@heydovetail/website/components/illustrations/IllustrationProjectsFeedback";
 import IllustrationSentimentChart from "@heydovetail/website/components/illustrations/IllustrationSentimentChart";
 import IllustrationSentimentText from "@heydovetail/website/components/illustrations/IllustrationSentimentText";
@@ -18,7 +17,9 @@ import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import Wave from "@heydovetail/website/components/site/Wave/Wave";
-import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { ColorWheel } from "@heydovetail/website/components/util/ColorWheel";
+import IllustrationFormColor from "@heydovetail/website/components/util/ColorWheel/IllustrationFormColor";
+import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { Integrations } from "@heydovetail/website/sections/Integrations";
 import { Security } from "@heydovetail/website/sections/Security";
@@ -51,7 +52,11 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
-                    image={<IllustrationForm size="100%" />}
+                    image={
+                      <ColorWheel colors={[COLORS.magenta, COLORS.purple, COLORS.blue, COLORS.teal, COLORS.green, COLORS.lime]}>
+                        <IllustrationFormColor size="100%" />
+                      </ColorWheel>
+                    }
                     imagePosition="left"
                     text="Create a feedback form and get feedback directly from users. Theme it to match your brand without needing a developer."
                     title="Customize your own feedback form."
