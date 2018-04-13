@@ -8,6 +8,7 @@ import { PageContent } from "@heydovetail/website/components/site/PageContent";
 import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { helpCategories } from "@heydovetail/website/util/categories";
+import { graphql } from "@heydovetail/website/util/graphql";
 import * as React from "react";
 import { Helmet } from "react-helmet";
 

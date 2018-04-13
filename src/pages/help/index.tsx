@@ -2,6 +2,7 @@ import { ActionCard } from "@heydovetail/website/components/site/ActionCard";
 import { locations } from "@heydovetail/website/routing/locations";
 import { DocumentIndex } from "@heydovetail/website/sections/DocumentIndex";
 import { generateDocumentCategoryGroups } from "@heydovetail/website/util/categories";
+import { graphql } from "@heydovetail/website/util/graphql";
 import * as React from "react";
 
 interface Props {
