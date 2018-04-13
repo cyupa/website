@@ -33,7 +33,7 @@ export class PricingCard extends React.PureComponent<Props> {
                     <SmallText size={14}>Unlimited users</SmallText>
                   </Item>
                   <Item>
-                    <SmallText size={14}>Billed annually or monthly</SmallText>
+                    <SmallText size={14}>Billed monthly or annually</SmallText>
                   </Item>
                 </Flex>
               </FinePrint>
