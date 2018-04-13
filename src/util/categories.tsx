@@ -22,17 +22,26 @@ export const legalCategories = {
 const helpCategoriesOrder = ["start", "import", "team", "billing", "account", "export", "misc"];
 const legalCategoriesOrder = ["terms", "policies"];
 
-export function generateDocumentCategoryGroups(edges: {}, section: "help" | "legal"): MasonryItem[] {
-  const categories = groupBy(edges, edge => edge.node.frontmatter.category);
+interface Article {
+  category: string;
+  path: string;
+  title: string;
+  weight: number;
+}
+
+export function generateDocumentCategoryGroups(articles: Article[], section: "help" | "legal"): MasonryItem[] {
+  const categories = groupBy(articles, article => article.category);
+
   return Object.keys(categories)
+    .sort(sortComparatorAsc(card => card.sortKey))
     .map((category, i) => ({
       id: `${i}`,
       node: (
         <PageGroup
           pages={categories[category]
-            .map(edge => ({
-              title: edge.node.frontmatter.title,
-              path: edge.node.frontmatter.path
+            .map(node => ({
+              title: node.title,
+              path: node.path
             }))
             .sort(sortComparatorAsc(article => article.title))}
           title={section === "help" ? helpCategories[category] : legalCategories[category]}

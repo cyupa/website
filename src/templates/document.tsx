@@ -7,13 +7,18 @@ import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { PageContent } from "@heydovetail/website/components/site/PageContent";
 import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
 import { DocumentByPathQuery } from "@heydovetail/website/graphql/types";
-import { locations } from "@heydovetail/website/routing/locations";
+import { internal, locations } from "@heydovetail/website/routing/locations";
 import { helpCategories } from "@heydovetail/website/util/categories";
 import { graphql } from "@heydovetail/website/util/graphql";
 import * as React from "react";
 import { Helmet } from "react-helmet";
 
-export default function DocumentTemplate({ data }: { data: DocumentByPathQuery }) {
+interface Props {
+  data: DocumentByPathQuery;
+  pathContext: { breadcrumb: Array<{ path: string | null; title: string | null }> };
+}
+
+export default function DocumentTemplate({ data, pathContext }: Props) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark!;
 
@@ -25,10 +30,10 @@ export default function DocumentTemplate({ data }: { data: DocumentByPathQuery }
       <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
         <div style={{ maxWidth: TYPICAL_PAGE_WIDTH * 0.75 }}>
           <Breadcrumbs
-            crumbs={[
-              { location: locations.help(), text: "All help articles" },
-              { text: helpCategories[frontmatter!.category!] }
-            ]}
+            crumbs={pathContext.breadcrumb.map(breadcrumb => ({
+              location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
+              text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
+            }))}
           />
           <Flex gap={24} layout="column">
             <Item>

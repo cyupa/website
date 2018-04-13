@@ -12,8 +12,20 @@ interface Props {
 
 export default class extends React.PureComponent<Props> {
   public render() {
-    const edges = this.props.data.allMarkdownRemark!.edges!;
-    const categoryCards = generateDocumentCategoryGroups(edges, "help");
+    const articles = this.props.data
+      .allMarkdownRemark!.edges!.filter(edge => edge!.node!.frontmatter!.category !== null)
+      .map(edge => {
+        const frontmatter = edge!.node!.frontmatter!;
+
+        return {
+          category: frontmatter.category!,
+          path: frontmatter.path!,
+          title: frontmatter.title!,
+          weight: frontmatter.weight!
+        };
+      });
+
+    const categoryCards = generateDocumentCategoryGroups(articles, "help");
 
     categoryCards.splice(1, 0, {
       id: "contact",
@@ -51,6 +63,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             title
+            weight
           }
         }
       }

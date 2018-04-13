@@ -3,6 +3,7 @@ category: "start"
 path: "/help/insights"
 date: "2018-04-11"
 title: "Create insights"
+weight: 2.3
 ---
 
 The power of Dovetail lies in inline tagging, which we call **annotating**. There are two types of annotations: [**tags**](/help/tags) and [**insights**](/help/insights).

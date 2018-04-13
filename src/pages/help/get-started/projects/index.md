@@ -3,6 +3,7 @@ category: "start"
 path: "/help/projects"
 date: "2018-04-11"
 title: "Create projects and notes"
+weight: 1
 ---
 
 To get started with Dovetail, you’ll need to create a project. Projects contain groups of notes, tags, and insights, along with annotations and charts.

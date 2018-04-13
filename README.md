@@ -22,7 +22,7 @@ yarn generate:types
 When to run:
 
 * after modifying GraphQL queries
-* after adding/removing frontmatter
+* after adding/removing frontmatter (this also requires restarting Gatsby)
 
 Requirements:
 

@@ -18465,6 +18465,18 @@
               },
               "isDeprecated": false,
               "deprecationReason": null
+            },
+            {
+              "name": "weight",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "inputFields": null,
@@ -19424,6 +19436,12 @@
               "deprecationReason": null
             },
             {
+              "name": "frontmatter___weight",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "excerpt",
               "description": null,
               "isDeprecated": false,
@@ -19985,6 +20003,16 @@
                 "ofType": null
               },
               "defaultValue": null
+            },
+            {
+              "name": "weight",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "markdownRemarkConnectionFrontmatterWeightQueryInteger_2",
+                "ofType": null
+              },
+              "defaultValue": null
             }
           ],
           "interfaces": null,
@@ -20288,6 +20316,37 @@
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "markdownRemarkConnectionFrontmatterWeightQueryInteger_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
                 "ofType": null
               },
               "defaultValue": null
@@ -21081,6 +21140,12 @@
               "deprecationReason": null
             },
             {
+              "name": "frontmatter___weight",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "excerpt",
               "description": null,
               "isDeprecated": false,
@@ -21171,6 +21236,12 @@
             },
             {
               "name": "frontmatter___parent",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "frontmatter___weight",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -31997,6 +32068,16 @@
                 "ofType": null
               },
               "defaultValue": null
+            },
+            {
+              "name": "weight",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "markdownRemarkFrontmatterWeightQueryInteger_2",
+                "ofType": null
+              },
+              "defaultValue": null
             }
           ],
           "interfaces": null,
@@ -32300,6 +32381,37 @@
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "markdownRemarkFrontmatterWeightQueryInteger_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
                 "ofType": null
               },
               "defaultValue": null
