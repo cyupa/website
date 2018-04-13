@@ -24,7 +24,7 @@ export class HeroText extends React.PureComponent<Props> {
               <h1>{title}</h1>
             </Item>
             <Item>
-              <p style={{ opacity: LIGHT_TEXT_OPACITY, maxWidth: maxWidth, textAlign: center ? "center" : "left" }}>{text}</p>
+              <p style={{ opacity: LIGHT_TEXT_OPACITY }}>{text}</p>
             </Item>
           </Flex>
         </Wrapper>

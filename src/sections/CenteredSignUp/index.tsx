@@ -13,7 +13,7 @@ export class CenteredSignUp extends React.PureComponent {
         <Flex gap={TYPICAL_VERTICAL_GAP / 2} layout="column">
           <Item>
             <Center>
-              <h2>Start a 14 day free trial</h2>
+              <h2>Start a free trial</h2>
             </Center>
           </Item>
           <Item>
