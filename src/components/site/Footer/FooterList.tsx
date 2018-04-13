@@ -1,10 +1,11 @@
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
+import { COLORS } from "@heydovetail/website/constants";
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
 import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
-import { style } from "typestyle/lib";
+import { style } from "typestyle";
 
 interface FooterItem {
   label: string;
@@ -37,6 +38,7 @@ export class FooterList extends React.PureComponent<Props> {
 }
 
 const Heading = styled("h5", {
+  color: COLORS.i60,
   fontSize: "14px",
   fontWeight: 500,
   margin: 0
