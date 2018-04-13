@@ -5,7 +5,13 @@ date: "2018-04-11"
 title: "Invite people to your team"
 ---
 
-Anyone on the team can invite new people and it won’t affect your bill. We charge a fixed $49 per month for the whole team, regardless of how many members there are. To invite others simply visit the [team members page](/team/members), type an email address, and click **Send invite**.
+Anyone on the team can invite new people and it won’t affect your bill. We charge a fixed $49 per month for the whole team, regardless of how many members there are.
+
+To invite someone to your team:
+
+1.  Visit the [team members page](/team/members).
+1.  Type an email address.
+1.  Click **Send invite**.
 
 ## No invite emails?
 

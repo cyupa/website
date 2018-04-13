@@ -5,8 +5,6 @@ date: "2018-04-11"
 title: "Embed a feedback form"
 ---
 
-![Feedback form](./form.gif)
-
 Gather valuable feedback from your users with a simple, customizable, and embeddable form. When people fill it out, their feedback is saved in your Dovetail project, ready to organize and analyze alongside everything else.
 
 We currently offer two ways to add a feedback form to your website: An HTML iframe or a React component.
