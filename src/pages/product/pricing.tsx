@@ -51,11 +51,6 @@ export default class extends React.PureComponent {
               </Flex>
             </Item>
             <Item>
-              <Center>
-                <h2>Frequently asked questions about pricing.</h2>
-              </Center>
-            </Item>
-            <Item>
               <FrequentlyAskedQuestions />
             </Item>
             <Item>
