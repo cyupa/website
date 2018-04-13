@@ -13,12 +13,13 @@ import { locations } from "@heydovetail/website/routing/locations";
 import * as React from "react";
 
 interface Props {
+  onClick?: () => void;
   showTitle?: boolean;
 }
 
 export class UseCases extends React.PureComponent<Props> {
   public render() {
-    const { showTitle = false } = this.props;
+    const { onClick, showTitle = false } = this.props;
 
     const useCases = (
       <MediaToggle
@@ -29,15 +30,27 @@ export class UseCases extends React.PureComponent<Props> {
         <UseCaseCard
           image={<PictogramFeedback />}
           location={locations.customerFeedback()}
+          onClick={onClick}
           text="Customer feedback management"
         />
         <UseCaseCard
           image={<PictogramRepository />}
           location={locations.researchRepository()}
+          onClick={onClick}
           text="User research repository"
         />
-        <UseCaseCard image={<PictogramQda />} location={locations.qualitativeDataAnalysis()} text="Qualitative data analysis" />
-        <UseCaseCard image={<PictogramResearch />} location={locations.userResearch()} text="Collaborative user research" />
+        <UseCaseCard
+          image={<PictogramQda />}
+          location={locations.qualitativeDataAnalysis()}
+          onClick={onClick}
+          text="Qualitative data analysis"
+        />
+        <UseCaseCard
+          image={<PictogramResearch />}
+          location={locations.userResearch()}
+          onClick={onClick}
+          text="Collaborative user research"
+        />
       </MediaToggle>
     );
 

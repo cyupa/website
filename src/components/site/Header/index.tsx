@@ -33,7 +33,7 @@ export class Header extends React.PureComponent<Props> {
     const header = (
       <Wrapper dark={dark}>
         <Justify>
-          <Item>
+          <Item style={{ marginLeft: "-8px" }}>
             <Color dark={dark}>
               <SubtleButtonLink height={40} location={locations.home()}>
                 <DovetailLogo color={dark ? COLORS.white : COLORS.purple} />

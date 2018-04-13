@@ -8,7 +8,7 @@ import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { locations } from "@heydovetail/website/routing/locations";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
 import * as React from "react";
-import { style } from "typestyle/lib";
+import { style } from "typestyle";
 
 interface Props {
   onDismiss: () => void;
@@ -16,8 +16,10 @@ interface Props {
 
 export class MobileNav extends React.PureComponent<Props> {
   public render() {
+    const { onDismiss } = this.props;
+
     return (
-      <Modal onDismiss={this.props.onDismiss}>
+      <Modal onDismiss={onDismiss}>
         <Flex gap={TYPICAL_VERTICAL_GAP / 2} layout="column">
           <Item>
             <Flex gap={24} layout="column">
@@ -28,12 +30,12 @@ export class MobileNav extends React.PureComponent<Props> {
                 <Card padding={24}>
                   <Flex gap={8}>
                     <Item>
-                      <ButtonLink color={COLORS.purple} fullWidth location={locations.signUp()}>
+                      <ButtonLink color={COLORS.purple} fullWidth location={locations.signUp()} onClick={onDismiss}>
                         Try now
                       </ButtonLink>
                     </Item>
                     <Item>
-                      <ButtonLink fullWidth location={locations.logIn()}>
+                      <ButtonLink fullWidth location={locations.logIn()} onClick={onDismiss}>
                         Log in
                       </ButtonLink>
                     </Item>
@@ -48,7 +50,7 @@ export class MobileNav extends React.PureComponent<Props> {
                 <h3>Explore use cases</h3>
               </Item>
               <Item>
-                <UseCases />
+                <UseCases onClick={onDismiss} />
               </Item>
             </Flex>
           </Item>
@@ -58,17 +60,17 @@ export class MobileNav extends React.PureComponent<Props> {
                 <h3>Useful links</h3>
               </Item>
               <Item>
-                <LocationLink className={linkClassName} location={locations.pricing()}>
+                <LocationLink className={linkClassName} location={locations.pricing()} onClick={onDismiss}>
                   Pricing
                 </LocationLink>
               </Item>
               <Item>
-                <LocationLink className={linkClassName} location={locations.help()}>
+                <LocationLink className={linkClassName} location={locations.help()} onClick={onDismiss}>
                   Support
                 </LocationLink>
               </Item>
               <Item>
-                <LocationLink className={linkClassName} location={locations.legal()}>
+                <LocationLink className={linkClassName} location={locations.legal()} onClick={onDismiss}>
                   Legal
                 </LocationLink>
               </Item>

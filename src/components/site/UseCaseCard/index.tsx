@@ -10,14 +10,15 @@ import { style } from "typestyle";
 interface Props {
   image: React.ReactNode;
   location: LocationDescriptor;
+  onClick?: () => void;
   text: string;
 }
 
 export class UseCaseCard extends React.PureComponent<Props> {
   public render() {
-    const { image, location, text } = this.props;
+    const { image, location, onClick, text } = this.props;
     return (
-      <LocationLink className={linkClassName} location={location}>
+      <LocationLink className={linkClassName} location={location} onClick={onClick}>
         <Flex alignItems="center" gap={24}>
           <Item style={{ flexGrow: 0 }}>{image}</Item>
           <Item style={{ minWidth: 0 }}>
