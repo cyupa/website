@@ -19969,18 +19969,6 @@
               "deprecationReason": null
             },
             {
-              "name": "category",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "date",
               "description": null,
               "args": [
@@ -20991,12 +20979,6 @@
               "deprecationReason": null
             },
             {
-              "name": "frontmatter___category",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "frontmatter___date",
               "description": null,
               "isDeprecated": false,
@@ -21566,16 +21548,6 @@
               "defaultValue": null
             },
             {
-              "name": "category",
-              "description": null,
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "markdownRemarkConnectionFrontmatterCategoryQueryString_2",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
               "name": "date",
               "description": null,
               "type": {
@@ -21847,57 +21819,6 @@
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
-                "ofType": null
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "INPUT_OBJECT",
-          "name": "markdownRemarkConnectionFrontmatterCategoryQueryString_2",
-          "description": null,
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "eq",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "ne",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "regex",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "glob",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
                 "ofType": null
               },
               "defaultValue": null
@@ -22742,12 +22663,6 @@
               "deprecationReason": null
             },
             {
-              "name": "frontmatter___category",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "frontmatter___date",
               "description": null,
               "isDeprecated": false,
@@ -22844,12 +22759,6 @@
             },
             {
               "name": "frontmatter___weight",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "frontmatter___category",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -34923,16 +34832,6 @@
               "defaultValue": null
             },
             {
-              "name": "category",
-              "description": null,
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "markdownRemarkFrontmatterCategoryQueryString_2",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
               "name": "date",
               "description": null,
               "type": {
@@ -35204,57 +35103,6 @@
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
-                "ofType": null
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "INPUT_OBJECT",
-          "name": "markdownRemarkFrontmatterCategoryQueryString_2",
-          "description": null,
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "eq",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "ne",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "regex",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "glob",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
                 "ofType": null
               },
               "defaultValue": null

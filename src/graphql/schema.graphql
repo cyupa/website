@@ -1923,7 +1923,6 @@ type frontmatter_2 {
   _PARENT: String
   parent: String
   weight: Float
-  category: String
   date(
     """
     Format the date using Moment.js' date tokens e.g. "date(formatString: "YYYY
@@ -2122,13 +2121,6 @@ input markdownRemarkConnectionFrontmatterBreadcrumbOnlyQueryBoolean_2 {
   ne: Boolean
 }
 
-input markdownRemarkConnectionFrontmatterCategoryQueryString_2 {
-  eq: String
-  ne: String
-  regex: String
-  glob: String
-}
-
 input markdownRemarkConnectionFrontmatterDateQueryString_2 {
   eq: String
   ne: String
@@ -2143,7 +2135,6 @@ input markdownRemarkConnectionFrontmatterInputObject_2 {
   _PARENT: markdownRemarkConnectionFrontmatterParentQueryString_3
   parent: markdownRemarkConnectionFrontmatterParentQueryString_4
   weight: markdownRemarkConnectionFrontmatterWeightQueryFloat_2
-  category: markdownRemarkConnectionFrontmatterCategoryQueryString_2
   date: markdownRemarkConnectionFrontmatterDateQueryString_2
 }
 
@@ -2241,7 +2232,6 @@ enum MarkdownRemarkConnectionSortByFieldsEnum {
   frontmatter____PARENT
   frontmatter___parent
   frontmatter___weight
-  frontmatter___category
   frontmatter___date
   excerpt
   fileAbsolutePath
@@ -2272,7 +2262,6 @@ enum markdownRemarkDistinctEnum {
   frontmatter____PARENT
   frontmatter___parent
   frontmatter___weight
-  frontmatter___category
   frontmatter___date
   excerpt
   fileAbsolutePath
@@ -2302,13 +2291,6 @@ input markdownRemarkFrontmatterBreadcrumbOnlyQueryBoolean_2 {
   ne: Boolean
 }
 
-input markdownRemarkFrontmatterCategoryQueryString_2 {
-  eq: String
-  ne: String
-  regex: String
-  glob: String
-}
-
 input markdownRemarkFrontmatterDateQueryString_2 {
   eq: String
   ne: String
@@ -2323,7 +2305,6 @@ input markdownRemarkFrontmatterInputObject_2 {
   _PARENT: markdownRemarkFrontmatterParentQueryString_3
   parent: markdownRemarkFrontmatterParentQueryString_4
   weight: markdownRemarkFrontmatterWeightQueryFloat_2
-  category: markdownRemarkFrontmatterCategoryQueryString_2
   date: markdownRemarkFrontmatterDateQueryString_2
 }
 
@@ -2397,7 +2378,6 @@ enum markdownRemarkGroupEnum {
   frontmatter____PARENT
   frontmatter___parent
   frontmatter___weight
-  frontmatter___category
   frontmatter___date
   excerpt
   fileAbsolutePath

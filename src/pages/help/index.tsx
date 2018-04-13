@@ -52,7 +52,6 @@ export const pageQuery = graphql`
           fileAbsolutePath
           frontmatter {
             breadcrumbOnly
-            category
             date(formatString: "MMMM DD, YYYY")
             path
             title
