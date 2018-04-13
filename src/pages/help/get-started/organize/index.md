@@ -5,27 +5,45 @@ date: "2018-04-11"
 title: "Tips for organizing your content"
 ---
 
-Dovetail has tags, notes, insights, groups, projects, and teams. There are many ways to organize your content using these concepts. From bottom to top, here’s an explanation of each concept:
+Not unlike Trello, Google Docs, or a spreadsheet, Dovetail is intentionally designed to be a very flexible tool in order to work with a variety of use cases for customer feedback and user research organization and analysis.
 
-**Tags** — Annotations created on text in notes.
+It’s important to understand the purpose of each of the key features and concepts present in the product — and how they relate to one another — so you can make an informed decision on how to organize content for your use case.
 
-**Notes** — Text documents where you can take research notes, paste textual data to analyze, or automatically import via Zapier.
+---
 
-**Insights** — A special type of note designed to store research findings.
+| Feature         | Purpose                                                                  |
+| --------------- | ------------------------------------------------------------------------ |
+| **Teams**       | Allows multiple people to access the same projects.                      |
+| **Projects**    | A way to separate different research projects or feedback.               |
+| **Groups**      | Lists to categorize and prioritize notes, tags, and insights.            |
+| **Notes**       | Text documents to store raw data for analysis.                           |
+| **Annotations** | A snippet of text with a tag or insight applied.                         |
+| **Tags**        | A type of annotation to identify patterns across notes.                  |
+| **Insights**    | A type of annotation to summarize findings for easy sharing with others. |
+| **Charts**      | A way to visualize tags as a bar or line chart.                          |
 
-**Groups** — A way to categorize notes, tags, and insights inside a project. Useful for highlighting themes or as a workflow with drag & drop.
+---
 
-**Projects** — Contain notes, tags, insights, and groups. Projects are generally topic-based, e.g. a research project or a specific product’s feedback.
+## Example workflows
 
-**Teams** — Allow multiple people to access projects.
+Below are two example workflows for how you might use Dovetail.
 
-## Example workflow
+### Feedback management
 
-Here’s an example workflow of how you might use Dovetail for analysis:
+Create a new project for your product or group of features.
 
-1.  Create a project for a research focus area.
-1.  Write your own notes, import data from [a spreadsheet](/help/import) or from [Zapier](/help/zapier), or paste text from elsewhere to analyze in Dovetail.
-1.  As you identify themes across notes, annotate your notes with tags.
-1.  Use groups to categorize notes and tags.
-1.  Write about your findings in editorial insights.
+1.  Configure [Zapier integrations](/help/zapier) or a [feedback form](/help/form-customize) to automatically import notes in real time. Alternatively, [upload a spreadsheet](/help/spreadsheet) of customer feedback.
+1.  Annotate your notes with tags.
+1.  Use tag groups to organize your tags into categories or higher level themes, for example **Value proposition**, **Feature requests**, or **Usability**.
+1.  Write about your findings in insights, and cherry-pick specific annotations.
+1.  Share your project with teammates, stakeholders, or clients.
+
+### User research
+
+Create a new project for your research, with individiual notes for each interview. The title of the note could be the name of the person you’re interviewing.
+
+1.  Use note groups in your project to categorize interviewees into personas, rooms, or as workflow e.g. **Upcoming** / **Today** / **Analyzed**.
+1.  Take notes during the interview and annotate your notes with tags.
+1.  Use tag groups to organize your tags into categories or higher level themes, for example **Pain points**, **Feature requests**, or **Onboarding**.
+1.  Write about your research findings in insights, and cherry-pick specific annotations.
 1.  Share your research with teammates, stakeholders, or clients.

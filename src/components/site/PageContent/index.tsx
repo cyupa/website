@@ -49,7 +49,35 @@ const Content = styled("div", {
       fontStyle: "italic"
     },
     hr: {
+      backgroundColor: COLORS.i04,
+      border: 0,
+      margin: "32px 0",
+      height: "2px"
+    },
+    ".gatsby-resp-image-wrapper": {
+      borderRadius: BORDER_RADIUS,
+      margin: "32px 0",
+      overflow: "hidden"
+    },
+    table: {
+      borderSpacing: "4px",
+      fontSize: "14px",
+      textAlign: "left",
+      margin: "-4px",
+      overflowX: "scroll",
+      width: "100%"
+    },
+    "th, td": {
+      lineHeight: "20px",
+      padding: "8px 12px",
+      verticalAlign: "top"
+    },
+    td: {
       backgroundColor: COLORS.i04
+    },
+    th: {
+      backgroundColor: COLORS.i08,
+      fontWeight: 500
     }
   }
 });

@@ -1,6 +1,6 @@
 ---
 category: "start"
-path: "/help/create"
+path: "/help/projects"
 date: "2018-04-11"
 title: "Create projects and notes"
 ---
@@ -42,7 +42,7 @@ You can view groups as a **list** or a **board** by switching near the top right
 To create a new group in a project:
 
 1.  Click the **Notes**, **Tags**, or **Insights** tab.
-1.  Click the **+** at the end of the list or board.
+1.  Click the **Plus (+)** at the end of the list or board.
 
 ## Notes
 
