@@ -4,11 +4,12 @@
   "version": "1.0.0",
   "description": "Dovetail's public website",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "build": "ts-node ./node_modules/.bin/gatsby build",
+    "develop": "ts-node ./node_modules/.bin/gatsby develop",
+    "generate:types": "./node_modules/.bin/apollo-codegen introspect-schema --output src/graphql/schema.json http://localhost:8000/___graphql && ./node_modules/.bin/apollo-codegen print-schema --schema src/graphql/schema.json --output src/graphql/schema.graphql && ./node_modules/.bin/apollo-codegen generate --schema src/graphql/schema.json --target typescript --output src/graphql/types.tsx --tag-name graphql 'src/**/*.tsx'",
     "generate:svgs": "svg-to-react src",
     "precommit": "lint-staged",
-    "start": "gatsby develop",
+    "start": "ts-node ./node_modules/.bin/gatsby develop",
     "storybook": "ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook",
     "test": "./node_modules/.bin/tslint -p tsconfig.json && ./node_modules/.bin/jest --runInBand && ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook --smoke-test"
   },
@@ -70,6 +71,7 @@
     "@types/react-transition-group": "^1.1.2",
     "@types/storybook__addon-actions": "^3.0.3",
     "@types/storybook__react": "^3.0.7",
+    "apollo-codegen": "^0.19.1",
     "awesome-typescript-loader": "^4.0.1",
     "babel-loader": "^6.4.1",
     "gatsby": "^1.9.244",
