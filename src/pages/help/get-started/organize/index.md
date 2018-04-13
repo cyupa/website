@@ -23,9 +23,9 @@ Dovetail has tags, notes, insights, groups, projects, and teams. There are many 
 
 Here’s an example workflow of how you might use Dovetail for analysis:
 
-1.  Create a project for a research focus area
-1.  Write your own notes, import data from [a spreadsheet](/help/import) or from [Zapier](/help/zapier), or paste text from elsewhere to analyze in Dovetail
-1.  As you identify themes across notes, annotate your notes with tags
-1.  Use groups to categorize notes and tags
-1.  Write about your findings in editorial insights
-1.  Share your research with teammates, stakeholders, or clients
+1.  Create a project for a research focus area.
+1.  Write your own notes, import data from [a spreadsheet](/help/import) or from [Zapier](/help/zapier), or paste text from elsewhere to analyze in Dovetail.
+1.  As you identify themes across notes, annotate your notes with tags.
+1.  Use groups to categorize notes and tags.
+1.  Write about your findings in editorial insights.
+1.  Share your research with teammates, stakeholders, or clients.
