@@ -2,6 +2,7 @@
 date: "2018-04-11"
 path: "/guides/survey-analysis"
 title: "How to analyze open-ended surveys"
+weight: 1
 ---
 
 Designing surveys is like making pasta. Anyone can make okay pasta, but it takes effort, patience, and skill to make amazing pasta. [Likewise for surveys](https://medium.com/research-things/on-surveys-5a73dda5e9a0). The quality of your results depends on the questions you ask, the order you ask them in, and the type of people who complete your survey. Not to mention how many people respond and its statistical significance. However, this article is about analysis, not survey design, so from here on we’ll assume you’re making great surveys and focus on analyzing the data you collect.

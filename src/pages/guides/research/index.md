@@ -1,4 +1,4 @@
 ---
-title: "Research"
+title: "User research"
 weight: 2
 ---

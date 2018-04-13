@@ -2,6 +2,7 @@
 path: "/help/zapier"
 date: "2018-04-11"
 title: "Import data from integrations via Zapier"
+weight: 2
 ---
 
 Our [Zapier](https://zapier.com/) integration lets you connect 1,000+ apps and services to Dovetail to centralize your research data and customer feedback in one place. For example, here are a few common use case for integrations:

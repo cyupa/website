@@ -2,6 +2,7 @@
 path: "/help/spreadsheet"
 date: "2018-04-11"
 title: "Upload data via a spreadsheet"
+weight: 1
 ---
 
 Create notes, tags, or insights in bulk from a CSV file (spreadsheet). This is handy for importing data like NPS feedback, survey responses, and customer feedback to analyze in Dovetail, or if you have an existing set of tags you’d like to import.

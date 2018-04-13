@@ -1,8 +1,8 @@
 ---
 path: "/help/archive"
 date: "2018-04-11"
-title: "Hide completed projects"
-weight: 4
+title: "Archive completed projects"
+weight: 7
 ---
 
 Completed projects can be archived to keep your list of projects tidy and signal to others that the project has ended. To archive a project:

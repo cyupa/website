@@ -1,7 +1,8 @@
 ---
-path: "/help/limits"
 date: "2018-04-11"
+path: "/help/limits"
 title: "Technical limits"
+weight: 3
 ---
 
 These are our current technical limitations. We can’t guarantee the performance of Dovetail if you exceed them.

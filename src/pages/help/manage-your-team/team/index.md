@@ -1,7 +1,8 @@
 ---
-path: "/help/team"
 date: "2018-04-11"
+path: "/help/team"
 title: "Remove people from your team"
+weight: 2
 ---
 
 ## About teams

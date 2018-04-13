@@ -34,7 +34,11 @@ const Content = styled("div", {
     h3: {
       marginTop: "48px"
     },
+    h4: {
+      marginTop: "32px"
+    },
     h5: {
+      marginTop: "24px",
       fontWeight: 500
     },
     code: {

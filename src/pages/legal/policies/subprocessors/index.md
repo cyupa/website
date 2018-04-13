@@ -1,7 +1,8 @@
 ---
-path: "/legal/data-subprocessors"
 date: "2018-02-01"
+path: "/legal/data-subprocessors"
 title: "Data Subprocessors"
+weight: 2
 ---
 
 To support delivery of our Services, Dovetail may engage and use data processors with access to certain Customer Data (each, a **“Subprocessor”**). This page provides important information about the identity, location and role of each Subprocessor.

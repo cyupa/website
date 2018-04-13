@@ -1,7 +1,8 @@
 ---
-path: "/legal/privacy"
 date: "2018-03-21"
+path: "/legal/privacy"
 title: "Privacy Policy"
+weight: 1
 ---
 
 It is Dovetail’s policy to respect your privacy regarding any information we may collect while operating our Services. Accordingly, we have developed this privacy policy in order for you to understand how we collect, use, communicate, disclose, and otherwise make use of personal information. We have outlined our privacy policy below.

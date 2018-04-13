@@ -13,28 +13,28 @@ interface Props {
 
 export default class extends React.PureComponent<Props> {
   public render() {
-    const categoryCards = createPageHierarchy(this.props.data.allMarkdownRemark, "src/pages/guides").map((parent, i) => ({
+    const cards = createPageHierarchy(this.props.data.allMarkdownRemark, "src/pages/guides").map((parent, i) => ({
       id: `${i}`,
       node: <PageGroup pages={parent.children} title={parent.title} key={i} />
     }));
 
-    categoryCards.splice(1, 0, {
+    cards.splice(3, 0, {
       id: "contact",
       node: (
         <ActionCard
-          title="Contact support"
-          text="Get in touch with us. We’ll respond quickly and help you get everything sorted."
-          buttonText="Email support"
-          buttonLocation={locations.email()}
+          title="Read more"
+          text="Check out our blog for more articles about research and startup life."
+          buttonText="Visit blog"
+          buttonLocation={locations.blog()}
         />
       )
     });
 
     return (
       <DocumentIndex
-        items={categoryCards}
-        text="Running into problems? Browse our help articles below or contact us."
-        title="Help and support"
+        items={cards}
+        text="We’ve compiled a few guides to help you master customer feedback and user research.."
+        title="Research guides"
       />
     );
   }

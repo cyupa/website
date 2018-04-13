@@ -1,6 +1,7 @@
 import * as aurelia from "@heydovetail/website/avatars/aurelia.jpg";
 import * as erik from "@heydovetail/website/avatars/erik.jpg";
 import * as pascal from "@heydovetail/website/avatars/pascal.jpg";
+import * as sonja from "@heydovetail/website/avatars/sonja.jpg";
 import * as tina from "@heydovetail/website/avatars/tina.jpg";
 import IllustrationAnalysis from "@heydovetail/website/components/illustrations/IllustrationAnalysis";
 import IllustrationAnnotationEdit from "@heydovetail/website/components/illustrations/IllustrationAnnotationEdit";
@@ -209,6 +210,14 @@ export default class extends React.PureComponent {
                         quote:
                           "Loving the product. Tagging has been a breeze and re-organizing my thoughts using Dovetail has been easier than any other platform I’ve used!",
                         role: "User Researcher"
+                      },
+                      {
+                        company: "Uniqa",
+                        image: sonja,
+                        name: "Sonja",
+                        quote:
+                          "I love that it’s made especially for researchers, and it has been researched — ha! — to suit their different styles of work. I love that it is continuously being improved thanks to the founders’ hard work. I love that you, Benjamin and Bradley, are so responsive, and you listen to and seek your customers’ feedback. In fact, what makes it the most special to me is that you've managed to turn your product into a community right from the start!",
+                        role: "Researcher"
                       },
                       {
                         company: "Pinterest",

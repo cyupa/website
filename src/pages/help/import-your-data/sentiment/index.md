@@ -1,7 +1,8 @@
 ---
-path: "/help/sentiment"
 date: "2018-04-11"
+path: "/help/sentiment"
 title: "Analyze the sentiment of imported data"
+weight: 5
 ---
 
 Sentiment analysis is when software analyzes text and determines whether it expresses positive or negative sentiment. Dovetail can automatically analyze the sentiment of your data at the sentence-level.

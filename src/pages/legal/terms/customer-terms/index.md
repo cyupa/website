@@ -1,6 +1,6 @@
 ---
-path: "/legal/customer-terms"
 date: "2018-02-05"
+path: "/legal/customer-terms"
 title: "Customer Terms of Service"
 weight: 1
 ---

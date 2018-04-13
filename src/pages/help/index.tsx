@@ -13,12 +13,12 @@ interface Props {
 
 export default class extends React.PureComponent<Props> {
   public render() {
-    const categoryCards = createPageHierarchy(this.props.data.allMarkdownRemark, "src/pages/help").map((parent, i) => ({
+    const cards = createPageHierarchy(this.props.data.allMarkdownRemark, "src/pages/help").map((parent, i) => ({
       id: `${i}`,
       node: <PageGroup pages={parent.children} title={parent.title} key={i} />
     }));
 
-    categoryCards.splice(1, 0, {
+    cards.splice(1, 0, {
       id: "contact",
       node: (
         <ActionCard
@@ -30,9 +30,21 @@ export default class extends React.PureComponent<Props> {
       )
     });
 
+    cards.splice(5, 0, {
+      id: "contact",
+      node: (
+        <ActionCard
+          title="Learn more"
+          text="Check out our blog for the latest product updates, company news, and tips &amp; tricks."
+          buttonText="Visit blog"
+          buttonLocation={locations.blog()}
+        />
+      )
+    });
+
     return (
       <DocumentIndex
-        items={categoryCards}
+        items={cards}
         text="Running into problems? Browse our help articles below or contact us."
         title="Help and support"
       />

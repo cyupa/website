@@ -5,6 +5,7 @@ import * as ben from "@heydovetail/website/avatars/ben.jpg";
 import * as erik from "@heydovetail/website/avatars/erik.jpg";
 import * as michael from "@heydovetail/website/avatars/michael.jpg";
 import * as pascal from "@heydovetail/website/avatars/pascal.jpg";
+import * as sonja from "@heydovetail/website/avatars/sonja.jpg";
 import * as tina from "@heydovetail/website/avatars/tina.jpg";
 import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
 import IllustrationBoard from "@heydovetail/website/components/illustrations/IllustrationBoard";
@@ -106,6 +107,14 @@ export default class extends React.PureComponent {
                     role: "Senior Researcher"
                   },
                   {
+                    company: "Uniqa",
+                    image: sonja,
+                    name: "Sonja",
+                    quote:
+                      "I love that it’s made especially for researchers, and it has been researched — ha! — to suit their different styles of work. I love that it is continuously being improved thanks to the founders’ hard work. I love that you, Benjamin and Bradley, are so responsive, and you listen to and seek your customers’ feedback. In fact, what makes it the most special to me is that you've managed to turn your product into a community right from the start!",
+                    role: "Researcher"
+                  },
+                  {
                     company: "MacMillan Learning",
                     image: tina,
                     name: "Tina",
@@ -132,7 +141,7 @@ export default class extends React.PureComponent {
                   {
                     company: "For The Win",
                     image: ben,
-                    name: "Benjamin Jackson",
+                    name: "Benjamin",
                     quote:
                       "I love how easy Dovetail makes tagging and analyzing lots of interview transcripts. The interface is fast and responsive, and I’m able to get more data and insights because of how well the tool fits into my workflow.",
                     role: "Founder"

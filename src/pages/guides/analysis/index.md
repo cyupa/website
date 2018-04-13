@@ -1,4 +1,4 @@
 ---
-title: "Analysis"
+title: "Data analysis"
 weight: 1
 ---

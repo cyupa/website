@@ -1,7 +1,8 @@
 ---
-path: "/help/domain-sign-up"
 date: "2018-04-11"
+path: "/help/domain-sign-up"
 title: "Turn on domain-restricted sign up"
+weight: 4
 ---
 
 ![Screenshot showing a ‘join team’ screen in Dovetail](./join-team.png)

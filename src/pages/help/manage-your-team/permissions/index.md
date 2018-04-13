@@ -1,7 +1,8 @@
 ---
-path: "/help/permissions"
 date: "2018-04-11"
+path: "/help/permissions"
 title: "Change the team admin"
+weight: 3
 ---
 
 ## About teams

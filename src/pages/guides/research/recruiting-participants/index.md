@@ -2,9 +2,10 @@
 date: "2018-04-11"
 path: "/guides/recruiting-participants"
 title: "How to recruit research participants"
+weight: 1
 ---
 
-### Finding, incentivizing, and managing research participants is one of the most logistically involved aspects of qualitative research, and is often under-estimated.
+Finding, incentivizing, and managing research participants is one of the most logistically involved aspects of qualitative research, and is often under-estimated.
 
 Participant recruitment for research involves a number of activities including sourcing eligible candidates, screening them, explaining the study, and keeping them motivated & incentivized throughout the study.
 
@@ -16,7 +17,7 @@ In this guide we offer some tips to make your participant recruitment easier.
 
 ## Establish who you’re looking for
 
-### Understanding your research method and what you want to learn from the study. This will help you determine the characteristics and number of people you need.
+Understanding your research method and what you want to learn from the study. This will help you determine the characteristics and number of people you need.
 
 When recruiting for small sample studies, behavior and attitudes are more important than demographics. For example, when conducting research for a furniture company’s online cart, it is better to find participants who are in the market for new furniture than it is to simply replicate the company’s current customer demographics.
 
@@ -32,7 +33,7 @@ Before you start recruiting, here are some questions to ask yourself:
 
 ## Finding them in the first place
 
-### Recruiting the right participants is the foundation of effective user research, because your research results are only as good as the participants involved.
+Recruiting the right participants is the foundation of effective user research, because your research results are only as good as the participants involved.
 
 Representative, well-spoken, and thoughtful participants can provide invaluable insights, yet finding such ideal participants and getting them to commit is often the hard part. Here are a few ideas to start creating your ‘research recruitment funnel.’
 
@@ -49,17 +50,20 @@ If you’re interested in people’s motiviations for trialling your product / s
 Create a Google Form and share the link on Twitter, LinkedIn, and Facebook. To increase your response rate, mention your incentive in the message, and how much effort someone needs to spend. For example, “Please help me learn about student life on campus! $100 for only 30 minutes of your time.” You’ll get a wide variety of people responding, so the emphasis will be on your screener (see below) to weed out unsuitable candidates.
 
 #### Ask friends or family
+
 Reach out to your friends or family, and ask your colleagues to do the same. Let them know your criteria, and optionally offer them a referral bonus if they find someone who ends up participating in your study.
 
 #### Engage a recruitment agency
+
 There are plenty of recruitment agencies who have large pools of people available for research, although it doesn’t come cheap. In your screener you will need to pay special attention to elimate ‘professional research participants’ who know how to game the system to get the reward.
 
 #### Ask people on the street
+
 If you’re conducting a quick usability test, try a bit of guerrilla research — ask people in cafes to look at your prototype in exchange for a coffee or 🍰 cake!
 
 ## Screening and setting expectations
 
-### Few books or schools detail how to write an effective screener, and as a result, we often learn to write screeners through trial and error or reuse screeners from previous projects without considering whether they are still appropriate.
+Few books or schools detail how to write an effective screener, and as a result, we often learn to write screeners through trial and error or reuse screeners from previous projects without considering whether they are still appropriate.
 
 #### Eliminate early
 
@@ -87,7 +91,7 @@ People who frequently supplement their income by participating in user research 
 
 ## Keeping participants motivated
 
-### For longer research like diary studies, it can be tough to keep participants committed throughout the entire duration. A solid brief, constant probing, and trickled monetary incentives can help to keep people responding.
+For longer research like diary studies, it can be tough to keep participants committed throughout the entire duration. A solid brief, constant probing, and trickled monetary incentives can help to keep people responding.
 
 Getting the insights you need will take some involvement with participants throughout the study. Plan to check in with participants with periodic reminders as needed (each day or every few days). For participants that are engaged and creating appropriate snippets, recognize their efforts and ask them to keep up the good work. For participants that are less engaged, give encouragement or offer to answer any questions they may have to get them on track. Let participants know up front that you will be reaching out throughout the study and agree on a means of contacting them, so you can give encouragement or ask for clarification without being overly intrusive.
 

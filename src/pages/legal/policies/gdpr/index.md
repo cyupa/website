@@ -1,7 +1,8 @@
 ---
-path: "/legal/gdpr"
 date: "2018-02-01"
+path: "/legal/gdpr"
 title: "GDPR Notice"
+weight: 3
 ---
 
 ## Introduction

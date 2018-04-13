@@ -1,7 +1,8 @@
 ---
-path: "/help/billing"
 date: "2018-04-11"
+path: "/help/billing"
 title: "Add or update your billing details"
+weight: 1
 ---
 
 You can modify your credit card, change where receipts are sent, and switch to annual billing directly in Dovetail without having to contact us.

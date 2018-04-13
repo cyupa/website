@@ -2,11 +2,10 @@
 date: "2018-04-11"
 path: "/guides/qual-quant"
 title: "The difference between qualitative & quantitative research"
+weight: 2
 ---
 
-### It’s important to understand the difference between qualitative and quantitative research, especially if you’re new to the field.
-
-There’s a common misconception that one is ‘better’ than the other, however qualitative and quantitative research serve vastly different purposes. Read on to learn about what makes them different, how you can turn one into the other, and when you might use which method.
+It’s important to understand the difference between qualitative and quantitative research, especially if you’re new to the field. There’s a common misconception that one is ‘better’ than the other, however qualitative and quantitative research serve vastly different purposes. Read on to learn about what makes them different, how you can turn one into the other, and when you might use which method.
 
 ## Qualitative research
 
@@ -33,13 +32,13 @@ Imagine you’re looking down on a city from a helicopter at 5,000 feet. From he
 
 ## Turning one into the other
 
-### Qualitative & quantitative data aren’t separate. They often blur, and you can represent the same data set in both ways.
+Qualitative & quantitative data aren’t separate. They often blur, and you can represent the same data set in both ways.
 
 Let’s consider a bunch of email conversations. In its raw form, this would be considered qualitative data. To answer the question “what are the most popular greetings in emails?” you’d need to go through and sum all of the different occurrences of different greetings, then sort them by frequency. By doing this, you would have turned some unstructured qualitative data into a structured, countable insight.
 
 ## What vs. why
 
-### In user research, quantitative data tells you **what** users did, and qualitative data helps you learn **why** they did it.
+In user research, quantitative data tells you **what** users did, and qualitative data helps you learn **why** they did it.
 
 Let’s consider an example. If you were to measure user behaviour on a website, you might learn that 25% of people clicked on this button, then this button, and so on. That’s good to know, and you can run split tests (otherwise known as ‘A/B’ or ‘multivariate’ testing) to try out different versions of your implementation to see if you can change people’s behaviours for the better.
 

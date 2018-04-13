@@ -1,7 +1,8 @@
 ---
-path: "/help/company-billing"
 date: "2018-04-11"
+path: "/help/company-billing"
 title: "Configure company billing"
+weight: 2
 ---
 
 If you would like to switch from your personal credit card to a company card, or upgrade using a company credit card, you’ll need to do the following:

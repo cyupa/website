@@ -1,7 +1,8 @@
 ---
-path: "/help/form-customize"
 date: "2018-04-11"
+path: "/help/form-customize"
 title: "Create a feedback form"
+weight: 3
 ---
 
 Gather valuable feedback from your users with a simple, customizable, and embeddable form. When people fill it out, their feedback is saved in your Dovetail project, ready to organize and analyze alongside everything else.

@@ -1,7 +1,8 @@
 ---
-path: "/help/cancel"
 date: "2018-04-11"
+path: "/help/cancel"
 title: "Cancel your subscription"
+weight: 3
 ---
 
 Please [contact us](mailto:hello@dovetailapp.com) to cancel your subscription. You’ll still have access to Dovetail for the remainder of any billing period you’ve paid for, and per our [Customer Terms of Service](/legal/customer-terms), we will not refund any remaining time in your billing period.
