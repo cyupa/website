@@ -6,7 +6,7 @@
   "scripts": {
     "build": "ts-node ./node_modules/.bin/gatsby build",
     "develop": "ts-node ./node_modules/.bin/gatsby develop",
-    "generate:types": "./node_modules/.bin/apollo-codegen introspect-schema --output src/graphql/schema.json http://localhost:8000/___graphql && ./node_modules/.bin/apollo-codegen print-schema --schema src/graphql/schema.json --output src/graphql/schema.graphql && ./node_modules/.bin/apollo-codegen generate --schema src/graphql/schema.json --target typescript --output src/graphql/types.tsx --tag-name graphql src/**/*.tsx gatsby-node.tsx",
+    "generate:types": "./node_modules/.bin/apollo-codegen introspect-schema --output src/graphql/schema.json http://localhost:8000/___graphql && ./node_modules/.bin/apollo-codegen print-schema --schema src/graphql/schema.json --output src/graphql/schema.graphql && ./node_modules/.bin/apollo-codegen generate --schema src/graphql/schema.json --target typescript --output src/graphql/types.tsx --tag-name graphql 'src/**/*.tsx'",
     "generate:svgs": "svg-to-react src",
     "precommit": "lint-staged",
     "start": "ts-node ./node_modules/.bin/gatsby develop",

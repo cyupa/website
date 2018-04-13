@@ -6,35 +6,39 @@ import { Date } from "@heydovetail/website/components/site/Date";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { PageContent } from "@heydovetail/website/components/site/PageContent";
 import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { DocumentByPathQuery } from "@heydovetail/website/graphql/types";
 import { locations } from "@heydovetail/website/routing/locations";
 import { helpCategories } from "@heydovetail/website/util/categories";
 import { graphql } from "@heydovetail/website/util/graphql";
 import * as React from "react";
 import { Helmet } from "react-helmet";
 
-export default function DocumentTemplate({ data }) {
+export default function DocumentTemplate({ data }: { data: DocumentByPathQuery }) {
   const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
+  const { frontmatter, html } = markdownRemark!;
 
   return (
     <>
       <Helmet>
-        <title>{frontmatter.title} – Dovetail</title>
+        <title>{frontmatter!.title} – Dovetail</title>
       </Helmet>
       <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
         <div style={{ maxWidth: TYPICAL_PAGE_WIDTH * 0.75 }}>
           <Breadcrumbs
-            crumbs={[{ location: locations.help(), text: "All help articles" }, { text: helpCategories[frontmatter.category] }]}
+            crumbs={[
+              { location: locations.help(), text: "All help articles" },
+              { text: helpCategories[frontmatter!.category!] }
+            ]}
           />
           <Flex gap={24} layout="column">
             <Item>
-              <HeroText center={false} title={frontmatter.title} />
+              <HeroText center={false} title={frontmatter!.title!} />
             </Item>
             <Item>
-              <Date>Last updated {frontmatter.date}</Date>
+              <Date>Last updated {frontmatter!.date}</Date>
             </Item>
           </Flex>
-          <PageContent html={html} />
+          <PageContent html={html!} />
         </div>
       </Container>
     </>
