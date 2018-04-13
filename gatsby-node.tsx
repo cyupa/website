@@ -1,4 +1,5 @@
-const path = require("path");
+import * as path from "path";
+import { graphql } from "./src/util/graphql";
 
 exports.onCreatePage = async ({ page, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
@@ -14,12 +15,12 @@ exports.onCreatePage = async ({ page, boundActionCreators }) => {
   });
 };
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
+exports.createPages = ({ boundActionCreators, graphql: query }) => {
   const { createPage } = boundActionCreators;
   const template = path.resolve(`src/templates/document.tsx`);
 
-  return graphql(`
-    {
+  return query(graphql`
+    query CreatePages {
       allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1000) {
         edges {
           node {
