@@ -21,7 +21,7 @@ export class HeroText extends React.PureComponent<Props> {
         <Wrapper center={center} maxWidth={maxWidth}>
           <Flex gap={24} layout="column">
             <Item>
-              <h1>{title}</h1>;
+              <h1>{title}</h1>
             </Item>
             <Item>
               <p style={{ opacity: LIGHT_TEXT_OPACITY, maxWidth: maxWidth, textAlign: center ? "center" : "left" }}>{text}</p>
@@ -40,7 +40,7 @@ export class HeroText extends React.PureComponent<Props> {
 }
 
 const Wrapper = styledViaProps(
-  "h1",
+  "div",
   ({ center, maxWidth }: { center: boolean; maxWidth?: number }) => JSON.stringify({ center, maxWidth }),
   ({ center, maxWidth }) =>
     extend(
