@@ -1,8 +1,8 @@
 ---
-category: "terms"
 path: "/legal/user-terms"
 date: "2018-02-05"
 title: "User Terms of Service"
+weight: 3
 ---
 
 These User Terms of Service (the **“User Terms”**) govern your access and use of our online customer feedback management and user research analysis tools (the **“Services“**).

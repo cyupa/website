@@ -1,8 +1,8 @@
 ---
-category: "terms"
 path: "/legal/customer-terms"
 date: "2018-02-05"
 title: "Customer Terms of Service"
+weight: 1
 ---
 
 These Customer Terms of Service (the **“Customer Terms”**) describe your rights and responsibilities when using our online customer feedback management and user research analysis tools (the **“Services“**).

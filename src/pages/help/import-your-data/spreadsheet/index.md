@@ -1,5 +1,4 @@
 ---
-category: "import"
 path: "/help/spreadsheet"
 date: "2018-04-11"
 title: "Upload data via a spreadsheet"

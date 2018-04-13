@@ -1,4 +1,4 @@
 ---
 title: "Get started"
-weight: 5
+weight: 0
 ---

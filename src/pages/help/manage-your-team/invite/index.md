@@ -1,5 +1,4 @@
 ---
-category: "team"
 path: "/help/invite"
 date: "2018-04-11"
 title: "Invite people to your team"

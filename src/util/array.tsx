@@ -3,6 +3,10 @@ export type ComparatorKey<T> = (item: Readonly<T>) => string | number;
 
 export const empty = [] as ReadonlyArray<never>;
 
+export function omitNull<T>(array: Array<T>): Array<NonNullable<T>> {
+  return array.filter(x => x !== null) as Array<NonNullable<T>>;
+}
+
 /**
  * Build a sort comparator suitable for use with arrays of objects.
  *

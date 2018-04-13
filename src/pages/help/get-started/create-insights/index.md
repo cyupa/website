@@ -1,5 +1,4 @@
 ---
-category: "start"
 path: "/help/insights"
 date: "2018-04-11"
 title: "Create insights"

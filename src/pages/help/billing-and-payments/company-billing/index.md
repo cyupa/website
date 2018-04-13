@@ -1,5 +1,4 @@
 ---
-category: "billing"
 path: "/help/company-billing"
 date: "2018-04-11"
 title: "Configure company billing"

@@ -1,5 +1,4 @@
 ---
-category: "start"
 path: "/help/projects"
 date: "2018-04-11"
 title: "Create projects and notes"

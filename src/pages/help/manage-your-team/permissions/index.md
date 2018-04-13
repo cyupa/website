@@ -1,5 +1,4 @@
 ---
-category: "team"
 path: "/help/permissions"
 date: "2018-04-11"
 title: "Change the team admin"

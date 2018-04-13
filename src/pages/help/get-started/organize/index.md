@@ -1,5 +1,4 @@
 ---
-category: "start"
 path: "/help/organize"
 date: "2018-04-11"
 title: "Tips for organizing your content"

@@ -10,7 +10,9 @@ export interface HelpIndexQuery {
       node: {
         // The id of this node.
         id: string;
+        fileAbsolutePath: string | null;
         frontmatter: {
+          breadcrumbOnly: boolean | null;
           category: string | null;
           date: string | null;
           path: string | null;
@@ -31,8 +33,9 @@ export interface LegalIndexQuery {
       node: {
         // The id of this node.
         id: string;
+        fileAbsolutePath: string | null;
         frontmatter: {
-          category: string | null;
+          breadcrumbOnly: boolean | null;
           date: string | null;
           path: string | null;
           title: string | null;
@@ -51,7 +54,6 @@ export interface DocumentByPathQuery {
   markdownRemark: {
     html: string | null;
     frontmatter: {
-      category: string | null;
       date: string | null;
       path: string | null;
       title: string | null;

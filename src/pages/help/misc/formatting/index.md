@@ -1,5 +1,4 @@
 ---
-category: "misc"
 path: "/help/formatting"
 date: "2018-04-11"
 title: "Formatting and keyboard shortcuts"

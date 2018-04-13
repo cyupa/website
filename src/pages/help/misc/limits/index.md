@@ -1,5 +1,4 @@
 ---
-category: "misc"
 path: "/help/limits"
 date: "2018-04-11"
 title: "Technical limits"

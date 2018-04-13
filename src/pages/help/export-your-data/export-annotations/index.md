@@ -1,5 +1,4 @@
 ---
-category: "export"
 path: "/help/export-annotations"
 date: "2018-04-11"
 title: "Download a spreadsheet of annotations"

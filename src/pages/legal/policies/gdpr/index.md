@@ -1,5 +1,4 @@
 ---
-category: "policies"
 path: "/legal/gdpr"
 date: "2018-02-01"
 title: "GDPR Notice"

@@ -1,5 +1,4 @@
 ---
-category: "team"
 path: "/help/domain-sign-up"
 date: "2018-04-11"
 title: "Turn on domain-restricted sign up"

@@ -1,5 +1,4 @@
 ---
-category: "export"
 path: "/help/export-notes"
 date: "2018-04-11"
 title: "Backup notes and insights"

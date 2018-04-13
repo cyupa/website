@@ -1,5 +1,4 @@
 ---
-category: "import"
 path: "/help/form-code"
 date: "2018-04-11"
 title: "Embed a feedback form"

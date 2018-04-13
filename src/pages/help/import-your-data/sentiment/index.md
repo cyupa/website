@@ -1,5 +1,4 @@
 ---
-category: "import"
 path: "/help/sentiment"
 date: "2018-04-11"
 title: "Analyze the sentiment of imported data"

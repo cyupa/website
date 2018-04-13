@@ -1,5 +1,4 @@
 ---
-category: "misc"
 path: "/help/browsers"
 date: "2018-04-11"
 title: "Supported browsers"

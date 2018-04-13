@@ -1,5 +1,4 @@
 ---
-category: "billing"
 path: "/help/billing"
 date: "2018-04-11"
 title: "Add or update your billing details"

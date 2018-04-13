@@ -1,5 +1,4 @@
 ---
-category: "team"
 path: "/help/team"
 date: "2018-04-11"
 title: "Remove people from your team"

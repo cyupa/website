@@ -1,5 +1,4 @@
 ---
-category: "policies"
 path: "/legal/privacy"
 date: "2018-03-21"
 title: "Privacy Policy"

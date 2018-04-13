@@ -1,5 +1,4 @@
 ---
-category: "import"
 path: "/help/zapier"
 date: "2018-04-11"
 title: "Import data from integrations via Zapier"

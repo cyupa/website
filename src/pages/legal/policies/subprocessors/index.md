@@ -1,5 +1,4 @@
 ---
-category: "policies"
 path: "/legal/data-subprocessors"
 date: "2018-02-01"
 title: "Data Subprocessors"

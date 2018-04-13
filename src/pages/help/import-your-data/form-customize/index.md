@@ -1,5 +1,4 @@
 ---
-category: "import"
 path: "/help/form-customize"
 date: "2018-04-11"
 title: "Create a feedback form"

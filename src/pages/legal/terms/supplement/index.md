@@ -1,8 +1,8 @@
 ---
-category: "terms"
 path: "/legal/supplement"
 date: "2018-02-05"
 title: "Customer-Specific Supplement"
+weight: 2
 ---
 
 The terms of the Customer-Specific Supplement (**“Customer-Specific Supplement”**) below supplement and amend the Customer’s Contract (as defined in our [Customer Terms of Service](/legal/customer-terms)) if the Customer falls into the corresponding category of Customer. If there is any conflict between the Customer-Specific Supplement and the Contract, the applicable terms in the Customer-Specific Supplement will prevail.

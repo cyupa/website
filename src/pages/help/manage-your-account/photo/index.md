@@ -1,5 +1,4 @@
 ---
-category: "account"
 path: "/help/photo"
 date: "2018-04-11"
 title: "Update your profile photo"

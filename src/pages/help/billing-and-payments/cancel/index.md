@@ -1,5 +1,4 @@
 ---
-category: "billing"
 path: "/help/cancel"
 date: "2018-04-11"
 title: "Cancel your subscription"

@@ -55,7 +55,6 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        category
         date(formatString: "MMMM DD, YYYY")
         path
         title

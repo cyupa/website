@@ -1,4 +1,4 @@
 ---
 title: "Manage your team"
-weight: 5
+weight: 2
 ---
