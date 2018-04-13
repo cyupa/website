@@ -1,4 +1,5 @@
 import * as abhilash from "@heydovetail/website/avatars/abhilash.jpg";
+import * as ben from "@heydovetail/website/avatars/ben.jpg";
 import * as erik from "@heydovetail/website/avatars/erik.jpg";
 import IllustrationAnnotationsFeedback from "@heydovetail/website/components/illustrations/IllustrationAnnotationsFeedback";
 import IllustrationBoard from "@heydovetail/website/components/illustrations/IllustrationBoard";
@@ -236,6 +237,14 @@ export default class extends React.PureComponent {
                         quote:
                           "Loving the product. Tagging has been a breeze and re-organizing my thoughts using Dovetail has been easier than any other platform I’ve used!",
                         role: "User Researcher"
+                      },
+                      {
+                        company: "For The Win",
+                        image: ben,
+                        name: "Benjamin Jackson",
+                        quote:
+                          "I love how easy Dovetail makes tagging and analyzing lots of interview transcripts. The interface is fast and responsive, and I’m able to get more data and insights because of how well the tool fits into my workflow.",
+                        role: "Founder"
                       }
                     ]}
                   />

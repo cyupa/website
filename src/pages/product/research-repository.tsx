@@ -1,4 +1,5 @@
 import * as basheera from "@heydovetail/website/avatars/basheera.jpg";
+import * as ben from "@heydovetail/website/avatars/ben.jpg";
 import * as michael from "@heydovetail/website/avatars/michael.jpg";
 import * as tina from "@heydovetail/website/avatars/tina.jpg";
 import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
@@ -188,6 +189,14 @@ export default class extends React.PureComponent {
                         quote:
                           "I’m just loving Dovetail for qualitative user feedback documentation and analysis. It’s just a lovely experience. I don’t know what impresses me more… the app or the team and how they are building it 👏👏👏",
                         role: "VP of Product"
+                      },
+                      {
+                        company: "For The Win",
+                        image: ben,
+                        name: "Benjamin Jackson",
+                        quote:
+                          "I love how easy Dovetail makes tagging and analyzing lots of interview transcripts. The interface is fast and responsive, and I’m able to get more data and insights because of how well the tool fits into my workflow.",
+                        role: "Founder"
                       },
                       {
                         company: "MacMillan Learning",
