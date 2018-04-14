@@ -1,17 +1,19 @@
 ---
 path: "/help/charts"
 date: "2018-04-11"
-title: "See tag usage as a bar or line chart"
+title: "See your tag usage as a bar or line chart"
 weight: 5
 ---
 
-![Bar chart](./charts-bar.png)
+![Screenshot of a bar chart in Dovetail](./bar.png)
 
 Understand your project at a glance by combining the power of annotations on qualitative data with a quantitative visualization as a bar chart or line chart.
 
 In a project, click **Charts** to get started.
 
 ## Chart metrics
+
+![Screenshot of the metric dropdown](./metric.png)
 
 Dovetail’s charts can show three metrics, each of which give you a slightly different perspective on your data.
 
@@ -21,19 +23,21 @@ Dovetail’s charts can show three metrics, each of which give you a slightly di
 
 ## Bar chart
 
-![Bar chart](./charts-bar.png)
+![Screenshot of a bar chart in Dovetail](./bar.png)
 
 The bar chart is the default visualization. It displays your selected metric at the current point in time. On the bar chart, tags are interactive. Just click on a bar to open that tag, however, note that bars showing groups are not interactive.
 
 ## Line chart
 
-![Line chart](./charts-line.png)
+![Screenshot of a line chart in Dovetail](./line.png)
 
 The line chart is historical. It shows your selected metric over time. This can help you see changes in your data over time.
 
 For example, if you’re collecting user feedback, the line chart lets you keep track of increases or decreases in feature requests, or customer satisfaction through [automatic sentiment analysis](/help/sentiment).
 
 ## Filtering
+
+![Screenshot of a cursor over the expand / collapse button](./filtering.png)
 
 To the right of the chart is the legend which is also an interactive filter.
 
@@ -42,6 +46,8 @@ By default, the chart will display bars or lines for each group of tags, determi
 Click the **expand** button to the right of a group to expand the group, then click **Select all** to show lines or bars for all the tags within the group. From here, you can also select or deselect individual tags to show on the chart.
 
 ## Data visualization options
+
+![Screenshot of a cursor over the inherit color button](./visualizations.png)
 
 There are several toggles to change how your data is presented. These can be found near the top right of the chart, above the legend / filters.
 

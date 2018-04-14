@@ -23,6 +23,8 @@ Given this example, perhaps you’d tag _“…however it’s becoming slower an
 
 ## Create a new tag
 
+![Screenshot of cursor over ‘Create new tag’](./create.png)
+
 To create a new tag in Dovetail:
 
 1.  Open a **note**.
@@ -33,6 +35,8 @@ To create a new tag in Dovetail:
 
 ## Add an existing tag
 
+![Screenshot of cursor over an existing tag’](./choose-existing.png)
+
 To add an existing tag to text in Dovetail:
 
 1.  Open a **note**.
@@ -42,6 +46,8 @@ To add an existing tag to text in Dovetail:
 1.  Click the existing tag (or use the **up / down arrows**).
 
 ## View all annotations for a tag
+
+![Screenshot of all the annotations for a single tag](./annotations.png)
 
 To see everything with a particular tag:
 

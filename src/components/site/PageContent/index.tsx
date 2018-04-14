@@ -13,8 +13,6 @@ export class PageContent extends React.PureComponent<Props> {
 }
 
 const Content = styled("div", {
-  overflow: "hidden",
-
   $nest: {
     p: {
       margin: "16px 0"
@@ -60,6 +58,7 @@ const Content = styled("div", {
     },
     ".gatsby-resp-image-wrapper": {
       borderRadius: BORDER_RADIUS,
+      boxShadow: `0 0 0 1px ${COLORS.i08}`,
       margin: "32px 0",
       overflow: "hidden"
     },
