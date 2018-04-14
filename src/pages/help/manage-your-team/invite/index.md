@@ -2,14 +2,12 @@
 date: "2018-04-11"
 path: "/help/invite"
 title: "Invite people to your team"
-weight: 1
+weight: 2
 ---
 
 Anyone on the team can invite new people and it won’t affect your bill. We charge a fixed $49 per month for the whole team, regardless of how many members there are.
 
 ## Invite someone to your team
-
-![Screenshot of the profile dropdown](./dropdown.png)
 
 ![Screenshot of the team members page invite field](./invite.png)
 
