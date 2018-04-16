@@ -1,9 +1,10 @@
-import { Button } from "@heydovetail/website/components/forms/Button";
+import { ButtonLink } from "@heydovetail/website/components/forms/ButtonLink";
 import IconCheckCircle from "@heydovetail/website/components/icons/feather/IconCheckCircle";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { SmallText } from "@heydovetail/website/components/util/SmallText";
 import { BORDER_RADIUS, COLORS } from "@heydovetail/website/constants";
+import { locations } from "@heydovetail/website/routing/locations";
 import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
 
@@ -54,9 +55,9 @@ export class PricingCard extends React.PureComponent<Props> {
             ))}
           </Flex>
           <SignUpButton>
-            <Button color={COLORS.purple} onClick={() => {}}>
+            <ButtonLink color={COLORS.purple} location={locations.signUp()}>
               Try free for 14 days
-            </Button>
+            </ButtonLink>
           </SignUpButton>
         </Features>
       </Wrapper>

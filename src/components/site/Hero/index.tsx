@@ -1,9 +1,10 @@
-import { Button } from "@heydovetail/website/components/forms/Button";
+import { ButtonLink } from "@heydovetail/website/components/forms/ButtonLink";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { SmallText } from "@heydovetail/website/components/util/SmallText";
 import { BREAKPOINT_TABLET, COLORS } from "@heydovetail/website/constants";
+import { locations } from "@heydovetail/website/routing/locations";
 import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
 import { media } from "typestyle/lib";
@@ -32,9 +33,9 @@ export class Hero extends React.PureComponent<Props> {
               <Item>
                 <Flow gap={24} rowGap={24}>
                   <Item>
-                    <Button color={COLORS.purple} onClick={() => {}}>
+                    <ButtonLink color={COLORS.purple} location={locations.signUp()}>
                       Try now for free
-                    </Button>
+                    </ButtonLink>
                   </Item>
                   <Item>
                     <SmallText>14 day free trial, no credit card required.</SmallText>
