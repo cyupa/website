@@ -1,3 +1,4 @@
+import { TYPICAL_PAGE_WIDTH } from "@heydovetail/website/constants";
 import { zeroes } from "@heydovetail/website/util/array";
 import * as React from "react";
 import ReactResizeDetector from "react-resize-detector";
@@ -18,7 +19,10 @@ interface State {
 }
 
 export class Masonry extends React.PureComponent<Props, State> {
-  public readonly state: State = {};
+  public readonly state: State = {
+    containerWidth: TYPICAL_PAGE_WIDTH - 64
+  };
+
   private container: HTMLDivElement | null = null;
 
   public componentDidMount() {
