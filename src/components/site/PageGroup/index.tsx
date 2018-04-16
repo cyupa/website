@@ -21,17 +21,21 @@ export class PageGroup extends React.PureComponent<Props> {
 
     return (
       <Card padding={32}>
-        <Flex gap={12} layout="column">
+        <Flex gap={16} layout="column">
           <Item>
             <h3>{title}</h3>
           </Item>
-          {pages.map((page, i) => (
-            <Item key={i}>
-              <LocationLink location={internal(page.path)} presentation="text" style={{ lineHeight: "28px" }}>
-                {page.title}
-              </LocationLink>
-            </Item>
-          ))}
+          <Item>
+            <Flex gap={12} layout="column">
+              {pages.map((page, i) => (
+                <Item key={i}>
+                  <LocationLink location={internal(page.path)} presentation="text" style={{ lineHeight: "28px" }}>
+                    {page.title}
+                  </LocationLink>
+                </Item>
+              ))}
+            </Flex>
+          </Item>
         </Flex>
       </Card>
     );
