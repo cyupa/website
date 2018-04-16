@@ -2,8 +2,8 @@ aliases:
   docker: &docker
     docker:
       - image: heydovetail/node:node-9.4-yarn-1.5.1-npm-5.6.0-awscli-1.15.3
-          environment:
-            SENTRY_DSN: https://326d6efba0f941a1b9848ce52e78d761@sentry.io/1189595
+        environment:
+          SENTRY_DSN: https://326d6efba0f941a1b9848ce52e78d761@sentry.io/1189595
 
   restore_node_modules: &restore_node_modules
     restore_cache:
