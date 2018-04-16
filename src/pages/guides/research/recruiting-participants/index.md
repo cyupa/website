@@ -5,7 +5,7 @@ title: "How to recruit research participants"
 weight: 1
 ---
 
-![A photo of a busy train station in Tokyo's Shinjuku district](./crowd.jpg)
+![A photo of a large field turned into a calendar with a volume of people walking around at The Centre Pompidou](./field.jpg)
 
 Finding, incentivizing, and managing research participants is one of the most logistically involved aspects of qualitative research, and is often under-estimated.
 
@@ -34,6 +34,8 @@ Before you start recruiting, here are some questions to ask yourself:
 * What am I prepared to spend per participant?
 
 ## Finding them in the first place
+
+![A photo of a busy train station in Tokyo's Shinjuku district](./crowd.jpg)
 
 Recruiting the right participants is the foundation of effective user research, because your research results are only as good as the participants involved.
 
@@ -64,6 +66,8 @@ There are plenty of recruitment agencies who have large pools of people availabl
 If you’re conducting a quick usability test, try a bit of guerrilla research — ask people in cafes to look at your prototype in exchange for a coffee or 🍰 cake!
 
 ## Screening and setting expectations
+
+![A photo of a waiting room](./waiting.jpg)
 
 Few books or schools detail how to write an effective screener, and as a result, we often learn to write screeners through trial and error or reuse screeners from previous projects without considering whether they are still appropriate.
 

@@ -11,11 +11,15 @@ It’s important to understand the difference between qualitative and quantitati
 
 ## Qualitative research
 
+![A photo of sticky notes](./qual.jpg)
+
 **Qualitative** (‘qual’) research is often used for exploring. It helps researchers gain an understanding of underlying reasons, opinions, and motivations. It provides insights into the problem or helps to develop ideas or hypotheses for potential quantitative research.
 
 Qualitative data collection methods vary using unstructured or semi-structured techniques. Common methods include focus groups, individual interviews, observation or immersion, and diary studies. The sample size is typically small, and respondents are selected to fulfill a given quota.
 
 ## Quantitative research
+
+![A photo of a chart on a laptop](./quant.jpg)
 
 **Quantitative** (‘quant’) research is used to quantify the problem by way of generating numerical data that can be transformed into useable statistics. It is used to quantify attitudes, opinions, behaviors, and other defined variables, and generalize results from a larger sample population. Quantitative research uses measurable data to formulate facts and uncover patterns in research.
 
@@ -39,6 +43,8 @@ Qualitative & quantitative data aren’t separate. They often blur, and you can 
 Let’s consider a bunch of email conversations. In its raw form, this would be considered qualitative data. To answer the question “what are the most popular greetings in emails?” you’d need to go through and sum all of the different occurrences of different greetings, then sort them by frequency. By doing this, you would have turned some unstructured qualitative data into a structured, countable insight.
 
 ## What vs. why
+
+![A photo of a single sticky note with a light bulb sketch](./why.jpg)
 
 In user research, quantitative data tells you **what** users did, and qualitative data helps you learn **why** they did it.
 

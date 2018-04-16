@@ -101,6 +101,8 @@ Because our pricing model is not based on the number of collaborators you have (
 
 ## Measuring success
 
+![A photo of a chart on a laptop](./quant.jpg)
+
 You will spend a lot of time experimenting with different marketing channels until you find reliable ones that deliver high quality traffic at an acquisition cost less than their lifetime value. It’s important to note that marketing channels differ between industries and products. Beauty and clothing startups might have a lot of success on Instagram, but your highly technical data warehouse solution probably doesn’t lend itself to hipster, filtered photos.
 
 When you experiment, you need to measure. Measuring different marketing strategies is the only way to find channels that work for you. We use [Mixpanel](https://mixpanel.com/) primarily for in-product behavioural analytics, and [Google Analytics](https://analytics.google.com) for page view and demographic data. It’s also a great idea to also install a [Facebook Pixel](https://en-gb.facebook.com/business/help/952192354843755) on your site even if you’re not planning on marketing via Facebook yet. It can start building a custom audience of website visitors which is great for remarketing later on.

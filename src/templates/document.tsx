@@ -5,10 +5,11 @@ import { Breadcrumbs } from "@heydovetail/website/components/site/Breadcrumbs";
 import { Date } from "@heydovetail/website/components/site/Date";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { PageContent } from "@heydovetail/website/components/site/PageContent";
-import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
 import { DocumentByPathQuery } from "@heydovetail/website/graphql/types";
 import { internal } from "@heydovetail/website/routing/locations";
 import { graphql } from "@heydovetail/website/util/graphql";
+import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
 import { Helmet } from "react-helmet";
 
@@ -34,20 +35,38 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
               text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
             }))}
           />
-          <Flex gap={24} layout="column">
+          <Flex gap={16} layout="column">
             <Item>
               <HeroText center={false} title={frontmatter!.title!} />
             </Item>
             <Item>
               <Date>Last updated {frontmatter!.date}</Date>
             </Item>
+            <Item>
+              <PageContent html={html!} />
+            </Item>
+            <HorizontalRule />
+            <Item>
+              <Breadcrumbs
+                crumbs={pathContext.breadcrumb.map(breadcrumb => ({
+                  location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
+                  text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
+                }))}
+              />
+            </Item>
           </Flex>
-          <PageContent html={html!} />
         </div>
       </Container>
     </>
   );
 }
+
+const HorizontalRule = styled("hr", {
+  backgroundColor: COLORS.i04,
+  border: 0,
+  margin: "32px 0",
+  height: "2px"
+});
 
 export const pageQuery = graphql`
   query DocumentByPath($path: String!) {

@@ -5,6 +5,8 @@ title: "Validating your startup idea"
 weight: 2
 ---
 
+![A photo of a man sitting on the edge of a cliff on a mountainside, above the clouds at Vârful Curcubăta Mare](./cliff.jpg)
+
 If you are building a startup then you have an idea. Ideas are usually formed by observing a problem, whether it’s one that you have, or a problem someone else has. It takes a lot of introspection to recognize your own day-to-day problems, but as a designer by trade, I’m good at recognizing the problems other people have.
 
 ## First things first: find someone’s problem
@@ -26,6 +28,8 @@ Diary studies come with a few challenges out of the box:
 We ended up creating a private Tumblr blog for each participant and emailed them credentials to write their entries as blog posts. Our researcher also manually prompted every participant to fill in their journal each day. When the study was over, she copied the entries out of Tumblr and into Word, before transferring key quotes and themes to post-it notes. The post-it note wall was about 3 metres long, so she then had the challenge of turning this into something that was shareable with the rest of the team. The end result was a report on Confluence.
 
 ## Brainstorm solutions to solve the problem
+
+![A photo of sketches on a piece of paper](./brainstorm.jpg)
 
 We did get some useful insights but the whole exercise took about two months. I was sold on the value of diary studies, but not the cost. I thought about how it could be improved, and came up with a few ideas:
 
@@ -70,6 +74,8 @@ After a couple of weeks of competitive analysis, I found that:
 I had my problem, some ideas on how to solve it, and an understanding of the competitive landscape. But while I dabble in code, I am not a developer, so I needed to find someone who was. Luckily I knew a bunch of developers and started pitching my idea to them.
 
 ## Spar your product pitch with others
+
+![A photo of people sitting around a desk talking](./spar.jpg)
 
 Pitching to people (not just developers) is a great way to massage the idea itself, and over time it evolved beyond simply ‘diary studies’ into more broadly ‘a platform to help researchers collect, analyse, and share qualitative data.’ While we’re on the subject of pitching ideas, please do not ask people to sign an NDA before you pitch to them. There’s no need. Ideas without execution are worthless. The person you’re pitching to is doing you a huge favour by listening and offering feedback on your idea. Don’t make them jump through unnecessary hoops to do so.
 
