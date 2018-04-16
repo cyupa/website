@@ -62,7 +62,6 @@ export class Footer extends React.PureComponent<Props> {
                 items={[
                   { label: "About us", location: locations.about() },
                   { label: "Blog", location: locations.blog() },
-                  { label: "Press kit", location: locations.press() },
                   { label: "Slack", location: locations.slack() }
                 ]}
               />
