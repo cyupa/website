@@ -67,6 +67,13 @@ module.exports = {
           release: process.env.SENTRY_RELEASE
         }
       }
+    },
+    {
+      resolve: "gatsby-plugin-nprogress",
+      options: {
+        color: "#512da8",
+        showSpinner: false
+      }
     }
   ]
 };

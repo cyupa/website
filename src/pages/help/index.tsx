@@ -31,7 +31,7 @@ export default class extends React.PureComponent<Props> {
     });
 
     cards.splice(5, 0, {
-      id: "contact",
+      id: "learn-more",
       node: (
         <ActionCard
           title="Learn more"
