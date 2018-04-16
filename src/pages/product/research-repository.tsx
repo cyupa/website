@@ -1,7 +1,3 @@
-import * as basheera from "@heydovetail/website/avatars/basheera.jpg";
-import * as ben from "@heydovetail/website/avatars/ben.jpg";
-import * as michael from "@heydovetail/website/avatars/michael.jpg";
-import * as tina from "@heydovetail/website/avatars/tina.jpg";
 import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
 import IllustrationBoardLarge from "@heydovetail/website/components/illustrations/IllustrationBoardLarge";
 import IllustrationFiles from "@heydovetail/website/components/illustrations/IllustrationFiles";
@@ -19,7 +15,7 @@ import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import Wave from "@heydovetail/website/components/site/Wave/Wave";
-import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { testimonials, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { Integrations } from "@heydovetail/website/sections/Integrations";
 import { Security } from "@heydovetail/website/sections/Security";
@@ -173,40 +169,7 @@ export default class extends React.PureComponent {
               <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
                 <Item>
                   <SocialProof
-                    testimonials={[
-                      {
-                        company: "DemandLogic",
-                        image: basheera,
-                        name: "Basheera",
-                        quote:
-                          "I've got to say, playing around with Dovetail I felt a deep unwinding of tension - it seems like the answer to the need I had for a lightweight but powerful and affordable insights repository that makes the value of qualitative research plain as day.",
-                        role: "Design Lead"
-                      },
-                      {
-                        company: "Onist",
-                        image: michael,
-                        name: "Michael",
-                        quote:
-                          "I’m just loving Dovetail for qualitative user feedback documentation and analysis. It’s just a lovely experience. I don’t know what impresses me more… the app or the team and how they are building it 👏👏👏",
-                        role: "VP of Product"
-                      },
-                      {
-                        company: "For The Win",
-                        image: ben,
-                        name: "Benjamin Jackson",
-                        quote:
-                          "I love how easy Dovetail makes tagging and analyzing lots of interview transcripts. The interface is fast and responsive, and I’m able to get more data and insights because of how well the tool fits into my workflow.",
-                        role: "Founder"
-                      },
-                      {
-                        company: "MacMillan Learning",
-                        image: tina,
-                        name: "Tina",
-                        quote:
-                          "I have to say I am really loving Dovetail and the potential it has in gathering and sharing qualitative data and insights!",
-                        role: "UX Designer"
-                      }
-                    ]}
+                    testimonials={[testimonials.basheera, testimonials.benjamin, testimonials.michael, testimonials.tina]}
                   />
                 </Item>
                 <Item>

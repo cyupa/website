@@ -1,6 +1,3 @@
-import * as abhilash from "@heydovetail/website/avatars/abhilash.jpg";
-import * as ben from "@heydovetail/website/avatars/ben.jpg";
-import * as erik from "@heydovetail/website/avatars/erik.jpg";
 import IllustrationAnnotationsFeedback from "@heydovetail/website/components/illustrations/IllustrationAnnotationsFeedback";
 import IllustrationBoard from "@heydovetail/website/components/illustrations/IllustrationBoard";
 import IllustrationProjectsFeedback from "@heydovetail/website/components/illustrations/IllustrationProjectsFeedback";
@@ -19,7 +16,7 @@ import { LightContainer } from "@heydovetail/website/components/site/LightContai
 import Wave from "@heydovetail/website/components/site/Wave/Wave";
 import { ColorWheel } from "@heydovetail/website/components/util/ColorWheel";
 import IllustrationFormColor from "@heydovetail/website/components/util/ColorWheel/IllustrationFormColor";
-import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { COLORS, testimonials, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { Integrations } from "@heydovetail/website/sections/Integrations";
 import { Security } from "@heydovetail/website/sections/Security";
@@ -225,34 +222,7 @@ export default class extends React.PureComponent {
             <LightContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
               <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
                 <Item>
-                  <SocialProof
-                    testimonials={[
-                      {
-                        company: "Freshworks",
-                        image: abhilash,
-                        name: "Abhilash",
-                        quote:
-                          "My team has started using Dovetail even more and the amount of productivity increase we are witnessing is amazing. The turnaround time for customer interviews to be converted to reports has reduced immensely and the quality of our reports have also improved a lot. Your app is simply too good!",
-                        role: "Senior Researcher"
-                      },
-                      {
-                        company: "PageCloud",
-                        image: erik,
-                        name: "Erik",
-                        quote:
-                          "Loving the product. Tagging has been a breeze and re-organizing my thoughts using Dovetail has been easier than any other platform I’ve used!",
-                        role: "User Researcher"
-                      },
-                      {
-                        company: "For The Win",
-                        image: ben,
-                        name: "Benjamin Jackson",
-                        quote:
-                          "I love how easy Dovetail makes tagging and analyzing lots of interview transcripts. The interface is fast and responsive, and I’m able to get more data and insights because of how well the tool fits into my workflow.",
-                        role: "Founder"
-                      }
-                    ]}
-                  />
+                  <SocialProof testimonials={[testimonials.abhilash, testimonials.benjamin, testimonials.erik]} />
                 </Item>
                 <Item>
                   <UseCases showTitle />

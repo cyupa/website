@@ -1,12 +1,3 @@
-import * as abhilash from "@heydovetail/website/avatars/abhilash.jpg";
-import * as aurelia from "@heydovetail/website/avatars/aurelia.jpg";
-import * as basheera from "@heydovetail/website/avatars/basheera.jpg";
-import * as ben from "@heydovetail/website/avatars/ben.jpg";
-import * as erik from "@heydovetail/website/avatars/erik.jpg";
-import * as michael from "@heydovetail/website/avatars/michael.jpg";
-import * as pascal from "@heydovetail/website/avatars/pascal.jpg";
-import * as sonja from "@heydovetail/website/avatars/sonja.jpg";
-import * as tina from "@heydovetail/website/avatars/tina.jpg";
 import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
 import IllustrationBoard from "@heydovetail/website/components/illustrations/IllustrationBoard";
 import IllustrationLineChart from "@heydovetail/website/components/illustrations/IllustrationLineChart";
@@ -16,7 +7,7 @@ import { Item } from "@heydovetail/website/components/layout/Item";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
-import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { testimonials, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { Customers } from "@heydovetail/website/sections/Customers";
@@ -90,78 +81,15 @@ export default class extends React.PureComponent {
             <Item>
               <SocialProof
                 testimonials={[
-                  {
-                    company: "PageCloud",
-                    image: erik,
-                    name: "Erik",
-                    quote:
-                      "Loving the product. Tagging has been a breeze and re-organizing my thoughts using Dovetail has been easier than any other platform I’ve used!",
-                    role: "User Researcher"
-                  },
-                  {
-                    company: "Freshworks",
-                    image: abhilash,
-                    name: "Abhilash",
-                    quote:
-                      "My team has started using Dovetail even more and the amount of productivity increase we are witnessing is amazing. The turnaround time for customer interviews to be converted to reports has reduced immensely and the quality of our reports have also improved a lot. Your app is simply too good!",
-                    role: "Senior Researcher"
-                  },
-                  {
-                    company: "Uniqa",
-                    image: sonja,
-                    name: "Sonja",
-                    quote:
-                      "I love that it’s made especially for researchers, and it has been researched — ha! — to suit their different styles of work. I love that it is continuously being improved thanks to the founders’ hard work. I love that you, Benjamin and Bradley, are so responsive, and you listen to and seek your customers’ feedback. In fact, what makes it the most special to me is that you've managed to turn your product into a community right from the start!",
-                    role: "Researcher"
-                  },
-                  {
-                    company: "MacMillan Learning",
-                    image: tina,
-                    name: "Tina",
-                    quote:
-                      "I have to say I am really loving Dovetail and the potential it has in gathering and sharing qualitative data and insights!",
-                    role: "UX Designer"
-                  },
-                  {
-                    company: "Enigma",
-                    image: pascal,
-                    name: "Pascal",
-                    quote:
-                      "I just spent the entire day in Dovetail, love it. Looking forward to seeing the evolution of Dovetail and I hope it’s growing.",
-                    role: "Design Researcher"
-                  },
-                  {
-                    company: "Onist",
-                    image: michael,
-                    name: "Michael",
-                    quote:
-                      "I’m just loving Dovetail for qualitative user feedback documentation and analysis. It’s just a lovely experience. I don’t know what impresses me more… the app or the team and how they are building it 👏👏👏",
-                    role: "VP of Product"
-                  },
-                  {
-                    company: "For The Win",
-                    image: ben,
-                    name: "Benjamin",
-                    quote:
-                      "I love how easy Dovetail makes tagging and analyzing lots of interview transcripts. The interface is fast and responsive, and I’m able to get more data and insights because of how well the tool fits into my workflow.",
-                    role: "Founder"
-                  },
-                  {
-                    company: "DemandLogic",
-                    image: basheera,
-                    name: "Basheera",
-                    quote:
-                      "I've got to say, playing around with Dovetail I felt a deep unwinding of tension - it seems like the answer to the need I had for a lightweight but powerful and affordable insights repository that makes the value of qualitative research plain as day.",
-                    role: "Design Lead"
-                  },
-                  {
-                    company: "Pinterest",
-                    image: aurelia,
-                    name: "Aurelia",
-                    quote:
-                      "Highlighting text to tag is great! I love that I can add multiple tags to highlighted text. It’s super easy.",
-                    role: "UX Researcher"
-                  }
+                  testimonials.abhilash,
+                  testimonials.aurelia,
+                  testimonials.basheera,
+                  testimonials.benjamin,
+                  testimonials.erik,
+                  testimonials.michael,
+                  testimonials.pascal,
+                  testimonials.sonja,
+                  testimonials.tina
                 ]}
               />
             </Item>

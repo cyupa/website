@@ -1,8 +1,3 @@
-import * as aurelia from "@heydovetail/website/avatars/aurelia.jpg";
-import * as erik from "@heydovetail/website/avatars/erik.jpg";
-import * as pascal from "@heydovetail/website/avatars/pascal.jpg";
-import * as sonja from "@heydovetail/website/avatars/sonja.jpg";
-import * as tina from "@heydovetail/website/avatars/tina.jpg";
 import IllustrationAnalysis from "@heydovetail/website/components/illustrations/IllustrationAnalysis";
 import IllustrationAnnotationEdit from "@heydovetail/website/components/illustrations/IllustrationAnnotationEdit";
 import IllustrationAnnotationsResearch from "@heydovetail/website/components/illustrations/IllustrationAnnotationsResearch";
@@ -22,7 +17,7 @@ import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import Wave from "@heydovetail/website/components/site/Wave/Wave";
-import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { COLORS, testimonials, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { Security } from "@heydovetail/website/sections/Security";
 import { SocialProof } from "@heydovetail/website/sections/SocialProof";
@@ -195,46 +190,11 @@ export default class extends React.PureComponent {
                 <Item>
                   <SocialProof
                     testimonials={[
-                      {
-                        company: "Enigma",
-                        image: pascal,
-                        name: "Pascal",
-                        quote:
-                          "I just spent the entire day in Dovetail, love it. Looking forward to seeing the evolution of Dovetail and I hope it’s growing.",
-                        role: "Design Researcher"
-                      },
-                      {
-                        company: "PageCloud",
-                        image: erik,
-                        name: "Erik",
-                        quote:
-                          "Loving the product. Tagging has been a breeze and re-organizing my thoughts using Dovetail has been easier than any other platform I’ve used!",
-                        role: "User Researcher"
-                      },
-                      {
-                        company: "Uniqa",
-                        image: sonja,
-                        name: "Sonja",
-                        quote:
-                          "I love that it’s made especially for researchers, and it has been researched — ha! — to suit their different styles of work. I love that it is continuously being improved thanks to the founders’ hard work. I love that you, Benjamin and Bradley, are so responsive, and you listen to and seek your customers’ feedback. In fact, what makes it the most special to me is that you've managed to turn your product into a community right from the start!",
-                        role: "Researcher"
-                      },
-                      {
-                        company: "Pinterest",
-                        image: aurelia,
-                        name: "Aurelia",
-                        quote:
-                          "Highlighting text to tag is great! I love that I can add multiple tags to highlighted text. It’s super easy.",
-                        role: "UX Researcher"
-                      },
-                      {
-                        company: "MacMillan Learning",
-                        image: tina,
-                        name: "Tina",
-                        quote:
-                          "I have to say I am really loving Dovetail and the potential it has in gathering and sharing qualitative data and insights!",
-                        role: "UX Designer"
-                      }
+                      testimonials.aurelia,
+                      testimonials.erik,
+                      testimonials.pascal,
+                      testimonials.sonja,
+                      testimonials.tina
                     ]}
                   />
                 </Item>
