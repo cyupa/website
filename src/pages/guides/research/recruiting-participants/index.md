@@ -5,6 +5,8 @@ title: "How to recruit research participants"
 weight: 1
 ---
 
+![A photo of a busy train station in Tokyo's Shinjuku district](./crowd.jpg)
+
 Finding, incentivizing, and managing research participants is one of the most logistically involved aspects of qualitative research, and is often under-estimated.
 
 Participant recruitment for research involves a number of activities including sourcing eligible candidates, screening them, explaining the study, and keeping them motivated & incentivized throughout the study.

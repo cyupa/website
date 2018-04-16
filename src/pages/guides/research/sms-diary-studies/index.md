@@ -5,7 +5,9 @@ title: "Running mobile diary studies with SMS"
 weight: 3
 ---
 
-Text messaging is a simple way to get qualitative data for ethnographers, UX researchers, and market researchers.
+![Photo of a woman standing looking down at her phone](./phone.jpg)
+
+SMS and MMS messaging is a simple way to get qualitative data for ethnographers, UX researchers, and market researchers.
 
 This relatively unknown method of running [diary studies](/guides/diary-studies) gives you contextual, qualitative data from people living their life as they live it, not after the moment has passed. Everyone knows how to send and receive text messages, all phones support it around the globe, and it’s easy to set up while being cost-effective.
 

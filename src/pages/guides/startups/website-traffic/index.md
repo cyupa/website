@@ -5,6 +5,8 @@ title: "How to get traffic on your website"
 weight: 1
 ---
 
+![Photo of blurred red and white highway lights at night](./traffic.jpg)
+
 As a user researcher, it’s valuable to understand how people discover things in the first place. Marketing also plays a key role in shaping user expectations before someone signs up for a product or service. This guide will introduce common marketing channels that help to drive traffic to your website, like social media, content marketing, SEO, paid advertising, referrals, and more.
 
 ## Marketing channels

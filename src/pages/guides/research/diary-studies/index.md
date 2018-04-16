@@ -5,6 +5,8 @@ title: "An overview of UX diary studies"
 weight: 2
 ---
 
+![A photo of pencil shavings around a pencil and a pencil sharpener on an open notebook](./pencil.jpg)
+
 A diary study is a qualitative research method used to learn about people’s behaviors, thoughts, and feelings over a period of time.
 
 The researcher starts with a general topic they would like to learn about, for example ‘young people’s eating habits in France.’ They will recruit participants from a variety of backgrounds (in this case young people in France). Diary studies usually have at least ten participants, but can be conducted at larger scales with over 100. Participants are usually incentivized with money or vouchers to take part in the study.

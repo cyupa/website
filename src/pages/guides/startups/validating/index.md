@@ -5,9 +5,7 @@ title: "Validating your startup idea"
 weight: 2
 ---
 
-If you are building a startup then you have an idea. Ideas are usually formed by observing a problem, whether it’s one that you have, or a problem someone else has.
-
-It takes a lot of introspection to recognize your own day-to-day problems, but as a designer by trade, I’m good at recognizing the problems other people have.
+If you are building a startup then you have an idea. Ideas are usually formed by observing a problem, whether it’s one that you have, or a problem someone else has. It takes a lot of introspection to recognize your own day-to-day problems, but as a designer by trade, I’m good at recognizing the problems other people have.
 
 ## First things first: find someone’s problem
 

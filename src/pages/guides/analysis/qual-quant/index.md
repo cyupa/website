@@ -5,6 +5,8 @@ title: "The difference between qualitative & quantitative research"
 weight: 2
 ---
 
+![A photo of the cityscape of Paris all lit up at nighttime from a plane window](./paris.jpg)
+
 It’s important to understand the difference between qualitative and quantitative research, especially if you’re new to the field. There’s a common misconception that one is ‘better’ than the other, however qualitative and quantitative research serve vastly different purposes. Read on to learn about what makes them different, how you can turn one into the other, and when you might use which method.
 
 ## Qualitative research

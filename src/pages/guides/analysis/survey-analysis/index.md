@@ -5,6 +5,8 @@ title: "How to analyze open-ended surveys"
 weight: 1
 ---
 
+![Photo of making pasta](./pasta.jpg)
+
 Designing surveys is like making pasta. Anyone can make okay pasta, but it takes effort, patience, and skill to make amazing pasta. [Likewise for surveys](https://medium.com/research-things/on-surveys-5a73dda5e9a0). The quality of your results depends on the questions you ask, the order you ask them in, and the type of people who complete your survey. Not to mention how many people respond and its statistical significance. However, this article is about analysis, not survey design, so from here on we’ll assume you’re making great surveys and focus on analyzing the data you collect.
 
 Analysis is what you do with survey results once you’ve collected them. It can be as rigorous or relaxed as you like. If you’re just looking for directional indicators, there’s no need to spend weeks analyzing your data. If your survey is mostly comprised of quantitative questions (e.g. boolean yes / no, multiple choice, Likert scale) then your analysis should be a fairly straightforward game of crunching numbers, and there are plenty of articles on the web that talk about analyzing quantitative data with formulas in spreadsheets.
@@ -59,6 +61,8 @@ Eventually you might discover that the caller ID problem isn’t a common compla
 
 ## You’re already good at this
 
+![Photo of a pattern on a building](./pattern.jpg)
+
 Qualitative research is fundamentally about understanding people and recognizing patterns. Thankfully, pattern-recognition is something humans are innately extremely good at [thanks to the expansion of our cerebral cortex](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4141622/).
 
 Pattern-recognition allows animals to do cool stuff like create cognitive maps of the environment, distinguish individuals and their emotional state based on facial features, and use gestures to communicate with others. The cognitive repertoire of humans far exceeds that of animals, and gives humans creativity and invention, spoken and written languages, reasoning and rapid decision-making, imagination and mental time travel, and magical thinking & fantasy.
@@ -66,6 +70,8 @@ Pattern-recognition allows animals to do cool stuff like create cognitive maps o
 So while you’re slogging through tagging your survey responses, just remember that it’s much easier than it could be thanks to your innate human ability to recognize patterns in things! Thank you, cerebral cortex 👍
 
 ## Can’t machines do this for us?
+
+![Photo of a laptop with a ‘Matrix’ style wallpaper](./matrix.jpg)
 
 Kind of. There are two broad techniques to automate qualitative data analysis. Both of them work in certain scenarios but are not without constraints.
 
