@@ -2,6 +2,8 @@ aliases:
   docker: &docker
     docker:
       - image: heydovetail/node:node-9.4-yarn-1.5.1-npm-5.6.0-awscli-1.15.3
+          environment:
+            SENTRY_DSN: https://326d6efba0f941a1b9848ce52e78d761@sentry.io/1189595
 
   restore_node_modules: &restore_node_modules
     restore_cache:
@@ -39,6 +41,10 @@ jobs:
       - <<: *restore_node_modules
       - <<: *install_node_modules
       - <<: *cache_node_modules
+      - run:
+          name: Configure build
+          command: |
+            echo "export SENTRY_RELEASE=$(git log -n 1 --pretty=format:"%H")" >> $BASH_ENV
       - run: yarn build
       - run: yarn test
       - run:
@@ -49,6 +55,8 @@ jobs:
             echo 'export CLOUDFRONT_DISTRIBUTION_ID=$STAGING_CLOUDFRONT_DISTRIBUTION_ID' >> $BASH_ENV
             echo 'export S3_BUCKET_NAME=$STAGING_S3_BUCKET_NAME' >> $BASH_ENV
       - <<: *deploy
+    environment:
+      SENTRY_ENVIRONMENT: staging
 
   build_and_deploy_prod:
     <<: *docker
@@ -57,6 +65,10 @@ jobs:
       - <<: *restore_node_modules
       - <<: *install_node_modules
       - <<: *cache_node_modules
+      - run:
+          name: Configure build
+          command: |
+            echo "export SENTRY_RELEASE=$(git log -n 1 --pretty=format:"%H")" >> $BASH_ENV
       - run: yarn build
       - run:
           name: Configure deployment
@@ -66,6 +78,8 @@ jobs:
             echo 'export CLOUDFRONT_DISTRIBUTION_ID=$PRODUCTION_CLOUDFRONT_DISTRIBUTION_ID' >> $BASH_ENV
             echo 'export S3_BUCKET_NAME=$PRODUCTION_S3_BUCKET_NAME' >> $BASH_ENV
       - <<: *deploy
+    environment:
+      SENTRY_ENVIRONMENT: production
 
   build_and_test:
     <<: *docker

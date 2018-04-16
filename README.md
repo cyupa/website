@@ -31,3 +31,13 @@ Requirements:
 * GraphQL queries must use the `graphql` tagged template literal tag
 
 The types are placed in the `@heydovetail/website/graphql/types` module.
+
+# Build
+
+The build can be configured using the following environment variables:
+
+* `SENTRY_DSN`
+* `SENTRY_ENVIRONMENT`
+* `SENTRY_RELEASE`
+
+These are configured automatically during CI deployment.
