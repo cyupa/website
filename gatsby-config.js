@@ -57,6 +57,16 @@ module.exports = {
         respectDNT: true,
         trackingId: "UA-97199079-2"
       }
+    },
+    {
+      resolve: "gatsby-plugin-sentry",
+      options: {
+        dsn: process.env.SENTRY_DSN || "",
+        config: {
+          environment: process.env.SENTRY_ENVIRONMENT,
+          release: process.env.SENTRY_RELEASE
+        }
+      }
     }
   ]
 };
