@@ -4,12 +4,13 @@ module.exports = {
     siteName: "Dovetail"
   },
   plugins: [
+    "gatsby-plugin-catch-links",
     "gatsby-plugin-react-next",
     "gatsby-plugin-sharp",
     "gatsby-plugin-typescript",
     "gatsby-plugin-typestyle",
     {
-      resolve: `gatsby-plugin-favicon`,
+      resolve: "gatsby-plugin-favicon",
       options: {
         logo: "./src/favicon.png",
         injectHTML: true,
