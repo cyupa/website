@@ -34,18 +34,18 @@ export class Masonry extends React.PureComponent<Props, State> {
   }
 
   public render() {
-    const { items } = this.props;
+    const { gap = 32, items } = this.props;
     const spec = this.columnSpec();
     return (
       <div
         ref={div => {
           this.container = div;
         }}
-        style={{ minHeight: 1 }}
+        style={{ display: "flex", flexWrap: "wrap", margin: -gap / 2, minHeight: 1 }}
       >
         {spec !== null
           ? items.map(item => (
-              <div data-masonary-item key={item.id} style={{ position: "absolute", width: spec.width }}>
+              <div data-masonary-item key={item.id} style={{ flex: "1 1 auto", margin: gap / 2, width: spec.width }}>
                 {item.node}
               </div>
             ))
@@ -97,6 +97,8 @@ export class Masonry extends React.PureComponent<Props, State> {
 
             element.style.top = `${columnHeights[columnTarget]}px`;
             element.style.left = `${columnTarget * (columnWidth + gap)}px`;
+            element.style.margin = null;
+            element.style.position = "absolute";
 
             columnHeights[columnTarget] += element.clientHeight + gap;
           }
@@ -105,6 +107,7 @@ export class Masonry extends React.PureComponent<Props, State> {
         const maxColumnHeight = Math.max(...columnHeights);
 
         this.container.style.height = `${maxColumnHeight - gap}px`;
+        this.container.style.margin = null;
       }
     }
   };
