@@ -2,11 +2,11 @@ import { Button } from "@heydovetail/website/components/forms/Button";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
 import { Item } from "@heydovetail/website/components/layout/Item";
-import { Hide } from "@heydovetail/website/components/util/Hide";
 import { SmallText } from "@heydovetail/website/components/util/SmallText";
-import { COLORS } from "@heydovetail/website/constants";
+import { BREAKPOINT_TABLET, COLORS } from "@heydovetail/website/constants";
 import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
+import { media } from "typestyle/lib";
 
 interface Props {
   children?: React.ReactNode;
@@ -44,11 +44,11 @@ export class Hero extends React.PureComponent<Props> {
             ) : null}
           </Flex>
         </Item>
-        <Hide device="tablet">
+        <HeroImage>
           <Item>
             <Image>{image}</Image>
           </Item>
-        </Hide>
+        </HeroImage>
       </Flex>
     );
   }
@@ -61,3 +61,14 @@ const Heading = styled("div", {
 const Image = styled("div", {
   marginRight: "-280px"
 });
+
+const HeroImage = styled(
+  "div",
+  {},
+  media(
+    { maxWidth: BREAKPOINT_TABLET },
+    {
+      display: "none"
+    }
+  )
+);

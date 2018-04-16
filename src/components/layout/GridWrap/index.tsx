@@ -3,28 +3,31 @@ import { Item } from "../Item";
 
 interface Props {
   alignItems?: "flex-start" | "flex-end" | "baseline" | "center" | "stretch";
-  childMaxWidth?: number;
+  maxChildWidth?: number;
   gap: number;
+  growItems?: boolean;
   justifyContent?: "flex-start" | "flex-end" | "center" | "space-around" | "space-between";
 }
 
 export const GridWrap = styledViaProps(
   "div",
-  ({ alignItems, childMaxWidth, gap, justifyContent }) =>
+  ({ alignItems, maxChildWidth, gap, growItems, justifyContent }) =>
     JSON.stringify({
       alignItems,
-      childMaxWidth,
+      maxChildWidth,
       gap,
+      growItems,
       justifyContent
     }),
-  ({ alignItems, childMaxWidth, gap, justifyContent }: Props) => {
+  ({ alignItems, maxChildWidth, gap, growItems, justifyContent }: Props) => {
     const halfGap = gap / 2;
 
     return {
       $nest: {
         [`& > .${Item.class}`]: {
-          flex: "1 1",
-          flexBasis: childMaxWidth !== undefined ? `${childMaxWidth}px` : childMaxWidth,
+          flexGrow: growItems === true ? 1 : 0,
+          flexShrink: 1,
+          flexBasis: maxChildWidth !== undefined ? `${maxChildWidth}px` : "auto",
           margin: halfGap
         }
       },

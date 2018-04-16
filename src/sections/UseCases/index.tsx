@@ -4,11 +4,10 @@ import PictogramRepository from "@heydovetail/website/components/icons/pictogram
 import PictogramResearch from "@heydovetail/website/components/icons/pictograms/PictogramResearch";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { Grid } from "@heydovetail/website/components/layout/Grid";
+import { GridWrap } from "@heydovetail/website/components/layout/GridWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { UseCaseCard } from "@heydovetail/website/components/site/UseCaseCard";
-import { MediaToggle } from "@heydovetail/website/components/util/MediaToggle";
-import { BREAKPOINT_TABLET, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import * as React from "react";
 
@@ -22,36 +21,40 @@ export class UseCases extends React.PureComponent<Props> {
     const { onClick, showTitle = false } = this.props;
 
     const useCases = (
-      <MediaToggle
-        breakpoint={BREAKPOINT_TABLET}
-        narrow={<Grid gap={32} gridTemplateColumns="1fr" />}
-        wide={<Grid gap={32} gridTemplateColumns="1fr 1fr" />}
-      >
-        <UseCaseCard
-          image={<PictogramFeedback />}
-          location={locations.customerFeedback()}
-          onClick={onClick}
-          text="Customer feedback management"
-        />
-        <UseCaseCard
-          image={<PictogramRepository />}
-          location={locations.researchRepository()}
-          onClick={onClick}
-          text="User research repository"
-        />
-        <UseCaseCard
-          image={<PictogramQda />}
-          location={locations.qualitativeDataAnalysis()}
-          onClick={onClick}
-          text="Qualitative data analysis"
-        />
-        <UseCaseCard
-          image={<PictogramResearch />}
-          location={locations.userResearch()}
-          onClick={onClick}
-          text="Collaborative user research"
-        />
-      </MediaToggle>
+      <GridWrap growItems maxChildWidth={336} gap={32}>
+        <Item style={{ minWidth: 0 }}>
+          <UseCaseCard
+            image={<PictogramFeedback />}
+            location={locations.customerFeedback()}
+            onClick={onClick}
+            text="Customer feedback management"
+          />
+        </Item>
+        <Item style={{ minWidth: 0 }}>
+          <UseCaseCard
+            image={<PictogramRepository />}
+            location={locations.researchRepository()}
+            onClick={onClick}
+            text="User research repository"
+          />
+        </Item>
+        <Item style={{ minWidth: 0 }}>
+          <UseCaseCard
+            image={<PictogramQda />}
+            location={locations.qualitativeDataAnalysis()}
+            onClick={onClick}
+            text="Qualitative data analysis"
+          />
+        </Item>
+        <Item style={{ minWidth: 0 }}>
+          <UseCaseCard
+            image={<PictogramResearch />}
+            location={locations.userResearch()}
+            onClick={onClick}
+            text="Collaborative user research"
+          />
+        </Item>
+      </GridWrap>
     );
 
     if (showTitle) {

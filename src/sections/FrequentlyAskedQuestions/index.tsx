@@ -17,7 +17,7 @@ export class FrequentlyAskedQuestions extends React.PureComponent {
           </Center>
         </Item>
         <Item>
-          <GridWrap gap={64} childMaxWidth={240} justifyContent="center">
+          <GridWrap gap={64} growItems maxChildWidth={240} justifyContent="center">
             <Item>
               <Faq
                 question="What does “unlimited users” mean?"

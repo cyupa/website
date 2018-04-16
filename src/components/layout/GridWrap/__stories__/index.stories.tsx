@@ -4,7 +4,7 @@ import * as React from "react";
 import { GridWrap } from "../";
 
 storiesOf("Layout/GridWrap", module).add("default", () => (
-  <GridWrap gap={32} childMaxWidth={200}>
+  <GridWrap gap={32} maxChildWidth={200}>
     <Item>
       <Slate>First</Slate>
     </Item>
