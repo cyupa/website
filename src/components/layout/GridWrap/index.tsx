@@ -23,7 +23,8 @@ export const GridWrap = styledViaProps(
     return {
       $nest: {
         [`& > .${Item.class}`]: {
-          flex: `1 1 ${childMaxWidth}px`,
+          flex: "1 1",
+          flexBasis: childMaxWidth !== undefined ? `${childMaxWidth}px` : childMaxWidth,
           margin: halfGap
         }
       },

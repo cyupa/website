@@ -6,7 +6,7 @@ exports.replaceRenderer = ({ bodyComponent, replaceBodyHTMLString, setHeadCompon
   const body = renderToString(bodyComponent);
 
   replaceBodyHTMLString(body);
-  setHeadComponents([React.createElement("style", null, getStyles())]);
+  setHeadComponents([React.createElement("style", { dangerouslySetInnerHTML: { __html: getStyles() } })]);
 
   return;
 };
