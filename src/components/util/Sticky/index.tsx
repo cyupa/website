@@ -1,7 +1,7 @@
 import { BOX_SHADOW_BORDER_LIGHTER, BOX_SHADOW_STICKY, BREAKPOINT_PHONE, Z_INDEX_LOW } from "@heydovetail/website/constants";
-import { findDomNode } from "@heydovetail/website/util/dom";
 import { styledViaProps } from "@heydovetail/website/util/styled";
 import * as React from "react";
+import { findDOMNode } from "react-dom";
 import { extend, media } from "typestyle";
 
 interface Props {
@@ -34,7 +34,7 @@ export class Sticky extends React.PureComponent<Props, State> {
   }
 
   private readonly addShadow = () => {
-    const element = findDomNode(this);
+    const element = findDOMNode(this);
     if (element instanceof Element) {
       const rect = element.getBoundingClientRect();
       this.setState({ shadow: window.scrollY > rect.top });

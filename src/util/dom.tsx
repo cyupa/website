@@ -1,5 +1,3 @@
-import * as ReactDOM from "react-dom";
-
 /**
  * A HTML form element factory.
  */
@@ -35,23 +33,4 @@ export function readMetaOrThrow(name: string): string {
     throw new Error(`Unable to read meta tag value. Name: ${name}`);
   }
   return value;
-}
-
-/**
- * A wrapper around `ReactDOM.findDOMNode` that uses a less specific return type
- * in order to give a more accurate contract when running in a test environment
- * (where fake DOM elements are used).
- *
- * When writing code for the browser, the result should be checked with
- * `instanceof` e.g.
- *
- * ```ts
- * const element = findDomNode(this);
- * if (element instanceof HTMLElement) {
- *   // use element
- * }
- * ```
- */
-export function findDomNode(instance: React.ReactInstance): object {
-  return ReactDOM.findDOMNode(instance);
 }
