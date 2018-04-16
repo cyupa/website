@@ -1,18 +1,20 @@
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
+import { Lozenge } from "@heydovetail/website/components/site/Lozenge";
 import { BREAKPOINT_TABLET, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
 import { media } from "typestyle";
 
 export interface FeatureProps {
+  launched?: boolean;
   text: string;
   title: string;
 }
 
 export class Feature extends React.PureComponent<FeatureProps> {
   public render() {
-    const { text, title } = this.props;
+    const { launched = true, text, title } = this.props;
     return (
       <Wrapper>
         <Flex gap={8} layout="column">
@@ -22,6 +24,11 @@ export class Feature extends React.PureComponent<FeatureProps> {
           <Item>
             <Text>{text}</Text>
           </Item>
+          {launched === false ? (
+            <Item>
+              <Lozenge>Coming soon</Lozenge>
+            </Item>
+          ) : null}
         </Flex>
       </Wrapper>
     );

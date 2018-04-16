@@ -1,5 +1,6 @@
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
+import { Lozenge } from "@heydovetail/website/components/site/Lozenge";
 import { ActionTextWithArrow } from "@heydovetail/website/components/util/ActionTextWithArrow";
 import { BREAKPOINT_TABLET, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { LocationDescriptor, locations } from "@heydovetail/website/routing/locations";
@@ -13,6 +14,7 @@ const GAP = "72px";
 interface Props {
   image: React.ReactNode;
   imagePosition?: "left" | "right";
+  launched?: boolean;
   location?: LocationDescriptor;
   linkText?: string;
   text: string;
@@ -21,11 +23,24 @@ interface Props {
 
 export class FeatureHero extends React.PureComponent<Props> {
   public render() {
-    const { image, imagePosition = "right", location, linkText = "Try free for 14 days", text, title } = this.props;
+    const {
+      image,
+      imagePosition = "right",
+      launched = true,
+      location,
+      linkText = "Try free for 14 days",
+      text,
+      title
+    } = this.props;
     return (
       <Wrapper imagePosition={imagePosition}>
         <Text imagePosition={imagePosition}>
           <Flex gap={24} layout="column">
+            {launched === false ? (
+              <Item>
+                <Lozenge>Coming soon</Lozenge>
+              </Item>
+            ) : null}
             <Item>
               <h2>{title}</h2>
             </Item>

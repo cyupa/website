@@ -50,6 +50,7 @@ export default class extends React.PureComponent {
                   <FeatureHero
                     image={<IllustrationFiles size="100%" />}
                     imagePosition="left"
+                    launched={false}
                     text="Drag &amp; drop photos, screenshots, audio recordings, videos, and more into notes and keep the context around the file."
                     title="Store images, audio, video, and more."
                   />
@@ -57,7 +58,7 @@ export default class extends React.PureComponent {
                 <Item>
                   <FeatureHeroLarge
                     image={<IllustrationBoardLarge size="100%" />}
-                    text="Use a drag &amp; drop board to organize your research notes, tags, insights, and files."
+                    text="Use a drag &amp; drop board to organize your research notes, tags, and insights."
                     title="Organize everything on an intuitive board."
                   />
                 </Item>
@@ -69,6 +70,7 @@ export default class extends React.PureComponent {
                         title: "Notes"
                       },
                       {
+                        launched: false,
                         text: "Organize photos, recordings, and screenshots",
                         title: "Files"
                       },

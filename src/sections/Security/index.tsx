@@ -15,7 +15,7 @@ export const BASE_SECURITY_FEATURES = [
   },
   {
     text:
-      "Easily import notes, tags, insights, and files. Download PDFs of your notes and insights and export your tags to a spreadsheet.",
+      "Easily import notes, tags, and insights. Download PDFs of your notes and insights and export your tags to a spreadsheet.",
     title: "Import and export"
   },
   {

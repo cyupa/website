@@ -48,7 +48,7 @@ export default class extends React.PureComponent {
                 <Item>
                   <FeatureHeroLarge
                     image={<IllustrationBoardLarge size="100%" />}
-                    text="Use a drag &amp; drop board to organize your research notes, tags, insights, and files."
+                    text="Use a drag &amp; drop board to organize your research notes, tags, and insights."
                     title="Keep everyone in sync with a research board."
                   />
                 </Item>
