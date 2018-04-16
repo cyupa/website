@@ -13,7 +13,7 @@ export class Features extends React.PureComponent<Props> {
   public render() {
     const { features, large = false } = this.props;
     return (
-      <GridWrap maxChildWidth={256} justifyContent="center" gap={large ? 64 : 32}>
+      <GridWrap growItems maxChildWidth={256} justifyContent="center" gap={large ? 64 : 32}>
         {features.map((f, i) => (
           <Item key={i}>
             {large ? <FeatureLarge text={f.text} title={f.title} /> : <Feature text={f.text} title={f.title} />}
