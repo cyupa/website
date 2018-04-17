@@ -133,7 +133,7 @@ export const BREAKPOINT_TABLET = 768;
 export const TYPICAL_PAGE_WIDTH = 880;
 export const TYPICAL_VERTICAL_GAP = 128;
 export const PAGE_PADDING_BOTTOM = 64;
-export const FONT_FAMILY = "Rubik, sans-serif";
+export const FONT_FAMILY = "Rubik, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif";
 
 export const LIGHT_TEXT_OPACITY = 0.6;
 
