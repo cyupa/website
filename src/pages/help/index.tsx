@@ -1,10 +1,13 @@
+import { Container } from "@heydovetail/website/components/layout/Container";
 import { ActionCard } from "@heydovetail/website/components/site/ActionCard";
 import { PageGroup } from "@heydovetail/website/components/site/PageGroup";
+import { BORDER_RADIUS, COLORS, TYPICAL_PAGE_WIDTH } from "@heydovetail/website/constants";
 import { HelpIndexQuery } from "@heydovetail/website/graphql/types";
 import { locations } from "@heydovetail/website/routing/locations";
 import { DocumentIndex } from "@heydovetail/website/sections/DocumentIndex";
 import { createPageHierarchy } from "@heydovetail/website/util/createPageHierarchy";
 import { graphql } from "@heydovetail/website/util/graphql";
+import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
 
 interface Props {
@@ -43,14 +46,31 @@ export default class extends React.PureComponent<Props> {
     });
 
     return (
-      <DocumentIndex
-        items={cards}
-        text="Running into problems? Browse our help articles below or contact us."
-        title="Help and support"
-      />
+      <>
+        <Container maxWidth={TYPICAL_PAGE_WIDTH}>
+          <Status>
+            We are currently migrating our domain (dovetailapp.com) and SSL certificates to Amazon. This has resulted in a brief
+            downtime of the app – we’re working hard to fix it.
+          </Status>
+        </Container>
+        <DocumentIndex
+          items={cards}
+          text="Running into problems? Browse our help articles below or contact us."
+          title="Help and support"
+        />
+      </>
     );
   }
 }
+
+const Status = styled("div", {
+  backgroundColor: COLORS.white,
+  borderRadius: BORDER_RADIUS,
+  border: `2px solid ${COLORS.orange}`,
+  lineHeight: "28px",
+  padding: "24px",
+  width: "100%"
+});
 
 export const pageQuery = graphql`
   query HelpIndex {
