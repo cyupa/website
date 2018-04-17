@@ -5,7 +5,7 @@ title: "Customer Terms of Service"
 weight: 1
 ---
 
-These Customer Terms of Service (the **“Customer Terms”**) describe your rights and responsibilities when using our online customer feedback management and user research analysis tools (the **“Services“**).
+These Customer Terms of Service (the **“Customer Terms”**) describe your rights and responsibilities when using our online feedback management and user research analysis tools (the **“Services“**).
 
 If you are a Customer (defined below), these Customer Terms govern your access and use of the Services. If you are being invited to a team created by a Customer (e.g. your employer), the [User Terms of Service](/legal/user-terms) (the **“User Terms”**) govern your access and use of the Services.
 

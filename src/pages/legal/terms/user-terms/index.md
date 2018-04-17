@@ -5,7 +5,7 @@ title: "User Terms of Service"
 weight: 2
 ---
 
-These User Terms of Service (the **“User Terms”**) govern your access and use of our online customer feedback management and user research analysis tools (the **“Services“**).
+These User Terms of Service (the **“User Terms”**) govern your access and use of our online feedback management and user research analysis tools (the **“Services“**).
 
 Your use of the Services indicates that you have had sufficient opportunity to access these User Terms and that you have read and accepted these User Terms. You should immediately cease accessing and using the Services if you do not accept these User Terms.
 

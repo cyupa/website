@@ -17,11 +17,7 @@ export class UseCasesDropdown extends React.PureComponent {
         <Container horizontalPadding={16} verticalPadding={8}>
           <GridWrap maxChildWidth={128} gap={0} growItems>
             <Item>
-              <UseCase
-                image={<PictogramFeedback />}
-                location={locations.customerFeedback()}
-                title="Customer feedback management"
-              />
+              <UseCase image={<PictogramFeedback />} location={locations.customerFeedback()} title="Feedback management" />
             </Item>
             <Item>
               <UseCase

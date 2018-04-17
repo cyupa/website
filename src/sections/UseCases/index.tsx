@@ -27,7 +27,7 @@ export class UseCases extends React.PureComponent<Props> {
             image={<PictogramFeedback />}
             location={locations.customerFeedback()}
             onClick={onClick}
-            text="Customer feedback management"
+            text="Feedback management"
           />
         </Item>
         <Item style={{ minWidth: 0 }}>
