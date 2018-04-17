@@ -4,7 +4,6 @@ module.exports = {
     siteName: "Dovetail"
   },
   plugins: [
-    "gatsby-plugin-catch-links",
     "gatsby-plugin-react-next",
     "gatsby-plugin-sharp",
     "gatsby-plugin-typescript",
