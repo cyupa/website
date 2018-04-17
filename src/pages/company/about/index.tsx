@@ -28,22 +28,38 @@ export default class extends React.PureComponent {
                   <HeroText center={false} maxWidth={416} title="About us" />
                 </Item>
                 <Item>
-                  <p>
-                    We’re a self-funded startup created by two ex-Atlassians, based in Sydney, Australia. We launched the first
-                    version of Dovetail in October 2016, and we’ve been going ever since. We believe that deeply understanding
-                    your customers is the secret ingredient to making great products, so we created Dovetail to help thousands
-                    of teams organize, analyze, and share their customer feedback &amp; user research.
-                  </p>
+                  <Flex gap={24} layout="column">
+                    <Item>
+                      <p>Dovetail was created in 2017 by two ex-Atlassians: Benjamin Humphrey and Brad Ayers.</p>
+                    </Item>
+                    <Item>
+                      <p>
+                        We started Dovetail because we believe that deeply understanding one’s customers is the secret
+                        ingredient to making great products. Therefore our mission is to help teams collect, organize, analyze,
+                        and collaborate on customer feedback and user research.
+                      </p>
+                    </Item>
+                    <Item>
+                      <p>
+                        Dovetail has been growing steadily since our initial launch. We now have hundreds of researchers,
+                        designers, and product managers using Dovetail worldwide at great organizations like Atlassian, CSIRO,
+                        Deloitte, Elsevier, Freshworks, HotelsCombined, Nike, Uniqa, and more.
+                      </p>
+                    </Item>
+                    <Item>
+                      <p>We’re based in Sydney, Australia.</p>
+                    </Item>
+                  </Flex>
                 </Item>
                 <Item>
                   <Flow>
                     <Item>
-                      <ButtonLink color={COLORS.purple} location={locations.signUp()}>
-                        Try Dovetail for free
+                      <ButtonLink color={COLORS.purple} location={locations.blog()}>
+                        Visit our blog
                       </ButtonLink>
                     </Item>
                     <Item>
-                      <ButtonLink location={locations.blog()}>Visit our blog</ButtonLink>
+                      <ButtonLink location={locations.slack()}>Join our Slack</ButtonLink>
                     </Item>
                   </Flow>
                 </Item>
@@ -52,7 +68,7 @@ export default class extends React.PureComponent {
             <Item>
               <Flex gap={32} layout="column">
                 <Item>
-                  <h2>The team</h2>
+                  <h2>The founders</h2>
                 </Item>
                 <Item>
                   <Masonry
@@ -65,7 +81,7 @@ export default class extends React.PureComponent {
                             bio="Benjamin is a kiwi designer, developer, and entrepreneur living in Sydney. He loves creating world-class products and believes in the power of user research to do so. Previously Benjamin has led design projects at Atlassian, Delicious, and Ubuntu."
                             image={benjamin}
                             name="Benjamin Humphrey"
-                            role="CEO &amp; Co-founder"
+                            role="CEO / Designer / Developer"
                           />
                         )
                       },
@@ -76,13 +92,46 @@ export default class extends React.PureComponent {
                             bio="Brad’s a talented software architect living in Sydney. He has a Bachelor of Engineering from Griffith University and previously worked as an architect at Atlassian. If you’re reading this then the site is up, so well done Brad. Keep it up."
                             image={brad}
                             name="Brad Ayers"
-                            role="CTO &amp; Co-founder"
+                            role="CTO / Developer"
                           />
                         )
                       }
                     ]}
                     minColumnWidth={256}
                   />
+                </Item>
+              </Flex>
+            </Item>
+            <Item>
+              <Flex gap={24} layout="column">
+                <Item>
+                  <h2>Our philosophy</h2>
+                </Item>
+                <Item>
+                  <p>We’ve been inspired by the values of companies like Atlassian, Basecamp, and Buffer.</p>
+                </Item>
+                <Item>
+                  <p>
+                    <b>We’re transparent.</b> We have a public roadmap and Slack workspace. We openly discuss future plans with
+                    our customers. We believe in simple and transparent pricing. Our price is always available on our website,
+                    and we charge a simple flat monthly fee regardless of organization size.
+                  </p>
+                </Item>
+                <Item>
+                  <p>
+                    <b>We’re human.</b> We offer trial extensions when you need more time because we understand things don’t
+                    happen overnight. We offer refunds if you accidentally forgot to cancel at the beginning of a new billing
+                    period. We respect Do Not Track on our website. And we make mistakes, but when we do, we own up to them
+                    honestly and try to make amends.
+                  </p>
+                </Item>
+                <Item>
+                  <p>
+                    <b>We’re focused on the product.</b> Our focus and investment is mostly in product development rather than
+                    marketing or sales. We prefer building intuitive experiences over documentation and tutorials. We prefer
+                    building a great set of features that “sell themselves” over hiring a sales team. When we do work on things
+                    that aren’t the product (for example, this website), we hold ourselves to a high standard.
+                  </p>
                 </Item>
               </Flex>
             </Item>
