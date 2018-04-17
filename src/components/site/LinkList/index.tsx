@@ -6,25 +6,27 @@ import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
 import { style } from "typestyle";
 
-interface FooterItem {
+interface LinkListLink {
   label: string;
   location: LocationDescriptor;
 }
 
 interface Props {
-  heading: string;
-  items: FooterItem[];
+  heading?: string;
+  links: LinkListLink[];
 }
 
-export class FooterList extends React.PureComponent<Props> {
+export class LinkList extends React.PureComponent<Props> {
   public render() {
-    const { heading, items } = this.props;
+    const { heading, links } = this.props;
     return (
-      <Flex gap={12} layout="column">
-        <Item>
-          <Heading>{heading}</Heading>
-        </Item>
-        {items.map((item, i) => (
+      <Flex gap={16} layout="column">
+        {heading !== undefined ? (
+          <Item>
+            <Heading>{heading}</Heading>
+          </Item>
+        ) : null}
+        {links.map((item, i) => (
           <Item key={i}>
             <LocationLink className={linkClassName} location={item.location} presentation="text">
               {item.label}
@@ -43,5 +45,6 @@ const Heading = styled("h5", {
 });
 
 const linkClassName = style({
-  fontSize: "14px"
+  fontSize: "14px",
+  fontWeight: 500
 });

@@ -2,6 +2,7 @@ import { Container } from "@heydovetail/website/components/layout/Container";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
 import { Item } from "@heydovetail/website/components/layout/Item";
+import { LinkList } from "@heydovetail/website/components/site/LinkList";
 import { COLORS, LIGHT_TEXT_OPACITY, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { styled } from "@heydovetail/website/util/styled";
@@ -9,7 +10,6 @@ import * as React from "react";
 import { DarkContainer } from "../DarkContainer";
 import { LightContainer } from "../LightContainer";
 import Wave from "../Wave/Wave";
-import { FooterList } from "./FooterList";
 
 interface Props {
   dark?: boolean;
@@ -24,9 +24,9 @@ export class Footer extends React.PureComponent<Props> {
         <Item>
           <Flow gap={64} rowGap={64}>
             <Item style={{ verticalAlign: "top" }}>
-              <FooterList
+              <LinkList
                 heading="Use cases"
-                items={[
+                links={[
                   { label: "Feedback management", location: locations.customerFeedback() },
                   { label: "Research repository", location: locations.researchRepository() },
                   { label: "Qualitative data analysis", location: locations.qualitativeDataAnalysis() },
@@ -35,9 +35,9 @@ export class Footer extends React.PureComponent<Props> {
               />
             </Item>
             <Item style={{ verticalAlign: "top" }}>
-              <FooterList
+              <LinkList
                 heading="Resources"
-                items={[
+                links={[
                   { label: "All features", location: locations.features() },
                   { label: "Guides", location: locations.guides() },
                   { label: "Security", location: locations.security() },
@@ -46,9 +46,9 @@ export class Footer extends React.PureComponent<Props> {
               />
             </Item>
             <Item style={{ verticalAlign: "top" }}>
-              <FooterList
+              <LinkList
                 heading="Legal"
-                items={[
+                links={[
                   { label: "Terms and policies", location: locations.legal() },
                   { label: "Customer Terms", location: locations.termsCustomer() },
                   { label: "Privacy Policy", location: locations.privacy() },
@@ -57,9 +57,9 @@ export class Footer extends React.PureComponent<Props> {
               />
             </Item>
             <Item style={{ verticalAlign: "top" }}>
-              <FooterList
+              <LinkList
                 heading="Company"
-                items={[
+                links={[
                   { label: "About us", location: locations.about() },
                   { label: "Blog", location: locations.blog() },
                   { label: "Slack", location: locations.slack() }
