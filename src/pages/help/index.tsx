@@ -15,6 +15,8 @@ interface Props {
 }
 
 export default class extends React.PureComponent<Props> {
+  private readonly downtime = true;
+
   public render() {
     const cards = createPageHierarchy(this.props.data.allMarkdownRemark, "src/pages/help").map((parent, i) => ({
       id: `${i}`,
@@ -47,12 +49,14 @@ export default class extends React.PureComponent<Props> {
 
     return (
       <>
-        <Container maxWidth={TYPICAL_PAGE_WIDTH}>
-          <Status>
-            We are currently migrating our domain (dovetailapp.com) and SSL certificates to Amazon. This has resulted in a brief
-            downtime of the app – we’re working hard to fix it.
-          </Status>
-        </Container>
+        {this.downtime === true ? (
+          <Container maxWidth={TYPICAL_PAGE_WIDTH}>
+            <Status>
+              We are currently migrating our domain (dovetailapp.com) and SSL certificates to Amazon. This has resulted in a
+              brief downtime of the app – we’re working hard to fix it.
+            </Status>
+          </Container>
+        ) : null}
         <DocumentIndex
           items={cards}
           text="Running into problems? Browse our help articles below or contact us."
