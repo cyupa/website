@@ -1,5 +1,6 @@
 import { ActionCard } from "@heydovetail/website/components/site/ActionCard";
 import { PageGroup } from "@heydovetail/website/components/site/PageGroup";
+import { COLORS } from "@heydovetail/website/constants";
 import { GuideIndexQuery } from "@heydovetail/website/graphql/types";
 import { locations } from "@heydovetail/website/routing/locations";
 import { DocumentIndex } from "@heydovetail/website/sections/DocumentIndex";
@@ -19,11 +20,24 @@ export default class extends React.PureComponent<Props> {
     }));
 
     cards.splice(3, 0, {
-      id: "contact",
+      id: "slack",
       node: (
         <ActionCard
-          title="Read more"
-          text="Check out our blog for more articles about research and startup life."
+          title="Join our Slack community"
+          text="Join our open Slack community to chat with us and other designers and researchers."
+          buttonColor={COLORS.green}
+          buttonText="Join our Slack"
+          buttonLocation={locations.slack()}
+        />
+      )
+    });
+
+    cards.splice(4, 0, {
+      id: "learn-more",
+      node: (
+        <ActionCard
+          title="Read our blog"
+          text="Follow us on Medium for posts about design, research, product development, and more."
           buttonText="Visit blog"
           buttonLocation={locations.blog()}
         />
@@ -33,8 +47,8 @@ export default class extends React.PureComponent<Props> {
     return (
       <DocumentIndex
         items={cards}
-        text="We’ve compiled a few guides to help you master customer feedback and user research."
-        title="Research guides"
+        text="Browse our design, startup, and research guides, or join our free Slack community to learn more."
+        title="Design &amp; research guides"
       />
     );
   }
