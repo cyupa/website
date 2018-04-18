@@ -11,6 +11,8 @@ import DovetailLogo from "./DovetailLogo";
 
 interface Props {
   dark?: boolean;
+  menuOpen: boolean;
+  onMenuToggle: () => void;
   sticky?: boolean;
 }
 
@@ -29,7 +31,7 @@ export class Header extends React.PureComponent<Props> {
             </ThemeColor>
           </Item>
           <Item>
-            <Navigation dark={dark} />
+            <Navigation {...this.props} />
           </Item>
         </Justify>
       </Wrapper>
@@ -49,7 +51,7 @@ const Wrapper = styledViaProps(
   ({ dark }) => ({
     backgroundColor: dark ? COLORS.indigo : COLORS.white,
     color: COLORS.i60,
-    padding: "12px 24px"
+    padding: "16px 24px"
   })
 );
 

@@ -22,7 +22,7 @@ import IntegrationWordpress from "@heydovetail/website/components/icons/integrat
 import IntegrationWufoo from "@heydovetail/website/components/icons/integrations/IntegrationWufoo";
 import IntegrationYoutube from "@heydovetail/website/components/icons/integrations/IntegrationYoutube";
 import IntegrationZendesk from "@heydovetail/website/components/icons/integrations/IntegrationZendesk";
-import { GridWrap } from "@heydovetail/website/components/layout/GridWrap";
+import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import * as React from "react";
 
@@ -32,7 +32,7 @@ export class Integrations extends React.PureComponent {
       // Since we’re using this as an “Illustration” in FeautureHeroLarge
       // We want it to line up with the other illustrations which are not full bleed
       <div style={{ margin: "64px 0" }}>
-        <GridWrap gap={64} justifyContent="center">
+        <FlexWrap gap={64} justifyContent="center">
           <Item>
             <IntegrationBuffer />
           </Item>
@@ -105,7 +105,7 @@ export class Integrations extends React.PureComponent {
           <Item>
             <IntegrationZendesk />
           </Item>
-        </GridWrap>
+        </FlexWrap>
       </div>
     );
   }

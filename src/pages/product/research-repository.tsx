@@ -30,6 +30,9 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>User research repository – Dovetail</title>
+          <meta name="description" content="Keep all of your user research in one place." />
+          <meta property="og:description" content="Keep all of your user research in one place." />
+          <meta property="og:title" content="User research repository – Dovetail" />
         </Helmet>
         <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
           <Item>

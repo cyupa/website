@@ -1,17 +1,17 @@
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { storiesOf } from "@heydovetail/website/util/stories";
 import * as React from "react";
-import { GridWrap } from "../";
+import { FlexWrap } from "../";
 
-storiesOf("Layout/GridWrap", module).add("default", () => (
-  <GridWrap gap={32} maxChildWidth={200}>
+storiesOf("Layout/FlexWrap", module).add("default", () => (
+  <FlexWrap gap={32} maxChildWidth={200}>
     <Item>
       <Slate>First</Slate>
     </Item>
     <Item>
       <Slate>Second</Slate>
     </Item>
-  </GridWrap>
+  </FlexWrap>
 ));
 
 const Slate: React.StatelessComponent = ({ children }) => {

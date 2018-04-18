@@ -4,7 +4,7 @@ import PictogramRepository from "@heydovetail/website/components/icons/pictogram
 import PictogramResearch from "@heydovetail/website/components/icons/pictograms/PictogramResearch";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { GridWrap } from "@heydovetail/website/components/layout/GridWrap";
+import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { UseCaseCard } from "@heydovetail/website/components/site/UseCaseCard";
 import { TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
@@ -21,7 +21,7 @@ export class UseCases extends React.PureComponent<Props> {
     const { onClick, showTitle = false } = this.props;
 
     const useCases = (
-      <GridWrap growItems maxChildWidth={336} gap={32}>
+      <FlexWrap growItems maxChildWidth={336} gap={32}>
         <Item style={{ minWidth: 0 }}>
           <UseCaseCard
             image={<PictogramFeedback />}
@@ -54,7 +54,7 @@ export class UseCases extends React.PureComponent<Props> {
             text="Collaborative user research"
           />
         </Item>
-      </GridWrap>
+      </FlexWrap>
     );
 
     if (showTitle) {

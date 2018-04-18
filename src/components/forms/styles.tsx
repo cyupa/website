@@ -125,7 +125,7 @@ export const formControl = {
   border: "none",
   boxShadow: `${BOX_SHADOW_BORDER}, ${BOX_SHADOW_SITTING}`,
   boxSizing: "border-box" as "border-box",
-  color: COLORS.darkpurple,
+  color: COLORS.indigo,
   fontSize: "14px",
   fontWeight: 500,
   height: "40px",

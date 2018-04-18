@@ -475,6 +475,16 @@
                   "defaultValue": null
                 },
                 {
+                  "name": "browserAPIs",
+                  "description": null,
+                  "type": {
+                    "kind": "INPUT_OBJECT",
+                    "name": "sitePluginBrowserApIsQueryList_2",
+                    "ofType": null
+                  },
+                  "defaultValue": null
+                },
+                {
                   "name": "ssrAPIs",
                   "description": null,
                   "type": {
@@ -1625,6 +1635,12 @@
               "deprecationReason": null
             },
             {
+              "name": "internal___description",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "internal___owner",
               "description": null,
               "isDeprecated": false,
@@ -2349,6 +2365,16 @@
               "defaultValue": null
             },
             {
+              "name": "browserAPIs",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePageConnectionPluginCreatorBrowserApIsQueryList",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "ssrAPIs",
               "description": null,
               "type": {
@@ -2674,6 +2700,26 @@
               "defaultValue": null
             },
             {
+              "name": "backgroundColor",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsBackgroundColorQueryString",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "quality",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsQualityQueryInteger",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "maxWidth",
               "description": null,
               "type": {
@@ -2684,21 +2730,21 @@
               "defaultValue": null
             },
             {
-              "name": "wrapperStyle",
+              "name": "sizeByPixelDensity",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "sitePageConnectionPluginCreatorPluginOptionsWrapperStyleQueryString",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsSizeByPixelDensityQueryBoolean",
                 "ofType": null
               },
               "defaultValue": null
             },
             {
-              "name": "backgroundColor",
+              "name": "wrapperStyle",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "sitePageConnectionPluginCreatorPluginOptionsBackgroundColorQueryString",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsWrapperStyleQueryString",
                 "ofType": null
               },
               "defaultValue": null
@@ -2729,6 +2775,76 @@
               "type": {
                 "kind": "INPUT_OBJECT",
                 "name": "sitePageConnectionPluginCreatorPluginOptionsPathPrefixQueryString",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "anonymize",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsAnonymizeQueryBoolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "head",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsHeadQueryBoolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "respectDNT",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsRespectDntQueryBoolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "trackingId",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsTrackingIdQueryString",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "dsn",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsDsnQueryString",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "color",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsColorQueryString",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "showSpinner",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsShowSpinnerQueryBoolean",
                 "ofType": null
               },
               "defaultValue": null
@@ -3045,6 +3161,26 @@
           "fields": null,
           "inputFields": [
             {
+              "name": "backgroundColor",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsBackgroundColorQueryString",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "quality",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsQualityQueryInteger",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "maxWidth",
               "description": null,
               "type": {
@@ -3055,21 +3191,21 @@
               "defaultValue": null
             },
             {
-              "name": "wrapperStyle",
+              "name": "sizeByPixelDensity",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsWrapperStyleQueryString",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean",
                 "ofType": null
               },
               "defaultValue": null
             },
             {
-              "name": "backgroundColor",
+              "name": "wrapperStyle",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsBackgroundColorQueryString",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsWrapperStyleQueryString",
                 "ofType": null
               },
               "defaultValue": null
@@ -3111,38 +3247,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger",
-          "description": null,
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "eq",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "ne",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "INPUT_OBJECT",
-          "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsWrapperStyleQueryString",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsBackgroundColorQueryString",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -3193,7 +3298,110 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsBackgroundColorQueryString",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsQualityQueryInteger",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "description": "The `Boolean` scalar type represents `true` or `false`.",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsWrapperStyleQueryString",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -3269,16 +3477,6 @@
               "defaultValue": null
             }
           ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "SCALAR",
-          "name": "Boolean",
-          "description": "The `Boolean` scalar type represents `true` or `false`.",
-          "fields": null,
-          "inputFields": null,
           "interfaces": null,
           "enumValues": null,
           "possibleTypes": null
@@ -3982,38 +4180,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "sitePageConnectionPluginCreatorPluginOptionsMaxWidthQueryInteger",
-          "description": null,
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "eq",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "ne",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "INPUT_OBJECT",
-          "name": "sitePageConnectionPluginCreatorPluginOptionsWrapperStyleQueryString",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsBackgroundColorQueryString",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -4064,7 +4231,100 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "sitePageConnectionPluginCreatorPluginOptionsBackgroundColorQueryString",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsQualityQueryInteger",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsMaxWidthQueryInteger",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsSizeByPixelDensityQueryBoolean",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsWrapperStyleQueryString",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -4228,7 +4488,349 @@
         },
         {
           "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsAnonymizeQueryBoolean",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsHeadQueryBoolean",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsRespectDntQueryBoolean",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsTrackingIdQueryString",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsDsnQueryString",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsColorQueryString",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsShowSpinnerQueryBoolean",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
           "name": "sitePageConnectionPluginCreatorNodeApIsQueryList",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "in",
+              "description": null,
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionPluginCreatorBrowserApIsQueryList",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -5788,6 +6390,16 @@
               "defaultValue": null
             },
             {
+              "name": "description",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePageConnectionInternalDescriptionQueryString",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "owner",
               "description": null,
               "type": {
@@ -5856,6 +6468,57 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "sitePageConnectionInternalContentDigestQueryString_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionInternalDescriptionQueryString",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -6623,6 +7286,22 @@
               "deprecationReason": null
             },
             {
+              "name": "browserAPIs",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "ssrAPIs",
               "description": null,
               "args": [],
@@ -6768,6 +7447,30 @@
               "deprecationReason": null
             },
             {
+              "name": "backgroundColor",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "quality",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "maxWidth",
               "description": null,
               "args": [],
@@ -6780,19 +7483,19 @@
               "deprecationReason": null
             },
             {
-              "name": "wrapperStyle",
+              "name": "sizeByPixelDensity",
               "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
-                "name": "String",
+                "name": "Boolean",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "backgroundColor",
+              "name": "wrapperStyle",
               "description": null,
               "args": [],
               "type": {
@@ -6834,6 +7537,90 @@
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "anonymize",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "head",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "respectDNT",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "trackingId",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "dsn",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "color",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "showSpinner",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
                 "ofType": null
               },
               "isDeprecated": false,
@@ -6934,6 +7721,30 @@
           "description": null,
           "fields": [
             {
+              "name": "backgroundColor",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "quality",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "maxWidth",
               "description": null,
               "args": [],
@@ -6946,19 +7757,19 @@
               "deprecationReason": null
             },
             {
-              "name": "wrapperStyle",
+              "name": "sizeByPixelDensity",
               "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
-                "name": "String",
+                "name": "Boolean",
                 "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "backgroundColor",
+              "name": "wrapperStyle",
               "description": null,
               "args": [],
               "type": {
@@ -7459,6 +8270,18 @@
               "deprecationReason": null
             },
             {
+              "name": "description",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "owner",
               "description": null,
               "args": [],
@@ -7569,6 +8392,12 @@
               "deprecationReason": null
             },
             {
+              "name": "internal___description",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "internal___owner",
               "description": null,
               "isDeprecated": false,
@@ -7665,6 +8494,12 @@
             },
             {
               "name": "internal___contentDigest",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "internal___description",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -7960,19 +8795,31 @@
               "deprecationReason": null
             },
             {
+              "name": "pluginOptions___backgroundColor",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___quality",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "pluginOptions___maxWidth",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "pluginOptions___wrapperStyle",
+              "name": "pluginOptions___sizeByPixelDensity",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "pluginOptions___backgroundColor",
+              "name": "pluginOptions___wrapperStyle",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -7991,6 +8838,54 @@
             },
             {
               "name": "pluginOptions___pathPrefix",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___anonymize",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___head",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___respectDNT",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___trackingId",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___dsn",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___config",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___color",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___showSpinner",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -8209,6 +9104,16 @@
               "type": {
                 "kind": "INPUT_OBJECT",
                 "name": "sitePluginConnectionNodeApIsQueryList_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "browserAPIs",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginConnectionBrowserApIsQueryList_2",
                 "ofType": null
               },
               "defaultValue": null
@@ -8529,6 +9434,26 @@
               "defaultValue": null
             },
             {
+              "name": "backgroundColor",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginConnectionPluginOptionsBackgroundColorQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "quality",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginConnectionPluginOptionsQualityQueryInteger_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "maxWidth",
               "description": null,
               "type": {
@@ -8539,21 +9464,21 @@
               "defaultValue": null
             },
             {
-              "name": "wrapperStyle",
+              "name": "sizeByPixelDensity",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "sitePluginConnectionPluginOptionsWrapperStyleQueryString_2",
+                "name": "sitePluginConnectionPluginOptionsSizeByPixelDensityQueryBoolean_2",
                 "ofType": null
               },
               "defaultValue": null
             },
             {
-              "name": "backgroundColor",
+              "name": "wrapperStyle",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "sitePluginConnectionPluginOptionsBackgroundColorQueryString_2",
+                "name": "sitePluginConnectionPluginOptionsWrapperStyleQueryString_2",
                 "ofType": null
               },
               "defaultValue": null
@@ -8584,6 +9509,76 @@
               "type": {
                 "kind": "INPUT_OBJECT",
                 "name": "sitePluginConnectionPluginOptionsPathPrefixQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "anonymize",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginConnectionPluginOptionsAnonymizeQueryBoolean_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "head",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginConnectionPluginOptionsHeadQueryBoolean_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "respectDNT",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginConnectionPluginOptionsRespectDntQueryBoolean_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "trackingId",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginConnectionPluginOptionsTrackingIdQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "dsn",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginConnectionPluginOptionsDsnQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "color",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginConnectionPluginOptionsColorQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "showSpinner",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginConnectionPluginOptionsShowSpinnerQueryBoolean_2",
                 "ofType": null
               },
               "defaultValue": null
@@ -8900,6 +9895,26 @@
           "fields": null,
           "inputFields": [
             {
+              "name": "backgroundColor",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginConnectionPluginOptionsPluginsPluginOptionsBackgroundColorQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "quality",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginConnectionPluginOptionsPluginsPluginOptionsQualityQueryInteger_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "maxWidth",
               "description": null,
               "type": {
@@ -8910,21 +9925,21 @@
               "defaultValue": null
             },
             {
-              "name": "wrapperStyle",
+              "name": "sizeByPixelDensity",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "sitePluginConnectionPluginOptionsPluginsPluginOptionsWrapperStyleQueryString_2",
+                "name": "sitePluginConnectionPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean_2",
                 "ofType": null
               },
               "defaultValue": null
             },
             {
-              "name": "backgroundColor",
+              "name": "wrapperStyle",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "sitePluginConnectionPluginOptionsPluginsPluginOptionsBackgroundColorQueryString_2",
+                "name": "sitePluginConnectionPluginOptionsPluginsPluginOptionsWrapperStyleQueryString_2",
                 "ofType": null
               },
               "defaultValue": null
@@ -8966,38 +9981,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "sitePluginConnectionPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger_2",
-          "description": null,
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "eq",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "ne",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "INPUT_OBJECT",
-          "name": "sitePluginConnectionPluginOptionsPluginsPluginOptionsWrapperStyleQueryString_2",
+          "name": "sitePluginConnectionPluginOptionsPluginsPluginOptionsBackgroundColorQueryString_2",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -9048,7 +10032,100 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "sitePluginConnectionPluginOptionsPluginsPluginOptionsBackgroundColorQueryString_2",
+          "name": "sitePluginConnectionPluginOptionsPluginsPluginOptionsQualityQueryInteger_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginConnectionPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginConnectionPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginConnectionPluginOptionsPluginsPluginOptionsWrapperStyleQueryString_2",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -9827,38 +10904,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "sitePluginConnectionPluginOptionsMaxWidthQueryInteger_2",
-          "description": null,
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "eq",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "ne",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "INPUT_OBJECT",
-          "name": "sitePluginConnectionPluginOptionsWrapperStyleQueryString_2",
+          "name": "sitePluginConnectionPluginOptionsBackgroundColorQueryString_2",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -9909,7 +10955,100 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "sitePluginConnectionPluginOptionsBackgroundColorQueryString_2",
+          "name": "sitePluginConnectionPluginOptionsQualityQueryInteger_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginConnectionPluginOptionsMaxWidthQueryInteger_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginConnectionPluginOptionsSizeByPixelDensityQueryBoolean_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginConnectionPluginOptionsWrapperStyleQueryString_2",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -10073,7 +11212,349 @@
         },
         {
           "kind": "INPUT_OBJECT",
+          "name": "sitePluginConnectionPluginOptionsAnonymizeQueryBoolean_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginConnectionPluginOptionsHeadQueryBoolean_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginConnectionPluginOptionsRespectDntQueryBoolean_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginConnectionPluginOptionsTrackingIdQueryString_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginConnectionPluginOptionsDsnQueryString_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginConnectionPluginOptionsColorQueryString_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginConnectionPluginOptionsShowSpinnerQueryBoolean_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
           "name": "sitePluginConnectionNodeApIsQueryList_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "in",
+              "description": null,
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginConnectionBrowserApIsQueryList_2",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -11695,19 +13176,31 @@
               "deprecationReason": null
             },
             {
+              "name": "pluginOptions___backgroundColor",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___quality",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "pluginOptions___maxWidth",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "pluginOptions___wrapperStyle",
+              "name": "pluginOptions___sizeByPixelDensity",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "pluginOptions___backgroundColor",
+              "name": "pluginOptions___wrapperStyle",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -11731,7 +13224,55 @@
               "deprecationReason": null
             },
             {
+              "name": "pluginOptions___anonymize",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___head",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___respectDNT",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___trackingId",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___dsn",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___color",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___showSpinner",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "nodeAPIs",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "browserAPIs",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -11952,19 +13493,31 @@
               "deprecationReason": null
             },
             {
+              "name": "pluginOptions___backgroundColor",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___quality",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "pluginOptions___maxWidth",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "pluginOptions___wrapperStyle",
+              "name": "pluginOptions___sizeByPixelDensity",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "pluginOptions___backgroundColor",
+              "name": "pluginOptions___wrapperStyle",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -11988,7 +13541,55 @@
               "deprecationReason": null
             },
             {
+              "name": "pluginOptions___anonymize",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___head",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___respectDNT",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___trackingId",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___dsn",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___color",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___showSpinner",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "nodeAPIs",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "browserAPIs",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -12291,6 +13892,12 @@
             },
             {
               "name": "internal___type",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "internal___description",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -12964,6 +14571,16 @@
               "defaultValue": null
             },
             {
+              "name": "description",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "directoryConnectionInternalDescriptionQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "owner",
               "description": null,
               "type": {
@@ -13032,6 +14649,57 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "directoryConnectionInternalTypeQueryString_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "directoryConnectionInternalDescriptionQueryString_2",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -15547,6 +17215,18 @@
               "deprecationReason": null
             },
             {
+              "name": "description",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "owner",
               "description": null,
               "args": [],
@@ -15602,6 +17282,12 @@
             },
             {
               "name": "internal___type",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "internal___description",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -15841,6 +17527,12 @@
             },
             {
               "name": "internal___type",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "internal___description",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -16257,6 +17949,12 @@
             },
             {
               "name": "internal___type",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "internal___description",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -16956,6 +18654,16 @@
               "defaultValue": null
             },
             {
+              "name": "description",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "fileConnectionInternalDescriptionQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "owner",
               "description": null,
               "type": {
@@ -17075,6 +18783,57 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "fileConnectionInternalTypeQueryString_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "fileConnectionInternalDescriptionQueryString_2",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -19962,7 +21721,7 @@
               "args": [],
               "type": {
                 "kind": "SCALAR",
-                "name": "Float",
+                "name": "Int",
                 "ofType": null
               },
               "isDeprecated": false,
@@ -20208,6 +21967,18 @@
               "deprecationReason": null
             },
             {
+              "name": "description",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "owner",
               "description": null,
               "args": [],
@@ -20265,6 +22036,12 @@
             },
             {
               "name": "internal___type",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "internal___description",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -20516,6 +22293,12 @@
             },
             {
               "name": "internal___type",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "internal___description",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -21542,7 +23325,7 @@
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "markdownRemarkConnectionFrontmatterWeightQueryFloat_2",
+                "name": "markdownRemarkConnectionFrontmatterWeightQueryInteger_2",
                 "ofType": null
               },
               "defaultValue": null
@@ -21799,7 +23582,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "markdownRemarkConnectionFrontmatterWeightQueryFloat_2",
+          "name": "markdownRemarkConnectionFrontmatterWeightQueryInteger_2",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -21808,7 +23591,7 @@
               "description": null,
               "type": {
                 "kind": "SCALAR",
-                "name": "Float",
+                "name": "Int",
                 "ofType": null
               },
               "defaultValue": null
@@ -21818,7 +23601,7 @@
               "description": null,
               "type": {
                 "kind": "SCALAR",
-                "name": "Float",
+                "name": "Int",
                 "ofType": null
               },
               "defaultValue": null
@@ -23462,6 +25245,16 @@
               "defaultValue": null
             },
             {
+              "name": "browserAPIs",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePagePluginCreatorBrowserApIsQueryList",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "ssrAPIs",
               "description": null,
               "type": {
@@ -23787,6 +25580,26 @@
               "defaultValue": null
             },
             {
+              "name": "backgroundColor",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePagePluginCreatorPluginOptionsBackgroundColorQueryString",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "quality",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePagePluginCreatorPluginOptionsQualityQueryInteger",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "maxWidth",
               "description": null,
               "type": {
@@ -23797,21 +25610,21 @@
               "defaultValue": null
             },
             {
-              "name": "wrapperStyle",
+              "name": "sizeByPixelDensity",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "sitePagePluginCreatorPluginOptionsWrapperStyleQueryString",
+                "name": "sitePagePluginCreatorPluginOptionsSizeByPixelDensityQueryBoolean",
                 "ofType": null
               },
               "defaultValue": null
             },
             {
-              "name": "backgroundColor",
+              "name": "wrapperStyle",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "sitePagePluginCreatorPluginOptionsBackgroundColorQueryString",
+                "name": "sitePagePluginCreatorPluginOptionsWrapperStyleQueryString",
                 "ofType": null
               },
               "defaultValue": null
@@ -23842,6 +25655,76 @@
               "type": {
                 "kind": "INPUT_OBJECT",
                 "name": "sitePagePluginCreatorPluginOptionsPathPrefixQueryString",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "anonymize",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePagePluginCreatorPluginOptionsAnonymizeQueryBoolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "head",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePagePluginCreatorPluginOptionsHeadQueryBoolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "respectDNT",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePagePluginCreatorPluginOptionsRespectDntQueryBoolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "trackingId",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePagePluginCreatorPluginOptionsTrackingIdQueryString",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "dsn",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePagePluginCreatorPluginOptionsDsnQueryString",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "color",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePagePluginCreatorPluginOptionsColorQueryString",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "showSpinner",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePagePluginCreatorPluginOptionsShowSpinnerQueryBoolean",
                 "ofType": null
               },
               "defaultValue": null
@@ -24158,6 +26041,26 @@
           "fields": null,
           "inputFields": [
             {
+              "name": "backgroundColor",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePagePluginCreatorPluginOptionsPluginsPluginOptionsBackgroundColorQueryString",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "quality",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePagePluginCreatorPluginOptionsPluginsPluginOptionsQualityQueryInteger",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "maxWidth",
               "description": null,
               "type": {
@@ -24168,21 +26071,21 @@
               "defaultValue": null
             },
             {
-              "name": "wrapperStyle",
+              "name": "sizeByPixelDensity",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "sitePagePluginCreatorPluginOptionsPluginsPluginOptionsWrapperStyleQueryString",
+                "name": "sitePagePluginCreatorPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean",
                 "ofType": null
               },
               "defaultValue": null
             },
             {
-              "name": "backgroundColor",
+              "name": "wrapperStyle",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "sitePagePluginCreatorPluginOptionsPluginsPluginOptionsBackgroundColorQueryString",
+                "name": "sitePagePluginCreatorPluginOptionsPluginsPluginOptionsWrapperStyleQueryString",
                 "ofType": null
               },
               "defaultValue": null
@@ -24224,38 +26127,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "sitePagePluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger",
-          "description": null,
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "eq",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "ne",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "INPUT_OBJECT",
-          "name": "sitePagePluginCreatorPluginOptionsPluginsPluginOptionsWrapperStyleQueryString",
+          "name": "sitePagePluginCreatorPluginOptionsPluginsPluginOptionsBackgroundColorQueryString",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -24306,7 +26178,100 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "sitePagePluginCreatorPluginOptionsPluginsPluginOptionsBackgroundColorQueryString",
+          "name": "sitePagePluginCreatorPluginOptionsPluginsPluginOptionsQualityQueryInteger",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePagePluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePagePluginCreatorPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePagePluginCreatorPluginOptionsPluginsPluginOptionsWrapperStyleQueryString",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -25085,38 +27050,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "sitePagePluginCreatorPluginOptionsMaxWidthQueryInteger",
-          "description": null,
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "eq",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "ne",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "INPUT_OBJECT",
-          "name": "sitePagePluginCreatorPluginOptionsWrapperStyleQueryString",
+          "name": "sitePagePluginCreatorPluginOptionsBackgroundColorQueryString",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -25167,7 +27101,100 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "sitePagePluginCreatorPluginOptionsBackgroundColorQueryString",
+          "name": "sitePagePluginCreatorPluginOptionsQualityQueryInteger",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePagePluginCreatorPluginOptionsMaxWidthQueryInteger",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePagePluginCreatorPluginOptionsSizeByPixelDensityQueryBoolean",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePagePluginCreatorPluginOptionsWrapperStyleQueryString",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -25331,7 +27358,349 @@
         },
         {
           "kind": "INPUT_OBJECT",
+          "name": "sitePagePluginCreatorPluginOptionsAnonymizeQueryBoolean",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePagePluginCreatorPluginOptionsHeadQueryBoolean",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePagePluginCreatorPluginOptionsRespectDntQueryBoolean",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePagePluginCreatorPluginOptionsTrackingIdQueryString",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePagePluginCreatorPluginOptionsDsnQueryString",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePagePluginCreatorPluginOptionsColorQueryString",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePagePluginCreatorPluginOptionsShowSpinnerQueryBoolean",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
           "name": "sitePagePluginCreatorNodeApIsQueryList",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "in",
+              "description": null,
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePagePluginCreatorBrowserApIsQueryList",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -26891,6 +29260,16 @@
               "defaultValue": null
             },
             {
+              "name": "description",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePageInternalDescriptionQueryString",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "owner",
               "description": null,
               "type": {
@@ -26959,6 +29338,57 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "sitePageInternalContentDigestQueryString_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePageInternalDescriptionQueryString",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -27329,6 +29759,26 @@
               "defaultValue": null
             },
             {
+              "name": "backgroundColor",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginPluginOptionsBackgroundColorQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "quality",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginPluginOptionsQualityQueryInteger_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "maxWidth",
               "description": null,
               "type": {
@@ -27339,21 +29789,21 @@
               "defaultValue": null
             },
             {
-              "name": "wrapperStyle",
+              "name": "sizeByPixelDensity",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "sitePluginPluginOptionsWrapperStyleQueryString_2",
+                "name": "sitePluginPluginOptionsSizeByPixelDensityQueryBoolean_2",
                 "ofType": null
               },
               "defaultValue": null
             },
             {
-              "name": "backgroundColor",
+              "name": "wrapperStyle",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "sitePluginPluginOptionsBackgroundColorQueryString_2",
+                "name": "sitePluginPluginOptionsWrapperStyleQueryString_2",
                 "ofType": null
               },
               "defaultValue": null
@@ -27384,6 +29834,76 @@
               "type": {
                 "kind": "INPUT_OBJECT",
                 "name": "sitePluginPluginOptionsPathPrefixQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "anonymize",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginPluginOptionsAnonymizeQueryBoolean_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "head",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginPluginOptionsHeadQueryBoolean_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "respectDNT",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginPluginOptionsRespectDntQueryBoolean_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "trackingId",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginPluginOptionsTrackingIdQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "dsn",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginPluginOptionsDsnQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "color",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginPluginOptionsColorQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "showSpinner",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginPluginOptionsShowSpinnerQueryBoolean_2",
                 "ofType": null
               },
               "defaultValue": null
@@ -27700,6 +30220,26 @@
           "fields": null,
           "inputFields": [
             {
+              "name": "backgroundColor",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginPluginOptionsPluginsPluginOptionsBackgroundColorQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "quality",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginPluginOptionsPluginsPluginOptionsQualityQueryInteger_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "maxWidth",
               "description": null,
               "type": {
@@ -27710,21 +30250,21 @@
               "defaultValue": null
             },
             {
-              "name": "wrapperStyle",
+              "name": "sizeByPixelDensity",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "sitePluginPluginOptionsPluginsPluginOptionsWrapperStyleQueryString_2",
+                "name": "sitePluginPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean_2",
                 "ofType": null
               },
               "defaultValue": null
             },
             {
-              "name": "backgroundColor",
+              "name": "wrapperStyle",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "sitePluginPluginOptionsPluginsPluginOptionsBackgroundColorQueryString_2",
+                "name": "sitePluginPluginOptionsPluginsPluginOptionsWrapperStyleQueryString_2",
                 "ofType": null
               },
               "defaultValue": null
@@ -27766,38 +30306,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "sitePluginPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger_2",
-          "description": null,
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "eq",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "ne",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "INPUT_OBJECT",
-          "name": "sitePluginPluginOptionsPluginsPluginOptionsWrapperStyleQueryString_2",
+          "name": "sitePluginPluginOptionsPluginsPluginOptionsBackgroundColorQueryString_2",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -27848,7 +30357,100 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "sitePluginPluginOptionsPluginsPluginOptionsBackgroundColorQueryString_2",
+          "name": "sitePluginPluginOptionsPluginsPluginOptionsQualityQueryInteger_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginPluginOptionsPluginsPluginOptionsWrapperStyleQueryString_2",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -28627,38 +31229,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "sitePluginPluginOptionsMaxWidthQueryInteger_2",
-          "description": null,
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "eq",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "ne",
-              "description": null,
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "INPUT_OBJECT",
-          "name": "sitePluginPluginOptionsWrapperStyleQueryString_2",
+          "name": "sitePluginPluginOptionsBackgroundColorQueryString_2",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -28709,7 +31280,100 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "sitePluginPluginOptionsBackgroundColorQueryString_2",
+          "name": "sitePluginPluginOptionsQualityQueryInteger_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginPluginOptionsMaxWidthQueryInteger_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginPluginOptionsSizeByPixelDensityQueryBoolean_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginPluginOptionsWrapperStyleQueryString_2",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -28873,7 +31537,349 @@
         },
         {
           "kind": "INPUT_OBJECT",
+          "name": "sitePluginPluginOptionsAnonymizeQueryBoolean_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginPluginOptionsHeadQueryBoolean_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginPluginOptionsRespectDntQueryBoolean_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginPluginOptionsTrackingIdQueryString_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginPluginOptionsDsnQueryString_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginPluginOptionsColorQueryString_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginPluginOptionsShowSpinnerQueryBoolean_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
           "name": "sitePluginNodeApIsQueryList_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "in",
+              "description": null,
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginBrowserApIsQueryList_2",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -31129,6 +34135,16 @@
               "defaultValue": null
             },
             {
+              "name": "description",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "directoryInternalDescriptionQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "owner",
               "description": null,
               "type": {
@@ -31197,6 +34213,57 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "directoryInternalTypeQueryString_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "directoryInternalDescriptionQueryString_2",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -32787,6 +35854,16 @@
               "defaultValue": null
             },
             {
+              "name": "description",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "fileInternalDescriptionQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "owner",
               "description": null,
               "type": {
@@ -32906,6 +35983,57 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "fileInternalTypeQueryString_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "fileInternalDescriptionQueryString_2",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -34826,7 +37954,7 @@
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "markdownRemarkFrontmatterWeightQueryFloat_2",
+                "name": "markdownRemarkFrontmatterWeightQueryInteger_2",
                 "ofType": null
               },
               "defaultValue": null
@@ -35083,7 +38211,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "markdownRemarkFrontmatterWeightQueryFloat_2",
+          "name": "markdownRemarkFrontmatterWeightQueryInteger_2",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -35092,7 +38220,7 @@
               "description": null,
               "type": {
                 "kind": "SCALAR",
-                "name": "Float",
+                "name": "Int",
                 "ofType": null
               },
               "defaultValue": null
@@ -35102,7 +38230,7 @@
               "description": null,
               "type": {
                 "kind": "SCALAR",
-                "name": "Float",
+                "name": "Int",
                 "ofType": null
               },
               "defaultValue": null

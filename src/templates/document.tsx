@@ -20,12 +20,16 @@ interface Props {
 
 export default function DocumentTemplate({ data, pathContext }: Props) {
   const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark!;
+  const { excerpt, frontmatter, html } = markdownRemark!;
 
   return (
     <>
       <Helmet>
         <title>{frontmatter!.title} – Dovetail</title>
+        <meta name="description" content={excerpt !== null ? excerpt : undefined} />
+        <meta property="og:description" content={excerpt !== null ? excerpt : undefined} />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={frontmatter!.title!} />
       </Helmet>
       <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
         <div style={{ maxWidth: TYPICAL_PAGE_WIDTH * 0.75 }}>
@@ -71,6 +75,7 @@ const HorizontalRule = styled("hr", {
 export const pageQuery = graphql`
   query DocumentByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
+      excerpt
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")

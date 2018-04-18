@@ -1,4 +1,4 @@
-import { BOX_SHADOW_BORDER_LIGHTER, BOX_SHADOW_STICKY, BREAKPOINT_PHONE, Z_INDEX_LOW } from "@heydovetail/website/constants";
+import { BOX_SHADOW_STICKY, BREAKPOINT_PHONE, Z_INDEX_LOW } from "@heydovetail/website/constants";
 import { styledViaProps } from "@heydovetail/website/util/styled";
 import * as React from "react";
 import { findDOMNode } from "react-dom";
@@ -59,7 +59,7 @@ const Container = styledViaProps(
   ({ offset, shadow, stickOnMobile, zIndex }: { offset: number; shadow: boolean; stickOnMobile: boolean; zIndex: number }) =>
     extend(
       {
-        boxShadow: shadow ? `${BOX_SHADOW_BORDER_LIGHTER}, ${BOX_SHADOW_STICKY}` : undefined,
+        boxShadow: shadow ? BOX_SHADOW_STICKY : undefined,
         position: ["-webkit-sticky", "sticky"],
         top: `${offset}px`,
         zIndex: zIndex

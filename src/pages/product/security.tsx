@@ -18,6 +18,15 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>Security and privacy – Dovetail</title>
+          <meta
+            name="description"
+            content="Our application is built on world-class, modern cloud infrastructure designed to ensure the safety of your data."
+          />
+          <meta
+            property="og:description"
+            content="Our application is built on world-class, modern cloud infrastructure designed to ensure the safety of your data."
+          />
+          <meta property="og:title" content="Security and privacy – Dovetail" />
         </Helmet>
         <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
           <Item>

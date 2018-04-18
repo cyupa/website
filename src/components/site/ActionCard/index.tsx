@@ -7,6 +7,7 @@ import { LocationDescriptor } from "@heydovetail/website/routing/locations";
 import * as React from "react";
 
 interface Props {
+  buttonColor?: string;
   buttonText: string;
   buttonLocation: LocationDescriptor;
   text: string;
@@ -15,19 +16,19 @@ interface Props {
 
 export class ActionCard extends React.PureComponent<Props> {
   public render() {
-    const { buttonText, buttonLocation, text, title } = this.props;
+    const { buttonColor = COLORS.purple, buttonText, buttonLocation, text, title } = this.props;
 
     return (
       <Card padding={32}>
         <Flex gap={16} layout="column">
           <Item>
-            <h3>{title}</h3>
+            <h4>{title}</h4>
           </Item>
           <Item>
             <p style={{ opacity: LIGHT_TEXT_OPACITY }}>{text}</p>
           </Item>
           <Item>
-            <ButtonLink color={COLORS.purple} location={buttonLocation}>
+            <ButtonLink color={buttonColor} location={buttonLocation}>
               {buttonText}
             </ButtonLink>
           </Item>

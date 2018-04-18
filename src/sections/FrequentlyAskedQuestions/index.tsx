@@ -1,6 +1,6 @@
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { GridWrap } from "@heydovetail/website/components/layout/GridWrap";
+import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { Faq } from "@heydovetail/website/components/site/Faq";
 import { TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
@@ -17,7 +17,7 @@ export class FrequentlyAskedQuestions extends React.PureComponent {
           </Center>
         </Item>
         <Item>
-          <GridWrap gap={64} growItems maxChildWidth={240} justifyContent="center">
+          <FlexWrap gap={64} growItems maxChildWidth={240} justifyContent="center">
             <Item>
               <Faq
                 question="What does “unlimited users” mean?"
@@ -88,7 +88,7 @@ export class FrequentlyAskedQuestions extends React.PureComponent {
                 answer="There isn’t one! We’re simply tired of expensive, unintuitive software with lock-in contracts, annoying salespeople, and opaque pricing."
               />
             </Item>
-          </GridWrap>
+          </FlexWrap>
         </Item>
       </Flex>
     );

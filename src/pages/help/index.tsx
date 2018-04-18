@@ -1,5 +1,6 @@
 import { ActionCard } from "@heydovetail/website/components/site/ActionCard";
 import { PageGroup } from "@heydovetail/website/components/site/PageGroup";
+import { COLORS } from "@heydovetail/website/constants";
 import { HelpIndexQuery } from "@heydovetail/website/graphql/types";
 import { locations } from "@heydovetail/website/routing/locations";
 import { DocumentIndex } from "@heydovetail/website/sections/DocumentIndex";
@@ -22,20 +23,33 @@ export default class extends React.PureComponent<Props> {
       id: "contact",
       node: (
         <ActionCard
-          title="Contact support"
-          text="Get in touch with us. We’ll respond quickly and help you get everything sorted."
+          title="Contact us"
+          text="We’re based in Sydney and usually respond within a couple of hours."
           buttonText="Email support"
           buttonLocation={locations.email()}
         />
       )
     });
 
-    cards.splice(5, 0, {
+    cards.splice(2, 0, {
+      id: "slack",
+      node: (
+        <ActionCard
+          title="Chat with us on Slack"
+          text="Join our open Slack community to chat with us and other Dovetail users."
+          buttonColor={COLORS.green}
+          buttonText="Join our Slack"
+          buttonLocation={locations.slack()}
+        />
+      )
+    });
+
+    cards.splice(9, 0, {
       id: "learn-more",
       node: (
         <ActionCard
           title="Learn more"
-          text="Check out our blog for the latest product updates, company news, and tips &amp; tricks."
+          text="Follow us on Medium for the latest product updates, company news, and tips &amp; tricks."
           buttonText="Visit blog"
           buttonLocation={locations.blog()}
         />
@@ -45,7 +59,7 @@ export default class extends React.PureComponent<Props> {
     return (
       <DocumentIndex
         items={cards}
-        text="Running into problems? Browse our help articles below or contact us."
+        text="Browse our help documentation, contact us, or join our Slack community for support."
         title="Help and support"
       />
     );

@@ -1,4 +1,4 @@
-import { GridWrap } from "@heydovetail/website/components/layout/GridWrap";
+import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import * as React from "react";
 import { Feature, FeatureProps } from "../Feature";
@@ -13,9 +13,9 @@ export class Features extends React.PureComponent<Props> {
   public render() {
     const { features, large = false } = this.props;
     return (
-      <GridWrap growItems maxChildWidth={256} justifyContent="center" gap={large ? 64 : 32}>
+      <FlexWrap growItems maxChildWidth={256} justifyContent="center" gap={large ? 64 : 32}>
         {features.map((f, i) => <Item key={i}>{large ? <FeatureLarge {...f} /> : <Feature {...f} />}</Item>)}
-      </GridWrap>
+      </FlexWrap>
     );
   }
 }

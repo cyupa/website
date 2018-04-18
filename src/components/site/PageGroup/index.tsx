@@ -23,7 +23,7 @@ export class PageGroup extends React.PureComponent<Props> {
       <Card padding={32}>
         <Flex gap={16} layout="column">
           <Item>
-            <h3>{title}</h3>
+            <h4>{title}</h4>
           </Item>
           <Item>
             <Flex gap={12} layout="column">

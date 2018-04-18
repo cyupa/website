@@ -6,7 +6,7 @@ import LogoFreshworks from "@heydovetail/website/components/icons/customers/Logo
 import LogoNike from "@heydovetail/website/components/icons/customers/LogoNike";
 import LogoUniqa from "@heydovetail/website/components/icons/customers/LogoUniqa";
 import LogoWestpac from "@heydovetail/website/components/icons/customers/LogoWestpac";
-import { GridWrap } from "@heydovetail/website/components/layout/GridWrap";
+import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { COLORS } from "@heydovetail/website/constants";
 import * as React from "react";
@@ -15,7 +15,7 @@ export class Customers extends React.PureComponent {
   public render() {
     return (
       <div style={{ color: COLORS.i60 }}>
-        <GridWrap gap={64} justifyContent="center">
+        <FlexWrap gap={64} justifyContent="center">
           <Item>
             <LogoAtlassian />
           </Item>
@@ -40,7 +40,7 @@ export class Customers extends React.PureComponent {
           <Item>
             <LogoWestpac />
           </Item>
-        </GridWrap>
+        </FlexWrap>
       </div>
     );
   }
