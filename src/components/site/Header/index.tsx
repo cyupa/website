@@ -11,6 +11,8 @@ import DovetailLogo from "./DovetailLogo";
 
 interface Props {
   dark?: boolean;
+  menuOpen: boolean;
+  onMenuToggle: () => void;
   sticky?: boolean;
 }
 
@@ -29,7 +31,7 @@ export class Header extends React.PureComponent<Props> {
             </ThemeColor>
           </Item>
           <Item>
-            <Navigation dark={dark} />
+            <Navigation {...this.props} />
           </Item>
         </Justify>
       </Wrapper>

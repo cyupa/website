@@ -24,6 +24,5 @@ const Body = styled("div", {
 const Site = styled("div", {
   backgroundColor: COLORS.white,
   height: "2000px",
-  padding: "32px",
   width: "100%"
 });

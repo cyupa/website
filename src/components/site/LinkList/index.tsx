@@ -9,6 +9,7 @@ import { style } from "typestyle";
 interface LinkListLink {
   label: string;
   location: LocationDescriptor;
+  onClick?: () => void;
 }
 
 interface Props {
@@ -26,10 +27,10 @@ export class LinkList extends React.PureComponent<Props> {
             <Heading>{heading}</Heading>
           </Item>
         ) : null}
-        {links.map((item, i) => (
+        {links.map((link, i) => (
           <Item key={i}>
-            <LocationLink className={linkClassName} location={item.location} presentation="text">
-              {item.label}
+            <LocationLink className={linkClassName} location={link.location} onClick={link.onClick} presentation="text">
+              {link.label}
             </LocationLink>
           </Item>
         ))}

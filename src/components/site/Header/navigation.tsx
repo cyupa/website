@@ -2,6 +2,7 @@ import { ButtonLink } from "@heydovetail/website/components/forms/ButtonLink";
 import { SubtleButton } from "@heydovetail/website/components/forms/SubtleButton";
 import { SubtleButtonLink } from "@heydovetail/website/components/forms/SubtleButtonLink";
 import IconChevronDown from "@heydovetail/website/components/icons/feather/IconChevronDown";
+import IconForward from "@heydovetail/website/components/icons/feather/IconForward";
 import IconMenu from "@heydovetail/website/components/icons/feather/IconMenu";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
@@ -15,16 +16,17 @@ import { locations } from "@heydovetail/website/routing/locations";
 import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
 import { media } from "typestyle";
-import { MobileNav } from "./MobileNav";
 import { UseCasesDropdown } from "./UseCasesDropdown";
 
 interface Props {
   dark?: boolean;
+  menuOpen: boolean;
+  onMenuToggle: () => void;
 }
 
 export class Navigation extends React.PureComponent<Props> {
   public render() {
-    const { dark = false } = this.props;
+    const { dark = false, menuOpen, onMenuToggle } = this.props;
 
     return (
       <>
@@ -82,18 +84,7 @@ export class Navigation extends React.PureComponent<Props> {
           </Flex>
         </DesktopNavigation>
         <MobileNavigation>
-          <FlipFlop>
-            {({ active, toggle }) => (
-              <>
-                <ThemeColor dark={dark}>
-                  <SubtleButton onClick={toggle}>
-                    <IconMenu />
-                  </SubtleButton>
-                </ThemeColor>
-                {active ? <MobileNav onDismiss={toggle} /> : null}
-              </>
-            )}
-          </FlipFlop>
+          <SubtleButton onClick={onMenuToggle}>{menuOpen ? <IconForward /> : <IconMenu />}</SubtleButton>
         </MobileNavigation>
       </>
     );

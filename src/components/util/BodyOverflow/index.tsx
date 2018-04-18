@@ -1,6 +1,10 @@
 import * as React from "react";
 
-export class BodyOverflow extends React.Component {
+interface Props {
+  children?: React.ReactNode;
+}
+
+export class BodyOverflow extends React.Component<Props> {
   public componentDidMount() {
     window.document.body.style.overflow = "hidden";
   }
@@ -10,6 +14,6 @@ export class BodyOverflow extends React.Component {
   }
 
   public render() {
-    return this.props.children;
+    return this.props.children !== undefined ? this.props.children : null;
   }
 }
