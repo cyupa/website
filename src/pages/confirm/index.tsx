@@ -1,7 +1,7 @@
 import { SubtleButtonLink } from "@heydovetail/website/components/forms/SubtleButtonLink";
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { GridWrap } from "@heydovetail/website/components/layout/GridWrap";
+import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
@@ -19,7 +19,7 @@ export default class extends React.PureComponent {
           <title>Confirm your email address – Dovetail</title>
         </Helmet>
         <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
-          <GridWrap gap={32} growItems>
+          <FlexWrap gap={32} growItems>
             <Item style={{ maxWidth: 416 }}>
               <Flex gap={40} layout="column">
                 <Item>
@@ -42,7 +42,7 @@ export default class extends React.PureComponent {
             <Item>
               <IllustrationEmail size="100%" />
             </Item>
-          </GridWrap>
+          </FlexWrap>
         </Container>
       </>
     );

@@ -9,7 +9,7 @@ interface Props {
   justifyContent?: "flex-start" | "flex-end" | "center" | "space-around" | "space-between";
 }
 
-export const GridWrap = styledViaProps(
+export const FlexWrap = styledViaProps(
   "div",
   ({ alignItems, maxChildWidth, gap, growItems, justifyContent }) =>
     JSON.stringify({

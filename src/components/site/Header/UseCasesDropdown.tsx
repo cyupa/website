@@ -4,7 +4,7 @@ import PictogramQda from "@heydovetail/website/components/icons/pictograms/Picto
 import PictogramRepository from "@heydovetail/website/components/icons/pictograms/PictogramRepository";
 import PictogramResearch from "@heydovetail/website/components/icons/pictograms/PictogramResearch";
 import { Container } from "@heydovetail/website/components/layout/Container";
-import { GridWrap } from "@heydovetail/website/components/layout/GridWrap";
+import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { locations } from "@heydovetail/website/routing/locations";
 import * as React from "react";
@@ -15,7 +15,7 @@ export class UseCasesDropdown extends React.PureComponent {
     return (
       <Dropdown maxWidth={360}>
         <Container horizontalPadding={16} verticalPadding={8}>
-          <GridWrap maxChildWidth={128} gap={0} growItems>
+          <FlexWrap maxChildWidth={128} gap={0} growItems>
             <Item>
               <UseCase image={<PictogramFeedback />} location={locations.customerFeedback()} title="Feedback management" />
             </Item>
@@ -36,7 +36,7 @@ export class UseCasesDropdown extends React.PureComponent {
             <Item>
               <UseCase image={<PictogramResearch />} location={locations.userResearch()} title="Collaborative user research" />
             </Item>
-          </GridWrap>
+          </FlexWrap>
         </Container>
       </Dropdown>
     );
