@@ -21,7 +21,7 @@ export default class extends React.PureComponent<Props> {
         {api => (
           <div onClick={api.open ? api.onMobileClick : undefined}>
             <Header menuOpen={api.open} onMenuToggle={api.onMobileClick} />
-            <Site onClick={api.onMobileClick}>
+            <Site>
               {this.props.children()}
               <Footer />
             </Site>
