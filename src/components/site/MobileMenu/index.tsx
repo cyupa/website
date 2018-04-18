@@ -20,9 +20,18 @@ export class MobileMenu extends React.PureComponent<Props> {
       <Wrapper>
         <Flex gap={40} layout="column">
           <Item>
-            <ButtonLink color={COLORS.purple} height={32} location={locations.signUp()} onClick={onClose}>
-              Try now
-            </ButtonLink>
+            <Flow>
+              <Item>
+                <ButtonLink color={COLORS.purple} height={32} location={locations.signUp()} onClick={onClose}>
+                  Try now
+                </ButtonLink>
+              </Item>
+              <Item>
+                <ButtonLink height={32} location={locations.logIn()} onClick={onClose}>
+                  Log in
+                </ButtonLink>
+              </Item>
+            </Flow>
           </Item>
           <Item>
             <LinkList
@@ -44,8 +53,8 @@ export class MobileMenu extends React.PureComponent<Props> {
                 <LinkList
                   links={[
                     { label: "Pricing", location: locations.pricing(), onClick: onClose },
-                    { label: "Support", location: locations.help(), onClick: onClose },
-                    { label: "Log in", location: locations.logIn(), onClick: onClose }
+                    { label: "Security", location: locations.security(), onClick: onClose },
+                    { label: "Support", location: locations.help(), onClick: onClose }
                   ]}
                 />
               </Item>
@@ -53,7 +62,6 @@ export class MobileMenu extends React.PureComponent<Props> {
                 <LinkList
                   links={[
                     { label: "About", location: locations.about(), onClick: onClose },
-                    { label: "Security", location: locations.security(), onClick: onClose },
                     { label: "Blog", location: locations.blog(), onClick: onClose }
                   ]}
                 />
@@ -67,15 +75,15 @@ export class MobileMenu extends React.PureComponent<Props> {
 }
 
 const Wrapper = styled("div", {
-  backgroundColor: COLORS.i04,
+  backgroundColor: COLORS.p04,
+  borderLeft: "1px solid rgba(20, 11, 47, .05)",
   height: "100vh",
   overflowY: "auto",
-  padding: "16px 24px",
-  position: "sticky"
+  padding: "20px 24px"
 });
 
 const HorizontalRule = styled("hr", {
-  backgroundColor: COLORS.i08,
+  backgroundColor: COLORS.p08,
   border: 0,
   margin: "0",
   height: "2px"

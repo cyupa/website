@@ -110,7 +110,7 @@ export const BOX_SHADOW_BORDER_DARKER = "0 0 0 1px rgba(20, 11, 47, .15)";
 export const BOX_SHADOW_SITTING = "0 2px 4px -2px rgba(0, 0, 0, .2)";
 
 // Depth level 2 (sticky scrolling headers)
-export const BOX_SHADOW_STICKY = "0 2px 16px -2px rgba(0, 0, 0, .1)";
+export const BOX_SHADOW_STICKY = "0 1px 0 0 rgba(20, 11, 47, .05), 0 2px 16px -2px rgba(0, 0, 0, .1)";
 
 // Depth level 3 (dropdowns, dialogs, draggables when lifted)
 export const BOX_SHADOW_LIFTED = "0 12px 24px -8px rgba(0, 0, 0, .3)";

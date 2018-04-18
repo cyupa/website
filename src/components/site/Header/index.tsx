@@ -51,7 +51,7 @@ const Wrapper = styledViaProps(
   ({ dark }) => ({
     backgroundColor: dark ? COLORS.indigo : COLORS.white,
     color: COLORS.i60,
-    padding: "12px 24px"
+    padding: "16px 24px"
   })
 );
 

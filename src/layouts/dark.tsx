@@ -1,6 +1,6 @@
 import { Footer } from "@heydovetail/website/components/site/Footer";
 import { Header } from "@heydovetail/website/components/site/Header";
-import { MobileNavigation } from "@heydovetail/website/components/site/MobileNavigation";
+import { SiteWrapper } from "@heydovetail/website/components/site/SiteWrapper";
 import { COLORS } from "@heydovetail/website/constants";
 import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
@@ -17,24 +17,23 @@ export default class extends React.PureComponent<Props> {
 
   public render() {
     return (
-      <MobileNavigation>
-        {api => (
-          <div onClick={api.open ? api.onMobileClick : undefined}>
-            <Header dark menuOpen={api.open} onMenuToggle={api.onMobileClick} sticky={false} />
-            <Site>
+      <SiteWrapper>
+        {site => (
+          <>
+            <Header dark menuOpen={site.open} onMenuToggle={site.toggleMenu} />
+            <Dark>
               {this.props.children()}
               <Footer dark />
-            </Site>
-          </div>
+            </Dark>
+          </>
         )}
-      </MobileNavigation>
+      </SiteWrapper>
     );
   }
 }
 
-const Site = styled("div", {
+const Dark = styled("div", {
   backgroundColor: COLORS.indigo,
   color: COLORS.white,
-  position: "relative",
   overflow: "hidden"
 });
