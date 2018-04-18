@@ -31,6 +31,9 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>Feedback management – Dovetail</title>
+          <meta name="description" content="Keep all of your customer feedback in one place." />
+          <meta property="og:description" content="Keep all of your customer feedback in one place." />
+          <meta property="og:title" content="Feedback management – Dovetail" />
         </Helmet>
         <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
           <Item>

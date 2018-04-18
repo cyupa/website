@@ -15,6 +15,15 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>All features – Dovetail</title>
+          <meta
+            name="description"
+            content="Features designed to organize and analyze customer feedback and user research data."
+          />
+          <meta
+            property="og:description"
+            content="Features designed to organize and analyze customer feedback and user research data."
+          />
+          <meta property="og:title" content="All features – Dovetail" />
         </Helmet>
         <LightContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={64}>
           <Flex gap={TYPICAL_VERTICAL_GAP / 2} layout="column">

@@ -73,6 +73,7 @@ export interface DocumentByPathQueryVariables {
 
 export interface DocumentByPathQuery {
   markdownRemark: {
+    excerpt: string | null;
     html: string | null;
     frontmatter: {
       date: string | null;

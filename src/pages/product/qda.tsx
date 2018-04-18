@@ -31,6 +31,9 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>Qualitative data analysis – Dovetail</title>
+          <meta name="description" content="Easily analyze qualitative data in the cloud." />
+          <meta property="og:description" content="Easily analyze qualitative data in the cloud." />
+          <meta property="og:title" content="Qualitative data analysis – Dovetail" />
         </Helmet>
         <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
           <Item>
