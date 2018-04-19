@@ -122,6 +122,7 @@ export const locations = {
   logIn: () => external("/users/sign_in"),
   press: () => internal("/company/press"),
   pricing: () => internal("/product/pricing"),
+  projects: () => external("/projects"),
   privacy: () => internal("/legal/privacy"),
   qualitativeDataAnalysis: () => internal("/product/qda"),
   researchRepository: () => internal("/product/research-repository"),
