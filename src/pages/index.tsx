@@ -2,11 +2,13 @@ import IllustrationBarChart from "@heydovetail/website/components/illustrations/
 import IllustrationBoard from "@heydovetail/website/components/illustrations/IllustrationBoard";
 import IllustrationLineChart from "@heydovetail/website/components/illustrations/IllustrationLineChart";
 import IllustrationTeam from "@heydovetail/website/components/illustrations/IllustrationTeam";
+import { Container } from "@heydovetail/website/components/layout/Container";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
+import { SignupWithEmail } from "@heydovetail/website/components/site/SignupWithEmail";
 import { testimonials, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
@@ -35,6 +37,11 @@ export default class extends React.PureComponent {
               <Flex gap={TYPICAL_VERTICAL_GAP / 2} layout="column">
                 <Item>
                   <HeroText title="Customer feedback &amp; research platform for teams." />
+                </Item>
+                <Item>
+                  <Container horizontalPadding={0} verticalPadding={0} maxWidth={TYPICAL_PAGE_WIDTH / 2}>
+                    <SignupWithEmail />
+                  </Container>
                 </Item>
                 <Item>
                   <UseCases />
