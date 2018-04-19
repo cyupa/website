@@ -67,7 +67,7 @@ export default class extends React.PureComponent {
                 imagePosition="left"
                 location={locations.researchRepository()}
                 linkText="Learn more"
-                text="Save notes, transcripts, and files in one place. Organize everything with projects & boards, and use simple analysis tools to find insights."
+                text="Save notes and transcripts in one place. Organize everything with projects &amp; boards, and uncover insights through analysis."
                 title="Keep all of your research in one place."
               />
             </Item>
@@ -77,7 +77,7 @@ export default class extends React.PureComponent {
                 imagePosition="right"
                 location={locations.qualitativeDataAnalysis()}
                 linkText="Learn more"
-                text="Use intuitive analysis tools to identify recurring themes and insights across qualitative data like text, audio, and video."
+                text="Use intuitive analysis tools to identify recurring themes and insights across qualitative textual data, with audio and video coming soon."
                 title="Analyze qualitative data and uncover insights."
               />
             </Item>
@@ -87,7 +87,7 @@ export default class extends React.PureComponent {
                 imagePosition="left"
                 location={locations.userResearch()}
                 linkText="Learn more"
-                text="Invite as many people as you like to join projects, browse feedback, collaborate on analysis, and consume insights."
+                text="Invite as many people as you like to browse feedback &amp; research, collaborate on analysis, and consume insights."
                 title="Get everyone onboard."
               />
             </Item>
