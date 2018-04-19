@@ -21,7 +21,7 @@ export class LinkList extends React.PureComponent<Props> {
   public render() {
     const { heading, links } = this.props;
     return (
-      <Flex gap={16} layout="column">
+      <Flex gap={12} layout="column">
         {heading !== undefined ? (
           <Item>
             <Heading>{heading}</Heading>

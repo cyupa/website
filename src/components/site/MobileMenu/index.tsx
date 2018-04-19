@@ -1,3 +1,4 @@
+import { Dropdown } from "@heydovetail/website/components/dropdown/Dropdown";
 import { ButtonLink } from "@heydovetail/website/components/forms/ButtonLink";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
@@ -17,69 +18,66 @@ export class MobileMenu extends React.PureComponent<Props> {
     const { onClose } = this.props;
 
     return (
-      <Wrapper>
-        <Flex gap={40} layout="column">
-          <Item>
-            <Flow>
-              <Item>
-                <ButtonLink color={COLORS.purple} height={32} location={locations.signUp()} onClick={onClose}>
-                  Try now
-                </ButtonLink>
-              </Item>
-              <Item>
-                <ButtonLink height={32} location={locations.logIn()} onClick={onClose}>
-                  Log in
-                </ButtonLink>
-              </Item>
-            </Flow>
-          </Item>
-          <Item>
-            <LinkList
-              heading="Use cases"
-              links={[
-                { label: "Feedback management", location: locations.customerFeedback(), onClick: onClose },
-                { label: "Research repository", location: locations.researchRepository(), onClick: onClose },
-                { label: "Qualitative data analysis", location: locations.qualitativeDataAnalysis(), onClick: onClose },
-                { label: "Collaborative user research", location: locations.userResearch(), onClick: onClose }
-              ]}
-            />
-          </Item>
-          <Item>
-            <HorizontalRule />
-          </Item>
-          <Item>
-            <Flow gap={48}>
-              <Item style={{ verticalAlign: "top" }}>
-                <LinkList
-                  links={[
-                    { label: "Pricing", location: locations.pricing(), onClick: onClose },
-                    { label: "Security", location: locations.security(), onClick: onClose },
-                    { label: "Support", location: locations.help(), onClick: onClose }
-                  ]}
-                />
-              </Item>
-              <Item style={{ verticalAlign: "top" }}>
-                <LinkList
-                  links={[
-                    { label: "About", location: locations.about(), onClick: onClose },
-                    { label: "Blog", location: locations.blog(), onClick: onClose }
-                  ]}
-                />
-              </Item>
-            </Flow>
-          </Item>
-        </Flex>
-      </Wrapper>
+      <Dropdown>
+        <Wrapper>
+          <Flex gap={32} layout="column">
+            <Item>
+              <Flow>
+                <Item>
+                  <ButtonLink color={COLORS.purple} height={32} location={locations.signUp()} onClick={onClose}>
+                    Try now
+                  </ButtonLink>
+                </Item>
+                <Item>
+                  <ButtonLink height={32} location={locations.logIn()} onClick={onClose}>
+                    Log in
+                  </ButtonLink>
+                </Item>
+              </Flow>
+            </Item>
+            <Item>
+              <LinkList
+                heading="Use cases"
+                links={[
+                  { label: "Feedback management", location: locations.customerFeedback(), onClick: onClose },
+                  { label: "Research repository", location: locations.researchRepository(), onClick: onClose },
+                  { label: "Qualitative data analysis", location: locations.qualitativeDataAnalysis(), onClick: onClose },
+                  { label: "Collaborative user research", location: locations.userResearch(), onClick: onClose }
+                ]}
+              />
+            </Item>
+            <Item>
+              <HorizontalRule />
+            </Item>
+            <Item>
+              <Flow gap={48}>
+                <Item style={{ verticalAlign: "top" }}>
+                  <LinkList
+                    links={[
+                      { label: "Pricing", location: locations.pricing(), onClick: onClose },
+                      { label: "Support", location: locations.help(), onClick: onClose }
+                    ]}
+                  />
+                </Item>
+                <Item style={{ verticalAlign: "top" }}>
+                  <LinkList
+                    links={[
+                      { label: "About", location: locations.about(), onClick: onClose },
+                      { label: "Blog", location: locations.blog(), onClick: onClose }
+                    ]}
+                  />
+                </Item>
+              </Flow>
+            </Item>
+          </Flex>
+        </Wrapper>
+      </Dropdown>
     );
   }
 }
 
 const Wrapper = styled("div", {
-  backgroundColor: COLORS.p04,
-  borderLeft: "1px solid rgba(20, 11, 47, .05)",
-  height: "100vh",
-  overflowY: "auto",
-  padding: "20px 24px"
+  padding: "24px"
 });
 
 const HorizontalRule = styled("hr", {

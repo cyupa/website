@@ -1,15 +1,15 @@
+import { Button } from "@heydovetail/website/components/forms/Button";
 import { ButtonLink } from "@heydovetail/website/components/forms/ButtonLink";
 import { SubtleButton } from "@heydovetail/website/components/forms/SubtleButton";
 import { SubtleButtonLink } from "@heydovetail/website/components/forms/SubtleButtonLink";
 import IconChevronDown from "@heydovetail/website/components/icons/feather/IconChevronDown";
-import IconForward from "@heydovetail/website/components/icons/feather/IconForward";
-import IconMenu from "@heydovetail/website/components/icons/feather/IconMenu";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { Layer } from "@heydovetail/website/components/layout/Layer";
 import { Portal } from "@heydovetail/website/components/layout/Portal";
 import { ThemeColor } from "@heydovetail/website/components/site/Header";
+import { MobileMenu } from "@heydovetail/website/components/site/MobileMenu";
 import { FlipFlop } from "@heydovetail/website/components/util/FlipFlop";
 import { BREAKPOINT_TABLET, COLORS } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
@@ -20,13 +20,11 @@ import { UseCasesDropdown } from "./UseCasesDropdown";
 
 interface Props {
   dark?: boolean;
-  menuOpen: boolean;
-  onMenuToggle: () => void;
 }
 
 export class Navigation extends React.PureComponent<Props> {
   public render() {
-    const { dark = false, menuOpen, onMenuToggle } = this.props;
+    const { dark = false } = this.props;
 
     return (
       <>
@@ -84,7 +82,22 @@ export class Navigation extends React.PureComponent<Props> {
           </Flex>
         </DesktopNavigation>
         <MobileNavigation>
-          <SubtleButton onClick={onMenuToggle}>{menuOpen ? <IconForward /> : <IconMenu />}</SubtleButton>
+          <FlipFlop>
+            {({ active, toggle }) => (
+              <>
+                <Button id="MenuDropdown" height={32} onClick={toggle}>
+                  Menu
+                </Button>
+                {active ? (
+                  <Portal>
+                    <Layer align="right" onOutsideClick={toggle} parentId="MenuDropdown">
+                      <MobileMenu onClose={toggle} />
+                    </Layer>
+                  </Portal>
+                ) : null}
+              </>
+            )}
+          </FlipFlop>
         </MobileNavigation>
       </>
     );
