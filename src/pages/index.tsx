@@ -101,6 +101,7 @@ export default class extends React.PureComponent {
                   testimonials.erik,
                   testimonials.michael,
                   testimonials.pascal,
+                  testimonials.sarah,
                   testimonials.sonja,
                   testimonials.tina
                 ]}
