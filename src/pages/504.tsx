@@ -20,12 +20,12 @@ export default class extends React.PureComponent {
           <div style={{ maxWidth: TYPICAL_PAGE_WIDTH / 2 }}>
             <Flex gap={40} layout="column">
               <Item>
-                <HeroText center={false} maxWidth={416} title="Dovetail will be back soon." />
+                <HeroText center={false} maxWidth={416} title="We’ll be back soon. Don’t panic." />
               </Item>
               <Item>
                 <p style={{ opacity: LIGHT_TEXT_OPACITY }}>
-                  Well, this is embarrassing. We can’t seem to find our product. No doubt we’re working on a fix, so please try
-                  again in a few minutes.
+                  Dovetail might be undergoing maintenance or an upgrade. No doubt we’re working on restoring service as soon as
+                  possible, so please try again in a few minutes.
                 </p>
               </Item>
               <Item>
