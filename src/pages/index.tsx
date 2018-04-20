@@ -9,7 +9,7 @@ import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { SignupWithEmail } from "@heydovetail/website/components/site/SignupWithEmail";
-import { HALF_GAP, TESTIMONIALS, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, TESTIMONIALS, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
@@ -31,7 +31,7 @@ export default class extends React.PureComponent {
             content="Dovetail is a SaaS customer feedback and user research platform for teams."
           />
         </Helmet>
-        <LightContainer maxWidth={WIDTH}>
+        <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
           <Flex gap={VERTICAL_GAP} layout="column">
             <Item>
               <Flex gap={HALF_GAP} layout="column">
