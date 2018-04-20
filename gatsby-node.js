@@ -3,7 +3,7 @@ import * as path from "path";
 export async function onCreatePage({ page, boundActionCreators }) {
   const { createPage } = boundActionCreators;
 
-  if (page.path.match(/\/404/) || page.path.match(/product\/security/)) {
+  if (page.path.match(/product\/security/)) {
     page.layout = "dark";
 
     createPage(page);

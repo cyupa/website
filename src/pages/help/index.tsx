@@ -60,7 +60,7 @@ export default class extends React.PureComponent<Props> {
       <DocumentIndex
         items={cards}
         text="Browse our help documentation, contact us, or join our Slack community for support."
-        title="Help and support"
+        title="Help center"
       />
     );
   }

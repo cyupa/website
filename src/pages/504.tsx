@@ -14,25 +14,25 @@ export default class extends React.PureComponent {
     return (
       <>
         <Helmet>
-          <title>404 – Dovetail</title>
+          <title>504 – Dovetail</title>
         </Helmet>
         <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
           <div style={{ maxWidth: TYPICAL_PAGE_WIDTH / 2 }}>
             <Flex gap={40} layout="column">
               <Item>
-                <HeroText center={false} maxWidth={416} title="Sorry, this page doesn’t exist." />
+                <HeroText center={false} maxWidth={416} title="We’ll be back soon. Don’t panic." />
               </Item>
               <Item>
                 <p style={{ opacity: LIGHT_TEXT_OPACITY }}>
-                  It may have been moved or deleted. Check the URL is correct in the address bar, and get in touch with us if
-                  you continue to have issues.
+                  Dovetail might be undergoing maintenance or an upgrade. No doubt we’re working on restoring service as soon as
+                  possible, so please try again in a few minutes.
                 </p>
               </Item>
               <Item>
                 <Flow>
                   <Item>
-                    <ButtonLink color={COLORS.purple} location={locations.home()}>
-                      Back to homepage
+                    <ButtonLink color={COLORS.purple} location={locations.projects()}>
+                      Try again
                     </ButtonLink>
                   </Item>
                   <Item>

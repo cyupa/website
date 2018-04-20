@@ -5,6 +5,7 @@ import * as ben from "@heydovetail/website/avatars/ben.jpg";
 import * as erik from "@heydovetail/website/avatars/erik.jpg";
 import * as michael from "@heydovetail/website/avatars/michael.jpg";
 import * as pascal from "@heydovetail/website/avatars/pascal.jpg";
+import * as sarah from "@heydovetail/website/avatars/sarah.jpg";
 import * as sonja from "@heydovetail/website/avatars/sonja.jpg";
 import * as tina from "@heydovetail/website/avatars/tina.jpg";
 
@@ -192,6 +193,14 @@ export const testimonials = {
     quote:
       "I just spent the entire day in Dovetail, love it. Looking forward to seeing the evolution of Dovetail and I hope it’s growing.",
     role: "Design Researcher"
+  },
+  sarah: {
+    company: "HotelsCombined",
+    image: sarah,
+    name: "Sarah",
+    quote:
+      "We’ve been using Dovetail to collate and store all of our user research data. We love how easy it is to synthesise and gain insights, share the data with stakeholders, and access notes and insights whenever we need to. It saves us so much time.",
+    role: "UX Researcher"
   },
   sonja: {
     company: "Uniqa",

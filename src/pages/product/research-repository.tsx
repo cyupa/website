@@ -174,7 +174,7 @@ export default class extends React.PureComponent {
               <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
                 <Item>
                   <SocialProof
-                    testimonials={[testimonials.basheera, testimonials.benjamin, testimonials.michael, testimonials.tina]}
+                    testimonials={[testimonials.basheera, testimonials.benjamin, testimonials.michael, testimonials.sarah]}
                   />
                 </Item>
                 <Item>
