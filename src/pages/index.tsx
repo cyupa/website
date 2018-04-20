@@ -16,21 +16,11 @@ import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
 import { SocialProof } from "@heydovetail/website/sections/SocialProof";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
 import * as React from "react";
-import { Helmet } from "react-helmet";
 
 export default class extends React.PureComponent {
   public render() {
     return (
       <>
-        <Helmet>
-          <title>Customer feedback &amp; research platform for teams — Dovetail</title>
-          <meta property="og:title" content="Customer feedback &amp; research platform for teams — Dovetail" />
-          <meta name="description" content="Dovetail is a SaaS customer feedback and user research platform for teams." />
-          <meta
-            property="og:description"
-            content="Dovetail is a SaaS customer feedback and user research platform for teams."
-          />
-        </Helmet>
         <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
           <Flex gap={VERTICAL_GAP} layout="column">
             <Item>

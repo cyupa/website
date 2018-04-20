@@ -13,7 +13,7 @@ export class DefaultMetaTags extends React.PureComponent {
         <title>Customer feedback &amp; research platform for teams — Dovetail</title>
         <meta
           name="description"
-          content="The best products and services come from listening to your customers. Dovetail enables companies to easily organize, analyze, and share their customer feedback and user research data, and uncover actionable insights to improve their products and services. Our customers range from enterprises like Atlassian, Deloitte and Westpac, to smaller agencies, startups and government organizations like Engima, HotelsCombined and CSIRO."
+          content="Organize, analyze, and share your customer feedback and user research data, and uncover actionable insights to improve your products and services. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
         />
         <meta
           name="keywords"
@@ -25,7 +25,7 @@ export class DefaultMetaTags extends React.PureComponent {
         <meta property="og:image" content={thumbnail} />
         <meta
           property="og:description"
-          content="The best products and services come from listening to your customers. Dovetail enables companies to easily organize, analyze, and share their customer feedback and user research data, and uncover actionable insights to improve their products and services. Our customers range from enterprises like Atlassian, Deloitte and Westpac, to smaller agencies, startups and government organizations like Engima, HotelsCombined and CSIRO."
+          content="Organize, analyze, and share your customer feedback and user research data, and uncover actionable insights to improve your products and services. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
         />
       </Helmet>
     );
