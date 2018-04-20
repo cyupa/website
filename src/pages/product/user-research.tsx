@@ -92,7 +92,7 @@ export default class extends React.PureComponent {
                     image={<IllustrationTeam size="100%" />}
                     imagePosition="right"
                     text="Invite as many people as you like to join your team, contribute to notes, collaborate on analysis, and consume your insights."
-                    title="Get everyone onboard."
+                    title="Invite your whole team."
                   />
                 </Item>
                 <Item>

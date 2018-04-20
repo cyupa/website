@@ -88,7 +88,7 @@ export default class extends React.PureComponent {
                 location={locations.userResearch()}
                 linkText="Learn more"
                 text="Invite as many people as you like to browse feedback &amp; research, collaborate on analysis, and consume insights."
-                title="Get everyone onboard."
+                title="Invite your whole team."
               />
             </Item>
             <Item>
