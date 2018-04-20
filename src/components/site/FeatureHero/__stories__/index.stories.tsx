@@ -9,7 +9,7 @@ storiesOf("Site/FeatureHero", module)
   .add("default", () => (
     <FeatureHero
       image={<IllustrationLineChart />}
-      location={locations.customerFeedback()}
+      location={locations.feedbackManagement()}
       text="Import feedback from hundreds of apps, automatically analyze sentiment, tag feature requests, and measure changes over time."
       title="Understand your customer feedback."
     />

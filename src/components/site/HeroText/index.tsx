@@ -45,7 +45,7 @@ const Wrapper = styledViaProps(
   ({ center, maxWidth }) =>
     extend(
       {
-        marginTop: "32px",
+        margin: center ? "32px auto 0" : "32px 0 0",
         maxWidth: maxWidth,
         textAlign: center ? "center" : "left"
       },

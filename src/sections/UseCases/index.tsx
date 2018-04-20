@@ -7,7 +7,7 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { UseCaseCard } from "@heydovetail/website/components/site/UseCaseCard";
-import { TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { HALF_GAP } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import * as React from "react";
 
@@ -25,7 +25,7 @@ export class UseCases extends React.PureComponent<Props> {
         <Item style={{ minWidth: 0 }}>
           <UseCaseCard
             image={<PictogramFeedback />}
-            location={locations.customerFeedback()}
+            location={locations.feedbackManagement()}
             onClick={onClick}
             text="Feedback management"
           />
@@ -59,7 +59,7 @@ export class UseCases extends React.PureComponent<Props> {
 
     if (showTitle) {
       return (
-        <Flex gap={TYPICAL_VERTICAL_GAP / 2} layout="column">
+        <Flex gap={HALF_GAP} layout="column">
           <Item>
             <Center>
               <h2>Explore use cases</h2>

@@ -34,7 +34,7 @@ export class UseCaseCard extends React.PureComponent<Props> {
               >
                 {text}
               </Item>
-              <Item style={{ color: COLORS.purple, fontWeight: 500 }}>
+              <Item style={{ color: COLORS.purple, fontSize: "14px" }}>
                 <ActionTextWithArrow />
               </Item>
             </Flex>
@@ -49,6 +49,7 @@ const linkClassName = style({
   backgroundColor: COLORS.p04,
   borderRadius: BORDER_RADIUS,
   display: "block",
+  fontWeight: 500,
   minWidth: 0,
   padding: "24px",
 

@@ -3,14 +3,14 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { Faq } from "@heydovetail/website/components/site/Faq";
-import { TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { HALF_GAP } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import * as React from "react";
 
 export class FrequentlyAskedQuestions extends React.PureComponent {
   public render() {
     return (
-      <Flex gap={TYPICAL_VERTICAL_GAP / 2} layout="column">
+      <Flex gap={HALF_GAP} layout="column">
         <Item>
           <Center>
             <h2>Frequently asked questions</h2>

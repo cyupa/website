@@ -5,9 +5,8 @@ import * as React from "react";
 
 interface Props {
   backgroundColor?: string;
-  horizontalPadding?: number;
   maxWidth?: number;
-  verticalPadding?: number;
+  padding?: { x: number; y: number };
 }
 
 export class LightContainer extends React.PureComponent<Props> {

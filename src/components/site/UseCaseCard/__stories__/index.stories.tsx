@@ -5,5 +5,5 @@ import * as React from "react";
 import { UseCaseCard } from "../";
 
 storiesOf("Site/UseCaseCard", module).add("default", () => (
-  <UseCaseCard image={<PictogramFeedback />} location={locations.customerFeedback()} text="Feedback management " />
+  <UseCaseCard image={<PictogramFeedback />} location={locations.feedbackManagement()} text="Feedback management " />
 ));

@@ -2,40 +2,37 @@ import { Center } from "@heydovetail/website/components/layout/Center";
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
-import { Masonry } from "@heydovetail/website/components/layout/Masonry";
-import { Testimonial, TestimonialProps } from "@heydovetail/website/components/site/Testimonial";
-import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { TestimonialProps } from "@heydovetail/website/components/site/Testimonial";
+import { Testimonials } from "@heydovetail/website/components/site/Testimonials";
+import { HALF_GAP, WIDTH } from "@heydovetail/website/constants";
+import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
 import * as React from "react";
-import { Customers } from "../Customers";
 
 interface Props {
   testimonials?: TestimonialProps[];
+  title?: string;
 }
 
 export class SocialProof extends React.PureComponent<Props> {
   public render() {
-    const { testimonials } = this.props;
+    const { testimonials, title = "Loved by product managers, designers, and researchers worldwide." } = this.props;
 
     return (
-      <Flex gap={TYPICAL_VERTICAL_GAP / 2} layout="column">
+      <Flex gap={HALF_GAP} layout="column">
         <Item>
-          <Container maxWidth={TYPICAL_PAGE_WIDTH * 0.75}>
+          <Container maxWidth={WIDTH * 0.75} padding={{ x: 0, y: 0 }}>
             <Center>
-              <h2>Loved by product managers, designers, and researchers worldwide.</h2>
+              <h2>{title}</h2>
             </Center>
           </Container>
         </Item>
         {testimonials !== undefined ? (
           <Item>
-            <Masonry
-              gap={32}
-              items={testimonials.map((t, i) => ({ id: `${i}`, node: <Testimonial {...t} /> }))}
-              minColumnWidth={260}
-            />
+            <Testimonials testimonials={testimonials} />
           </Item>
         ) : null}
         <Item>
-          <Customers />
+          <CustomerLogos />
         </Item>
       </Flex>
     );

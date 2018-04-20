@@ -9,10 +9,10 @@ import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { SignupWithEmail } from "@heydovetail/website/components/site/SignupWithEmail";
-import { testimonials, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, TESTIMONIALS, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
-import { Customers } from "@heydovetail/website/sections/Customers";
+import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
 import { SocialProof } from "@heydovetail/website/sections/SocialProof";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
 import * as React from "react";
@@ -31,15 +31,15 @@ export default class extends React.PureComponent {
             content="Dovetail is a SaaS customer feedback and user research platform for teams."
           />
         </Helmet>
-        <LightContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={64}>
-          <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+        <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+          <Flex gap={VERTICAL_GAP} layout="column">
             <Item>
-              <Flex gap={TYPICAL_VERTICAL_GAP / 2} layout="column">
+              <Flex gap={HALF_GAP} layout="column">
                 <Item>
                   <HeroText title="Customer feedback &amp; research platform for teams." />
                 </Item>
                 <Item>
-                  <Container horizontalPadding={0} verticalPadding={0} maxWidth={TYPICAL_PAGE_WIDTH / 2}>
+                  <Container maxWidth={WIDTH / 2} padding={{ x: 0, y: 0 }}>
                     <SignupWithEmail />
                   </Container>
                 </Item>
@@ -49,13 +49,13 @@ export default class extends React.PureComponent {
               </Flex>
             </Item>
             <Item>
-              <Customers />
+              <CustomerLogos />
             </Item>
             <Item>
               <FeatureHero
                 image={<IllustrationLineChart size="100%" />}
                 imagePosition="right"
-                location={locations.customerFeedback()}
+                location={locations.feedbackManagement()}
                 linkText="Learn more"
                 text="Import feedback from hundreds of apps, automatically analyze sentiment, tag feature requests, and measure changes over time."
                 title="Understand your customer feedback."
@@ -94,16 +94,16 @@ export default class extends React.PureComponent {
             <Item>
               <SocialProof
                 testimonials={[
-                  testimonials.abhilash,
-                  testimonials.aurelia,
-                  testimonials.basheera,
-                  testimonials.benjamin,
-                  testimonials.erik,
-                  testimonials.michael,
-                  testimonials.pascal,
-                  testimonials.sarah,
-                  testimonials.sonja,
-                  testimonials.tina
+                  TESTIMONIALS.abhilash,
+                  TESTIMONIALS.aurelia,
+                  TESTIMONIALS.basheera,
+                  TESTIMONIALS.benjamin,
+                  TESTIMONIALS.erik,
+                  TESTIMONIALS.michael,
+                  TESTIMONIALS.pascal,
+                  TESTIMONIALS.sarah,
+                  TESTIMONIALS.sonja,
+                  TESTIMONIALS.tina
                 ]}
               />
             </Item>

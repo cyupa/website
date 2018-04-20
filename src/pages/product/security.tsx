@@ -6,7 +6,7 @@ import { Item } from "@heydovetail/website/components/layout/Item";
 import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
 import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
-import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { ADVANCED_SECURITY_FEATURES, BASE_SECURITY_FEATURES } from "@heydovetail/website/sections/Security";
 import * as React from "react";
@@ -28,10 +28,10 @@ export default class extends React.PureComponent {
           />
           <meta property="og:title" content="Security and privacy – Dovetail" />
         </Helmet>
-        <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+        <Flex gap={VERTICAL_GAP} layout="column">
           <Item>
-            <DarkContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
-              <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+            <DarkContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+              <Flex gap={VERTICAL_GAP} layout="column">
                 <Item>
                   <Hero image={<IllustrationSecurity />} showSignUp={false} title="Dovetail security and privacy.">
                     <Flex gap={24} layout="column">
@@ -65,7 +65,7 @@ export default class extends React.PureComponent {
                 <Item>
                   <Flex gap={24} layout="column">
                     <Item>
-                      <p style={{ maxWidth: TYPICAL_PAGE_WIDTH / 2 }}>
+                      <p style={{ maxWidth: WIDTH / 2 }}>
                         Find our privacy policy, terms of service, and list of third party data sub-processors in our legal help
                         center.
                       </p>

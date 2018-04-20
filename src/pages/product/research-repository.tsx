@@ -15,7 +15,7 @@ import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import Wave from "@heydovetail/website/components/site/Wave/Wave";
-import { testimonials, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, TESTIMONIALS, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { Integrations } from "@heydovetail/website/sections/Integrations";
 import { Security } from "@heydovetail/website/sections/Security";
@@ -34,10 +34,10 @@ export default class extends React.PureComponent {
           <meta property="og:description" content="Keep all of your user research in one place." />
           <meta property="og:title" content="User research repository – Dovetail" />
         </Helmet>
-        <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+        <Flex gap={VERTICAL_GAP} layout="column">
           <Item>
-            <LightContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
-              <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+            <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+              <Flex gap={VERTICAL_GAP} layout="column">
                 <Item>
                   <Hero image={<IllustrationSoftware />} title="Keep all of your user research in one place." />
                 </Item>
@@ -165,16 +165,16 @@ export default class extends React.PureComponent {
           </Item>
           <Item>
             <Wave size="100%" />
-            <DarkContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
+            <DarkContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
               <Security />
             </DarkContainer>
           </Item>
           <Item>
-            <LightContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
-              <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+            <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+              <Flex gap={VERTICAL_GAP} layout="column">
                 <Item>
                   <SocialProof
-                    testimonials={[testimonials.basheera, testimonials.benjamin, testimonials.michael, testimonials.sarah]}
+                    testimonials={[TESTIMONIALS.basheera, TESTIMONIALS.benjamin, TESTIMONIALS.michael, TESTIMONIALS.sarah]}
                   />
                 </Item>
                 <Item>

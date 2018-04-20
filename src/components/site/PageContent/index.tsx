@@ -13,6 +13,8 @@ export class PageContent extends React.PureComponent<Props> {
 }
 
 const Content = styled("div", {
+  overflow: "hidden",
+
   $nest: {
     p: {
       margin: "16px 0"
@@ -64,6 +66,7 @@ const Content = styled("div", {
     },
     table: {
       borderSpacing: "4px",
+      display: "block",
       fontSize: "14px",
       textAlign: "left",
       margin: "-4px",
@@ -76,10 +79,10 @@ const Content = styled("div", {
       verticalAlign: "top"
     },
     td: {
-      backgroundColor: COLORS.i04
+      backgroundColor: COLORS.p04
     },
     th: {
-      backgroundColor: COLORS.i08,
+      backgroundColor: COLORS.p08,
       fontWeight: 500
     }
   }

@@ -3,7 +3,7 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { LinkList } from "@heydovetail/website/components/site/LinkList";
-import { COLORS, LIGHT_TEXT_OPACITY, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { COLORS, HALF_GAP, LIGHT_TEXT_OPACITY, PADDING, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
@@ -27,7 +27,7 @@ export class Footer extends React.PureComponent<Props> {
               <LinkList
                 heading="Use cases"
                 links={[
-                  { label: "Feedback management", location: locations.customerFeedback() },
+                  { label: "Feedback management", location: locations.feedbackManagement() },
                   { label: "Research repository", location: locations.researchRepository() },
                   { label: "Qualitative data analysis", location: locations.qualitativeDataAnalysis() },
                   { label: "Collaborative user research", location: locations.userResearch() }
@@ -61,7 +61,8 @@ export class Footer extends React.PureComponent<Props> {
                 heading="Company"
                 links={[
                   { label: "About us", location: locations.about() },
-                  { label: "Blog", location: locations.blog() },
+                  { label: "Customers", location: locations.customers() },
+                  { label: "Our blog", location: locations.blog() },
                   { label: "Slack", location: locations.slack() }
                 ]}
               />
@@ -86,9 +87,9 @@ export class Footer extends React.PureComponent<Props> {
 
     if (dark) {
       return (
-        <div style={{ marginTop: TYPICAL_VERTICAL_GAP / 2 }}>
-          <DarkContainer horizontalPadding={0} verticalPadding={0}>
-            <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={64}>
+        <div style={{ marginTop: HALF_GAP }}>
+          <DarkContainer padding={{ x: 0, y: 0 }}>
+            <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
               {footer}
             </Container>
           </DarkContainer>
@@ -96,10 +97,10 @@ export class Footer extends React.PureComponent<Props> {
       );
     } else
       return (
-        <div style={{ marginTop: TYPICAL_VERTICAL_GAP / 2 }}>
+        <div style={{ marginTop: HALF_GAP }}>
           <Wave color={COLORS.p04} size="100%" />
-          <LightContainer backgroundColor={COLORS.p04} horizontalPadding={0} verticalPadding={0}>
-            <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={64}>
+          <LightContainer backgroundColor={COLORS.p04} padding={{ x: 0, y: 0 }}>
+            <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
               {footer}
             </Container>
           </LightContainer>
