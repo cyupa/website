@@ -3,7 +3,7 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { Features } from "@heydovetail/website/components/site/Features";
-import { TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { HALF_GAP } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import * as React from "react";
 
@@ -45,7 +45,7 @@ export const ADVANCED_SECURITY_FEATURES = [
 export class Security extends React.PureComponent {
   public render() {
     return (
-      <Flex gap={TYPICAL_VERTICAL_GAP / 2} layout="column">
+      <Flex gap={HALF_GAP} layout="column">
         <Item>
           <FeatureHero
             image={<IllustrationSecurity size="100%" />}

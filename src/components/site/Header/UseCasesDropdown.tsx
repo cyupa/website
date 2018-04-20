@@ -14,10 +14,10 @@ export class UseCasesDropdown extends React.PureComponent {
   public render() {
     return (
       <Dropdown maxWidth={360}>
-        <Container horizontalPadding={16} verticalPadding={8}>
+        <Container padding={{ x: 16, y: 8 }}>
           <FlexWrap maxChildWidth={128} gap={0} growItems>
             <Item>
-              <UseCase image={<PictogramFeedback />} location={locations.customerFeedback()} title="Feedback management" />
+              <UseCase image={<PictogramFeedback />} location={locations.feedbackManagement()} title="Feedback management" />
             </Item>
             <Item>
               <UseCase

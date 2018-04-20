@@ -3,7 +3,7 @@ import { Item } from "@heydovetail/website/components/layout/Item";
 import { Features } from "@heydovetail/website/components/site/Features";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
-import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
 import * as React from "react";
@@ -25,8 +25,8 @@ export default class extends React.PureComponent {
           />
           <meta property="og:title" content="All features – Dovetail" />
         </Helmet>
-        <LightContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={64}>
-          <Flex gap={TYPICAL_VERTICAL_GAP / 2} layout="column">
+        <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+          <Flex gap={HALF_GAP} layout="column">
             <Item>
               <HeroText
                 text="Features designed to organize and analyze customer feedback and user research data."

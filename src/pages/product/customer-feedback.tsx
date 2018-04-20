@@ -16,7 +16,7 @@ import { LightContainer } from "@heydovetail/website/components/site/LightContai
 import Wave from "@heydovetail/website/components/site/Wave/Wave";
 import { ColorWheel } from "@heydovetail/website/components/util/ColorWheel";
 import IllustrationFormColor from "@heydovetail/website/components/util/ColorWheel/IllustrationFormColor";
-import { COLORS, testimonials, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { COLORS, HALF_GAP, PADDING, TESTIMONIALS, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { Integrations } from "@heydovetail/website/sections/Integrations";
 import { Security } from "@heydovetail/website/sections/Security";
@@ -35,10 +35,10 @@ export default class extends React.PureComponent {
           <meta property="og:description" content="Keep all of your customer feedback in one place." />
           <meta property="og:title" content="Feedback management – Dovetail" />
         </Helmet>
-        <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+        <Flex gap={VERTICAL_GAP} layout="column">
           <Item>
-            <LightContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
-              <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+            <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+              <Flex gap={VERTICAL_GAP} layout="column">
                 <Item>
                   <Hero image={<IllustrationSpace />} title="Keep all of your customer feedback in one place." />
                 </Item>
@@ -85,8 +85,8 @@ export default class extends React.PureComponent {
           </Item>
           <Item>
             <Wave size="100%" />
-            <DarkContainer maxWidth={TYPICAL_PAGE_WIDTH} overflowBottom verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
-              <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+            <DarkContainer maxWidth={WIDTH} overflowBottom padding={{ x: PADDING, y: HALF_GAP }}>
+              <Flex gap={VERTICAL_GAP} layout="column">
                 <Item>
                   <FeatureHero
                     image={<IllustrationSentimentText size="100%" />}
@@ -132,8 +132,8 @@ export default class extends React.PureComponent {
             </DarkContainer>
           </Item>
           <Item>
-            <LightContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
-              <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+            <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+              <Flex gap={VERTICAL_GAP} layout="column">
                 <Item>
                   <Features
                     features={[
@@ -218,15 +218,15 @@ export default class extends React.PureComponent {
           </Item>
           <Item>
             <Wave size="100%" />
-            <DarkContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
+            <DarkContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
               <Security />
             </DarkContainer>
           </Item>
           <Item>
-            <LightContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
-              <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+            <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+              <Flex gap={VERTICAL_GAP} layout="column">
                 <Item>
-                  <SocialProof testimonials={[testimonials.abhilash, testimonials.benjamin, testimonials.erik]} />
+                  <SocialProof testimonials={[TESTIMONIALS.abhilash, TESTIMONIALS.benjamin, TESTIMONIALS.erik]} />
                 </Item>
                 <Item>
                   <UseCases showTitle />

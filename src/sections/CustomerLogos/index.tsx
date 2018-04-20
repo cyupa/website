@@ -8,14 +8,14 @@ import LogoUniqa from "@heydovetail/website/components/icons/customers/LogoUniqa
 import LogoWestpac from "@heydovetail/website/components/icons/customers/LogoWestpac";
 import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
-import { COLORS } from "@heydovetail/website/constants";
+import { COLORS, HALF_GAP } from "@heydovetail/website/constants";
 import * as React from "react";
 
-export class Customers extends React.PureComponent {
+export class CustomerLogos extends React.PureComponent {
   public render() {
     return (
       <div style={{ color: COLORS.i60 }}>
-        <FlexWrap gap={64} justifyContent="center">
+        <FlexWrap gap={HALF_GAP} justifyContent="center">
           <Item>
             <LogoAtlassian />
           </Item>

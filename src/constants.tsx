@@ -131,14 +131,16 @@ export const BREAKPOINT_PHONE = 440;
 export const BREAKPOINT_PHABLET = 512;
 export const BREAKPOINT_TABLET = 768;
 
-export const TYPICAL_PAGE_WIDTH = 880;
-export const TYPICAL_VERTICAL_GAP = 128;
-export const PAGE_PADDING_BOTTOM = 64;
+export const PADDING = 24;
+export const WIDTH = 880;
+export const VERTICAL_GAP = 128;
+export const HALF_GAP = VERTICAL_GAP / 2;
+export const PADDING_BOTTOM = 64;
 export const FONT_FAMILY = "Rubik, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif";
 
 export const LIGHT_TEXT_OPACITY = 0.6;
 
-export const testimonials = {
+export const TESTIMONIALS = {
   abhilash: {
     company: "Freshworks",
     image: abhilash,

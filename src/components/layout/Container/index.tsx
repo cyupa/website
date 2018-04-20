@@ -1,24 +1,22 @@
+import { PADDING } from "@heydovetail/website/constants";
 import { styledViaProps } from "@heydovetail/website/util/styled";
 
 interface Props {
-  horizontalPadding?: number;
+  padding?: { x: number; y: number };
   maxWidth?: number;
-  verticalPadding?: number;
 }
 
-const DEFAULT_HORIZONTAL_PADDING = 24;
-const DEFAULT_VERTICAL_PADDING = 24;
+const DEFAULT_PADDING = { x: PADDING, y: 24 };
 
 export const Container = styledViaProps(
   "div",
-  ({ maxWidth, horizontalPadding = DEFAULT_HORIZONTAL_PADDING, verticalPadding = DEFAULT_VERTICAL_PADDING }) =>
-    JSON.stringify({ maxWidth, horizontalPadding, verticalPadding }),
-  ({ maxWidth, horizontalPadding = DEFAULT_HORIZONTAL_PADDING, verticalPadding = DEFAULT_VERTICAL_PADDING }: Props) => ({
+  ({ maxWidth, padding = DEFAULT_PADDING }) => JSON.stringify({ maxWidth, padding }),
+  ({ maxWidth, padding = DEFAULT_PADDING }: Props) => ({
     margin: "0 auto",
     maxWidth: maxWidth !== undefined ? `${maxWidth}px` : "none",
-    paddingTop: `${verticalPadding}px`,
-    paddingBottom: `${verticalPadding}px`,
-    paddingLeft: `${horizontalPadding}px`,
-    paddingRight: `${horizontalPadding}px`
+    paddingTop: padding.y,
+    paddingBottom: padding.y,
+    paddingLeft: padding.x,
+    paddingRight: padding.x
   })
 );

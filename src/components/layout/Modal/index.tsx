@@ -2,7 +2,7 @@ import { SubtleButton } from "@heydovetail/website/components/forms/SubtleButton
 import IconCross from "@heydovetail/website/components/icons/feather/IconCross";
 import { BodyOverflow } from "@heydovetail/website/components/util/BodyOverflow";
 import { OnEsc } from "@heydovetail/website/components/util/OnEsc";
-import { COLORS, PAGE_PADDING_BOTTOM, Z_INDEX_HIGH } from "@heydovetail/website/constants";
+import { COLORS, PADDING_BOTTOM, Z_INDEX_HIGH } from "@heydovetail/website/constants";
 import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
 import { CSSTransitionGroup } from "react-transition-group";
@@ -45,7 +45,7 @@ export class Modal extends React.PureComponent<Props> {
               }}
               transitionAppearTimeout={250}
             >
-              <Container horizontalPadding={0} verticalPadding={24} maxWidth={768}>
+              <Container padding={{ x: 0, y: 24 }} maxWidth={768}>
                 {children}
               </Container>
             </CSSTransitionGroup>
@@ -73,7 +73,7 @@ const Dialog = styled("div", {
   height: "100vh",
   left: 0,
   overflow: "auto",
-  padding: `24px 24px ${PAGE_PADDING_BOTTOM}px`,
+  padding: `24px 24px ${PADDING_BOTTOM}px`,
   position: "fixed",
   right: 0,
   top: 0,

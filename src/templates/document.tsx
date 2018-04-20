@@ -5,7 +5,7 @@ import { Breadcrumbs } from "@heydovetail/website/components/site/Breadcrumbs";
 import { Date } from "@heydovetail/website/components/site/Date";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { PageContent } from "@heydovetail/website/components/site/PageContent";
-import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { COLORS, HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import { DocumentByPathQuery } from "@heydovetail/website/graphql/types";
 import { internal } from "@heydovetail/website/routing/locations";
 import { graphql } from "@heydovetail/website/util/graphql";
@@ -31,8 +31,8 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
         <meta property="og:type" content="article" />
         <meta property="og:title" content={frontmatter!.title!} />
       </Helmet>
-      <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
-        <div style={{ maxWidth: TYPICAL_PAGE_WIDTH * 0.75 }}>
+      <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+        <div style={{ maxWidth: WIDTH * 0.75 }}>
           <Breadcrumbs
             crumbs={pathContext.breadcrumb.map(breadcrumb => ({
               location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,

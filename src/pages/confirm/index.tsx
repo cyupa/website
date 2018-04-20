@@ -4,7 +4,7 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
-import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { COLORS, HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import IllustrationEmail from "@heydovetail/website/pages/confirm/IllustrationEmail";
 import { locations } from "@heydovetail/website/routing/locations";
 import { styled } from "@heydovetail/website/util/styled";
@@ -18,7 +18,7 @@ export default class extends React.PureComponent {
         <Helmet>
           <title>Confirm your email address – Dovetail</title>
         </Helmet>
-        <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
+        <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
           <FlexWrap gap={32} growItems>
             <Item style={{ maxWidth: 416 }}>
               <Flex gap={40} layout="column">

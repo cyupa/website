@@ -17,7 +17,7 @@ import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import Wave from "@heydovetail/website/components/site/Wave/Wave";
-import { COLORS, testimonials, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { COLORS, HALF_GAP, PADDING, TESTIMONIALS, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { Security } from "@heydovetail/website/sections/Security";
 import { SocialProof } from "@heydovetail/website/sections/SocialProof";
@@ -35,10 +35,10 @@ export default class extends React.PureComponent {
           <meta property="og:description" content="Easily analyze qualitative data in the cloud." />
           <meta property="og:title" content="Qualitative data analysis – Dovetail" />
         </Helmet>
-        <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+        <Flex gap={VERTICAL_GAP} layout="column">
           <Item>
-            <LightContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
-              <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+            <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+              <Flex gap={VERTICAL_GAP} layout="column">
                 <Item>
                   <Hero image={<IllustrationAnalysis />} title="Easily analyze qualitative data in the cloud." />
                 </Item>
@@ -54,8 +54,8 @@ export default class extends React.PureComponent {
             </LightContainer>
           </Item>
           <Item>
-            <LightContainer backgroundColor={COLORS.p04} maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP}>
-              <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+            <LightContainer backgroundColor={COLORS.p04} maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
+              <Flex gap={VERTICAL_GAP} layout="column">
                 <Item>
                   <FeatureHeroLarge
                     image={<IllustrationAnnotationsResearch size="100%" />}
@@ -67,8 +67,8 @@ export default class extends React.PureComponent {
             </LightContainer>
           </Item>
           <Item>
-            <LightContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
-              <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+            <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+              <Flex gap={VERTICAL_GAP} layout="column">
                 <Item>
                   <FeatureHero
                     image={<IllustrationAnnotationEdit size="100%" />}
@@ -185,21 +185,21 @@ export default class extends React.PureComponent {
           </Item>
           <Item>
             <Wave size="100%" />
-            <DarkContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
+            <DarkContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
               <Security />
             </DarkContainer>
           </Item>
           <Item>
-            <LightContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
-              <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+            <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+              <Flex gap={VERTICAL_GAP} layout="column">
                 <Item>
                   <SocialProof
                     testimonials={[
-                      testimonials.aurelia,
-                      testimonials.erik,
-                      testimonials.pascal,
-                      testimonials.sonja,
-                      testimonials.tina
+                      TESTIMONIALS.aurelia,
+                      TESTIMONIALS.erik,
+                      TESTIMONIALS.pascal,
+                      TESTIMONIALS.sonja,
+                      TESTIMONIALS.tina
                     ]}
                   />
                 </Item>

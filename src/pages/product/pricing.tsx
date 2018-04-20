@@ -7,7 +7,7 @@ import { Item } from "@heydovetail/website/components/layout/Item";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { PricingCard } from "@heydovetail/website/components/site/PricingCard";
-import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { FrequentlyAskedQuestions } from "@heydovetail/website/sections/FrequentlyAskedQuestions";
@@ -26,10 +26,10 @@ export default class extends React.PureComponent {
           <meta property="og:description" content="Simple and affordable pricing." />
           <meta property="og:title" content="Pricing – Dovetail" />
         </Helmet>
-        <LightContainer maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={64}>
-          <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+        <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+          <Flex gap={VERTICAL_GAP} layout="column">
             <Item>
-              <Flex gap={TYPICAL_VERTICAL_GAP / 2} layout="column">
+              <Flex gap={HALF_GAP} layout="column">
                 <Item>
                   <HeroText title="Simple and affordable pricing." />
                 </Item>

@@ -4,7 +4,7 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
-import { COLORS, LIGHT_TEXT_OPACITY, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { COLORS, HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import * as React from "react";
 import { Helmet } from "react-helmet";
@@ -16,32 +16,30 @@ export default class extends React.PureComponent {
         <Helmet>
           <title>404 – Dovetail</title>
         </Helmet>
-        <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
-          <div style={{ maxWidth: TYPICAL_PAGE_WIDTH / 2 }}>
-            <Flex gap={40} layout="column">
-              <Item>
-                <HeroText center={false} maxWidth={416} title="Sorry, this page doesn’t exist." />
-              </Item>
-              <Item>
-                <p style={{ opacity: LIGHT_TEXT_OPACITY }}>
-                  It may have been moved or deleted. Check the URL is correct in the address bar, and get in touch with us if
-                  you continue to have issues.
-                </p>
-              </Item>
-              <Item>
-                <Flow>
-                  <Item>
-                    <ButtonLink color={COLORS.purple} location={locations.home()}>
-                      Back to homepage
-                    </ButtonLink>
-                  </Item>
-                  <Item>
-                    <ButtonLink location={locations.help()}>Get help</ButtonLink>
-                  </Item>
-                </Flow>
-              </Item>
-            </Flex>
-          </div>
+        <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+          <Flex gap={40} layout="column">
+            <Item>
+              <HeroText
+                center={false}
+                maxWidth={WIDTH / 2}
+                title="Sorry, this page doesn’t exist."
+                text="It may have been moved or deleted. Check the URL is correct in the address bar, and get in touch with us if
+                  you continue to have issues."
+              />
+            </Item>
+            <Item>
+              <Flow>
+                <Item>
+                  <ButtonLink color={COLORS.purple} location={locations.home()}>
+                    Back to homepage
+                  </ButtonLink>
+                </Item>
+                <Item>
+                  <ButtonLink location={locations.help()}>Get help</ButtonLink>
+                </Item>
+              </Flow>
+            </Item>
+          </Flex>
         </Container>
       </>
     );

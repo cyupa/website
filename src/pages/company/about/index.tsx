@@ -6,7 +6,7 @@ import { Item } from "@heydovetail/website/components/layout/Item";
 import { Masonry } from "@heydovetail/website/components/layout/Masonry";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { StaffMemberCard } from "@heydovetail/website/components/site/StaffMemberCard";
-import { COLORS, TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import * as React from "react";
 import { Helmet } from "react-helmet";
@@ -20,8 +20,8 @@ export default class extends React.PureComponent {
         <Helmet>
           <title>About us – Dovetail</title>
         </Helmet>
-        <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
-          <Flex gap={TYPICAL_VERTICAL_GAP} layout="column">
+        <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+          <Flex gap={VERTICAL_GAP} layout="column">
             <Item>
               <Flex gap={32} layout="column">
                 <Item>

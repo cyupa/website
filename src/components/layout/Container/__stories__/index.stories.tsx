@@ -9,7 +9,7 @@ storiesOf("Layout/Container", module)
     </Container>
   ))
   .add("with custom padding", () => (
-    <Container verticalPadding={64} horizontalPadding={64}>
+    <Container padding={{ x: 64, y: 64 }}>
       <Box>Content</Box>
     </Container>
   ))

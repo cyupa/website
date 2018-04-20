@@ -3,7 +3,7 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { Masonry, MasonryItem } from "@heydovetail/website/components/layout/Masonry";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
-import { TYPICAL_PAGE_WIDTH, TYPICAL_VERTICAL_GAP } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import * as React from "react";
 import { Helmet } from "react-helmet";
 
@@ -22,7 +22,7 @@ export class DocumentIndex extends React.PureComponent<Props> {
         <Helmet>
           <title>{title} – Dovetail</title>
         </Helmet>
-        <Container maxWidth={TYPICAL_PAGE_WIDTH} verticalPadding={TYPICAL_VERTICAL_GAP / 2}>
+        <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
           <Flex gap={48} layout="column">
             <Item>
               <HeroText title={title} text={text} />
