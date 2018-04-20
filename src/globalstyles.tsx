@@ -25,14 +25,18 @@ cssRule("h1", {
   fontSize: "48px",
   fontWeight: 500,
   lineHeight: "56px",
-  margin: 0
+  margin: 0,
+  overflow: "hidden",
+  textOverflow: "ellipsis"
 });
 
 cssRule("h2", {
   fontSize: "32px",
   fontWeight: 400,
   lineHeight: "40px",
-  margin: 0
+  margin: 0,
+  overflow: "hidden",
+  textOverflow: "ellipsis"
 });
 
 cssRule("h3", {
