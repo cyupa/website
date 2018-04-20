@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-react-next",
+    "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
     "gatsby-plugin-typescript",
     "gatsby-plugin-typestyle",
