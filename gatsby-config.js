@@ -77,6 +77,12 @@ module.exports = {
         color: "#512da8",
         showSpinner: false
       }
+    },
+    {
+      resolve: "gatsby-plugin-canonical-urls",
+      options: {
+        siteUrl: "https://dovetailapp.com"
+      }
     }
   ]
 };
