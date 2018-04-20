@@ -1,5 +1,8 @@
 import * as React from "react";
 
+// https://github.com/nfl/react-helmet/issues/79#issuecomment-299888528
+// require("react-helmet/lib/HelmetConstants.js").HELMET_ATTRIBUTE = "data-react";
+
 // Load production style
 let styles: string;
 if (process.env.NODE_ENV === "production") {
@@ -28,16 +31,9 @@ class Html extends React.PureComponent<Props> {
     return (
       <html lang="en">
         <head>
-          <title>Customer feedback &amp; research platform for teams – Dovetail</title>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-          <meta name="twitter:card" content="summary" />
-          <meta property="og:type" content="product" />
-          <meta
-            name="keywords"
-            content="data analysis, design software, product design, qualitative data analysis, research analysis, research repository, saas software, sydney australia, user research, ux design"
-          />
           <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet" />
           {headComponents}
           {css}
