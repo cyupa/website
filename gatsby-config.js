@@ -1,7 +1,8 @@
 // Based on https://github.com/gatsbyjs/gatsby/blob/master/examples/using-typescript/gatsby-config.js
 module.exports = {
   siteMetadata: {
-    siteName: "Dovetail"
+    siteName: "Dovetail",
+    siteUrl: "https://dovetailapp.com"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
