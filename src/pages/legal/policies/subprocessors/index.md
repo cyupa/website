@@ -1,5 +1,5 @@
 ---
-date: "2018-02-01"
+date: "2018-04-15"
 path: "/legal/data-subprocessors"
 title: "Data Subprocessors"
 weight: 2
@@ -11,8 +11,8 @@ To support delivery of our Services, Dovetail may engage and use data processors
 
 | Third Party Service / Vendor | Purpose                        | Location of Subprocessor | Website          |
 | ---------------------------- | ------------------------------ | ------------------------ | ---------------- |
-| Amazon Web Services          | Data hosting                   | USA, Ireland             | aws.amazon.com   |
-| ChartMogul                   | Payment analytics              | USA                      | chartmogul.com   |
+| Amazon Web Services          | Data hosting                   | USA                      | aws.amazon.com   |
+| ChartMogul                   | Payment analytics              | Germany                  | chartmogul.com   |
 | Cloudflare                   | Content Delivery Network (CDN) | USA                      | cloudflare.com   |
 | Google Cloud                 | Natural language analysis      | USA                      | cloud.google.com |
 | Heroku                       | Data hosting                   | USA                      | heroku.com       |
