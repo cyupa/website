@@ -31,7 +31,10 @@ export default class extends React.PureComponent {
             <Item>
               <Flex gap={HALF_GAP} layout="column">
                 <Item>
-                  <HeroText title="Simple and affordable pricing." />
+                  <HeroText
+                    title="Simple and affordable pricing."
+                    text="Pay the same price each month regardless of your team size."
+                  />
                 </Item>
                 <Item>
                   <PricingCard
