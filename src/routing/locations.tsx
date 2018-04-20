@@ -133,5 +133,6 @@ export const locations = {
   slack: () => external("https://slack.dovetailapp.com", { openInNewTab: true }),
   termsCustomer: () => internal("/legal/customer-terms"),
   termsUser: () => internal("/legal/user-terms"),
+  twitter: () => external("//twitter.com/hidovetail", { openInNewTab: true }),
   userResearch: () => internal("/product/user-research")
 };
