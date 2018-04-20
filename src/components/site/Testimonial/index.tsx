@@ -32,7 +32,7 @@ export class Testimonial extends React.PureComponent<TestimonialProps> {
               <Item>
                 <NameAndRole>
                   {name} — {role} at{" "}
-                  <LocationLink location={{ internal: false, url: url }} presentation="text">
+                  <LocationLink location={{ internal: false, url: url, openInNewTab: true }} presentation="text">
                     {company}
                   </LocationLink>
                 </NameAndRole>
