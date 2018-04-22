@@ -1,6 +1,7 @@
 import { Card } from "@heydovetail/website/components/layout/Card";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
+import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
 
@@ -10,11 +11,12 @@ export interface TestimonialProps {
   name: string;
   quote: string;
   role: string;
+  url: string;
 }
 
 export class Testimonial extends React.PureComponent<TestimonialProps> {
   public render() {
-    const { company, image, name, quote, role } = this.props;
+    const { company, image, name, quote, role, url } = this.props;
 
     return (
       <Card padding={32}>
@@ -29,7 +31,10 @@ export class Testimonial extends React.PureComponent<TestimonialProps> {
               </Item>
               <Item>
                 <NameAndRole>
-                  {name} — {role} at {company}
+                  {name} — {role} at{" "}
+                  <LocationLink location={{ internal: false, url: url, openInNewTab: true }} presentation="text">
+                    {company}
+                  </LocationLink>
                 </NameAndRole>
               </Item>
             </Flex>

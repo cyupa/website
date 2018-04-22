@@ -24,7 +24,7 @@ export default class extends React.PureComponent<Props> {
       node: (
         <ActionCard
           title="Contact us"
-          text="We’re based in Sydney and usually respond within a couple of hours."
+          text="Say hi! We’re based in Sydney and usually respond within a couple of hours."
           buttonText="Email support"
           buttonLocation={locations.email()}
         />
@@ -44,12 +44,25 @@ export default class extends React.PureComponent<Props> {
       )
     });
 
+    cards.splice(4, 0, {
+      id: "twitter",
+      node: (
+        <ActionCard
+          title="Find us on Twitter"
+          text="Follow @hidovetail for product updates, news, and answers to your questions."
+          buttonColor={COLORS.blue}
+          buttonText="Find us on Twitter"
+          buttonLocation={locations.twitter()}
+        />
+      )
+    });
+
     cards.splice(9, 0, {
       id: "learn-more",
       node: (
         <ActionCard
           title="Learn more"
-          text="Follow us on Medium for the latest product updates, company news, and tips &amp; tricks."
+          text="Check out our Medium blog for product updates, company news, and tips &amp; tricks."
           buttonText="Visit blog"
           buttonLocation={locations.blog()}
         />
@@ -59,8 +72,8 @@ export default class extends React.PureComponent<Props> {
     return (
       <DocumentIndex
         items={cards}
-        text="Browse our help documentation, contact us, or join our Slack community for support."
-        title="Help center"
+        text="Browse our help documentation and find ways to get in touch with us."
+        title="Help Center"
       />
     );
   }

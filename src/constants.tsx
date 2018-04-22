@@ -143,6 +143,7 @@ export const LIGHT_TEXT_OPACITY = 0.6;
 export const TESTIMONIALS = {
   abhilash: {
     company: "Freshworks",
+    url: "https://www.freshworks.com",
     image: abhilash,
     name: "Abhilash",
     quote:
@@ -151,6 +152,7 @@ export const TESTIMONIALS = {
   },
   aurelia: {
     company: "Pinterest",
+    url: "https://www.pinterest.com",
     image: aurelia,
     name: "Aurelia",
     quote: "Highlighting text to tag is great! I love that I can add multiple tags to highlighted text. It’s super easy.",
@@ -158,6 +160,7 @@ export const TESTIMONIALS = {
   },
   basheera: {
     company: "DemandLogic",
+    url: "https://www.demandlogic.co.uk",
     image: basheera,
     name: "Basheera",
     quote:
@@ -166,6 +169,7 @@ export const TESTIMONIALS = {
   },
   benjamin: {
     company: "For The Win",
+    url: "https://ftw.nyc",
     image: ben,
     name: "Benjamin",
     quote:
@@ -174,6 +178,7 @@ export const TESTIMONIALS = {
   },
   erik: {
     company: "PageCloud",
+    url: "https://www.pagecloud.com",
     image: erik,
     name: "Erik",
     quote:
@@ -182,6 +187,7 @@ export const TESTIMONIALS = {
   },
   michael: {
     company: "Onist",
+    url: "https://onist.com",
     image: michael,
     name: "Michael",
     quote:
@@ -190,6 +196,7 @@ export const TESTIMONIALS = {
   },
   pascal: {
     company: "Enigma",
+    url: "https://enigma.swiss/en/",
     image: pascal,
     name: "Pascal",
     quote:
@@ -198,6 +205,7 @@ export const TESTIMONIALS = {
   },
   sarah: {
     company: "HotelsCombined",
+    url: "https://www.hotelscombined.com/",
     image: sarah,
     name: "Sarah",
     quote:
@@ -206,6 +214,7 @@ export const TESTIMONIALS = {
   },
   sonja: {
     company: "Uniqa",
+    url: "http://www.uniqagroup.com",
     image: sonja,
     name: "Sonja",
     quote:
@@ -214,6 +223,7 @@ export const TESTIMONIALS = {
   },
   tina: {
     company: "MacMillan Learning",
+    url: "https://macmillanlearning.com",
     image: tina,
     name: "Tina",
     quote:

@@ -8,6 +8,7 @@ storiesOf("Sections/SocialProof", module).add("default", () => (
     testimonials={[
       {
         company: "Freshworks",
+        url: "https://freshworks.com",
         image: abhilash,
         name: "Abhilash",
         quote:
