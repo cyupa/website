@@ -1,5 +1,5 @@
 import * as React from "react";
-import { buttonBaseStyles, SubtleButtonStyle } from "../styles";
+import { SubtleButtonStyle, buttonBaseStyles } from "../styles";
 
 interface Props {
   children?: React.ReactNode;

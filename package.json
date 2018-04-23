@@ -59,7 +59,7 @@
   "dependencies": {
     "@heydovetail/editorconfig": "^2.0.0",
     "@heydovetail/svg-to-react": "^1.1.0",
-    "@heydovetail/tslint-config": "^1.1.0",
+    "@heydovetail/tslint-config": "^2.1.0",
     "@storybook/addon-storyshots": "^3.4.0",
     "@storybook/react": "^3.4.0",
     "@types/jest": "^22.2.2",
