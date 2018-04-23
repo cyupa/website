@@ -31,6 +31,7 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>User research repository – Dovetail</title>
+          <meta name="twitter:card" content="summary_large_image" />
           <meta property="og:title" content="User research repository – Dovetail" />
           <meta property="og:image" content={process.env.GATSBY_BASE_URL + hero} />
           <meta
