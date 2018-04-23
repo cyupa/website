@@ -16,7 +16,7 @@ import { LightContainer } from "@heydovetail/website/components/site/LightContai
 import Wave from "@heydovetail/website/components/site/Wave/Wave";
 import { ColorWheel } from "@heydovetail/website/components/util/ColorWheel";
 import IllustrationFormColor from "@heydovetail/website/components/util/ColorWheel/IllustrationFormColor";
-import { COLORS, HALF_GAP, PADDING, TESTIMONIALS, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
+import { COLORS, HALF_GAP, PADDING, testimonials, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { Integrations } from "@heydovetail/website/sections/Integrations";
 import { Security } from "@heydovetail/website/sections/Security";
@@ -226,7 +226,7 @@ export default class extends React.PureComponent {
             <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
               <Flex gap={VERTICAL_GAP} layout="column">
                 <Item>
-                  <SocialProof testimonials={[TESTIMONIALS.abhilash, TESTIMONIALS.benjamin, TESTIMONIALS.erik]} />
+                  <SocialProof testimonials={[testimonials.abhilash, testimonials.benjamin, testimonials.erik]} />
                 </Item>
                 <Item>
                   <UseCases showTitle />

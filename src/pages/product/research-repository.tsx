@@ -15,7 +15,7 @@ import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import Wave from "@heydovetail/website/components/site/Wave/Wave";
-import { HALF_GAP, PADDING, TESTIMONIALS, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, testimonials, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { Integrations } from "@heydovetail/website/sections/Integrations";
 import { Security } from "@heydovetail/website/sections/Security";
@@ -174,7 +174,7 @@ export default class extends React.PureComponent {
               <Flex gap={VERTICAL_GAP} layout="column">
                 <Item>
                   <SocialProof
-                    testimonials={[TESTIMONIALS.basheera, TESTIMONIALS.benjamin, TESTIMONIALS.michael, TESTIMONIALS.sarah]}
+                    testimonials={[testimonials.basheera, testimonials.benjamin, testimonials.michael, testimonials.sarah]}
                   />
                 </Item>
                 <Item>

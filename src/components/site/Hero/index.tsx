@@ -3,7 +3,7 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { SmallText } from "@heydovetail/website/components/util/SmallText";
-import { BREAKPOINT_TABLET, COLORS } from "@heydovetail/website/constants";
+import { BREAKPOINT_TABLET, COLORS, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
@@ -13,20 +13,28 @@ interface Props {
   children?: React.ReactNode;
   image: React.ReactNode;
   showSignUp?: boolean;
+  text?: string;
   title: string;
 }
 
 export class Hero extends React.PureComponent<Props> {
   public render() {
-    const { children, image, showSignUp = true, title } = this.props;
+    const { children, image, showSignUp = true, text, title } = this.props;
     return (
       <Flex gap={32}>
         <Item style={{ flex: "0 1 464px" }}>
           <Flex gap={40} layout="column">
             <Item>
-              <Heading>
-                <h1>{title}</h1>
-              </Heading>
+              <Flex gap={24} layout="column">
+                <Item>
+                  <Heading>{title}</Heading>
+                </Item>
+                {text !== undefined ? (
+                  <Item>
+                    <p style={{ opacity: LIGHT_TEXT_OPACITY }}>{text}</p>
+                  </Item>
+                ) : null}
+              </Flex>
             </Item>
             {children !== undefined ? <Item>{children}</Item> : null}
             {showSignUp ? (
@@ -55,7 +63,7 @@ export class Hero extends React.PureComponent<Props> {
   }
 }
 
-const Heading = styled("div", {
+const Heading = styled("h1", {
   marginTop: "32px"
 });
 

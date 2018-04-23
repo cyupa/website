@@ -17,7 +17,7 @@ import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import Wave from "@heydovetail/website/components/site/Wave/Wave";
-import { COLORS, HALF_GAP, PADDING, TESTIMONIALS, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
+import { COLORS, HALF_GAP, PADDING, testimonials, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { Security } from "@heydovetail/website/sections/Security";
 import { SocialProof } from "@heydovetail/website/sections/SocialProof";
@@ -195,11 +195,11 @@ export default class extends React.PureComponent {
                 <Item>
                   <SocialProof
                     testimonials={[
-                      TESTIMONIALS.aurelia,
-                      TESTIMONIALS.erik,
-                      TESTIMONIALS.pascal,
-                      TESTIMONIALS.sonja,
-                      TESTIMONIALS.tina
+                      testimonials.aurelia,
+                      testimonials.erik,
+                      testimonials.pascal,
+                      testimonials.sonja,
+                      testimonials.tina
                     ]}
                   />
                 </Item>
