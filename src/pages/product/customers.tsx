@@ -42,6 +42,7 @@ export default class extends React.PureComponent {
               customers.enigma,
               customers.freshworks,
               customers.ftw,
+              customers.ibm,
               customers.ideo,
               customers.monotype,
               customers.nike,
