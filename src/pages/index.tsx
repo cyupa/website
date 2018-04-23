@@ -26,6 +26,7 @@ export default class extends React.PureComponent {
     return (
       <>
         <Helmet>
+          <meta name="twitter:card" content="summary_large_image" />
           <meta property="og:image" content={process.env.GATSBY_BASE_URL + hero} />
         </Helmet>
         <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
