@@ -14,7 +14,7 @@ export class CustomerLogos extends React.PureComponent<Props> {
     return (
       <div style={{ color: color }}>
         <FlexWrap gap={HALF_GAP} justifyContent="center">
-          {customers.map(c => <Item>{c}</Item>)}
+          {customers.map((c, i) => <Item key={i}>{c}</Item>)}
         </FlexWrap>
       </div>
     );

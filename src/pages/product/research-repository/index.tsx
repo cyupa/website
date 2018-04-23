@@ -1,3 +1,4 @@
+import * as hero from "!file-loader!./hero.png";
 import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
 import IllustrationBoardLarge from "@heydovetail/website/components/illustrations/IllustrationBoardLarge";
 import IllustrationFiles from "@heydovetail/website/components/illustrations/IllustrationFiles";
@@ -30,9 +31,16 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>User research repository – Dovetail</title>
-          <meta name="description" content="Keep all of your user research in one place." />
-          <meta property="og:description" content="Keep all of your user research in one place." />
           <meta property="og:title" content="User research repository – Dovetail" />
+          <meta property="og:image" content={hero} />
+          <meta
+            property="og:description"
+            content="Dovetail keeps all of your user research data in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+          />
+          <meta
+            name="description"
+            content="Dovetail keeps all of your user research data in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+          />
         </Helmet>
         <Flex gap={VERTICAL_GAP} layout="column">
           <Item>

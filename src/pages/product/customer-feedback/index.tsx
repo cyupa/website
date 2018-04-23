@@ -1,3 +1,4 @@
+import * as hero from "!file-loader!./hero.png";
 import IllustrationAnnotationsFeedback from "@heydovetail/website/components/illustrations/IllustrationAnnotationsFeedback";
 import IllustrationBoard from "@heydovetail/website/components/illustrations/IllustrationBoard";
 import IllustrationProjectsFeedback from "@heydovetail/website/components/illustrations/IllustrationProjectsFeedback";
@@ -31,9 +32,16 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>Feedback management – Dovetail</title>
-          <meta name="description" content="Keep all of your customer feedback in one place." />
-          <meta property="og:description" content="Keep all of your customer feedback in one place." />
           <meta property="og:title" content="Feedback management – Dovetail" />
+          <meta property="og:image" content={hero} />
+          <meta
+            property="og:description"
+            content="Dovetail helps you keep all of your customer feedback in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+          />
+          <meta
+            name="description"
+            content="Dovetail helps you keep all of your customer feedback in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+          />
         </Helmet>
         <Flex gap={VERTICAL_GAP} layout="column">
           <Item>

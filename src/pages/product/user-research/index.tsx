@@ -1,3 +1,4 @@
+import * as hero from "!file-loader!./hero.png";
 import IllustrationAnnotationsResearch from "@heydovetail/website/components/illustrations/IllustrationAnnotationsResearch";
 import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
 import IllustrationBoardLarge from "@heydovetail/website/components/illustrations/IllustrationBoardLarge";
@@ -29,9 +30,16 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>Collaborative user research – Dovetail</title>
-          <meta name="description" content="Get everyone involved in user research." />
-          <meta property="og:description" content="Get everyone involved in user research." />
           <meta property="og:title" content="Collaborative user research – Dovetail" />
+          <meta property="og:image" content={hero} />
+          <meta
+            property="og:description"
+            content="Get everyone involved in user research, and make it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+          />
+          <meta
+            name="description"
+            content="Get everyone involved in user research, and make it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+          />
         </Helmet>
         <Flex gap={VERTICAL_GAP} layout="column">
           <Item>
