@@ -10,6 +10,7 @@
     "generate:svgs": "svg-to-react src",
     "jest": "./node_modules/.bin/jest -u",
     "precommit": "lint-staged",
+    "postmerge": "./bin/post-merge-update-dependencies",
     "serve": "./node_modules/.bin/gatsby serve",
     "start": "ts-node ./node_modules/.bin/gatsby develop",
     "storybook": "ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook",
