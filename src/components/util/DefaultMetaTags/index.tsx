@@ -23,7 +23,7 @@ export class DefaultMetaTags extends React.PureComponent {
         <meta name="twitter:site" content="@hidovetail" />
         <meta property="og:title" content="A customer feedback &amp; research platform for teams — Dovetail" />
         <meta property="og:type" content="product" />
-        <meta property="og:image" content={thumbnail} />
+        <meta property="og:image" content={process.env.GATSBY_BASE_URL + thumbnail} />
         <meta
           property="og:description"
           content="Dovetail combines customer feedback and user research in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."

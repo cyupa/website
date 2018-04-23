@@ -33,7 +33,7 @@ export default class extends React.PureComponent {
         <Helmet>
           <title>Qualitative data analysis – Dovetail</title>
           <meta property="og:title" content="Qualitative data analysis – Dovetail" />
-          <meta property="og:image" content={hero} />
+          <meta property="og:image" content={process.env.GATSBY_BASE_URL + hero} />
           <meta
             property="og:description"
             content="Dovetail helps you easily analyze qualitative data in the cloud, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
