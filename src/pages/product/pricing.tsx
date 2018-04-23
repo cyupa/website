@@ -11,7 +11,6 @@ import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/web
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { FrequentlyAskedQuestions } from "@heydovetail/website/sections/FrequentlyAskedQuestions";
-import { SocialProof } from "@heydovetail/website/sections/SocialProof";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
 import * as React from "react";
 import { Helmet } from "react-helmet";
@@ -58,9 +57,6 @@ export default class extends React.PureComponent {
             </Item>
             <Item>
               <FrequentlyAskedQuestions />
-            </Item>
-            <Item>
-              <SocialProof />
             </Item>
             <Item>
               <UseCases showTitle />

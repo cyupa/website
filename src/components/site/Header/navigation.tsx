@@ -9,6 +9,7 @@ import { Item } from "@heydovetail/website/components/layout/Item";
 import { Layer } from "@heydovetail/website/components/layout/Layer";
 import { Portal } from "@heydovetail/website/components/layout/Portal";
 import { ThemeColor } from "@heydovetail/website/components/site/Header";
+import { GoToApp } from "@heydovetail/website/components/site/Header/goToApp";
 import { MobileMenu } from "@heydovetail/website/components/site/MobileMenu";
 import { FlipFlop } from "@heydovetail/website/components/util/FlipFlop";
 import { BREAKPOINT_TABLET, COLORS } from "@heydovetail/website/constants";
@@ -25,6 +26,7 @@ interface Props {
 export class Navigation extends React.PureComponent<Props> {
   public render() {
     const { dark = false } = this.props;
+    const loggedIn = this.getLoggedInStateFromLocalStorage();
 
     return (
       <>
@@ -67,18 +69,24 @@ export class Navigation extends React.PureComponent<Props> {
                     <SubtleButtonLink location={locations.help()}>Support</SubtleButtonLink>
                   </ThemeColor>
                 </Item>
-                <Item>
-                  <ThemeColor dark={dark}>
-                    <SubtleButtonLink location={locations.logIn()}>Log in</SubtleButtonLink>
-                  </ThemeColor>
-                </Item>
+                {loggedIn ? null : (
+                  <Item>
+                    <ThemeColor dark={dark}>
+                      <SubtleButtonLink location={locations.logIn()}>Log in</SubtleButtonLink>
+                    </ThemeColor>
+                  </Item>
+                )}
               </Flex>
             </Item>
-            <Item>
-              <ButtonLink color={!dark ? COLORS.purple : COLORS.p80} height={32} location={locations.signUp()}>
-                Try now
-              </ButtonLink>
-            </Item>
+            {loggedIn ? (
+              <GoToApp />
+            ) : (
+              <Item>
+                <ButtonLink color={!dark ? COLORS.purple : COLORS.p80} height={32} location={locations.signUp()}>
+                  Try now
+                </ButtonLink>
+              </Item>
+            )}
           </Flex>
         </DesktopNavigation>
         <MobileNavigation>
@@ -91,7 +99,7 @@ export class Navigation extends React.PureComponent<Props> {
                 {active ? (
                   <Portal>
                     <Layer align="right" onOutsideClick={toggle} parentId="MenuDropdown">
-                      <MobileMenu onClose={toggle} />
+                      <MobileMenu onClose={toggle} loggedIn={loggedIn} />
                     </Layer>
                   </Portal>
                 ) : null}
@@ -102,6 +110,16 @@ export class Navigation extends React.PureComponent<Props> {
       </>
     );
   }
+
+  private readonly getLoggedInStateFromLocalStorage = () => {
+    return (
+      // tslint:disable-next-line:no-any
+      typeof (window as any) !== "undefined" &&
+      // tslint:disable-next-line:no-any
+      (window.localStorage as any) !== undefined &&
+      window.localStorage.getItem("is-logged-in") !== null
+    );
+  };
 }
 
 const DesktopNavigation = styled(

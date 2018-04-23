@@ -8,6 +8,7 @@ import * as pascal from "@heydovetail/website/avatars/pascal.jpg";
 import * as sarah from "@heydovetail/website/avatars/sarah.jpg";
 import * as sonja from "@heydovetail/website/avatars/sonja.jpg";
 import * as tina from "@heydovetail/website/avatars/tina.jpg";
+import { TestimonialProps } from "@heydovetail/website/components/site/Testimonial";
 
 export const enum COLORS {
   indigo = "#24124d",
@@ -140,7 +141,7 @@ export const FONT_FAMILY = "Rubik, -apple-system, BlinkMacSystemFont, 'Segoe UI'
 
 export const LIGHT_TEXT_OPACITY = 0.6;
 
-export const TESTIMONIALS = {
+export const testimonials: { [name: string]: TestimonialProps } = {
   abhilash: {
     company: "Freshworks",
     url: "https://www.freshworks.com",

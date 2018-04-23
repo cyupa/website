@@ -1,5 +1,5 @@
 import * as React from "react";
-import { buttonBaseStyles, ColoredButtonStyle, DefaultButtonStyle } from "../styles";
+import { ColoredButtonStyle, DefaultButtonStyle, buttonBaseStyles } from "../styles";
 
 interface Props {
   children?: React.ReactChild;

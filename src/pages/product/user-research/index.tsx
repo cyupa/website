@@ -1,3 +1,4 @@
+import * as hero from "!file-loader!./hero.png";
 import IllustrationAnnotationsResearch from "@heydovetail/website/components/illustrations/IllustrationAnnotationsResearch";
 import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
 import IllustrationBoardLarge from "@heydovetail/website/components/illustrations/IllustrationBoardLarge";
@@ -15,7 +16,7 @@ import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import Wave from "@heydovetail/website/components/site/Wave/Wave";
-import { COLORS, HALF_GAP, PADDING, TESTIMONIALS, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
+import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH, testimonials } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { Security } from "@heydovetail/website/sections/Security";
 import { SocialProof } from "@heydovetail/website/sections/SocialProof";
@@ -29,9 +30,16 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>Collaborative user research – Dovetail</title>
-          <meta name="description" content="Get everyone involved in user research." />
-          <meta property="og:description" content="Get everyone involved in user research." />
           <meta property="og:title" content="Collaborative user research – Dovetail" />
+          <meta property="og:image" content={hero} />
+          <meta
+            property="og:description"
+            content="Get everyone involved in user research, and make it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+          />
+          <meta
+            name="description"
+            content="Get everyone involved in user research, and make it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+          />
         </Helmet>
         <Flex gap={VERTICAL_GAP} layout="column">
           <Item>
@@ -44,7 +52,7 @@ export default class extends React.PureComponent {
                   <FeatureHero
                     image={<IllustrationRealtime size="100%" />}
                     imagePosition="right"
-                    text="Take notes with your teammates during customer interviews &amp; user testing sessions and tag sentences as you go."
+                    text="Take notes with your teammates during customer interviews and user testing sessions, and tag sentences as you identify patterns."
                     title="Collaborate on research notes in real time."
                   />
                 </Item>
@@ -175,12 +183,12 @@ export default class extends React.PureComponent {
                 <Item>
                   <SocialProof
                     testimonials={[
-                      TESTIMONIALS.basheera,
-                      TESTIMONIALS.benjamin,
-                      TESTIMONIALS.michael,
-                      TESTIMONIALS.sarah,
-                      TESTIMONIALS.sonja,
-                      TESTIMONIALS.tina
+                      testimonials.basheera,
+                      testimonials.benjamin,
+                      testimonials.michael,
+                      testimonials.sarah,
+                      testimonials.sonja,
+                      testimonials.tina
                     ]}
                   />
                 </Item>

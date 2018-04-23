@@ -1,3 +1,4 @@
+import * as hero from "!file-loader!./hero.png";
 import IllustrationAnalysis from "@heydovetail/website/components/illustrations/IllustrationAnalysis";
 import IllustrationAnnotationEdit from "@heydovetail/website/components/illustrations/IllustrationAnnotationEdit";
 import IllustrationAnnotationsResearch from "@heydovetail/website/components/illustrations/IllustrationAnnotationsResearch";
@@ -17,7 +18,7 @@ import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import Wave from "@heydovetail/website/components/site/Wave/Wave";
-import { COLORS, HALF_GAP, PADDING, TESTIMONIALS, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
+import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH, testimonials } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { Security } from "@heydovetail/website/sections/Security";
 import { SocialProof } from "@heydovetail/website/sections/SocialProof";
@@ -31,9 +32,16 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>Qualitative data analysis – Dovetail</title>
-          <meta name="description" content="Easily analyze qualitative data in the cloud." />
-          <meta property="og:description" content="Easily analyze qualitative data in the cloud." />
           <meta property="og:title" content="Qualitative data analysis – Dovetail" />
+          <meta property="og:image" content={hero} />
+          <meta
+            property="og:description"
+            content="Dovetail helps you easily analyze qualitative data in the cloud, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+          />
+          <meta
+            name="description"
+            content="Dovetail helps you easily analyze qualitative data in the cloud, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+          />
         </Helmet>
         <Flex gap={VERTICAL_GAP} layout="column">
           <Item>
@@ -195,11 +203,11 @@ export default class extends React.PureComponent {
                 <Item>
                   <SocialProof
                     testimonials={[
-                      TESTIMONIALS.aurelia,
-                      TESTIMONIALS.erik,
-                      TESTIMONIALS.pascal,
-                      TESTIMONIALS.sonja,
-                      TESTIMONIALS.tina
+                      testimonials.aurelia,
+                      testimonials.erik,
+                      testimonials.pascal,
+                      testimonials.sonja,
+                      testimonials.tina
                     ]}
                   />
                 </Item>

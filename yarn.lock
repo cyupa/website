@@ -53,9 +53,9 @@
     tslib "^1.9.0"
     yargs "^11.0.0"
 
-"@heydovetail/tslint-config@^1.1.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@heydovetail/tslint-config/-/tslint-config-1.2.0.tgz#532be4b812eecf4af1a722753b701898cf09003c"
+"@heydovetail/tslint-config@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@heydovetail/tslint-config/-/tslint-config-2.1.0.tgz#0a30ed245de1d811ac9ac42ed060f3c7f8c13d1a"
   dependencies:
     tslint-microsoft-contrib "^5.0.2"
 

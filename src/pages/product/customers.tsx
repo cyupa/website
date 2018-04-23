@@ -1,29 +1,14 @@
-import LogoArm from "@heydovetail/website/components/icons/customers/LogoArm";
-import LogoAtlassian from "@heydovetail/website/components/icons/customers/LogoAtlassian";
-import LogoCsiro from "@heydovetail/website/components/icons/customers/LogoCsiro";
-import LogoDeloitte from "@heydovetail/website/components/icons/customers/LogoDeloitte";
-import LogoElsevier from "@heydovetail/website/components/icons/customers/LogoElsevier";
-import LogoEnigma from "@heydovetail/website/components/icons/customers/LogoEnigma";
-import LogoFreshworks from "@heydovetail/website/components/icons/customers/LogoFreshworks";
-import LogoFtw from "@heydovetail/website/components/icons/customers/LogoFtw";
-import LogoIbm from "@heydovetail/website/components/icons/customers/LogoIbm";
-import LogoIdeo from "@heydovetail/website/components/icons/customers/LogoIdeo";
-import LogoMonotype from "@heydovetail/website/components/icons/customers/LogoMonotype";
-import LogoNike from "@heydovetail/website/components/icons/customers/LogoNike";
-import LogoNubank from "@heydovetail/website/components/icons/customers/LogoNubank";
-import LogoRbs from "@heydovetail/website/components/icons/customers/LogoRbs";
-import LogoUniqa from "@heydovetail/website/components/icons/customers/LogoUniqa";
-import LogoWestpac from "@heydovetail/website/components/icons/customers/LogoWestpac";
+import * as customers from "@heydovetail/website/components/icons/customers";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { Testimonials } from "@heydovetail/website/components/site/Testimonials";
-import { COLORS, HALF_GAP, PADDING, TESTIMONIALS, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
+import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH, testimonials } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
+import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
 import * as React from "react";
 import { Helmet } from "react-helmet";
 
@@ -46,58 +31,27 @@ export default class extends React.PureComponent {
           />
         </Container>
         <LightContainer backgroundColor={COLORS.teal} maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
-          <div style={{ color: COLORS.white }}>
-            <FlexWrap gap={64} justifyContent="center">
-              <Item>
-                <LogoArm />
-              </Item>
-              <Item>
-                <LogoAtlassian />
-              </Item>
-              <Item>
-                <LogoCsiro />
-              </Item>
-              <Item>
-                <LogoDeloitte />
-              </Item>
-              <Item>
-                <LogoElsevier />
-              </Item>
-              <Item>
-                <LogoEnigma />
-              </Item>
-              <Item>
-                <LogoFreshworks />
-              </Item>
-              <Item>
-                <LogoFtw />
-              </Item>
-              <Item>
-                <LogoIdeo />
-              </Item>
-              <Item>
-                <LogoIbm />
-              </Item>
-              <Item>
-                <LogoMonotype />
-              </Item>
-              <Item>
-                <LogoNike />
-              </Item>
-              <Item>
-                <LogoNubank />
-              </Item>
-              <Item>
-                <LogoRbs />
-              </Item>
-              <Item>
-                <LogoUniqa />
-              </Item>
-              <Item>
-                <LogoWestpac />
-              </Item>
-            </FlexWrap>
-          </div>
+          <CustomerLogos
+            color={COLORS.white}
+            customers={[
+              customers.arm,
+              customers.atlassian,
+              customers.csiro,
+              customers.deloitte,
+              customers.elsevier,
+              customers.enigma,
+              customers.freshworks,
+              customers.ftw,
+              customers.ibm,
+              customers.ideo,
+              customers.monotype,
+              customers.nike,
+              customers.nubank,
+              customers.rbs,
+              customers.uniqa,
+              customers.westpac
+            ]}
+          />
         </LightContainer>
         <Container maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
           <Flex gap={HALF_GAP} layout="column">
@@ -111,16 +65,16 @@ export default class extends React.PureComponent {
             <Item>
               <Testimonials
                 testimonials={[
-                  TESTIMONIALS.abhilash,
-                  TESTIMONIALS.aurelia,
-                  TESTIMONIALS.basheera,
-                  TESTIMONIALS.benjamin,
-                  TESTIMONIALS.erik,
-                  TESTIMONIALS.michael,
-                  TESTIMONIALS.pascal,
-                  TESTIMONIALS.sarah,
-                  TESTIMONIALS.sonja,
-                  TESTIMONIALS.tina
+                  testimonials.abhilash,
+                  testimonials.aurelia,
+                  testimonials.basheera,
+                  testimonials.benjamin,
+                  testimonials.erik,
+                  testimonials.michael,
+                  testimonials.pascal,
+                  testimonials.sarah,
+                  testimonials.sonja,
+                  testimonials.tina
                 ]}
               />
             </Item>

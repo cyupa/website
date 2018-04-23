@@ -1,3 +1,4 @@
+import * as hero from "!file-loader!./hero.png";
 import IllustrationAnnotationsFeedback from "@heydovetail/website/components/illustrations/IllustrationAnnotationsFeedback";
 import IllustrationBoard from "@heydovetail/website/components/illustrations/IllustrationBoard";
 import IllustrationProjectsFeedback from "@heydovetail/website/components/illustrations/IllustrationProjectsFeedback";
@@ -16,7 +17,7 @@ import { LightContainer } from "@heydovetail/website/components/site/LightContai
 import Wave from "@heydovetail/website/components/site/Wave/Wave";
 import { ColorWheel } from "@heydovetail/website/components/util/ColorWheel";
 import IllustrationFormColor from "@heydovetail/website/components/util/ColorWheel/IllustrationFormColor";
-import { COLORS, HALF_GAP, PADDING, TESTIMONIALS, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
+import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH, testimonials } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { Integrations } from "@heydovetail/website/sections/Integrations";
 import { Security } from "@heydovetail/website/sections/Security";
@@ -31,9 +32,16 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>Feedback management – Dovetail</title>
-          <meta name="description" content="Keep all of your customer feedback in one place." />
-          <meta property="og:description" content="Keep all of your customer feedback in one place." />
           <meta property="og:title" content="Feedback management – Dovetail" />
+          <meta property="og:image" content={hero} />
+          <meta
+            property="og:description"
+            content="Dovetail helps you keep all of your customer feedback in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+          />
+          <meta
+            name="description"
+            content="Dovetail helps you keep all of your customer feedback in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+          />
         </Helmet>
         <Flex gap={VERTICAL_GAP} layout="column">
           <Item>
@@ -226,7 +234,7 @@ export default class extends React.PureComponent {
             <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
               <Flex gap={VERTICAL_GAP} layout="column">
                 <Item>
-                  <SocialProof testimonials={[TESTIMONIALS.abhilash, TESTIMONIALS.benjamin, TESTIMONIALS.erik]} />
+                  <SocialProof testimonials={[testimonials.abhilash, testimonials.benjamin, testimonials.erik]} />
                 </Item>
                 <Item>
                   <UseCases showTitle />

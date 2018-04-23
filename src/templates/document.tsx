@@ -22,6 +22,12 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
   const { markdownRemark } = data;
   const { excerpt, frontmatter, html } = markdownRemark!;
 
+  const schema = {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    headline: frontmatter!.title
+  };
+
   return (
     <>
       <Helmet>
@@ -30,6 +36,7 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
         <meta property="og:description" content={excerpt !== null ? excerpt : undefined} />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={frontmatter!.title!} />
+        <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
       <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
         <div style={{ maxWidth: WIDTH * 0.75 }}>

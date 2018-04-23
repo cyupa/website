@@ -1,3 +1,4 @@
+import * as hero from "!file-loader!./hero.png";
 import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
 import IllustrationBoardLarge from "@heydovetail/website/components/illustrations/IllustrationBoardLarge";
 import IllustrationFiles from "@heydovetail/website/components/illustrations/IllustrationFiles";
@@ -15,7 +16,7 @@ import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import Wave from "@heydovetail/website/components/site/Wave/Wave";
-import { HALF_GAP, PADDING, TESTIMONIALS, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH, testimonials } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { Integrations } from "@heydovetail/website/sections/Integrations";
 import { Security } from "@heydovetail/website/sections/Security";
@@ -30,9 +31,16 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>User research repository – Dovetail</title>
-          <meta name="description" content="Keep all of your user research in one place." />
-          <meta property="og:description" content="Keep all of your user research in one place." />
           <meta property="og:title" content="User research repository – Dovetail" />
+          <meta property="og:image" content={hero} />
+          <meta
+            property="og:description"
+            content="Dovetail keeps all of your user research data in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+          />
+          <meta
+            name="description"
+            content="Dovetail keeps all of your user research data in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+          />
         </Helmet>
         <Flex gap={VERTICAL_GAP} layout="column">
           <Item>
@@ -174,7 +182,7 @@ export default class extends React.PureComponent {
               <Flex gap={VERTICAL_GAP} layout="column">
                 <Item>
                   <SocialProof
-                    testimonials={[TESTIMONIALS.basheera, TESTIMONIALS.benjamin, TESTIMONIALS.michael, TESTIMONIALS.sarah]}
+                    testimonials={[testimonials.basheera, testimonials.benjamin, testimonials.michael, testimonials.sarah]}
                   />
                 </Item>
                 <Item>
