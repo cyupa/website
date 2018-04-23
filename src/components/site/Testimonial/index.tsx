@@ -1,6 +1,7 @@
 import { Card } from "@heydovetail/website/components/layout/Card";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
+import { Avatar } from "@heydovetail/website/components/site/Avatar";
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
@@ -27,7 +28,7 @@ export class Testimonial extends React.PureComponent<TestimonialProps> {
           <Item>
             <Flex alignItems="center" gap={16}>
               <Item style={{ flexGrow: 0, lineHeight: 0 }}>
-                <Photo height={32} src={image} width={32} />
+                <Avatar size={32} url={image} />
               </Item>
               <Item>
                 <NameAndRole>
@@ -44,12 +45,6 @@ export class Testimonial extends React.PureComponent<TestimonialProps> {
     );
   }
 }
-
-const Photo = styled("img", {
-  borderRadius: "100%",
-  height: "32px",
-  width: "32px"
-});
 
 const NameAndRole = styled("p", {
   fontSize: "12px",
