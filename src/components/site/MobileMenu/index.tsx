@@ -3,6 +3,7 @@ import { ButtonLink } from "@heydovetail/website/components/forms/ButtonLink";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
 import { Item } from "@heydovetail/website/components/layout/Item";
+import { GoToApp } from "@heydovetail/website/components/site/Header/goToApp";
 import { LinkList } from "@heydovetail/website/components/site/LinkList";
 import { COLORS } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
@@ -10,30 +11,35 @@ import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
 
 interface Props {
+  loggedIn: boolean;
   onClose: () => void;
 }
 
 export class MobileMenu extends React.PureComponent<Props> {
   public render() {
-    const { onClose } = this.props;
+    const { loggedIn, onClose } = this.props;
 
     return (
       <Dropdown>
         <Wrapper>
           <Flex gap={32} layout="column">
             <Item>
-              <Flow>
-                <Item>
-                  <ButtonLink color={COLORS.purple} height={32} location={locations.signUp()} onClick={onClose}>
-                    Try now
-                  </ButtonLink>
-                </Item>
-                <Item>
-                  <ButtonLink height={32} location={locations.logIn()} onClick={onClose}>
-                    Log in
-                  </ButtonLink>
-                </Item>
-              </Flow>
+              {loggedIn ? (
+                <GoToApp />
+              ) : (
+                <Flow>
+                  <Item>
+                    <ButtonLink color={COLORS.purple} height={32} location={locations.signUp()} onClick={onClose}>
+                      Try now
+                    </ButtonLink>
+                  </Item>
+                  <Item>
+                    <ButtonLink height={32} location={locations.logIn()} onClick={onClose}>
+                      Log in
+                    </ButtonLink>
+                  </Item>
+                </Flow>
+              )}
             </Item>
             <Item>
               <LinkList
