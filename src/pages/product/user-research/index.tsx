@@ -31,7 +31,7 @@ export default class extends React.PureComponent {
         <Helmet>
           <title>Collaborative user research – Dovetail</title>
           <meta property="og:title" content="Collaborative user research – Dovetail" />
-          <meta property="og:image" content={hero} />
+          <meta property="og:image" content={process.env.GATSBY_BASE_URL + hero} />
           <meta
             property="og:description"
             content="Get everyone involved in user research, and make it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."

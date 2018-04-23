@@ -32,7 +32,7 @@ export default class extends React.PureComponent {
         <Helmet>
           <title>User research repository – Dovetail</title>
           <meta property="og:title" content="User research repository – Dovetail" />
-          <meta property="og:image" content={hero} />
+          <meta property="og:image" content={process.env.GATSBY_BASE_URL + hero} />
           <meta
             property="og:description"
             content="Dovetail keeps all of your user research data in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."

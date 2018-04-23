@@ -26,7 +26,7 @@ export default class extends React.PureComponent {
     return (
       <>
         <Helmet>
-          <meta property="og:image" content={hero} />
+          <meta property="og:image" content={process.env.GATSBY_BASE_URL + hero} />
         </Helmet>
         <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
           <Flex gap={VERTICAL_GAP} layout="column">

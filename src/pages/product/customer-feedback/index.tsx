@@ -33,7 +33,7 @@ export default class extends React.PureComponent {
         <Helmet>
           <title>Feedback management – Dovetail</title>
           <meta property="og:title" content="Feedback management – Dovetail" />
-          <meta property="og:image" content={hero} />
+          <meta property="og:image" content={process.env.GATSBY_BASE_URL + hero} />
           <meta
             property="og:description"
             content="Dovetail helps you keep all of your customer feedback in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
