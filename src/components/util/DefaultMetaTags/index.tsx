@@ -1,3 +1,4 @@
+import * as favicon from "!file-loader!../../../favicon.png";
 import * as thumbnail from "!file-loader!./thumbnail.png";
 import * as React from "react";
 import { Helmet } from "react-helmet";
@@ -11,6 +12,7 @@ export class DefaultMetaTags extends React.PureComponent {
     return (
       <Helmet>
         <title>Dovetail — Customer feedback &amp; research platform for teams</title>
+        <link rel="shortcut icon" href={favicon} type="image/x-icon" />
         <meta
           name="description"
           content="Dovetail combines customer feedback and user research in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."

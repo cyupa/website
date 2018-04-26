@@ -12,24 +12,6 @@ module.exports = {
     "gatsby-plugin-typescript",
     "gatsby-plugin-typestyle",
     {
-      resolve: "gatsby-plugin-favicon",
-      options: {
-        logo: "./src/favicon.png",
-        injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: false,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          twitter: false,
-          yandex: false,
-          windows: false
-        }
-      }
-    },
-    {
       resolve: "gatsby-source-filesystem",
       options: {
         path: "./src/pages",
@@ -82,6 +64,20 @@ module.exports = {
       resolve: "gatsby-plugin-canonical-urls",
       options: {
         siteUrl: "https://dovetailapp.com"
+      }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        background_color: "#512da8",
+        description:
+          "Dovetail combines customer feedback and user research in one place, making it easy to see patterns, discover insights, and decide what to do next.",
+        display: "standalone",
+        icon: "./src/icon.png",
+        name: "Dovetail",
+        short_name: "Dovetail",
+        start_url: "/projects",
+        theme_color: "#512da8"
       }
     }
   ]

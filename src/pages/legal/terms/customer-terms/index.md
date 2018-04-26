@@ -19,7 +19,7 @@ These Customer Terms form a binding **“Contract”** between the Customer and 
 
 If you personally create a team (a digital space where a group of users may access the Services), purchase team subscription(s), or use or allow use of that team after being notified of a change to these Customer Terms, you acknowledge your understanding of the Contract and agree to the Contract on behalf of the Customer.
 
-## Customers grant access to Authorized Users
+## Customers give access to Authorized Users
 
 Individuals authorized by the Customer to access the Services (an **“Authorized User”**) may submit content to the Services, such as textual data or files (**“Customer Data”**). The Customer will:
 
@@ -161,4 +161,4 @@ The Contract, including these Customer Terms and all referenced pages constitute
 
 ---
 
-For questions and notices, please contact us at Dovetail Research Pty Ltd. ABN: 84 615 270 025, Email: [legal@dovetailapp.com](mailto:legal@dovetailapp.com).
+For questions and notices, please email [legal@dovetailapp.com](mailto:legal@dovetailapp.com).

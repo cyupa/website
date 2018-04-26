@@ -49,9 +49,9 @@ export class Footer extends React.PureComponent<Props> {
               <LinkList
                 heading="Legal"
                 links={[
-                  { label: "Terms and policies", location: locations.legal() },
+                  { label: "All terms and policies", location: locations.legal() },
                   { label: "Customer Terms", location: locations.termsCustomer() },
-                  { label: "Privacy Policy", location: locations.privacy() },
+                  { label: "User Privacy Policy", location: locations.privacy() },
                   { label: "User Terms", location: locations.termsUser() }
                 ]}
               />
