@@ -1,8 +1,8 @@
 ---
-date: "2018-02-01"
+date: "2018-04-26"
 path: "/legal/gdpr"
 title: "GDPR Notice"
-weight: 3
+weight: 4
 ---
 
 ## Introduction
@@ -17,18 +17,20 @@ Dovetail has made information security and data privacy foundational principles 
 
 Dovetail already complies with much of the GDPR, however there are several areas where we need to make improvements to be fully compliant by May 25, 2018. These include:
 
-* Updating our [privacy policy](/legal/privacy) to include more information about what data we collect.
-* Listing [third parties](/legal/data-subprocessors) we use to process data, and where they are located.
-* Improving our [data export features](/help/export) for better data portability.
-* Streamlining our deletion process to make it easier for users to delete their account.
-* Getting explict consent of our user terms of service and privacy policy.
-* Storing the timestamp when consent was explicitly given.
+* Splitting our privacy policy into two separate policies concerning logged in users and anonymized website visitors separately, along with adding more information about what personal information we collect and how we use it.
+* Listing the third parties we use to process personal information, what we use them for, and where they are located.
+* Implementing explict consent for our User Terms of Service and User Privacy Policy, including storing the timestamp when consent was explicitly given.
+* Improving our data export features for better data portability.
+* Streamlining our deletion process to make it easier for users to delete their account and remove their personal information.
 
 We will be releasing these improvements continually over the weeks leading up to May 25, 2018, and we expect to be fully compliant with the GDPR by then.
 
 ## Resources
 
-* [Our Privacy Policy](/legal/privacy)
-* [Our User Terms of Service](/legal/user-terms)
-* [Our security page](/product/security)
+The following resources might prove useful:
+
+* [Our User Privacy Policy](/legal/privacy)
+* [Our Website Visitor Privacy Policy](/legal/website-privacy)
+* [Our list of Data Subprocessors](/legal/data-subprocessors)
 * [Full text of the GDPR](https://gdpr-info.eu/)
+* [What is personal data?](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-personal-data_en)

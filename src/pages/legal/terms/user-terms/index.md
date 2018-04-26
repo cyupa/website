@@ -85,4 +85,4 @@ The User Terms, including any terms incorporated by reference into the User Term
 
 ---
 
-For questions and notices, please contact us at Dovetail Research Pty Ltd. ABN: 84 615 270 025, Email: [legal@dovetailapp.com](mailto:legal@dovetailapp.com).
+For questions and notices, please email [legal@dovetailapp.com](mailto:legal@dovetailapp.com).

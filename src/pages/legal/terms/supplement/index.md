@@ -23,4 +23,4 @@ You agree that if the Customer is a Patent Assertion Entity or is acting on beha
 
 ---
 
-For questions and notices, please contact us at Dovetail Research Pty Ltd. ABN: 84 615 270 025, Email: [legal@dovetailapp.com](mailto:legal@dovetailapp.com).
+For questions and notices, please email [legal@dovetailapp.com](mailto:legal@dovetailapp.com).
