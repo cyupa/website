@@ -15,8 +15,8 @@ export default class extends React.PureComponent {
     return (
       <>
         <Helmet>
-          <title>All features – Dovetail</title>
-          <meta property="og:title" content="All features – Dovetail" />
+          <title>Features – Dovetail</title>
+          <meta property="og:title" content="Features – Dovetail" />
           <meta
             name="description"
             content="Features designed to help you organize and analyze customer feedback and user research data."
@@ -34,7 +34,7 @@ export default class extends React.PureComponent {
             title="All features"
           />
         </Container>
-        <LightContainer backgroundColor={COLORS.p04} maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
+        <LightContainer backgroundColor={COLORS.p04} maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
           <Features
             features={[
               {
