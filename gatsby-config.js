@@ -69,7 +69,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        background_color: "#ffffff",
+        background_color: "#512da8",
         description:
           "Dovetail combines customer feedback and user research in one place, making it easy to see patterns, discover insights, and decide what to do next.",
         display: "standalone",
@@ -77,7 +77,7 @@ module.exports = {
         name: "Dovetail",
         short_name: "Dovetail",
         start_url: "/projects",
-        theme_color: "#ffffff"
+        theme_color: "#512da8"
       }
     }
   ]
