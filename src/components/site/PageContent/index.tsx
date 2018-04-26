@@ -13,8 +13,6 @@ export class PageContent extends React.PureComponent<Props> {
 }
 
 const Content = styled("div", {
-  overflow: "hidden",
-
   $nest: {
     p: {
       margin: "16px 0"
