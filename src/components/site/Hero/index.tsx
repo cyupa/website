@@ -11,7 +11,8 @@ import { media } from "typestyle/lib";
 
 interface Props {
   children?: React.ReactNode;
-  image: React.ReactNode;
+  // tslint:disable-next-line:no-any
+  image: React.ReactElement<any> | string;
   showSignUp?: boolean;
   text?: string;
   title: string;
@@ -55,7 +56,7 @@ export class Hero extends React.PureComponent<Props> {
         </Item>
         <HeroImage>
           <Item>
-            <Image>{image}</Image>
+            <Image>{typeof image === "string" ? <img src={image} width="100%" /> : image}</Image>
           </Item>
         </HeroImage>
       </Flex>

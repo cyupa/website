@@ -11,7 +11,7 @@ export class DefaultMetaTags extends React.PureComponent {
   public render() {
     return (
       <Helmet>
-        <title>Dovetail — Customer feedback &amp; research platform for teams</title>
+        <title>Dovetail – Customer feedback &amp; research platform for teams</title>
         <link rel="shortcut icon" href={favicon} type="image/x-icon" />
         <meta
           name="description"
