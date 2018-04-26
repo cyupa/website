@@ -1,10 +1,10 @@
 import * as hero from "!file-loader!./hero.png";
 import * as customers from "@heydovetail/website/components/icons/customers";
-import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
-import IllustrationBoard from "@heydovetail/website/components/illustrations/IllustrationBoard";
-import IllustrationHero from "@heydovetail/website/components/illustrations/IllustrationHero";
-import IllustrationLineChart from "@heydovetail/website/components/illustrations/IllustrationLineChart";
-import IllustrationTeam from "@heydovetail/website/components/illustrations/IllustrationTeam";
+import * as illustrationBarChart from "@heydovetail/website/components/illustrations/__svgs__/bar-chart.svg";
+import * as illustrationBoard from "@heydovetail/website/components/illustrations/__svgs__/board.svg";
+import * as illustrationHero from "@heydovetail/website/components/illustrations/__svgs__/hero.svg";
+import * as illustrationLineChart from "@heydovetail/website/components/illustrations/__svgs__/line-chart.svg";
+import * as illustrationTeam from "@heydovetail/website/components/illustrations/__svgs__/team.svg";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
@@ -35,7 +35,7 @@ export default class extends React.PureComponent {
               <Flex gap={HALF_GAP} layout="column">
                 <Item>
                   <Hero
-                    image={<IllustrationHero />}
+                    image={illustrationHero}
                     text="Dovetail combines customer feedback and user research in one place, making it easy to see patterns, discover insights, and decide what to do next."
                     title="Understand your customers."
                   />
@@ -51,7 +51,7 @@ export default class extends React.PureComponent {
           <Flex gap={VERTICAL_GAP} layout="column">
             <Item>
               <FeatureHero
-                image={<IllustrationLineChart size="100%" />}
+                image={illustrationLineChart}
                 imagePosition="right"
                 location={locations.feedbackManagement()}
                 linkText="Feedback management"
@@ -61,7 +61,7 @@ export default class extends React.PureComponent {
             </Item>
             <Item>
               <FeatureHero
-                image={<IllustrationBoard size="100%" />}
+                image={illustrationBoard}
                 imagePosition="left"
                 location={locations.researchRepository()}
                 linkText="User research repository"
@@ -71,7 +71,7 @@ export default class extends React.PureComponent {
             </Item>
             <Item>
               <FeatureHero
-                image={<IllustrationBarChart size="100%" />}
+                image={illustrationBarChart}
                 imagePosition="right"
                 location={locations.qualitativeDataAnalysis()}
                 linkText="Qualitative data analysis"
@@ -81,7 +81,7 @@ export default class extends React.PureComponent {
             </Item>
             <Item>
               <FeatureHero
-                image={<IllustrationTeam size="100%" />}
+                image={illustrationTeam}
                 imagePosition="left"
                 location={locations.userResearch()}
                 linkText="Collaborative user research"

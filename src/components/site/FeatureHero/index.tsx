@@ -12,7 +12,8 @@ const BREAKPOINT = BREAKPOINT_TABLET;
 const GAP = "72px";
 
 interface Props {
-  image: React.ReactNode;
+  // tslint:disable-next-line:no-any
+  image: React.ReactElement<any> | string;
   imagePosition?: "left" | "right";
   launched?: boolean;
   location?: LocationDescriptor;
@@ -52,7 +53,7 @@ export class FeatureHero extends React.PureComponent<Props> {
             </Item>
           </Flex>
         </Text>
-        <Image>{image}</Image>
+        <Image>{typeof image === "string" ? <img src={image} width="100%" /> : image}</Image>
       </Wrapper>
     );
   }
