@@ -1,6 +1,6 @@
 ---
 path: "/help/spreadsheet"
-date: "2018-04-11"
+date: "2018-04-24"
 title: "Upload data via a spreadsheet"
 weight: 1
 ---
@@ -9,11 +9,15 @@ Create notes, tags, or insights in bulk from a CSV file. This is handy for impor
 
 **Note:** CSV import is primarily designed for creating lots of small—to—medium notes. While you can import large content like interview transcripts, you’ll need to take greater care in preparing your CSV file first.
 
+## Before you begin
+
+Please read [our help article](/help/convert-spreadsheet) on the difference between structured data and unstructured data, and what that means when trying to import a spreadsheet into Dovetail.
+
 ## Preparing your file for import
 
 You’ll need a sheet from [Microsoft Excel](https://support.office.com/en-us/article/Import-or-export-text-txt-or-csv-files-5250ac4c-663c-47ce-937b-339e391393ba), [Google Sheets](<(https://support.google.com/docs/answer/49114)>), or [Numbers](https://support.apple.com/en-au/HT205391) saved as a UTF-8 encoded Comma Separated Value (CSV) file.
 
-The first row needs to be the title of each column. For example, if you’re importing customer feedback, the first row should contain column headers with values like _Name_, _Email_, _Feedback_ and so on.
+The first row needs to be the title of each column. For example, if you’re importing customer feedback, the first row should contain values like ‘Name’ and ‘Feedback’.
 
 A few things to note:
 
