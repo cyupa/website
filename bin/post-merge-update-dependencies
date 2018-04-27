@@ -12,4 +12,4 @@ check_run() {
   fi
 }
 
-check_run yarn-lock.json "yarn"
+check_run yarn.lock "yarn"

@@ -87,13 +87,17 @@ export async function createPages({ boundActionCreators, graphql }) {
 }
 
 export function modifyWebpackConfig({ config, env }) {
-  config.merge({
-    resolve: {
-      alias: {
-        "@heydovetail/website": path.resolve(__dirname, "./src")
+  config
+    .merge({
+      resolve: {
+        alias: {
+          "@heydovetail/website": path.resolve(__dirname, "./src")
+        }
       }
-    }
-  });
+    })
+    .loader("url-loader", {
+      query: { limit: 1 }
+    });
 
   return config;
 }
