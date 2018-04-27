@@ -57,6 +57,7 @@ jobs:
       - <<: *deploy
     environment:
       GATSBY_BASE_URL: https://dovetailappstg.com
+      PREVENT_CRAWLING: true
       SENTRY_ENVIRONMENT: staging
 
   build_and_deploy_prod:
@@ -81,6 +82,7 @@ jobs:
       - <<: *deploy
     environment:
       GATSBY_BASE_URL: https://dovetailapp.com
+      PREVENT_CRAWLING: false
       SENTRY_ENVIRONMENT: production
 
   build_and_test:
