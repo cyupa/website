@@ -25,20 +25,18 @@ Throughout this User Privacy Policy:
 
 **Customer Data:** means any content added by a User to the Services.
 
-## What we collect from you
+## What information you provide to us
 
-As a User of the Services, we collect:
+As a User of the Services, you provide information to us. This includes:
 
-* your name;
-* your email address;
-* your profile photo;
+* profile information like your name, email address, and profile photo;
+* content you provide through the Services, for instance projects, notes, tags, files;
 * when you subscribe to our paid services, your billing details including your address;
 * details of services we have provided to you or that you have enquired about;
+* your responses to questionnaires, surveys, or requests for feedback; and
 * additional Personal Information that you provide to us directly or indirectly through your use of our Services, associated social media platforms or accounts from which you permit us to collect information.
 
-In addition, we may contact you to voluntarily respond to questionnaires, surveys, or for feedback on our product. Providing this information is optional to you.
-
-## What we log about you
+## What information we log about you
 
 We log information about your access and use of our Services. This includes:
 
@@ -51,24 +49,44 @@ We log information about your access and use of our Services. This includes:
 * the type of device you are using; and
 * the type of operating system you are using.
 
-## How we use your Personal Information
+## How we use information we collect
 
-We collect and use your Personal Information:
+We collect and use your information:
 
 * to enable you to access and use our Services;
 * to enable you to create Projects via the Services;
 * to enable you to add Customer Data to Projects via the Services;
 * to process your payments where you have signed up to a paid service;
 * to contact and communicate with you;
-* to improve our Services;
+* to improve our Services through research and development;
 * to prevent and address technical problems;
 * to provide you with support services if requested;
 * for internal record keeping; and
 * for advertising and marketing, including to send you information about our products and services.
 
-## What we disclose to third parties
+## Legal bases for processing (for EEA users)
 
-### Third party services
+If you are an individual in the European Economic Area (EEA), we collect and process information about you only where we have legal bases for doing so under applicable EU laws. The legal bases depend on the Services you use and how you use them. This means we collect and use your information only where:
+
+* We need it to provide you the Services, including to operate the Services, provide customer support and personalized features and to protect the safety and security of the Services;
+* It satisfies a legitimate interest (which is not overridden by your data protection interests), such as for research and development, to market and promote the Services and to protect our legal rights and interests;
+* You give us consent to do so for a specific purpose; or
+* We need to process your data to comply with a legal obligation.
+
+If you have consented to our use of information about you for a specific purpose, you have the right to change your mind at any time, but this will not affect any processing that has already taken place. Where we are using your information because we or a third party (e.g. your employer) have a legitimate interest to do so, you have the right to object to that use though, in some cases, this may mean no longer using the Services.
+
+## How we share information we collect
+
+Dovetail is collaborative cloud product. This means sharing information through the Services and with certain third parties. We share information we collect about you in the ways discussed below, including in connection with possible business transfers, but we are not in the business of selling information about you to advertisers or other third parties.
+
+### Sharing with other users
+
+Certain information will be shared with other members of your team. Your teammates are usually colleagues you work with day-to-day. The information shared with teammates includes:
+
+* profile information like your name, email address, and profile photo;
+* content you provide through the Services, for instance projects, notes, tags, files;
+
+### Sharing with third parties
 
 As part of providing our Services, we use third party services to store and process your Personal Information. This includes third parties that store data outside of Australia:
 

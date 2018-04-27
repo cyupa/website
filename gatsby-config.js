@@ -2,11 +2,12 @@
 module.exports = {
   siteMetadata: {
     siteName: "Dovetail",
-    siteUrl: "https://dovetailapp.com"
+    siteUrl: process.env.GATSBY_BASE_URL ? process.env.GATSBY_BASE_URL : "https://dovetailapp.com"
   },
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-react-next",
+    "gatsby-plugin-remove-trailing-slashes",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
     "gatsby-plugin-typescript",
@@ -80,6 +81,17 @@ module.exports = {
         start_url: "/projects",
         theme_color: "#512da8"
       }
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options:
+        process.env.PREVENT_CRAWLING === "true"
+          ? {
+              policy: [{ userAgent: "*", disallow: ["/"] }],
+              sitemap: null,
+              host: null
+            }
+          : { policy: [{ userAgent: "*" }] }
     }
   ]
 };

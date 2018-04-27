@@ -63,17 +63,20 @@ const Content = styled("div", {
       overflow: "hidden"
     },
     table: {
-      borderSpacing: "4px",
-      display: "block",
+      borderCollapse: "collapse",
+      display: "table",
       fontSize: "14px",
       textAlign: "left",
-      margin: "-4px",
       overflowX: "scroll",
+      tableLayout: "fixed",
       width: "100%"
     },
     "th, td": {
       lineHeight: "20px",
+      overflow: "hidden",
+      outline: `2px solid ${COLORS.white}`,
       padding: "8px 12px",
+      textOverflow: "ellipsis",
       verticalAlign: "top"
     },
     td: {
