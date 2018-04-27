@@ -7,6 +7,7 @@ import * as michael from "@heydovetail/website/avatars/michael.jpg";
 import * as pascal from "@heydovetail/website/avatars/pascal.jpg";
 import * as sarah from "@heydovetail/website/avatars/sarah.jpg";
 import * as sonja from "@heydovetail/website/avatars/sonja.jpg";
+import * as sophie from "@heydovetail/website/avatars/sophie.jpg";
 import * as tina from "@heydovetail/website/avatars/tina.jpg";
 import { TestimonialProps } from "@heydovetail/website/components/site/Testimonial";
 
@@ -220,6 +221,15 @@ export const testimonials: { [name: string]: TestimonialProps } = {
     name: "Sonja",
     quote:
       "I love that it’s made especially for researchers, and it has been researched — ha! — to suit their different styles of work. I love that it is continuously being improved thanks to the founders’ hard work. I love that you, Benjamin and Bradley, are so responsive, and you listen to and seek your customers’ feedback. In fact, what makes it the most special to me is that you've managed to turn your product into a community right from the start!",
+    role: "Researcher"
+  },
+  sophie: {
+    company: "Kickstand Design",
+    url: "http://www.kickstand.design",
+    image: sophie,
+    name: "Sophie",
+    quote:
+      "One of the biggest challenges I face is making the work I do transparent and keeping the wider business engaged in the research we are conducting. Dovetail has become an essential tool for me, in this regard, and has really transformed the way I work. Being able to record all raw notes as research is being conducted, and inviting people to get in there and be part of the process, makes the research we do accessible and keeps everyone involved.",
     role: "Researcher"
   },
   tina: {
