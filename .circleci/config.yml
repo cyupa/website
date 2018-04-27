@@ -28,7 +28,7 @@ aliases:
     run:
       name: Deploy
       command: |
-        aws s3 sync --acl public-read --sse public/ s3://${S3_BUCKET_NAME}
+        aws s3 sync --acl public-read public/ s3://${S3_BUCKET_NAME}
         aws configure set preview.cloudfront true
         aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRIBUTION_ID} --paths '/*'
 
