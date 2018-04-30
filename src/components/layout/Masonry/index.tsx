@@ -90,7 +90,7 @@ export class Masonry extends React.PureComponent<Props, State> {
         const { count: columnCount, gap, width: columnWidth } = spec;
         const columnHeights = zeroes(columnCount);
 
-        Array.from(this.container.children).forEach(element => {
+        Array.prototype.slice.call(this.container.children).forEach((element: HTMLElement) => {
           if (element instanceof HTMLElement && element.getAttribute("data-masonary-item") !== null) {
             // Index of the column that the item should be placed in.
             const columnTarget = columnHeights.indexOf(Math.min(...columnHeights));
