@@ -102,6 +102,7 @@
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-helmet": "^5.2.0",
+    "react-masonry-responsive": "^1.0.4",
     "react-resize-detector": "^1.1.0",
     "react-router-dom": "^4.2.2",
     "react-test-renderer": "^16.3.1",
