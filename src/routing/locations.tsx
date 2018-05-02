@@ -134,5 +134,6 @@ export const locations = {
   termsCustomer: () => internal("/legal/customer-terms"),
   termsUser: () => internal("/legal/user-terms"),
   twitter: () => external("//twitter.com/hidovetail", { openInNewTab: true }),
-  userResearch: () => internal("/product/user-research")
+  userResearch: () => internal("/product/user-research"),
+  websitePrivacy: () => internal("/legal/website-privacy")
 };

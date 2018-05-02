@@ -27,6 +27,7 @@ export class Footer extends React.PureComponent<Props> {
               <LinkList
                 heading="Use cases"
                 links={[
+                  { label: "All use cases", location: locations.home() },
                   { label: "Feedback management", location: locations.feedbackManagement() },
                   { label: "Research repository", location: locations.researchRepository() },
                   { label: "Qualitative data analysis", location: locations.qualitativeDataAnalysis() },
@@ -40,6 +41,7 @@ export class Footer extends React.PureComponent<Props> {
                 links={[
                   { label: "All features", location: locations.features() },
                   { label: "Guides", location: locations.guides() },
+                  { label: "Pricing", location: locations.pricing() },
                   { label: "Security", location: locations.security() },
                   { label: "Support", location: locations.help() }
                 ]}
@@ -51,8 +53,9 @@ export class Footer extends React.PureComponent<Props> {
                 links={[
                   { label: "All terms and policies", location: locations.legal() },
                   { label: "Customer Terms", location: locations.termsCustomer() },
+                  { label: "User Terms", location: locations.termsUser() },
                   { label: "User Privacy Policy", location: locations.privacy() },
-                  { label: "User Terms", location: locations.termsUser() }
+                  { label: "Visitor Privacy Policy", location: locations.websitePrivacy() }
                 ]}
               />
             </Item>
@@ -62,8 +65,9 @@ export class Footer extends React.PureComponent<Props> {
                 links={[
                   { label: "About us", location: locations.about() },
                   { label: "Customers", location: locations.customers() },
-                  { label: "Our blog", location: locations.blog() },
-                  { label: "Slack", location: locations.slack() }
+                  { label: "Blog", location: locations.blog() },
+                  { label: "Slack", location: locations.slack() },
+                  { label: "Twitter", location: locations.twitter() }
                 ]}
               />
             </Item>
