@@ -5,6 +5,7 @@ import { ErrorBoundary } from "@heydovetail/website/components/util/ErrorBoundar
 import { COLORS } from "@heydovetail/website/constants";
 import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
+import "typeface-rubik";
 import "../globalstyles";
 
 interface Props {
