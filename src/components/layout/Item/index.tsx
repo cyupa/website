@@ -6,7 +6,7 @@ export class Item extends React.Component<JSX.IntrinsicElements["span"]> {
 
   public render() {
     const { className: innerClassName, ...rest } = this.props;
-    return <span className={`${Item.class} ${className} ${innerClassName}`} {...rest} />;
+    return <span className={`${Item.class} ${className} ${innerClassName !== undefined ? innerClassName : ""}`} {...rest} />;
   }
 }
 
