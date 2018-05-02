@@ -19,8 +19,8 @@ export class ActionCard extends React.PureComponent<Props> {
     const { buttonColor = COLORS.purple, buttonText, buttonLocation, text, title } = this.props;
 
     return (
-      <Card padding={32}>
-        <Flex gap={16} layout="column">
+      <Card styled={{ padding: 32 }}>
+        <Flex styled={{ gap: 16, layout: "column" }}>
           <Item>
             <h4>{title}</h4>
           </Item>

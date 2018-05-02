@@ -17,11 +17,11 @@ export class Button extends React.Component<Props> {
     const inner = { id: id, onClick: onClick, style: buttonBaseStyles, tabIndex: disabled ? -1 : 0, type: "button" };
 
     return color !== undefined ? (
-      <ColoredButtonStyle color={color} disabled={disabled} inner={inner} fullWidth={fullWidth} height={height}>
+      <ColoredButtonStyle styled={{ color, disabled, fullWidth, height }} {...inner}>
         {children}
       </ColoredButtonStyle>
     ) : (
-      <DefaultButtonStyle disabled={disabled} inner={inner} fullWidth={fullWidth} height={height}>
+      <DefaultButtonStyle styled={{ disabled, fullWidth, height }} {...inner}>
         {children}
       </DefaultButtonStyle>
     );

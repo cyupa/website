@@ -20,13 +20,13 @@ export class PageGroup extends React.PureComponent<Props> {
     const { pages, title } = this.props;
 
     return (
-      <Card padding={32}>
-        <Flex gap={16} layout="column">
+      <Card styled={{ padding: 32 }}>
+        <Flex styled={{ gap: 16, layout: "column" }}>
           <Item>
             <h4>{title}</h4>
           </Item>
           <Item>
-            <Flex gap={12} layout="column">
+            <Flex styled={{ gap: 12, layout: "column" }}>
               {pages.map((page, i) => (
                 <Item key={i}>
                   <LocationLink location={internal(page.path)} presentation="text" style={{ lineHeight: "28px" }}>

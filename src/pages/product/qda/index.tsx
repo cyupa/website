@@ -44,10 +44,10 @@ export default class extends React.PureComponent {
             content="Dovetail helps you easily analyze qualitative data in the cloud, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
           />
         </Helmet>
-        <Flex gap={VERTICAL_GAP} layout="column">
+        <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
           <Item>
             <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-              <Flex gap={VERTICAL_GAP} layout="column">
+              <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
                 <Item>
                   <Hero image={<IllustrationAnalysis />} title="Easily analyze qualitative data in the cloud." />
                 </Item>
@@ -64,7 +64,7 @@ export default class extends React.PureComponent {
           </Item>
           <Item>
             <LightContainer backgroundColor={COLORS.p04} maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
-              <Flex gap={VERTICAL_GAP} layout="column">
+              <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
                 <Item>
                   <FeatureHeroLarge
                     image={<IllustrationAnnotationsResearch size="100%" />}
@@ -77,7 +77,7 @@ export default class extends React.PureComponent {
           </Item>
           <Item>
             <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-              <Flex gap={VERTICAL_GAP} layout="column">
+              <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
                 <Item>
                   <FeatureHero
                     image={<IllustrationAnnotationEdit size="100%" />}
@@ -200,7 +200,7 @@ export default class extends React.PureComponent {
           </Item>
           <Item>
             <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-              <Flex gap={VERTICAL_GAP} layout="column">
+              <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
                 <Item>
                   <SocialProof
                     testimonials={[

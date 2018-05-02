@@ -44,10 +44,10 @@ export default class extends React.PureComponent {
             content="Dovetail helps you keep all of your customer feedback in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
           />
         </Helmet>
-        <Flex gap={VERTICAL_GAP} layout="column">
+        <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
           <Item>
             <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-              <Flex gap={VERTICAL_GAP} layout="column">
+              <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
                 <Item>
                   <Hero image={<IllustrationSpace />} title="Keep all of your customer feedback in one place." />
                 </Item>
@@ -95,7 +95,7 @@ export default class extends React.PureComponent {
           <Item>
             <Wave size="100%" />
             <DarkContainer maxWidth={WIDTH} overflowBottom padding={{ x: PADDING, y: HALF_GAP }}>
-              <Flex gap={VERTICAL_GAP} layout="column">
+              <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
                 <Item>
                   <FeatureHero
                     image={<IllustrationSentimentText size="100%" />}
@@ -142,7 +142,7 @@ export default class extends React.PureComponent {
           </Item>
           <Item>
             <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-              <Flex gap={VERTICAL_GAP} layout="column">
+              <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
                 <Item>
                   <Features
                     features={[
@@ -233,7 +233,7 @@ export default class extends React.PureComponent {
           </Item>
           <Item>
             <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-              <Flex gap={VERTICAL_GAP} layout="column">
+              <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
                 <Item>
                   <SocialProof testimonials={[testimonials.abhilash, testimonials.benjamin, testimonials.erik]} />
                 </Item>

@@ -14,7 +14,7 @@ export class ActionTextWithArrow extends React.PureComponent<Props> {
   public render() {
     const { location, text = "Learn more" } = this.props;
     const content = (
-      <Flow gap={4}>
+      <Flow styled={{ gap: 4 }}>
         <Item>{text}</Item>
         <Item>
           <IconArrowRightMini />

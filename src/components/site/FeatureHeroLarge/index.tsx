@@ -2,8 +2,8 @@ import { Center } from "@heydovetail/website/components/layout/Center";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { BREAKPOINT_PHABLET, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
-import { styledViaProps } from "@heydovetail/website/util/styled";
 import * as React from "react";
+import { styled } from "typestyle-react";
 import { extend, media } from "typestyle/lib";
 
 interface Props {
@@ -18,8 +18,8 @@ export class FeatureHeroLarge extends React.PureComponent<Props> {
     const { center = true, image, text, title } = this.props;
 
     const content = (
-      <Wrapper center={center}>
-        <Flex gap={24} layout="column">
+      <Wrapper styled={{ center }}>
+        <Flex styled={{ gap: 24, layout: "column" }}>
           <Item>
             <h2>{title}</h2>
           </Item>
@@ -39,19 +39,16 @@ export class FeatureHeroLarge extends React.PureComponent<Props> {
   }
 }
 
-const Wrapper = styledViaProps(
-  "div",
-  ({ center }: { center: boolean }) => JSON.stringify({ center }),
-  ({ center }) =>
-    extend(
+const Wrapper = styled("div", ({ center }: { center: boolean }) =>
+  extend(
+    {
+      textAlign: center ? "center" : "left"
+    },
+    media(
+      { maxWidth: BREAKPOINT_PHABLET },
       {
-        textAlign: center ? "center" : "left"
-      },
-      media(
-        { maxWidth: BREAKPOINT_PHABLET },
-        {
-          textAlign: "left"
-        }
-      )
+        textAlign: "left"
+      }
     )
+  )
 );

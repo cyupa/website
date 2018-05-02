@@ -3,8 +3,8 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { Avatar } from "@heydovetail/website/components/site/Avatar";
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
-import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
+import { styled } from "typestyle-react";
 
 export interface TestimonialProps {
   company: string;
@@ -20,13 +20,13 @@ export class Testimonial extends React.PureComponent<TestimonialProps> {
     const { company, image, name, quote, role, url } = this.props;
 
     return (
-      <Card padding={32}>
-        <Flex gap={24} layout="column">
+      <Card styled={{ padding: 32 }}>
+        <Flex styled={{ gap: 24, layout: "column" }}>
           <Item>
             <p>“{quote}”</p>
           </Item>
           <Item>
-            <Flex alignItems="center" gap={16}>
+            <Flex styled={{ alignItems: "center", gap: 16 }}>
               <Item style={{ flexGrow: 0, lineHeight: 0 }}>
                 <Avatar size={32} url={image} />
               </Item>

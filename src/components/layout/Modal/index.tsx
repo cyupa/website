@@ -3,10 +3,10 @@ import IconCross from "@heydovetail/website/components/icons/feather/IconCross";
 import { BodyOverflow } from "@heydovetail/website/components/util/BodyOverflow";
 import { OnEsc } from "@heydovetail/website/components/util/OnEsc";
 import { COLORS, PADDING_BOTTOM, Z_INDEX_HIGH } from "@heydovetail/website/constants";
-import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
 import { CSSTransitionGroup } from "react-transition-group";
 import { style } from "typestyle";
+import { styled } from "typestyle-react";
 import { Container } from "../Container";
 import { Flex } from "../Flex";
 import { Portal } from "../Portal";
@@ -24,7 +24,7 @@ export class Modal extends React.PureComponent<Props> {
         <BodyOverflow>
           <Dialog>
             {onDismiss !== undefined ? (
-              <Flex justifyContent="flex-start">
+              <Flex styled={{ justifyContent: "flex-start" }}>
                 <div style={{ marginLeft: "-8px" }}>
                   <OnEsc action={onDismiss} />
                   <SubtleButton onClick={onDismiss}>
@@ -45,9 +45,7 @@ export class Modal extends React.PureComponent<Props> {
               }}
               transitionAppearTimeout={250}
             >
-              <Container padding={{ x: 0, y: 24 }} maxWidth={768}>
-                {children}
-              </Container>
+              <Container styled={{ padding: { x: 0, y: 24 }, maxWidth: 768 }}>{children}</Container>
             </CSSTransitionGroup>
           </Dialog>
         </BodyOverflow>

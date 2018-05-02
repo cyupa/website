@@ -8,7 +8,7 @@ export class FeatureLarge extends React.PureComponent<FeatureProps> {
   public render() {
     const { text, title } = this.props;
     return (
-      <Flex gap={8} layout="column">
+      <Flex styled={{ gap: 8, layout: "column" }}>
         <Item>
           <h3>{title}</h3>
         </Item>

@@ -9,9 +9,9 @@ import { COLORS, HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants
 import { DocumentByPathQuery } from "@heydovetail/website/graphql/types";
 import { internal } from "@heydovetail/website/routing/locations";
 import { graphql } from "@heydovetail/website/util/graphql";
-import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
 import { Helmet } from "react-helmet";
+import { styled } from "typestyle-react";
 
 interface Props {
   data: DocumentByPathQuery;
@@ -38,7 +38,7 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
         <meta property="og:title" content={frontmatter!.title!} />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
-      <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+      <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
         <div style={{ maxWidth: WIDTH * 0.75 }}>
           <Breadcrumbs
             crumbs={pathContext.breadcrumb.map(breadcrumb => ({
@@ -46,7 +46,7 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
               text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
             }))}
           />
-          <Flex gap={16} layout="column">
+          <Flex styled={{ gap: 16, layout: "column" }}>
             <Item>
               <HeroText center={false} title={frontmatter!.title!} />
             </Item>

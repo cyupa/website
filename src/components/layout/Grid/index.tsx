@@ -1,4 +1,4 @@
-import { styledViaProps } from "@heydovetail/website/util/styled";
+import { styled } from "typestyle-react";
 
 interface Props {
   alignItems?: "flex-start" | "flex-end" | "baseline" | "center" | "stretch";
@@ -12,14 +12,8 @@ const JUSTIFY_ITEMS_DEFAULT = "stretch";
 const DEFAULT_GRID_TEMPLATE_COLUMNS = "1fr 1fr";
 const DEFAULT_GAP = 24;
 
-export const Grid = styledViaProps(
+export const Grid = styled(
   "div",
-  ({
-    alignItems = ALIGN_ITEMS_DEFAULT,
-    gridTemplateColumns = DEFAULT_GRID_TEMPLATE_COLUMNS,
-    gap = DEFAULT_GAP,
-    justifyItems = JUSTIFY_ITEMS_DEFAULT
-  }) => JSON.stringify({ alignItems, gridTemplateColumns, gap, justifyItems }),
   ({
     alignItems = ALIGN_ITEMS_DEFAULT,
     gridTemplateColumns = DEFAULT_GRID_TEMPLATE_COLUMNS,

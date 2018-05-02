@@ -30,7 +30,7 @@ storiesOf("Layout/Flow", module)
   ))
   .add("with gap=10", () => (
     <Container>
-      <Flow gap={10} rowGap={10}>
+      <Flow styled={{ gap: 10, rowGap: 10 }}>
         <Item>
           <Box>First</Box>
         </Item>

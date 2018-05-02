@@ -16,8 +16,8 @@ export default class extends React.PureComponent {
         <Helmet>
           <title>504 – Dovetail</title>
         </Helmet>
-        <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-          <Flex gap={40} layout="column">
+        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
+          <Flex styled={{ gap: 40, layout: "column" }}>
             <Item>
               <HeroText
                 center={false}

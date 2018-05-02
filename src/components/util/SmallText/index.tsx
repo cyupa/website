@@ -1,6 +1,6 @@
 import { COLORS } from "@heydovetail/website/constants";
-import { styledViaProps } from "@heydovetail/website/util/styled";
 import * as React from "react";
+import { styled } from "typestyle-react";
 
 interface Props {
   gap?: number;
@@ -27,24 +27,16 @@ export class SmallText extends React.PureComponent<Props> {
         color = "rgba(36, 18, 77, .6)";
     }
 
-    return (
-      <Text gap={gap} shade={color} size={size}>
-        {children}
-      </Text>
-    );
+    return <Text styled={{ gap, shade: color, size }}>{children}</Text>;
   }
 }
 
-const Text = styledViaProps(
-  "span",
-  ({ gap, shade, size }) => `${gap}, ${shade}, ${size}`,
-  (props: { gap: number; shade: string; size: number }) => ({
-    color: props.shade,
-    fontSize: `${props.size}px`,
-    fontWeight: 500,
-    lineHeight: "16px",
-    overflow: "hidden",
-    padding: `0 ${props.gap}px`,
-    textOverflow: "ellipsis"
-  })
-);
+const Text = styled("span", ({ gap, shade, size }: { gap: number; shade: string; size: number }) => ({
+  color: shade,
+  fontSize: `${size}px`,
+  fontWeight: 500,
+  lineHeight: "16px",
+  overflow: "hidden",
+  padding: `0 ${gap}px`,
+  textOverflow: "ellipsis"
+}));

@@ -5,8 +5,8 @@ import { Item } from "@heydovetail/website/components/layout/Item";
 import { SmallText } from "@heydovetail/website/components/util/SmallText";
 import { BREAKPOINT_TABLET, COLORS, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
+import { styled } from "typestyle-react";
 import { media } from "typestyle/lib";
 
 interface Props {
@@ -22,11 +22,11 @@ export class Hero extends React.PureComponent<Props> {
   public render() {
     const { children, image, showSignUp = true, text, title } = this.props;
     return (
-      <Flex gap={32}>
+      <Flex styled={{ gap: 32 }}>
         <Item style={{ flex: "0 1 464px" }}>
-          <Flex gap={40} layout="column">
+          <Flex styled={{ gap: 40, layout: "column" }}>
             <Item>
-              <Flex gap={24} layout="column">
+              <Flex styled={{ gap: 24, layout: "column" }}>
                 <Item>
                   <Heading>{title}</Heading>
                 </Item>
@@ -40,7 +40,7 @@ export class Hero extends React.PureComponent<Props> {
             {children !== undefined ? <Item>{children}</Item> : null}
             {showSignUp ? (
               <Item>
-                <Flow gap={24} rowGap={24}>
+                <Flow styled={{ gap: 24, rowGap: 24 }}>
                   <Item>
                     <ButtonLink color={COLORS.purple} location={locations.signUp()}>
                       Try now for free

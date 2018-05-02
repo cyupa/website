@@ -13,7 +13,7 @@ export class Features extends React.PureComponent<Props> {
   public render() {
     const { features, large = false } = this.props;
     return (
-      <FlexWrap growItems maxChildWidth={256} justifyContent="center" gap={large ? 64 : 32}>
+      <FlexWrap styled={{ growItems: true, maxChildWidth: 256, justifyContent: "center", gap: large ? 64 : 32 }}>
         {features.map((f, i) => <Item key={i}>{large ? <FeatureLarge {...f} /> : <Feature {...f} />}</Item>)}
       </FlexWrap>
     );

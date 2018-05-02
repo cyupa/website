@@ -4,9 +4,9 @@ import { Lozenge } from "@heydovetail/website/components/site/Lozenge";
 import { ActionTextWithArrow } from "@heydovetail/website/components/util/ActionTextWithArrow";
 import { BREAKPOINT_TABLET, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { LocationDescriptor, locations } from "@heydovetail/website/routing/locations";
-import { styled, styledViaProps } from "@heydovetail/website/util/styled";
 import * as React from "react";
 import { extend, media } from "typestyle";
+import { styled } from "typestyle-react";
 
 const BREAKPOINT = BREAKPOINT_TABLET;
 const GAP = "72px";
@@ -34,9 +34,9 @@ export class FeatureHero extends React.PureComponent<Props> {
       title
     } = this.props;
     return (
-      <Wrapper imagePosition={imagePosition}>
-        <Text imagePosition={imagePosition}>
-          <Flex gap={24} layout="column">
+      <Wrapper styled={{ imagePosition }}>
+        <Text styled={{ imagePosition }}>
+          <Flex styled={{ gap: 24, layout: "column" }}>
             {launched === false ? (
               <Item>
                 <Lozenge>Coming soon</Lozenge>
@@ -59,37 +59,31 @@ export class FeatureHero extends React.PureComponent<Props> {
   }
 }
 
-const Wrapper = styledViaProps(
-  "div",
-  ({ imagePosition }: { imagePosition: "left" | "right" }) => JSON.stringify({ imagePosition }),
-  ({ imagePosition }) =>
-    extend(
+const Wrapper = styled("div", ({ imagePosition }: { imagePosition: "left" | "right" }) =>
+  extend(
+    {
+      alignItems: "center",
+      display: "flex",
+      flexDirection: imagePosition === "right" ? "row" : "row-reverse"
+    },
+    media(
+      { maxWidth: BREAKPOINT },
       {
-        alignItems: "center",
-        display: "flex",
-        flexDirection: imagePosition === "right" ? "row" : "row-reverse"
-      },
-      media(
-        { maxWidth: BREAKPOINT },
-        {
-          flexDirection: "column-reverse"
-        }
-      )
+        flexDirection: "column-reverse"
+      }
     )
+  )
 );
 
-const Text = styledViaProps(
-  "div",
-  ({ imagePosition }: { imagePosition: "left" | "right" }) => JSON.stringify({ imagePosition }),
-  ({ imagePosition }) =>
-    extend(
-      {
-        maxWidth: "360px",
-        marginLeft: imagePosition === "left" ? GAP : undefined,
-        marginRight: imagePosition === "right" ? GAP : undefined
-      },
-      media({ maxWidth: BREAKPOINT }, { margin: `${GAP} 0 0 0`, maxWidth: "100%" })
-    )
+const Text = styled("div", ({ imagePosition }: { imagePosition: "left" | "right" }) =>
+  extend(
+    {
+      maxWidth: "360px",
+      marginLeft: imagePosition === "left" ? GAP : undefined,
+      marginRight: imagePosition === "right" ? GAP : undefined
+    },
+    media({ maxWidth: BREAKPOINT }, { margin: `${GAP} 0 0 0`, maxWidth: "100%" })
+  )
 );
 
 const Image = styled(

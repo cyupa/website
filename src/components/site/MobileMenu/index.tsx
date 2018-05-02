@@ -7,8 +7,8 @@ import { GoToApp } from "@heydovetail/website/components/site/Header/goToApp";
 import { LinkList } from "@heydovetail/website/components/site/LinkList";
 import { COLORS } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
+import { styled } from "typestyle-react";
 
 interface Props {
   loggedIn: boolean;
@@ -22,7 +22,7 @@ export class MobileMenu extends React.PureComponent<Props> {
     return (
       <Dropdown>
         <Wrapper>
-          <Flex gap={32} layout="column">
+          <Flex styled={{ gap: 32, layout: "column" }}>
             <Item>
               {loggedIn ? (
                 <GoToApp />
@@ -56,7 +56,7 @@ export class MobileMenu extends React.PureComponent<Props> {
               <HorizontalRule />
             </Item>
             <Item>
-              <Flow gap={48}>
+              <Flow styled={{ gap: 48 }}>
                 <Item style={{ verticalAlign: "top" }}>
                   <LinkList
                     links={[

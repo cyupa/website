@@ -5,7 +5,7 @@ import { Justify } from "../";
 
 storiesOf("Layout/Justify", module)
   .add("row", () => (
-    <Justify layout="row">
+    <Justify styled={{ layout: "row" }}>
       <Item>
         <Slate>First</Slate>
       </Item>
@@ -15,7 +15,7 @@ storiesOf("Layout/Justify", module)
     </Justify>
   ))
   .add("column", () => (
-    <Justify layout="column">
+    <Justify styled={{ layout: "column" }}>
       <Item>
         <Slate>First</Slate>
       </Item>

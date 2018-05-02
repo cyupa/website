@@ -25,9 +25,9 @@ export class SignupWithEmail extends React.PureComponent {
 
     return (
       <Center>
-        <Flex gap={24} layout="column">
+        <Flex styled={{ gap: 24, layout: "column" }}>
           <Item>
-            <Flex gap={8}>
+            <Flex styled={{ gap: 8 }}>
               <Item>
                 <TextInput
                   onChange={event => this.setState({ email: event.target.value })}

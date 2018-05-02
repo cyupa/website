@@ -20,15 +20,15 @@ export default class extends React.PureComponent {
         <Helmet>
           <title>About us – Dovetail</title>
         </Helmet>
-        <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-          <Flex gap={VERTICAL_GAP} layout="column">
+        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
+          <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
             <Item>
-              <Flex gap={32} layout="column">
+              <Flex styled={{ gap: 32, layout: "column" }}>
                 <Item>
                   <HeroText center={false} maxWidth={416} title="About us" />
                 </Item>
                 <Item>
-                  <Flex gap={24} layout="column">
+                  <Flex styled={{ gap: 24, layout: "column" }}>
                     <Item>
                       <p>Dovetail was created in 2017 by two ex-Atlassians: Benjamin Humphrey and Brad Ayers.</p>
                     </Item>
@@ -66,7 +66,7 @@ export default class extends React.PureComponent {
               </Flex>
             </Item>
             <Item>
-              <Flex gap={32} layout="column">
+              <Flex styled={{ gap: 32, layout: "column" }}>
                 <Item>
                   <h2>The founders</h2>
                 </Item>
@@ -94,7 +94,7 @@ export default class extends React.PureComponent {
               </Flex>
             </Item>
             <Item>
-              <Flex gap={24} layout="column">
+              <Flex styled={{ gap: 24, layout: "column" }}>
                 <Item>
                   <h2>Our philosophy</h2>
                 </Item>

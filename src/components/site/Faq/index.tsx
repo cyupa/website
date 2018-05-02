@@ -17,7 +17,7 @@ export class Faq extends React.PureComponent<Props> {
     const { answer, linkText = "Learn more", location, question } = this.props;
 
     return (
-      <Flex gap={8} layout="column">
+      <Flex styled={{ gap: 8, layout: "column" }}>
         <Item>
           <h4>{question}</h4>
         </Item>

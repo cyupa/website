@@ -20,7 +20,7 @@ export class SubtleButtonLink extends React.PureComponent<Props> {
 
     return (
       <LocationLink location={location} onClick={onClick} tabIndex={-1}>
-        <SubtleButtonStyle fullWidth={fullWidth} height={height} inner={inner}>
+        <SubtleButtonStyle styled={{ fullWidth, height }} {...inner}>
           {children}
         </SubtleButtonStyle>
       </LocationLink>

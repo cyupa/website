@@ -1,5 +1,5 @@
 import { BORDER_RADIUS, COLORS } from "@heydovetail/website/constants";
-import { styled } from "@heydovetail/website/util/styled";
+import { styled } from "typestyle-react";
 
 export const Lozenge = styled("div", {
   backgroundColor: COLORS.p08,

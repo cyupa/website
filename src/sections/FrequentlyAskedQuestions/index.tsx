@@ -15,14 +15,14 @@ export class FrequentlyAskedQuestions extends React.PureComponent<Props> {
     const { faqs } = this.props;
 
     return (
-      <Flex gap={HALF_GAP} layout="column">
+      <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
         <Item>
           <Center>
             <h2>Frequently asked questions</h2>
           </Center>
         </Item>
         <Item>
-          <FlexWrap gap={64} growItems maxChildWidth={240} justifyContent="center">
+          <FlexWrap styled={{ gap: 64, growItems: true, maxChildWidth: 240, justifyContent: "center" }}>
             {faqs.map(faq => <Item>{faq}</Item>)}
           </FlexWrap>
         </Item>

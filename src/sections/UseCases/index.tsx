@@ -21,7 +21,7 @@ export class UseCases extends React.PureComponent<Props> {
     const { onClick, showTitle = false } = this.props;
 
     const useCases = (
-      <FlexWrap growItems maxChildWidth={336} gap={32}>
+      <FlexWrap styled={{ growItems: true, maxChildWidth: 336, gap: 32 }}>
         <Item style={{ minWidth: 0 }}>
           <UseCaseCard
             image={<PictogramFeedback />}
@@ -59,7 +59,7 @@ export class UseCases extends React.PureComponent<Props> {
 
     if (showTitle) {
       return (
-        <Flex gap={HALF_GAP} layout="column">
+        <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
           <Item>
             <Center>
               <h2>Explore use cases</h2>

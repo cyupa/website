@@ -5,8 +5,8 @@ import { Item } from "@heydovetail/website/components/layout/Item";
 import { SmallText } from "@heydovetail/website/components/util/SmallText";
 import { BORDER_RADIUS, COLORS } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
+import { styled } from "typestyle-react";
 
 interface Props {
   features: string[];
@@ -21,7 +21,7 @@ export class PricingCard extends React.PureComponent<Props> {
     return (
       <Wrapper>
         <Price>
-          <Flex gap={32} layout="column">
+          <Flex styled={{ gap: 32, layout: "column" }}>
             <Item>
               <DollarSign>$</DollarSign>
               <Amount>{price / 100}</Amount>
@@ -29,7 +29,7 @@ export class PricingCard extends React.PureComponent<Props> {
             </Item>
             <Item>
               <FinePrint>
-                <Flex gap={8} layout="column">
+                <Flex styled={{ gap: 8, layout: "column" }}>
                   <Item>
                     <SmallText size={14}>Unlimited users</SmallText>
                   </Item>
@@ -42,10 +42,10 @@ export class PricingCard extends React.PureComponent<Props> {
           </Flex>
         </Price>
         <Features>
-          <Flex gap={24} layout="column">
+          <Flex styled={{ gap: 24, layout: "column" }}>
             {features.map((feature, i) => (
               <Item key={i}>
-                <Flex alignItems="center" gap={24}>
+                <Flex styled={{ alignItems: "center", gap: 24 }}>
                   <Item style={{ flexGrow: 0 }}>
                     <IconCheckCircle color={COLORS.green} />
                   </Item>

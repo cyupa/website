@@ -4,7 +4,7 @@ import * as React from "react";
 import { FlexWrap } from "../";
 
 storiesOf("Layout/FlexWrap", module).add("default", () => (
-  <FlexWrap gap={32} maxChildWidth={200}>
+  <FlexWrap styled={{ gap: 32, maxChildWidth: 200 }}>
     <Item>
       <Slate>First</Slate>
     </Item>

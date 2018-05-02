@@ -1,4 +1,4 @@
-import { styledViaProps } from "@heydovetail/website/util/styled";
+import { styled } from "typestyle-react";
 import { Item } from "../Item";
 
 interface Props {
@@ -13,20 +13,8 @@ const JUSTIFY_CONTENT_DEFAULT = "flex-start";
 const LAYOUT_DEFAULT = "row";
 const GAP_DEFAULT = 0;
 
-export const Flex = styledViaProps(
+export const Flex = styled(
   "div",
-  ({
-    alignItems = ALIGN_ITEMS_DEFAULT,
-    justifyContent = JUSTIFY_CONTENT_DEFAULT,
-    layout = LAYOUT_DEFAULT,
-    gap = GAP_DEFAULT
-  }) =>
-    JSON.stringify({
-      alignItems,
-      justifyContent,
-      layout,
-      gap
-    }),
   ({
     alignItems = ALIGN_ITEMS_DEFAULT,
     justifyContent = JUSTIFY_CONTENT_DEFAULT,

@@ -9,12 +9,12 @@ storiesOf("Layout/Container", module)
     </Container>
   ))
   .add("with custom padding", () => (
-    <Container padding={{ x: 64, y: 64 }}>
+    <Container styled={{ padding: { x: 64, y: 64 } }}>
       <Box>Content</Box>
     </Container>
   ))
   .add("with custom max width", () => (
-    <Container maxWidth={832}>
+    <Container styled={{ maxWidth: 832 }}>
       <Box>Content</Box>
     </Container>
   ));

@@ -26,7 +26,7 @@ export default class extends React.PureComponent {
             content="Features designed to help you organize and analyze customer feedback and user research data."
           />
         </Helmet>
-        <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
           <HeroText
             center={false}
             maxWidth={WIDTH / 2}
@@ -113,8 +113,8 @@ export default class extends React.PureComponent {
             ]}
           />
         </LightContainer>
-        <Container maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
-          <Flex gap={VERTICAL_GAP} layout="column">
+        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: VERTICAL_GAP } }}>
+          <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
             <Item>
               <UseCases showTitle />
             </Item>

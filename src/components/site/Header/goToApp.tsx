@@ -10,7 +10,7 @@ export class GoToApp extends React.PureComponent {
   public render() {
     return (
       <ButtonLink color={COLORS.purple} height={32} location={locations.projects()}>
-        <Flex alignItems="center" gap={4}>
+        <Flex styled={{ alignItems: "center", gap: 4 }}>
           <Item>Go to app</Item>
           <Item>
             <IconArrowRightMini />

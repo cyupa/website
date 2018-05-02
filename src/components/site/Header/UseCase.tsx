@@ -17,7 +17,7 @@ export class UseCase extends React.PureComponent<Props> {
     const { image, location, title } = this.props;
     return (
       <LocationLink className={linkClassName} location={location}>
-        <Flex gap={16} layout="column">
+        <Flex styled={{ gap: 16, layout: "column" }}>
           <Item>{image}</Item>
           <Item>{title}</Item>
         </Flex>

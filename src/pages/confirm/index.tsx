@@ -7,9 +7,9 @@ import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { COLORS, HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import IllustrationEmail from "@heydovetail/website/pages/confirm/IllustrationEmail";
 import { locations } from "@heydovetail/website/routing/locations";
-import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
 import { Helmet } from "react-helmet";
+import { styled } from "typestyle-react";
 
 export default class extends React.PureComponent {
   public render() {
@@ -18,10 +18,10 @@ export default class extends React.PureComponent {
         <Helmet>
           <title>Confirm your email address – Dovetail</title>
         </Helmet>
-        <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-          <FlexWrap gap={32} growItems>
+        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
+          <FlexWrap styled={{ gap: 32, growItems: true }}>
             <Item style={{ maxWidth: 416 }}>
-              <Flex gap={40} layout="column">
+              <Flex styled={{ gap: 40, layout: "column" }}>
                 <Item>
                   <HeroText center={false} title="You’ve got mail." />
                 </Item>

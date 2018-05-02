@@ -9,8 +9,8 @@ import * as React from "react";
 export class CenteredSignUp extends React.PureComponent {
   public render() {
     return (
-      <Container maxWidth={WIDTH / 2} padding={{ x: 0, y: 0 }}>
-        <Flex gap={HALF_GAP} layout="column">
+      <Container styled={{ maxWidth: WIDTH / 2, padding: { x: 0, y: 0 } }}>
+        <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
           <Item>
             <Center>
               <h2>Start a free trial</h2>

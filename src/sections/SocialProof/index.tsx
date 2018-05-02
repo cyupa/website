@@ -19,11 +19,11 @@ export class SocialProof extends React.PureComponent<Props> {
     const { testimonials, title = "Loved by product managers, designers, and researchers worldwide." } = this.props;
 
     return (
-      <Flex gap={VERTICAL_GAP} layout="column">
+      <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
         <Item>
-          <Flex gap={HALF_GAP} layout="column">
+          <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
             <Item>
-              <Container maxWidth={WIDTH * 0.75} padding={{ x: 0, y: 0 }}>
+              <Container styled={{ maxWidth: WIDTH * 0.75, padding: { x: 0, y: 0 } }}>
                 <Center>
                   <h2>{title}</h2>
                 </Center>

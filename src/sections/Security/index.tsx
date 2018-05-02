@@ -45,7 +45,7 @@ export const ADVANCED_SECURITY_FEATURES = [
 export class Security extends React.PureComponent {
   public render() {
     return (
-      <Flex gap={HALF_GAP} layout="column">
+      <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
         <Item>
           <FeatureHero
             image={<IllustrationSecurity size="100%" />}

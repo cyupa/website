@@ -16,7 +16,7 @@ export class SubtleButton extends React.PureComponent<Props> {
     const inner = { id: id, onClick: onClick, style: { ...buttonBaseStyles, color: color }, type: "button" };
 
     return (
-      <SubtleButtonStyle fullWidth={fullWidth} height={height} inner={inner}>
+      <SubtleButtonStyle styled={{ fullWidth, height }} {...inner}>
         {children}
       </SubtleButtonStyle>
     );

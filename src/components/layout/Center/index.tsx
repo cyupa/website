@@ -1,4 +1,4 @@
-import { styled } from "@heydovetail/website/util/styled";
+import { styled } from "typestyle-react";
 
 export const Center = styled("div", {
   textAlign: "center"

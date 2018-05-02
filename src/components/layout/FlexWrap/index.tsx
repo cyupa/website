@@ -1,4 +1,4 @@
-import { styledViaProps } from "@heydovetail/website/util/styled";
+import { styled } from "typestyle-react";
 import { Item } from "../Item";
 
 interface Props {
@@ -9,34 +9,23 @@ interface Props {
   justifyContent?: "flex-start" | "flex-end" | "center" | "space-around" | "space-between";
 }
 
-export const FlexWrap = styledViaProps(
-  "div",
-  ({ alignItems, maxChildWidth, gap, growItems, justifyContent }) =>
-    JSON.stringify({
-      alignItems,
-      maxChildWidth,
-      gap,
-      growItems,
-      justifyContent
-    }),
-  ({ alignItems, maxChildWidth, gap, growItems, justifyContent }: Props) => {
-    const halfGap = gap / 2;
+export const FlexWrap = styled("div", ({ alignItems, maxChildWidth, gap, growItems, justifyContent }: Props) => {
+  const halfGap = gap / 2;
 
-    return {
-      $nest: {
-        [`& > .${Item.class}`]: {
-          flexGrow: growItems === true ? 1 : 0,
-          flexShrink: 1,
-          flexBasis: maxChildWidth !== undefined ? `${maxChildWidth}px` : "auto",
-          margin: halfGap
-        }
-      },
+  return {
+    $nest: {
+      [`& > .${Item.class}`]: {
+        flexGrow: growItems === true ? 1 : 0,
+        flexShrink: 1,
+        flexBasis: maxChildWidth !== undefined ? `${maxChildWidth}px` : "auto",
+        margin: halfGap
+      }
+    },
 
-      alignItems: alignItems,
-      display: "flex",
-      flexWrap: "wrap",
-      justifyContent: justifyContent,
-      margin: -halfGap
-    };
-  }
-);
+    alignItems: alignItems,
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: justifyContent,
+    margin: -halfGap
+  };
+});
