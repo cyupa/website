@@ -6,13 +6,12 @@ import {
   BOX_SHADOW_SITTING,
   COLORS
 } from "@heydovetail/website/constants";
-import { styledViaProps } from "@heydovetail/website/util/styled";
+import { styled } from "typestyle-react";
 
 const DISABLED_OPACITY = 0.5;
 
-export const ColoredButtonStyle = styledViaProps(
+export const ColoredButtonStyle = styled(
   "button",
-  ({ color, disabled, fullWidth = false, height = 40 }) => JSON.stringify({ color, disabled, fullWidth, height }),
   ({
     color,
     disabled,
@@ -49,9 +48,8 @@ export const ColoredButtonStyle = styledViaProps(
   })
 );
 
-export const DefaultButtonStyle = styledViaProps(
+export const DefaultButtonStyle = styled(
   "button",
-  ({ disabled, fullWidth = false, height = 40 }) => JSON.stringify({ disabled, fullWidth, height }),
   ({ disabled, fullWidth = false, height = 40 }: { disabled: boolean; fullWidth?: boolean; height?: number }) => ({
     backgroundColor: COLORS.white,
     boxShadow: `${BOX_SHADOW_BORDER}, ${BOX_SHADOW_SITTING}`,
@@ -78,9 +76,8 @@ export const DefaultButtonStyle = styledViaProps(
   })
 );
 
-export const SubtleButtonStyle = styledViaProps(
+export const SubtleButtonStyle = styled(
   "button",
-  ({ fullWidth, height }) => JSON.stringify({ fullWidth, height }),
   ({ fullWidth = false, height = 32 }: { fullWidth?: boolean; height?: number }) => ({
     backgroundColor: "transparent",
     color: "inherit",

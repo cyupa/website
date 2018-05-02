@@ -13,7 +13,7 @@ import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { FrequentlyAskedQuestions } from "@heydovetail/website/sections/FrequentlyAskedQuestions";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
 export default class extends React.PureComponent {
@@ -27,9 +27,9 @@ export default class extends React.PureComponent {
           <meta property="og:title" content="Pricing – Dovetail" />
         </Helmet>
         <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-          <Flex gap={VERTICAL_GAP} layout="column">
+          <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
             <Item>
-              <Flex gap={HALF_GAP} layout="column">
+              <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
                 <Item>
                   <HeroText
                     title="Simple and affordable pricing."
@@ -45,7 +45,7 @@ export default class extends React.PureComponent {
                 <Item>
                   <Center>
                     <SubtleButtonLink color={COLORS.i60} location={locations.features()}>
-                      <Flow gap={4}>
+                      <Flow styled={{ gap: 4 }}>
                         <Item>See all features</Item>
                         <Item>
                           <IconArrowRightMini />

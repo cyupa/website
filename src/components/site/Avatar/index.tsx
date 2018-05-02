@@ -1,6 +1,6 @@
 import { COLORS } from "@heydovetail/website/constants";
-import { styled, styledViaProps } from "@heydovetail/website/util/styled";
-import * as React from "react";
+import React from "react";
+import { styled } from "typestyle-react";
 
 interface Props {
   borderColor?: string;
@@ -24,9 +24,9 @@ export class Avatar extends React.PureComponent<Props> {
           />
         ) : null}
         {url !== null ? (
-          <Image borderColor={borderColor} inner={{ height: size, src: url, width: size }} />
+          <Image styled={{ borderColor }} height={size} src={url} width={size} />
         ) : (
-          <PlaceholderImage size={size} />
+          <PlaceholderImage styled={{ size }} />
         )}
       </AvatarWrapper>
     );
@@ -38,30 +38,22 @@ const AvatarWrapper = styled("span", {
   position: "relative"
 });
 
-const Image = styledViaProps(
-  "img",
-  ({ borderColor }) => `${borderColor}`,
-  (props: { borderColor?: string }) => ({
-    alignItems: "center",
-    boxShadow: props.borderColor !== undefined ? `0 0 0 2px ${props.borderColor}` : undefined,
-    borderRadius: "100%",
-    color: COLORS.i60,
-    display: "flex"
-  })
-);
+const Image = styled("img", ({ borderColor }: { borderColor?: string }) => ({
+  alignItems: "center",
+  boxShadow: borderColor !== undefined ? `0 0 0 2px ${borderColor}` : undefined,
+  borderRadius: "100%",
+  color: COLORS.i60,
+  display: "flex"
+}));
 
-const PlaceholderImage = styledViaProps(
-  "span",
-  ({ size }) => `${size}`,
-  (props: { size?: number }) => ({
-    alignItems: "center",
-    backgroundColor: COLORS.i08,
-    borderRadius: "100%",
-    display: "flex",
-    height: `${props.size}px`,
-    width: `${props.size}px`
-  })
-);
+const PlaceholderImage = styled("span", ({ size }: { size?: number }) => ({
+  alignItems: "center",
+  backgroundColor: COLORS.i08,
+  borderRadius: "100%",
+  display: "flex",
+  height: `${size}px`,
+  width: `${size}px`
+}));
 
 const Presence = styled("span", {
   borderRadius: "100%",

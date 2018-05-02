@@ -1,6 +1,6 @@
 import * as benjamin from "@heydovetail/website/pages/company/about/benjamin.jpg";
 import { storiesOf } from "@heydovetail/website/util/stories";
-import * as React from "react";
+import React from "react";
 import { StaffMemberCard } from "../";
 
 storiesOf("Site/StaffMemberCard", module).add("default", () => (

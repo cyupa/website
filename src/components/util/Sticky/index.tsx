@@ -1,8 +1,8 @@
 import { BOX_SHADOW_STICKY, BREAKPOINT_PHONE, Z_INDEX_LOW } from "@heydovetail/website/constants";
-import { styledViaProps } from "@heydovetail/website/util/styled";
-import * as React from "react";
+import React from "react";
 import { findDOMNode } from "react-dom";
 import { extend, media } from "typestyle";
+import { styled } from "typestyle-react";
 
 interface Props {
   stickOnMobile?: boolean;
@@ -45,17 +45,12 @@ export class Sticky extends React.PureComponent<Props, State> {
     const { children, offset = 0, stickOnMobile = false, zIndex = Z_INDEX_LOW } = this.props;
     const { shadow } = this.state;
 
-    return (
-      <Container offset={offset} shadow={shadow} stickOnMobile={stickOnMobile} zIndex={zIndex}>
-        {children}
-      </Container>
-    );
+    return <Container styled={{ offset, shadow, stickOnMobile, zIndex }}>{children}</Container>;
   }
 }
 
-const Container = styledViaProps(
+const Container = styled(
   "div",
-  ({ offset, shadow, stickOnMobile, zIndex }) => `${offset}, ${shadow}, ${stickOnMobile}, ${zIndex}`,
   ({ offset, shadow, stickOnMobile, zIndex }: { offset: number; shadow: boolean; stickOnMobile: boolean; zIndex: number }) =>
     extend(
       {

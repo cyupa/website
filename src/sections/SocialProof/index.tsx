@@ -7,7 +7,7 @@ import { TestimonialProps } from "@heydovetail/website/components/site/Testimoni
 import { Testimonials } from "@heydovetail/website/components/site/Testimonials";
 import { HALF_GAP, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
-import * as React from "react";
+import React from "react";
 
 interface Props {
   testimonials: TestimonialProps[];
@@ -19,11 +19,11 @@ export class SocialProof extends React.PureComponent<Props> {
     const { testimonials, title = "Loved by product managers, designers, and researchers worldwide." } = this.props;
 
     return (
-      <Flex gap={VERTICAL_GAP} layout="column">
+      <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
         <Item>
-          <Flex gap={HALF_GAP} layout="column">
+          <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
             <Item>
-              <Container maxWidth={WIDTH * 0.75} padding={{ x: 0, y: 0 }}>
+              <Container styled={{ maxWidth: WIDTH * 0.75, padding: { x: 0, y: 0 } }}>
                 <Center>
                   <h2>{title}</h2>
                 </Center>

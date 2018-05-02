@@ -2,9 +2,9 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
-import { styled } from "@heydovetail/website/util/styled";
-import * as React from "react";
+import React from "react";
 import { style } from "typestyle";
+import { styled } from "typestyle-react";
 
 interface LinkListLink {
   label: string;
@@ -21,7 +21,7 @@ export class LinkList extends React.PureComponent<Props> {
   public render() {
     const { heading, links } = this.props;
     return (
-      <Flex gap={12} layout="column">
+      <Flex styled={{ gap: 12, layout: "column" }}>
         {heading !== undefined ? (
           <Item>
             <Heading>{heading}</Heading>

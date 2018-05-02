@@ -1,6 +1,6 @@
 import { storiesOf } from "@heydovetail/website/util/stories";
 import { action } from "@storybook/addon-actions";
-import * as React from "react";
+import React from "react";
 import { TextInput } from "../";
 
 storiesOf("Form/TextInput", module)

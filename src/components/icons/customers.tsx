@@ -21,7 +21,7 @@ import LogoUcSanDiego from "@heydovetail/website/components/icons/customers/Logo
 import LogoUniqa from "@heydovetail/website/components/icons/customers/LogoUniqa";
 import LogoWestpac from "@heydovetail/website/components/icons/customers/LogoWestpac";
 import LogoZillow from "@heydovetail/website/components/icons/customers/LogoZillow";
-import * as React from "react";
+import React from "react";
 
 export const arm = <LogoArm />;
 export const atlassian = <LogoAtlassian />;

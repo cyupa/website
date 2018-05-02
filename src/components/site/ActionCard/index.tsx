@@ -4,7 +4,7 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { COLORS, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 
 interface Props {
   buttonColor?: string;
@@ -19,8 +19,8 @@ export class ActionCard extends React.PureComponent<Props> {
     const { buttonColor = COLORS.purple, buttonText, buttonLocation, text, title } = this.props;
 
     return (
-      <Card padding={32}>
-        <Flex gap={16} layout="column">
+      <Card styled={{ padding: 32 }}>
+        <Flex styled={{ gap: 16, layout: "column" }}>
           <Item>
             <h4>{title}</h4>
           </Item>

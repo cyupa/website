@@ -1,4 +1,4 @@
-import { styledViaProps } from "@heydovetail/website/util/styled";
+import { styled } from "typestyle-react";
 
 interface Props {
   alignItems?: "flex-start" | "flex-end" | "baseline" | "center" | "stretch";
@@ -8,13 +8,9 @@ interface Props {
 const DEFAULT_LAYOUT = "row";
 const DEFAULT_ALIGN_ITEMS = "center";
 
-export const Justify = styledViaProps(
-  "div",
-  ({ alignItems = DEFAULT_ALIGN_ITEMS, layout = DEFAULT_LAYOUT }) => JSON.stringify({ alignItems, layout }),
-  ({ alignItems = DEFAULT_ALIGN_ITEMS, layout = DEFAULT_LAYOUT }: Props) => ({
-    alignItems: alignItems,
-    display: "flex",
-    flexDirection: layout,
-    justifyContent: "space-between"
-  })
-);
+export const Justify = styled("div", ({ alignItems = DEFAULT_ALIGN_ITEMS, layout = DEFAULT_LAYOUT }: Props) => ({
+  alignItems: alignItems,
+  display: "flex",
+  flexDirection: layout,
+  justifyContent: "space-between"
+}));

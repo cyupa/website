@@ -16,7 +16,7 @@ exports[`TextInput snapshots empty 1`] = `
 
 exports[`TextInput snapshots error 1`] = `
 <span
-  className="f19wd7ts FrozenStyled_0 "
+  className="f19wd7ts"
 >
   <input
     autoFocus={undefined}
@@ -30,7 +30,7 @@ exports[`TextInput snapshots error 1`] = `
     value={undefined}
   />
   <span
-    className="fwc669b FrozenStyled_1 "
+    className="fwc669b"
   >
     Invalid value
   </span>

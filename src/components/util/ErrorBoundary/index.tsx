@@ -1,6 +1,6 @@
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { WIDTH } from "@heydovetail/website/constants";
-import * as React from "react";
+import React from "react";
 
 interface State {
   error: boolean;
@@ -26,7 +26,7 @@ export class ErrorBoundary extends React.Component<Props, State> {
   public render() {
     if (this.state.error) {
       return (
-        <Container maxWidth={WIDTH} padding={{ x: 24, y: 128 }}>
+        <Container styled={{ maxWidth: WIDTH, padding: { x: 24, y: 128 } }}>
           <p>
             Something has gone wrong. Please try each of the steps below to see if your problem is resolved, and if you’re still
             having issues, contact us at <b>hello@dovetailapp.com</b>.

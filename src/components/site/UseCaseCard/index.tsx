@@ -4,7 +4,7 @@ import { ActionTextWithArrow } from "@heydovetail/website/components/util/Action
 import { BORDER_RADIUS, BOX_SHADOW_FOCUS, COLORS } from "@heydovetail/website/constants";
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 import { style } from "typestyle";
 
 interface Props {
@@ -19,10 +19,10 @@ export class UseCaseCard extends React.PureComponent<Props> {
     const { image, location, onClick, text } = this.props;
     return (
       <LocationLink className={linkClassName} location={location} onClick={onClick}>
-        <Flex alignItems="center" gap={24}>
+        <Flex styled={{ alignItems: "center", gap: 24 }}>
           <Item style={{ flexGrow: 0 }}>{image}</Item>
           <Item style={{ minWidth: 0 }}>
-            <Flex gap={8} layout="column">
+            <Flex styled={{ gap: 8, layout: "column" }}>
               <Item
                 style={{
                   color: COLORS.indigo,

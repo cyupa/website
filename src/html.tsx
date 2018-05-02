@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 // https://github.com/nfl/react-helmet/issues/79#issuecomment-299888528
 // require("react-helmet/lib/HelmetConstants.js").HELMET_ATTRIBUTE = "data-react";

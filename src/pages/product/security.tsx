@@ -11,7 +11,7 @@ import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/web
 import { locations } from "@heydovetail/website/routing/locations";
 import { FrequentlyAskedQuestions } from "@heydovetail/website/sections/FrequentlyAskedQuestions";
 import { ADVANCED_SECURITY_FEATURES, BASE_SECURITY_FEATURES } from "@heydovetail/website/sections/Security";
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
 export default class extends React.PureComponent {
@@ -30,13 +30,13 @@ export default class extends React.PureComponent {
           />
           <meta property="og:title" content="Security and privacy – Dovetail" />
         </Helmet>
-        <Flex gap={VERTICAL_GAP} layout="column">
+        <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
           <Item>
             <DarkContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-              <Flex gap={VERTICAL_GAP} layout="column">
+              <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
                 <Item>
                   <Hero image={<IllustrationSecurity />} showSignUp={false} title="Dovetail security and privacy.">
-                    <Flex gap={24} layout="column">
+                    <Flex styled={{ gap: 24, layout: "column" }}>
                       <Item>
                         <p>
                           We understand you’ll be trusting us with research and customer feedback data, including potentially
@@ -103,7 +103,7 @@ export default class extends React.PureComponent {
                   />
                 </Item>
                 <Item>
-                  <Flex gap={24} layout="column">
+                  <Flex styled={{ gap: 24, layout: "column" }}>
                     <Item>
                       <p style={{ maxWidth: WIDTH / 2 }}>
                         Find our privacy policy, terms of service, and list of third party data sub-processors in our legal help

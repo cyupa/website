@@ -1,4 +1,4 @@
-import * as hero from "!file-loader!./hero.png";
+import hero from "!file-loader!./hero.png";
 import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
 import IllustrationBoardLarge from "@heydovetail/website/components/illustrations/IllustrationBoardLarge";
 import IllustrationFiles from "@heydovetail/website/components/illustrations/IllustrationFiles";
@@ -22,7 +22,7 @@ import { Integrations } from "@heydovetail/website/sections/Integrations";
 import { Security } from "@heydovetail/website/sections/Security";
 import { SocialProof } from "@heydovetail/website/sections/SocialProof";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
 export default class extends React.PureComponent {
@@ -43,10 +43,10 @@ export default class extends React.PureComponent {
             content="Dovetail keeps all of your user research data in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
           />
         </Helmet>
-        <Flex gap={VERTICAL_GAP} layout="column">
+        <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
           <Item>
             <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-              <Flex gap={VERTICAL_GAP} layout="column">
+              <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
                 <Item>
                   <Hero image={<IllustrationSoftware />} title="Keep all of your user research in one place." />
                 </Item>
@@ -180,7 +180,7 @@ export default class extends React.PureComponent {
           </Item>
           <Item>
             <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-              <Flex gap={VERTICAL_GAP} layout="column">
+              <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
                 <Item>
                   <SocialProof
                     testimonials={[testimonials.basheera, testimonials.benjamin, testimonials.michael, testimonials.sarah]}

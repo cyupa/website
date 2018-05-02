@@ -1,4 +1,4 @@
-import * as hero from "!file-loader!./hero.png";
+import hero from "!file-loader!./hero.png";
 import IllustrationAnnotationsResearch from "@heydovetail/website/components/illustrations/IllustrationAnnotationsResearch";
 import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
 import IllustrationBoardLarge from "@heydovetail/website/components/illustrations/IllustrationBoardLarge";
@@ -21,7 +21,7 @@ import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { Security } from "@heydovetail/website/sections/Security";
 import { SocialProof } from "@heydovetail/website/sections/SocialProof";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
 export default class extends React.PureComponent {
@@ -42,10 +42,10 @@ export default class extends React.PureComponent {
             content="Get everyone involved in user research, and make it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
           />
         </Helmet>
-        <Flex gap={VERTICAL_GAP} layout="column">
+        <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
           <Item>
             <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-              <Flex gap={VERTICAL_GAP} layout="column">
+              <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
                 <Item>
                   <Hero image={<IllustrationCollaboration />} title="Get everyone involved in user research." />
                 </Item>
@@ -95,7 +95,7 @@ export default class extends React.PureComponent {
           </Item>
           <Item>
             <LightContainer backgroundColor={COLORS.p04} maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
-              <Flex gap={VERTICAL_GAP} layout="column">
+              <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
                 <Item>
                   <FeatureHero
                     image={<IllustrationTeam size="100%" />}
@@ -127,7 +127,7 @@ export default class extends React.PureComponent {
           </Item>
           <Item>
             <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-              <Flex gap={VERTICAL_GAP} layout="column">
+              <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
                 <Item>
                   <FeatureHero
                     image={<IllustrationEditor size="100%" />}
@@ -180,7 +180,7 @@ export default class extends React.PureComponent {
           </Item>
           <Item>
             <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-              <Flex gap={VERTICAL_GAP} layout="column">
+              <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
                 <Item>
                   <SocialProof
                     testimonials={[

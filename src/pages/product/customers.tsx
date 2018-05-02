@@ -9,7 +9,7 @@ import { Testimonials } from "@heydovetail/website/components/site/Testimonials"
 import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH, testimonials } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
 export default class extends React.PureComponent {
@@ -22,7 +22,7 @@ export default class extends React.PureComponent {
           <meta name="description" content="Loved by product managers, designers, and researchers worldwide." />
           <meta property="og:description" content="Loved by product managers, designers, and researchers worldwide." />
         </Helmet>
-        <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
           <HeroText
             center={false}
             maxWidth={WIDTH / 2}
@@ -53,10 +53,10 @@ export default class extends React.PureComponent {
             ]}
           />
         </LightContainer>
-        <Container maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
-          <Flex gap={HALF_GAP} layout="column">
+        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: VERTICAL_GAP } }}>
+          <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
             <Item>
-              <Container maxWidth={WIDTH * 0.75} padding={{ x: 0, y: 0 }}>
+              <Container styled={{ maxWidth: WIDTH * 0.75, padding: { x: 0, y: 0 } }}>
                 <Center>
                   <h2>Here’s why they love Dovetail.</h2>
                 </Center>
@@ -81,7 +81,7 @@ export default class extends React.PureComponent {
             </Item>
           </Flex>
         </Container>
-        <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
           <CenteredSignUp />
         </Container>
       </>

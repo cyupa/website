@@ -7,7 +7,7 @@ import { LightContainer } from "@heydovetail/website/components/site/LightContai
 import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
 export default class extends React.PureComponent {
@@ -26,7 +26,7 @@ export default class extends React.PureComponent {
             content="Features designed to help you organize and analyze customer feedback and user research data."
           />
         </Helmet>
-        <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
           <HeroText
             center={false}
             maxWidth={WIDTH / 2}
@@ -113,8 +113,8 @@ export default class extends React.PureComponent {
             ]}
           />
         </LightContainer>
-        <Container maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
-          <Flex gap={VERTICAL_GAP} layout="column">
+        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: VERTICAL_GAP } }}>
+          <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
             <Item>
               <UseCases showTitle />
             </Item>

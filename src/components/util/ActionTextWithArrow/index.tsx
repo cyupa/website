@@ -3,7 +3,7 @@ import IconArrowRightMini from "@heydovetail/website/components/icons/feather/Ic
 import { Flow } from "@heydovetail/website/components/layout/Flow";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 
 interface Props {
   location?: LocationDescriptor;
@@ -14,7 +14,7 @@ export class ActionTextWithArrow extends React.PureComponent<Props> {
   public render() {
     const { location, text = "Learn more" } = this.props;
     const content = (
-      <Flow gap={4}>
+      <Flow styled={{ gap: 4 }}>
         <Item>{text}</Item>
         <Item>
           <IconArrowRightMini />

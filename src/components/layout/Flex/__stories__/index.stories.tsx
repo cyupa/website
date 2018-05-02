@@ -1,11 +1,11 @@
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { storiesOf } from "@heydovetail/website/util/stories";
-import * as React from "react";
+import React from "react";
 import { Flex } from "../";
 
 storiesOf("Layout/Flex", module)
   .add("row", () => (
-    <Flex layout="row">
+    <Flex styled={{ layout: "row" }}>
       <Item>
         <Slate>First</Slate>
       </Item>
@@ -15,7 +15,7 @@ storiesOf("Layout/Flex", module)
     </Flex>
   ))
   .add("row gap=10", () => (
-    <Flex layout="row" gap={10}>
+    <Flex styled={{ layout: "row", gap: 10 }}>
       <Item>
         <Slate>First</Slate>
       </Item>
@@ -25,7 +25,7 @@ storiesOf("Layout/Flex", module)
     </Flex>
   ))
   .add("column", () => (
-    <Flex layout="column">
+    <Flex styled={{ layout: "column" }}>
       <Item>
         <Slate>First</Slate>
       </Item>
@@ -35,7 +35,7 @@ storiesOf("Layout/Flex", module)
     </Flex>
   ))
   .add("column gap=10", () => (
-    <Flex layout="column" gap={10}>
+    <Flex styled={{ layout: "column", gap: 10 }}>
       <Item>
         <Slate>First</Slate>
       </Item>

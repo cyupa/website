@@ -1,6 +1,6 @@
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 import { ColoredButtonStyle, DefaultButtonStyle, buttonBaseStyles } from "../styles";
 
 interface Props {
@@ -22,11 +22,11 @@ export class ButtonLink extends React.Component<Props> {
     return (
       <LocationLink location={location} onClick={onClick} tabIndex={-1}>
         {color !== undefined ? (
-          <ColoredButtonStyle color={color} disabled={disabled} inner={inner} fullWidth={fullWidth} height={height}>
+          <ColoredButtonStyle styled={{ color, disabled, fullWidth, height }} {...inner}>
             {children}
           </ColoredButtonStyle>
         ) : (
-          <DefaultButtonStyle disabled={disabled} inner={inner} fullWidth={fullWidth} height={height}>
+          <DefaultButtonStyle styled={{ disabled, fullWidth, height }} {...inner}>
             {children}
           </DefaultButtonStyle>
         )}

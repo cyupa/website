@@ -1,6 +1,6 @@
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 import { SubtleButtonStyle, buttonBaseStyles } from "../styles";
 
 interface Props {
@@ -20,7 +20,7 @@ export class SubtleButtonLink extends React.PureComponent<Props> {
 
     return (
       <LocationLink location={location} onClick={onClick} tabIndex={-1}>
-        <SubtleButtonStyle fullWidth={fullWidth} height={height} inner={inner}>
+        <SubtleButtonStyle styled={{ fullWidth, height }} {...inner}>
           {children}
         </SubtleButtonStyle>
       </LocationLink>

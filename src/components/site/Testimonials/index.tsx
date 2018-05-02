@@ -1,6 +1,6 @@
 import { Testimonial, TestimonialProps } from "@heydovetail/website/components/site/Testimonial";
 import { WIDTH } from "@heydovetail/website/constants";
-import * as React from "react";
+import React from "react";
 import { Masonry } from "react-masonry-responsive";
 
 interface Props {

@@ -1,14 +1,14 @@
-import * as abhilash from "@heydovetail/website/avatars/abhilash.jpg";
-import * as aurelia from "@heydovetail/website/avatars/aurelia.jpg";
-import * as basheera from "@heydovetail/website/avatars/basheera.jpg";
-import * as ben from "@heydovetail/website/avatars/ben.jpg";
-import * as erik from "@heydovetail/website/avatars/erik.jpg";
-import * as michael from "@heydovetail/website/avatars/michael.jpg";
-import * as pascal from "@heydovetail/website/avatars/pascal.jpg";
-import * as sarah from "@heydovetail/website/avatars/sarah.jpg";
-import * as sonja from "@heydovetail/website/avatars/sonja.jpg";
-import * as sophie from "@heydovetail/website/avatars/sophie.jpg";
-import * as tina from "@heydovetail/website/avatars/tina.jpg";
+import abhilash from "@heydovetail/website/avatars/abhilash.jpg";
+import aurelia from "@heydovetail/website/avatars/aurelia.jpg";
+import basheera from "@heydovetail/website/avatars/basheera.jpg";
+import ben from "@heydovetail/website/avatars/ben.jpg";
+import erik from "@heydovetail/website/avatars/erik.jpg";
+import michael from "@heydovetail/website/avatars/michael.jpg";
+import pascal from "@heydovetail/website/avatars/pascal.jpg";
+import sarah from "@heydovetail/website/avatars/sarah.jpg";
+import sonja from "@heydovetail/website/avatars/sonja.jpg";
+import sophie from "@heydovetail/website/avatars/sophie.jpg";
+import tina from "@heydovetail/website/avatars/tina.jpg";
 import { TestimonialProps } from "@heydovetail/website/components/site/Testimonial";
 
 export const enum COLORS {

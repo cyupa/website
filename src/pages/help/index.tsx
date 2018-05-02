@@ -6,7 +6,7 @@ import { locations } from "@heydovetail/website/routing/locations";
 import { DocumentIndex } from "@heydovetail/website/sections/DocumentIndex";
 import { createPageHierarchy } from "@heydovetail/website/util/createPageHierarchy";
 import { graphql } from "@heydovetail/website/util/graphql";
-import * as React from "react";
+import React from "react";
 
 interface Props {
   data: HelpIndexQuery;

@@ -3,9 +3,9 @@ import { Header } from "@heydovetail/website/components/site/Header";
 import { DefaultMetaTags } from "@heydovetail/website/components/util/DefaultMetaTags";
 import { ErrorBoundary } from "@heydovetail/website/components/util/ErrorBoundary";
 import { COLORS } from "@heydovetail/website/constants";
-import { styled } from "@heydovetail/website/util/styled";
 import * as React from "react";
 import "typeface-rubik";
+import { styled } from "typestyle-react";
 import "../globalstyles";
 
 interface Props {
