@@ -70,7 +70,7 @@
     "@types/react-helmet": "^5.0.5",
     "@types/react-resize-detector": "^2.1.0",
     "@types/react-test-renderer": "^16.0.1",
-    "@types/react-transition-group": "^1.1.2",
+    "@types/react-transition-group": "^1.1.4",
     "@types/storybook__addon-actions": "^3.0.3",
     "@types/storybook__react": "^3.0.7",
     "apollo-codegen": "^0.19.1",

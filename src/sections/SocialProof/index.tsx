@@ -7,7 +7,7 @@ import { TestimonialProps } from "@heydovetail/website/components/site/Testimoni
 import { Testimonials } from "@heydovetail/website/components/site/Testimonials";
 import { HALF_GAP, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
-import * as React from "react";
+import React from "react";
 
 interface Props {
   testimonials: TestimonialProps[];

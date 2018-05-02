@@ -6,7 +6,7 @@ import { Item } from "@heydovetail/website/components/layout/Item";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { COLORS, HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
 export default class extends React.PureComponent {

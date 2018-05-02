@@ -2,7 +2,7 @@ import { Card } from "@heydovetail/website/components/layout/Card";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { SmallText } from "@heydovetail/website/components/util/SmallText";
-import * as React from "react";
+import React from "react";
 
 interface Props {
   bio: string;

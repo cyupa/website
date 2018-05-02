@@ -1,6 +1,6 @@
 import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
-import * as React from "react";
+import React from "react";
 import { Feature, FeatureProps } from "../Feature";
 import { FeatureLarge } from "../FeatureLarge";
 

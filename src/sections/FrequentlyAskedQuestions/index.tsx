@@ -4,7 +4,7 @@ import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { Faq } from "@heydovetail/website/components/site/Faq";
 import { HALF_GAP } from "@heydovetail/website/constants";
-import * as React from "react";
+import React from "react";
 
 interface Props {
   faqs: React.ReactElement<Faq>[];

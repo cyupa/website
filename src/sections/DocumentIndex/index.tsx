@@ -3,7 +3,7 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import { Masonry, MasonryItem } from "react-masonry-responsive";
 

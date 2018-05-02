@@ -3,7 +3,7 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { Avatar } from "@heydovetail/website/components/site/Avatar";
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
-import * as React from "react";
+import React from "react";
 import { styled } from "typestyle-react";
 
 export interface TestimonialProps {

@@ -7,11 +7,11 @@ import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { StaffMemberCard } from "@heydovetail/website/components/site/StaffMemberCard";
 import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import { Masonry } from "react-masonry-responsive";
-import * as benjamin from "./benjamin.jpg";
-import * as brad from "./brad.jpg";
+import benjamin from "./benjamin.jpg";
+import brad from "./brad.jpg";
 
 export default class extends React.PureComponent {
   public render() {

@@ -5,7 +5,7 @@ import { Navigation } from "@heydovetail/website/components/site/Header/navigati
 import { Sticky } from "@heydovetail/website/components/util/Sticky";
 import { COLORS } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 import { styled } from "typestyle-react";
 import DovetailLogo from "./DovetailLogo";
 

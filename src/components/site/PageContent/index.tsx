@@ -1,5 +1,5 @@
 import { BORDER_RADIUS, COLORS } from "@heydovetail/website/constants";
-import * as React from "react";
+import React from "react";
 import { styled } from "typestyle-react";
 
 interface Props {

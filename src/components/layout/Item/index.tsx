@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { style } from "typestyle";
 
 export class Item extends React.Component<JSX.IntrinsicElements["span"]> {

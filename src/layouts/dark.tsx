@@ -3,7 +3,7 @@ import { Header } from "@heydovetail/website/components/site/Header";
 import { DefaultMetaTags } from "@heydovetail/website/components/util/DefaultMetaTags";
 import { ErrorBoundary } from "@heydovetail/website/components/util/ErrorBoundary";
 import { COLORS } from "@heydovetail/website/constants";
-import * as React from "react";
+import React from "react";
 import { styled } from "typestyle-react";
 import "../globalstyles";
 

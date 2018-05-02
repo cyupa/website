@@ -4,7 +4,7 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { COLORS } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 
 export class GoToApp extends React.PureComponent {
   public render() {

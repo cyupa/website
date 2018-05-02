@@ -2,7 +2,7 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { Lozenge } from "@heydovetail/website/components/site/Lozenge";
 import { BREAKPOINT_TABLET, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
-import * as React from "react";
+import React from "react";
 import { media } from "typestyle";
 import { styled } from "typestyle-react";
 

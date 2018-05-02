@@ -5,7 +5,7 @@ import { Item } from "@heydovetail/website/components/layout/Item";
 import { SmallText } from "@heydovetail/website/components/util/SmallText";
 import { BORDER_RADIUS, COLORS } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 import { styled } from "typestyle-react";
 
 interface Props {

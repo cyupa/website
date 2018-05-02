@@ -9,7 +9,7 @@ import { Testimonials } from "@heydovetail/website/components/site/Testimonials"
 import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH, testimonials } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
 export default class extends React.PureComponent {

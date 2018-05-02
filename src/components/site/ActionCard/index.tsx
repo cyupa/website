@@ -4,7 +4,7 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { COLORS, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 
 interface Props {
   buttonColor?: string;

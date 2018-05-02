@@ -4,7 +4,7 @@ import { Lozenge } from "@heydovetail/website/components/site/Lozenge";
 import { ActionTextWithArrow } from "@heydovetail/website/components/util/ActionTextWithArrow";
 import { BREAKPOINT_TABLET, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { LocationDescriptor, locations } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 import { extend, media } from "typestyle";
 import { styled } from "typestyle-react";
 

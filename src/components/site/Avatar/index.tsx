@@ -1,5 +1,5 @@
 import { COLORS } from "@heydovetail/website/constants";
-import * as React from "react";
+import React from "react";
 import { styled } from "typestyle-react";
 
 interface Props {
@@ -38,21 +38,21 @@ const AvatarWrapper = styled("span", {
   position: "relative"
 });
 
-const Image = styled("img", (props: { borderColor?: string }) => ({
+const Image = styled("img", ({ borderColor }: { borderColor?: string }) => ({
   alignItems: "center",
-  boxShadow: props.borderColor !== undefined ? `0 0 0 2px ${props.borderColor}` : undefined,
+  boxShadow: borderColor !== undefined ? `0 0 0 2px ${borderColor}` : undefined,
   borderRadius: "100%",
   color: COLORS.i60,
   display: "flex"
 }));
 
-const PlaceholderImage = styled("span", (props: { size?: number }) => ({
+const PlaceholderImage = styled("span", ({ size }: { size?: number }) => ({
   alignItems: "center",
   backgroundColor: COLORS.i08,
   borderRadius: "100%",
   display: "flex",
-  height: `${props.size}px`,
-  width: `${props.size}px`
+  height: `${size}px`,
+  width: `${size}px`
 }));
 
 const Presence = styled("span", {

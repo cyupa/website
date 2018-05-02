@@ -1,5 +1,5 @@
 import { storiesOf } from "@heydovetail/website/util/stories";
-import * as React from "react";
+import React from "react";
 import { Features } from "../";
 
 storiesOf("Site/Features", module).add("default", () => (

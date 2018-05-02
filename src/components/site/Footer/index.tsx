@@ -5,7 +5,7 @@ import { Item } from "@heydovetail/website/components/layout/Item";
 import { LinkList } from "@heydovetail/website/components/site/LinkList";
 import { COLORS, HALF_GAP, LIGHT_TEXT_OPACITY, PADDING, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 import { styled } from "typestyle-react";
 import { DarkContainer } from "../DarkContainer";
 import { LightContainer } from "../LightContainer";

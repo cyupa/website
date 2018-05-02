@@ -1,5 +1,5 @@
 import { BOX_SHADOW_STICKY, BREAKPOINT_PHONE, Z_INDEX_LOW } from "@heydovetail/website/constants";
-import * as React from "react";
+import React from "react";
 import { findDOMNode } from "react-dom";
 import { extend, media } from "typestyle";
 import { styled } from "typestyle-react";

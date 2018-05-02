@@ -1,6 +1,6 @@
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { WIDTH } from "@heydovetail/website/constants";
-import * as React from "react";
+import React from "react";
 
 interface State {
   error: boolean;

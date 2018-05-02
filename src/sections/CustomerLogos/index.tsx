@@ -1,7 +1,7 @@
 import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { COLORS, HALF_GAP } from "@heydovetail/website/constants";
-import * as React from "react";
+import React from "react";
 
 interface Props {
   color?: string;

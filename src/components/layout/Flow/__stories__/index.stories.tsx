@@ -1,6 +1,6 @@
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { storiesOf } from "@heydovetail/website/util/stories";
-import * as React from "react";
+import React from "react";
 import { Flow } from "../";
 
 storiesOf("Layout/Flow", module)

@@ -4,7 +4,7 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { SignupWithEmail } from "@heydovetail/website/components/site/SignupWithEmail";
 import { HALF_GAP, WIDTH } from "@heydovetail/website/constants";
-import * as React from "react";
+import React from "react";
 
 export class CenteredSignUp extends React.PureComponent {
   public render() {

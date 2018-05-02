@@ -5,7 +5,7 @@ import { Item } from "@heydovetail/website/components/layout/Item";
 import { SmallText } from "@heydovetail/website/components/util/SmallText";
 import { BREAKPOINT_TABLET, COLORS, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 import { styled } from "typestyle-react";
 import { media } from "typestyle/lib";
 

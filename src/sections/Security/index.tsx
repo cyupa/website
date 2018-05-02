@@ -5,7 +5,7 @@ import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { Features } from "@heydovetail/website/components/site/Features";
 import { HALF_GAP } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 
 export const BASE_SECURITY_FEATURES = [
   {

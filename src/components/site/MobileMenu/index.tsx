@@ -7,7 +7,7 @@ import { GoToApp } from "@heydovetail/website/components/site/Header/goToApp";
 import { LinkList } from "@heydovetail/website/components/site/LinkList";
 import { COLORS } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 import { styled } from "typestyle-react";
 
 interface Props {

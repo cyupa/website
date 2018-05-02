@@ -13,7 +13,7 @@ import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { FrequentlyAskedQuestions } from "@heydovetail/website/sections/FrequentlyAskedQuestions";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
 export default class extends React.PureComponent {

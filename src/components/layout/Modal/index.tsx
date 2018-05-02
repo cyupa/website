@@ -3,7 +3,7 @@ import IconCross from "@heydovetail/website/components/icons/feather/IconCross";
 import { BodyOverflow } from "@heydovetail/website/components/util/BodyOverflow";
 import { OnEsc } from "@heydovetail/website/components/util/OnEsc";
 import { COLORS, PADDING_BOTTOM, Z_INDEX_HIGH } from "@heydovetail/website/constants";
-import * as React from "react";
+import React from "react";
 import { CSSTransitionGroup } from "react-transition-group";
 import { style } from "typestyle";
 import { styled } from "typestyle-react";

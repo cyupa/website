@@ -7,7 +7,7 @@ import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { COLORS, HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import IllustrationEmail from "@heydovetail/website/pages/confirm/IllustrationEmail";
 import { locations } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import { styled } from "typestyle-react";
 

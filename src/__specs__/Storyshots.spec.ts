@@ -1,5 +1,5 @@
 import initStoryshots, { renderOnly } from "@storybook/addon-storyshots";
-import * as path from "path";
+import path from "path";
 
 initStoryshots({
   configPath: path.join(__dirname, "..", "..", ".storybook"),

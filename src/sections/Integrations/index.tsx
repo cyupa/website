@@ -24,7 +24,7 @@ import IntegrationYoutube from "@heydovetail/website/components/icons/integratio
 import IntegrationZendesk from "@heydovetail/website/components/icons/integrations/IntegrationZendesk";
 import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
-import * as React from "react";
+import React from "react";
 
 export class Integrations extends React.PureComponent {
   public render() {

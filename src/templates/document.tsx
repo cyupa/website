@@ -9,7 +9,7 @@ import { COLORS, HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants
 import { DocumentByPathQuery } from "@heydovetail/website/graphql/types";
 import { internal } from "@heydovetail/website/routing/locations";
 import { graphql } from "@heydovetail/website/util/graphql";
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import { styled } from "typestyle-react";
 

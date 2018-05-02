@@ -3,7 +3,7 @@ import { Item } from "@heydovetail/website/components/layout/Item";
 import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 
 interface Props {
   answer: string;

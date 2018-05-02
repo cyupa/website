@@ -14,7 +14,7 @@ import { MobileMenu } from "@heydovetail/website/components/site/MobileMenu";
 import { FlipFlop } from "@heydovetail/website/components/util/FlipFlop";
 import { BREAKPOINT_TABLET, COLORS } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 import { media } from "typestyle";
 import { styled } from "typestyle-react";
 import { UseCasesDropdown } from "./UseCasesDropdown";

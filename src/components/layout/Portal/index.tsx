@@ -1,5 +1,5 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom";
 
 export class Portal extends React.Component {
   private node: HTMLDivElement | undefined;

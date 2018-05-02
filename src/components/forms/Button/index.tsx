@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { ColoredButtonStyle, DefaultButtonStyle, buttonBaseStyles } from "../styles";
 
 interface Props {

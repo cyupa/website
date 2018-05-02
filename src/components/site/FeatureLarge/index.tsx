@@ -1,7 +1,7 @@
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
-import * as React from "react";
+import React from "react";
 import { FeatureProps } from "../Feature";
 
 export class FeatureLarge extends React.PureComponent<FeatureProps> {

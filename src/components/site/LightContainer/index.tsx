@@ -1,6 +1,6 @@
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { COLORS } from "@heydovetail/website/constants";
-import * as React from "react";
+import React from "react";
 import { styled } from "typestyle-react";
 
 interface Props {

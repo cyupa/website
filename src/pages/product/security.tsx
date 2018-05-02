@@ -11,7 +11,7 @@ import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/web
 import { locations } from "@heydovetail/website/routing/locations";
 import { FrequentlyAskedQuestions } from "@heydovetail/website/sections/FrequentlyAskedQuestions";
 import { ADVANCED_SECURITY_FEATURES, BASE_SECURITY_FEATURES } from "@heydovetail/website/sections/Security";
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
 export default class extends React.PureComponent {

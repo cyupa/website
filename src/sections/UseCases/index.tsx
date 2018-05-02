@@ -9,7 +9,7 @@ import { Item } from "@heydovetail/website/components/layout/Item";
 import { UseCaseCard } from "@heydovetail/website/components/site/UseCaseCard";
 import { HALF_GAP } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 
 interface Props {
   onClick?: () => void;

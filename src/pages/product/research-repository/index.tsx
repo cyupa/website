@@ -1,4 +1,4 @@
-import * as hero from "!file-loader!./hero.png";
+import hero from "!file-loader!./hero.png";
 import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
 import IllustrationBoardLarge from "@heydovetail/website/components/illustrations/IllustrationBoardLarge";
 import IllustrationFiles from "@heydovetail/website/components/illustrations/IllustrationFiles";
@@ -22,7 +22,7 @@ import { Integrations } from "@heydovetail/website/sections/Integrations";
 import { Security } from "@heydovetail/website/sections/Security";
 import { SocialProof } from "@heydovetail/website/sections/SocialProof";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
 export default class extends React.PureComponent {

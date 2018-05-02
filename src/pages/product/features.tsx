@@ -7,7 +7,7 @@ import { LightContainer } from "@heydovetail/website/components/site/LightContai
 import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
 export default class extends React.PureComponent {
