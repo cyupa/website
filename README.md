@@ -52,8 +52,8 @@ The build can be configured using the following environment variables:
 
 These are configured automatically during CI deployment, however, `GATSBY_BASE_URL` is accessed in React TypeScript, so needs to be included in a `.env.development` file in the root.
 
-## License / Copyright
+## License
 
-[choosealicense.com/no-permission](https://choosealicense.com/no-permission/)
+![Creative Commons Attribution-NonCommercial 3.0 Australia License](https://i.creativecommons.org/l/by-nc/3.0/au/88x31.png)
 
-We have published our marketing website on GitHub as a helpful resource for those building projects with Gatsby, however, we have intentionally included no license in this repository. This website, branding, wording, and images are © Copyright Dovetail Research Pty Ltd and may not be used for commercial use.
+We have published our marketing website on GitHub as a helpful resource for those building projects with Gatsby, however, this website’s branding, style, wording, and images are licensed under a [Creative Commons Attribution-NonCommercial 3.0 Australia License](http://creativecommons.org/licenses/by-nc/3.0/au/) and may not be used for commercial use.
