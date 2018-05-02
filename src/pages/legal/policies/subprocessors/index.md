@@ -1,5 +1,5 @@
 ---
-date: "2018-04-15"
+date: "2018-05-01"
 path: "/legal/data-subprocessors"
 title: "Data Subprocessors"
 weight: 3
@@ -15,6 +15,7 @@ To support delivery of our Services, Dovetail may engage and use data processors
 | ChartMogul                   | Payment analytics                           | Germany                  | [chartmogul.com](https://chartmogul.com)     |
 | Google Cloud                 | Natural language analysis                   | USA                      | [cloud.google.com](https://cloud.google.com) |
 | Heroku                       | Data hosting                                | USA                      | [heroku.com](https://heroku.com)             |
+| Mailchimp                    | Promotional emails                          | USA                      | [mailchimp.com](https://mailchimp.com)       |
 | Mixpanel                     | Product analytics                           | USA                      | [mixpanel.com](https://mixpanel.com)         |
 | Sendgrid                     | Transactional emails                        | USA                      | [sendgrid.com](https://sendgrid.com)         |
 | Stripe                       | Payments                                    | USA                      | [stripe.com](https://stripe.com)             |

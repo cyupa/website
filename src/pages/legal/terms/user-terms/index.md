@@ -17,9 +17,9 @@ The Customer has separately agreed to our [Customer Terms of Service](/legal/cus
 
 The Contract contains our commitment to deliver the Services to the Customer, who may then invite Authorized Users to join its team(s). When an Authorized User (including, you) submits content to the Services, such as textual data or files (**“Customer Data”**), you acknowledge and agree that the Customer Data is owned by the Customer and the Contract provides the Customer with many choices and control over that Customer Data.
 
-## Privacy Policy
+## Privacy Policies
 
-Please review our [Privacy Policy](/legal/privacy) for more information on how we collect and use data relating to the use of the Services.
+Please review our [User Privacy Policy](/legal/privacy) and [Website Visitor Privacy Policy](/legal/website-privacy) for more information on how we collect and use data relating to the use of the Services.
 
 ## Prohibited conduct
 
