@@ -1,7 +1,7 @@
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { COLORS } from "@heydovetail/website/constants";
-import { styledViaProps } from "@heydovetail/website/util/styled";
-import * as React from "react";
+import React from "react";
+import { styled } from "typestyle-react";
 
 interface Props {
   backgroundColor?: string;
@@ -11,26 +11,22 @@ interface Props {
 
 export class LightContainer extends React.PureComponent<Props> {
   public render() {
-    const { backgroundColor = COLORS.white } = this.props;
+    const { backgroundColor = COLORS.white, maxWidth, padding, children } = this.props;
 
     return (
-      <Wrapper backgroundColor={backgroundColor}>
-        <Container {...this.props} />
+      <Wrapper styled={{ backgroundColor }}>
+        <Container styled={{ maxWidth, padding }} children={children} />
       </Wrapper>
     );
   }
 }
 
-const Wrapper = styledViaProps(
-  "div",
-  ({ backgroundColor }: { backgroundColor: string }) => JSON.stringify({ backgroundColor }),
-  ({ backgroundColor }) => ({
-    backgroundColor: backgroundColor,
+const Wrapper = styled("div", ({ backgroundColor }: { backgroundColor: string }) => ({
+  backgroundColor: backgroundColor,
 
-    $nest: {
-      a: {
-        color: COLORS.purple
-      }
+  $nest: {
+    a: {
+      color: COLORS.purple
     }
-  })
-);
+  }
+}));

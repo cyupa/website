@@ -1,8 +1,8 @@
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { BREAKPOINT_PHABLET, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
-import { styledViaProps } from "@heydovetail/website/util/styled";
-import * as React from "react";
+import React from "react";
+import { styled } from "typestyle-react";
 import { extend, media } from "typestyle/lib";
 
 interface Props {
@@ -18,8 +18,8 @@ export class HeroText extends React.PureComponent<Props> {
 
     if (text !== undefined) {
       return (
-        <Wrapper center={center} maxWidth={maxWidth}>
-          <Flex gap={24} layout="column">
+        <Wrapper styled={{ center, maxWidth }}>
+          <Flex styled={{ gap: 24, layout: "column" }}>
             <Item>
               <h1>{title}</h1>
             </Item>
@@ -31,7 +31,7 @@ export class HeroText extends React.PureComponent<Props> {
       );
     } else {
       return (
-        <Wrapper center={center} maxWidth={maxWidth}>
+        <Wrapper styled={{ center, maxWidth }}>
           <h1>{title}</h1>
         </Wrapper>
       );
@@ -39,21 +39,18 @@ export class HeroText extends React.PureComponent<Props> {
   }
 }
 
-const Wrapper = styledViaProps(
-  "div",
-  ({ center, maxWidth }: { center: boolean; maxWidth?: number }) => JSON.stringify({ center, maxWidth }),
-  ({ center, maxWidth }) =>
-    extend(
+const Wrapper = styled("div", ({ center, maxWidth }: { center: boolean; maxWidth?: number }) =>
+  extend(
+    {
+      margin: center ? "32px auto 0" : "32px 0 0",
+      maxWidth: maxWidth,
+      textAlign: center ? "center" : "left"
+    },
+    media(
+      { maxWidth: BREAKPOINT_PHABLET },
       {
-        margin: center ? "32px auto 0" : "32px 0 0",
-        maxWidth: maxWidth,
-        textAlign: center ? "center" : "left"
-      },
-      media(
-        { maxWidth: BREAKPOINT_PHABLET },
-        {
-          textAlign: "left"
-        }
-      )
+        textAlign: "left"
+      }
     )
+  )
 );

@@ -3,15 +3,15 @@ import { Container } from "@heydovetail/website/components/layout/Container";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
 import { Item } from "@heydovetail/website/components/layout/Item";
-import { Masonry } from "@heydovetail/website/components/layout/Masonry";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { StaffMemberCard } from "@heydovetail/website/components/site/StaffMemberCard";
 import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
-import * as benjamin from "./benjamin.jpg";
-import * as brad from "./brad.jpg";
+import { Masonry } from "react-masonry-responsive";
+import benjamin from "./benjamin.jpg";
+import brad from "./brad.jpg";
 
 export default class extends React.PureComponent {
   public render() {
@@ -20,15 +20,15 @@ export default class extends React.PureComponent {
         <Helmet>
           <title>About us – Dovetail</title>
         </Helmet>
-        <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-          <Flex gap={VERTICAL_GAP} layout="column">
+        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
+          <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
             <Item>
-              <Flex gap={32} layout="column">
+              <Flex styled={{ gap: 32, layout: "column" }}>
                 <Item>
                   <HeroText center={false} maxWidth={416} title="About us" />
                 </Item>
                 <Item>
-                  <Flex gap={24} layout="column">
+                  <Flex styled={{ gap: 24, layout: "column" }}>
                     <Item>
                       <p>Dovetail was created in 2017 by two ex-Atlassians: Benjamin Humphrey and Brad Ayers.</p>
                     </Item>
@@ -66,44 +66,35 @@ export default class extends React.PureComponent {
               </Flex>
             </Item>
             <Item>
-              <Flex gap={32} layout="column">
+              <Flex styled={{ gap: 32, layout: "column" }}>
                 <Item>
                   <h2>The founders</h2>
                 </Item>
                 <Item>
                   <Masonry
+                    containerWidth={WIDTH}
                     gap={32}
                     items={[
-                      {
-                        id: "benjamin",
-                        node: (
-                          <StaffMemberCard
-                            bio="Benjamin is a kiwi designer, developer, and entrepreneur living in Sydney. He loves creating world-class products and believes in the power of user research to do so. Previously Benjamin has led design projects at Atlassian, Delicious, and Ubuntu."
-                            image={benjamin}
-                            name="Benjamin Humphrey"
-                            role="CEO / Designer / Developer"
-                          />
-                        )
-                      },
-                      {
-                        id: "brad",
-                        node: (
-                          <StaffMemberCard
-                            bio="Brad’s a talented software architect living in Sydney. He has a Bachelor of Engineering from Griffith University and previously worked as an architect at Atlassian. If you’re reading this then the site is up, so well done Brad. Keep it up."
-                            image={brad}
-                            name="Brad Ayers"
-                            role="CTO / Developer"
-                          />
-                        )
-                      }
+                      <StaffMemberCard
+                        bio="Benjamin is a kiwi designer, developer, and entrepreneur living in Sydney. He loves creating world-class products and believes in the power of user research to do so. Previously Benjamin has led design projects at Atlassian, Delicious, and Ubuntu."
+                        image={benjamin}
+                        name="Benjamin Humphrey"
+                        role="CEO / Designer / Developer"
+                      />,
+                      <StaffMemberCard
+                        bio="Brad’s a talented software architect living in Sydney. He has a Bachelor of Engineering from Griffith University and previously worked as an architect at Atlassian. If you’re reading this then the site is up, so well done Brad. Keep it up."
+                        image={brad}
+                        name="Brad Ayers"
+                        role="CTO / Developer"
+                      />
                     ]}
-                    minColumnWidth={256}
+                    minColumnWidth={264}
                   />
                 </Item>
               </Flex>
             </Item>
             <Item>
-              <Flex gap={24} layout="column">
+              <Flex styled={{ gap: 24, layout: "column" }}>
                 <Item>
                   <h2>Our philosophy</h2>
                 </Item>

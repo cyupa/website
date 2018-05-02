@@ -5,8 +5,8 @@ import { Navigation } from "@heydovetail/website/components/site/Header/navigati
 import { Sticky } from "@heydovetail/website/components/util/Sticky";
 import { COLORS } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import { styledViaProps } from "@heydovetail/website/util/styled";
-import * as React from "react";
+import React from "react";
+import { styled } from "typestyle-react";
 import DovetailLogo from "./DovetailLogo";
 
 interface Props {
@@ -19,10 +19,10 @@ export class Header extends React.PureComponent<Props> {
     const { dark = false, sticky = true } = this.props;
 
     const header = (
-      <Wrapper dark={dark}>
+      <Wrapper styled={{ dark }}>
         <Justify>
           <Item style={{ marginLeft: "-8px" }}>
-            <ThemeColor dark={dark}>
+            <ThemeColor styled={{ dark }}>
               <SubtleButtonLink height={40} location={locations.home()}>
                 <DovetailLogo color={dark ? COLORS.white : COLORS.purple} />
               </SubtleButtonLink>
@@ -43,28 +43,20 @@ export class Header extends React.PureComponent<Props> {
   }
 }
 
-const Wrapper = styledViaProps(
-  "div",
-  ({ dark }: { dark: boolean }) => JSON.stringify({ dark }),
-  ({ dark }) => ({
-    backgroundColor: dark ? COLORS.indigo : COLORS.white,
-    color: COLORS.i60,
-    padding: "16px 24px"
-  })
-);
+const Wrapper = styled("div", ({ dark }: { dark: boolean }) => ({
+  backgroundColor: dark ? COLORS.indigo : COLORS.white,
+  color: COLORS.i60,
+  padding: "16px 24px"
+}));
 
-export const ThemeColor = styledViaProps(
-  "div",
-  ({ dark }: { dark: boolean }) => JSON.stringify({ dark }),
-  ({ dark }) => ({
-    color: dark ? COLORS.white : COLORS.i60,
-    opacity: dark ? 0.9 : 1.0,
+export const ThemeColor = styled("div", ({ dark }: { dark: boolean }) => ({
+  color: dark ? COLORS.white : COLORS.i60,
+  opacity: dark ? 0.9 : 1.0,
 
-    $nest: {
-      "&:hover": {
-        color: dark ? COLORS.white : COLORS.purple,
-        opacity: 1.0
-      }
+  $nest: {
+    "&:hover": {
+      color: dark ? COLORS.white : COLORS.purple,
+      opacity: 1.0
     }
-  })
-);
+  }
+}));

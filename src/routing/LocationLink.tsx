@@ -1,7 +1,7 @@
 import { COLORS } from "@heydovetail/website/constants";
 import { assertExhausted } from "@heydovetail/website/util/assertExhausted";
 import Link from "gatsby-link";
-import * as React from "react";
+import React from "react";
 import { style } from "typestyle";
 import { LocationDescriptor, url } from "./locations";
 

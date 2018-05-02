@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { KeyboardListener } from "../KeyboardListener";
 
 export function OnEsc({ action }: { action: () => void }) {

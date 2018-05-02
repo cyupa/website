@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 // https://github.com/nfl/react-helmet/issues/79#issuecomment-299888528
 // require("react-helmet/lib/HelmetConstants.js").HELMET_ATTRIBUTE = "data-react";
@@ -34,7 +34,6 @@ class Html extends React.PureComponent<Props> {
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-          <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet" />
           {headComponents}
           {css}
         </head>

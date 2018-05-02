@@ -4,13 +4,13 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { COLORS } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 
 export class GoToApp extends React.PureComponent {
   public render() {
     return (
       <ButtonLink color={COLORS.purple} height={32} location={locations.projects()}>
-        <Flex alignItems="center" gap={4}>
+        <Flex styled={{ alignItems: "center", gap: 4 }}>
           <Item>Go to app</Item>
           <Item>
             <IconArrowRightMini />

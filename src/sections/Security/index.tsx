@@ -5,7 +5,7 @@ import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { Features } from "@heydovetail/website/components/site/Features";
 import { HALF_GAP } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 
 export const BASE_SECURITY_FEATURES = [
   {
@@ -45,7 +45,7 @@ export const ADVANCED_SECURITY_FEATURES = [
 export class Security extends React.PureComponent {
   public render() {
     return (
-      <Flex gap={HALF_GAP} layout="column">
+      <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
         <Item>
           <FeatureHero
             image={<IllustrationSecurity size="100%" />}

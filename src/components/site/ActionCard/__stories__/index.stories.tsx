@@ -1,6 +1,6 @@
 import { locations } from "@heydovetail/website/routing/locations";
 import { storiesOf } from "@heydovetail/website/util/stories";
-import * as React from "react";
+import React from "react";
 import { ActionCard } from "../";
 
 storiesOf("Site/ActionCard", module).add("default", () => (

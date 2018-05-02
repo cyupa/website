@@ -3,7 +3,7 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { internal } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 
 interface Page {
   path: string;
@@ -20,13 +20,13 @@ export class PageGroup extends React.PureComponent<Props> {
     const { pages, title } = this.props;
 
     return (
-      <Card padding={32}>
-        <Flex gap={16} layout="column">
+      <Card styled={{ padding: 32 }}>
+        <Flex styled={{ gap: 16, layout: "column" }}>
           <Item>
             <h4>{title}</h4>
           </Item>
           <Item>
-            <Flex gap={12} layout="column">
+            <Flex styled={{ gap: 12, layout: "column" }}>
               {pages.map((page, i) => (
                 <Item key={i}>
                   <LocationLink location={internal(page.path)} presentation="text" style={{ lineHeight: "28px" }}>

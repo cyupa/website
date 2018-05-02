@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 type EventType = "keydown" | "keypress" | "keyup";
 // See https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values for values

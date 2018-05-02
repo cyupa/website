@@ -1,4 +1,4 @@
-import * as hero from "!file-loader!./hero.png";
+import hero from "!file-loader!./hero.png";
 import * as customers from "@heydovetail/website/components/icons/customers";
 import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
 import IllustrationBoard from "@heydovetail/website/components/illustrations/IllustrationBoard";
@@ -18,7 +18,7 @@ import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
-import * as React from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 
 export default class extends React.PureComponent {
@@ -29,10 +29,10 @@ export default class extends React.PureComponent {
           <meta name="twitter:card" content="summary_large_image" />
           <meta property="og:image" content={process.env.GATSBY_BASE_URL + hero} />
         </Helmet>
-        <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-          <Flex gap={VERTICAL_GAP} layout="column">
+        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
+          <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
             <Item>
-              <Flex gap={HALF_GAP} layout="column">
+              <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
                 <Item>
                   <Hero
                     image={<IllustrationHero />}
@@ -48,7 +48,7 @@ export default class extends React.PureComponent {
           <CustomerLogos customers={[customers.atlassian, customers.deloitte, customers.nike, customers.uniqa]} />
         </LightContainer>
         <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-          <Flex gap={VERTICAL_GAP} layout="column">
+          <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
             <Item>
               <FeatureHero
                 image={<IllustrationLineChart size="100%" />}
@@ -90,9 +90,9 @@ export default class extends React.PureComponent {
               />
             </Item>
             <Item>
-              <Flex gap={HALF_GAP} layout="column">
+              <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
                 <Item>
-                  <Container maxWidth={WIDTH * 0.75} padding={{ x: 0, y: 0 }}>
+                  <Container styled={{ maxWidth: WIDTH * 0.75, padding: { x: 0, y: 0 } }}>
                     <Center>
                       <h2>Loved by product managers, designers, and researchers worldwide.</h2>
                     </Center>

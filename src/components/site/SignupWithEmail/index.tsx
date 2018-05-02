@@ -6,7 +6,7 @@ import { Item } from "@heydovetail/website/components/layout/Item";
 import { SmallText } from "@heydovetail/website/components/util/SmallText";
 import { COLORS } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import * as React from "react";
+import React from "react";
 
 interface State {
   email: string | undefined;
@@ -25,9 +25,9 @@ export class SignupWithEmail extends React.PureComponent {
 
     return (
       <Center>
-        <Flex gap={24} layout="column">
+        <Flex styled={{ gap: 24, layout: "column" }}>
           <Item>
-            <Flex gap={8}>
+            <Flex styled={{ gap: 8 }}>
               <Item>
                 <TextInput
                   onChange={event => this.setState({ email: event.target.value })}

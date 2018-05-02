@@ -14,9 +14,9 @@ import { MobileMenu } from "@heydovetail/website/components/site/MobileMenu";
 import { FlipFlop } from "@heydovetail/website/components/util/FlipFlop";
 import { BREAKPOINT_TABLET, COLORS } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import { styled } from "@heydovetail/website/util/styled";
-import * as React from "react";
+import React from "react";
 import { media } from "typestyle";
+import { styled } from "typestyle-react";
 import { UseCasesDropdown } from "./UseCasesDropdown";
 
 interface Props {
@@ -31,16 +31,16 @@ export class Navigation extends React.PureComponent<Props> {
     return (
       <>
         <DesktopNavigation>
-          <Flex gap={16}>
+          <Flex styled={{ gap: 16 }}>
             <Item>
-              <Flex gap={4}>
+              <Flex styled={{ gap: 4 }}>
                 <Item>
                   <FlipFlop>
                     {({ active, toggle }) => (
                       <>
-                        <ThemeColor dark={dark}>
+                        <ThemeColor styled={{ dark }}>
                           <SubtleButton id="UseCasesDropdown" onClick={toggle}>
-                            <Flow gap={4}>
+                            <Flow styled={{ gap: 4 }}>
                               <Item>Use cases</Item>
                               <Item>
                                 <IconChevronDown />
@@ -60,18 +60,18 @@ export class Navigation extends React.PureComponent<Props> {
                   </FlipFlop>
                 </Item>
                 <Item>
-                  <ThemeColor dark={dark}>
+                  <ThemeColor styled={{ dark }}>
                     <SubtleButtonLink location={locations.pricing()}>Pricing</SubtleButtonLink>
                   </ThemeColor>
                 </Item>
                 <Item>
-                  <ThemeColor dark={dark}>
+                  <ThemeColor styled={{ dark }}>
                     <SubtleButtonLink location={locations.help()}>Support</SubtleButtonLink>
                   </ThemeColor>
                 </Item>
                 {loggedIn ? null : (
                   <Item>
-                    <ThemeColor dark={dark}>
+                    <ThemeColor styled={{ dark }}>
                       <SubtleButtonLink location={locations.logIn()}>Log in</SubtleButtonLink>
                     </ThemeColor>
                   </Item>

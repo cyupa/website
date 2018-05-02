@@ -70,8 +70,9 @@
     "@types/react-helmet": "^5.0.5",
     "@types/react-resize-detector": "^2.1.0",
     "@types/react-test-renderer": "^16.0.1",
-    "@types/react-transition-group": "^1.1.2",
+    "@types/react-transition-group": "^1.1.4",
     "@types/storybook__addon-actions": "^3.0.3",
+    "@types/storybook__addon-storyshots": "^3.4.0",
     "@types/storybook__react": "^3.0.7",
     "apollo-codegen": "^0.19.1",
     "awesome-typescript-loader": "^4.0.1",
@@ -102,6 +103,7 @@
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-helmet": "^5.2.0",
+    "react-masonry-responsive": "^1.0.4",
     "react-resize-detector": "^1.1.0",
     "react-router-dom": "^4.2.2",
     "react-test-renderer": "^16.3.1",
@@ -111,7 +113,9 @@
     "ts-node": "^5.0.1",
     "tslib": "^1.9.0",
     "tslint": "^5.9.1",
+    "typeface-rubik": "^0.0.54",
     "typescript": "^2.8.1",
-    "typestyle": "^1.7.2"
+    "typestyle": "^1.7.2",
+    "typestyle-react": "^1.1.2"
   }
 }

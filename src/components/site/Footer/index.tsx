@@ -5,8 +5,8 @@ import { Item } from "@heydovetail/website/components/layout/Item";
 import { LinkList } from "@heydovetail/website/components/site/LinkList";
 import { COLORS, HALF_GAP, LIGHT_TEXT_OPACITY, PADDING, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
-import { styled } from "@heydovetail/website/util/styled";
-import * as React from "react";
+import React from "react";
+import { styled } from "typestyle-react";
 import { DarkContainer } from "../DarkContainer";
 import { LightContainer } from "../LightContainer";
 import Wave from "../Wave/Wave";
@@ -20,9 +20,9 @@ export class Footer extends React.PureComponent<Props> {
     const { dark = false } = this.props;
 
     const footer = (
-      <Flex gap={64} layout="column">
+      <Flex styled={{ gap: 64, layout: "column" }}>
         <Item>
-          <Flow gap={64} rowGap={64}>
+          <Flow styled={{ gap: 64, rowGap: 64 }}>
             <Item style={{ verticalAlign: "top" }}>
               <LinkList
                 heading="Use cases"
@@ -70,7 +70,7 @@ export class Footer extends React.PureComponent<Props> {
           </Flow>
         </Item>
         <Item>
-          <Flex gap={8} layout="column">
+          <Flex styled={{ gap: 8, layout: "column" }}>
             <Item>
               <FooterFinePrint>Made in Australia by 🐨Auzzies and 🥝Kiwis</FooterFinePrint>
             </Item>
@@ -89,9 +89,7 @@ export class Footer extends React.PureComponent<Props> {
       return (
         <div style={{ marginTop: HALF_GAP }}>
           <DarkContainer padding={{ x: 0, y: 0 }}>
-            <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-              {footer}
-            </Container>
+            <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>{footer}</Container>
           </DarkContainer>
         </div>
       );
@@ -100,9 +98,7 @@ export class Footer extends React.PureComponent<Props> {
         <div style={{ marginTop: HALF_GAP }}>
           <Wave color={COLORS.p04} size="100%" />
           <LightContainer backgroundColor={COLORS.p04} padding={{ x: 0, y: 0 }}>
-            <Container maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
-              {footer}
-            </Container>
+            <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>{footer}</Container>
           </LightContainer>
         </div>
       );

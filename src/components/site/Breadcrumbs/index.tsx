@@ -2,8 +2,8 @@ import { Fragment } from "@heydovetail/website/components/util/Fragment";
 import { COLORS } from "@heydovetail/website/constants";
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
-import { styled } from "@heydovetail/website/util/styled";
-import * as React from "react";
+import React from "react";
+import { styled } from "typestyle-react";
 
 export interface CrumbProps {
   location?: LocationDescriptor;
