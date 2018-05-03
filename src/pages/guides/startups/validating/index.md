@@ -1,7 +1,7 @@
 ---
 date: "2018-04-11"
 path: "/guides/validating-startup"
-title: "Validating your startup idea"
+title: "How to validate a business or startup idea"
 weight: 2
 ---
 

@@ -1,7 +1,7 @@
 ---
 date: "2018-04-11"
 path: "/guides/survey-analysis"
-title: "How to analyze open-ended surveys"
+title: "How to analyze open-ended survey data"
 weight: 1
 ---
 

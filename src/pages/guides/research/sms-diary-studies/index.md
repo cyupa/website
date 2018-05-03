@@ -1,7 +1,7 @@
 ---
 date: "2018-04-11"
 path: "/guides/sms-diary-studies"
-title: "Running mobile diary studies with SMS"
+title: "How to run a mobile diary study with SMS"
 weight: 3
 ---
 

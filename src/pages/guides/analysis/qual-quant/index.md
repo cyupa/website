@@ -1,7 +1,7 @@
 ---
 date: "2018-04-11"
 path: "/guides/qual-quant"
-title: "The difference between qualitative & quantitative research"
+title: "The difference between qualitative and quantitative research"
 weight: 2
 ---
 
