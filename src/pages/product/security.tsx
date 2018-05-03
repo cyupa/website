@@ -20,15 +20,15 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>Security and privacy – Dovetail</title>
-          <meta
-            name="description"
-            content="Our application is built on world-class, modern cloud infrastructure designed to ensure the safety of your data."
-          />
+          <meta property="og:title" content="Security and privacy – Dovetail" />
           <meta
             property="og:description"
             content="Our application is built on world-class, modern cloud infrastructure designed to ensure the safety of your data."
           />
-          <meta property="og:title" content="Security and privacy – Dovetail" />
+          <meta
+            name="description"
+            content="Our application is built on world-class, modern cloud infrastructure designed to ensure the safety of your data."
+          />
         </Helmet>
         <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
           <Item>
@@ -106,7 +106,7 @@ export default class extends React.PureComponent {
                   <Flex styled={{ gap: 24, layout: "column" }}>
                     <Item>
                       <p style={{ maxWidth: WIDTH / 2 }}>
-                        Find our privacy policy, terms of service, and list of third party data sub-processors in our legal help
+                        Find our privacy policy, terms of service, and list of third party data subprocessors in our legal help
                         center.
                       </p>
                     </Item>

@@ -1,7 +1,7 @@
 ---
 date: "2018-04-11"
 path: "/guides/website-traffic"
-title: "How to get traffic on your website"
+title: "How to drive traffic to your website"
 weight: 1
 ---
 
@@ -68,6 +68,12 @@ Content marketing is free if you write the content yourself, lasts forever, and 
 **See also: [The difference between qualitative & quantitative research](/guides/qual-quant)**
 
 My first attempt involved writing a few blog posts about UX diary studies on Medium. Our [Medium blog](https://dovetail.blog) used to be on a subdomain (blog.getdovetail.io), and I read somewhere that it’s better for SEO to have posts on your main domain instead. I copied the research posts from Medium over to a new section on our website called [Guides](/guides), and wrote a couple more. In fact you’re reading one right now!
+
+### Guest blogging
+
+Seek out blogs and Medium publications relevant to your audience and pitch articles for them. Brainstorm articles that provide value to their audience, trying to cover topics that are relevant yet come with a unique angle they wouldn’t have heard before.
+
+There are plenty of great lists of quality blogs that accept guest articles – you could start with [this one of 1,500+ from izideo.com](https://www.izideo.com/blog/list-sites-accepts-guest-posting/), which is organized by category.
 
 ### Q&A sites like Quora, StackExchange, and Reddit
 

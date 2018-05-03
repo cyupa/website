@@ -37,11 +37,11 @@ export default class extends React.PureComponent {
           <meta property="og:image" content={process.env.GATSBY_BASE_URL + hero} />
           <meta
             property="og:description"
-            content="Dovetail helps you easily analyze qualitative data in the cloud, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+            content="Analyze qualitative data in the cloud with affordable and intuitive software. Add inline tags to qualitative data, summarize research with insights, and collaborate on research analysis with others."
           />
           <meta
             name="description"
-            content="Dovetail helps you easily analyze qualitative data in the cloud, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+            content="Analyze qualitative data in the cloud with affordable and intuitive software. Add inline tags to qualitative data, summarize research with insights, and collaborate on research analysis with others."
           />
         </Helmet>
         <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>

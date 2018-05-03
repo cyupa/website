@@ -1,7 +1,7 @@
 ---
 date: "2018-04-11"
 path: "/guides/diary-studies"
-title: "An overview of UX diary studies"
+title: "How to run a UX diary study"
 weight: 2
 ---
 

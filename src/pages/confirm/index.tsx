@@ -17,6 +17,14 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>Confirm your email address – Dovetail</title>
+          <meta
+            name="description"
+            content="We need to confirm your email address. Please follow the instructions conveniently located in your inbox."
+          />
+          <meta
+            property="og:description"
+            content="We need to confirm your email address. Please follow the instructions conveniently located in your inbox."
+          />
         </Helmet>
         <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
           <FlexWrap styled={{ gap: 32, growItems: true }}>

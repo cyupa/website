@@ -91,7 +91,7 @@ module.exports = {
               sitemap: null,
               host: null
             }
-          : { policy: [{ userAgent: "*" }] }
+          : { policy: [{ userAgent: "*", disallow: ["/confirm", "/404", "/504", "/users/*"] }] }
     }
   ]
 };

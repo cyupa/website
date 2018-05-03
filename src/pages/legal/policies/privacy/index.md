@@ -1,5 +1,5 @@
 ---
-date: "2018-04-26"
+date: "2018-05-01"
 path: "/legal/privacy"
 title: "User Privacy Policy"
 weight: 1
@@ -68,46 +68,55 @@ We collect and use your information:
 
 If you are an individual in the European Economic Area (EEA), we collect and process information about you only where we have legal bases for doing so under applicable EU laws. The legal bases depend on the Services you use and how you use them. This means we collect and use your information only where:
 
-* We need it to provide you the Services, including to operate the Services, provide customer support and personalized features and to protect the safety and security of the Services;
-* It satisfies a legitimate interest (which is not overridden by your data protection interests), such as for research and development, to market and promote the Services and to protect our legal rights and interests;
-* You give us consent to do so for a specific purpose; or
-* We need to process your data to comply with a legal obligation.
+* we need it to provide you the Services, including to operate the Services, provide customer support and personalized features and to protect the safety and security of the Services;
+* it satisfies a legitimate interest (which is not overridden by your data protection interests), such as for research and development, to market and promote the Services and to protect our legal rights and interests;
+* you give us consent to do so for a specific purpose; or
+* we need to process your data to comply with a legal obligation.
 
-If you have consented to our use of information about you for a specific purpose, you have the right to change your mind at any time, but this will not affect any processing that has already taken place. Where we are using your information because we or a third party (e.g. your employer) have a legitimate interest to do so, you have the right to object to that use though, in some cases, this may mean no longer using the Services.
+If you have consented to our use of information about you for a specific purpose, you have the right to change your mind at any time, but this will not affect any processing that has already taken place.
+
+Where we are using your information because we or a third party (e.g. your employer) have a legitimate interest to do so, you have the right to object to that use though, in some cases, this may mean no longer using the Services.
 
 ## How we share information we collect
 
-Dovetail is collaborative cloud product. This means sharing information through the Services and with certain third parties. We share information we collect about you in the ways discussed below, including in connection with possible business transfers, but we are not in the business of selling information about you to advertisers or other third parties.
+Dovetail is collaborative cloud product built for teams. This means sharing information with others through the Services, and with certain third parties.
+
+We share information we collect about you in the ways discussed below, including in connection with possible business transfers, but we are not in the business of selling information about you to advertisers or other third parties.
+
+Where we disclose your Personal Information to third parties for the purposes listed below, we will confirm that the third party’s privacy policies and procedures are in accordance with the Privacy Act.
 
 ### Sharing with other users
 
-Certain information will be shared with other members of your team. Your teammates are usually colleagues you work with day-to-day. The information shared with teammates includes:
+Certain information will be shared with other members of your team. These people are usually colleagues you work with day-to-day, or clients you have added to your team.
 
-* profile information like your name, email address, and profile photo;
-* content you provide through the Services, for instance projects, notes, tags, files;
+The information shared with teammates includes:
+
+* profile information like your name, email address, and profile photo; and
+* content you add to the Services, for example files, notes, projects, and tags.
 
 ### Sharing with third parties
 
-As part of providing our Services, we use third party services to store and process your Personal Information. This includes third parties that store data outside of Australia:
+As part of providing our Services, we use third party services to store and process your Personal Information. This includes third parties that store data outside of Australia.
 
-* [Amazon Web Services](https://aws.amazon.com) for hosting, logging, and storage;
-* [ChartMogul](https://chartmogul.com) for storing payment analytics information;
-* [Heroku](https://heroku.com) for hosting, logging, and storage;
-* [Mixpanel](https://mixpanel.com) for tracking your behavior through analytics events;
-* [Sendgrid](https://sendgrid.com) for sending you email communication; and
-* [Stripe](https://stripe.com) for storing your billing details, address and postcode;
+We share your data with third party services in the following ways:
 
-For more information on our use of third parties, see our [list of Data Subprocessors](/legal/data-subprocessors).
+* [Amazon Web Services](https://aws.amazon.com) for hosting, logging, and storage.
+* [ChartMogul](https://chartmogul.com) for storing payment analytics information.
+* [Heroku](https://heroku.com) for hosting, logging, and storage.
+* [Mailchimp](https://mailchimp.com) for sending you promotional emails and product news.
+* [Mixpanel](https://mixpanel.com) for tracking your behavior through analytics events.
+* [Sendgrid](https://sendgrid.com) for sending you transactional email communication.
+* [Stripe](https://stripe.com) for storing your billing details, address and postcode.
+
+For more information on our use of third parties, including the geographic location of each, see our [list of Data Subprocessors](/legal/data-subprocessors).
 
 ### Other third party disclosure
 
 In addition, we may disclose Personal Information to:
 
 * credit reporting agencies and courts, tribunals and regulatory authorities where you fail to pay for goods or services provided to you;
-* courts, tribunals, regulatory authorities and law enforcement officers as required by law, in connection with any actual or prospective legal proceedings, or in order to establish, exercise or defend our legal rights;
+* courts, tribunals, regulatory authorities and law enforcement officers as required by law, in connection with any actual or prospective legal proceedings, or in order to establish, exercise or defend our legal rights; and
 * third parties, including agents or sub-contractors, who assist us in providing information, products, services or direct marketing to you. This may include parties located, or that store data, outside of Australia.
-
-Where we disclose your Personal Information to third parties for these purposes, we will confirm that the third party’s privacy policies and procedures are in accordance with the Privacy Act.
 
 If there is a change of control of our business or a sale or transfer of business assets, we reserve the right to transfer our user databases, together with any Personal Information and non-Personal Information contained in those databases, to the extent permissible by law. This information may be disclosed to a potential purchaser. We would seek to only disclose information in good faith.
 
@@ -117,7 +126,7 @@ If there is a change of control of our business or a sale or transfer of busines
 
 **Your provision of third party information:** If you provide us with third party Personal Information then you warrant to us that you have the third party’s consent.
 
-**Restrict:** If you have previously agreed to us collecting and using your Personal Information, you may change your mind at any time by contacting us at the email address listed in this User Privacy Policy.
+**Restrict:** If you have previously agreed to us collecting and using your Personal Information, you may change your mind at any time by contacting us at the email address listed in this User Privacy Policy. This may mean no longer using the Services.
 
 **Access:** You may request details of Personal Information that we hold about you, in certain circumstances set out in the Privacy Act 1988 (Cth) (Privacy Act). We may refuse to provide you with information that we hold about you, in certain circumstances set out in the Privacy Act.
 
@@ -127,7 +136,7 @@ If there is a change of control of our business or a sale or transfer of busines
 
 **Complaints:** If you believe that we have breached the Australian Privacy Principles and wish to make a complaint about that breach, please contact us by email setting out details of the breach. We will promptly investigate your complaint and respond to you in writing setting out the outcome of our investigation, what steps we propose to take to remedy the breach and any other action we will take to deal with your complaint.
 
-**Unsubscribe:** To opt out of non-trasactional or account-related communications, please use the “unsubscribe” link located at the bottom of our communications.
+**Unsubscribe:** You may opt out of non-transactional or non-account related promotional emails by clicking the “unsubscribe” link located at the bottom of our communications.
 
 ## Data storage, transfer, and security
 
@@ -135,7 +144,7 @@ Dovetail hosts data with hosting service providers in numerous countries includi
 
 No information transmitted over the Internet can be guaranteed to be secure. We cannot guarantee the security of any information that you transmit to us, or receive from us. Although we take measures to safeguard against unauthorised disclosures of information, we cannot assure you that Personal Information that we collect will not be disclosed in a manner that is inconsistent with this User Privacy Policy.
 
-Where data is transferred over the Internet, the data is encrypted using industry standard SSL (HTTPS).
+Where data is transferred over the Internet, the data is encrypted using industry standard SSL (HTTPS), with HTTP Strict Transport Security (HSTS) enabled.
 
 ## Data breach notification
 

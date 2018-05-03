@@ -15,6 +15,14 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>404 – Dovetail</title>
+          <meta
+            name="description"
+            content="Sorry, this page doesn’t exist. It may have been moved or deleted. Check the URL is correct in the address bar, and get in touch with us if you continue to have issues."
+          />
+          <meta
+            property="og:description"
+            content="Sorry, this page doesn’t exist. It may have been moved or deleted. Check the URL is correct in the address bar, and get in touch with us if you continue to have issues."
+          />
         </Helmet>
         <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
           <Flex styled={{ gap: 40, layout: "column" }}>
@@ -23,8 +31,7 @@ export default class extends React.PureComponent {
                 center={false}
                 maxWidth={WIDTH / 2}
                 title="Sorry, this page doesn’t exist."
-                text="It may have been moved or deleted. Check the URL is correct in the address bar, and get in touch with us if
-                  you continue to have issues."
+                text="It may have been moved or deleted. Check the URL is correct in the address bar, and get in touch with us if you continue to have issues."
               />
             </Item>
             <Item>

@@ -19,6 +19,14 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>About us – Dovetail</title>
+          <meta
+            name="description"
+            content="Dovetail was created in 2017 by two ex-Atlassians: Benjamin Humphrey and Brad Ayers. We started Dovetail because we believe that deeply understanding one’s customers is the secret ingredient to making great products."
+          />
+          <meta
+            property="og:description"
+            content="Dovetail was created in 2017 by two ex-Atlassians: Benjamin Humphrey and Brad Ayers. We started Dovetail because we believe that deeply understanding one’s customers is the secret ingredient to making great products."
+          />
         </Helmet>
         <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
           <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>

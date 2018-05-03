@@ -75,9 +75,9 @@ The protection of Customer Data is a top priority for us so we will maintain adm
 
 During the term of a team subscription, the Customer will be permitted to export or share certain Customer Data from the Services. However, because we have multiple, complex features, and the Customer has different retention options, the Customer acknowledges and agrees that the ability to export or share Customer Data may be limited or unavailable. Following termination or expiration of a team’s subscriptions, we will have no obligation to maintain or provide any Customer Data and may thereafter, unless legally prohibited, delete all Customer Data in our systems or otherwise in our possession or under our control.
 
-## Privacy Policy
+## Privacy Policies
 
-Please review our [Privacy Policy](/legal/privacy) for more information on how we collect and use data relating to the use of the Services.
+Please review our [User Privacy Policy](/legal/privacy) and [Website Visitor Privacy Policy](/legal/website-privacy) for more information on how we collect and use data relating to the use of the Services.
 
 ## You own your Customer Data
 
