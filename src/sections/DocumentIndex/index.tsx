@@ -21,6 +21,8 @@ export class DocumentIndex extends React.PureComponent<Props> {
       <>
         <Helmet>
           <title>{title} – Dovetail</title>
+          <meta name="description" content={text} />
+          <meta property="og:description" content={text} />
         </Helmet>
         <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
           <Flex styled={{ gap: 48, layout: "column" }}>

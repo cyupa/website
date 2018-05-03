@@ -22,9 +22,15 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>Pricing – Dovetail</title>
-          <meta name="description" content="Simple and affordable pricing." />
-          <meta property="og:description" content="Simple and affordable pricing." />
           <meta property="og:title" content="Pricing – Dovetail" />
+          <meta
+            property="og:description"
+            content="Simple, transparent, and affordable pricing. Pay the same price each month regardless of your team size."
+          />
+          <meta
+            name="description"
+            content="Simple, transparent, and affordable pricing. Pay the same price each month regardless of your team size."
+          />
         </Helmet>
         <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
           <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>

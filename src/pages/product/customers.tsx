@@ -19,8 +19,14 @@ export default class extends React.PureComponent {
         <Helmet>
           <title>Our customers – Dovetail</title>
           <meta property="og:title" content="Our customers – Dovetail" />
-          <meta name="description" content="Loved by product managers, designers, and researchers worldwide." />
-          <meta property="og:description" content="Loved by product managers, designers, and researchers worldwide." />
+          <meta
+            name="description"
+            content="Loved by product managers, designers, and researchers worldwide, from organizations like Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+          />
+          <meta
+            property="og:description"
+            content="Loved by product managers, designers, and researchers worldwide, from organizations like Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+          />
         </Helmet>
         <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
           <HeroText

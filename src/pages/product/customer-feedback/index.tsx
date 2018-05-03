@@ -37,11 +37,11 @@ export default class extends React.PureComponent {
           <meta property="og:image" content={process.env.GATSBY_BASE_URL + hero} />
           <meta
             property="og:description"
-            content="Dovetail helps you keep all of your customer feedback in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+            content="Centralize all of your customer feedback in one place, from thousands of apps like Intercom, SurveyMonkey, and Twitter. Measure changes over time, tag patterns, discover insights, and decide what to do next."
           />
           <meta
             name="description"
-            content="Dovetail helps you keep all of your customer feedback in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+            content="Centralize all of your customer feedback in one place, from thousands of apps like Intercom, SurveyMonkey, and Twitter. Measure changes over time, tag patterns, discover insights, and decide what to do next."
           />
         </Helmet>
         <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>

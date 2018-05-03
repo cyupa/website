@@ -36,11 +36,11 @@ export default class extends React.PureComponent {
           <meta property="og:image" content={process.env.GATSBY_BASE_URL + hero} />
           <meta
             property="og:description"
-            content="Dovetail keeps all of your user research data in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+            content="Keep all of your user research data in one place. Organize and analyze raw research in projects, and summarize your research with insights. Learn from other researchers across your organization."
           />
           <meta
             name="description"
-            content="Dovetail keeps all of your user research data in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
+            content="Keep all of your user research data in one place. Organize and analyze raw research in projects, and summarize your research with insights. Learn from other researchers across your organization."
           />
         </Helmet>
         <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>

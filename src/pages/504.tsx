@@ -15,6 +15,14 @@ export default class extends React.PureComponent {
       <>
         <Helmet>
           <title>504 – Dovetail</title>
+          <meta
+            name="description"
+            content="We’ll be back soon. Don’t panic! Dovetail might be undergoing maintenance or an upgrade. No doubt we’re working on restoring service, so please try again in a few minutes."
+          />
+          <meta
+            property="og:description"
+            content="We’ll be back soon. Don’t panic! Dovetail might be undergoing maintenance or an upgrade. No doubt we’re working on restoring service, so please try again in a few minutes."
+          />
         </Helmet>
         <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
           <Flex styled={{ gap: 40, layout: "column" }}>
