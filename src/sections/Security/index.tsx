@@ -20,7 +20,7 @@ export const BASE_SECURITY_FEATURES = [
   },
   {
     text:
-      "Dovetail is GDPR compliant with a privacy-by-design architecture, the right to be forgotten, data portability features, and more.",
+      "Dovetail is GDPR ready with a privacy-by-design architecture, clear privacy policies, and features to help users manage their personal information.",
     title: "GDPR"
   },
   {
