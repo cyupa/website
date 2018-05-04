@@ -106,8 +106,8 @@ export default class extends React.PureComponent {
                   <Flex styled={{ gap: 24, layout: "column" }}>
                     <Item>
                       <p style={{ maxWidth: WIDTH / 2 }}>
-                        Find our privacy policy, terms of service, and list of third party data subprocessors in our legal help
-                        center.
+                        Find our privacy policies, terms of service, and list of third party data subprocessors in our legal
+                        help center.
                       </p>
                     </Item>
                     <Item>
