@@ -86,7 +86,18 @@ export async function createPages({ boundActionCreators, graphql }) {
   });
 }
 
-export function modifyWebpackConfig({ config, env }) {
+export function modifyWebpackConfig({ config, stage }) {
+  const timestamp = Date.now();
+
+  if (stage === "build-javascript") {
+    config.merge({
+      output: {
+        filename: `[name]-${timestamp}-[chunkhash].js`,
+        chunkFilename: `[name]-${timestamp}-[chunkhash].js`
+      }
+    });
+  }
+
   config
     .merge({
       resolve: {
