@@ -16,6 +16,9 @@
     "storybook": "ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook",
     "test": "./node_modules/.bin/tsc --noEmit && ./node_modules/.bin/tslint -p tsconfig.json && ./node_modules/.bin/jest --runInBand && ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook --smoke-test"
   },
+  "engines": {
+    "node": "9.4.0"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:heydovetail/website.git"
@@ -61,6 +64,7 @@
     "@heydovetail/editorconfig": "^2.0.0",
     "@heydovetail/svg-to-react": "^1.1.0",
     "@heydovetail/tslint-config": "^2.1.0",
+    "@heydovetail/ui-components": "^0.2.0",
     "@storybook/addon-storyshots": "^3.4.0",
     "@storybook/react": "^3.4.0",
     "@types/jest": "^22.2.2",
