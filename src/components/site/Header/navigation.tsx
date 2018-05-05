@@ -1,6 +1,6 @@
+import { SubtleButton } from "@heydovetail/ui-components";
 import { Button } from "@heydovetail/website/components/forms/Button";
 import { ButtonLink } from "@heydovetail/website/components/forms/ButtonLink";
-import { SubtleButton } from "@heydovetail/website/components/forms/SubtleButton";
 import { SubtleButtonLink } from "@heydovetail/website/components/forms/SubtleButtonLink";
 import IconChevronDown from "@heydovetail/website/components/icons/feather/IconChevronDown";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
