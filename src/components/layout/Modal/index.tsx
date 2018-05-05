@@ -1,4 +1,4 @@
-import { SubtleButton } from "@heydovetail/website/components/forms/SubtleButton";
+import { SubtleButton } from "@heydovetail/ui-components";
 import IconCross from "@heydovetail/website/components/icons/feather/IconCross";
 import { BodyOverflow } from "@heydovetail/website/components/util/BodyOverflow";
 import { OnEsc } from "@heydovetail/website/components/util/OnEsc";
