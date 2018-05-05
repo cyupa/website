@@ -64,3 +64,7 @@ The following resources might prove useful:
 * [Our list of Data Subprocessors](/legal/data-subprocessors)
 * [The EU’s definition of personal data](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-personal-data_en)
 * [Full text of the GDPR](https://gdpr-info.eu/)
+
+## Contact us
+
+If you have any questions, please email us at [legal@dovetailapp.com](mailto:legal@dovetailapp.com).
