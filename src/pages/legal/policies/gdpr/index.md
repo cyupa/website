@@ -11,11 +11,11 @@ On May 25, 2018, the European Union’s General Data Protection Regulation (GDPR
 
 The GDPR does not only apply to companies that operate in the EU. It also impacts companies operating outside of the EU, like Dovetail, if they have any EU customers or personal data of anyone in the EU.
 
-Dovetail has made information security and data privacy foundational principles of everything we do, and we recognize the importance of passing regulations to advance information security and data privacy for our customers and citizens of the EU.
+Dovetail has made information security and data privacy foundational principles of everything we do, and we recognize the importance of adhering to regulations to advance information security and data privacy for citizens of the EU.
 
 ## The Privacy Act and the GDPR
 
-As an Australian-based business, our information security and data privacy privacy practices and policies are already guided by Australian law, namely the [Australian Privacy Act 1988 (Cth)](https://www.legislation.gov.au/Details/C2017C00283) (Privacy Act).
+As an Australian-based business, our information security and data privacy practices and policies are already guided by Australian law, namely the [Australian Privacy Act 1988 (Cth)](https://www.legislation.gov.au/Details/C2017C00283) (Privacy Act).
 
 The GDPR and the Privacy Act include some similar requirements. Both laws foster transparent information handling practices and business accountability, to give individuals confidence that their privacy is being protected. Both laws require businesses to implement measures that ensure compliance with a set of privacy principles, and both take a ‘privacy by design’ approach to compliance.
 
