@@ -20,6 +20,13 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: "./src/data/",
+        name: "data"
+      }
+    },
+    {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
@@ -92,6 +99,7 @@ module.exports = {
               host: null
             }
           : { policy: [{ userAgent: "*", disallow: ["/confirm", "/404", "/504", "/users/*"] }] }
-    }
+    },
+    "gatsby-transformer-json"
   ]
 };

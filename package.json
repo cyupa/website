@@ -8,6 +8,7 @@
     "develop": "ts-node ./node_modules/.bin/gatsby develop",
     "generate:types": "./node_modules/.bin/apollo-codegen introspect-schema --output src/graphql/schema.json http://localhost:8000/___graphql && ./node_modules/.bin/apollo-codegen print-schema --schema src/graphql/schema.json --output src/graphql/schema.graphql && ./node_modules/.bin/apollo-codegen generate --schema src/graphql/schema.json --target typescript --output src/graphql/types.tsx --tag-name graphql 'src/**/*.tsx'",
     "generate:svgs": "svg-to-react src",
+    "generate:zapier": "ts-node ./bin/fetch-zapier-templates.ts",
     "jest": "./node_modules/.bin/jest -u",
     "precommit": "lint-staged",
     "postmerge": "./bin/post-merge-update-dependencies",
@@ -81,7 +82,7 @@
     "apollo-codegen": "^0.19.1",
     "awesome-typescript-loader": "^4.0.1",
     "babel-loader": "^6.4.1",
-    "gatsby": "^1.9.244",
+    "gatsby": "^1.9.259",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-canonical-urls": "^1.0.18",
     "gatsby-plugin-google-analytics": "^1.0.29",
@@ -96,7 +97,8 @@
     "gatsby-plugin-sitemap": "^1.2.22",
     "gatsby-plugin-typescript": "^1.4.19",
     "gatsby-remark-images": "^1.5.61",
-    "gatsby-source-filesystem": "^1.5.29",
+    "gatsby-source-filesystem": "^1.5.31",
+    "gatsby-transformer-json": "^1.0.17",
     "gatsby-transformer-remark": "^1.7.39",
     "husky": "^0.14.3",
     "jest": "^22.4.3",
@@ -121,5 +123,11 @@
     "typescript": "^2.8.1",
     "typestyle": "^1.7.2",
     "typestyle-react": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^1.6.9",
+    "@types/yargs": "^11.0.0",
+    "node-fetch": "^2.1.2",
+    "yargs": "^11.0.0"
   }
 }
