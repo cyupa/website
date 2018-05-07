@@ -7,6 +7,10 @@ type breadcrumb {
   path: String
 }
 
+type config_2 {
+  version: String
+}
+
 type context {
   breadcrumb: [breadcrumb]
 }
@@ -37,7 +41,7 @@ type Directory implements Node {
 
   """The children of this node."""
   children: [Node]
-  internal: internal_9
+  internal: internal_11
   sourceInstanceName: String
   absolutePath: String
   relativePath: String
@@ -554,7 +558,6 @@ input directoryConnectionSort {
 
 enum DirectoryConnectionSortByFieldsEnum {
   id
-  children
   parent
   internal___contentDigest
   internal___type
@@ -935,7 +938,13 @@ type File implements Node {
 
   """The child of this node of type markdownRemark"""
   childMarkdownRemark: MarkdownRemark
-  internal: internal_10
+
+  """The child of this node of type svgsJson"""
+  childSvgsJson: SvgsJson
+
+  """The children of this node of type integrationsJson"""
+  childrenIntegrationsJson: [IntegrationsJson]
+  internal: internal_12
   sourceInstanceName: String
   absolutePath: String
   relativePath: String
@@ -1911,6 +1920,18 @@ input filterFile {
 }
 
 """Filter connection on its fields"""
+input filterIntegrationsJson {
+  createUrl: integrationsJsonConnectionCreateUrlQueryString_2
+  descriptionHtml: integrationsJsonConnectionDescriptionHtmlQueryString_2
+  descriptionPlain: integrationsJsonConnectionDescriptionPlainQueryString_2
+  id: integrationsJsonConnectionIdQueryString_2
+  status: integrationsJsonConnectionStatusQueryString_2
+  steps: integrationsJsonConnectionStepsQueryList_2
+  title: integrationsJsonConnectionTitleQueryString_2
+  internal: integrationsJsonConnectionInternalInputObject_2
+}
+
+"""Filter connection on its fields"""
 input filterMarkdownRemark {
   id: markdownRemarkConnectionIdQueryString_2
   internal: markdownRemarkConnectionInternalInputObject_2
@@ -1953,6 +1974,13 @@ input filterSitePlugin {
   pluginFilepath: sitePluginConnectionPluginFilepathQueryString_2
   packageJson: sitePluginConnectionPackageJsonInputObject_2
   internal: sitePluginConnectionInternalInputObject_2
+}
+
+"""Filter connection on its fields"""
+input filterSvgsJson {
+  moduleNameTemplate: svgsJsonConnectionModuleNameTemplateQueryString_2
+  id: svgsJsonConnectionIdQueryString_2
+  internal: svgsJsonConnectionInternalInputObject_2
 }
 
 type frontmatter_2 {
@@ -2044,19 +2072,371 @@ input htmlQueryString_4 {
   glob: String
 }
 
-type icons_2 {
-  android: Boolean
-  appleIcon: Boolean
-  appleStartup: Boolean
-  coast: Boolean
-  favicons: Boolean
-  firefox: Boolean
-  twitter: Boolean
-  yandex: Boolean
-  windows: Boolean
+"""Node of type IntegrationsJson"""
+type IntegrationsJson implements Node {
+  """The id of this node."""
+  id: ID!
+
+  """The parent of this node."""
+  parent: Node
+
+  """The children of this node."""
+  children: [Node]
+  createUrl: String
+  descriptionHtml: String
+  descriptionPlain: String
+  status: String
+  steps: [steps_2]
+  title: String
+  internal: internal_9
+}
+
+"""A connection to a list of items."""
+type IntegrationsJsonConnection {
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """A list of edges."""
+  edges: [IntegrationsJsonEdge]
+  totalCount: Int
+  distinct(field: integrationsJsonDistinctEnum): [String]
+  group(skip: Int, limit: Int, field: integrationsJsonGroupEnum): [integrationsJsonGroupConnectionConnection]
+}
+
+input integrationsJsonConnectionCreateUrlQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonConnectionDescriptionHtmlQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonConnectionDescriptionPlainQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonConnectionIdQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonConnectionInternalContentDigestQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonConnectionInternalInputObject_2 {
+  contentDigest: integrationsJsonConnectionInternalContentDigestQueryString_2
+  type: integrationsJsonConnectionInternalTypeQueryString_2
+  owner: integrationsJsonConnectionInternalOwnerQueryString_2
+}
+
+input integrationsJsonConnectionInternalOwnerQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonConnectionInternalTypeQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonConnectionSort {
+  fields: [IntegrationsJsonConnectionSortByFieldsEnum]!
+  order: integrationsJsonConnectionSortOrderValues = ASC
+}
+
+enum IntegrationsJsonConnectionSortByFieldsEnum {
+  createUrl
+  descriptionHtml
+  descriptionPlain
+  id
+  status
+  steps
+  title
+  parent
+  internal___contentDigest
+  internal___type
+  internal___owner
+}
+
+enum integrationsJsonConnectionSortOrderValues {
+  ASC
+  DESC
+}
+
+input integrationsJsonConnectionStatusQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonConnectionStepsColorQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonConnectionStepsDescriptionQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonConnectionStepsIconQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonConnectionStepsIdQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonConnectionStepsInputObject_2 {
+  color: integrationsJsonConnectionStepsColorQueryString_2
+  description: integrationsJsonConnectionStepsDescriptionQueryString_2
+  icon: integrationsJsonConnectionStepsIconQueryString_2
+  id: integrationsJsonConnectionStepsIdQueryString_2
+  title: integrationsJsonConnectionStepsTitleQueryString_2
+}
+
+input integrationsJsonConnectionStepsQueryList_2 {
+  in: [integrationsJsonConnectionStepsInputObject_2]
+}
+
+input integrationsJsonConnectionStepsTitleQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonConnectionTitleQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonCreateUrlQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonDescriptionHtmlQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonDescriptionPlainQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+enum integrationsJsonDistinctEnum {
+  createUrl
+  descriptionHtml
+  descriptionPlain
+  id
+  status
+  steps
+  title
+  parent
+  internal___contentDigest
+  internal___type
+  internal___owner
+}
+
+"""An edge in a connection."""
+type IntegrationsJsonEdge {
+  """The item at the end of the edge"""
+  node: IntegrationsJson
+
+  """The next edge in the connection"""
+  next: IntegrationsJson
+
+  """The previous edge in the connection"""
+  previous: IntegrationsJson
+}
+
+"""A connection to a list of items."""
+type integrationsJsonGroupConnectionConnection {
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """A list of edges."""
+  edges: [integrationsJsonGroupConnectionEdge]
+  field: String
+  fieldValue: String
+  totalCount: Int
+}
+
+"""An edge in a connection."""
+type integrationsJsonGroupConnectionEdge {
+  """The item at the end of the edge"""
+  node: IntegrationsJson
+
+  """The next edge in the connection"""
+  next: IntegrationsJson
+
+  """The previous edge in the connection"""
+  previous: IntegrationsJson
+}
+
+enum integrationsJsonGroupEnum {
+  createUrl
+  descriptionHtml
+  descriptionPlain
+  id
+  status
+  steps
+  title
+  parent
+  internal___contentDigest
+  internal___type
+  internal___owner
+}
+
+input integrationsJsonIdQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonInternalContentDigestQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonInternalInputObject_2 {
+  contentDigest: integrationsJsonInternalContentDigestQueryString_2
+  type: integrationsJsonInternalTypeQueryString_2
+  owner: integrationsJsonInternalOwnerQueryString_2
+}
+
+input integrationsJsonInternalOwnerQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonInternalTypeQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonStatusQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonStepsColorQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonStepsDescriptionQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonStepsIconQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonStepsIdQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonStepsInputObject_2 {
+  color: integrationsJsonStepsColorQueryString_2
+  description: integrationsJsonStepsDescriptionQueryString_2
+  icon: integrationsJsonStepsIconQueryString_2
+  id: integrationsJsonStepsIdQueryString_2
+  title: integrationsJsonStepsTitleQueryString_2
+}
+
+input integrationsJsonStepsQueryList_2 {
+  in: [integrationsJsonStepsInputObject_2]
+}
+
+input integrationsJsonStepsTitleQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonTitleQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
 }
 
 type internal_10 {
+  contentDigest: String
+  type: String
+  owner: String
+}
+
+type internal_11 {
+  contentDigest: String
+  type: String
+  description: String
+  owner: String
+}
+
+type internal_12 {
   contentDigest: String
   mediaType: String
   type: String
@@ -2064,27 +2444,27 @@ type internal_10 {
   owner: String
 }
 
-type internal_11 {
+type internal_13 {
   content: String
   type: String
   contentDigest: String
   owner: String
 }
 
-type internal_12 {
+type internal_14 {
   contentDigest: String
   type: String
   owner: String
 }
 
-type internal_7 {
+type internal_15 {
   type: String
   contentDigest: String
   description: String
   owner: String
 }
 
-type internal_8 {
+type internal_16 {
   contentDigest: String
   type: String
   owner: String
@@ -2093,7 +2473,6 @@ type internal_8 {
 type internal_9 {
   contentDigest: String
   type: String
-  description: String
   owner: String
 }
 
@@ -2127,7 +2506,7 @@ type MarkdownRemark implements Node {
 
   """The children of this node."""
   children: [Node]
-  internal: internal_11
+  internal: internal_13
   frontmatter: frontmatter_2
   excerpt(pruneLength: Int = 140): String
   fileAbsolutePath: String
@@ -2262,7 +2641,6 @@ input markdownRemarkConnectionSort {
 
 enum MarkdownRemarkConnectionSortByFieldsEnum {
   id
-  children
   parent
   internal___content
   internal___type
@@ -2505,26 +2883,29 @@ type peerDependencies_2 {
 
 type pluginOptions_3 {
   plugins: [plugins_2]
-  logo: String
-  injectHTML: Boolean
-  icons: icons_2
   path: String
   name: String
   backgroundColor: String
   quality: Int
   maxWidth: Int
   sizeByPixelDensity: Boolean
-  wrapperStyle: String
-  linkImagesToOriginal: Boolean
-  showCaptions: Boolean
-  pathPrefix: String
   anonymize: Boolean
   head: Boolean
   respectDNT: Boolean
   trackingId: String
   dsn: String
+  config: config_2
   color: String
   showSpinner: Boolean
+  siteUrl: String
+  background_color: String
+  description: String
+  display: String
+  icon: String
+  short_name: String
+  start_url: String
+  theme_color: String
+  policy: [policy_2]
 }
 
 type pluginOptions_4 {
@@ -2532,10 +2913,6 @@ type pluginOptions_4 {
   quality: Int
   maxWidth: Int
   sizeByPixelDensity: Boolean
-  wrapperStyle: String
-  linkImagesToOriginal: Boolean
-  showCaptions: Boolean
-  pathPrefix: String
 }
 
 type plugins_2 {
@@ -2545,6 +2922,11 @@ type plugins_2 {
   version: String
   pluginOptions: pluginOptions_4
   pluginFilepath: String
+}
+
+type policy_2 {
+  userAgent: String
+  disallow: [String]
 }
 
 input publicUrlQueryString_3 {
@@ -2562,8 +2944,8 @@ input publicUrlQueryString_4 {
 }
 
 type RootQueryType {
-  """Connection to all SitePage nodes"""
-  allSitePage(skip: Int, limit: Int, sort: sitePageConnectionSort, filter: filterSitePage): SitePageConnection
+  """Connection to all IntegrationsJson nodes"""
+  allIntegrationsJson(skip: Int, limit: Int, sort: integrationsJsonConnectionSort, filter: filterIntegrationsJson): IntegrationsJsonConnection
 
   """Connection to all SitePlugin nodes"""
   allSitePlugin(skip: Int, limit: Int, sort: sitePluginConnectionSort, filter: filterSitePlugin): SitePluginConnection
@@ -2576,12 +2958,20 @@ type RootQueryType {
 
   """Connection to all MarkdownRemark nodes"""
   allMarkdownRemark(skip: Int, limit: Int, sort: markdownRemarkConnectionSort, filter: filterMarkdownRemark): MarkdownRemarkConnection
-  sitePage(layout: sitePageLayoutQueryString, jsonName: sitePageJsonNameQueryString, internalComponentName: sitePageInternalComponentNameQueryString, path: sitePagePathQueryString_2, component: sitePageComponentQueryString, componentChunkName: sitePageComponentChunkNameQueryString, context: sitePageContextInputObject, pluginCreator: sitePagePluginCreatorInputObject, pluginCreatorId: sitePagePluginCreatorIdQueryString_2, componentPath: sitePageComponentPathQueryString, id: sitePageIdQueryString_2, internal: sitePageInternalInputObject_2): SitePage
+
+  """Connection to all SvgsJson nodes"""
+  allSvgsJson(skip: Int, limit: Int, sort: svgsJsonConnectionSort, filter: filterSvgsJson): SvgsJsonConnection
+
+  """Connection to all SitePage nodes"""
+  allSitePage(skip: Int, limit: Int, sort: sitePageConnectionSort, filter: filterSitePage): SitePageConnection
+  integrationsJson(createUrl: integrationsJsonCreateUrlQueryString_2, descriptionHtml: integrationsJsonDescriptionHtmlQueryString_2, descriptionPlain: integrationsJsonDescriptionPlainQueryString_2, id: integrationsJsonIdQueryString_2, status: integrationsJsonStatusQueryString_2, steps: integrationsJsonStepsQueryList_2, title: integrationsJsonTitleQueryString_2, internal: integrationsJsonInternalInputObject_2): IntegrationsJson
   sitePlugin(resolve: sitePluginResolveQueryString_2, id: sitePluginIdQueryString_2, name: sitePluginNameQueryString_2, version: sitePluginVersionQueryString_2, pluginOptions: sitePluginPluginOptionsInputObject_2, nodeAPIs: sitePluginNodeApIsQueryList_2, browserAPIs: sitePluginBrowserApIsQueryList_2, ssrAPIs: sitePluginSsrApIsQueryList_2, pluginFilepath: sitePluginPluginFilepathQueryString_2, packageJson: sitePluginPackageJsonInputObject_2, internal: sitePluginInternalInputObject_2): SitePlugin
   site(siteMetadata: siteSiteMetadataInputObject_2, port: sitePortQueryString_2, host: siteHostQueryString_2, pathPrefix: sitePathPrefixQueryString_2, polyfill: sitePolyfillQueryBoolean_2, buildTime: siteBuildTimeQueryString_2, id: siteIdQueryString_2, internal: siteInternalInputObject_2): Site
   directory(id: directoryIdQueryString_2, internal: directoryInternalInputObject_2, sourceInstanceName: directorySourceInstanceNameQueryString_2, absolutePath: directoryAbsolutePathQueryString_2, relativePath: directoryRelativePathQueryString_2, extension: directoryExtensionQueryString_2, size: directorySizeQueryInteger_2, prettySize: directoryPrettySizeQueryString_2, modifiedTime: directoryModifiedTimeQueryString_2, accessTime: directoryAccessTimeQueryString_2, changeTime: directoryChangeTimeQueryString_2, birthTime: directoryBirthTimeQueryString_2, root: directoryRootQueryString_2, dir: directoryDirQueryString_2, base: directoryBaseQueryString_2, ext: directoryExtQueryString_2, name: directoryNameQueryString_2, relativeDirectory: directoryRelativeDirectoryQueryString_2, dev: directoryDevQueryInteger_2, mode: directoryModeQueryInteger_2, nlink: directoryNlinkQueryInteger_2, uid: directoryUidQueryInteger_2, gid: directoryGidQueryInteger_2, rdev: directoryRdevQueryInteger_2, blksize: directoryBlksizeQueryInteger_2, ino: directoryInoQueryInteger_2, blocks: directoryBlocksQueryInteger_2, atimeMs: directoryAtimeMsQueryFloat_2, mtimeMs: directoryMtimeMsQueryFloat_2, ctimeMs: directoryCtimeMsQueryFloat_2, birthtimeMs: directoryBirthtimeMsQueryFloat_2, atime: directoryAtimeQueryString_2, mtime: directoryMtimeQueryString_2, ctime: directoryCtimeQueryString_2, birthtime: directoryBirthtimeQueryString_2): Directory
   file(id: fileIdQueryString_2, internal: fileInternalInputObject_2, sourceInstanceName: fileSourceInstanceNameQueryString_2, absolutePath: fileAbsolutePathQueryString_2, relativePath: fileRelativePathQueryString_2, extension: fileExtensionQueryString_2, size: fileSizeQueryInteger_2, prettySize: filePrettySizeQueryString_2, modifiedTime: fileModifiedTimeQueryString_2, accessTime: fileAccessTimeQueryString_2, changeTime: fileChangeTimeQueryString_2, birthTime: fileBirthTimeQueryString_2, root: fileRootQueryString_2, dir: fileDirQueryString_2, base: fileBaseQueryString_2, ext: fileExtQueryString_2, name: fileNameQueryString_2, relativeDirectory: fileRelativeDirectoryQueryString_2, dev: fileDevQueryInteger_2, mode: fileModeQueryInteger_2, nlink: fileNlinkQueryInteger_2, uid: fileUidQueryInteger_2, gid: fileGidQueryInteger_2, rdev: fileRdevQueryInteger_2, blksize: fileBlksizeQueryInteger_2, ino: fileInoQueryInteger_2, blocks: fileBlocksQueryInteger_2, atimeMs: fileAtimeMsQueryFloat_2, mtimeMs: fileMtimeMsQueryFloat_2, ctimeMs: fileCtimeMsQueryFloat_2, birthtimeMs: fileBirthtimeMsQueryFloat_2, atime: fileAtimeQueryString_2, mtime: fileMtimeQueryString_2, ctime: fileCtimeQueryString_2, birthtime: fileBirthtimeQueryString_2, publicURL: publicUrlQueryString_3): File
   markdownRemark(id: markdownRemarkIdQueryString_2, internal: markdownRemarkInternalInputObject_2, frontmatter: markdownRemarkFrontmatterInputObject_2, excerpt: excerptQueryString_3, fileAbsolutePath: markdownRemarkFileAbsolutePathQueryString_2, html: htmlQueryString_3, headings: headingsQueryList_3, timeToRead: timeToReadQueryInt_3, tableOfContents: tableOfContentsQueryString_3, wordCount: wordCountTypeName_3): MarkdownRemark
+  svgsJson(moduleNameTemplate: svgsJsonModuleNameTemplateQueryString_2, id: svgsJsonIdQueryString_2, internal: svgsJsonInternalInputObject_2): SvgsJson
+  sitePage(layout: sitePageLayoutQueryString, jsonName: sitePageJsonNameQueryString, internalComponentName: sitePageInternalComponentNameQueryString, path: sitePagePathQueryString_2, component: sitePageComponentQueryString, componentChunkName: sitePageComponentChunkNameQueryString, context: sitePageContextInputObject, pluginCreator: sitePagePluginCreatorInputObject, pluginCreatorId: sitePagePluginCreatorIdQueryString_2, componentPath: sitePageComponentPathQueryString, id: sitePageIdQueryString_2, internal: sitePageInternalInputObject_2): SitePage
 }
 
 """Node of type Site"""
@@ -2640,7 +3030,7 @@ type Site implements Node {
     """Configures the locale Moment.js will use to format the date."""
     locale: String
   ): Date
-  internal: internal_12
+  internal: internal_16
 }
 
 input siteBuildTimeQueryString_2 {
@@ -2693,6 +3083,7 @@ input siteInternalTypeQueryString_2 {
 
 type siteMetadata_2 {
   siteName: String
+  siteUrl: String
 }
 
 """Node of type SitePage"""
@@ -2715,7 +3106,7 @@ type SitePage implements Node {
   pluginCreator: SitePlugin
   pluginCreatorId: String
   componentPath: String
-  internal: internal_7
+  internal: internal_15
 }
 
 input sitePageComponentChunkNameQueryString {
@@ -3106,7 +3497,39 @@ input sitePageConnectionPluginCreatorPluginOptionsBackgroundColorQueryString {
   glob: String
 }
 
+input sitePageConnectionPluginCreatorPluginOptionsBackgroundColorQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
 input sitePageConnectionPluginCreatorPluginOptionsColorQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePageConnectionPluginCreatorPluginOptionsConfigInputObject {
+  version: sitePageConnectionPluginCreatorPluginOptionsConfigVersionQueryString
+}
+
+input sitePageConnectionPluginCreatorPluginOptionsConfigVersionQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePageConnectionPluginCreatorPluginOptionsDescriptionQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePageConnectionPluginCreatorPluginOptionsDisplayQueryString {
   eq: String
   ne: String
   regex: String
@@ -3125,102 +3548,38 @@ input sitePageConnectionPluginCreatorPluginOptionsHeadQueryBoolean {
   ne: Boolean
 }
 
-input sitePageConnectionPluginCreatorPluginOptionsIconsAndroidQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePageConnectionPluginCreatorPluginOptionsIconsAppleIconQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePageConnectionPluginCreatorPluginOptionsIconsAppleStartupQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePageConnectionPluginCreatorPluginOptionsIconsCoastQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePageConnectionPluginCreatorPluginOptionsIconsFaviconsQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePageConnectionPluginCreatorPluginOptionsIconsFirefoxQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePageConnectionPluginCreatorPluginOptionsIconsInputObject {
-  android: sitePageConnectionPluginCreatorPluginOptionsIconsAndroidQueryBoolean
-  appleIcon: sitePageConnectionPluginCreatorPluginOptionsIconsAppleIconQueryBoolean
-  appleStartup: sitePageConnectionPluginCreatorPluginOptionsIconsAppleStartupQueryBoolean
-  coast: sitePageConnectionPluginCreatorPluginOptionsIconsCoastQueryBoolean
-  favicons: sitePageConnectionPluginCreatorPluginOptionsIconsFaviconsQueryBoolean
-  firefox: sitePageConnectionPluginCreatorPluginOptionsIconsFirefoxQueryBoolean
-  twitter: sitePageConnectionPluginCreatorPluginOptionsIconsTwitterQueryBoolean
-  yandex: sitePageConnectionPluginCreatorPluginOptionsIconsYandexQueryBoolean
-  windows: sitePageConnectionPluginCreatorPluginOptionsIconsWindowsQueryBoolean
-}
-
-input sitePageConnectionPluginCreatorPluginOptionsIconsTwitterQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePageConnectionPluginCreatorPluginOptionsIconsWindowsQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePageConnectionPluginCreatorPluginOptionsIconsYandexQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePageConnectionPluginCreatorPluginOptionsInjectHtmlQueryBoolean {
-  eq: Boolean
-  ne: Boolean
+input sitePageConnectionPluginCreatorPluginOptionsIconQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
 }
 
 input sitePageConnectionPluginCreatorPluginOptionsInputObject {
   plugins: sitePageConnectionPluginCreatorPluginOptionsPluginsQueryList
-  logo: sitePageConnectionPluginCreatorPluginOptionsLogoQueryString
-  injectHTML: sitePageConnectionPluginCreatorPluginOptionsInjectHtmlQueryBoolean
-  icons: sitePageConnectionPluginCreatorPluginOptionsIconsInputObject
   path: sitePageConnectionPluginCreatorPluginOptionsPathQueryString
   name: sitePageConnectionPluginCreatorPluginOptionsNameQueryString
   backgroundColor: sitePageConnectionPluginCreatorPluginOptionsBackgroundColorQueryString
   quality: sitePageConnectionPluginCreatorPluginOptionsQualityQueryInteger
   maxWidth: sitePageConnectionPluginCreatorPluginOptionsMaxWidthQueryInteger
   sizeByPixelDensity: sitePageConnectionPluginCreatorPluginOptionsSizeByPixelDensityQueryBoolean
-  wrapperStyle: sitePageConnectionPluginCreatorPluginOptionsWrapperStyleQueryString
-  linkImagesToOriginal: sitePageConnectionPluginCreatorPluginOptionsLinkImagesToOriginalQueryBoolean
-  showCaptions: sitePageConnectionPluginCreatorPluginOptionsShowCaptionsQueryBoolean
-  pathPrefix: sitePageConnectionPluginCreatorPluginOptionsPathPrefixQueryString
   anonymize: sitePageConnectionPluginCreatorPluginOptionsAnonymizeQueryBoolean
   head: sitePageConnectionPluginCreatorPluginOptionsHeadQueryBoolean
   respectDNT: sitePageConnectionPluginCreatorPluginOptionsRespectDntQueryBoolean
   trackingId: sitePageConnectionPluginCreatorPluginOptionsTrackingIdQueryString
   dsn: sitePageConnectionPluginCreatorPluginOptionsDsnQueryString
+  config: sitePageConnectionPluginCreatorPluginOptionsConfigInputObject
   color: sitePageConnectionPluginCreatorPluginOptionsColorQueryString
   showSpinner: sitePageConnectionPluginCreatorPluginOptionsShowSpinnerQueryBoolean
-}
-
-input sitePageConnectionPluginCreatorPluginOptionsLinkImagesToOriginalQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePageConnectionPluginCreatorPluginOptionsLogoQueryString {
-  eq: String
-  ne: String
-  regex: String
-  glob: String
+  siteUrl: sitePageConnectionPluginCreatorPluginOptionsSiteUrlQueryString
+  background_color: sitePageConnectionPluginCreatorPluginOptionsBackgroundColorQueryString_2
+  description: sitePageConnectionPluginCreatorPluginOptionsDescriptionQueryString
+  display: sitePageConnectionPluginCreatorPluginOptionsDisplayQueryString
+  icon: sitePageConnectionPluginCreatorPluginOptionsIconQueryString
+  short_name: sitePageConnectionPluginCreatorPluginOptionsShortNameQueryString
+  start_url: sitePageConnectionPluginCreatorPluginOptionsStartUrlQueryString
+  theme_color: sitePageConnectionPluginCreatorPluginOptionsThemeColorQueryString
+  policy: sitePageConnectionPluginCreatorPluginOptionsPolicyQueryList
 }
 
 input sitePageConnectionPluginCreatorPluginOptionsMaxWidthQueryInteger {
@@ -3229,13 +3588,6 @@ input sitePageConnectionPluginCreatorPluginOptionsMaxWidthQueryInteger {
 }
 
 input sitePageConnectionPluginCreatorPluginOptionsNameQueryString {
-  eq: String
-  ne: String
-  regex: String
-  glob: String
-}
-
-input sitePageConnectionPluginCreatorPluginOptionsPathPrefixQueryString {
   eq: String
   ne: String
   regex: String
@@ -3291,15 +3643,6 @@ input sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsInputObjec
   quality: sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsQualityQueryInteger
   maxWidth: sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger
   sizeByPixelDensity: sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean
-  wrapperStyle: sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsWrapperStyleQueryString
-  linkImagesToOriginal: sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean
-  showCaptions: sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsShowCaptionsQueryBoolean
-  pathPrefix: sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsPathPrefixQueryString
-}
-
-input sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean {
-  eq: Boolean
-  ne: Boolean
 }
 
 input sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger {
@@ -3307,33 +3650,14 @@ input sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQu
   ne: Int
 }
 
-input sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsPathPrefixQueryString {
-  eq: String
-  ne: String
-  regex: String
-  glob: String
-}
-
 input sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsQualityQueryInteger {
   eq: Int
   ne: Int
 }
 
-input sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsShowCaptionsQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
 input sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean {
   eq: Boolean
   ne: Boolean
-}
-
-input sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsWrapperStyleQueryString {
-  eq: String
-  ne: String
-  regex: String
-  glob: String
 }
 
 input sitePageConnectionPluginCreatorPluginOptionsPluginsQueryList {
@@ -3354,6 +3678,30 @@ input sitePageConnectionPluginCreatorPluginOptionsPluginsVersionQueryString {
   glob: String
 }
 
+input sitePageConnectionPluginCreatorPluginOptionsPolicyDisallowQueryList {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+  in: [String]
+}
+
+input sitePageConnectionPluginCreatorPluginOptionsPolicyInputObject {
+  userAgent: sitePageConnectionPluginCreatorPluginOptionsPolicyUserAgentQueryString
+  disallow: sitePageConnectionPluginCreatorPluginOptionsPolicyDisallowQueryList
+}
+
+input sitePageConnectionPluginCreatorPluginOptionsPolicyQueryList {
+  in: [sitePageConnectionPluginCreatorPluginOptionsPolicyInputObject]
+}
+
+input sitePageConnectionPluginCreatorPluginOptionsPolicyUserAgentQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
 input sitePageConnectionPluginCreatorPluginOptionsQualityQueryInteger {
   eq: Int
   ne: Int
@@ -3364,9 +3712,11 @@ input sitePageConnectionPluginCreatorPluginOptionsRespectDntQueryBoolean {
   ne: Boolean
 }
 
-input sitePageConnectionPluginCreatorPluginOptionsShowCaptionsQueryBoolean {
-  eq: Boolean
-  ne: Boolean
+input sitePageConnectionPluginCreatorPluginOptionsShortNameQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
 }
 
 input sitePageConnectionPluginCreatorPluginOptionsShowSpinnerQueryBoolean {
@@ -3374,19 +3724,33 @@ input sitePageConnectionPluginCreatorPluginOptionsShowSpinnerQueryBoolean {
   ne: Boolean
 }
 
-input sitePageConnectionPluginCreatorPluginOptionsSizeByPixelDensityQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePageConnectionPluginCreatorPluginOptionsTrackingIdQueryString {
+input sitePageConnectionPluginCreatorPluginOptionsSiteUrlQueryString {
   eq: String
   ne: String
   regex: String
   glob: String
 }
 
-input sitePageConnectionPluginCreatorPluginOptionsWrapperStyleQueryString {
+input sitePageConnectionPluginCreatorPluginOptionsSizeByPixelDensityQueryBoolean {
+  eq: Boolean
+  ne: Boolean
+}
+
+input sitePageConnectionPluginCreatorPluginOptionsStartUrlQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePageConnectionPluginCreatorPluginOptionsThemeColorQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePageConnectionPluginCreatorPluginOptionsTrackingIdQueryString {
   eq: String
   ne: String
   regex: String
@@ -3425,7 +3789,6 @@ enum SitePageConnectionSortByFieldsEnum {
   jsonName
   internalComponentName
   path
-  matchPath
   component
   componentChunkName
   context___breadcrumb
@@ -3434,7 +3797,6 @@ enum SitePageConnectionSortByFieldsEnum {
   componentPath
   id
   parent
-  children
   internal___type
   internal___contentDigest
   internal___description
@@ -3854,7 +4216,39 @@ input sitePagePluginCreatorPluginOptionsBackgroundColorQueryString {
   glob: String
 }
 
+input sitePagePluginCreatorPluginOptionsBackgroundColorQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
 input sitePagePluginCreatorPluginOptionsColorQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePagePluginCreatorPluginOptionsConfigInputObject {
+  version: sitePagePluginCreatorPluginOptionsConfigVersionQueryString
+}
+
+input sitePagePluginCreatorPluginOptionsConfigVersionQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePagePluginCreatorPluginOptionsDescriptionQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePagePluginCreatorPluginOptionsDisplayQueryString {
   eq: String
   ne: String
   regex: String
@@ -3873,102 +4267,38 @@ input sitePagePluginCreatorPluginOptionsHeadQueryBoolean {
   ne: Boolean
 }
 
-input sitePagePluginCreatorPluginOptionsIconsAndroidQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePagePluginCreatorPluginOptionsIconsAppleIconQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePagePluginCreatorPluginOptionsIconsAppleStartupQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePagePluginCreatorPluginOptionsIconsCoastQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePagePluginCreatorPluginOptionsIconsFaviconsQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePagePluginCreatorPluginOptionsIconsFirefoxQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePagePluginCreatorPluginOptionsIconsInputObject {
-  android: sitePagePluginCreatorPluginOptionsIconsAndroidQueryBoolean
-  appleIcon: sitePagePluginCreatorPluginOptionsIconsAppleIconQueryBoolean
-  appleStartup: sitePagePluginCreatorPluginOptionsIconsAppleStartupQueryBoolean
-  coast: sitePagePluginCreatorPluginOptionsIconsCoastQueryBoolean
-  favicons: sitePagePluginCreatorPluginOptionsIconsFaviconsQueryBoolean
-  firefox: sitePagePluginCreatorPluginOptionsIconsFirefoxQueryBoolean
-  twitter: sitePagePluginCreatorPluginOptionsIconsTwitterQueryBoolean
-  yandex: sitePagePluginCreatorPluginOptionsIconsYandexQueryBoolean
-  windows: sitePagePluginCreatorPluginOptionsIconsWindowsQueryBoolean
-}
-
-input sitePagePluginCreatorPluginOptionsIconsTwitterQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePagePluginCreatorPluginOptionsIconsWindowsQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePagePluginCreatorPluginOptionsIconsYandexQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePagePluginCreatorPluginOptionsInjectHtmlQueryBoolean {
-  eq: Boolean
-  ne: Boolean
+input sitePagePluginCreatorPluginOptionsIconQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
 }
 
 input sitePagePluginCreatorPluginOptionsInputObject {
   plugins: sitePagePluginCreatorPluginOptionsPluginsQueryList
-  logo: sitePagePluginCreatorPluginOptionsLogoQueryString
-  injectHTML: sitePagePluginCreatorPluginOptionsInjectHtmlQueryBoolean
-  icons: sitePagePluginCreatorPluginOptionsIconsInputObject
   path: sitePagePluginCreatorPluginOptionsPathQueryString
   name: sitePagePluginCreatorPluginOptionsNameQueryString
   backgroundColor: sitePagePluginCreatorPluginOptionsBackgroundColorQueryString
   quality: sitePagePluginCreatorPluginOptionsQualityQueryInteger
   maxWidth: sitePagePluginCreatorPluginOptionsMaxWidthQueryInteger
   sizeByPixelDensity: sitePagePluginCreatorPluginOptionsSizeByPixelDensityQueryBoolean
-  wrapperStyle: sitePagePluginCreatorPluginOptionsWrapperStyleQueryString
-  linkImagesToOriginal: sitePagePluginCreatorPluginOptionsLinkImagesToOriginalQueryBoolean
-  showCaptions: sitePagePluginCreatorPluginOptionsShowCaptionsQueryBoolean
-  pathPrefix: sitePagePluginCreatorPluginOptionsPathPrefixQueryString
   anonymize: sitePagePluginCreatorPluginOptionsAnonymizeQueryBoolean
   head: sitePagePluginCreatorPluginOptionsHeadQueryBoolean
   respectDNT: sitePagePluginCreatorPluginOptionsRespectDntQueryBoolean
   trackingId: sitePagePluginCreatorPluginOptionsTrackingIdQueryString
   dsn: sitePagePluginCreatorPluginOptionsDsnQueryString
+  config: sitePagePluginCreatorPluginOptionsConfigInputObject
   color: sitePagePluginCreatorPluginOptionsColorQueryString
   showSpinner: sitePagePluginCreatorPluginOptionsShowSpinnerQueryBoolean
-}
-
-input sitePagePluginCreatorPluginOptionsLinkImagesToOriginalQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePagePluginCreatorPluginOptionsLogoQueryString {
-  eq: String
-  ne: String
-  regex: String
-  glob: String
+  siteUrl: sitePagePluginCreatorPluginOptionsSiteUrlQueryString
+  background_color: sitePagePluginCreatorPluginOptionsBackgroundColorQueryString_2
+  description: sitePagePluginCreatorPluginOptionsDescriptionQueryString
+  display: sitePagePluginCreatorPluginOptionsDisplayQueryString
+  icon: sitePagePluginCreatorPluginOptionsIconQueryString
+  short_name: sitePagePluginCreatorPluginOptionsShortNameQueryString
+  start_url: sitePagePluginCreatorPluginOptionsStartUrlQueryString
+  theme_color: sitePagePluginCreatorPluginOptionsThemeColorQueryString
+  policy: sitePagePluginCreatorPluginOptionsPolicyQueryList
 }
 
 input sitePagePluginCreatorPluginOptionsMaxWidthQueryInteger {
@@ -3977,13 +4307,6 @@ input sitePagePluginCreatorPluginOptionsMaxWidthQueryInteger {
 }
 
 input sitePagePluginCreatorPluginOptionsNameQueryString {
-  eq: String
-  ne: String
-  regex: String
-  glob: String
-}
-
-input sitePagePluginCreatorPluginOptionsPathPrefixQueryString {
   eq: String
   ne: String
   regex: String
@@ -4039,15 +4362,6 @@ input sitePagePluginCreatorPluginOptionsPluginsPluginOptionsInputObject {
   quality: sitePagePluginCreatorPluginOptionsPluginsPluginOptionsQualityQueryInteger
   maxWidth: sitePagePluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger
   sizeByPixelDensity: sitePagePluginCreatorPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean
-  wrapperStyle: sitePagePluginCreatorPluginOptionsPluginsPluginOptionsWrapperStyleQueryString
-  linkImagesToOriginal: sitePagePluginCreatorPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean
-  showCaptions: sitePagePluginCreatorPluginOptionsPluginsPluginOptionsShowCaptionsQueryBoolean
-  pathPrefix: sitePagePluginCreatorPluginOptionsPluginsPluginOptionsPathPrefixQueryString
-}
-
-input sitePagePluginCreatorPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean {
-  eq: Boolean
-  ne: Boolean
 }
 
 input sitePagePluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger {
@@ -4055,33 +4369,14 @@ input sitePagePluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger
   ne: Int
 }
 
-input sitePagePluginCreatorPluginOptionsPluginsPluginOptionsPathPrefixQueryString {
-  eq: String
-  ne: String
-  regex: String
-  glob: String
-}
-
 input sitePagePluginCreatorPluginOptionsPluginsPluginOptionsQualityQueryInteger {
   eq: Int
   ne: Int
 }
 
-input sitePagePluginCreatorPluginOptionsPluginsPluginOptionsShowCaptionsQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
 input sitePagePluginCreatorPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean {
   eq: Boolean
   ne: Boolean
-}
-
-input sitePagePluginCreatorPluginOptionsPluginsPluginOptionsWrapperStyleQueryString {
-  eq: String
-  ne: String
-  regex: String
-  glob: String
 }
 
 input sitePagePluginCreatorPluginOptionsPluginsQueryList {
@@ -4102,6 +4397,30 @@ input sitePagePluginCreatorPluginOptionsPluginsVersionQueryString {
   glob: String
 }
 
+input sitePagePluginCreatorPluginOptionsPolicyDisallowQueryList {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+  in: [String]
+}
+
+input sitePagePluginCreatorPluginOptionsPolicyInputObject {
+  userAgent: sitePagePluginCreatorPluginOptionsPolicyUserAgentQueryString
+  disallow: sitePagePluginCreatorPluginOptionsPolicyDisallowQueryList
+}
+
+input sitePagePluginCreatorPluginOptionsPolicyQueryList {
+  in: [sitePagePluginCreatorPluginOptionsPolicyInputObject]
+}
+
+input sitePagePluginCreatorPluginOptionsPolicyUserAgentQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
 input sitePagePluginCreatorPluginOptionsQualityQueryInteger {
   eq: Int
   ne: Int
@@ -4112,9 +4431,11 @@ input sitePagePluginCreatorPluginOptionsRespectDntQueryBoolean {
   ne: Boolean
 }
 
-input sitePagePluginCreatorPluginOptionsShowCaptionsQueryBoolean {
-  eq: Boolean
-  ne: Boolean
+input sitePagePluginCreatorPluginOptionsShortNameQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
 }
 
 input sitePagePluginCreatorPluginOptionsShowSpinnerQueryBoolean {
@@ -4122,19 +4443,33 @@ input sitePagePluginCreatorPluginOptionsShowSpinnerQueryBoolean {
   ne: Boolean
 }
 
-input sitePagePluginCreatorPluginOptionsSizeByPixelDensityQueryBoolean {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePagePluginCreatorPluginOptionsTrackingIdQueryString {
+input sitePagePluginCreatorPluginOptionsSiteUrlQueryString {
   eq: String
   ne: String
   regex: String
   glob: String
 }
 
-input sitePagePluginCreatorPluginOptionsWrapperStyleQueryString {
+input sitePagePluginCreatorPluginOptionsSizeByPixelDensityQueryBoolean {
+  eq: Boolean
+  ne: Boolean
+}
+
+input sitePagePluginCreatorPluginOptionsStartUrlQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePagePluginCreatorPluginOptionsThemeColorQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePagePluginCreatorPluginOptionsTrackingIdQueryString {
   eq: String
   ne: String
   regex: String
@@ -4189,7 +4524,7 @@ type SitePlugin implements Node {
   ssrAPIs: [String]
   pluginFilepath: String
   packageJson: packageJson_2
-  internal: internal_8
+  internal: internal_10
 }
 
 input sitePluginBrowserApIsQueryList_2 {
@@ -4413,7 +4748,14 @@ input sitePluginConnectionPluginOptionsAnonymizeQueryBoolean_2 {
   ne: Boolean
 }
 
-input sitePluginConnectionPluginOptionsBackgroundColorQueryString_2 {
+input sitePluginConnectionPluginOptionsBackgroundColorQueryString_3 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePluginConnectionPluginOptionsBackgroundColorQueryString_4 {
   eq: String
   ne: String
   regex: String
@@ -4421,6 +4763,31 @@ input sitePluginConnectionPluginOptionsBackgroundColorQueryString_2 {
 }
 
 input sitePluginConnectionPluginOptionsColorQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePluginConnectionPluginOptionsConfigInputObject_2 {
+  version: sitePluginConnectionPluginOptionsConfigVersionQueryString_2
+}
+
+input sitePluginConnectionPluginOptionsConfigVersionQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePluginConnectionPluginOptionsDescriptionQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePluginConnectionPluginOptionsDisplayQueryString_2 {
   eq: String
   ne: String
   regex: String
@@ -4439,102 +4806,38 @@ input sitePluginConnectionPluginOptionsHeadQueryBoolean_2 {
   ne: Boolean
 }
 
-input sitePluginConnectionPluginOptionsIconsAndroidQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginConnectionPluginOptionsIconsAppleIconQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginConnectionPluginOptionsIconsAppleStartupQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginConnectionPluginOptionsIconsCoastQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginConnectionPluginOptionsIconsFaviconsQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginConnectionPluginOptionsIconsFirefoxQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginConnectionPluginOptionsIconsInputObject_2 {
-  android: sitePluginConnectionPluginOptionsIconsAndroidQueryBoolean_2
-  appleIcon: sitePluginConnectionPluginOptionsIconsAppleIconQueryBoolean_2
-  appleStartup: sitePluginConnectionPluginOptionsIconsAppleStartupQueryBoolean_2
-  coast: sitePluginConnectionPluginOptionsIconsCoastQueryBoolean_2
-  favicons: sitePluginConnectionPluginOptionsIconsFaviconsQueryBoolean_2
-  firefox: sitePluginConnectionPluginOptionsIconsFirefoxQueryBoolean_2
-  twitter: sitePluginConnectionPluginOptionsIconsTwitterQueryBoolean_2
-  yandex: sitePluginConnectionPluginOptionsIconsYandexQueryBoolean_2
-  windows: sitePluginConnectionPluginOptionsIconsWindowsQueryBoolean_2
-}
-
-input sitePluginConnectionPluginOptionsIconsTwitterQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginConnectionPluginOptionsIconsWindowsQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginConnectionPluginOptionsIconsYandexQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginConnectionPluginOptionsInjectHtmlQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
+input sitePluginConnectionPluginOptionsIconQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
 }
 
 input sitePluginConnectionPluginOptionsInputObject_2 {
   plugins: sitePluginConnectionPluginOptionsPluginsQueryList_2
-  logo: sitePluginConnectionPluginOptionsLogoQueryString_2
-  injectHTML: sitePluginConnectionPluginOptionsInjectHtmlQueryBoolean_2
-  icons: sitePluginConnectionPluginOptionsIconsInputObject_2
   path: sitePluginConnectionPluginOptionsPathQueryString_2
   name: sitePluginConnectionPluginOptionsNameQueryString_2
-  backgroundColor: sitePluginConnectionPluginOptionsBackgroundColorQueryString_2
+  backgroundColor: sitePluginConnectionPluginOptionsBackgroundColorQueryString_3
   quality: sitePluginConnectionPluginOptionsQualityQueryInteger_2
   maxWidth: sitePluginConnectionPluginOptionsMaxWidthQueryInteger_2
   sizeByPixelDensity: sitePluginConnectionPluginOptionsSizeByPixelDensityQueryBoolean_2
-  wrapperStyle: sitePluginConnectionPluginOptionsWrapperStyleQueryString_2
-  linkImagesToOriginal: sitePluginConnectionPluginOptionsLinkImagesToOriginalQueryBoolean_2
-  showCaptions: sitePluginConnectionPluginOptionsShowCaptionsQueryBoolean_2
-  pathPrefix: sitePluginConnectionPluginOptionsPathPrefixQueryString_2
   anonymize: sitePluginConnectionPluginOptionsAnonymizeQueryBoolean_2
   head: sitePluginConnectionPluginOptionsHeadQueryBoolean_2
   respectDNT: sitePluginConnectionPluginOptionsRespectDntQueryBoolean_2
   trackingId: sitePluginConnectionPluginOptionsTrackingIdQueryString_2
   dsn: sitePluginConnectionPluginOptionsDsnQueryString_2
+  config: sitePluginConnectionPluginOptionsConfigInputObject_2
   color: sitePluginConnectionPluginOptionsColorQueryString_2
   showSpinner: sitePluginConnectionPluginOptionsShowSpinnerQueryBoolean_2
-}
-
-input sitePluginConnectionPluginOptionsLinkImagesToOriginalQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginConnectionPluginOptionsLogoQueryString_2 {
-  eq: String
-  ne: String
-  regex: String
-  glob: String
+  siteUrl: sitePluginConnectionPluginOptionsSiteUrlQueryString_2
+  background_color: sitePluginConnectionPluginOptionsBackgroundColorQueryString_4
+  description: sitePluginConnectionPluginOptionsDescriptionQueryString_2
+  display: sitePluginConnectionPluginOptionsDisplayQueryString_2
+  icon: sitePluginConnectionPluginOptionsIconQueryString_2
+  short_name: sitePluginConnectionPluginOptionsShortNameQueryString_2
+  start_url: sitePluginConnectionPluginOptionsStartUrlQueryString_2
+  theme_color: sitePluginConnectionPluginOptionsThemeColorQueryString_2
+  policy: sitePluginConnectionPluginOptionsPolicyQueryList_2
 }
 
 input sitePluginConnectionPluginOptionsMaxWidthQueryInteger_2 {
@@ -4543,13 +4846,6 @@ input sitePluginConnectionPluginOptionsMaxWidthQueryInteger_2 {
 }
 
 input sitePluginConnectionPluginOptionsNameQueryString_2 {
-  eq: String
-  ne: String
-  regex: String
-  glob: String
-}
-
-input sitePluginConnectionPluginOptionsPathPrefixQueryString_2 {
   eq: String
   ne: String
   regex: String
@@ -4605,15 +4901,6 @@ input sitePluginConnectionPluginOptionsPluginsPluginOptionsInputObject_2 {
   quality: sitePluginConnectionPluginOptionsPluginsPluginOptionsQualityQueryInteger_2
   maxWidth: sitePluginConnectionPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger_2
   sizeByPixelDensity: sitePluginConnectionPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean_2
-  wrapperStyle: sitePluginConnectionPluginOptionsPluginsPluginOptionsWrapperStyleQueryString_2
-  linkImagesToOriginal: sitePluginConnectionPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean_2
-  showCaptions: sitePluginConnectionPluginOptionsPluginsPluginOptionsShowCaptionsQueryBoolean_2
-  pathPrefix: sitePluginConnectionPluginOptionsPluginsPluginOptionsPathPrefixQueryString_2
-}
-
-input sitePluginConnectionPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
 }
 
 input sitePluginConnectionPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger_2 {
@@ -4621,33 +4908,14 @@ input sitePluginConnectionPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger_
   ne: Int
 }
 
-input sitePluginConnectionPluginOptionsPluginsPluginOptionsPathPrefixQueryString_2 {
-  eq: String
-  ne: String
-  regex: String
-  glob: String
-}
-
 input sitePluginConnectionPluginOptionsPluginsPluginOptionsQualityQueryInteger_2 {
   eq: Int
   ne: Int
 }
 
-input sitePluginConnectionPluginOptionsPluginsPluginOptionsShowCaptionsQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
 input sitePluginConnectionPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean_2 {
   eq: Boolean
   ne: Boolean
-}
-
-input sitePluginConnectionPluginOptionsPluginsPluginOptionsWrapperStyleQueryString_2 {
-  eq: String
-  ne: String
-  regex: String
-  glob: String
 }
 
 input sitePluginConnectionPluginOptionsPluginsQueryList_2 {
@@ -4668,6 +4936,30 @@ input sitePluginConnectionPluginOptionsPluginsVersionQueryString_2 {
   glob: String
 }
 
+input sitePluginConnectionPluginOptionsPolicyDisallowQueryList_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+  in: [String]
+}
+
+input sitePluginConnectionPluginOptionsPolicyInputObject_2 {
+  userAgent: sitePluginConnectionPluginOptionsPolicyUserAgentQueryString_2
+  disallow: sitePluginConnectionPluginOptionsPolicyDisallowQueryList_2
+}
+
+input sitePluginConnectionPluginOptionsPolicyQueryList_2 {
+  in: [sitePluginConnectionPluginOptionsPolicyInputObject_2]
+}
+
+input sitePluginConnectionPluginOptionsPolicyUserAgentQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
 input sitePluginConnectionPluginOptionsQualityQueryInteger_2 {
   eq: Int
   ne: Int
@@ -4678,9 +4970,11 @@ input sitePluginConnectionPluginOptionsRespectDntQueryBoolean_2 {
   ne: Boolean
 }
 
-input sitePluginConnectionPluginOptionsShowCaptionsQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
+input sitePluginConnectionPluginOptionsShortNameQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
 }
 
 input sitePluginConnectionPluginOptionsShowSpinnerQueryBoolean_2 {
@@ -4688,19 +4982,33 @@ input sitePluginConnectionPluginOptionsShowSpinnerQueryBoolean_2 {
   ne: Boolean
 }
 
-input sitePluginConnectionPluginOptionsSizeByPixelDensityQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginConnectionPluginOptionsTrackingIdQueryString_2 {
+input sitePluginConnectionPluginOptionsSiteUrlQueryString_2 {
   eq: String
   ne: String
   regex: String
   glob: String
 }
 
-input sitePluginConnectionPluginOptionsWrapperStyleQueryString_2 {
+input sitePluginConnectionPluginOptionsSizeByPixelDensityQueryBoolean_2 {
+  eq: Boolean
+  ne: Boolean
+}
+
+input sitePluginConnectionPluginOptionsStartUrlQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePluginConnectionPluginOptionsThemeColorQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePluginConnectionPluginOptionsTrackingIdQueryString_2 {
   eq: String
   ne: String
   regex: String
@@ -4725,35 +5033,29 @@ enum SitePluginConnectionSortByFieldsEnum {
   name
   version
   pluginOptions___plugins
-  pluginOptions___logo
-  pluginOptions___injectHTML
-  pluginOptions___icons___android
-  pluginOptions___icons___appleIcon
-  pluginOptions___icons___appleStartup
-  pluginOptions___icons___coast
-  pluginOptions___icons___favicons
-  pluginOptions___icons___firefox
-  pluginOptions___icons___twitter
-  pluginOptions___icons___yandex
-  pluginOptions___icons___windows
   pluginOptions___path
   pluginOptions___name
   pluginOptions___backgroundColor
   pluginOptions___quality
   pluginOptions___maxWidth
   pluginOptions___sizeByPixelDensity
-  pluginOptions___wrapperStyle
-  pluginOptions___linkImagesToOriginal
-  pluginOptions___showCaptions
-  pluginOptions___pathPrefix
   pluginOptions___anonymize
   pluginOptions___head
   pluginOptions___respectDNT
   pluginOptions___trackingId
   pluginOptions___dsn
-  pluginOptions___config
+  pluginOptions___config___version
   pluginOptions___color
   pluginOptions___showSpinner
+  pluginOptions___siteUrl
+  pluginOptions___background_color
+  pluginOptions___description
+  pluginOptions___display
+  pluginOptions___icon
+  pluginOptions___short_name
+  pluginOptions___start_url
+  pluginOptions___theme_color
+  pluginOptions___policy
   nodeAPIs
   browserAPIs
   ssrAPIs
@@ -4767,11 +5069,8 @@ enum SitePluginConnectionSortByFieldsEnum {
   packageJson___dependencies
   packageJson___devDependencies
   packageJson___peerDependencies
-  packageJson___optionalDependecies
-  packageJson___bundledDependecies
   packageJson___keywords
   parent
-  children
   internal___contentDigest
   internal___type
   internal___owner
@@ -4803,34 +5102,29 @@ enum sitePluginDistinctEnum {
   name
   version
   pluginOptions___plugins
-  pluginOptions___logo
-  pluginOptions___injectHTML
-  pluginOptions___icons___android
-  pluginOptions___icons___appleIcon
-  pluginOptions___icons___appleStartup
-  pluginOptions___icons___coast
-  pluginOptions___icons___favicons
-  pluginOptions___icons___firefox
-  pluginOptions___icons___twitter
-  pluginOptions___icons___yandex
-  pluginOptions___icons___windows
   pluginOptions___path
   pluginOptions___name
   pluginOptions___backgroundColor
   pluginOptions___quality
   pluginOptions___maxWidth
   pluginOptions___sizeByPixelDensity
-  pluginOptions___wrapperStyle
-  pluginOptions___linkImagesToOriginal
-  pluginOptions___showCaptions
-  pluginOptions___pathPrefix
   pluginOptions___anonymize
   pluginOptions___head
   pluginOptions___respectDNT
   pluginOptions___trackingId
   pluginOptions___dsn
+  pluginOptions___config___version
   pluginOptions___color
   pluginOptions___showSpinner
+  pluginOptions___siteUrl
+  pluginOptions___background_color
+  pluginOptions___description
+  pluginOptions___display
+  pluginOptions___icon
+  pluginOptions___short_name
+  pluginOptions___start_url
+  pluginOptions___theme_color
+  pluginOptions___policy
   nodeAPIs
   browserAPIs
   ssrAPIs
@@ -4893,34 +5187,29 @@ enum sitePluginGroupEnum {
   name
   version
   pluginOptions___plugins
-  pluginOptions___logo
-  pluginOptions___injectHTML
-  pluginOptions___icons___android
-  pluginOptions___icons___appleIcon
-  pluginOptions___icons___appleStartup
-  pluginOptions___icons___coast
-  pluginOptions___icons___favicons
-  pluginOptions___icons___firefox
-  pluginOptions___icons___twitter
-  pluginOptions___icons___yandex
-  pluginOptions___icons___windows
   pluginOptions___path
   pluginOptions___name
   pluginOptions___backgroundColor
   pluginOptions___quality
   pluginOptions___maxWidth
   pluginOptions___sizeByPixelDensity
-  pluginOptions___wrapperStyle
-  pluginOptions___linkImagesToOriginal
-  pluginOptions___showCaptions
-  pluginOptions___pathPrefix
   pluginOptions___anonymize
   pluginOptions___head
   pluginOptions___respectDNT
   pluginOptions___trackingId
   pluginOptions___dsn
+  pluginOptions___config___version
   pluginOptions___color
   pluginOptions___showSpinner
+  pluginOptions___siteUrl
+  pluginOptions___background_color
+  pluginOptions___description
+  pluginOptions___display
+  pluginOptions___icon
+  pluginOptions___short_name
+  pluginOptions___start_url
+  pluginOptions___theme_color
+  pluginOptions___policy
   nodeAPIs
   browserAPIs
   ssrAPIs
@@ -5134,7 +5423,14 @@ input sitePluginPluginOptionsAnonymizeQueryBoolean_2 {
   ne: Boolean
 }
 
-input sitePluginPluginOptionsBackgroundColorQueryString_2 {
+input sitePluginPluginOptionsBackgroundColorQueryString_3 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePluginPluginOptionsBackgroundColorQueryString_4 {
   eq: String
   ne: String
   regex: String
@@ -5142,6 +5438,31 @@ input sitePluginPluginOptionsBackgroundColorQueryString_2 {
 }
 
 input sitePluginPluginOptionsColorQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePluginPluginOptionsConfigInputObject_2 {
+  version: sitePluginPluginOptionsConfigVersionQueryString_2
+}
+
+input sitePluginPluginOptionsConfigVersionQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePluginPluginOptionsDescriptionQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePluginPluginOptionsDisplayQueryString_2 {
   eq: String
   ne: String
   regex: String
@@ -5160,102 +5481,38 @@ input sitePluginPluginOptionsHeadQueryBoolean_2 {
   ne: Boolean
 }
 
-input sitePluginPluginOptionsIconsAndroidQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginPluginOptionsIconsAppleIconQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginPluginOptionsIconsAppleStartupQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginPluginOptionsIconsCoastQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginPluginOptionsIconsFaviconsQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginPluginOptionsIconsFirefoxQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginPluginOptionsIconsInputObject_2 {
-  android: sitePluginPluginOptionsIconsAndroidQueryBoolean_2
-  appleIcon: sitePluginPluginOptionsIconsAppleIconQueryBoolean_2
-  appleStartup: sitePluginPluginOptionsIconsAppleStartupQueryBoolean_2
-  coast: sitePluginPluginOptionsIconsCoastQueryBoolean_2
-  favicons: sitePluginPluginOptionsIconsFaviconsQueryBoolean_2
-  firefox: sitePluginPluginOptionsIconsFirefoxQueryBoolean_2
-  twitter: sitePluginPluginOptionsIconsTwitterQueryBoolean_2
-  yandex: sitePluginPluginOptionsIconsYandexQueryBoolean_2
-  windows: sitePluginPluginOptionsIconsWindowsQueryBoolean_2
-}
-
-input sitePluginPluginOptionsIconsTwitterQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginPluginOptionsIconsWindowsQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginPluginOptionsIconsYandexQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginPluginOptionsInjectHtmlQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
+input sitePluginPluginOptionsIconQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
 }
 
 input sitePluginPluginOptionsInputObject_2 {
   plugins: sitePluginPluginOptionsPluginsQueryList_2
-  logo: sitePluginPluginOptionsLogoQueryString_2
-  injectHTML: sitePluginPluginOptionsInjectHtmlQueryBoolean_2
-  icons: sitePluginPluginOptionsIconsInputObject_2
   path: sitePluginPluginOptionsPathQueryString_2
   name: sitePluginPluginOptionsNameQueryString_2
-  backgroundColor: sitePluginPluginOptionsBackgroundColorQueryString_2
+  backgroundColor: sitePluginPluginOptionsBackgroundColorQueryString_3
   quality: sitePluginPluginOptionsQualityQueryInteger_2
   maxWidth: sitePluginPluginOptionsMaxWidthQueryInteger_2
   sizeByPixelDensity: sitePluginPluginOptionsSizeByPixelDensityQueryBoolean_2
-  wrapperStyle: sitePluginPluginOptionsWrapperStyleQueryString_2
-  linkImagesToOriginal: sitePluginPluginOptionsLinkImagesToOriginalQueryBoolean_2
-  showCaptions: sitePluginPluginOptionsShowCaptionsQueryBoolean_2
-  pathPrefix: sitePluginPluginOptionsPathPrefixQueryString_2
   anonymize: sitePluginPluginOptionsAnonymizeQueryBoolean_2
   head: sitePluginPluginOptionsHeadQueryBoolean_2
   respectDNT: sitePluginPluginOptionsRespectDntQueryBoolean_2
   trackingId: sitePluginPluginOptionsTrackingIdQueryString_2
   dsn: sitePluginPluginOptionsDsnQueryString_2
+  config: sitePluginPluginOptionsConfigInputObject_2
   color: sitePluginPluginOptionsColorQueryString_2
   showSpinner: sitePluginPluginOptionsShowSpinnerQueryBoolean_2
-}
-
-input sitePluginPluginOptionsLinkImagesToOriginalQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginPluginOptionsLogoQueryString_2 {
-  eq: String
-  ne: String
-  regex: String
-  glob: String
+  siteUrl: sitePluginPluginOptionsSiteUrlQueryString_2
+  background_color: sitePluginPluginOptionsBackgroundColorQueryString_4
+  description: sitePluginPluginOptionsDescriptionQueryString_2
+  display: sitePluginPluginOptionsDisplayQueryString_2
+  icon: sitePluginPluginOptionsIconQueryString_2
+  short_name: sitePluginPluginOptionsShortNameQueryString_2
+  start_url: sitePluginPluginOptionsStartUrlQueryString_2
+  theme_color: sitePluginPluginOptionsThemeColorQueryString_2
+  policy: sitePluginPluginOptionsPolicyQueryList_2
 }
 
 input sitePluginPluginOptionsMaxWidthQueryInteger_2 {
@@ -5264,13 +5521,6 @@ input sitePluginPluginOptionsMaxWidthQueryInteger_2 {
 }
 
 input sitePluginPluginOptionsNameQueryString_2 {
-  eq: String
-  ne: String
-  regex: String
-  glob: String
-}
-
-input sitePluginPluginOptionsPathPrefixQueryString_2 {
   eq: String
   ne: String
   regex: String
@@ -5326,15 +5576,6 @@ input sitePluginPluginOptionsPluginsPluginOptionsInputObject_2 {
   quality: sitePluginPluginOptionsPluginsPluginOptionsQualityQueryInteger_2
   maxWidth: sitePluginPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger_2
   sizeByPixelDensity: sitePluginPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean_2
-  wrapperStyle: sitePluginPluginOptionsPluginsPluginOptionsWrapperStyleQueryString_2
-  linkImagesToOriginal: sitePluginPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean_2
-  showCaptions: sitePluginPluginOptionsPluginsPluginOptionsShowCaptionsQueryBoolean_2
-  pathPrefix: sitePluginPluginOptionsPluginsPluginOptionsPathPrefixQueryString_2
-}
-
-input sitePluginPluginOptionsPluginsPluginOptionsLinkImagesToOriginalQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
 }
 
 input sitePluginPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger_2 {
@@ -5342,33 +5583,14 @@ input sitePluginPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger_2 {
   ne: Int
 }
 
-input sitePluginPluginOptionsPluginsPluginOptionsPathPrefixQueryString_2 {
-  eq: String
-  ne: String
-  regex: String
-  glob: String
-}
-
 input sitePluginPluginOptionsPluginsPluginOptionsQualityQueryInteger_2 {
   eq: Int
   ne: Int
 }
 
-input sitePluginPluginOptionsPluginsPluginOptionsShowCaptionsQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
 input sitePluginPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean_2 {
   eq: Boolean
   ne: Boolean
-}
-
-input sitePluginPluginOptionsPluginsPluginOptionsWrapperStyleQueryString_2 {
-  eq: String
-  ne: String
-  regex: String
-  glob: String
 }
 
 input sitePluginPluginOptionsPluginsQueryList_2 {
@@ -5389,6 +5611,30 @@ input sitePluginPluginOptionsPluginsVersionQueryString_2 {
   glob: String
 }
 
+input sitePluginPluginOptionsPolicyDisallowQueryList_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+  in: [String]
+}
+
+input sitePluginPluginOptionsPolicyInputObject_2 {
+  userAgent: sitePluginPluginOptionsPolicyUserAgentQueryString_2
+  disallow: sitePluginPluginOptionsPolicyDisallowQueryList_2
+}
+
+input sitePluginPluginOptionsPolicyQueryList_2 {
+  in: [sitePluginPluginOptionsPolicyInputObject_2]
+}
+
+input sitePluginPluginOptionsPolicyUserAgentQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
 input sitePluginPluginOptionsQualityQueryInteger_2 {
   eq: Int
   ne: Int
@@ -5399,9 +5645,11 @@ input sitePluginPluginOptionsRespectDntQueryBoolean_2 {
   ne: Boolean
 }
 
-input sitePluginPluginOptionsShowCaptionsQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
+input sitePluginPluginOptionsShortNameQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
 }
 
 input sitePluginPluginOptionsShowSpinnerQueryBoolean_2 {
@@ -5409,19 +5657,33 @@ input sitePluginPluginOptionsShowSpinnerQueryBoolean_2 {
   ne: Boolean
 }
 
-input sitePluginPluginOptionsSizeByPixelDensityQueryBoolean_2 {
-  eq: Boolean
-  ne: Boolean
-}
-
-input sitePluginPluginOptionsTrackingIdQueryString_2 {
+input sitePluginPluginOptionsSiteUrlQueryString_2 {
   eq: String
   ne: String
   regex: String
   glob: String
 }
 
-input sitePluginPluginOptionsWrapperStyleQueryString_2 {
+input sitePluginPluginOptionsSizeByPixelDensityQueryBoolean_2 {
+  eq: Boolean
+  ne: Boolean
+}
+
+input sitePluginPluginOptionsStartUrlQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePluginPluginOptionsThemeColorQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input sitePluginPluginOptionsTrackingIdQueryString_2 {
   eq: String
   ne: String
   regex: String
@@ -5464,9 +5726,206 @@ input sitePortQueryString_2 {
 
 input siteSiteMetadataInputObject_2 {
   siteName: siteSiteMetadataSiteNameQueryString_2
+  siteUrl: siteSiteMetadataSiteUrlQueryString_2
 }
 
 input siteSiteMetadataSiteNameQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input siteSiteMetadataSiteUrlQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+type steps_2 {
+  color: String
+  description: String
+  icon: String
+  id: String
+  title: String
+}
+
+"""Node of type SvgsJson"""
+type SvgsJson implements Node {
+  """The id of this node."""
+  id: ID!
+
+  """The parent of this node."""
+  parent: Node
+
+  """The children of this node."""
+  children: [Node]
+  moduleNameTemplate: String
+  internal: internal_14
+}
+
+"""A connection to a list of items."""
+type SvgsJsonConnection {
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """A list of edges."""
+  edges: [SvgsJsonEdge]
+  totalCount: Int
+  distinct(field: svgsJsonDistinctEnum): [String]
+  group(skip: Int, limit: Int, field: svgsJsonGroupEnum): [svgsJsonGroupConnectionConnection]
+}
+
+input svgsJsonConnectionIdQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input svgsJsonConnectionInternalContentDigestQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input svgsJsonConnectionInternalInputObject_2 {
+  contentDigest: svgsJsonConnectionInternalContentDigestQueryString_2
+  type: svgsJsonConnectionInternalTypeQueryString_2
+  owner: svgsJsonConnectionInternalOwnerQueryString_2
+}
+
+input svgsJsonConnectionInternalOwnerQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input svgsJsonConnectionInternalTypeQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input svgsJsonConnectionModuleNameTemplateQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input svgsJsonConnectionSort {
+  fields: [SvgsJsonConnectionSortByFieldsEnum]!
+  order: svgsJsonConnectionSortOrderValues = ASC
+}
+
+enum SvgsJsonConnectionSortByFieldsEnum {
+  moduleNameTemplate
+  id
+  parent
+  internal___contentDigest
+  internal___type
+  internal___owner
+}
+
+enum svgsJsonConnectionSortOrderValues {
+  ASC
+  DESC
+}
+
+enum svgsJsonDistinctEnum {
+  moduleNameTemplate
+  id
+  parent
+  internal___contentDigest
+  internal___type
+  internal___owner
+}
+
+"""An edge in a connection."""
+type SvgsJsonEdge {
+  """The item at the end of the edge"""
+  node: SvgsJson
+
+  """The next edge in the connection"""
+  next: SvgsJson
+
+  """The previous edge in the connection"""
+  previous: SvgsJson
+}
+
+"""A connection to a list of items."""
+type svgsJsonGroupConnectionConnection {
+  """Information to aid in pagination."""
+  pageInfo: PageInfo!
+
+  """A list of edges."""
+  edges: [svgsJsonGroupConnectionEdge]
+  field: String
+  fieldValue: String
+  totalCount: Int
+}
+
+"""An edge in a connection."""
+type svgsJsonGroupConnectionEdge {
+  """The item at the end of the edge"""
+  node: SvgsJson
+
+  """The next edge in the connection"""
+  next: SvgsJson
+
+  """The previous edge in the connection"""
+  previous: SvgsJson
+}
+
+enum svgsJsonGroupEnum {
+  moduleNameTemplate
+  id
+  parent
+  internal___contentDigest
+  internal___type
+  internal___owner
+}
+
+input svgsJsonIdQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input svgsJsonInternalContentDigestQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input svgsJsonInternalInputObject_2 {
+  contentDigest: svgsJsonInternalContentDigestQueryString_2
+  type: svgsJsonInternalTypeQueryString_2
+  owner: svgsJsonInternalOwnerQueryString_2
+}
+
+input svgsJsonInternalOwnerQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input svgsJsonInternalTypeQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input svgsJsonModuleNameTemplateQueryString_2 {
   eq: String
   ne: String
   regex: String
