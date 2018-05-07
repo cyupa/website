@@ -58,7 +58,7 @@ async function main() {
   const json = await template.json();
   const now = new Date();
 
-  json.sort(sortComparatorAsc(t => t.steps[0].slug)).map((t: ZapierTemplate, i: number) => {
+  json.sort(sortComparatorAsc((t: ZapierTemplate) => t.steps[0].slug)).map((t: ZapierTemplate, i: number) => {
     const app = t.steps[0].slug;
     const appName = t.steps[0].title;
     let title = t.title;
@@ -103,11 +103,13 @@ main().catch(e => {
   process.exit(1);
 });
 
-function ensureDirectoryExistence(filePath: string) {
+function ensureDirectoryExistence(filePath: string): boolean {
   const dirname = path.dirname(filePath);
   if (fs.existsSync(dirname)) {
     return true;
+  } else {
+    ensureDirectoryExistence(dirname);
+    fs.mkdirSync(dirname);
+    return false;
   }
-  ensureDirectoryExistence(dirname);
-  fs.mkdirSync(dirname);
 }
