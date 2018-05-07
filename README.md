@@ -40,12 +40,12 @@ Requirements:
 
 The types are placed in the `@heydovetail/website/graphql/types` module.
 
-## Updating Zapier templates
+## Updating Zapier help articles
 
-Zapier templates are fetched from the Zapier partner API, converted into a useful format, then saved as a JSON file for us to display. You’ll need to pass the secret ket --zapier-client-id to the script.
+Zapier help articles are generated based on templates fetched from the Zapier partner API. You’ll need to pass the secret ket --zapier-client-id to the script.
 
 ```sh
-yarn run generate:zapier --output ../src/data/zapier/integrations.json --zapier-client-id foo
+yarn run generate:zapier:articles --zapier-client-id foo
 ```
 
 ## Build
