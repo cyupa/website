@@ -23,7 +23,7 @@ export class FrequentlyAskedQuestions extends React.PureComponent<Props> {
         </Item>
         <Item>
           <FlexWrap styled={{ gap: 64, growItems: true, maxChildWidth: 240, justifyContent: "center" }}>
-            {faqs.map(faq => <Item>{faq}</Item>)}
+            {faqs.map((faq, i) => <Item key={i}>{faq}</Item>)}
           </FlexWrap>
         </Item>
       </Flex>

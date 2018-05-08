@@ -3,7 +3,7 @@
 exports[`TextInput snapshots empty 1`] = `
 <input
   autoFocus={undefined}
-  className="f259djl"
+  className="f5t2bcs"
   defaultValue={undefined}
   maxLength={undefined}
   onBlur={undefined}
@@ -20,7 +20,7 @@ exports[`TextInput snapshots error 1`] = `
 >
   <input
     autoFocus={undefined}
-    className="f259djl"
+    className="f5t2bcs"
     defaultValue={undefined}
     maxLength={undefined}
     onBlur={undefined}
@@ -40,7 +40,7 @@ exports[`TextInput snapshots error 1`] = `
 exports[`TextInput snapshots on change 1`] = `
 <input
   autoFocus={undefined}
-  className="f259djl"
+  className="f5t2bcs"
   defaultValue={undefined}
   maxLength={undefined}
   onBlur={undefined}
@@ -54,7 +54,7 @@ exports[`TextInput snapshots on change 1`] = `
 exports[`TextInput snapshots placeholder 1`] = `
 <input
   autoFocus={undefined}
-  className="f259djl"
+  className="f5t2bcs"
   defaultValue={undefined}
   maxLength={undefined}
   onBlur={undefined}
@@ -68,7 +68,7 @@ exports[`TextInput snapshots placeholder 1`] = `
 exports[`TextInput snapshots value 1`] = `
 <input
   autoFocus={undefined}
-  className="f259djl"
+  className="f5t2bcs"
   defaultValue={undefined}
   maxLength={undefined}
   onBlur={undefined}
