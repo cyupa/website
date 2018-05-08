@@ -53,6 +53,7 @@ interface OutputTemplate {
   descriptionHtml: string;
   descriptionPlain: string;
   id: string;
+  path: string;
   status: string;
   steps: OutputStep[];
   title: string;
@@ -71,6 +72,10 @@ const { argv } = usage("Usage: bin/fetch-zapier-templates")
   .option("zapier-client-id", {
     type: "string",
     demand: true
+  })
+  .option("path", {
+    type: "string",
+    demand: false
   })
   .option("output", {
     type: "string",
@@ -93,6 +98,7 @@ async function main() {
     descriptionHtml: t.description,
     descriptionPlain: t.description_plain,
     id: t.id.toString(),
+    path: `${argv.path ? argv.path : "/integrations"}/${t.steps[0].slug}`,
     status: t.status,
     steps: t.steps.map(s => ({
       color: `#${s.hex_color}`,
