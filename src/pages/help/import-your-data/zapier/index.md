@@ -13,7 +13,7 @@ For example, here are some common use cases for integrations:
 * **Save Typeform survey responses to Dovetail** – When someone responds to a question in a Typeform survey, append their answer to a note.
 * **Save Intercom conversations in Dovetail** – When a new conversation is created in Intercom, save it as a note in Dovetail.
 
-**Note:** This example uses the **[Email to Zapier](https://zapier.com/apps/email/integrations)** Trigger App, however, you could choose whatever Trigger App you like from Zapier.
+**Note:** This example uses the **[Email to Zapier](https://zapier.com/apps/email/account/integrations)** Trigger App, however, you could choose whatever Trigger App you like from Zapier.
 
 ## Get started with Zapier
 

@@ -13,7 +13,7 @@ title: "Reset your password"
 
 ## While logged in
 
-1.  Visit your [profile page](/profile).
+1.  Visit your [profile page](/account/profile).
 1.  Click **Set a new password**.
 1.  Check your email and click **Change password**.
 1.  Type a new password then click **Change password**.
