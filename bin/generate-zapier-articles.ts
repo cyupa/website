@@ -77,7 +77,7 @@ title: "${title}"
 weight: ${i}
 ---
 
-${t.description_raw.replace(new RegExp("##", "g"), "###")}
+${t.description_raw.replace(new RegExp("^##", "g"), "###")}
 
 ### What you’ll need
 
