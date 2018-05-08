@@ -40,14 +40,6 @@ Requirements:
 
 The types are placed in the `@heydovetail/website/graphql/types` module.
 
-## Updating Zapier help articles
-
-Zapier help articles are generated based on templates fetched from the Zapier partner API. You’ll need to pass the secret ket --zapier-client-id to the script.
-
-```sh
-yarn run generate:zapier:articles --zapier-client-id foo
-```
-
 ## Build
 
 The build can be configured using the following environment variables:
