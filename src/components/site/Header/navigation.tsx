@@ -14,6 +14,7 @@ import { MobileMenu } from "@heydovetail/website/components/site/MobileMenu";
 import { FlipFlop } from "@heydovetail/website/components/util/FlipFlop";
 import { BREAKPOINT_TABLET, COLORS } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
+import { getLoggedInStateFromLocalStorage } from "@heydovetail/website/util/loggedIn";
 import React from "react";
 import { media } from "typestyle";
 import { styled } from "typestyle-react";
@@ -26,7 +27,7 @@ interface Props {
 export class Navigation extends React.PureComponent<Props> {
   public render() {
     const { dark = false } = this.props;
-    const loggedIn = this.getLoggedInStateFromLocalStorage();
+    const loggedIn = getLoggedInStateFromLocalStorage();
 
     return (
       <>
@@ -110,16 +111,6 @@ export class Navigation extends React.PureComponent<Props> {
       </>
     );
   }
-
-  private readonly getLoggedInStateFromLocalStorage = () => {
-    return (
-      // tslint:disable-next-line:no-any
-      typeof (window as any) !== "undefined" &&
-      // tslint:disable-next-line:no-any
-      (window.localStorage as any) !== undefined &&
-      window.localStorage.getItem("is-logged-in") !== null
-    );
-  };
 }
 
 const DesktopNavigation = styled(

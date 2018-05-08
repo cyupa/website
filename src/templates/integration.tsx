@@ -9,8 +9,10 @@ import { IntegrationIllustration } from "@heydovetail/website/components/site/In
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { COLORS, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { IntegrationByPathQuery } from "@heydovetail/website/graphql/types";
+import { locations } from "@heydovetail/website/routing/locations";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
 import { graphql } from "@heydovetail/website/util/graphql";
+import { getLoggedInStateFromLocalStorage } from "@heydovetail/website/util/loggedIn";
 import React from "react";
 import Helmet from "react-helmet";
 
@@ -25,6 +27,7 @@ export default function IntegrationTemplate({ data }: Props) {
   const to = steps![1]!;
   const description = descriptionPlain!.replace(/\n.*/g, "");
   const titleSansDovetail = title!.replace(/Dovetail notes/g, "notes");
+  const loggedIn = getLoggedInStateFromLocalStorage();
 
   return (
     <>
@@ -66,6 +69,8 @@ export default function IntegrationTemplate({ data }: Props) {
       <LightContainer backgroundColor={COLORS.p04} maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
         <FeatureHero
           image={<IntegrationIllustration color={from.color!} icon={from.icon!} />}
+          linkText={loggedIn ? "Configure in Dovetail" : undefined}
+          location={loggedIn ? locations.integrations() : undefined}
           title={`${titleSansDovetail}.`}
           text={description}
         />

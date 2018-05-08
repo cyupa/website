@@ -119,6 +119,7 @@ export const locations = {
   guides: () => internal("/guides"),
   help: () => internal("/help"),
   home: () => internal("/"),
+  integrations: () => external("/account/integrations"),
   legal: () => internal("/legal"),
   logIn: () => external("/users/sign_in"),
   press: () => internal("/company/press"),
