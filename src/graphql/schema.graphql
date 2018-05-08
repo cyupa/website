@@ -1925,6 +1925,7 @@ input filterIntegrationsJson {
   descriptionHtml: integrationsJsonConnectionDescriptionHtmlQueryString_2
   descriptionPlain: integrationsJsonConnectionDescriptionPlainQueryString_2
   id: integrationsJsonConnectionIdQueryString_2
+  path: integrationsJsonConnectionPathQueryString_2
   status: integrationsJsonConnectionStatusQueryString_2
   steps: integrationsJsonConnectionStepsQueryList_2
   title: integrationsJsonConnectionTitleQueryString_2
@@ -2085,6 +2086,7 @@ type IntegrationsJson implements Node {
   createUrl: String
   descriptionHtml: String
   descriptionPlain: String
+  path: String
   status: String
   steps: [steps_2]
   title: String
@@ -2158,6 +2160,13 @@ input integrationsJsonConnectionInternalTypeQueryString_2 {
   glob: String
 }
 
+input integrationsJsonConnectionPathQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
 input integrationsJsonConnectionSort {
   fields: [IntegrationsJsonConnectionSortByFieldsEnum]!
   order: integrationsJsonConnectionSortOrderValues = ASC
@@ -2168,6 +2177,7 @@ enum IntegrationsJsonConnectionSortByFieldsEnum {
   descriptionHtml
   descriptionPlain
   id
+  path
   status
   steps
   title
@@ -2203,6 +2213,13 @@ input integrationsJsonConnectionStepsDescriptionQueryString_2 {
   glob: String
 }
 
+input integrationsJsonConnectionStepsIconOriginalQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
 input integrationsJsonConnectionStepsIconQueryString_2 {
   eq: String
   ne: String
@@ -2221,6 +2238,7 @@ input integrationsJsonConnectionStepsInputObject_2 {
   color: integrationsJsonConnectionStepsColorQueryString_2
   description: integrationsJsonConnectionStepsDescriptionQueryString_2
   icon: integrationsJsonConnectionStepsIconQueryString_2
+  iconOriginal: integrationsJsonConnectionStepsIconOriginalQueryString_2
   id: integrationsJsonConnectionStepsIdQueryString_2
   title: integrationsJsonConnectionStepsTitleQueryString_2
 }
@@ -2269,6 +2287,7 @@ enum integrationsJsonDistinctEnum {
   descriptionHtml
   descriptionPlain
   id
+  path
   status
   steps
   title
@@ -2319,6 +2338,7 @@ enum integrationsJsonGroupEnum {
   descriptionHtml
   descriptionPlain
   id
+  path
   status
   steps
   title
@@ -2362,6 +2382,13 @@ input integrationsJsonInternalTypeQueryString_2 {
   glob: String
 }
 
+input integrationsJsonPathQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
 input integrationsJsonStatusQueryString_2 {
   eq: String
   ne: String
@@ -2377,6 +2404,13 @@ input integrationsJsonStepsColorQueryString_2 {
 }
 
 input integrationsJsonStepsDescriptionQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
+input integrationsJsonStepsIconOriginalQueryString_2 {
   eq: String
   ne: String
   regex: String
@@ -2401,6 +2435,7 @@ input integrationsJsonStepsInputObject_2 {
   color: integrationsJsonStepsColorQueryString_2
   description: integrationsJsonStepsDescriptionQueryString_2
   icon: integrationsJsonStepsIconQueryString_2
+  iconOriginal: integrationsJsonStepsIconOriginalQueryString_2
   id: integrationsJsonStepsIdQueryString_2
   title: integrationsJsonStepsTitleQueryString_2
 }
@@ -2964,7 +2999,7 @@ type RootQueryType {
 
   """Connection to all SitePage nodes"""
   allSitePage(skip: Int, limit: Int, sort: sitePageConnectionSort, filter: filterSitePage): SitePageConnection
-  integrationsJson(createUrl: integrationsJsonCreateUrlQueryString_2, descriptionHtml: integrationsJsonDescriptionHtmlQueryString_2, descriptionPlain: integrationsJsonDescriptionPlainQueryString_2, id: integrationsJsonIdQueryString_2, status: integrationsJsonStatusQueryString_2, steps: integrationsJsonStepsQueryList_2, title: integrationsJsonTitleQueryString_2, internal: integrationsJsonInternalInputObject_2): IntegrationsJson
+  integrationsJson(createUrl: integrationsJsonCreateUrlQueryString_2, descriptionHtml: integrationsJsonDescriptionHtmlQueryString_2, descriptionPlain: integrationsJsonDescriptionPlainQueryString_2, id: integrationsJsonIdQueryString_2, path: integrationsJsonPathQueryString_2, status: integrationsJsonStatusQueryString_2, steps: integrationsJsonStepsQueryList_2, title: integrationsJsonTitleQueryString_2, internal: integrationsJsonInternalInputObject_2): IntegrationsJson
   sitePlugin(resolve: sitePluginResolveQueryString_2, id: sitePluginIdQueryString_2, name: sitePluginNameQueryString_2, version: sitePluginVersionQueryString_2, pluginOptions: sitePluginPluginOptionsInputObject_2, nodeAPIs: sitePluginNodeApIsQueryList_2, browserAPIs: sitePluginBrowserApIsQueryList_2, ssrAPIs: sitePluginSsrApIsQueryList_2, pluginFilepath: sitePluginPluginFilepathQueryString_2, packageJson: sitePluginPackageJsonInputObject_2, internal: sitePluginInternalInputObject_2): SitePlugin
   site(siteMetadata: siteSiteMetadataInputObject_2, port: sitePortQueryString_2, host: siteHostQueryString_2, pathPrefix: sitePathPrefixQueryString_2, polyfill: sitePolyfillQueryBoolean_2, buildTime: siteBuildTimeQueryString_2, id: siteIdQueryString_2, internal: siteInternalInputObject_2): Site
   directory(id: directoryIdQueryString_2, internal: directoryInternalInputObject_2, sourceInstanceName: directorySourceInstanceNameQueryString_2, absolutePath: directoryAbsolutePathQueryString_2, relativePath: directoryRelativePathQueryString_2, extension: directoryExtensionQueryString_2, size: directorySizeQueryInteger_2, prettySize: directoryPrettySizeQueryString_2, modifiedTime: directoryModifiedTimeQueryString_2, accessTime: directoryAccessTimeQueryString_2, changeTime: directoryChangeTimeQueryString_2, birthTime: directoryBirthTimeQueryString_2, root: directoryRootQueryString_2, dir: directoryDirQueryString_2, base: directoryBaseQueryString_2, ext: directoryExtQueryString_2, name: directoryNameQueryString_2, relativeDirectory: directoryRelativeDirectoryQueryString_2, dev: directoryDevQueryInteger_2, mode: directoryModeQueryInteger_2, nlink: directoryNlinkQueryInteger_2, uid: directoryUidQueryInteger_2, gid: directoryGidQueryInteger_2, rdev: directoryRdevQueryInteger_2, blksize: directoryBlksizeQueryInteger_2, ino: directoryInoQueryInteger_2, blocks: directoryBlocksQueryInteger_2, atimeMs: directoryAtimeMsQueryFloat_2, mtimeMs: directoryMtimeMsQueryFloat_2, ctimeMs: directoryCtimeMsQueryFloat_2, birthtimeMs: directoryBirthtimeMsQueryFloat_2, atime: directoryAtimeQueryString_2, mtime: directoryMtimeQueryString_2, ctime: directoryCtimeQueryString_2, birthtime: directoryBirthtimeQueryString_2): Directory
@@ -5747,6 +5782,7 @@ type steps_2 {
   color: String
   description: String
   icon: String
+  iconOriginal: String
   id: String
   title: String
 }

@@ -1,75 +1,93 @@
-// import { Container } from "@heydovetail/website/components/layout/Container";
-// import { Flex } from "@heydovetail/website/components/layout/Flex";
-// import { Item } from "@heydovetail/website/components/layout/Item";
-// import { Breadcrumbs } from "@heydovetail/website/components/site/Breadcrumbs";
-// import { Date } from "@heydovetail/website/components/site/Date";
-// import { HeroText } from "@heydovetail/website/components/site/HeroText";
-// import { PageContent } from "@heydovetail/website/components/site/PageContent";
-// import { COLORS, HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
-// import { IntegrationByPathQuery } from "@heydovetail/website/graphql/types";
-// import { internal } from "@heydovetail/website/routing/locations";
-// import { graphql } from "@heydovetail/website/util/graphql";
-// import React from "react";
-// import { styled } from "typestyle-react";
+import { Center } from "@heydovetail/website/components/layout/Center";
+import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Flow } from "@heydovetail/website/components/layout/Flow";
+import { Item } from "@heydovetail/website/components/layout/Item";
+import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
+import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { IntegrationIcon } from "@heydovetail/website/components/site/IntegrationIcon";
+import { IntegrationIllustration } from "@heydovetail/website/components/site/IntegrationIllustration";
+import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
+import { COLORS, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
+import { IntegrationByPathQuery } from "@heydovetail/website/graphql/types";
+import { UseCases } from "@heydovetail/website/sections/UseCases";
+import { graphql } from "@heydovetail/website/util/graphql";
+import React from "react";
+import Helmet from "react-helmet";
 
-// interface Props {
-//   data: IntegrationByPathQuery;
-//   pathContext: { breadcrumb: Array<{ path: string | null; title: string | null }> };
-// }
+interface Props {
+  data: IntegrationByPathQuery;
+}
 
-// export default function IntegrationTemplate({ data, pathContext }: Props) {
-//   const { integrationsJson } = data;
-//   const { date, description, title } = integrationsJson!;
+export default function IntegrationTemplate({ data }: Props) {
+  const { integrationsJson } = data;
+  const { descriptionPlain, title, steps } = integrationsJson!;
+  const from = steps![0]!;
+  const to = steps![1]!;
+  const description = descriptionPlain!.replace(/\n.*/g, "");
+  const titleSansDovetail = title!.replace(/Dovetail notes/g, "notes");
 
-//   return (
-//     <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
-//       <div style={{ maxWidth: WIDTH * 0.75 }}>
-//         {/* <Breadcrumbs
-//           crumbs={pathContext.breadcrumb.map(breadcrumb => ({
-//             location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
-//             text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
-//           }))}
-//         /> */}
-//         <Flex styled={{ gap: 16, layout: "column" }}>
-//           <Item>
-//             <HeroText center={false} title={title!} />
-//           </Item>
-//           <Item>
-//             <Date>Last updated {date!}</Date>
-//           </Item>
-//           <Item>
-//             <PageContent html={description!} />
-//           </Item>
-//           <HorizontalRule />
-//           <Item>
-//             {/* <Breadcrumbs
-//               crumbs={pathContext.breadcrumb.map(breadcrumb => ({
-//                 location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
-//                 text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
-//               }))}
-//             /> */}
-//           </Item>
-//         </Flex>
-//       </div>
-//     </Container>
-//   );
-// }
+  return (
+    <>
+      <Helmet>
+        <title>Connect {from.title} and Dovetail</title>
+        <meta name="description" content={description} />
+        <meta property="og:description" content={description} />
+        <meta property="og:title" content={`Connect ${from.title} and Dovetail`} />
+      </Helmet>
+      <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
+        <Center>
+          <Flex styled={{ gap: 24, layout: "column" }}>
+            <Item>
+              <Flow styled={{ gap: 32 }}>
+                <Item>
+                  <IntegrationIcon>
+                    <img src={from.icon!} height={32} width={32} />
+                  </IntegrationIcon>
+                </Item>
+                <Item>
+                  <IntegrationIcon>
+                    <img src={to.icon!} height={32} width={32} />
+                  </IntegrationIcon>
+                </Item>
+              </Flow>
+            </Item>
+            <Item>
+              <HeroText
+                title={
+                  <>
+                    {from.title} + Dovetail.<br />Better together.
+                  </>
+                }
+              />
+            </Item>
+          </Flex>
+        </Center>
+      </LightContainer>
+      <LightContainer backgroundColor={COLORS.p04} maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
+        <FeatureHero
+          image={<IntegrationIllustration color={from.color!} icon={from.icon!} />}
+          title={`${titleSansDovetail}.`}
+          text={description}
+        />
+      </LightContainer>
+      <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
+        <UseCases showTitle />
+      </LightContainer>
+    </>
+  );
+}
 
-// const HorizontalRule = styled("hr", {
-//   backgroundColor: COLORS.i04,
-//   border: 0,
-//   margin: "32px 0",
-//   height: "2px"
-// });
-
-// export const integrationQuery = graphql`
-//   query IntegrationByPath($path: String!) {
-//     integrationsJson(path: { eq: $path }) {
-//       app
-//       createUrl
-//       date(formatString: "MMMM DD, YYYY")
-//       description
-//       title
-//     }
-//   }
-// `;
+export const integrationQuery = graphql`
+  query IntegrationByPath($path: String!) {
+    integrationsJson(path: { eq: $path }) {
+      createUrl
+      descriptionPlain
+      title
+      steps {
+        color
+        icon
+        title
+      }
+    }
+  }
+`;

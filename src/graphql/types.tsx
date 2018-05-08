@@ -82,3 +82,20 @@ export interface DocumentByPathQuery {
     } | null;
   } | null;
 }
+
+export interface IntegrationByPathQueryVariables {
+  path: string;
+}
+
+export interface IntegrationByPathQuery {
+  integrationsJson: {
+    createUrl: string | null;
+    descriptionPlain: string | null;
+    title: string | null;
+    steps: Array<{
+      color: string | null;
+      icon: string | null;
+      title: string | null;
+    } | null> | null;
+  } | null;
+}
