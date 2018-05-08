@@ -62,6 +62,7 @@ interface OutputStep {
   color: string;
   description: string;
   icon: string;
+  iconOriginal: string;
   id: string;
   title: string;
 }
@@ -96,7 +97,8 @@ async function main() {
     steps: t.steps.map(s => ({
       color: `#${s.hex_color}`,
       description: s.description,
-      icon: s.image,
+      icon: s.images.url_64x64,
+      iconOriginal: s.image,
       id: s.id.toString(),
       title: s.title
     })),
