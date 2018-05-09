@@ -6,7 +6,7 @@ import { LightContainer } from "@heydovetail/website/components/site/LightContai
 import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { IntegrationIndexQuery } from "@heydovetail/website/graphql/types";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
-// import { sortComparatorAsc } from "@heydovetail/website/util/array";
+import { omitNull, sortComparatorAsc } from "@heydovetail/website/util/array";
 import { graphql } from "@heydovetail/website/util/graphql";
 import React from "react";
 import Helmet from "react-helmet";
@@ -47,9 +47,8 @@ export default class extends React.PureComponent<Props> {
                   <Masonry
                     containerWidth={WIDTH - PADDING * 2}
                     gap={32}
-                    items={edges!
-                      // TypeScript hates me
-                      // .sort(sortComparatorAsc(edge => edge!.node!.steps![0]!.title!))
+                    items={omitNull(edges!)
+                      .sort(sortComparatorAsc(edge => edge!.node!.steps![0]!.title!))
                       .map(edge => (
                         <IntegrationCard
                           app={edge!.node!.steps![0]!.title!}
