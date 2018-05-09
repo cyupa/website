@@ -1,10 +1,12 @@
-import { Container } from "@heydovetail/website/components/layout/Container";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { IntegrationCard } from "@heydovetail/website/components/site/IntegrationCard";
-import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
+import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
+import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { IntegrationIndexQuery } from "@heydovetail/website/graphql/types";
+import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
+import { sortComparatorAsc } from "@heydovetail/website/util/array";
 import { graphql } from "@heydovetail/website/util/graphql";
 import React from "react";
 import Helmet from "react-helmet";
@@ -16,39 +18,46 @@ interface Props {
 
 export default class extends React.PureComponent<Props> {
   public render() {
-    const { edges } = this.props.data!.allIntegrationsJson!;
+    const { edges = [] } = this.props.data!.allIntegrationsJson!;
 
     return (
       <>
         <Helmet>
           <title>Integrations – Dovetail</title>
         </Helmet>
-        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
-          <Flex styled={{ gap: 48, layout: "column" }}>
+        <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+          <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
             <Item>
-              <HeroText
-                title="Integrations"
-                text="Connect thousands of your favorite apps through our partnership with Zapier."
-              />
+              <Flex styled={{ gap: 48, layout: "column" }}>
+                <Item>
+                  <HeroText
+                    title="Integrations"
+                    text="Connect thousands of your favorite apps through our Zapier integration and templates."
+                  />
+                </Item>
+                <Item>
+                  <Masonry
+                    containerWidth={WIDTH}
+                    gap={32}
+                    items={edges!.map(edge => (
+                      <IntegrationCard
+                        app={edge!.node!.steps![0]!.title!}
+                        color={edge!.node!.steps![0]!.color!}
+                        icon={edge!.node!.steps![0]!.icon!}
+                        title={edge!.node!.title!}
+                        path={edge!.node!.path!}
+                      />
+                    ))}
+                    minColumnWidth={220}
+                  />
+                </Item>
+              </Flex>
             </Item>
             <Item>
-              <Masonry
-                containerWidth={WIDTH}
-                gap={32}
-                items={edges!.map(edge => (
-                  <IntegrationCard
-                    app={edge!.node!.steps![0]!.title!}
-                    color={edge!.node!.steps![0]!.color!}
-                    icon={edge!.node!.steps![0]!.icon!}
-                    title={edge!.node!.title!}
-                    path={edge!.node!.path!}
-                  />
-                ))}
-                minColumnWidth={220}
-              />
+              <CenteredSignUp />
             </Item>
           </Flex>
-        </Container>
+        </LightContainer>
       </>
     );
   }

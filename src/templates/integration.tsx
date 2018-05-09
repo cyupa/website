@@ -3,7 +3,6 @@ import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
-import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { IntegrationIcon } from "@heydovetail/website/components/site/IntegrationIcon";
 import { IntegrationIllustration } from "@heydovetail/website/components/site/IntegrationIllustration";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
@@ -39,29 +38,21 @@ export default function IntegrationTemplate({ data }: Props) {
       </Helmet>
       <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
         <Center>
-          <Flex styled={{ gap: 24, layout: "column" }}>
+          <Flex styled={{ gap: 48, layout: "column" }}>
             <Item>
               <Flow styled={{ gap: 32 }}>
                 <Item>
-                  <IntegrationIcon>
-                    <img src={from.icon!} height={32} width={32} />
-                  </IntegrationIcon>
+                  <IntegrationIcon icon={from.icon!} size={32} />
                 </Item>
                 <Item>
-                  <IntegrationIcon>
-                    <img src={to.icon!} height={32} width={32} />
-                  </IntegrationIcon>
+                  <IntegrationIcon icon={to.icon!} size={32} />
                 </Item>
               </Flow>
             </Item>
             <Item>
-              <HeroText
-                title={
-                  <>
-                    {from.title} + Dovetail.<br />Better together.
-                  </>
-                }
-              />
+              <h1>
+                {from.title} + Dovetail.<br />Better together.
+              </h1>
             </Item>
           </Flex>
         </Center>

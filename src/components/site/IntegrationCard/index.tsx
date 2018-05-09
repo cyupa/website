@@ -1,8 +1,8 @@
+import { SubtleButtonLink } from "@heydovetail/website/components/forms/SubtleButtonLink";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { IntegrationIcon } from "@heydovetail/website/components/site/IntegrationIcon";
-import { ActionTextWithArrow } from "@heydovetail/website/components/util/ActionTextWithArrow";
-import { BORDER_RADIUS, COLORS } from "@heydovetail/website/constants";
+import { BORDER_RADIUS, COLORS, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import React from "react";
 import { styled } from "typestyle-react";
 
@@ -19,20 +19,18 @@ export class IntegrationCard extends React.PureComponent<Props> {
     const { app, color, icon, title, path } = this.props;
     return (
       <Card styled={{ color }}>
-        <Flex styled={{ alignItems: "center", gap: 24, layout: "column" }}>
+        <Flex styled={{ alignItems: "center", gap: 16, layout: "column" }}>
           <Item>
-            <IntegrationIcon>
-              <img src={icon} height={32} width={32} />
-            </IntegrationIcon>
+            <IntegrationIcon icon={icon} size={32} />
           </Item>
           <Item>
             <App>{app}</App>
           </Item>
           <Item>
-            <p>{title}.</p>
+            <p style={{ opacity: LIGHT_TEXT_OPACITY }}>{title}.</p>
           </Item>
           <Item style={{ color: COLORS.purple }}>
-            <ActionTextWithArrow location={{ internal: true, path }} />
+            <SubtleButtonLink location={{ internal: true, path }}>Learn more</SubtleButtonLink>
           </Item>
         </Flex>
       </Card>
@@ -40,17 +38,16 @@ export class IntegrationCard extends React.PureComponent<Props> {
   }
 }
 
-const Card = styled("div", ({ color }: { color: string }) => ({
+const Card = styled("div", {
   backgroundColor: COLORS.p04,
-  borderTop: `4px solid ${color}`,
   borderRadius: BORDER_RADIUS,
   padding: "32px",
   textAlign: "center"
-}));
+});
 
 const App = styled("h2", {
   fontSize: "20px",
   fontWeight: 500,
   lineHeight: "24px",
-  marginTop: "8px"
+  marginTop: "16px"
 });
