@@ -45,10 +45,11 @@ export default class extends React.PureComponent<Props> {
                 </Item>
                 <Item>
                   <Masonry
-                    containerWidth={WIDTH}
+                    containerWidth={WIDTH - PADDING * 2}
                     gap={32}
                     items={edges!
-                      .sort(sortComparatorAsc(edge => edge!.node!.steps![0]!.title!))
+                      // TypeScript hates me
+                      // .sort(sortComparatorAsc(edge => edge!.node!.steps![0]!.title!))
                       .map(edge => (
                         <IntegrationCard
                           app={edge!.node!.steps![0]!.title!}
