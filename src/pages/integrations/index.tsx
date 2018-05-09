@@ -6,7 +6,7 @@ import { LightContainer } from "@heydovetail/website/components/site/LightContai
 import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { IntegrationIndexQuery } from "@heydovetail/website/graphql/types";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
-import { sortComparatorAsc } from "@heydovetail/website/util/array";
+// import { sortComparatorAsc } from "@heydovetail/website/util/array";
 import { graphql } from "@heydovetail/website/util/graphql";
 import React from "react";
 import Helmet from "react-helmet";
