@@ -1,0 +1,245 @@
+[
+  {
+    "createUrl": "https://zapier.com/partner/embed/dovetail/create/18730",
+    "descriptionHtml": "<p>Are you spending hours copying and pasting survey responses and form entries into a spreadsheet to analyze? This Zapier integration can help your team keep track of your form entires along with the rest of your Dovetail notes. Set up this Zap, and Zapier will create a new note in Dovetail when someone responds to a  question in a Typeform survey. Save tons of time and consolidate all your research data in one place!</p>\n\n<h2>How this Typeform-Dovetail integration works</h2>\n\n<ol>\n<li>A new response is created in your Typeform survey</li>\n<li>Zapier saves the response to a note in Dovetail</li>\n</ol>\n\n<h2>Apps involved</h2>\n\n<ul>\n<li>Typeform</li>\n<li>Dovetail</li>\n</ul>\n",
+    "descriptionPlain": "Are you spending hours copying and pasting survey responses and form entries into a spreadsheet to analyze? This Zapier integration can help your team keep track of your form entires along with the rest of your Dovetail notes. Set up this Zap, and Zapier will create a new note in Dovetail when someone responds to a question in a Typeform survey. Save tons of time and consolidate all your research data in one place!\n\nHow this Typeform-Dovetail integration works\n\nA new response is created in your Typeform survey\n\nZapier saves the response to a note in Dovetail\n\nApps involved\n\nTypeform\n\nDovetail",
+    "id": "18730",
+    "path": "/integrations/typeform",
+    "status": "published",
+    "steps": [
+      {
+        "color": "#8bcbca",
+        "description": "Typeform helps you ask awesomely online! If you ever need to run a survey, questionnaire, form, contest etc... Typeform will help you achieve it beautifully across all devices, every time, using its next generation platform.",
+        "icon": "https://cdn.zapier.com/storage/developer/6df0e2a9ca7350c7407f0d9c2b0709c0.64x64.png",
+        "iconOriginal": "https://cdn.zapier.com/storage/developer/6df0e2a9ca7350c7407f0d9c2b0709c0.png",
+        "id": "730",
+        "title": "Typeform"
+      },
+      {
+        "color": "#512DA8",
+        "description": "Dovetail lets you organize user research data, analyze it together, and share insights with your team. Understand your customers with Dovetail and build better things.",
+        "icon": "https://cdn.zapier.com/storage/developer_cli/4592f3be4cadc8d76508ab4744f5e735.64x64.png",
+        "iconOriginal": "https://cdn.zapier.com/storage/developer_cli/4592f3be4cadc8d76508ab4744f5e735.png",
+        "id": "8137",
+        "title": "Dovetail"
+      }
+    ],
+    "title": "Create Dovetail notes for new Typeform entries"
+  },
+  {
+    "createUrl": "https://zapier.com/partner/embed/dovetail/create/18729",
+    "descriptionHtml": "<p>Get all of your customer feedback in the same place including support tickets and customer emails. When you forward an email to your Zapier email address, this  integration will create a new note in Dovetail with the contents of the email. Get your support and sales teams saving that valuable customer feedback in a single place so you can act upon it!</p>\n\n<h2>How this Email-Dovetail integration works</h2>\n\n<ol>\n<li>An email is sent to your Zapier email address</li>\n<li>Zapier creates the email as a new note in Dovetail</li>\n</ol>\n\n<h2>Apps involved</h2>\n\n<ul>\n<li>Email by Zapier</li>\n<li>Dovetail</li>\n</ul>\n",
+    "descriptionPlain": "Get all of your customer feedback in the same place including support tickets and customer emails. When you forward an email to your Zapier email address, this integration will create a new note in Dovetail with the contents of the email. Get your support and sales teams saving that valuable customer feedback in a single place so you can act upon it!\n\nHow this Email-Dovetail integration works\n\nAn email is sent to your Zapier email address\n\nZapier creates the email as a new note in Dovetail\n\nApps involved\n\nEmail by Zapier\n\nDovetail",
+    "id": "18729",
+    "path": "/integrations/email",
+    "status": "published",
+    "steps": [
+      {
+        "color": "#13d0ab",
+        "description": "Send and receive email via a custom Zapier email address at `zapiermail.com`. This is great for triggering off of emails and sending custom emails.\r\n\r\nHave direct access to your own email servers? Check out our [IMAP](/zapbook/imap/) and [SMTP](/zapbook/smtp/) services!",
+        "icon": "https://cdn.zapier.com/storage/services/01c965c4215e4003b6dd573484563457.64x64.png",
+        "iconOriginal": "https://cdn.zapier.com/storage/services/01c965c4215e4003b6dd573484563457.png",
+        "id": "2",
+        "title": "Email by Zapier"
+      },
+      {
+        "color": "#512DA8",
+        "description": "Dovetail lets you organize user research data, analyze it together, and share insights with your team. Understand your customers with Dovetail and build better things.",
+        "icon": "https://cdn.zapier.com/storage/developer_cli/4592f3be4cadc8d76508ab4744f5e735.64x64.png",
+        "iconOriginal": "https://cdn.zapier.com/storage/developer_cli/4592f3be4cadc8d76508ab4744f5e735.png",
+        "id": "8137",
+        "title": "Dovetail"
+      }
+    ],
+    "title": "Save new emails as Dovetail notes"
+  },
+  {
+    "createUrl": "https://zapier.com/partner/embed/dovetail/create/18731",
+    "descriptionHtml": "<p>Want to keep all of your data from your spreadsheets alongside the rest of your Dovetail data? Use this Zap to automatically import new spreadsheet data into Dovetail for analysis. This integration will copy new or updated spreadsheet rows from Google Sheets into a Dovetail note, so you can add annotations, discover insights, and share research with your team.</p>\n\n<h2>How this Google Sheets-Dovetail integration works</h2>\n\n<ol>\n<li>A row is created or updated in a Google Sheets spreadsheet</li>\n<li>Zapier copies the content of the row into a note in Dovetail</li>\n</ol>\n\n<h2>Apps involved</h2>\n\n<ul>\n<li>Google Sheets</li>\n<li>Dovetail</li>\n</ul>\n",
+    "descriptionPlain": "Want to keep all of your data from your spreadsheets alongside the rest of your Dovetail data? Use this Zap to automatically import new spreadsheet data into Dovetail for analysis. This integration will copy new or updated spreadsheet rows from Google Sheets into a Dovetail note, so you can add annotations, discover insights, and share research with your team.\n\nHow this Google Sheets-Dovetail integration works\n\nA row is created or updated in a Google Sheets spreadsheet\n\nZapier copies the content of the row into a note in Dovetail\n\nApps involved\n\nGoogle Sheets\n\nDovetail",
+    "id": "18731",
+    "path": "/integrations/google-sheets",
+    "status": "published",
+    "steps": [
+      {
+        "color": "#00a256",
+        "description": "Create, edit, and share spreadsheets wherever you are with Google Sheets, and get automated insights from your data.",
+        "icon": "https://cdn.zapier.com/storage/services/e37713ab22d82f777575279db97cd805.64x64.png",
+        "iconOriginal": "https://cdn.zapier.com/storage/services/e37713ab22d82f777575279db97cd805.png",
+        "id": "1498",
+        "title": "Google Sheets"
+      },
+      {
+        "color": "#512DA8",
+        "description": "Dovetail lets you organize user research data, analyze it together, and share insights with your team. Understand your customers with Dovetail and build better things.",
+        "icon": "https://cdn.zapier.com/storage/developer_cli/4592f3be4cadc8d76508ab4744f5e735.64x64.png",
+        "iconOriginal": "https://cdn.zapier.com/storage/developer_cli/4592f3be4cadc8d76508ab4744f5e735.png",
+        "id": "8137",
+        "title": "Dovetail"
+      }
+    ],
+    "title": "Create Dovetail notes for new Google Sheets rows"
+  },
+  {
+    "createUrl": "https://zapier.com/partner/embed/dovetail/create/18734",
+    "descriptionHtml": "<p>Don’t lose your valuable Intercom conversations. Instead, store it all in the same place for easy analysis and sharing. This Zapier integration creates a new note in Dovetail when a conversation is closed in Intercom, and copies across a link to the discussion, and the contents of the chat.</p>\n\n<p><em>Note: The “Reply and close” button won't trigger this. You must reply and then close the conversation separately.</em></p>\n\n<h2>How this Intercom-Dovetail integration works</h2>\n\n<ol>\n<li>A new conversation is closed in Intercom</li>\n<li>Zapier saves the contents of the conversation to a note in Dovetail</li>\n</ol>\n\n<h2>Apps involved</h2>\n\n<ul>\n<li>Intercom</li>\n<li>Dovetail</li>\n</ul>\n",
+    "descriptionPlain": "Don’t lose your valuable Intercom conversations. Instead, store it all in the same place for easy analysis and sharing. This Zapier integration creates a new note in Dovetail when a conversation is closed in Intercom, and copies across a link to the discussion, and the contents of the chat.\n\nNote: The “Reply and close” button won't trigger this. You must reply and then close the conversation separately.\n\nHow this Intercom-Dovetail integration works\n\nA new conversation is closed in Intercom\n\nZapier saves the contents of the conversation to a note in Dovetail\n\nApps involved\n\nIntercom\n\nDovetail",
+    "id": "18734",
+    "path": "/integrations/intercom",
+    "status": "published",
+    "steps": [
+      {
+        "color": "#4d9de0",
+        "description": "Intercom is a fundamentally new way for internet businesses to communicate with customers, personally, at scale. It's a customer communication platform with a suite of integrated products for every team—including sales, marketing, product, and support. Intercom's products enable targeted communication with customers on your website, inside your web and mobile apps, and by email.",
+        "icon": "https://cdn.zapier.com/storage/developer/9af959b3d8d4390eaf2cc05afaa42451_2.64x64.png",
+        "iconOriginal": "https://cdn.zapier.com/storage/developer/9af959b3d8d4390eaf2cc05afaa42451_2.png",
+        "id": "965",
+        "title": "Intercom"
+      },
+      {
+        "color": "#512DA8",
+        "description": "Dovetail lets you organize user research data, analyze it together, and share insights with your team. Understand your customers with Dovetail and build better things.",
+        "icon": "https://cdn.zapier.com/storage/developer_cli/4592f3be4cadc8d76508ab4744f5e735.64x64.png",
+        "iconOriginal": "https://cdn.zapier.com/storage/developer_cli/4592f3be4cadc8d76508ab4744f5e735.png",
+        "id": "8137",
+        "title": "Dovetail"
+      }
+    ],
+    "title": "Create Dovetail notes for Intercom conversations"
+  },
+  {
+    "createUrl": "https://zapier.com/partner/embed/dovetail/create/18733",
+    "descriptionHtml": "<p>As you’re browsing around the web, collating research data or papers to analyze, you'll want to share that info with your team. Just add it to Pocket—then with this integration, Zapier will automatically save the page as a new note in Dovetail. It’ll set the title to the article title, and include an excerpt along with the URL to the article.</p>\n\n<h2>How this Pocket-Dovetail integration works</h2>\n\n<ol>\n<li>A new item is saved to your Pocket</li>\n<li>Zapier creates a note in Dovetail with the URL and an excerpt</li>\n</ol>\n\n<h2>Apps involved</h2>\n\n<ul>\n<li>Pocket</li>\n<li>Dovetail</li>\n</ul>\n",
+    "descriptionPlain": "As you’re browsing around the web, collating research data or papers to analyze, you'll want to share that info with your team. Just add it to Pocket—then with this integration, Zapier will automatically save the page as a new note in Dovetail. It’ll set the title to the article title, and include an excerpt along with the URL to the article.\n\nHow this Pocket-Dovetail integration works\n\nA new item is saved to your Pocket\n\nZapier creates a note in Dovetail with the URL and an excerpt\n\nApps involved\n\nPocket\n\nDovetail",
+    "id": "18733",
+    "path": "/integrations/pocket",
+    "status": "published",
+    "steps": [
+      {
+        "color": "#ED4055",
+        "description": "Pocket is the best way to save articles, videos and links to view on any device, any time.",
+        "icon": "https://cdn.zapier.com/storage/services/2405c839aa8598c56dc295500d7c2822.64x64.png",
+        "iconOriginal": "https://cdn.zapier.com/storage/services/2405c839aa8598c56dc295500d7c2822.png",
+        "id": "606",
+        "title": "Pocket"
+      },
+      {
+        "color": "#512DA8",
+        "description": "Dovetail lets you organize user research data, analyze it together, and share insights with your team. Understand your customers with Dovetail and build better things.",
+        "icon": "https://cdn.zapier.com/storage/developer_cli/4592f3be4cadc8d76508ab4744f5e735.64x64.png",
+        "iconOriginal": "https://cdn.zapier.com/storage/developer_cli/4592f3be4cadc8d76508ab4744f5e735.png",
+        "id": "8137",
+        "title": "Dovetail"
+      }
+    ],
+    "title": "Save new Pocket items to Dovetail"
+  },
+  {
+    "createUrl": "https://zapier.com/partner/embed/dovetail/create/18794",
+    "descriptionHtml": "<p>Got customer feedback, good product ideas, or user research in Trello? Use this Trello to Dovetail integration to copy cards into Dovetail automatically for organization, analysis, and prioritization. Just activate this Zap, and whenever you add a new card to your Trello board, Zapier will automatically add a new note with the card info to your Dovetail account.</p>\n\n<h2>How this Trello-Dovetail integration works</h2>\n\n<ol>\n<li>A new card is created in Trello</li>\n<li>Zapier creates a note in Dovetail</li>\n</ol>\n\n<h2>Apps involved</h2>\n\n<ul>\n<li>Trello</li>\n<li>Dovetail</li>\n</ul>\n",
+    "descriptionPlain": "Got customer feedback, good product ideas, or user research in Trello? Use this Trello to Dovetail integration to copy cards into Dovetail automatically for organization, analysis, and prioritization. Just activate this Zap, and whenever you add a new card to your Trello board, Zapier will automatically add a new note with the card info to your Dovetail account.\n\nHow this Trello-Dovetail integration works\n\nA new card is created in Trello\n\nZapier creates a note in Dovetail\n\nApps involved\n\nTrello\n\nDovetail",
+    "id": "18794",
+    "path": "/integrations/trello",
+    "status": "published",
+    "steps": [
+      {
+        "color": "#0079bf",
+        "description": "Trello is a team collaboration tool that lets you organize anything and everything to keep your projects on task.",
+        "icon": "https://cdn.zapier.com/storage/services/da3ff465abd3a3e1b687c52ff803af74.64x64.png",
+        "iconOriginal": "https://cdn.zapier.com/storage/services/da3ff465abd3a3e1b687c52ff803af74.png",
+        "id": "60",
+        "title": "Trello"
+      },
+      {
+        "color": "#512DA8",
+        "description": "Dovetail lets you organize user research data, analyze it together, and share insights with your team. Understand your customers with Dovetail and build better things.",
+        "icon": "https://cdn.zapier.com/storage/developer_cli/4592f3be4cadc8d76508ab4744f5e735.64x64.png",
+        "iconOriginal": "https://cdn.zapier.com/storage/developer_cli/4592f3be4cadc8d76508ab4744f5e735.png",
+        "id": "8137",
+        "title": "Dovetail"
+      }
+    ],
+    "title": "Create Dovetail notes for new Trello cards"
+  },
+  {
+    "createUrl": "https://zapier.com/partner/embed/dovetail/create/18503",
+    "descriptionHtml": "<p>Making great product decisions requires an understanding of your customer feedback, regardless of where it comes from. This Zapier integration will append the details of new tweets mentioning your account to a note in a Dovetail project. Compare the feedback you get via Twitter alongside the rest of your research data, and make better product decisions as a result.</p>\n\n<h2>How this Twitter-Dovetail integration works</h2>\n\n<ol>\n<li>A tweet mentioning your account is created on Twitter</li>\n<li>Zapier appends the details of the tweet to a note in Dovetail</li>\n</ol>\n\n<h2>Apps involved</h2>\n\n<ul>\n<li>Twitter</li>\n<li>Dovetail</li>\n</ul>\n",
+    "descriptionPlain": "Making great product decisions requires an understanding of your customer feedback, regardless of where it comes from. This Zapier integration will append the details of new tweets mentioning your account to a note in a Dovetail project. Compare the feedback you get via Twitter alongside the rest of your research data, and make better product decisions as a result.\n\nHow this Twitter-Dovetail integration works\n\nA tweet mentioning your account is created on Twitter\n\nZapier appends the details of the tweet to a note in Dovetail\n\nApps involved\n\nTwitter\n\nDovetail",
+    "id": "18503",
+    "path": "/integrations/twitter",
+    "status": "published",
+    "steps": [
+      {
+        "color": "#2DAAE1",
+        "description": "Twitter is the social network that shows what's happening around the world in real time. Share your ideas in Tweets, follow hashtags to keep up with trends, and join in the global conversation.",
+        "icon": "https://cdn.zapier.com/storage/services/580b3c79622bbff634f0d764e9f813a3.64x64.png",
+        "iconOriginal": "https://cdn.zapier.com/storage/services/580b3c79622bbff634f0d764e9f813a3.png",
+        "id": "4",
+        "title": "Twitter"
+      },
+      {
+        "color": "#512DA8",
+        "description": "Dovetail lets you organize user research data, analyze it together, and share insights with your team. Understand your customers with Dovetail and build better things.",
+        "icon": "https://cdn.zapier.com/storage/developer_cli/4592f3be4cadc8d76508ab4744f5e735.64x64.png",
+        "iconOriginal": "https://cdn.zapier.com/storage/developer_cli/4592f3be4cadc8d76508ab4744f5e735.png",
+        "id": "8137",
+        "title": "Dovetail"
+      }
+    ],
+    "title": "Append new Twitter mentions to Dovetail"
+  },
+  {
+    "createUrl": "https://zapier.com/partner/embed/dovetail/create/18732",
+    "descriptionHtml": "<p>Did someone drop an interesting idea, a feature suggestion, or customer feedback in your Slack channel? Save it along with your other feedback and feature requests so you can prioritize accordingly. When you react to a message using the Slack emoji you select when setting this Zap up, this Zapier integration will automatically save the message it as a new note in Dovetail.</p>\n\n<h2>How this Slack-Dovetail integration works</h2>\n\n<ol>\n<li>Someone reacts to a message in Slack using the ‘mega’ emoji</li>\n<li>Zapier appends the details of the message to a note in Dovetail</li>\n</ol>\n\n<h2>Apps involved</h2>\n\n<ul>\n<li>Slack</li>\n<li>Dovetail</li>\n</ul>\n",
+    "descriptionPlain": "Did someone drop an interesting idea, a feature suggestion, or customer feedback in your Slack channel? Save it along with your other feedback and feature requests so you can prioritize accordingly. When you react to a message using the Slack emoji you select when setting this Zap up, this Zapier integration will automatically save the message it as a new note in Dovetail.\n\nHow this Slack-Dovetail integration works\n\nSomeone reacts to a message in Slack using the ‘mega’ emoji\n\nZapier appends the details of the message to a note in Dovetail\n\nApps involved\n\nSlack\n\nDovetail",
+    "id": "18732",
+    "path": "/integrations/slack",
+    "status": "published",
+    "steps": [
+      {
+        "color": "#78d4b6",
+        "description": "Slack is a platform for team communication: everything in one place, instantly searchable, available wherever you go. Offering instant messaging, document sharing and knowledge search for modern teams.",
+        "icon": "https://cdn.zapier.com/storage/developer/57b336375384ab62cc06e7e83d5c3622_2.64x64.png",
+        "iconOriginal": "https://cdn.zapier.com/storage/developer/57b336375384ab62cc06e7e83d5c3622_2.png",
+        "id": "884",
+        "title": "Slack"
+      },
+      {
+        "color": "#512DA8",
+        "description": "Dovetail lets you organize user research data, analyze it together, and share insights with your team. Understand your customers with Dovetail and build better things.",
+        "icon": "https://cdn.zapier.com/storage/developer_cli/4592f3be4cadc8d76508ab4744f5e735.64x64.png",
+        "iconOriginal": "https://cdn.zapier.com/storage/developer_cli/4592f3be4cadc8d76508ab4744f5e735.png",
+        "id": "8137",
+        "title": "Dovetail"
+      }
+    ],
+    "title": "Save new Slack reactions to Dovetail"
+  },
+  {
+    "createUrl": "https://zapier.com/partner/embed/dovetail/create/18793",
+    "descriptionHtml": "<p>Got customer feedback or user research data in your webhook-powered app? Import it directly into Dovetail via a Zapier webhook integration. Whenever new data comes in from your webhook, Zapier will use it to add a new note to Dovetail. Keep track of user feedback and feature requests, shape your ideas, and prioritize them in Dovetail.</p>\n\n<h2>How this Webhooks by Zapier-Dovetail integration works</h2>\n\n<ol>\n<li>A new webhook is created via Zapier</li>\n<li>Zapier creates a new note in Dovetail</li>\n</ol>\n\n<h2>Apps involved</h2>\n\n<ul>\n<li>Webhooks by Zapier</li>\n<li>Dovetail</li>\n</ul>\n",
+    "descriptionPlain": "Got customer feedback or user research data in your webhook-powered app? Import it directly into Dovetail via a Zapier webhook integration. Whenever new data comes in from your webhook, Zapier will use it to add a new note to Dovetail. Keep track of user feedback and feature requests, shape your ideas, and prioritize them in Dovetail.\n\nHow this Webhooks by Zapier-Dovetail integration works\n\nA new webhook is created via Zapier\n\nZapier creates a new note in Dovetail\n\nApps involved\n\nWebhooks by Zapier\n\nDovetail",
+    "id": "18793",
+    "path": "/integrations/webhook",
+    "status": "published",
+    "steps": [
+      {
+        "color": "#ffc43e",
+        "description": "Webhooks simply POST data (or JSON) to a specific URL every time we see something new. Webhooks can also accept data (or JSON) to kick off a workflow in Zapier.",
+        "icon": "https://cdn.zapier.com/storage/services/652eac8b0c2ff6ece8f5906ae69b3f84.64x64.png",
+        "iconOriginal": "https://cdn.zapier.com/storage/services/652eac8b0c2ff6ece8f5906ae69b3f84.png",
+        "id": "24",
+        "title": "Webhooks by Zapier"
+      },
+      {
+        "color": "#512DA8",
+        "description": "Dovetail lets you organize user research data, analyze it together, and share insights with your team. Understand your customers with Dovetail and build better things.",
+        "icon": "https://cdn.zapier.com/storage/developer_cli/4592f3be4cadc8d76508ab4744f5e735.64x64.png",
+        "iconOriginal": "https://cdn.zapier.com/storage/developer_cli/4592f3be4cadc8d76508ab4744f5e735.png",
+        "id": "8137",
+        "title": "Dovetail"
+      }
+    ],
+    "title": "Create new Dovetail notes from a webhook"
+  }
+]

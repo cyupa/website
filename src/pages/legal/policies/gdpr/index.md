@@ -45,7 +45,7 @@ The ‘right of access’ allows you to request confirmation as to whether or no
 
 ### Right to rectification
 
-The ‘right to recification’ allows you to update any incorrect personal information. You may do this in Dovetail through [your profile](/profile).
+The ‘right to recification’ allows you to update any incorrect personal information. You may do this in Dovetail through [your profile](/account/profile).
 
 ### Right to erasure
 

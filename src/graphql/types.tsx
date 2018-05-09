@@ -45,6 +45,25 @@ export interface HelpIndexQuery {
   } | null;
 }
 
+export interface IntegrationIndexQuery {
+  // Connection to all IntegrationsJson nodes
+  allIntegrationsJson: {
+    // A list of edges.
+    edges: Array<{
+      // The item at the end of the edge
+      node: {
+        title: string | null;
+        path: string | null;
+        steps: Array<{
+          color: string | null;
+          icon: string | null;
+          title: string | null;
+        } | null> | null;
+      } | null;
+    } | null> | null;
+  } | null;
+}
+
 export interface LegalIndexQuery {
   // Connection to all MarkdownRemark nodes
   allMarkdownRemark: {
@@ -80,5 +99,22 @@ export interface DocumentByPathQuery {
       path: string | null;
       title: string | null;
     } | null;
+  } | null;
+}
+
+export interface IntegrationByPathQueryVariables {
+  path: string;
+}
+
+export interface IntegrationByPathQuery {
+  integrationsJson: {
+    createUrl: string | null;
+    descriptionPlain: string | null;
+    title: string | null;
+    steps: Array<{
+      color: string | null;
+      icon: string | null;
+      title: string | null;
+    } | null> | null;
   } | null;
 }

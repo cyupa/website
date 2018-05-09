@@ -285,6 +285,12 @@
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@types/configstore/-/configstore-2.1.1.tgz#cd1e8553633ad3185c3f2f239ecff5d2643e92b6"
 
+"@types/date-fns@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@types/date-fns/-/date-fns-2.6.0.tgz#b062ca46562002909be0c63a6467ed173136acc1"
+  dependencies:
+    date-fns "*"
+
 "@types/debug@^0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/debug/-/debug-0.0.29.tgz#a1e514adfbd92f03a224ba54d693111dbf1f3754"
@@ -330,6 +336,12 @@
 "@types/mkdirp@^0.3.29":
   version "0.3.29"
   resolved "https://registry.yarnpkg.com/@types/mkdirp/-/mkdirp-0.3.29.tgz#7f2ad7ec55f914482fc9b1ec4bb1ae6028d46066"
+
+"@types/node-fetch@^1.6.9":
+  version "1.6.9"
+  resolved "https://registry.yarnpkg.com/@types/node-fetch/-/node-fetch-1.6.9.tgz#a750fb0f4cf2960bf72b462e4c86908022dd69c5"
+  dependencies:
+    "@types/node" "*"
 
 "@types/node@*":
   version "9.6.5"
@@ -423,6 +435,10 @@
 "@types/webpack-env@*":
   version "1.13.6"
   resolved "https://registry.yarnpkg.com/@types/webpack-env/-/webpack-env-1.13.6.tgz#128d1685a7c34d31ed17010fc87d6a12c1de6976"
+
+"@types/yargs@^11.0.0":
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-11.0.0.tgz#124b9ed9c65b7091cc36da59ae12cbd47d8745ea"
 
 abab@^1.0.3, abab@^1.0.4:
   version "1.0.4"
@@ -2081,7 +2097,7 @@ better-queue-memory@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/better-queue-memory/-/better-queue-memory-1.0.2.tgz#aa6d169aa1d0cc77409185cb9cb5c7dc251bcd41"
 
-better-queue@^3.8.6:
+better-queue@^3.8.6, better-queue@^3.8.7:
   version "3.8.7"
   resolved "https://registry.yarnpkg.com/better-queue/-/better-queue-3.8.7.tgz#de39b82b05f55d92ba065c9066958dad80789ab3"
   dependencies:
@@ -3509,7 +3525,7 @@ data-urls@^1.0.0:
     whatwg-mimetype "^2.0.0"
     whatwg-url "^6.4.0"
 
-date-fns@^1.27.2:
+date-fns@*, date-fns@^1.27.2, date-fns@^1.29.0:
   version "1.29.0"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-1.29.0.tgz#12e609cdcb935127311d04d33334e2960a2a54e6"
 
@@ -5031,9 +5047,9 @@ gatsby-1-config-extract-plugin@^1.0.3:
     babel-runtime "^6.26.0"
     extract-text-webpack-plugin "^1.0.1"
 
-gatsby-cli@^1.1.50:
-  version "1.1.50"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-1.1.50.tgz#88b91edcd79866e7dac635cad32a43a1d8649f2f"
+gatsby-cli@^1.1.51:
+  version "1.1.51"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-1.1.51.tgz#d081d989322ef1cecf145a379fa10fc87b670535"
   dependencies:
     babel-code-frame "^6.26.0"
     babel-runtime "^6.26.0"
@@ -5050,12 +5066,22 @@ gatsby-cli@^1.1.50:
     source-map "^0.5.7"
     stack-trace "^0.0.10"
     update-notifier "^2.3.0"
-    yargs "^8.0.2"
+    yargs "^11.1.0"
     yurnalist "^0.2.1"
 
 gatsby-link@^1.6.40:
   version "1.6.40"
   resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-1.6.40.tgz#e60ab2b36452c7478f1359a7f03f7e0fc35cd847"
+  dependencies:
+    "@types/history" "^4.6.2"
+    "@types/react-router-dom" "^4.2.2"
+    babel-runtime "^6.26.0"
+    prop-types "^15.5.8"
+    ric "^1.3.0"
+
+gatsby-link@^1.6.44:
+  version "1.6.44"
+  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-1.6.44.tgz#31912e66d3b21632ce27e5b7310ec88d9a75eac3"
   dependencies:
     "@types/history" "^4.6.2"
     "@types/react-router-dom" "^4.2.2"
@@ -5164,9 +5190,9 @@ gatsby-plugin-typescript@^1.4.19:
     ts-loader "^2.0.3"
     typescript "^2.2.1"
 
-gatsby-react-router-scroll@^1.0.14:
-  version "1.0.14"
-  resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-1.0.14.tgz#7e3b59c2266772030c6bfeaa8914c71dd3c12c59"
+gatsby-react-router-scroll@^1.0.17:
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-1.0.17.tgz#16b9c67da7f4a997ebb8c784f4feba2b23af4f98"
   dependencies:
     babel-runtime "^6.26.0"
     scroll-behavior "^0.9.9"
@@ -5184,12 +5210,13 @@ gatsby-remark-images@^1.5.61:
     slash "^1.0.0"
     unist-util-select "^1.5.0"
 
-gatsby-source-filesystem@^1.5.29:
-  version "1.5.32"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-1.5.32.tgz#113cc50eba459d24ecb4c136ef77ec091d05d295"
+gatsby-source-filesystem@^1.5.31:
+  version "1.5.35"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-1.5.35.tgz#1d7a92c60def1ba6f7f33c468cf4832af0e904ed"
   dependencies:
     babel-cli "^6.26.0"
     babel-runtime "^6.26.0"
+    better-queue "^3.8.7"
     bluebird "^3.5.0"
     chokidar "^1.7.0"
     fs-extra "^4.0.1"
@@ -5199,6 +5226,13 @@ gatsby-source-filesystem@^1.5.29:
     pretty-bytes "^4.0.2"
     slash "^1.0.0"
     valid-url "^1.0.9"
+
+gatsby-transformer-json@^1.0.17:
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-json/-/gatsby-transformer-json-1.0.17.tgz#b2cb8a4eb935322e577608523d4439bbb40c569f"
+  dependencies:
+    babel-runtime "^6.26.0"
+    bluebird "^3.5.0"
 
 gatsby-transformer-remark@^1.7.39:
   version "1.7.40"
@@ -5225,9 +5259,9 @@ gatsby-transformer-remark@^1.7.39:
     unist-util-select "^1.5.0"
     unist-util-visit "^1.1.1"
 
-gatsby@^1.9.244:
-  version "1.9.250"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.250.tgz#e0d25bfad6a95e472c109db7da0f4e3a1e1c28f4"
+gatsby@^1.9.259:
+  version "1.9.259"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.259.tgz#4abd0e3fa84be9281e0981423ee355689879a7ab"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
@@ -5269,10 +5303,10 @@ gatsby@^1.9.244:
     fs-extra "^4.0.1"
     gatsby-1-config-css-modules "^1.0.11"
     gatsby-1-config-extract-plugin "^1.0.3"
-    gatsby-cli "^1.1.50"
-    gatsby-link "^1.6.40"
+    gatsby-cli "^1.1.51"
+    gatsby-link "^1.6.44"
     gatsby-module-loader "^1.0.11"
-    gatsby-react-router-scroll "^1.0.14"
+    gatsby-react-router-scroll "^1.0.17"
     glob "^7.1.1"
     graphql "^0.11.7"
     graphql-relay "^0.5.1"
@@ -8698,6 +8732,10 @@ node-fetch@^1.0.1, node-fetch@^1.7.3:
   dependencies:
     encoding "^0.1.11"
     is-stream "^1.0.1"
+
+node-fetch@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.1.2.tgz#ab884e8e7e57e38a944753cec706f788d1768bb5"
 
 node-int64@^0.4.0:
   version "0.4.0"
@@ -13939,6 +13977,23 @@ yargs@^10.0.3:
 yargs@^11.0.0:
   version "11.0.0"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-11.0.0.tgz#c052931006c5eee74610e5fc0354bedfd08a201b"
+  dependencies:
+    cliui "^4.0.0"
+    decamelize "^1.1.1"
+    find-up "^2.1.0"
+    get-caller-file "^1.0.1"
+    os-locale "^2.0.0"
+    require-directory "^2.1.1"
+    require-main-filename "^1.0.1"
+    set-blocking "^2.0.0"
+    string-width "^2.0.0"
+    which-module "^2.0.0"
+    y18n "^3.2.1"
+    yargs-parser "^9.0.2"
+
+yargs@^11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-11.1.0.tgz#90b869934ed6e871115ea2ff58b03f4724ed2d77"
   dependencies:
     cliui "^4.0.0"
     decamelize "^1.1.1"

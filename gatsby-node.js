@@ -12,10 +12,15 @@ export async function onCreatePage({ page, boundActionCreators }) {
 
 export async function createPages({ boundActionCreators, graphql }) {
   const { createPage } = boundActionCreators;
-  const template = path.resolve(`src/templates/document.tsx`);
+  await createDocumentPages(createPage, graphql);
+  await createIntegrationPages(createPage, graphql);
+}
 
-  const result = await graphql(`
-    query CreatePages {
+// Create the pages for /help, /legal, /guides
+async function createDocumentPages(createPage, graphql) {
+  const template = path.resolve(`src/templates/document.tsx`);
+  const documents = await graphql(`
+    query CreateDocumentPages {
       allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1000) {
         edges {
           node {
@@ -32,8 +37,8 @@ export async function createPages({ boundActionCreators, graphql }) {
     }
   `);
 
-  if (result.errors) {
-    throw new Error(result.errors);
+  if (documents.errors) {
+    throw new Error(documents.errors);
   }
 
   // Build a mapping of breadcrumbs (paths) to titles:
@@ -45,7 +50,7 @@ export async function createPages({ boundActionCreators, graphql }) {
   //     }
   //
   const relPathDirInfo = {};
-  for (const { node } of result.data.allMarkdownRemark.edges) {
+  for (const { node } of documents.data.allMarkdownRemark.edges) {
     const relPath = path.relative("src/pages", node.fileAbsolutePath);
     const relPathDir = path.dirname(relPath);
     relPathDirInfo[relPathDir] = {
@@ -71,7 +76,7 @@ export async function createPages({ boundActionCreators, graphql }) {
     return result;
   }
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  documents.data.allMarkdownRemark.edges.forEach(({ node }) => {
     if (node.frontmatter.path && node.frontmatter.breadcrumbOnly !== true) {
       const breadcrumb = getBreadcrumb(path.relative("src/pages", node.fileAbsolutePath));
 
@@ -81,6 +86,35 @@ export async function createPages({ boundActionCreators, graphql }) {
         context: {
           breadcrumb
         }
+      });
+    }
+  });
+}
+
+// Create the pages for /integrations
+async function createIntegrationPages(createPage, graphql) {
+  const template = path.resolve(`src/templates/integration.tsx`);
+  const integrations = await graphql(`
+    query CreateIntegrationPages {
+      allIntegrationsJson {
+        edges {
+          node {
+            path
+          }
+        }
+      }
+    }
+  `);
+
+  if (integrations.errors) {
+    throw new Error(integrations.errors);
+  }
+
+  integrations.data.allIntegrationsJson.edges.forEach(({ node }) => {
+    if (node.path) {
+      createPage({
+        path: node.path,
+        component: template
       });
     }
   });

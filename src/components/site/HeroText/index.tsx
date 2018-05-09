@@ -9,7 +9,7 @@ interface Props {
   center?: boolean;
   maxWidth?: number;
   text?: string;
-  title: string;
+  title: React.ReactNode;
 }
 
 export class HeroText extends React.PureComponent<Props> {
