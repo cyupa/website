@@ -47,15 +47,17 @@ export default class extends React.PureComponent<Props> {
                   <Masonry
                     containerWidth={WIDTH}
                     gap={32}
-                    items={edges!.map(edge => (
-                      <IntegrationCard
-                        app={edge!.node!.steps![0]!.title!}
-                        color={edge!.node!.steps![0]!.color!}
-                        icon={edge!.node!.steps![0]!.icon!}
-                        title={edge!.node!.title!}
-                        path={edge!.node!.path!}
-                      />
-                    ))}
+                    items={edges!
+                      .sort(sortComparatorAsc(edge => edge!.node!.steps![0]!.title!))
+                      .map(edge => (
+                        <IntegrationCard
+                          app={edge!.node!.steps![0]!.title!}
+                          color={edge!.node!.steps![0]!.color!}
+                          icon={edge!.node!.steps![0]!.icon!}
+                          title={edge!.node!.title!}
+                          path={edge!.node!.path!}
+                        />
+                      ))}
                     minColumnWidth={220}
                   />
                 </Item>
