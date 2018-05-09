@@ -61,7 +61,7 @@ export default function IntegrationTemplate({ data }: Props) {
         <FeatureHero
           image={<IntegrationIllustration color={from.color!} icon={from.icon!} />}
           linkText={loggedIn ? "Configure in Dovetail" : undefined}
-          location={loggedIn ? locations.integrations() : undefined}
+          location={loggedIn ? locations.inProductIntegrations() : undefined}
           title={`${titleSansDovetail}.`}
           text={description}
         />

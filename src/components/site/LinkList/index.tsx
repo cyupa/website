@@ -42,10 +42,10 @@ export class LinkList extends React.PureComponent<Props> {
 const Heading = styled("h5", {
   fontSize: "14px",
   fontWeight: 500,
-  margin: 0
+  margin: "0 0 8px"
 });
 
 const linkClassName = style({
   fontSize: "14px",
-  fontWeight: 500
+  fontWeight: 400
 });

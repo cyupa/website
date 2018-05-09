@@ -27,7 +27,6 @@ export class Footer extends React.PureComponent<Props> {
               <LinkList
                 heading="Use cases"
                 links={[
-                  { label: "All use cases", location: locations.home() },
                   { label: "Feedback management", location: locations.feedbackManagement() },
                   { label: "Research repository", location: locations.researchRepository() },
                   { label: "Qualitative data analysis", location: locations.qualitativeDataAnalysis() },
@@ -37,25 +36,34 @@ export class Footer extends React.PureComponent<Props> {
             </Item>
             <Item style={{ verticalAlign: "top" }}>
               <LinkList
-                heading="Resources"
+                heading="Product"
                 links={[
-                  { label: "All features", location: locations.features() },
-                  { label: "Guides", location: locations.guides() },
                   { label: "Pricing", location: locations.pricing() },
-                  { label: "Security", location: locations.security() },
-                  { label: "Support", location: locations.help() }
+                  { label: "Integrations", location: locations.integrations() },
+                  { label: "Features", location: locations.features() },
+                  { label: "Security", location: locations.security() }
                 ]}
               />
             </Item>
             <Item style={{ verticalAlign: "top" }}>
               <LinkList
-                heading="Legal"
+                heading="Resources"
                 links={[
-                  { label: "All terms and policies", location: locations.legal() },
-                  { label: "Customer Terms", location: locations.termsCustomer() },
-                  { label: "User Terms", location: locations.termsUser() },
-                  { label: "User Privacy Policy", location: locations.privacy() },
-                  { label: "Visitor Privacy Policy", location: locations.websitePrivacy() }
+                  { label: "Help Center", location: locations.help() },
+                  { label: "Research Guides", location: locations.legal() },
+                  { label: "Terms of Service", location: locations.termsCustomer() },
+                  { label: "Privacy Policy", location: locations.privacy() }
+                ]}
+              />
+            </Item>
+            <Item style={{ verticalAlign: "top" }}>
+              <LinkList
+                heading="Contact"
+                links={[
+                  { label: "Blog", location: locations.blog() },
+                  { label: "Slack", location: locations.slack() },
+                  { label: "Twitter", location: locations.twitter() },
+                  { label: "Email", location: locations.email() }
                 ]}
               />
             </Item>
@@ -65,9 +73,7 @@ export class Footer extends React.PureComponent<Props> {
                 links={[
                   { label: "About us", location: locations.about() },
                   { label: "Customers", location: locations.customers() },
-                  { label: "Blog", location: locations.blog() },
-                  { label: "Slack", location: locations.slack() },
-                  { label: "Twitter", location: locations.twitter() }
+                  { label: "Open source", location: locations.github() }
                 ]}
               />
             </Item>
@@ -112,6 +118,6 @@ export class Footer extends React.PureComponent<Props> {
 const FooterFinePrint = styled("p", {
   color: "inherit",
   fontSize: "12px",
-  fontWeight: 500,
-  opacity: LIGHT_TEXT_OPACITY
+  fontWeight: 400,
+  opacity: 0.4
 });

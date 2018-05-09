@@ -24,6 +24,14 @@ export default class extends React.PureComponent<Props> {
       <>
         <Helmet>
           <title>Integrations – Dovetail</title>
+          <meta
+            property="og:description"
+            content="Connect thousands of your favorite apps to Dovetail through our Zapier integration and templates."
+          />
+          <meta
+            name="description"
+            content="Connect thousands of your favorite apps to Dovetail through our Zapier integration and templates."
+          />
         </Helmet>
         <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
           <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
