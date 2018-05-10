@@ -108,7 +108,7 @@ async function main() {
       id: s.id.toString(),
       title: s.title
     })),
-    title: t.title
+    title: t.title.replace(/Dovetail notes/g, "notes")
   }));
 
   fs.writeFileSync(path.join(__dirname, argv.output), JSON.stringify(result, null, 2));

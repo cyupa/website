@@ -25,7 +25,6 @@ export default function IntegrationTemplate({ data }: Props) {
   const from = steps![0]!;
   const to = steps![1]!;
   const description = descriptionPlain!.replace(/\n.*/g, "");
-  const titleSansDovetail = title!.replace(/Dovetail notes/g, "notes");
   const loggedIn = getLoggedInStateFromLocalStorage();
 
   return (
@@ -62,7 +61,7 @@ export default function IntegrationTemplate({ data }: Props) {
           image={<IntegrationIllustration color={from.color!} icon={from.icon!} />}
           linkText={loggedIn ? "Configure in Dovetail" : undefined}
           location={loggedIn ? locations.inProductIntegrations() : undefined}
-          title={`${titleSansDovetail}.`}
+          title={`${title}.`}
           text={description}
         />
       </LightContainer>
