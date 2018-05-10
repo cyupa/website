@@ -6,8 +6,7 @@
   "scripts": {
     "build": "ts-node ./node_modules/.bin/gatsby build",
     "develop": "ts-node ./node_modules/.bin/gatsby develop",
-    "generate:types":
-      "./node_modules/.bin/apollo-codegen introspect-schema --output src/graphql/schema.json http://localhost:8000/___graphql && ./node_modules/.bin/apollo-codegen print-schema --schema src/graphql/schema.json --output src/graphql/schema.graphql && ./node_modules/.bin/apollo-codegen generate --schema src/graphql/schema.json --target typescript --output src/graphql/types.tsx --tag-name graphql 'src/**/*.tsx'",
+    "generate:types": "./node_modules/.bin/apollo-codegen introspect-schema --output src/graphql/schema.json http://localhost:8000/___graphql && ./node_modules/.bin/apollo-codegen print-schema --schema src/graphql/schema.json --output src/graphql/schema.graphql && ./node_modules/.bin/apollo-codegen generate --schema src/graphql/schema.json --target typescript --output src/graphql/types.tsx --tag-name graphql 'src/**/*.tsx'",
     "generate:svgs": "svg-to-react src",
     "generate:zapier": "ts-node ./bin/fetch-zapier-templates.ts",
     "jest": "./node_modules/.bin/jest -u",
@@ -16,8 +15,7 @@
     "serve": "./node_modules/.bin/gatsby serve",
     "start": "ts-node ./node_modules/.bin/gatsby develop",
     "storybook": "ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook",
-    "test":
-      "./node_modules/.bin/tsc --noEmit && ./node_modules/.bin/tslint -p tsconfig.json && ./node_modules/.bin/jest --runInBand && ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook --smoke-test"
+    "test": "./node_modules/.bin/tsc --noEmit && ./node_modules/.bin/tslint -p tsconfig.json && ./node_modules/.bin/jest --runInBand && ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook --smoke-test"
   },
   "engines": {
     "node": "9.4.0"
@@ -35,19 +33,30 @@
       },
       "NODE_ENV": "test"
     },
-    "moduleFileExtensions": ["js", "ts", "tsx", "json"],
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "tsx",
+      "json"
+    ],
     "moduleNameMapper": {
       ".*\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/.jest/imageMock.tsx",
       "@heydovetail/website/(.*)": "<rootDir>/src/$1"
     },
-    "setupFiles": ["<rootDir>/.jest/setup.tsx"],
+    "setupFiles": [
+      "<rootDir>/.jest/setup.tsx"
+    ],
     "testRegex": "src/.*(/__specs__/.*|\\.spec)\\.tsx?$",
     "transform": {
       "\\.tsx?$": "ts-jest"
     }
   },
   "lint-staged": {
-    "*.tsx": ["prettier --write", "tslint -p tsconfig.json --fix", "git add"]
+    "*.tsx": [
+      "prettier --write",
+      "tslint -p tsconfig.json --fix",
+      "git add"
+    ]
   },
   "prettier": {
     "printWidth": 128
@@ -87,6 +96,7 @@
     "gatsby-plugin-sharp": "^1.6.42",
     "gatsby-plugin-sitemap": "^1.2.22",
     "gatsby-plugin-typescript": "^1.4.19",
+    "gatsby-remark-copy-linked-files": "^1.5.32",
     "gatsby-remark-images": "^1.5.61",
     "gatsby-source-filesystem": "^1.5.31",
     "gatsby-transformer-json": "^1.0.17",
