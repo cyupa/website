@@ -74,7 +74,8 @@ export class Footer extends React.PureComponent<Props> {
                 links={[
                   { label: "About us", location: locations.about() },
                   { label: "Customers", location: locations.customers() },
-                  { label: "Open source", location: locations.github() }
+                  { label: "Open source", location: locations.github() },
+                  { label: "Press kit", location: locations.press() }
                 ]}
               />
             </Item>

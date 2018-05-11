@@ -51,9 +51,11 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
             <Item>
               <HeroText center={false} title={frontmatter!.title!} />
             </Item>
-            <Item>
-              <Date>Last updated {frontmatter!.date}</Date>
-            </Item>
+            {frontmatter!.date !== null ? (
+              <Item>
+                <Date>Last updated {frontmatter!.date}</Date>
+              </Item>
+            ) : null}
             <Item>
               <PageContent html={html!} />
             </Item>
