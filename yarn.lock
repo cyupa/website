@@ -38,9 +38,9 @@
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@heydovetail/editorconfig/-/editorconfig-2.0.0.tgz#341fbc7edbc735534f2176159b00d9e8534c6489"
 
-"@heydovetail/svg-to-react@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@heydovetail/svg-to-react/-/svg-to-react-1.1.0.tgz#0aec70aa7994bd9d4663924c8d0673ba11e79664"
+"@heydovetail/svg-to-react@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@heydovetail/svg-to-react/-/svg-to-react-1.1.1.tgz#ac7f3d72d8b62d9554a7c5e17b722ba5743cf318"
   dependencies:
     ajv "^6.4.0"
     chalk "^2.3.2"
@@ -59,13 +59,17 @@
   dependencies:
     tslint-microsoft-contrib "^5.0.2"
 
-"@heydovetail/ui-components@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@heydovetail/ui-components/-/ui-components-0.2.0.tgz#46c27c7b9ab439cc0047a5def3d982b228a339e6"
+"@heydovetail/ui-components@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@heydovetail/ui-components/-/ui-components-1.1.2.tgz#d5993eafe94462aef19db6077d92401cf6f171ac"
   dependencies:
+    "@heydovetail/svg-to-react" "^1.1.1"
+    "@types/react-router-dom" "^4.2.6"
+    react-router-dom "^4.2.2"
+    react-transition-group "^2.3.1"
     tslib "^1.9.0"
     typestyle "^1.7.2"
-    typestyle-react "^1.1.2"
+    typestyle-react "^1.2.0"
 
 "@storybook/addon-actions@3.4.1", "@storybook/addon-actions@^3.2.10":
   version "3.4.1"
@@ -377,7 +381,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-router-dom@^4.2.2":
+"@types/react-router-dom@^4.2.2", "@types/react-router-dom@^4.2.6":
   version "4.2.6"
   resolved "https://registry.yarnpkg.com/@types/react-router-dom/-/react-router-dom-4.2.6.tgz#9f7eb3c0e6661a9607d878ff8675cc4ea95cd276"
   dependencies:
@@ -2570,10 +2574,6 @@ center-align@^0.1.1:
     align-text "^0.1.3"
     lazy-cache "^1.0.3"
 
-chain-function@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/chain-function/-/chain-function-1.0.0.tgz#0d4ab37e7e18ead0bdc47b920764118ce58733dc"
-
 chalk@1.1.3, chalk@^1.0.0, chalk@^1.1.1, chalk@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-1.1.3.tgz#a8115c55e4a702fe4d150abd3872822a7e09fc98"
@@ -3654,6 +3654,10 @@ deepmerge@^1.3.0:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-1.5.2.tgz#10499d868844cdad4fee0842df8c7f6f0c95a753"
 
+deepmerge@^2.0.1:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-2.1.0.tgz#511a54fff405fc346f0240bb270a3e9533a31102"
+
 default-require-extensions@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/default-require-extensions/-/default-require-extensions-1.0.0.tgz#f37ea15d3e13ffd9b437d33e1a75b5fb97874cb8"
@@ -3828,7 +3832,7 @@ dom-converter@~0.1:
   dependencies:
     utila "~0.3"
 
-dom-helpers@^3.2.0, dom-helpers@^3.2.1, dom-helpers@^3.3.1:
+dom-helpers@^3.2.1, dom-helpers@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-3.3.1.tgz#fc1a4e15ffdf60ddde03a480a9c0fece821dd4a6"
 
@@ -5197,6 +5201,19 @@ gatsby-react-router-scroll@^1.0.17:
     babel-runtime "^6.26.0"
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
+
+gatsby-remark-copy-linked-files@^1.5.32:
+  version "1.5.32"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-copy-linked-files/-/gatsby-remark-copy-linked-files-1.5.32.tgz#cc54437710d5c3c153c2f681adcd487f468abfd1"
+  dependencies:
+    babel-runtime "^6.26.0"
+    cheerio "^1.0.0-rc.2"
+    fs-extra "^4.0.1"
+    is-relative-url "^2.0.0"
+    lodash "^4.17.4"
+    path-is-inside "^1.0.2"
+    probe-image-size "^4.0.0"
+    unist-util-visit "^1.1.1"
 
 gatsby-remark-images@^1.5.61:
   version "1.5.61"
@@ -10206,6 +10223,17 @@ probe-image-size@^3.2.0:
     next-tick "^1.0.0"
     stream-parser "~0.3.1"
 
+probe-image-size@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/probe-image-size/-/probe-image-size-4.0.0.tgz#d35b71759e834bcf580ea9f18ec8b9265c0977eb"
+  dependencies:
+    any-promise "^1.3.0"
+    deepmerge "^2.0.1"
+    inherits "^2.0.3"
+    next-tick "^1.0.0"
+    request "^2.83.0"
+    stream-parser "~0.3.1"
+
 process-nextick-args@~2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.0.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"
@@ -10250,7 +10278,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.8, prop-types@^15.5.9, prop-types@^15.6.0, prop-types@^15.6.1:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.5.9, prop-types@^15.6.0, prop-types@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
   dependencies:
@@ -10663,17 +10691,7 @@ react-test-renderer@^16.3.1:
     prop-types "^15.6.0"
     react-is "^16.3.1"
 
-react-transition-group@^1.2.0:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-1.2.1.tgz#e11f72b257f921b213229a774df46612346c7ca6"
-  dependencies:
-    chain-function "^1.0.0"
-    dom-helpers "^3.2.0"
-    loose-envify "^1.3.1"
-    prop-types "^15.5.6"
-    warning "^3.0.0"
-
-react-transition-group@^2.0.0:
+react-transition-group@^2.0.0, react-transition-group@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.3.1.tgz#31d611b33e143a5e0f2d94c348e026a0f3b474b6"
   dependencies:
@@ -12933,13 +12951,17 @@ typeface-rubik@^0.0.54:
   version "0.0.54"
   resolved "https://registry.yarnpkg.com/typeface-rubik/-/typeface-rubik-0.0.54.tgz#301d18b2efe57495beb5ef096632212b23f4faaf"
 
-typescript@^2.2.1, typescript@^2.8.1:
+typescript@^2.2.1:
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.8.1.tgz#6160e4f8f195d5ba81d4876f9c0cc1fbc0820624"
 
-typestyle-react@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/typestyle-react/-/typestyle-react-1.1.2.tgz#ac8af026febb1206dc8c5f4d167bc49cc8fecc1d"
+typescript@^2.8.3:
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.8.3.tgz#5d817f9b6f31bb871835f4edf0089f21abe6c170"
+
+typestyle-react@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/typestyle-react/-/typestyle-react-1.2.0.tgz#9595a2d66052fc58e49acdcb708eb147b2154e4c"
   dependencies:
     tslib "^1.9.0"
     typestyle "^1.7.2"

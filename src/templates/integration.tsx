@@ -1,3 +1,4 @@
+import { COLORS } from "@heydovetail/ui-components";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
@@ -6,7 +7,7 @@ import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { IntegrationIcon } from "@heydovetail/website/components/site/IntegrationIcon";
 import { IntegrationIllustration } from "@heydovetail/website/components/site/IntegrationIllustration";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
-import { COLORS, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
+import { PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { IntegrationByPathQuery } from "@heydovetail/website/graphql/types";
 import { locations } from "@heydovetail/website/routing/locations";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
@@ -25,7 +26,6 @@ export default function IntegrationTemplate({ data }: Props) {
   const from = steps![0]!;
   const to = steps![1]!;
   const description = descriptionPlain!.replace(/\n.*/g, "");
-  const titleSansDovetail = title!.replace(/Dovetail notes/g, "notes");
   const loggedIn = getLoggedInStateFromLocalStorage();
 
   return (
@@ -62,7 +62,7 @@ export default function IntegrationTemplate({ data }: Props) {
           image={<IntegrationIllustration color={from.color!} icon={from.icon!} />}
           linkText={loggedIn ? "Configure in Dovetail" : undefined}
           location={loggedIn ? locations.inProductIntegrations() : undefined}
-          title={`${titleSansDovetail}.`}
+          title={`${title}.`}
           text={description}
         />
       </LightContainer>

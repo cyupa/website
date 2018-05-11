@@ -1,10 +1,10 @@
-import { SubtleButtonLink } from "@heydovetail/website/components/forms/SubtleButtonLink";
+import { COLORS, SubtleButtonLink } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
-import { COLORS, HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import IllustrationEmail from "@heydovetail/website/pages/confirm/IllustrationEmail";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";

@@ -1,5 +1,5 @@
+import { COLORS } from "@heydovetail/ui-components";
 import { Fragment } from "@heydovetail/website/components/util/Fragment";
-import { COLORS } from "@heydovetail/website/constants";
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
 import React from "react";

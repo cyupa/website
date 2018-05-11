@@ -1,4 +1,4 @@
-import { COLORS } from "@heydovetail/website/constants";
+import { COLORS } from "@heydovetail/ui-components";
 import { assertExhausted } from "@heydovetail/website/util/assertExhausted";
 import Link from "gatsby-link";
 import React from "react";

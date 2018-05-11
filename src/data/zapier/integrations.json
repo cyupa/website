@@ -24,7 +24,7 @@
         "title": "Dovetail"
       }
     ],
-    "title": "Create Dovetail notes for new Typeform entries"
+    "title": "Create notes for new Typeform entries"
   },
   {
     "createUrl": "https://zapier.com/partner/embed/dovetail/create/18729",
@@ -51,7 +51,7 @@
         "title": "Dovetail"
       }
     ],
-    "title": "Save new emails as Dovetail notes"
+    "title": "Save new emails as notes"
   },
   {
     "createUrl": "https://zapier.com/partner/embed/dovetail/create/18731",
@@ -78,7 +78,7 @@
         "title": "Dovetail"
       }
     ],
-    "title": "Create Dovetail notes for new Google Sheets rows"
+    "title": "Create notes for new Google Sheets rows"
   },
   {
     "createUrl": "https://zapier.com/partner/embed/dovetail/create/18734",
@@ -105,7 +105,7 @@
         "title": "Dovetail"
       }
     ],
-    "title": "Create Dovetail notes for Intercom conversations"
+    "title": "Create notes for Intercom conversations"
   },
   {
     "createUrl": "https://zapier.com/partner/embed/dovetail/create/18733",
@@ -132,7 +132,7 @@
         "title": "Dovetail"
       }
     ],
-    "title": "Save new Pocket items to Dovetail"
+    "title": "Save new Pocket items to notes"
   },
   {
     "createUrl": "https://zapier.com/partner/embed/dovetail/create/18794",
@@ -159,7 +159,7 @@
         "title": "Dovetail"
       }
     ],
-    "title": "Create Dovetail notes for new Trello cards"
+    "title": "Create notes for new Trello cards"
   },
   {
     "createUrl": "https://zapier.com/partner/embed/dovetail/create/18503",
@@ -186,7 +186,7 @@
         "title": "Dovetail"
       }
     ],
-    "title": "Append new Twitter mentions to Dovetail"
+    "title": "Append new Twitter mentions to notes"
   },
   {
     "createUrl": "https://zapier.com/partner/embed/dovetail/create/18732",
@@ -213,7 +213,7 @@
         "title": "Dovetail"
       }
     ],
-    "title": "Save new Slack reactions to Dovetail"
+    "title": "Save new Slack reactions to notes"
   },
   {
     "createUrl": "https://zapier.com/partner/embed/dovetail/create/18793",
@@ -240,6 +240,6 @@
         "title": "Dovetail"
       }
     ],
-    "title": "Create new Dovetail notes from a webhook"
+    "title": "Create new notes from a webhook"
   }
 ]

@@ -1,4 +1,4 @@
-import { Dropdown } from "@heydovetail/website/components/dropdown/Dropdown";
+import { Dropdown } from "@heydovetail/ui-components";
 import PictogramFeedback from "@heydovetail/website/components/icons/pictograms/PictogramFeedback";
 import PictogramQda from "@heydovetail/website/components/icons/pictograms/PictogramQda";
 import PictogramRepository from "@heydovetail/website/components/icons/pictograms/PictogramRepository";

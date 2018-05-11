@@ -1,6 +1,7 @@
+import { COLORS } from "@heydovetail/ui-components";
 import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
 import { Item } from "@heydovetail/website/components/layout/Item";
-import { COLORS, HALF_GAP } from "@heydovetail/website/constants";
+import { HALF_GAP } from "@heydovetail/website/constants";
 import React from "react";
 
 interface Props {

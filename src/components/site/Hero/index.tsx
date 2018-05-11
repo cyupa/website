@@ -1,9 +1,8 @@
-import { ButtonLink } from "@heydovetail/website/components/forms/ButtonLink";
+import { BREAKPOINT_TABLET, ButtonLink, COLORS, SmallText } from "@heydovetail/ui-components";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
 import { Item } from "@heydovetail/website/components/layout/Item";
-import { SmallText } from "@heydovetail/website/components/util/SmallText";
-import { BREAKPOINT_TABLET, COLORS, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
+import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
 import { styled } from "typestyle-react";

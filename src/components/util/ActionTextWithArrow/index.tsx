@@ -1,4 +1,4 @@
-import { SubtleButtonLink } from "@heydovetail/website/components/forms/SubtleButtonLink";
+import { SubtleButtonLink } from "@heydovetail/ui-components";
 import IconArrowRightMini from "@heydovetail/website/components/icons/feather/IconArrowRightMini";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
 import { Item } from "@heydovetail/website/components/layout/Item";

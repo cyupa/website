@@ -1,5 +1,6 @@
+import { COLORS } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
-import { COLORS, HALF_GAP, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
+import { HALF_GAP, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import React from "react";
 import { styled } from "typestyle-react";
 

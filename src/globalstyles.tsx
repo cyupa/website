@@ -1,5 +1,6 @@
+import { COLORS } from "@heydovetail/ui-components";
 import { cssRule } from "typestyle";
-import { COLORS, FONT_FAMILY } from "./constants";
+import { FONT_FAMILY } from "./constants";
 
 cssRule("*", {
   boxSizing: "border-box",

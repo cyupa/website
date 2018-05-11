@@ -1,11 +1,9 @@
-import { Dropdown } from "@heydovetail/website/components/dropdown/Dropdown";
-import { ButtonLink } from "@heydovetail/website/components/forms/ButtonLink";
+import { ButtonLink, COLORS, Dropdown } from "@heydovetail/ui-components";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { GoToApp } from "@heydovetail/website/components/site/Header/goToApp";
 import { LinkList } from "@heydovetail/website/components/site/LinkList";
-import { COLORS } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
 import { styled } from "typestyle-react";
@@ -29,12 +27,12 @@ export class MobileMenu extends React.PureComponent<Props> {
               ) : (
                 <Flow>
                   <Item>
-                    <ButtonLink color={COLORS.purple} height={32} location={locations.signUp()} onClick={onClose}>
+                    <ButtonLink color={COLORS.purple} height={32} location={locations.signUp()}>
                       Try now
                     </ButtonLink>
                   </Item>
                   <Item>
-                    <ButtonLink height={32} location={locations.logIn()} onClick={onClose}>
+                    <ButtonLink height={32} location={locations.logIn()}>
                       Log in
                     </ButtonLink>
                   </Item>

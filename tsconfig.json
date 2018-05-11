@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    // https://github.com/ReactiveX/rxjs/issues/3031
+    "skipLibCheck": true,
     /* Basic Options */
     // Babel is used to compile down to ES5 rather than TypeScript.
     "target":

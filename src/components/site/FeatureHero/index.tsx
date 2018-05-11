@@ -1,8 +1,9 @@
+import { BREAKPOINT_TABLET } from "@heydovetail/ui-components";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { Lozenge } from "@heydovetail/website/components/site/Lozenge";
 import { ActionTextWithArrow } from "@heydovetail/website/components/util/ActionTextWithArrow";
-import { BREAKPOINT_TABLET, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
+import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { LocationDescriptor, locations } from "@heydovetail/website/routing/locations";
 import React from "react";
 import { extend, media } from "typestyle";
