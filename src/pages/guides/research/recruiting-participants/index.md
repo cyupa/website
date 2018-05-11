@@ -1,7 +1,7 @@
 ---
 date: "2018-04-11"
 path: "/guides/recruiting-participants"
-title: "How to recruit research participants"
+title: "How to recruit user research participants"
 weight: 1
 ---
 
@@ -96,6 +96,8 @@ Make sure participants know what your expectations are for the study, and that t
 People who frequently supplement their income by participating in user research will say and do whatever it takes to get into a study. It’s often too easy for them to figure out the correct responses and avoid being eliminated. Ask open-ended questions about how often they participate in research, and include multiple elimination questions during the screener.
 
 ## Keeping participants motivated
+
+![A photo of a man impatiently holding a painted mess](./paint.jpg)
 
 For longer research like diary studies, it can be tough to keep participants committed throughout the entire duration. A solid brief, constant probing, and trickled monetary incentives can help to keep people responding.
 

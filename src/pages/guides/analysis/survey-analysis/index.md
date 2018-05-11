@@ -1,13 +1,15 @@
 ---
 date: "2018-04-11"
 path: "/guides/survey-analysis"
-title: "How to analyze open-ended survey data"
+title: "How to analyze open-ended survey questions"
 weight: 1
 ---
 
-![Photo of making pasta](./pasta.jpg)
+![Photo of a laptop sitting on a sofa showing statistics and charts](./laptop.jpg)
 
-Designing surveys is like making pasta. Anyone can make okay pasta, but it takes effort, patience, and skill to make amazing pasta. [Likewise for surveys](https://medium.com/research-things/on-surveys-5a73dda5e9a0). The quality of your results depends on the questions you ask, the order you ask them in, and the type of people who complete your survey. Not to mention how many people respond and its statistical significance. However, this article is about analysis, not survey design, so from here on we’ll assume you’re making great surveys and focus on analyzing the data you collect.
+Designing surveys is like making pasta. Anyone can make okay pasta, but it takes effort, patience, and skill to make amazing pasta. [Likewise for surveys](https://medium.com/research-things/on-surveys-5a73dda5e9a0).
+
+The quality of your results depends on the questions you ask, the order you ask them in, and the type of people who complete your survey. Not to mention how many people respond and its statistical significance. However, this article is about analysis, not survey design, so from here on we’ll assume you’re making great surveys and focus on analyzing the data you collect.
 
 Analysis is what you do with survey results once you’ve collected them. It can be as rigorous or relaxed as you like. If you’re just looking for directional indicators, there’s no need to spend weeks analyzing your data. If your survey is mostly comprised of quantitative questions (e.g. boolean yes / no, multiple choice, Likert scale) then your analysis should be a fairly straightforward game of crunching numbers, and there are plenty of articles on the web that talk about analyzing quantitative data with formulas in spreadsheets.
 
@@ -18,6 +20,8 @@ Analysis gets a bit more complicated if you’re creating surveys with open-end
 In this article we’ll give a basic overview of how to analyze qualitative data in layman’s terms, and offer a few suggestions on how to get better insights from open-ended survey questions, while making your life easier.
 
 ## Step one – understand your goals
+
+![A photo of a single sticky note with a light bulb sketch](./why.jpg)
 
 If most people told you they’d rather fight one horse-sized duck instead of 100 duck-sized horses, how would that information change your product? Your research (and therefore analysis) should have a practical purpose. Start by asking yourself what you’re trying to understand, and what you would change about your product / service based on some hypothetical findings.
 
@@ -54,9 +58,6 @@ The survey responses are probably stored in the survey software like SurveyMonke
 
 You might start off by tagging the entry with “Late driver” and “Company policy”. Perhaps you’d break down “Company policy” into more specific tags like “Driver caller ID” and “Signature required”. You’ve just started creating a system of tags, which you can then re-use when you hear these problems again from another customer.
 
-= image_tag 'guides/analysis.jpg', title: 'This whole process of tagging qualitative data is much easier with Dovetail, a purpose-built tool for analysis', class: 'content-image'
-
-:markdown
 Eventually you might discover that the caller ID problem isn’t a common complaint (only 5 people out of 2000 mentioned that in the past month), but late drivers certainly is (340 / 2000 in the past month). So you report the findings to the head of logistics, who starts to research the core reasons why her drivers are late, and the whole cycle repeats itself. Everyone’s doing research all the time to different degrees to understand problems and weigh them up against each other in terms of pain, frequency, and cost.
 
 ## You’re already good at this

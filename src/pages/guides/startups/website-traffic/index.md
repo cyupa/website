@@ -1,7 +1,7 @@
 ---
 date: "2018-04-11"
 path: "/guides/website-traffic"
-title: "How to drive traffic to your website"
+title: "How to get visitors to your startup website"
 weight: 1
 ---
 

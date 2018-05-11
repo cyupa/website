@@ -1,7 +1,7 @@
 ---
 date: "2018-04-11"
 path: "/guides/diary-studies"
-title: "How to run a UX diary study"
+title: "How to run a UX research diary study"
 weight: 2
 ---
 
@@ -54,6 +54,8 @@ What motivates people to perform specific tasks? How are users feeling and think
 What are some common, holistic behaviors across groups of our users?
 
 ## How do you run a diary study?
+
+![A photo of minimal pencils on a yellow background](./pencils.jpg)
 
 Diary studies are typically composed of five stages: designing the study, recruiting participants, collecting data, analyzing the responses, and sharing what you learned.
 
