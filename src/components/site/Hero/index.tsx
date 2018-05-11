@@ -1,8 +1,7 @@
-import { BREAKPOINT_TABLET, ButtonLink, COLORS } from "@heydovetail/ui-components";
+import { BREAKPOINT_TABLET, ButtonLink, COLORS, SmallText } from "@heydovetail/ui-components";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
 import { Item } from "@heydovetail/website/components/layout/Item";
-import { SmallText } from "@heydovetail/website/components/util/SmallText";
 import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
