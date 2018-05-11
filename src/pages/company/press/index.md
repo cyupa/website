@@ -3,15 +3,24 @@ path: "/company/press"
 title: "Press kit & logo usage"
 ---
 
-If you’re on this page, then perhaps you’re interested in writing about Dovetail or including our logo on your website or in a slide deck. Or maybe something else entirely. Whatever you’d like to do, we’d love to support you in sharing Dovetail, making it as easy as possible to get the right files and founder photos.
+If you’re interested in writing about Dovetail, adding our logo to your website, or including us in a slide deck, you’ve come to the right place.
 
-## Download
+## Download the press kit
 
-The press kit contains logos in a variety of formats, founder photos, and a short slide deck containing an overview of our product.
+The press kit contains logos and logomarks in a variety of file formats, three founder photos, a 30 second product demo video, and a short slide deck with an overview. If you have any questions or need something else, email us at [hello@dovetailapp.com](mailto:hello@dovetailapp.com).
 
 **[Download dovetail-press-kit.zip](./dovetail-press-kit.zip)**
 
-## Logo usage examples
+## Logo guidelines
+
+When using the Dovetail logo, keep these things in mind:
+
+* Always leave space around the logo.
+* Maintain the original aspect ratio.
+* Use the correct size so it’s not ‘pixelated’.
+* Use the recommended colors.
+
+## Logo colors
 
 The logo works best in Purple (#512DA8) on a solid white background:
 
@@ -29,9 +38,7 @@ Likewise, the same rules apply for logomarks alone:
 
 ![Dovetail logomarks in three colors on a solid white background](./logomarks.png)
 
-Always leave space around the logo.
-
-## Don’t do this
+## Logo crimes
 
 Please don’t stretch or distort the logo, use it with an unapproved color, remove the opacity on the dove’s wings, add drop shadows, or use it on top of a complicated background image or in a space where there’s not enough room:
 
