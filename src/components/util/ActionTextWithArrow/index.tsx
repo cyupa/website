@@ -1,4 +1,4 @@
-import { SubtleButtonLink } from "@heydovetail/ui-components";
+import { COLORS, SubtleButtonLink } from "@heydovetail/ui-components";
 import IconArrowRightMini from "@heydovetail/website/components/icons/feather/IconArrowRightMini";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
 import { Item } from "@heydovetail/website/components/layout/Item";
@@ -23,7 +23,11 @@ export class ActionTextWithArrow extends React.PureComponent<Props> {
     );
 
     if (location !== undefined) {
-      return <SubtleButtonLink location={location}>{content}</SubtleButtonLink>;
+      return (
+        <SubtleButtonLink color={COLORS.purple} location={location}>
+          {content}
+        </SubtleButtonLink>
+      );
     } else return content;
   }
 }
