@@ -50,7 +50,7 @@ export class Footer extends React.PureComponent<Props> {
                 heading="Resources"
                 links={[
                   { label: "Help Center", location: locations.help() },
-                  { label: "Research Guides", location: locations.legal() },
+                  { label: "Research Guides", location: locations.guides() },
                   { label: "Terms of Service", location: locations.termsCustomer() },
                   { label: "Privacy Policy", location: locations.privacy() }
                 ]}
