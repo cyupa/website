@@ -38,9 +38,9 @@
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@heydovetail/editorconfig/-/editorconfig-2.0.0.tgz#341fbc7edbc735534f2176159b00d9e8534c6489"
 
-"@heydovetail/svg-to-react@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@heydovetail/svg-to-react/-/svg-to-react-1.1.0.tgz#0aec70aa7994bd9d4663924c8d0673ba11e79664"
+"@heydovetail/svg-to-react@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@heydovetail/svg-to-react/-/svg-to-react-1.1.1.tgz#ac7f3d72d8b62d9554a7c5e17b722ba5743cf318"
   dependencies:
     ajv "^6.4.0"
     chalk "^2.3.2"
@@ -59,11 +59,11 @@
   dependencies:
     tslint-microsoft-contrib "^5.0.2"
 
-"@heydovetail/ui-components@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@heydovetail/ui-components/-/ui-components-1.1.1.tgz#018f0ba5365721f8def02a455bd55f486182d8e0"
+"@heydovetail/ui-components@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@heydovetail/ui-components/-/ui-components-1.1.2.tgz#d5993eafe94462aef19db6077d92401cf6f171ac"
   dependencies:
-    "@heydovetail/svg-to-react" "^1.1.0"
+    "@heydovetail/svg-to-react" "^1.1.1"
     "@types/react-router-dom" "^4.2.6"
     react-router-dom "^4.2.2"
     react-transition-group "^2.3.1"
@@ -12951,9 +12951,13 @@ typeface-rubik@^0.0.54:
   version "0.0.54"
   resolved "https://registry.yarnpkg.com/typeface-rubik/-/typeface-rubik-0.0.54.tgz#301d18b2efe57495beb5ef096632212b23f4faaf"
 
-typescript@^2.2.1, typescript@^2.8.1:
+typescript@^2.2.1:
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.8.1.tgz#6160e4f8f195d5ba81d4876f9c0cc1fbc0820624"
+
+typescript@^2.8.3:
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.8.3.tgz#5d817f9b6f31bb871835f4edf0089f21abe6c170"
 
 typestyle-react@^1.2.0:
   version "1.2.0"

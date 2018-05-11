@@ -54,9 +54,9 @@
   },
   "dependencies": {
     "@heydovetail/editorconfig": "^2.0.0",
-    "@heydovetail/svg-to-react": "^1.1.0",
+    "@heydovetail/svg-to-react": "^1.1.1",
     "@heydovetail/tslint-config": "^2.1.0",
-    "@heydovetail/ui-components": "^1.1.1",
+    "@heydovetail/ui-components": "^1.1.2",
     "@storybook/addon-storyshots": "^3.4.0",
     "@storybook/react": "^3.4.0",
     "@types/jest": "^22.2.2",
@@ -112,7 +112,6 @@
     "tslib": "^1.9.0",
     "tslint": "^5.9.1",
     "typeface-rubik": "^0.0.54",
-    "typescript": "^2.8.1",
     "typestyle": "^1.7.2",
     "typestyle-react": "^1.2.0"
   },
@@ -122,6 +121,7 @@
     "@types/yargs": "^11.0.0",
     "date-fns": "^1.29.0",
     "node-fetch": "^2.1.2",
+    "typescript": "^2.8.3",
     "yargs": "^11.0.0"
   }
 }
