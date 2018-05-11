@@ -1,4 +1,4 @@
-import { COLORS } from "@heydovetail/website/constants";
+import { COLORS } from "@heydovetail/ui-components";
 import { storiesOf } from "@heydovetail/website/util/stories";
 import React from "react";
 import { Avatar } from "../";

@@ -1,8 +1,8 @@
-import { SubtleButtonLink } from "@heydovetail/website/components/forms/SubtleButtonLink";
+import { BORDER_RADIUS, COLORS, SubtleButtonLink } from "@heydovetail/ui-components";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { IntegrationIcon } from "@heydovetail/website/components/site/IntegrationIcon";
-import { BORDER_RADIUS, COLORS, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
+import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import React from "react";
 import { styled } from "typestyle-react";
 

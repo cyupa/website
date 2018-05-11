@@ -1,6 +1,7 @@
+import { BREAKPOINT_PHABLET } from "@heydovetail/ui-components";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
-import { BREAKPOINT_PHABLET, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
+import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import React from "react";
 import { styled } from "typestyle-react";
 import { extend, media } from "typestyle/lib";

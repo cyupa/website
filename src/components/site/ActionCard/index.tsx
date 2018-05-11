@@ -1,8 +1,8 @@
-import { ButtonLink } from "@heydovetail/website/components/forms/ButtonLink";
+import { ButtonLink, COLORS } from "@heydovetail/ui-components";
 import { Card } from "@heydovetail/website/components/layout/Card";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
-import { COLORS, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
+import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
 import React from "react";
 

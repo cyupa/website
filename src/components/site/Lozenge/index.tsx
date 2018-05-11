@@ -1,4 +1,4 @@
-import { BORDER_RADIUS, COLORS } from "@heydovetail/website/constants";
+import { BORDER_RADIUS, COLORS } from "@heydovetail/ui-components";
 import { styled } from "typestyle-react";
 
 export const Lozenge = styled("div", {

@@ -1,9 +1,10 @@
+import { COLORS } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { LinkList } from "@heydovetail/website/components/site/LinkList";
-import { COLORS, HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
 import { styled } from "typestyle-react";

@@ -1,8 +1,8 @@
+import { COLORS } from "@heydovetail/ui-components";
 import { Footer } from "@heydovetail/website/components/site/Footer";
 import { Header } from "@heydovetail/website/components/site/Header";
 import { DefaultMetaTags } from "@heydovetail/website/components/util/DefaultMetaTags";
 import { ErrorBoundary } from "@heydovetail/website/components/util/ErrorBoundary";
-import { COLORS } from "@heydovetail/website/constants";
 import * as React from "react";
 import "typeface-rubik";
 import { styled } from "typestyle-react";

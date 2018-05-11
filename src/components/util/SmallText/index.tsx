@@ -1,4 +1,4 @@
-import { COLORS } from "@heydovetail/website/constants";
+import { COLORS } from "@heydovetail/ui-components";
 import React from "react";
 import { styled } from "typestyle-react";
 

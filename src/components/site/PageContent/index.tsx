@@ -1,4 +1,4 @@
-import { BORDER_RADIUS, COLORS } from "@heydovetail/website/constants";
+import { BORDER_RADIUS, COLORS } from "@heydovetail/ui-components";
 import React from "react";
 import { styled } from "typestyle-react";
 

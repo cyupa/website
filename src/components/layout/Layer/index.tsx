@@ -1,5 +1,5 @@
+import { BORDER_RADIUS, Z_INDEX_HIGH } from "@heydovetail/ui-components";
 import { OnEsc } from "@heydovetail/website/components/util/OnEsc";
-import { BORDER_RADIUS, Z_INDEX_HIGH } from "@heydovetail/website/constants";
 import React from "react";
 
 interface Props {

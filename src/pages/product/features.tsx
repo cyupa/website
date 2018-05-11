@@ -1,10 +1,11 @@
+import { COLORS } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { Features } from "@heydovetail/website/components/site/Features";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
-import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
 import React from "react";

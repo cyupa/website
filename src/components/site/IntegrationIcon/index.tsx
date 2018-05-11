@@ -1,4 +1,5 @@
-import { BORDER_RADIUS, BOX_SHADOW_BORDER_LIGHTER, BOX_SHADOW_LARGE, COLORS } from "@heydovetail/website/constants";
+import { BORDER_RADIUS, BOX_SHADOW_BORDER_LIGHTER, COLORS } from "@heydovetail/ui-components";
+import { BOX_SHADOW_LARGE } from "@heydovetail/website/constants";
 import React from "react";
 import { styled } from "typestyle-react";
 

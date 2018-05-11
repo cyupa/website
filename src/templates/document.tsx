@@ -1,3 +1,4 @@
+import { COLORS } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
@@ -5,7 +6,7 @@ import { Breadcrumbs } from "@heydovetail/website/components/site/Breadcrumbs";
 import { Date } from "@heydovetail/website/components/site/Date";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { PageContent } from "@heydovetail/website/components/site/PageContent";
-import { COLORS, HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import { DocumentByPathQuery } from "@heydovetail/website/graphql/types";
 import { internal } from "@heydovetail/website/routing/locations";
 import { graphql } from "@heydovetail/website/util/graphql";

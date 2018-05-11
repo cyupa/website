@@ -1,4 +1,5 @@
 import hero from "!file-loader!./hero.png";
+import { COLORS } from "@heydovetail/ui-components";
 import IllustrationAnnotationsFeedback from "@heydovetail/website/components/illustrations/IllustrationAnnotationsFeedback";
 import IllustrationBoard from "@heydovetail/website/components/illustrations/IllustrationBoard";
 import IllustrationProjectsFeedback from "@heydovetail/website/components/illustrations/IllustrationProjectsFeedback";
@@ -17,7 +18,7 @@ import { LightContainer } from "@heydovetail/website/components/site/LightContai
 import Wave from "@heydovetail/website/components/site/Wave/Wave";
 import { ColorWheel } from "@heydovetail/website/components/util/ColorWheel";
 import IllustrationFormColor from "@heydovetail/website/components/util/ColorWheel/IllustrationFormColor";
-import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH, testimonials } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH, testimonials } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { Integrations } from "@heydovetail/website/sections/Integrations";
 import { Security } from "@heydovetail/website/sections/Security";

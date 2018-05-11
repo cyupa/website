@@ -1,10 +1,7 @@
-import { ButtonLink } from "@heydovetail/website/components/forms/ButtonLink";
-import { TextInput } from "@heydovetail/website/components/forms/TextInput";
+import { ButtonLink, COLORS, SmallText, TextInput } from "@heydovetail/ui-components";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
-import { SmallText } from "@heydovetail/website/components/util/SmallText";
-import { COLORS } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
 

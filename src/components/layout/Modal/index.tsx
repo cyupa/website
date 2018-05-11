@@ -1,8 +1,7 @@
-import { SubtleButton } from "@heydovetail/ui-components";
-import IconCross from "@heydovetail/website/components/icons/feather/IconCross";
+import { COLORS, IconCross, SubtleButton, Z_INDEX_HIGH } from "@heydovetail/ui-components";
 import { BodyOverflow } from "@heydovetail/website/components/util/BodyOverflow";
 import { OnEsc } from "@heydovetail/website/components/util/OnEsc";
-import { COLORS, PADDING_BOTTOM, Z_INDEX_HIGH } from "@heydovetail/website/constants";
+import { PADDING_BOTTOM } from "@heydovetail/website/constants";
 import React from "react";
 import { CSSTransitionGroup } from "react-transition-group";
 import { style } from "typestyle";

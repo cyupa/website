@@ -1,6 +1,6 @@
+import { COLORS } from "@heydovetail/ui-components";
 import { ActionCard } from "@heydovetail/website/components/site/ActionCard";
 import { PageGroup } from "@heydovetail/website/components/site/PageGroup";
-import { COLORS } from "@heydovetail/website/constants";
 import { HelpIndexQuery } from "@heydovetail/website/graphql/types";
 import { locations } from "@heydovetail/website/routing/locations";
 import { DocumentIndex } from "@heydovetail/website/sections/DocumentIndex";

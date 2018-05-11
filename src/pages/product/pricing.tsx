@@ -1,4 +1,4 @@
-import { SubtleButtonLink } from "@heydovetail/website/components/forms/SubtleButtonLink";
+import { COLORS, SubtleButtonLink } from "@heydovetail/ui-components";
 import IconArrowRightMini from "@heydovetail/website/components/icons/feather/IconArrowRightMini";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
@@ -8,7 +8,7 @@ import { Faq } from "@heydovetail/website/components/site/Faq";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { PricingCard } from "@heydovetail/website/components/site/PricingCard";
-import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { FrequentlyAskedQuestions } from "@heydovetail/website/sections/FrequentlyAskedQuestions";

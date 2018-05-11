@@ -1,6 +1,6 @@
+import { BORDER_RADIUS, BOX_SHADOW_FOCUS, COLORS } from "@heydovetail/ui-components";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Item } from "@heydovetail/website/components/layout/Item";
-import { BORDER_RADIUS, BOX_SHADOW_FOCUS, COLORS } from "@heydovetail/website/constants";
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
 import React from "react";

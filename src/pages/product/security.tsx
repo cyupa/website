@@ -1,4 +1,4 @@
-import { ButtonLink } from "@heydovetail/website/components/forms/ButtonLink";
+import { ButtonLink, COLORS } from "@heydovetail/ui-components";
 import IllustrationSecurity from "@heydovetail/website/components/illustrations/IllustrationSecurity";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
 import { Flow } from "@heydovetail/website/components/layout/Flow";
@@ -7,7 +7,7 @@ import { DarkContainer } from "@heydovetail/website/components/site/DarkContaine
 import { Faq } from "@heydovetail/website/components/site/Faq";
 import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
-import { COLORS, HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { FrequentlyAskedQuestions } from "@heydovetail/website/sections/FrequentlyAskedQuestions";
 import { ADVANCED_SECURITY_FEATURES, BASE_SECURITY_FEATURES } from "@heydovetail/website/sections/Security";

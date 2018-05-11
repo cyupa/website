@@ -1,8 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`OptionalErrorOverlay snapshots container 1`] = `
-Object {
-  "display": "block",
-  "position": "relative",
-}
-`;
