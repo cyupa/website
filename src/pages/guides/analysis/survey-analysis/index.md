@@ -86,3 +86,9 @@ This works okay, however it’s prone to mistakes because the context is missing
 There’s a lot of emerging technology around machine learning where you’d train an Artificial Intelligence (AI) to recognize patterns and tag them for you.
 
 These systems tend to be more accurate than automated rules, but only with a lot of data to train the system in the first place. Like tens of thousands of data points. Not many small–medium companies have that much training data. As well as the training data requirement, machine learning systems are difficult to set up, so most user researchers outside of huge companies or academia ultimately resort to analyzing qualitative data manually.
+
+---
+
+#### Liked this article?
+
+[Check out our other research guides](/guides) or [learn more](/) about how Dovetail can help you with customer feedback and user research analysis.

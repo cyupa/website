@@ -102,3 +102,9 @@ For longer research like diary studies, it can be tough to keep participants com
 Getting the insights you need will take some involvement with participants throughout the study. Plan to check in with participants with periodic reminders as needed (each day or every few days). For participants that are engaged and creating appropriate snippets, recognize their efforts and ask them to keep up the good work. For participants that are less engaged, give encouragement or offer to answer any questions they may have to get them on track. Let participants know up front that you will be reaching out throughout the study and agree on a means of contacting them, so you can give encouragement or ask for clarification without being overly intrusive.
 
 Diary studies require time and dedication from participants. To ensure you get the level of involvement you need from participants, provide an incentive that will keep them engaged. This compensation is typically much more than what you would offer for a 60-minute usability test. Align the incentive with the amount of work required over the period of the study. Consider breaking apart the total incentive and offering smaller installments as participants reach specific milestones (e.g., 3 days of logging), to keep them motivated throughout the duration of the study.
+
+---
+
+#### Liked this article?
+
+[Check out our other research guides](/guides) or [learn more](/) about how Dovetail can help you with customer feedback and user research analysis.

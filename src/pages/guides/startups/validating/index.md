@@ -92,3 +92,9 @@ Can you spot the difference?
 ## Start building
 
 Following this basic process, I’d found a problem, spent time researching it, brainstorming ideas, and taking inspiration from the competition. Then, sparring it with friends and colleagues, I’d turned it into a comprehensive product pitch. The next step was to start building a Minimum Viable Product (MVP).
+
+---
+
+#### Liked this article?
+
+[Check out our other research guides](/guides) or [learn more](/) about how Dovetail can help you with customer feedback and user research analysis.

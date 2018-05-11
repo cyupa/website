@@ -89,3 +89,9 @@ Naturally you will have people you want to share your insights with – teammate
 While diary studies do require more time and effort than other research methods, they yield invaluable information about real life behaviors and experiences.
 
 If you’re looking for organic insights and you can’t create a valid scenario in the lab, or you can’t get the data you need from a single survey, don’t force-fit the research into these methodologies. Try a diary study instead.
+
+---
+
+#### Liked this article?
+
+[Check out our other research guides](/guides) or [learn more](/) about how Dovetail can help you with customer feedback and user research analysis.

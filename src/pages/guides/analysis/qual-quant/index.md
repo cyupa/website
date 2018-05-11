@@ -57,3 +57,9 @@ Qualitative research generally focuses more on the human angle – what are peop
 So, let’s go back to our example — if you wanted to improve that website journey of someone clicking this button, then that button, and so on, then perhaps you’d observe your quantitative data to see what people are doing, and then you would run some qualitative research to try and learn why they are doing it.
 
 In your research, consider using both qualitative and quantitative methods together to be better equipped to solve the problem at hand.
+
+---
+
+#### Liked this article?
+
+[Check out our other research guides](/guides) or [learn more](/) about how Dovetail can help you with customer feedback and user research analysis.
