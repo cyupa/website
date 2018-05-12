@@ -1,7 +1,7 @@
 ---
 date: "2018-04-11"
 path: "/guides/website-traffic"
-title: "How to drive traffic to your website"
+title: "How to get visitors to your startup website"
 weight: 1
 ---
 
@@ -116,3 +116,9 @@ When you experiment, you need to measure. Measuring different marketing strategi
 With Mixpanel specifically, you will most likely need to do some work to connect the JavaScript library with your backend so you can link anonymous users browsing the website to the actual user ID in the database when they sign up. This means you can track someone’s journey from the website all the way into your product. Mixpanel then has some neat features that help you figure out the ‘aha!’ moments that cause people to convert.
 
 Don’t leave analytics instrumentation too late. Add it as part of your regular development so you can start collecting data and learning from it straight away. With Google Analytics connected to AdWords, you can see what ads are generating paying customers. Likewise with Facebook. Optimize for conversion rather than clicks or impressions since that’s closer to revenue.
+
+---
+
+#### Liked this article?
+
+[Check out our other research guides](/guides) or [learn more](/) about how Dovetail can help you with customer feedback and user research analysis.

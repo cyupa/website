@@ -41,7 +41,7 @@ export class IntegrationCard extends React.PureComponent<Props> {
 const Card = styled("div", {
   backgroundColor: COLORS.p04,
   borderRadius: BORDER_RADIUS,
-  padding: "32px",
+  padding: "32px 24px",
   textAlign: "center"
 });
 

@@ -16,6 +16,7 @@ import { Item } from "@heydovetail/website/components/layout/Item";
 import { ThemeColor } from "@heydovetail/website/components/site/Header";
 import { GoToApp } from "@heydovetail/website/components/site/Header/goToApp";
 import { MobileMenu } from "@heydovetail/website/components/site/MobileMenu";
+import { WaitForJs } from "@heydovetail/website/components/util/WaitForJs";
 import { locations } from "@heydovetail/website/routing/locations";
 import { getLoggedInStateFromLocalStorage } from "@heydovetail/website/util/loggedIn";
 import React from "react";
@@ -41,7 +42,7 @@ export class Navigation extends React.PureComponent<Props> {
                 <Item>
                   <FlipFlop>
                     {({ active, toggle }) => (
-                      <>
+                      <WaitForJs>
                         <ThemeColor styled={{ dark }}>
                           <SubtleButton id="UseCasesDropdown" onClick={toggle}>
                             <Flow styled={{ gap: 4 }}>
@@ -59,7 +60,7 @@ export class Navigation extends React.PureComponent<Props> {
                             </Layer>
                           </Portal>
                         ) : null}
-                      </>
+                      </WaitForJs>
                     )}
                   </FlipFlop>
                 </Item>
@@ -96,7 +97,7 @@ export class Navigation extends React.PureComponent<Props> {
         <MobileNavigation>
           <FlipFlop>
             {({ active, toggle }) => (
-              <>
+              <WaitForJs>
                 <Button id="MenuDropdown" height={32} onClick={toggle}>
                   Menu
                 </Button>
@@ -107,7 +108,7 @@ export class Navigation extends React.PureComponent<Props> {
                     </Layer>
                   </Portal>
                 ) : null}
-              </>
+              </WaitForJs>
             )}
           </FlipFlop>
         </MobileNavigation>

@@ -38,3 +38,9 @@ People type less on phones, so an SMS-based diary study will result in shorter a
 ### No multiple choice questions
 
 Due to the nature of SMS being conversational, there isn’t an easy way to ask multiple choice quantitative questions. Questions should be ‘open-ended’ to get the most valuable insights.
+
+---
+
+#### Liked this article?
+
+[Check out our other research guides](/guides) or [learn more](/) about how Dovetail can help you with customer feedback and user research analysis.

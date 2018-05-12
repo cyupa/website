@@ -1,7 +1,7 @@
 ---
 date: "2018-04-11"
 path: "/guides/diary-studies"
-title: "How to run a UX diary study"
+title: "How to run a UX research diary study"
 weight: 2
 ---
 
@@ -55,6 +55,8 @@ What are some common, holistic behaviors across groups of our users?
 
 ## How do you run a diary study?
 
+![A photo of minimal pencils on a yellow background](./pencils.jpg)
+
 Diary studies are typically composed of five stages: designing the study, recruiting participants, collecting data, analyzing the responses, and sharing what you learned.
 
 ### Design the study
@@ -89,3 +91,9 @@ Naturally you will have people you want to share your insights with – teammate
 While diary studies do require more time and effort than other research methods, they yield invaluable information about real life behaviors and experiences.
 
 If you’re looking for organic insights and you can’t create a valid scenario in the lab, or you can’t get the data you need from a single survey, don’t force-fit the research into these methodologies. Try a diary study instead.
+
+---
+
+#### Liked this article?
+
+[Check out our other research guides](/guides) or [learn more](/) about how Dovetail can help you with customer feedback and user research analysis.
