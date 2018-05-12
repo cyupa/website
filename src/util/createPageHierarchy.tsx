@@ -69,7 +69,7 @@ export function createPageHierarchy(
       title: parent.title,
       weight: parent.weight,
       children: safeNodes
-        .filter(node => node.fileRelPath.startsWith(`${parent.fileRelPath}/`))
+        .filter(node => node.fileRelPath.lastIndexOf(`${parent.fileRelPath}/`, 0) === 0)
         .map(node => ({ title: node.title, path: node.path!, weight: node.weight }))
         .sort(weightComparator)
     }))
