@@ -93,23 +93,31 @@ async function main() {
   const template = await fetch(`https://zapier.com/partner/embed/zaps?key=${argv.zapierClientId}&limit=100`);
   const json = await template.json();
 
-  const result = json.map((t: ZapierTemplate): OutputTemplate => ({
-    createUrl: t.create_url,
-    descriptionHtml: t.description,
-    descriptionPlain: t.description_plain,
-    id: t.id.toString(),
-    path: `${argv.path ? argv.path : "/integrations"}/${t.steps[0].slug}`,
-    status: t.status,
-    steps: t.steps.map(s => ({
-      color: `#${s.hex_color}`,
-      description: s.description,
-      icon: s.images.url_64x64,
-      iconOriginal: s.image,
-      id: s.id.toString(),
-      title: s.title
-    })),
-    title: t.title.replace(/Dovetail notes/g, "notes")
-  }));
+  const result = json.map((t: ZapierTemplate): OutputTemplate => {
+    let title = t.title;
+
+    if (t.title.includes("to Dovetail as notes")) {
+      title = title.replace("to Dovetail as notes", "to Dovetail");
+    }
+
+    return {
+      createUrl: t.create_url,
+      descriptionHtml: t.description,
+      descriptionPlain: t.description_plain,
+      id: t.id.toString(),
+      path: `${argv.path ? argv.path : "/integrations"}/${t.steps[0].slug}`,
+      status: t.status,
+      steps: t.steps.map(s => ({
+        color: `#${s.hex_color}`,
+        description: s.description,
+        icon: s.images.url_64x64,
+        iconOriginal: s.image,
+        id: s.id.toString(),
+        title: s.title
+      })),
+      title: title
+    };
+  });
 
   fs.writeFileSync(path.join(__dirname, argv.output), JSON.stringify(result, null, 2));
 
