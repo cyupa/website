@@ -3944,6 +3944,12 @@
               "deprecationReason": null
             },
             {
+              "name": "pluginOptions___offsetY",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "pluginOptions___backgroundColor",
               "description": null,
               "isDeprecated": false,
@@ -4565,6 +4571,16 @@
               "defaultValue": null
             },
             {
+              "name": "offsetY",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginConnectionPluginOptionsOffsetYQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "backgroundColor",
               "description": null,
               "type": {
@@ -4861,6 +4877,26 @@
               "defaultValue": null
             },
             {
+              "name": "browserAPIs",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginConnectionPluginOptionsPluginsBrowserApIsQueryList_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ssrAPIs",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginConnectionPluginOptionsPluginsSsrApIsQueryList_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "pluginFilepath",
               "description": null,
               "type": {
@@ -5086,6 +5122,16 @@
           "fields": null,
           "inputFields": [
             {
+              "name": "offsetY",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginConnectionPluginOptionsPluginsPluginOptionsOffsetYQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "backgroundColor",
               "description": null,
               "type": {
@@ -5121,6 +5167,57 @@
               "type": {
                 "kind": "INPUT_OBJECT",
                 "name": "sitePluginConnectionPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginConnectionPluginOptionsPluginsPluginOptionsOffsetYQueryString_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
                 "ofType": null
               },
               "defaultValue": null
@@ -5276,6 +5373,136 @@
         },
         {
           "kind": "INPUT_OBJECT",
+          "name": "sitePluginConnectionPluginOptionsPluginsBrowserApIsQueryList_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "in",
+              "description": null,
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginConnectionPluginOptionsPluginsSsrApIsQueryList_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "in",
+              "description": null,
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
           "name": "sitePluginConnectionPluginOptionsPluginsPluginFilepathQueryString_2",
           "description": null,
           "fields": null,
@@ -5379,6 +5606,57 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "sitePluginConnectionPluginOptionsNameQueryString_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginConnectionPluginOptionsOffsetYQueryString_2",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -8311,6 +8589,18 @@
               "deprecationReason": null
             },
             {
+              "name": "offsetY",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "backgroundColor",
               "description": null,
               "args": [],
@@ -8638,6 +8928,38 @@
               "deprecationReason": null
             },
             {
+              "name": "browserAPIs",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "ssrAPIs",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "pluginFilepath",
               "description": null,
               "args": [],
@@ -8660,6 +8982,18 @@
           "name": "pluginOptions_4",
           "description": null,
           "fields": [
+            {
+              "name": "offsetY",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
             {
               "name": "backgroundColor",
               "description": null,
@@ -9126,6 +9460,12 @@
               "deprecationReason": null
             },
             {
+              "name": "pluginOptions___offsetY",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "pluginOptions___backgroundColor",
               "description": null,
               "isDeprecated": false,
@@ -9408,6 +9748,12 @@
             },
             {
               "name": "pluginOptions___name",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___offsetY",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -22796,6 +23142,16 @@
               "defaultValue": null
             },
             {
+              "name": "offsetY",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsOffsetYQueryString",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "backgroundColor",
               "description": null,
               "type": {
@@ -23092,6 +23448,26 @@
               "defaultValue": null
             },
             {
+              "name": "browserAPIs",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsBrowserApIsQueryList",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ssrAPIs",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsSsrApIsQueryList",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "pluginFilepath",
               "description": null,
               "type": {
@@ -23317,6 +23693,16 @@
           "fields": null,
           "inputFields": [
             {
+              "name": "offsetY",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsOffsetYQueryString",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "backgroundColor",
               "description": null,
               "type": {
@@ -23352,6 +23738,57 @@
               "type": {
                 "kind": "INPUT_OBJECT",
                 "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsOffsetYQueryString",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
                 "ofType": null
               },
               "defaultValue": null
@@ -23507,6 +23944,136 @@
         },
         {
           "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsBrowserApIsQueryList",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "in",
+              "description": null,
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsSsrApIsQueryList",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "in",
+              "description": null,
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
           "name": "sitePageConnectionPluginCreatorPluginOptionsPluginsPluginFilepathQueryString",
           "description": null,
           "fields": null,
@@ -23610,6 +24177,57 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "sitePageConnectionPluginCreatorPluginOptionsNameQueryString",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePageConnectionPluginCreatorPluginOptionsOffsetYQueryString",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -28610,6 +29228,16 @@
               "defaultValue": null
             },
             {
+              "name": "offsetY",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginPluginOptionsOffsetYQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "backgroundColor",
               "description": null,
               "type": {
@@ -28906,6 +29534,26 @@
               "defaultValue": null
             },
             {
+              "name": "browserAPIs",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginPluginOptionsPluginsBrowserApIsQueryList_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ssrAPIs",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginPluginOptionsPluginsSsrApIsQueryList_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "pluginFilepath",
               "description": null,
               "type": {
@@ -29131,6 +29779,16 @@
           "fields": null,
           "inputFields": [
             {
+              "name": "offsetY",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePluginPluginOptionsPluginsPluginOptionsOffsetYQueryString_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "backgroundColor",
               "description": null,
               "type": {
@@ -29166,6 +29824,57 @@
               "type": {
                 "kind": "INPUT_OBJECT",
                 "name": "sitePluginPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean_2",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginPluginOptionsPluginsPluginOptionsOffsetYQueryString_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
                 "ofType": null
               },
               "defaultValue": null
@@ -29321,6 +30030,136 @@
         },
         {
           "kind": "INPUT_OBJECT",
+          "name": "sitePluginPluginOptionsPluginsBrowserApIsQueryList_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "in",
+              "description": null,
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginPluginOptionsPluginsSsrApIsQueryList_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "in",
+              "description": null,
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
           "name": "sitePluginPluginOptionsPluginsPluginFilepathQueryString_2",
           "description": null,
           "fields": null,
@@ -29424,6 +30263,57 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "sitePluginPluginOptionsNameQueryString_2",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePluginPluginOptionsOffsetYQueryString_2",
           "description": null,
           "fields": null,
           "inputFields": [
@@ -38777,6 +39667,16 @@
               "defaultValue": null
             },
             {
+              "name": "offsetY",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePagePluginCreatorPluginOptionsOffsetYQueryString",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "backgroundColor",
               "description": null,
               "type": {
@@ -39073,6 +39973,26 @@
               "defaultValue": null
             },
             {
+              "name": "browserAPIs",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePagePluginCreatorPluginOptionsPluginsBrowserApIsQueryList",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ssrAPIs",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePagePluginCreatorPluginOptionsPluginsSsrApIsQueryList",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "pluginFilepath",
               "description": null,
               "type": {
@@ -39298,6 +40218,16 @@
           "fields": null,
           "inputFields": [
             {
+              "name": "offsetY",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "sitePagePluginCreatorPluginOptionsPluginsPluginOptionsOffsetYQueryString",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "backgroundColor",
               "description": null,
               "type": {
@@ -39333,6 +40263,57 @@
               "type": {
                 "kind": "INPUT_OBJECT",
                 "name": "sitePagePluginCreatorPluginOptionsPluginsPluginOptionsSizeByPixelDensityQueryBoolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePagePluginCreatorPluginOptionsPluginsPluginOptionsOffsetYQueryString",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
                 "ofType": null
               },
               "defaultValue": null
@@ -39488,6 +40469,136 @@
         },
         {
           "kind": "INPUT_OBJECT",
+          "name": "sitePagePluginCreatorPluginOptionsPluginsBrowserApIsQueryList",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "in",
+              "description": null,
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePagePluginCreatorPluginOptionsPluginsSsrApIsQueryList",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "in",
+              "description": null,
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
           "name": "sitePagePluginCreatorPluginOptionsPluginsPluginFilepathQueryString",
           "description": null,
           "fields": null,
@@ -39591,6 +40702,57 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "sitePagePluginCreatorPluginOptionsNameQueryString",
+          "description": null,
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "eq",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "ne",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "regex",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "glob",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "defaultValue": null
+            }
+          ],
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "sitePagePluginCreatorPluginOptionsOffsetYQueryString",
           "description": null,
           "fields": null,
           "inputFields": [

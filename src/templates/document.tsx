@@ -1,10 +1,11 @@
 import { COLORS } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { Flex } from "@heydovetail/website/components/layout/Flex";
+import { Flow } from "@heydovetail/website/components/layout/Flow";
 import { Item } from "@heydovetail/website/components/layout/Item";
 import { Breadcrumbs } from "@heydovetail/website/components/site/Breadcrumbs";
-import { Date } from "@heydovetail/website/components/site/Date";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { Lozenge } from "@heydovetail/website/components/site/Lozenge";
 import { PageContent } from "@heydovetail/website/components/site/PageContent";
 import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import { DocumentByPathQuery } from "@heydovetail/website/graphql/types";
@@ -21,7 +22,7 @@ interface Props {
 
 export default function DocumentTemplate({ data, pathContext }: Props) {
   const { markdownRemark } = data;
-  const { excerpt, frontmatter, html } = markdownRemark!;
+  const { excerpt, frontmatter, html, timeToRead } = markdownRemark!;
 
   const schema = {
     "@context": "http://schema.org",
@@ -51,9 +52,16 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
             <Item>
               <HeroText center={false} title={frontmatter!.title!} />
             </Item>
-            {frontmatter!.date !== null ? (
+            {frontmatter!.date !== null && timeToRead !== null ? (
               <Item>
-                <Date>Last updated {frontmatter!.date}</Date>
+                <Flow>
+                  <Item>
+                    <Lozenge>{timeToRead} minute read</Lozenge>
+                  </Item>
+                  <Item>
+                    <Lozenge>Last updated {frontmatter!.date}</Lozenge>
+                  </Item>
+                </Flow>
               </Item>
             ) : null}
             <Item>
@@ -86,12 +94,13 @@ export const pageQuery = graphql`
   query DocumentByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       excerpt
-      html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
         title
       }
+      html
+      timeToRead
     }
   }
 `;

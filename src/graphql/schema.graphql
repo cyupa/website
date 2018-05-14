@@ -2920,6 +2920,7 @@ type pluginOptions_3 {
   plugins: [plugins_2]
   path: String
   name: String
+  offsetY: String
   backgroundColor: String
   quality: Int
   maxWidth: Int
@@ -2944,6 +2945,7 @@ type pluginOptions_3 {
 }
 
 type pluginOptions_4 {
+  offsetY: String
   backgroundColor: String
   quality: Int
   maxWidth: Int
@@ -2956,6 +2958,8 @@ type plugins_2 {
   name: String
   version: String
   pluginOptions: pluginOptions_4
+  browserAPIs: [String]
+  ssrAPIs: [String]
   pluginFilepath: String
 }
 
@@ -3594,6 +3598,7 @@ input sitePageConnectionPluginCreatorPluginOptionsInputObject {
   plugins: sitePageConnectionPluginCreatorPluginOptionsPluginsQueryList
   path: sitePageConnectionPluginCreatorPluginOptionsPathQueryString
   name: sitePageConnectionPluginCreatorPluginOptionsNameQueryString
+  offsetY: sitePageConnectionPluginCreatorPluginOptionsOffsetYQueryString
   backgroundColor: sitePageConnectionPluginCreatorPluginOptionsBackgroundColorQueryString
   quality: sitePageConnectionPluginCreatorPluginOptionsQualityQueryInteger
   maxWidth: sitePageConnectionPluginCreatorPluginOptionsMaxWidthQueryInteger
@@ -3629,11 +3634,26 @@ input sitePageConnectionPluginCreatorPluginOptionsNameQueryString {
   glob: String
 }
 
+input sitePageConnectionPluginCreatorPluginOptionsOffsetYQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
 input sitePageConnectionPluginCreatorPluginOptionsPathQueryString {
   eq: String
   ne: String
   regex: String
   glob: String
+}
+
+input sitePageConnectionPluginCreatorPluginOptionsPluginsBrowserApIsQueryList {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+  in: [String]
 }
 
 input sitePageConnectionPluginCreatorPluginOptionsPluginsIdQueryString {
@@ -3649,6 +3669,8 @@ input sitePageConnectionPluginCreatorPluginOptionsPluginsInputObject {
   name: sitePageConnectionPluginCreatorPluginOptionsPluginsNameQueryString
   version: sitePageConnectionPluginCreatorPluginOptionsPluginsVersionQueryString
   pluginOptions: sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsInputObject
+  browserAPIs: sitePageConnectionPluginCreatorPluginOptionsPluginsBrowserApIsQueryList
+  ssrAPIs: sitePageConnectionPluginCreatorPluginOptionsPluginsSsrApIsQueryList
   pluginFilepath: sitePageConnectionPluginCreatorPluginOptionsPluginsPluginFilepathQueryString
 }
 
@@ -3674,6 +3696,7 @@ input sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsBackground
 }
 
 input sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsInputObject {
+  offsetY: sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsOffsetYQueryString
   backgroundColor: sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsBackgroundColorQueryString
   quality: sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsQualityQueryInteger
   maxWidth: sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger
@@ -3683,6 +3706,13 @@ input sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsInputObjec
 input sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger {
   eq: Int
   ne: Int
+}
+
+input sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsOffsetYQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
 }
 
 input sitePageConnectionPluginCreatorPluginOptionsPluginsPluginOptionsQualityQueryInteger {
@@ -3704,6 +3734,14 @@ input sitePageConnectionPluginCreatorPluginOptionsPluginsResolveQueryString {
   ne: String
   regex: String
   glob: String
+}
+
+input sitePageConnectionPluginCreatorPluginOptionsPluginsSsrApIsQueryList {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+  in: [String]
 }
 
 input sitePageConnectionPluginCreatorPluginOptionsPluginsVersionQueryString {
@@ -4313,6 +4351,7 @@ input sitePagePluginCreatorPluginOptionsInputObject {
   plugins: sitePagePluginCreatorPluginOptionsPluginsQueryList
   path: sitePagePluginCreatorPluginOptionsPathQueryString
   name: sitePagePluginCreatorPluginOptionsNameQueryString
+  offsetY: sitePagePluginCreatorPluginOptionsOffsetYQueryString
   backgroundColor: sitePagePluginCreatorPluginOptionsBackgroundColorQueryString
   quality: sitePagePluginCreatorPluginOptionsQualityQueryInteger
   maxWidth: sitePagePluginCreatorPluginOptionsMaxWidthQueryInteger
@@ -4348,11 +4387,26 @@ input sitePagePluginCreatorPluginOptionsNameQueryString {
   glob: String
 }
 
+input sitePagePluginCreatorPluginOptionsOffsetYQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
 input sitePagePluginCreatorPluginOptionsPathQueryString {
   eq: String
   ne: String
   regex: String
   glob: String
+}
+
+input sitePagePluginCreatorPluginOptionsPluginsBrowserApIsQueryList {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+  in: [String]
 }
 
 input sitePagePluginCreatorPluginOptionsPluginsIdQueryString {
@@ -4368,6 +4422,8 @@ input sitePagePluginCreatorPluginOptionsPluginsInputObject {
   name: sitePagePluginCreatorPluginOptionsPluginsNameQueryString
   version: sitePagePluginCreatorPluginOptionsPluginsVersionQueryString
   pluginOptions: sitePagePluginCreatorPluginOptionsPluginsPluginOptionsInputObject
+  browserAPIs: sitePagePluginCreatorPluginOptionsPluginsBrowserApIsQueryList
+  ssrAPIs: sitePagePluginCreatorPluginOptionsPluginsSsrApIsQueryList
   pluginFilepath: sitePagePluginCreatorPluginOptionsPluginsPluginFilepathQueryString
 }
 
@@ -4393,6 +4449,7 @@ input sitePagePluginCreatorPluginOptionsPluginsPluginOptionsBackgroundColorQuery
 }
 
 input sitePagePluginCreatorPluginOptionsPluginsPluginOptionsInputObject {
+  offsetY: sitePagePluginCreatorPluginOptionsPluginsPluginOptionsOffsetYQueryString
   backgroundColor: sitePagePluginCreatorPluginOptionsPluginsPluginOptionsBackgroundColorQueryString
   quality: sitePagePluginCreatorPluginOptionsPluginsPluginOptionsQualityQueryInteger
   maxWidth: sitePagePluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger
@@ -4402,6 +4459,13 @@ input sitePagePluginCreatorPluginOptionsPluginsPluginOptionsInputObject {
 input sitePagePluginCreatorPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger {
   eq: Int
   ne: Int
+}
+
+input sitePagePluginCreatorPluginOptionsPluginsPluginOptionsOffsetYQueryString {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
 }
 
 input sitePagePluginCreatorPluginOptionsPluginsPluginOptionsQualityQueryInteger {
@@ -4423,6 +4487,14 @@ input sitePagePluginCreatorPluginOptionsPluginsResolveQueryString {
   ne: String
   regex: String
   glob: String
+}
+
+input sitePagePluginCreatorPluginOptionsPluginsSsrApIsQueryList {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+  in: [String]
 }
 
 input sitePagePluginCreatorPluginOptionsPluginsVersionQueryString {
@@ -4852,6 +4924,7 @@ input sitePluginConnectionPluginOptionsInputObject_2 {
   plugins: sitePluginConnectionPluginOptionsPluginsQueryList_2
   path: sitePluginConnectionPluginOptionsPathQueryString_2
   name: sitePluginConnectionPluginOptionsNameQueryString_2
+  offsetY: sitePluginConnectionPluginOptionsOffsetYQueryString_2
   backgroundColor: sitePluginConnectionPluginOptionsBackgroundColorQueryString_3
   quality: sitePluginConnectionPluginOptionsQualityQueryInteger_2
   maxWidth: sitePluginConnectionPluginOptionsMaxWidthQueryInteger_2
@@ -4887,11 +4960,26 @@ input sitePluginConnectionPluginOptionsNameQueryString_2 {
   glob: String
 }
 
+input sitePluginConnectionPluginOptionsOffsetYQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
 input sitePluginConnectionPluginOptionsPathQueryString_2 {
   eq: String
   ne: String
   regex: String
   glob: String
+}
+
+input sitePluginConnectionPluginOptionsPluginsBrowserApIsQueryList_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+  in: [String]
 }
 
 input sitePluginConnectionPluginOptionsPluginsIdQueryString_2 {
@@ -4907,6 +4995,8 @@ input sitePluginConnectionPluginOptionsPluginsInputObject_2 {
   name: sitePluginConnectionPluginOptionsPluginsNameQueryString_2
   version: sitePluginConnectionPluginOptionsPluginsVersionQueryString_2
   pluginOptions: sitePluginConnectionPluginOptionsPluginsPluginOptionsInputObject_2
+  browserAPIs: sitePluginConnectionPluginOptionsPluginsBrowserApIsQueryList_2
+  ssrAPIs: sitePluginConnectionPluginOptionsPluginsSsrApIsQueryList_2
   pluginFilepath: sitePluginConnectionPluginOptionsPluginsPluginFilepathQueryString_2
 }
 
@@ -4932,6 +5022,7 @@ input sitePluginConnectionPluginOptionsPluginsPluginOptionsBackgroundColorQueryS
 }
 
 input sitePluginConnectionPluginOptionsPluginsPluginOptionsInputObject_2 {
+  offsetY: sitePluginConnectionPluginOptionsPluginsPluginOptionsOffsetYQueryString_2
   backgroundColor: sitePluginConnectionPluginOptionsPluginsPluginOptionsBackgroundColorQueryString_2
   quality: sitePluginConnectionPluginOptionsPluginsPluginOptionsQualityQueryInteger_2
   maxWidth: sitePluginConnectionPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger_2
@@ -4941,6 +5032,13 @@ input sitePluginConnectionPluginOptionsPluginsPluginOptionsInputObject_2 {
 input sitePluginConnectionPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger_2 {
   eq: Int
   ne: Int
+}
+
+input sitePluginConnectionPluginOptionsPluginsPluginOptionsOffsetYQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
 }
 
 input sitePluginConnectionPluginOptionsPluginsPluginOptionsQualityQueryInteger_2 {
@@ -4962,6 +5060,14 @@ input sitePluginConnectionPluginOptionsPluginsResolveQueryString_2 {
   ne: String
   regex: String
   glob: String
+}
+
+input sitePluginConnectionPluginOptionsPluginsSsrApIsQueryList_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+  in: [String]
 }
 
 input sitePluginConnectionPluginOptionsPluginsVersionQueryString_2 {
@@ -5070,6 +5176,7 @@ enum SitePluginConnectionSortByFieldsEnum {
   pluginOptions___plugins
   pluginOptions___path
   pluginOptions___name
+  pluginOptions___offsetY
   pluginOptions___backgroundColor
   pluginOptions___quality
   pluginOptions___maxWidth
@@ -5139,6 +5246,7 @@ enum sitePluginDistinctEnum {
   pluginOptions___plugins
   pluginOptions___path
   pluginOptions___name
+  pluginOptions___offsetY
   pluginOptions___backgroundColor
   pluginOptions___quality
   pluginOptions___maxWidth
@@ -5224,6 +5332,7 @@ enum sitePluginGroupEnum {
   pluginOptions___plugins
   pluginOptions___path
   pluginOptions___name
+  pluginOptions___offsetY
   pluginOptions___backgroundColor
   pluginOptions___quality
   pluginOptions___maxWidth
@@ -5527,6 +5636,7 @@ input sitePluginPluginOptionsInputObject_2 {
   plugins: sitePluginPluginOptionsPluginsQueryList_2
   path: sitePluginPluginOptionsPathQueryString_2
   name: sitePluginPluginOptionsNameQueryString_2
+  offsetY: sitePluginPluginOptionsOffsetYQueryString_2
   backgroundColor: sitePluginPluginOptionsBackgroundColorQueryString_3
   quality: sitePluginPluginOptionsQualityQueryInteger_2
   maxWidth: sitePluginPluginOptionsMaxWidthQueryInteger_2
@@ -5562,11 +5672,26 @@ input sitePluginPluginOptionsNameQueryString_2 {
   glob: String
 }
 
+input sitePluginPluginOptionsOffsetYQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+}
+
 input sitePluginPluginOptionsPathQueryString_2 {
   eq: String
   ne: String
   regex: String
   glob: String
+}
+
+input sitePluginPluginOptionsPluginsBrowserApIsQueryList_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+  in: [String]
 }
 
 input sitePluginPluginOptionsPluginsIdQueryString_2 {
@@ -5582,6 +5707,8 @@ input sitePluginPluginOptionsPluginsInputObject_2 {
   name: sitePluginPluginOptionsPluginsNameQueryString_2
   version: sitePluginPluginOptionsPluginsVersionQueryString_2
   pluginOptions: sitePluginPluginOptionsPluginsPluginOptionsInputObject_2
+  browserAPIs: sitePluginPluginOptionsPluginsBrowserApIsQueryList_2
+  ssrAPIs: sitePluginPluginOptionsPluginsSsrApIsQueryList_2
   pluginFilepath: sitePluginPluginOptionsPluginsPluginFilepathQueryString_2
 }
 
@@ -5607,6 +5734,7 @@ input sitePluginPluginOptionsPluginsPluginOptionsBackgroundColorQueryString_2 {
 }
 
 input sitePluginPluginOptionsPluginsPluginOptionsInputObject_2 {
+  offsetY: sitePluginPluginOptionsPluginsPluginOptionsOffsetYQueryString_2
   backgroundColor: sitePluginPluginOptionsPluginsPluginOptionsBackgroundColorQueryString_2
   quality: sitePluginPluginOptionsPluginsPluginOptionsQualityQueryInteger_2
   maxWidth: sitePluginPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger_2
@@ -5616,6 +5744,13 @@ input sitePluginPluginOptionsPluginsPluginOptionsInputObject_2 {
 input sitePluginPluginOptionsPluginsPluginOptionsMaxWidthQueryInteger_2 {
   eq: Int
   ne: Int
+}
+
+input sitePluginPluginOptionsPluginsPluginOptionsOffsetYQueryString_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
 }
 
 input sitePluginPluginOptionsPluginsPluginOptionsQualityQueryInteger_2 {
@@ -5637,6 +5772,14 @@ input sitePluginPluginOptionsPluginsResolveQueryString_2 {
   ne: String
   regex: String
   glob: String
+}
+
+input sitePluginPluginOptionsPluginsSsrApIsQueryList_2 {
+  eq: String
+  ne: String
+  regex: String
+  glob: String
+  in: [String]
 }
 
 input sitePluginPluginOptionsPluginsVersionQueryString_2 {
