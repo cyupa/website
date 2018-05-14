@@ -85,6 +85,9 @@ const Content = styled("div", {
     th: {
       backgroundColor: COLORS.p08,
       fontWeight: 500
+    },
+    ".anchor": {
+      display: "none" // Hide the link icon added by gatsby-remark-autolink-headers
     }
   }
 });

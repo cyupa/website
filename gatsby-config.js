@@ -30,6 +30,12 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
+          {
+            resolve: "gatsby-remark-autolink-headers",
+            options: {
+              offsetY: `120`
+            }
+          },
           "gatsby-remark-copy-linked-files",
           {
             resolve: "gatsby-remark-images",
