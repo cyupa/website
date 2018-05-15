@@ -34,7 +34,7 @@ const Wrapper = styled("div", ({ overflowBottom }: { overflowBottom: boolean }) 
 
   $nest: {
     a: {
-      color: COLORS.p60
+      color: `${COLORS.p40} !important`
     },
     p: {
       opacity: LIGHT_TEXT_OPACITY
