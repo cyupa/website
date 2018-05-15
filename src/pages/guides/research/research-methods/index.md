@@ -253,3 +253,12 @@ Participants are given a task to achieve and are observed trying to complete the
 #### Liked this article?
 
 [Check out our other research guides](/guides) or [learn more](/) about how Dovetail can help you with customer feedback and user research analysis.
+
+<!-- ## Other research methods
+
+* Archival Research
+* Diary Studies
+* Qualitative Data Analysis
+* Semi-Structured Interviews
+* Shadowing
+* Tree Testing -->
