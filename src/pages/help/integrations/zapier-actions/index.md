@@ -1,19 +1,11 @@
 ---
-path: "/help/zapier"
-date: "2018-04-11"
-title: "Import data from integrations via Zapier"
-weight: 3
+path: "/help/zapier-actions"
+date: "2018-05-21"
+title: "Add data to Dovetail with Actions"
+weight: 2
 ---
 
-Our [Zapier](https://zapier.com/) integration lets you connect 1,000+ apps and services to Dovetail to centralize your research data and customer feedback in one place.
-
-For example, here are some common use cases for integrations:
-
-* **Send @mentions to Dovetail** – When you’re mentioned on Twitter, save the tweet as a new note in Dovetail.
-* **Save Typeform survey responses to Dovetail** – When someone responds to a question in a Typeform survey, append their answer to a note.
-* **Save Intercom conversations in Dovetail** – When a new conversation is created in Intercom, save it as a note in Dovetail.
-
-**Note:** This example uses the **[Email to Zapier](https://zapier.com/apps/email/account/integrations)** Trigger App, however, you could choose whatever Trigger App you like from Zapier.
+[Zapier](https://zapier.com/) lets you connect apps together and move data around using automated workflows. Our Zapier integration has five **Triggers** and three **Actions** to help you move data between Dovetail and the other apps you use, in both directions.
 
 ## Get started with Zapier
 
@@ -21,7 +13,7 @@ The first thing is to create a Zapier account if you don’t have one already. S
 
 ![Screenshot of Zapier’s user dashboard](./make-zap.png)
 
-## Choose your trigger
+## Choose your Trigger App
 
 Next, you’ll need to choose the **Trigger App** for your integration. This is the app you’d like to connect to Dovetail, for example Twitter, Typeform, Intercom, Google Sheets, etc.
 
@@ -31,7 +23,7 @@ In this example, we’re going to choose **Email by Zapier**. This Trigger App g
 
 You’ll need to choose the ‘trigger’ for the app. This is the event that happens to trigger the integration. In our case, the trigger will be ‘New inbound email’.
 
-## Authorize the Dovetail Trigger App
+## Authorize the Dovetail Action App
 
 After you’ve configured the trigger, the next step is to choose the **Action App** and authorize Dovetail. You only have to authorize Dovetail once.
 
