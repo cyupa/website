@@ -1,4 +1,4 @@
 ---
 title: "Manage your account"
-weight: 4
+weight: 6
 ---

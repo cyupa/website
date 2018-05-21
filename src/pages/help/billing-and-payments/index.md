@@ -1,4 +1,4 @@
 ---
 title: "Billing and payments"
-weight: 3
+weight: 4
 ---
