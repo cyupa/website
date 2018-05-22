@@ -50,12 +50,10 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        anonymize: true,
-        head: false,
-        respectDNT: true,
-        trackingId: "UA-97199079-2"
+        id: "GTM-M2PTNW9",
+        includeInDevelopment: false
       }
     },
     {
