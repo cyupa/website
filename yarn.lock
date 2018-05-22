@@ -5106,9 +5106,9 @@ gatsby-plugin-canonical-urls@^1.0.18:
   dependencies:
     babel-runtime "^6.26.0"
 
-gatsby-plugin-google-analytics@^1.0.29:
-  version "1.0.29"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-1.0.29.tgz#9ed1beb355f5989594c1b50f3da3cd24a922bb5d"
+gatsby-plugin-google-tagmanager@^1.0.18:
+  version "1.0.18"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-1.0.18.tgz#703aa3cdf9f105138c7835977872e9c97caa8c43"
   dependencies:
     babel-runtime "^6.26.0"
 
