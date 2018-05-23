@@ -1,5 +1,4 @@
-import { Flex } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
+import { Flex, Item } from "@heydovetail/ui-components";
 import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
