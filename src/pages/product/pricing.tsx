@@ -45,7 +45,7 @@ export default class extends React.PureComponent {
                   />
                 </Item>
                 <Item>
-                  <Center>
+                  <div style={{ display: "flex", justifyContent: "center" }}>
                     <SubtleButtonLink color={COLORS.i60} location={locations.features()}>
                       <Flow styled={{ gap: 4 }}>
                         <Item>See all features</Item>
@@ -54,7 +54,7 @@ export default class extends React.PureComponent {
                         </Item>
                       </Flow>
                     </SubtleButtonLink>
-                  </Center>
+                  </div>
                 </Item>
               </Flex>
             </Item>
