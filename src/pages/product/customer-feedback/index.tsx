@@ -234,7 +234,9 @@ export default class extends React.PureComponent {
             <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
               <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
                 <Item>
-                  <SocialProof testimonials={[testimonials.abhilash, testimonials.benjamin, testimonials.erik]} />
+                  <SocialProof
+                    testimonials={[testimonials.abhilash, testimonials.benjamin, testimonials.erik, testimonials.michael]}
+                  />
                 </Item>
                 <Item>
                   <UseCases showTitle />
