@@ -1,5 +1,5 @@
-import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { Item } from "@heydovetail/website/components/layout/Item";
+import { Flex } from "@heydovetail/ui-components";
+import { Item } from "@heydovetail/ui-components";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { IntegrationCard } from "@heydovetail/website/components/site/IntegrationCard";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";

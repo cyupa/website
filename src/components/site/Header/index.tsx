@@ -1,5 +1,5 @@
 import { COLORS, SubtleButtonLink } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/website/components/layout/Item";
+import { Item } from "@heydovetail/ui-components";
 import { Justify } from "@heydovetail/website/components/layout/Justify";
 import { Navigation } from "@heydovetail/website/components/site/Header/navigation";
 import { Sticky } from "@heydovetail/website/components/util/Sticky";

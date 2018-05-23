@@ -1,9 +1,5 @@
-import { COLORS, SubtleButtonLink } from "@heydovetail/ui-components";
-import IconArrowRightMini from "@heydovetail/website/components/icons/feather/IconArrowRightMini";
+import { COLORS, Flex, Flow, IconArrowRightMini, Item, SubtleButtonLink } from "@heydovetail/ui-components";
 import { Center } from "@heydovetail/website/components/layout/Center";
-import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { Flow } from "@heydovetail/website/components/layout/Flow";
-import { Item } from "@heydovetail/website/components/layout/Item";
 import { Faq } from "@heydovetail/website/components/site/Faq";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";

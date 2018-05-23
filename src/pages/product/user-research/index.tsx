@@ -1,5 +1,5 @@
 import hero from "!file-loader!./hero.png";
-import { COLORS } from "@heydovetail/ui-components";
+import { COLORS, Flex, Item } from "@heydovetail/ui-components";
 import IllustrationAnnotationsResearch from "@heydovetail/website/components/illustrations/IllustrationAnnotationsResearch";
 import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
 import IllustrationBoardLarge from "@heydovetail/website/components/illustrations/IllustrationBoardLarge";
@@ -8,8 +8,6 @@ import IllustrationEditor from "@heydovetail/website/components/illustrations/Il
 import IllustrationProjectsResearch from "@heydovetail/website/components/illustrations/IllustrationProjectsResearch";
 import IllustrationRealtime from "@heydovetail/website/components/illustrations/IllustrationRealtime";
 import IllustrationTeam from "@heydovetail/website/components/illustrations/IllustrationTeam";
-import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { Item } from "@heydovetail/website/components/layout/Item";
 import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { FeatureHeroLarge } from "@heydovetail/website/components/site/FeatureHeroLarge";

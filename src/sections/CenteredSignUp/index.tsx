@@ -1,7 +1,7 @@
+import { Flex } from "@heydovetail/ui-components";
+import { Item } from "@heydovetail/ui-components";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { Container } from "@heydovetail/website/components/layout/Container";
-import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { Item } from "@heydovetail/website/components/layout/Item";
 import { SignupWithEmail } from "@heydovetail/website/components/site/SignupWithEmail";
 import { HALF_GAP, WIDTH } from "@heydovetail/website/constants";
 import React from "react";

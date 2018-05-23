@@ -1,6 +1,6 @@
 import { BORDER_RADIUS, COLORS, SubtleButtonLink } from "@heydovetail/ui-components";
-import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { Item } from "@heydovetail/website/components/layout/Item";
+import { Flex } from "@heydovetail/ui-components";
+import { Item } from "@heydovetail/ui-components";
 import { IntegrationIcon } from "@heydovetail/website/components/site/IntegrationIcon";
 import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import React from "react";

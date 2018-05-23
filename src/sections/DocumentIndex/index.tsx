@@ -1,6 +1,6 @@
+import { Flex } from "@heydovetail/ui-components";
+import { Item } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
-import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { Item } from "@heydovetail/website/components/layout/Item";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import React from "react";

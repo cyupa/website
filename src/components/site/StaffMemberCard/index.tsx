@@ -1,7 +1,7 @@
 import { SmallText } from "@heydovetail/ui-components";
+import { Flex } from "@heydovetail/ui-components";
+import { Item } from "@heydovetail/ui-components";
 import { Card } from "@heydovetail/website/components/layout/Card";
-import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { Item } from "@heydovetail/website/components/layout/Item";
 import React from "react";
 
 interface Props {

@@ -1,7 +1,7 @@
 import { BREAKPOINT_PHABLET } from "@heydovetail/ui-components";
+import { Flex } from "@heydovetail/ui-components";
+import { Item } from "@heydovetail/ui-components";
 import { Center } from "@heydovetail/website/components/layout/Center";
-import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { Item } from "@heydovetail/website/components/layout/Item";
 import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import React from "react";
 import { styled } from "typestyle-react";

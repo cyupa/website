@@ -1,6 +1,6 @@
 import { COLORS } from "@heydovetail/ui-components";
-import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
-import { Item } from "@heydovetail/website/components/layout/Item";
+import { Item } from "@heydovetail/ui-components";
+import { FlexWrap } from "@heydovetail/ui-components";
 import { HALF_GAP } from "@heydovetail/website/constants";
 import React from "react";
 

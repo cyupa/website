@@ -1,7 +1,7 @@
 import { SubtleButtonLink } from "@heydovetail/ui-components";
+import { Item } from "@heydovetail/ui-components";
+import { Flow } from "@heydovetail/ui-components";
 import IconArrowRightMini from "@heydovetail/website/components/icons/feather/IconArrowRightMini";
-import { Flow } from "@heydovetail/website/components/layout/Flow";
-import { Item } from "@heydovetail/website/components/layout/Item";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
 import React from "react";
 

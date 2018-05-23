@@ -1,9 +1,9 @@
 import { ButtonLink } from "@heydovetail/ui-components";
 import { BORDER_RADIUS, COLORS, SmallText } from "@heydovetail/ui-components";
+import { Flex } from "@heydovetail/ui-components";
+import { Item } from "@heydovetail/ui-components";
+import { Flow } from "@heydovetail/ui-components";
 import IconCheckCircle from "@heydovetail/website/components/icons/feather/IconCheckCircle";
-import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { Flow } from "@heydovetail/website/components/layout/Flow";
-import { Item } from "@heydovetail/website/components/layout/Item";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
 import { styled } from "typestyle-react";

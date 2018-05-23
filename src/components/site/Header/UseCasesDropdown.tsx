@@ -1,11 +1,11 @@
 import { Dropdown } from "@heydovetail/ui-components";
+import { Item } from "@heydovetail/ui-components";
+import { FlexWrap } from "@heydovetail/ui-components";
 import PictogramFeedback from "@heydovetail/website/components/icons/pictograms/PictogramFeedback";
 import PictogramQda from "@heydovetail/website/components/icons/pictograms/PictogramQda";
 import PictogramRepository from "@heydovetail/website/components/icons/pictograms/PictogramRepository";
 import PictogramResearch from "@heydovetail/website/components/icons/pictograms/PictogramResearch";
 import { Container } from "@heydovetail/website/components/layout/Container";
-import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
-import { Item } from "@heydovetail/website/components/layout/Item";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
 import { UseCase } from "./UseCase";

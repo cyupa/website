@@ -1,4 +1,4 @@
-import { Item } from "@heydovetail/website/components/layout/Item";
+import { Item } from "@heydovetail/ui-components";
 import { storiesOf } from "@heydovetail/website/util/stories";
 import React from "react";
 import { Justify } from "../";
