@@ -13,7 +13,7 @@ interface Props {
 
 export class Faq extends React.PureComponent<Props> {
   public render() {
-    const { answer, linkText = "Learn more", location, question } = this.props;
+    const { answer, linkText = "Learn more →", location, question } = this.props;
 
     return (
       <Flex styled={{ gap: 8, layout: "column" }}>
@@ -24,10 +24,12 @@ export class Faq extends React.PureComponent<Props> {
           <p style={{ opacity: 1 }}>
             <span style={{ opacity: LIGHT_TEXT_OPACITY }}>{answer}</span>
             {location !== undefined ? (
-              <LocationLink location={location} presentation="text">
+              <>
                 {" "}
-                {linkText}
-              </LocationLink>
+                <LocationLink location={location} presentation="text">
+                  {linkText}
+                </LocationLink>
+              </>
             ) : null}
           </p>
         </Item>

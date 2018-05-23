@@ -72,7 +72,6 @@ export default class extends React.PureComponent {
                     question="How safe is our data?"
                     answer="We use industry-standard cloud infrastructure along with extra safeguards to ensure your data remains private and secure."
                     location={locations.security()}
-                    linkText="Learn more →"
                   />,
                   <Faq
                     question="Will we be charged when the trial’s up?"
