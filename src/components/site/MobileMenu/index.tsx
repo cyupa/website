@@ -1,7 +1,7 @@
 import { ButtonLink, COLORS, Dropdown } from "@heydovetail/ui-components";
-import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { Flow } from "@heydovetail/website/components/layout/Flow";
-import { Item } from "@heydovetail/website/components/layout/Item";
+import { Flex } from "@heydovetail/ui-components";
+import { Item } from "@heydovetail/ui-components";
+import { Flow } from "@heydovetail/ui-components";
 import { GoToApp } from "@heydovetail/website/components/site/Header/goToApp";
 import { LinkList } from "@heydovetail/website/components/site/LinkList";
 import { locations } from "@heydovetail/website/routing/locations";

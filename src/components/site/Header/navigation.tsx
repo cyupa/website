@@ -10,9 +10,9 @@ import {
   SubtleButton,
   SubtleButtonLink
 } from "@heydovetail/ui-components";
-import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { Flow } from "@heydovetail/website/components/layout/Flow";
-import { Item } from "@heydovetail/website/components/layout/Item";
+import { Item } from "@heydovetail/ui-components";
+import { Flex } from "@heydovetail/ui-components";
+import { Flow } from "@heydovetail/ui-components";
 import { ThemeColor } from "@heydovetail/website/components/site/Header";
 import { GoToApp } from "@heydovetail/website/components/site/Header/goToApp";
 import { MobileMenu } from "@heydovetail/website/components/site/MobileMenu";

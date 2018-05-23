@@ -1,6 +1,6 @@
+import { Flex } from "@heydovetail/ui-components";
+import { Item } from "@heydovetail/ui-components";
 import { Card } from "@heydovetail/website/components/layout/Card";
-import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { Item } from "@heydovetail/website/components/layout/Item";
 import { Avatar } from "@heydovetail/website/components/site/Avatar";
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import React from "react";

@@ -1,5 +1,4 @@
-import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { Item } from "@heydovetail/website/components/layout/Item";
+import { Flex, Item } from "@heydovetail/ui-components";
 import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
@@ -14,7 +13,7 @@ interface Props {
 
 export class Faq extends React.PureComponent<Props> {
   public render() {
-    const { answer, linkText = "Learn more", location, question } = this.props;
+    const { answer, linkText = "Learn more →", location, question } = this.props;
 
     return (
       <Flex styled={{ gap: 8, layout: "column" }}>
@@ -24,7 +23,14 @@ export class Faq extends React.PureComponent<Props> {
         <Item>
           <p style={{ opacity: 1 }}>
             <span style={{ opacity: LIGHT_TEXT_OPACITY }}>{answer}</span>
-            {location !== undefined ? <LocationLink location={location}> {linkText}</LocationLink> : null}
+            {location !== undefined ? (
+              <>
+                {" "}
+                <LocationLink location={location} presentation="text">
+                  {linkText}
+                </LocationLink>
+              </>
+            ) : null}
           </p>
         </Item>
       </Flex>

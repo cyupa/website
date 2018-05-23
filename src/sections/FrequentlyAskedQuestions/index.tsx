@@ -1,7 +1,7 @@
+import { Flex } from "@heydovetail/ui-components";
+import { Item } from "@heydovetail/ui-components";
+import { FlexWrap } from "@heydovetail/ui-components";
 import { Center } from "@heydovetail/website/components/layout/Center";
-import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
-import { Item } from "@heydovetail/website/components/layout/Item";
 import { Faq } from "@heydovetail/website/components/site/Faq";
 import { HALF_GAP } from "@heydovetail/website/constants";
 import React from "react";

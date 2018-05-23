@@ -1,8 +1,9 @@
 import { ButtonLink } from "@heydovetail/ui-components";
 import { BORDER_RADIUS, COLORS, SmallText } from "@heydovetail/ui-components";
+import { Flex } from "@heydovetail/ui-components";
+import { Item } from "@heydovetail/ui-components";
+import { Flow } from "@heydovetail/ui-components";
 import IconCheckCircle from "@heydovetail/website/components/icons/feather/IconCheckCircle";
-import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { Item } from "@heydovetail/website/components/layout/Item";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
 import { styled } from "typestyle-react";
@@ -53,11 +54,18 @@ export class PricingCard extends React.PureComponent<Props> {
               </Item>
             ))}
           </Flex>
-          <SignUpButton>
-            <ButtonLink color={COLORS.purple} location={locations.signUp()}>
-              Try free for 14 days
-            </ButtonLink>
-          </SignUpButton>
+          <Actions>
+            <Flow>
+              <Item>
+                <ButtonLink color={COLORS.purple} location={locations.signUp()}>
+                  Try now
+                </ButtonLink>
+              </Item>
+              <Item>
+                <ButtonLink location={locations.demo()}>Schedule a demo</ButtonLink>
+              </Item>
+            </Flow>
+          </Actions>
         </Features>
       </Wrapper>
     );
@@ -109,6 +117,6 @@ const FinePrint = styled("span", {
   textAlign: "center"
 });
 
-const SignUpButton = styled("div", {
+const Actions = styled("div", {
   marginTop: "48px"
 });

@@ -1,3 +1,5 @@
+import { Item } from "@heydovetail/ui-components";
+import { FlexWrap } from "@heydovetail/ui-components";
 import IntegrationBuffer from "@heydovetail/website/components/icons/integrations/IntegrationBuffer";
 import IntegrationCampaignMonitor from "@heydovetail/website/components/icons/integrations/IntegrationCampaignMonitor";
 import IntegrationDelighted from "@heydovetail/website/components/icons/integrations/IntegrationDelighted";
@@ -22,8 +24,6 @@ import IntegrationWordpress from "@heydovetail/website/components/icons/integrat
 import IntegrationWufoo from "@heydovetail/website/components/icons/integrations/IntegrationWufoo";
 import IntegrationYoutube from "@heydovetail/website/components/icons/integrations/IntegrationYoutube";
 import IntegrationZendesk from "@heydovetail/website/components/icons/integrations/IntegrationZendesk";
-import { FlexWrap } from "@heydovetail/website/components/layout/FlexWrap";
-import { Item } from "@heydovetail/website/components/layout/Item";
 import React from "react";
 
 export class Integrations extends React.PureComponent {

@@ -1,12 +1,7 @@
-import { COLORS, SubtleButtonLink } from "@heydovetail/ui-components";
-import IconArrowRightMini from "@heydovetail/website/components/icons/feather/IconArrowRightMini";
-import { Center } from "@heydovetail/website/components/layout/Center";
-import { Flex } from "@heydovetail/website/components/layout/Flex";
-import { Flow } from "@heydovetail/website/components/layout/Flow";
-import { Item } from "@heydovetail/website/components/layout/Item";
+import { COLORS, Flex, Flow, IconArrowRightMini, Item, SubtleButtonLink } from "@heydovetail/ui-components";
+import { Container } from "@heydovetail/website/components/layout/Container";
 import { Faq } from "@heydovetail/website/components/site/Faq";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
-import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { PricingCard } from "@heydovetail/website/components/site/PricingCard";
 import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
@@ -32,7 +27,7 @@ export default class extends React.PureComponent {
             content="Simple, transparent, and affordable pricing. Pay the same price each month regardless of your team size."
           />
         </Helmet>
-        <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
           <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
             <Item>
               <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
@@ -49,7 +44,7 @@ export default class extends React.PureComponent {
                   />
                 </Item>
                 <Item>
-                  <Center>
+                  <div style={{ display: "flex", justifyContent: "center" }}>
                     <SubtleButtonLink color={COLORS.i60} location={locations.features()}>
                       <Flow styled={{ gap: 4 }}>
                         <Item>See all features</Item>
@@ -58,7 +53,7 @@ export default class extends React.PureComponent {
                         </Item>
                       </Flow>
                     </SubtleButtonLink>
-                  </Center>
+                  </div>
                 </Item>
               </Flex>
             </Item>
@@ -97,8 +92,8 @@ export default class extends React.PureComponent {
                   <Faq
                     question="Do you offer product demos?"
                     answer="We sure do. We’re happy to give you a walkthrough over a video call, or if you’re in Sydney, we can pop into your office."
-                    location={locations.email()}
-                    linkText="Contact us"
+                    location={locations.demo()}
+                    linkText="Schedule a demo →"
                   />,
                   <Faq
                     question="How do you compare to similar tools?"
@@ -109,7 +104,7 @@ export default class extends React.PureComponent {
                         "https://www.quora.com/How-does-Dovetail-compare-to-other-research-software-on-the-market/answer/Benjamin-Humphrey",
                       openInNewTab: true
                     }}
-                    linkText="Check out our answer on Quora."
+                    linkText="Check out our answer on Quora →"
                   />,
                   <Faq
                     question="What’s the catch?"
@@ -125,7 +120,7 @@ export default class extends React.PureComponent {
               <CenteredSignUp />
             </Item>
           </Flex>
-        </LightContainer>
+        </Container>
       </>
     );
   }
