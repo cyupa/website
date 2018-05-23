@@ -24,7 +24,12 @@ export class Faq extends React.PureComponent<Props> {
         <Item>
           <p style={{ opacity: 1 }}>
             <span style={{ opacity: LIGHT_TEXT_OPACITY }}>{answer}</span>
-            {location !== undefined ? <LocationLink location={location}> {linkText}</LocationLink> : null}
+            {location !== undefined ? (
+              <LocationLink location={location} presentation="text">
+                {" "}
+                {linkText}
+              </LocationLink>
+            ) : null}
           </p>
         </Item>
       </Flex>
