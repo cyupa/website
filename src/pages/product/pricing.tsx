@@ -77,6 +77,7 @@ export default class extends React.PureComponent {
                     question="How safe is our data?"
                     answer="We use industry-standard cloud infrastructure along with extra safeguards to ensure your data remains private and secure."
                     location={locations.security()}
+                    linkText="Learn more →"
                   />,
                   <Faq
                     question="Will we be charged when the trial’s up?"
@@ -97,8 +98,8 @@ export default class extends React.PureComponent {
                   <Faq
                     question="Do you offer product demos?"
                     answer="We sure do. We’re happy to give you a walkthrough over a video call, or if you’re in Sydney, we can pop into your office."
-                    location={locations.email()}
-                    linkText="Contact us"
+                    location={locations.demo()}
+                    linkText="Schedule a demo →"
                   />,
                   <Faq
                     question="How do you compare to similar tools?"
@@ -109,7 +110,7 @@ export default class extends React.PureComponent {
                         "https://www.quora.com/How-does-Dovetail-compare-to-other-research-software-on-the-market/answer/Benjamin-Humphrey",
                       openInNewTab: true
                     }}
-                    linkText="Check out our answer on Quora."
+                    linkText="Check out our answer on Quora →"
                   />,
                   <Faq
                     question="What’s the catch?"
