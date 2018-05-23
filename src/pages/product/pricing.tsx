@@ -1,8 +1,8 @@
 import { COLORS, Flex, Flow, IconArrowRightMini, Item, SubtleButtonLink } from "@heydovetail/ui-components";
 import { Center } from "@heydovetail/website/components/layout/Center";
+import { Container } from "@heydovetail/website/components/layout/Container";
 import { Faq } from "@heydovetail/website/components/site/Faq";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
-import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { PricingCard } from "@heydovetail/website/components/site/PricingCard";
 import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
@@ -28,7 +28,7 @@ export default class extends React.PureComponent {
             content="Simple, transparent, and affordable pricing. Pay the same price each month regardless of your team size."
           />
         </Helmet>
-        <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
           <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
             <Item>
               <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
@@ -122,7 +122,7 @@ export default class extends React.PureComponent {
               <CenteredSignUp />
             </Item>
           </Flex>
-        </LightContainer>
+        </Container>
       </>
     );
   }
