@@ -1,9 +1,5 @@
-import { COLORS } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
-import { Flow } from "@heydovetail/ui-components";
-import { Flex } from "@heydovetail/ui-components";
+import { Breadcrumbs, COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
-import { Breadcrumbs } from "@heydovetail/website/components/site/Breadcrumbs";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { Lozenge } from "@heydovetail/website/components/site/Lozenge";
 import { PageContent } from "@heydovetail/website/components/site/PageContent";
