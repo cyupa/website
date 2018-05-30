@@ -38,12 +38,14 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
       </Helmet>
       <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
         <div style={{ maxWidth: WIDTH * 0.75 }}>
-          <Breadcrumbs
-            crumbs={pathContext.breadcrumb.map(breadcrumb => ({
-              location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
-              text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
-            }))}
-          />
+          <div style={{ fontWeight: 500 }}>
+            <Breadcrumbs
+              crumbs={pathContext.breadcrumb.map(breadcrumb => ({
+                location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
+                text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
+              }))}
+            />
+          </div>
           <Flex styled={{ gap: 16, layout: "column" }}>
             <Item>
               <HeroText center={false} title={frontmatter!.title!} />
@@ -65,12 +67,14 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
             </Item>
             <HorizontalRule />
             <Item>
-              <Breadcrumbs
-                crumbs={pathContext.breadcrumb.map(breadcrumb => ({
-                  location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
-                  text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
-                }))}
-              />
+              <div style={{ fontWeight: 500 }}>
+                <Breadcrumbs
+                  crumbs={pathContext.breadcrumb.map(breadcrumb => ({
+                    location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
+                    text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
+                  }))}
+                />
+              </div>
             </Item>
           </Flex>
         </div>
