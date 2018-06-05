@@ -49,7 +49,6 @@ export default class extends React.PureComponent {
                 text: "Add tags to data using inline annotations"
               },
               {
-                launched: false,
                 title: "Files",
                 text: "Organize and analyze images, audio, and video files"
               },

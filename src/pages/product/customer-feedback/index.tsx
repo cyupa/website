@@ -154,7 +154,6 @@ export default class extends React.PureComponent {
                         title: "Annotations"
                       },
                       {
-                        launched: false,
                         text: "Import images and files to organize and analyze",
                         title: "Images and files"
                       }
