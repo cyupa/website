@@ -5,6 +5,8 @@ title: "Upload images and files"
 weight: 1
 ---
 
+**Note:** This feature is currently in beta. [Enable beta features](/help/beta)
+
 You can drag and drop files into Dovetail notes, tag descriptions, and insights. Simply select one or multiple files on your computer and drag them into the editor area:
 
 ![Screenshot of dragging an image into Dovetail](./drag.png)
