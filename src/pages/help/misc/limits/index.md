@@ -22,3 +22,8 @@ These are our current technical limitations. We can’t guarantee the performanc
 * Up to 100,000 characters for the body
 * Up to 4,000 annotations
 * Up to 10 concurrent editors
+
+### Files
+
+* Up 20MB image size for previews
+* No other limits

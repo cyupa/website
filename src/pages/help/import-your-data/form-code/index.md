@@ -2,7 +2,7 @@
 date: "2018-04-11"
 path: "/help/form-code"
 title: "Embed a feedback form"
-weight: 5
+weight: 6
 ---
 
 Gather valuable feedback from your users with a simple, customizable, and embeddable form. When people fill it out, their feedback is saved in your Dovetail project, ready to organize and analyze alongside everything else.
