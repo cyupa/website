@@ -1,8 +1,5 @@
-import { COLORS, SubtleButtonLink } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
-import { Justify } from "@heydovetail/website/components/layout/Justify";
+import { COLORS, Item, Justify, Sticky, SubtleButtonLink } from "@heydovetail/ui-components";
 import { Navigation } from "@heydovetail/website/components/site/Header/navigation";
-import { Sticky } from "@heydovetail/website/components/util/Sticky";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
 import { styled } from "typestyle-react";

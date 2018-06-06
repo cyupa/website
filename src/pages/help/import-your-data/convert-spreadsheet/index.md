@@ -2,7 +2,7 @@
 path: "/help/convert-spreadsheet"
 date: "2018-05-03"
 title: "Convert a spreadsheet of data to notes"
-weight: 2
+weight: 3
 ---
 
 When [creating notes from a spreadsheet](/help/spreadsheet), it’s important to understand the difference between **structured data** and **unstructured data**.

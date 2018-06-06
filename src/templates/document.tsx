@@ -1,9 +1,5 @@
-import { COLORS } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
-import { Flow } from "@heydovetail/ui-components";
-import { Flex } from "@heydovetail/ui-components";
+import { Breadcrumbs, COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
-import { Breadcrumbs } from "@heydovetail/website/components/site/Breadcrumbs";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { Lozenge } from "@heydovetail/website/components/site/Lozenge";
 import { PageContent } from "@heydovetail/website/components/site/PageContent";
@@ -42,12 +38,14 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
       </Helmet>
       <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
         <div style={{ maxWidth: WIDTH * 0.75 }}>
-          <Breadcrumbs
-            crumbs={pathContext.breadcrumb.map(breadcrumb => ({
-              location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
-              text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
-            }))}
-          />
+          <div style={{ fontWeight: 500 }}>
+            <Breadcrumbs
+              crumbs={pathContext.breadcrumb.map(breadcrumb => ({
+                location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
+                text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
+              }))}
+            />
+          </div>
           <Flex styled={{ gap: 16, layout: "column" }}>
             <Item>
               <HeroText center={false} title={frontmatter!.title!} />
@@ -69,12 +67,14 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
             </Item>
             <HorizontalRule />
             <Item>
-              <Breadcrumbs
-                crumbs={pathContext.breadcrumb.map(breadcrumb => ({
-                  location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
-                  text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
-                }))}
-              />
+              <div style={{ fontWeight: 500 }}>
+                <Breadcrumbs
+                  crumbs={pathContext.breadcrumb.map(breadcrumb => ({
+                    location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
+                    text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
+                  }))}
+                />
+              </div>
             </Item>
           </Flex>
         </div>

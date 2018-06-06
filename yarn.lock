@@ -59,9 +59,9 @@
   dependencies:
     tslint-microsoft-contrib "^5.0.2"
 
-"@heydovetail/ui-components@^1.3.3":
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/@heydovetail/ui-components/-/ui-components-1.3.3.tgz#50d3bf161a9fcc334e77fff863893b90c23ecf05"
+"@heydovetail/ui-components@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@heydovetail/ui-components/-/ui-components-1.6.0.tgz#bb7159c9f014b2bd4fb695c590ee03b18089fb17"
   dependencies:
     "@heydovetail/svg-to-react" "^1.1.1"
     "@types/react-router-dom" "^4.2.6"
@@ -70,7 +70,7 @@
     react-transition-group "^2.3.1"
     tslib "^1.9.0"
     typestyle "^1.7.2"
-    typestyle-react "^1.2.0"
+    typestyle-react "^1.2.3"
 
 "@storybook/addon-actions@3.4.1", "@storybook/addon-actions@^3.2.10":
   version "3.4.1"
@@ -3550,6 +3550,10 @@ dateformat@^2.0.0:
 death@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/death/-/death-1.1.0.tgz#01aa9c401edd92750514470b8266390c66c67318"
+
+debounce-microtask@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/debounce-microtask/-/debounce-microtask-1.0.0.tgz#3da58188f2ca3ce8f793550f45122a153756afd6"
 
 debug@2, debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.3, debug@^2.6.6, debug@^2.6.8:
   version "2.6.9"
@@ -12986,6 +12990,14 @@ typestyle-react@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/typestyle-react/-/typestyle-react-1.2.0.tgz#9595a2d66052fc58e49acdcb708eb147b2154e4c"
   dependencies:
+    tslib "^1.9.0"
+    typestyle "^1.7.2"
+
+typestyle-react@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/typestyle-react/-/typestyle-react-1.2.3.tgz#89c2d1c3ef7933424ddb48546b609c10f949690f"
+  dependencies:
+    debounce-microtask "^1.0.0"
     tslib "^1.9.0"
     typestyle "^1.7.2"
 

@@ -22,10 +22,11 @@ export default class extends React.PureComponent<Props> {
       1,
       0,
       <ActionCard
-        title="Contact us"
-        text="Say hi! We’re based in Sydney and usually respond within a couple of hours."
-        buttonText="Email support"
         buttonLocation={locations.email()}
+        buttonText="Email support"
+        showPeople
+        text="Say hi! We’re based in Sydney and usually respond within a couple of hours."
+        title="Contact us"
       />
     );
 
@@ -33,11 +34,11 @@ export default class extends React.PureComponent<Props> {
       2,
       0,
       <ActionCard
-        title="Chat with us on Slack"
-        text="Join our open Slack community to chat with us and other Dovetail users."
         buttonColor={COLORS.green}
-        buttonText="Join our Slack"
         buttonLocation={locations.slack()}
+        buttonText="Join our Slack"
+        text="Join our open Slack community to chat with us and other Dovetail users."
+        title="Chat with us on Slack"
       />
     );
 
@@ -45,11 +46,11 @@ export default class extends React.PureComponent<Props> {
       4,
       0,
       <ActionCard
-        title="Find us on Twitter"
-        text="Follow @hidovetail for product updates, news, and answers to your questions."
         buttonColor={COLORS.blue}
-        buttonText="Find us on Twitter"
         buttonLocation={locations.twitter()}
+        buttonText="Follow us on Twitter"
+        text="Follow @hidovetail for product updates, news, and answers to your questions."
+        title="Find us on Twitter"
       />
     );
 
@@ -57,10 +58,10 @@ export default class extends React.PureComponent<Props> {
       9,
       0,
       <ActionCard
-        title="Learn more"
-        text="Check out our Medium blog for product updates, company news, and tips &amp; tricks."
-        buttonText="Visit blog"
         buttonLocation={locations.blog()}
+        buttonText="Visit blog"
+        text="Check out our Medium blog for product updates, company news, and tips &amp; tricks."
+        title="Learn more"
       />
     );
 

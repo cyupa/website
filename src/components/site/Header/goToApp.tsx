@@ -1,8 +1,4 @@
-import { ButtonLink } from "@heydovetail/ui-components";
-import { COLORS } from "@heydovetail/ui-components";
-import { Flex } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
-import IconArrowRightMini from "@heydovetail/website/components/icons/feather/IconArrowRightMini";
+import { ButtonLink, COLORS, Flex, IconArrowRightMini, Item } from "@heydovetail/ui-components";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
 

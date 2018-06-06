@@ -61,7 +61,6 @@ export default class extends React.PureComponent {
                   <FeatureHero
                     image={<IllustrationFiles size="100%" />}
                     imagePosition="left"
-                    launched={false}
                     text="Drag &amp; drop photos, screenshots, audio recordings, videos, and more into notes and keep the context around the file."
                     title="Store images, audio, video, and more."
                   />
@@ -81,7 +80,6 @@ export default class extends React.PureComponent {
                         title: "Notes"
                       },
                       {
-                        launched: false,
                         text: "Organize photos, recordings, and screenshots",
                         title: "Files"
                       },
