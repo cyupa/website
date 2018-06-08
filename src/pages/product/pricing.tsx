@@ -49,11 +49,11 @@ export default class extends React.PureComponent {
                   />
                 </Item>
                 <Item>
-                  <Flex styled={{ alignItems: "center", justifyContent: "center" }}>
+                  <Flex styled={{ alignItems: "center", gap: 8, justifyContent: "center" }}>
                     <Item style={{ flexGrow: 0 }}>
                       <SubtleButtonLink color={COLORS.i60} location={locations.features()}>
                         <Flow styled={{ gap: 4 }}>
-                          <Item>Features</Item>
+                          <Item>All features</Item>
                           <Item>
                             <IconArrowRightMini />
                           </Item>
@@ -63,7 +63,7 @@ export default class extends React.PureComponent {
                     <Item style={{ flexGrow: 0 }}>
                       <SubtleButtonLink color={COLORS.i60} location={locations.customers()}>
                         <Flow styled={{ gap: 4 }}>
-                          <Item>Customers</Item>
+                          <Item>Our customers</Item>
                           <Item>
                             <IconArrowRightMini />
                           </Item>
