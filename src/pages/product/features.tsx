@@ -41,28 +41,36 @@ export default class extends React.PureComponent {
                 text: "Take notes in our easy-to-use rich text editor"
               },
               {
-                title: "Real time collaboration",
-                text: "Collaborate on notes with others in real time"
-              },
-              {
                 title: "Annotations",
                 text: "Add tags to data using inline annotations"
               },
               {
-                title: "Files",
-                text: "Organize and analyze images, audio, and video files"
-              },
-              {
-                title: "Insights",
-                text: "Create and store insights during analysis"
+                title: "Real time editing",
+                text: "Collaborate on notes with others in real time"
               },
               {
                 title: "Boards",
                 text: "View notes, tags, and insights on a drag & drop board"
               },
               {
+                title: "Images",
+                text: "Add images to research notes, tags, and insights"
+              },
+              {
+                title: "Files",
+                text: "Store and organize documents, audio, and video files"
+              },
+              {
+                title: "Insights",
+                text: "Summarize and share research insights during analysis"
+              },
+              {
                 title: "Sentiment analysis",
                 text: "Automatically analyze the sentiment of text"
+              },
+              {
+                title: "Zapier",
+                text: "Import data from thousands of apps like Trello and Wufoo"
               },
               {
                 title: "Bar chart",
@@ -97,16 +105,32 @@ export default class extends React.PureComponent {
                 text: "Export notes & insights as PDFs and tags as a spreadsheet"
               },
               {
-                title: "Zapier",
-                text: "Import data from thousands of apps like Intercom and Wufoo"
-              },
-              {
                 title: "Mobile",
                 text: "Browse notes, tags, and insights on your phone or tablet"
               },
               {
                 title: "Google log in",
                 text: "Log in or sign up with your existing Google account"
+              },
+              {
+                title: "Encrypted data",
+                text: "Your data is encrypted in our database and backups"
+              },
+              {
+                title: "GDPR-ready",
+                text: "Dovetail is GDPR-ready with a DPA available on request"
+              },
+              {
+                title: "Premium support",
+                text: "Quick responses to questions and issues via email"
+              },
+              {
+                title: "Knowledge base",
+                text: "Detailed help documentation with walkthroughs"
+              },
+              {
+                title: "Slack community",
+                text: "Chat with our team and other researchers on Slack"
               }
             ]}
           />

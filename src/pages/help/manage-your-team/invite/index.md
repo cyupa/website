@@ -5,7 +5,7 @@ title: "Invite people to your team"
 weight: 2
 ---
 
-Anyone on the team can invite new people and it won’t affect your bill. We charge a fixed $49 per month for the whole team, regardless of how many members there are.
+Anyone on the team can invite new people and it won’t affect your bill. We charge a fixed price per month for the whole team, regardless of how many members there are.
 
 ## Invite someone to your team
 

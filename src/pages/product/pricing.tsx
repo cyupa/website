@@ -3,7 +3,7 @@ import { Container } from "@heydovetail/website/components/layout/Container";
 import { Faq } from "@heydovetail/website/components/site/Faq";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { PricingCard } from "@heydovetail/website/components/site/PricingCard";
-import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
+import { HALF_GAP, MONTHLY_PRICE, MONTHLY_PRICE_IN_CENTS, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { FrequentlyAskedQuestions } from "@heydovetail/website/sections/FrequentlyAskedQuestions";
@@ -34,13 +34,18 @@ export default class extends React.PureComponent {
                 <Item>
                   <HeroText
                     title="Simple and affordable pricing."
-                    text="Pay the same price each month regardless of your team size."
+                    text="Pay the same transparent price each month regardless of your team size."
                   />
                 </Item>
                 <Item>
                   <PricingCard
-                    features={["Unlimited users", "Unlimited integrations", "Unlimited usage", "All current & future features"]}
-                    price={4900}
+                    features={[
+                      "Unlimited projects and users",
+                      "Unlimited integrations",
+                      "Premium email support",
+                      "All current & future features"
+                    ]}
+                    price={MONTHLY_PRICE_IN_CENTS}
                   />
                 </Item>
                 <Item>
@@ -62,7 +67,7 @@ export default class extends React.PureComponent {
                 faqs={[
                   <Faq
                     question="What does “unlimited users” mean?"
-                    answer="You might be used to paying fees or licenses for each of your users. With Dovetail, whether you have 5 or 500 users, the price is always $49 / month."
+                    answer={`You might be used to paying fees or licenses for each of your users. With Dovetail, whether you have 5 or 500 users, the price is always ${MONTHLY_PRICE} / month.`}
                   />,
                   <Faq
                     question="What does “all current &amp; future features” mean?"

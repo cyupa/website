@@ -123,3 +123,7 @@ export const testimonials: { [name: string]: TestimonialProps } = {
     role: "UX Designer"
   }
 };
+
+export const MONTHLY_PRICE = "$79";
+export const MONTHLY_PRICE_IN_CENTS = 7900;
+export const YEARLY_PRICE = "$948";
