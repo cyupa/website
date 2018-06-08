@@ -1,4 +1,4 @@
-import { Flex } from "@heydovetail/ui-components";
+import { COLORS, Flex } from "@heydovetail/ui-components";
 import { Item } from "@heydovetail/ui-components";
 import IllustrationSecurity from "@heydovetail/website/components/illustrations/IllustrationSecurity";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
@@ -48,6 +48,7 @@ export class Security extends React.PureComponent {
       <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
         <Item>
           <FeatureHero
+            color={COLORS.p40}
             image={<IllustrationSecurity size="100%" />}
             imagePosition="right"
             location={locations.security()}

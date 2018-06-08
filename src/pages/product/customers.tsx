@@ -5,7 +5,7 @@ import { Container } from "@heydovetail/website/components/layout/Container";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { Testimonials } from "@heydovetail/website/components/site/Testimonials";
-import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH, testimonials } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, testimonials, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
 import React from "react";
@@ -39,20 +39,28 @@ export default class extends React.PureComponent {
           <CustomerLogos
             color={COLORS.white}
             customers={[
+              customers.airteam,
               customers.arm,
               customers.atlassian,
+              customers.barnardos,
+              customers.bcg,
               customers.csiro,
               customers.deloitte,
               customers.elsevier,
               customers.enigma,
               customers.freshworks,
               customers.ftw,
-              customers.ibm,
+              customers.hotelscombined,
               customers.ideo,
+              customers.kickstand,
               customers.monotype,
               customers.nike,
               customers.nubank,
+              customers.ocado,
+              customers.pearson,
               customers.rbs,
+              customers.rmit,
+              customers.scout24,
               customers.uniqa,
               customers.westpac
             ]}

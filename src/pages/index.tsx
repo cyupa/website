@@ -12,7 +12,7 @@ import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { Testimonials } from "@heydovetail/website/components/site/Testimonials";
-import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH, testimonials } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, testimonials, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";

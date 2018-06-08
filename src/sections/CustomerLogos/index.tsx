@@ -1,12 +1,14 @@
 import { COLORS } from "@heydovetail/ui-components";
 import { Item } from "@heydovetail/ui-components";
 import { FlexWrap } from "@heydovetail/ui-components";
+import { Customer } from "@heydovetail/website/components/icons/customers";
 import { HALF_GAP } from "@heydovetail/website/constants";
 import React from "react";
+import { styled } from "typestyle-react";
 
 interface Props {
   color?: string;
-  customers: React.ReactNode[];
+  customers: ReadonlyArray<Customer>;
 }
 
 export class CustomerLogos extends React.PureComponent<Props> {
@@ -15,9 +17,27 @@ export class CustomerLogos extends React.PureComponent<Props> {
     return (
       <div style={{ color: color }}>
         <FlexWrap styled={{ gap: HALF_GAP, justifyContent: "center" }}>
-          {customers.map((c, i) => <Item key={i}>{c}</Item>)}
+          {customers.map((c, i) => (
+            <Item key={i}>
+              <Link href={c.url} target="_blank">
+                {c.logo}
+              </Link>
+            </Item>
+          ))}
         </FlexWrap>
       </div>
     );
   }
 }
+
+const Link = styled("a", {
+  color: "inherit !important",
+  display: "block",
+  transition: "250ms transform cubic-bezier(.2, .45, 0, 1)",
+
+  $nest: {
+    "&:hover, &:focus": {
+      transform: "scale(1.2)"
+    }
+  }
+});

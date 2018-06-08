@@ -19,7 +19,8 @@
     "test": "./node_modules/.bin/tsc --noEmit && ./node_modules/.bin/tslint -p tsconfig.json && ./node_modules/.bin/jest --runInBand && ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook --smoke-test"
   },
   "engines": {
-    "node": "9.4.0"
+    "node": "10.3.0",
+    "yarn": "1.7.0"
   },
   "repository": {
     "type": "git",
@@ -65,8 +66,8 @@
   "dependencies": {
     "@heydovetail/editorconfig": "^2.0.0",
     "@heydovetail/svg-to-react": "^1.1.1",
-    "@heydovetail/tslint-config": "^2.1.0",
-    "@heydovetail/ui-components": "^1.6.0",
+    "@heydovetail/tslint-config": "^2.1.1",
+    "@heydovetail/ui-components": "^2.0.3",
     "@storybook/addon-storyshots": "^3.4.0",
     "@storybook/react": "^3.4.0",
     "@types/jest": "^22.2.2",
@@ -106,7 +107,7 @@
     "husky": "^0.14.3",
     "jest": "^22.4.3",
     "jest-cli": "^22.4.3",
-    "lint-staged": "^7.0.4",
+    "lint-staged": "7.1.3",
     "lodash.groupby": "^4.6.0",
     "prettier": "^1.11.1",
     "react": "^16.3.1",
@@ -132,7 +133,10 @@
     "@types/yargs": "^11.0.0",
     "date-fns": "^1.29.0",
     "node-fetch": "^2.1.2",
-    "typescript": "^2.8.3",
+    "typescript": "^2.9.1",
     "yargs": "^11.0.0"
+  },
+  "resolutions": {
+    "upath": "1.0.5"
   }
 }
