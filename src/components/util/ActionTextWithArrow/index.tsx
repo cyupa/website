@@ -1,15 +1,16 @@
-import { Flow, IconArrowRightMini, Item, SubtleButtonLink } from "@heydovetail/ui-components";
+import { COLORS, Flow, IconArrowRightMini, Item, SubtleButtonLink } from "@heydovetail/ui-components";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
 import React from "react";
 
 interface Props {
+  color?: string;
   location?: LocationDescriptor;
   text?: string;
 }
 
 export class ActionTextWithArrow extends React.PureComponent<Props> {
   public render() {
-    const { location, text = "Learn more" } = this.props;
+    const { color = COLORS.purple, location, text = "Learn more" } = this.props;
     const content = (
       <Flow styled={{ gap: 4 }}>
         <Item>{text}</Item>
@@ -20,7 +21,11 @@ export class ActionTextWithArrow extends React.PureComponent<Props> {
     );
 
     if (location !== undefined) {
-      return <SubtleButtonLink location={location}>{content}</SubtleButtonLink>;
+      return (
+        <SubtleButtonLink color={color} location={location}>
+          {content}
+        </SubtleButtonLink>
+      );
     } else return content;
   }
 }

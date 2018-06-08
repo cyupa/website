@@ -49,16 +49,28 @@ export default class extends React.PureComponent {
                   />
                 </Item>
                 <Item>
-                  <div style={{ display: "flex", justifyContent: "center" }}>
-                    <SubtleButtonLink color={COLORS.i60} location={locations.features()}>
-                      <Flow styled={{ gap: 4 }}>
-                        <Item>See all features</Item>
-                        <Item>
-                          <IconArrowRightMini />
-                        </Item>
-                      </Flow>
-                    </SubtleButtonLink>
-                  </div>
+                  <Flex styled={{ alignItems: "center", justifyContent: "center" }}>
+                    <Item style={{ flexGrow: 0 }}>
+                      <SubtleButtonLink color={COLORS.i60} location={locations.features()}>
+                        <Flow styled={{ gap: 4 }}>
+                          <Item>Features</Item>
+                          <Item>
+                            <IconArrowRightMini />
+                          </Item>
+                        </Flow>
+                      </SubtleButtonLink>
+                    </Item>
+                    <Item style={{ flexGrow: 0 }}>
+                      <SubtleButtonLink color={COLORS.i60} location={locations.customers()}>
+                        <Flow styled={{ gap: 4 }}>
+                          <Item>Customers</Item>
+                          <Item>
+                            <IconArrowRightMini />
+                          </Item>
+                        </Flow>
+                      </SubtleButtonLink>
+                    </Item>
+                  </Flex>
                 </Item>
               </Flex>
             </Item>

@@ -59,9 +59,9 @@
   dependencies:
     tslint-microsoft-contrib "^5.0.2"
 
-"@heydovetail/ui-components@^1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@heydovetail/ui-components/-/ui-components-1.6.0.tgz#bb7159c9f014b2bd4fb695c590ee03b18089fb17"
+"@heydovetail/ui-components@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@heydovetail/ui-components/-/ui-components-2.0.3.tgz#98bdf0d95dd7775305ca4e338db7f06926a6fbe9"
   dependencies:
     "@heydovetail/svg-to-react" "^1.1.1"
     "@types/react-router-dom" "^4.2.6"
@@ -69,8 +69,8 @@
     react-router-dom "^4.2.2"
     react-transition-group "^2.3.1"
     tslib "^1.9.0"
-    typestyle "^1.7.2"
-    typestyle-react "^1.2.3"
+    typestyle "^2.0.1"
+    typestyle-react "^2.0.2"
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
@@ -3502,6 +3502,10 @@ cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
 csstype@^2.2.0:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.4.2.tgz#158e36c69566bf968da63d0ba14eda1c20e8643a"
+
+csstype@^2.4.0:
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.5.3.tgz#2504152e6e1cc59b32098b7f5d6a63f16294c1f7"
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -13015,18 +13019,25 @@ typestyle-react@^1.2.0:
     tslib "^1.9.0"
     typestyle "^1.7.2"
 
-typestyle-react@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/typestyle-react/-/typestyle-react-1.2.3.tgz#89c2d1c3ef7933424ddb48546b609c10f949690f"
+typestyle-react@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/typestyle-react/-/typestyle-react-2.0.2.tgz#4ae181c6ba03f8fa2d3877113881183d39bbee71"
   dependencies:
     debounce-microtask "^1.0.0"
     tslib "^1.9.0"
-    typestyle "^1.7.2"
+    typestyle "^2.0.1"
 
 typestyle@^1.7.2:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/typestyle/-/typestyle-1.7.2.tgz#22ca9dfeaf334f755030cc6d7799b468bb1ee132"
   dependencies:
+    free-style "2.5.1"
+
+typestyle@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/typestyle/-/typestyle-2.0.1.tgz#9593e6029ce5f23f1a5728ddd3ed6bf1ffa781f8"
+  dependencies:
+    csstype "^2.4.0"
     free-style "2.5.1"
 
 ua-parser-js@^0.7.9:

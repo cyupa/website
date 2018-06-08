@@ -26,7 +26,7 @@ const Wrapper = styled("div", ({ backgroundColor }: { backgroundColor: string })
 
   $nest: {
     a: {
-      color: `${COLORS.purple} !important`
+      color: COLORS.purple
     }
   }
 }));

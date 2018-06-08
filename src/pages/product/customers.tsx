@@ -39,20 +39,28 @@ export default class extends React.PureComponent {
           <CustomerLogos
             color={COLORS.white}
             customers={[
+              customers.airteam,
               customers.arm,
               customers.atlassian,
+              customers.barnardos,
+              customers.bcg,
               customers.csiro,
               customers.deloitte,
               customers.elsevier,
               customers.enigma,
               customers.freshworks,
               customers.ftw,
-              customers.ibm,
+              customers.hotelscombined,
               customers.ideo,
+              customers.kickstand,
               customers.monotype,
               customers.nike,
               customers.nubank,
+              customers.ocado,
+              customers.pearson,
               customers.rbs,
+              customers.rmit,
+              customers.scout24,
               customers.uniqa,
               customers.westpac
             ]}

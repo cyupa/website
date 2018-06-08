@@ -13,6 +13,7 @@ const BREAKPOINT = BREAKPOINT_TABLET;
 const GAP = "72px";
 
 interface Props {
+  color?: string;
   // tslint:disable-next-line:no-any
   image: React.ReactElement<any> | string;
   imagePosition?: "left" | "right";
@@ -26,6 +27,7 @@ interface Props {
 export class FeatureHero extends React.PureComponent<Props> {
   public render() {
     const {
+      color,
       image,
       imagePosition = "right",
       launched = true,
@@ -50,7 +52,11 @@ export class FeatureHero extends React.PureComponent<Props> {
               <p style={{ opacity: LIGHT_TEXT_OPACITY }}>{text}</p>
             </Item>
             <Item style={{ marginLeft: "-8px" }}>
-              <ActionTextWithArrow location={location !== undefined ? location : locations.signUp()} text={linkText} />
+              <ActionTextWithArrow
+                color={color}
+                location={location !== undefined ? location : locations.signUp()}
+                text={linkText}
+              />
             </Item>
           </Flex>
         </Text>
