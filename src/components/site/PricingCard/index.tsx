@@ -97,7 +97,7 @@ const Features = styled("div", {
 const DollarSign = styled("span", {
   display: "inline-block",
   fontSize: "24px",
-  transform: "translateY(-64px)"
+  transform: "translate(-8px, -50px)"
 });
 
 const Amount = styled("span", {
