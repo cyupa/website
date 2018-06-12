@@ -79,7 +79,7 @@ export class TeamSizeSlider extends React.PureComponent<{}, State> {
           <Item>
             <Flex styled={{ gap: 24, layout: "column" }}>
               <Item>
-                <h2>Dovetail stays affordable as you grow</h2>
+                <h2>Stays affordable as you grow</h2>
               </Item>
               <Item>
                 <p>

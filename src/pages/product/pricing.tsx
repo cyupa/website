@@ -4,6 +4,7 @@ import { Faq } from "@heydovetail/website/components/site/Faq";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { PricingCard } from "@heydovetail/website/components/site/PricingCard";
+import { WaitForJs } from "@heydovetail/website/components/util/WaitForJs";
 import { HALF_GAP, MONTHLY_PRICE, MONTHLY_PRICE_IN_CENTS, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
@@ -78,9 +79,11 @@ export default class extends React.PureComponent {
             </Item>
           </Flex>
         </Container>
-        <LightContainer backgroundColor={COLORS.p04} maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
-          <TeamSizeSlider />
-        </LightContainer>
+        <WaitForJs>
+          <LightContainer backgroundColor={COLORS.p04} maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
+            <TeamSizeSlider />
+          </LightContainer>
+        </WaitForJs>
         <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: VERTICAL_GAP } }}>
           <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
             <Item>

@@ -2,7 +2,6 @@ import wide from "!file-loader!./wide.svg";
 import {
   BORDER_RADIUS,
   BOX_SHADOW_FOCUS,
-  BOX_SHADOW_LIFTED,
   BOX_SHADOW_SITTING,
   COLORS,
   Flex,
