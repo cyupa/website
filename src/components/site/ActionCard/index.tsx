@@ -39,10 +39,10 @@ export class ActionCard extends React.PureComponent<Props> {
                 <Item>
                   <Flow>
                     <Item style={{ lineHeight: 0 }}>
-                      <Avatar borderColor={COLORS.i04} presenceColor={COLORS.green} url={benjamin} />
+                      <Avatar borderColor={COLORS.p04} presenceColor={COLORS.green} url={benjamin} />
                     </Item>
                     <Item style={{ lineHeight: 0 }}>
-                      <Avatar borderColor={COLORS.i04} presenceColor={COLORS.green} url={brad} />
+                      <Avatar borderColor={COLORS.p04} presenceColor={COLORS.green} url={brad} />
                     </Item>
                   </Flow>
                 </Item>
