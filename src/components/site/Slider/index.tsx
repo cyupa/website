@@ -14,6 +14,7 @@ import { styled } from "typestyle-react";
 
 interface Props {
   defaultValue?: number;
+  disabled?: boolean;
   max: number;
   maxLabel: string;
   min: number;
@@ -23,11 +24,11 @@ interface Props {
 
 export class Slider extends React.PureComponent<Props> {
   public render() {
-    const { defaultValue = 25, max, maxLabel, min, minLabel, onChange } = this.props;
+    const { defaultValue = 25, disabled = false, max, maxLabel, min, minLabel, onChange } = this.props;
     return (
       <Flex styled={{ layout: "column" }}>
         <Item>
-          <Range type="range" defaultValue={`${defaultValue}`} max={max} min={min} onChange={onChange} />
+          <Range type="range" defaultValue={`${defaultValue}`} disabled={disabled} max={max} min={min} onChange={onChange} />
         </Item>
         <Item>
           <Justify>
@@ -54,11 +55,6 @@ const track = {
   width: "100%"
 };
 
-const trackHover = {
-  $unique: true,
-  background: COLORS.p20
-};
-
 const thumb = {
   $unique: true,
   "-webkit-appearance": "none",
@@ -80,6 +76,11 @@ const thumbFocus = {
   $unique: true
 };
 
+const thumbDisabled = {
+  backgroundColor: COLORS.p60,
+  $unique: true
+};
+
 const Range = styled("input", {
   background: "transparent",
   "-webkit-appearance": "none",
@@ -94,14 +95,14 @@ const Range = styled("input", {
     "&::-webkit-slider-runnable-track": track,
     "&::-moz-range-track": track,
     "&::-ms-track": track,
-    "&:hover::-webkit-slider-runnable-track": trackHover,
-    "&:hover::-moz-range-track": trackHover,
-    "&:hover::-ms-track": trackHover,
     "&::-webkit-slider-thumb": thumb,
     "&::-moz-range-thumb": thumb,
     "&::-ms-thumb": thumb,
     "&:focus::-webkit-slider-thumb": thumbFocus,
     "&:focus::-moz-range-thumb": thumbFocus,
-    "&:focus::-ms-thumb": thumbFocus
+    "&:focus::-ms-thumb": thumbFocus,
+    "&:disabled::-webkit-slider-thumb": thumbDisabled,
+    "&:disabled::-moz-range-thumb": thumbDisabled,
+    "&:disabled::-ms-thumb": thumbDisabled
   }
 });

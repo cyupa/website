@@ -1,4 +1,4 @@
-import { BORDER_RADIUS, COLORS, Flex, Item } from "@heydovetail/ui-components";
+import { BORDER_RADIUS, COLORS, Flex, Item, SmallText } from "@heydovetail/ui-components";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { Slider } from "@heydovetail/website/components/site/Slider";
 import { HALF_GAP, MONTHLY_PRICE_IN_CENTS } from "@heydovetail/website/constants";
@@ -8,19 +8,23 @@ import { styled } from "typestyle-react";
 const COMPARISONS = [
   {
     value: 0.8,
-    text: "a phone call to the outback"
+    text: "a pack of gum"
   },
   {
     value: 1.0,
-    text: "a cheeseburger at Macca’s"
+    text: "a New York city hot dog"
+  },
+  {
+    value: 1.5,
+    text: "a cheeseburger"
   },
   {
     value: 2.0,
-    text: "a toll over the Sydney Harbour Bridge"
+    text: "a ride on the bus"
   },
   {
     value: 3.0,
-    text: "a flat white in Surry Hills"
+    text: "a regular coffee"
   },
   {
     value: 5.0,
@@ -28,34 +32,38 @@ const COMPARISONS = [
   },
   {
     value: 8.0,
-    text: "a ferry trip to Manly"
+    text: "a burrito"
   },
   {
-    value: 13.0,
-    text: "grabbing lunch at Circular Quay"
+    value: 15.0,
+    text: "a tee shirt"
   },
   {
-    value: 21.0,
-    text: "hiring a surfboard in Bondi"
+    value: 20.0,
+    text: "a bottle of wine"
   },
   {
-    value: 34.0,
-    text: "a slab of Australian craft beer"
-  },
-  {
-    value: 55.0,
-    text: "a boomarang that won’t come back"
+    value: 40.0,
+    text: "a dinner out"
   }
 ];
 
 interface State {
   count: number;
+  disabled: boolean;
 }
 
 export class TeamSizeSlider extends React.PureComponent<{}, State> {
   public state: State = {
-    count: 25
+    count: 20,
+    disabled: true
   };
+
+  // The slider needs JavaScript to work, so we disable it
+  // in the static build and enable it when JS runs.
+  public componentDidMount() {
+    this.setState({ disabled: false });
+  }
 
   public render() {
     const { count } = this.state;
@@ -67,6 +75,7 @@ export class TeamSizeSlider extends React.PureComponent<{}, State> {
         <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
           <Item>
             <Slider
+              disabled={this.state.disabled}
               max={100}
               maxLabel="100+ people"
               min={2}
@@ -79,13 +88,21 @@ export class TeamSizeSlider extends React.PureComponent<{}, State> {
           <Item>
             <Flex styled={{ gap: 24, layout: "column" }}>
               <Item>
-                <h2>Stays affordable as you grow</h2>
+                <h2>Fixed price per team</h2>
               </Item>
               <Item>
-                <p>
-                  For a team of <Count>{count}</Count> people, Dovetail is just <Cost>${cost}</Cost> per person, per month.
-                </p>
-                {comparison !== undefined ? <p>Cheaper than {comparison.text}!</p> : null}
+                <Flex styled={{ gap: 24, layout: "column" }}>
+                  <Item>
+                    <p>
+                      For a team of <Count>{count}</Count> people, Dovetail costs <Cost>${cost}</Cost> per person, per month.
+                    </p>
+                  </Item>
+                  {comparison !== undefined ? (
+                    <Item>
+                      <SmallText>Less than {comparison.text}</SmallText>
+                    </Item>
+                  ) : null}
+                </Flex>
               </Item>
             </Flex>
           </Item>

@@ -26,7 +26,7 @@ export class PricingCard extends React.PureComponent<Props> {
               <FinePrint>
                 <Flex styled={{ gap: 8, layout: "column" }}>
                   <Item>
-                    <SmallText size={14}>Unlimited users</SmallText>
+                    <SmallText size={14}>Price per team</SmallText>
                   </Item>
                   <Item>
                     <SmallText size={14}>Billed monthly or annually</SmallText>
