@@ -1,15 +1,17 @@
-import { COLORS, Flex, Flow, IconArrowRightMini, Item, SubtleButtonLink } from "@heydovetail/ui-components";
+import { ButtonLink, COLORS, Flex, Flow, Item, PricingCard } from "@heydovetail/ui-components";
+import * as customers from "@heydovetail/website/components/icons/customers";
+import { Center } from "@heydovetail/website/components/layout/Center";
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { Faq } from "@heydovetail/website/components/site/Faq";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
-import { PricingCard } from "@heydovetail/website/components/site/PricingCard";
+import { ActionTextWithArrow } from "@heydovetail/website/components/util/ActionTextWithArrow";
 import { HALF_GAP, MONTHLY_PRICE, MONTHLY_PRICE_IN_CENTS, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
+import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
 import { FrequentlyAskedQuestions } from "@heydovetail/website/sections/FrequentlyAskedQuestions";
 import { TeamSizeSlider } from "@heydovetail/website/sections/TeamSizeSlider";
-import { UseCases } from "@heydovetail/website/sections/UseCases";
 import React from "react";
 import { Helmet } from "react-helmet";
 
@@ -42,37 +44,28 @@ export default class extends React.PureComponent {
                 <Item>
                   <PricingCard
                     features={[
-                      "Unlimited projects and users",
+                      "Unlimited projects",
+                      "Unlimited users",
                       "Unlimited integrations",
-                      "Premium email support",
-                      "All current & future features"
+                      "Premium support",
+                      "All features"
                     ]}
                     price={MONTHLY_PRICE_IN_CENTS}
                   />
                 </Item>
                 <Item>
-                  <Flex styled={{ alignItems: "center", gap: 8, justifyContent: "center" }}>
-                    <Item style={{ flexGrow: 0 }}>
-                      <SubtleButtonLink color={COLORS.i60} location={locations.features()}>
-                        <Flow styled={{ gap: 4 }}>
-                          <Item>All features</Item>
-                          <Item>
-                            <IconArrowRightMini />
-                          </Item>
-                        </Flow>
-                      </SubtleButtonLink>
-                    </Item>
-                    <Item style={{ flexGrow: 0 }}>
-                      <SubtleButtonLink color={COLORS.i60} location={locations.customers()}>
-                        <Flow styled={{ gap: 4 }}>
-                          <Item>Our customers</Item>
-                          <Item>
-                            <IconArrowRightMini />
-                          </Item>
-                        </Flow>
-                      </SubtleButtonLink>
-                    </Item>
-                  </Flex>
+                  <Center>
+                    <Flow>
+                      <Item>
+                        <ButtonLink color={COLORS.purple} location={locations.signUp()}>
+                          Start free trial
+                        </ButtonLink>
+                      </Item>
+                      <Item>
+                        <ButtonLink location={locations.demo()}>Book a demo</ButtonLink>
+                      </Item>
+                    </Flow>
+                  </Center>
                 </Item>
               </Flex>
             </Item>
@@ -139,9 +132,34 @@ export default class extends React.PureComponent {
                 ]}
               />
             </Item>
+          </Flex>
+        </Container>
+        <LightContainer backgroundColor={COLORS.teal} maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+          <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
             <Item>
-              <UseCases showTitle />
+              <CustomerLogos
+                color={COLORS.white}
+                customers={[
+                  customers.airteam,
+                  customers.arm,
+                  customers.enigma,
+                  customers.freshworks,
+                  customers.hotelscombined,
+                  customers.monotype,
+                  customers.rbs,
+                  customers.uniqa
+                ]}
+              />
             </Item>
+            <Item>
+              <Center>
+                <ActionTextWithArrow color={COLORS.white} location={locations.customers()} text="See our customers" />
+              </Center>
+            </Item>
+          </Flex>
+        </LightContainer>
+        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: VERTICAL_GAP } }}>
+          <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
             <Item>
               <CenteredSignUp />
             </Item>
