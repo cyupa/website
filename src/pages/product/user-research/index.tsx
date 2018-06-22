@@ -1,10 +1,10 @@
 import hero from "!file-loader!./hero.png";
 import { COLORS, Flex, Item } from "@heydovetail/ui-components";
-import IllustrationAnnotationsResearch from "@heydovetail/website/components/illustrations/IllustrationAnnotationsResearch";
 import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
 import IllustrationBoardLarge from "@heydovetail/website/components/illustrations/IllustrationBoardLarge";
 import IllustrationCollaboration from "@heydovetail/website/components/illustrations/IllustrationCollaboration";
 import IllustrationEditor from "@heydovetail/website/components/illustrations/IllustrationEditor";
+import IllustrationHighlightsResearch from "@heydovetail/website/components/illustrations/IllustrationHighlightsResearch";
 import IllustrationProjectsResearch from "@heydovetail/website/components/illustrations/IllustrationProjectsResearch";
 import IllustrationRealtime from "@heydovetail/website/components/illustrations/IllustrationRealtime";
 import IllustrationTeam from "@heydovetail/website/components/illustrations/IllustrationTeam";
@@ -131,15 +131,15 @@ export default class extends React.PureComponent {
                   <FeatureHero
                     image={<IllustrationEditor size="100%" />}
                     imagePosition="right"
-                    text="Identify patterns across qualitative data with our rich text document editor. Select text and quickly annotate sentences with tags."
-                    title="Add inline tags to qualitative data."
+                    text="Identify patterns across qualitative data with our rich text document editor. Select text and quickly highlight sentences with tags."
+                    title="Tag qualitative data with highlights."
                   />
                 </Item>
                 <Item>
                   <FeatureHeroLarge
-                    image={<IllustrationAnnotationsResearch size="100%" />}
+                    image={<IllustrationHighlightsResearch size="100%" />}
                     text="View any tag to see a reverse view showing all the tagged text."
-                    title="See all of your annotations in one view."
+                    title="See all of your highlights in one view."
                   />
                 </Item>
                 <Item>
@@ -158,8 +158,8 @@ export default class extends React.PureComponent {
                         title: "Editor"
                       },
                       {
-                        text: "Quickly tag feedback using inline annotations",
-                        title: "Annotations"
+                        text: "Quickly tag feedback using inline highlights",
+                        title: "Highlights"
                       },
                       {
                         text: "Create visualizations of your research project",

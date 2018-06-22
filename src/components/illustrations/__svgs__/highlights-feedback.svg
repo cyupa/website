@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="832px" height="536px" viewBox="0 0 832 536" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
-    <title>snippet/annotations-feedback</title>
+    <title>snippet/highlights-feedback</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <rect id="path-1" x="2" y="2" width="276" height="212" rx="3"></rect>
@@ -103,7 +103,7 @@
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
     </defs>
-    <g id="snippet/annotations-feedback" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="snippet/highlights-feedback" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Group" transform="translate(16.000000, 16.000000)">
             <g id="Card" transform="translate(0.000000, 40.000000)">
                 <g id="component/card">

@@ -7,7 +7,7 @@ weight: 5
 
 ![Screenshot of a bar chart in Dovetail](./bar.png)
 
-Understand your project at a glance by combining the power of annotations on qualitative data with a quantitative visualization as a bar chart or line chart.
+Understand your project at a glance by combining the power of highlights on qualitative data with a quantitative visualization as a bar chart or line chart.
 
 In a project, click **Charts** to get started.
 
@@ -17,9 +17,9 @@ In a project, click **Charts** to get started.
 
 Dovetail’s charts can show three metrics, each of which give you a slightly different perspective on your data.
 
-* **Annotations by tag.** This shows the total count of annotations created on notes. For example, if you have 6 notes and across those notes you’ve added 14 annotations, this would show 14.
-* **Annotations by note.** This is very similar to annotations by tag however it will only count an annotation at most once per note. Using the example above, this would show 6 rather than 14.
-* **Tagged text volume.** This shows the total character count per annotation. If your data is customer interview transcripts or user feedback, this metric can be useful to help you get an understanding of how much importance the subject places on this topic.
+* **Highlights by tag.** This shows the total count of highlights created on notes. For example, if you have 6 notes and across those notes you’ve added 14 highlights, this would show 14.
+* **Highlights by note.** This is very similar to highlights by tag however it will only count an highlight at most once per note. Using the example above, this would show 6 rather than 14.
+* **Tagged text volume.** This shows the total character count per highlight. If your data is customer interview transcripts or user feedback, this metric can be useful to help you get an understanding of how much importance the subject places on this topic.
 
 ## Bar chart
 

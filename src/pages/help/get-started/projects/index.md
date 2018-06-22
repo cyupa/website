@@ -5,7 +5,7 @@ title: "Create projects and notes"
 weight: 1
 ---
 
-To get started with Dovetail, you’ll need to create a project. Projects contain groups of notes, tags, and insights, along with annotations and charts.
+To get started with Dovetail, you’ll need to create a project. Projects contain groups of notes, tags, and insights, along with highlights and charts.
 
 Teams, projects, groups, and notes / tags / insights exist in a hierarchy:
 

@@ -9,80 +9,80 @@ import * as React from "react";
 export default createSvg((width = 400, height = 320): React.ReactElement<Props> => (
   <svg width={width} height={height} viewBox="0 0 400 320" xmlnsXlink="http://www.w3.org/1999/xlink">
     <defs>
-      <rect id="a1d611646576c18fb" x={2} y={2} width={364} height={92} rx={3} />
-      <filter x="-1.9%" y="-5.4%" width="103.8%" height="115.2%" filterUnits="objectBoundingBox" id="a1d611646576c18fa">
+      <rect id="a8f1f60b84751758b" x={2} y={2} width={364} height={92} rx={3} />
+      <filter x="-1.9%" y="-5.4%" width="103.8%" height="115.2%" filterUnits="objectBoundingBox" id="a8f1f60b84751758a">
         <feOffset dy={2} in="SourceAlpha" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={2} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1" />
       </filter>
-      <rect id="a1d611646576c18fd" width={368} height={96} rx={3} />
-      <filter x="-1.2%" y="-3.6%" width="102.4%" height="109.4%" filterUnits="objectBoundingBox" id="a1d611646576c18fc">
+      <rect id="a8f1f60b84751758d" width={368} height={96} rx={3} />
+      <filter x="-1.2%" y="-3.6%" width="102.4%" height="109.4%" filterUnits="objectBoundingBox" id="a8f1f60b84751758c">
         <feMorphology radius={1} operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1" />
         <feOffset dy={1} in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={1} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" in="shadowBlurOuter1" />
       </filter>
-      <rect id="a1d611646576c18ff" width={24} height={24} rx={3} />
-      <filter x="-22.9%" y="-14.6%" width="145.8%" height="145.8%" filterUnits="objectBoundingBox" id="a1d611646576c18fe">
+      <rect id="a8f1f60b84751758f" width={24} height={24} rx={3} />
+      <filter x="-22.9%" y="-14.6%" width="145.8%" height="145.8%" filterUnits="objectBoundingBox" id="a8f1f60b84751758e">
         <feOffset dy={2} in="SourceAlpha" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={1.5} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0508378623 0" in="shadowBlurOuter1" />
       </filter>
-      <rect id="a1d611646576c18fh" x={2} y={2} width={364} height={92} rx={3} />
-      <filter x="-1.9%" y="-5.4%" width="103.8%" height="115.2%" filterUnits="objectBoundingBox" id="a1d611646576c18fg">
+      <rect id="a8f1f60b84751758h" x={2} y={2} width={364} height={92} rx={3} />
+      <filter x="-1.9%" y="-5.4%" width="103.8%" height="115.2%" filterUnits="objectBoundingBox" id="a8f1f60b84751758g">
         <feOffset dy={2} in="SourceAlpha" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={2} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1" />
       </filter>
-      <rect id="a1d611646576c18fj" width={368} height={96} rx={3} />
-      <filter x="-1.2%" y="-3.6%" width="102.4%" height="109.4%" filterUnits="objectBoundingBox" id="a1d611646576c18fi">
+      <rect id="a8f1f60b84751758j" width={368} height={96} rx={3} />
+      <filter x="-1.2%" y="-3.6%" width="102.4%" height="109.4%" filterUnits="objectBoundingBox" id="a8f1f60b84751758i">
         <feMorphology radius={1} operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1" />
         <feOffset dy={1} in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={1} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" in="shadowBlurOuter1" />
       </filter>
-      <rect id="a1d611646576c18fl" width={24} height={24} rx={3} />
-      <filter x="-22.9%" y="-14.6%" width="145.8%" height="145.8%" filterUnits="objectBoundingBox" id="a1d611646576c18fk">
+      <rect id="a8f1f60b84751758l" width={24} height={24} rx={3} />
+      <filter x="-22.9%" y="-14.6%" width="145.8%" height="145.8%" filterUnits="objectBoundingBox" id="a8f1f60b84751758k">
         <feOffset dy={2} in="SourceAlpha" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={1.5} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0508378623 0" in="shadowBlurOuter1" />
       </filter>
-      <path d="M3 8h362a3 3 0 0 1 3 3v53H0V11a3 3 0 0 1 3-3z" id="a1d611646576c18fn" />
-      <filter x="-3.3%" y="-21.4%" width="106.5%" height="142.9%" filterUnits="objectBoundingBox" id="a1d611646576c18fm">
+      <path d="M3 8h362a3 3 0 0 1 3 3v53H0V11a3 3 0 0 1 3-3z" id="a8f1f60b84751758n" />
+      <filter x="-3.3%" y="-21.4%" width="106.5%" height="142.9%" filterUnits="objectBoundingBox" id="a8f1f60b84751758m">
         <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={4} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.16 0" in="shadowBlurOuter1" />
       </filter>
-      <rect id="a1d611646576c18fp" width={48} height={40} rx={3} />
-      <filter x="-9.4%" y="-8.8%" width="118.8%" height="122.5%" filterUnits="objectBoundingBox" id="a1d611646576c18fo">
+      <rect id="a8f1f60b84751758p" width={48} height={40} rx={3} />
+      <filter x="-9.4%" y="-8.8%" width="118.8%" height="122.5%" filterUnits="objectBoundingBox" id="a8f1f60b84751758o">
         <feMorphology radius={1} operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1" />
         <feOffset dy={1} in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={1} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" in="shadowBlurOuter1" />
       </filter>
-      <rect id="a1d611646576c18fr" width={48} height={40} rx={3} />
-      <filter x="-9.4%" y="-8.8%" width="118.8%" height="122.5%" filterUnits="objectBoundingBox" id="a1d611646576c18fq">
+      <rect id="a8f1f60b84751758r" width={48} height={40} rx={3} />
+      <filter x="-9.4%" y="-8.8%" width="118.8%" height="122.5%" filterUnits="objectBoundingBox" id="a8f1f60b84751758q">
         <feMorphology radius={1} operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1" />
         <feOffset dy={1} in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={1} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" in="shadowBlurOuter1" />
       </filter>
-      <rect id="a1d611646576c18ft" width={48} height={40} rx={3} />
-      <filter x="-9.4%" y="-8.8%" width="118.8%" height="122.5%" filterUnits="objectBoundingBox" id="a1d611646576c18fs">
+      <rect id="a8f1f60b84751758t" width={48} height={40} rx={3} />
+      <filter x="-9.4%" y="-8.8%" width="118.8%" height="122.5%" filterUnits="objectBoundingBox" id="a8f1f60b84751758s">
         <feMorphology radius={1} operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1" />
         <feOffset dy={1} in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={1} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" in="shadowBlurOuter1" />
       </filter>
-      <rect id="a1d611646576c18fv" width={48} height={40} rx={3} />
-      <filter x="-9.4%" y="-8.8%" width="118.8%" height="122.5%" filterUnits="objectBoundingBox" id="a1d611646576c18fu">
+      <rect id="a8f1f60b84751758v" width={48} height={40} rx={3} />
+      <filter x="-9.4%" y="-8.8%" width="118.8%" height="122.5%" filterUnits="objectBoundingBox" id="a8f1f60b84751758u">
         <feMorphology radius={1} operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1" />
         <feOffset dy={1} in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={1} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
@@ -92,16 +92,16 @@ export default createSvg((width = 400, height = 320): React.ReactElement<Props> 
     </defs>
     <g fill="none" fillRule="evenodd">
       <g transform="translate(16 96)">
-        <use fill="#000" filter="url(#a1d611646576c18fa)" xlinkHref="#a1d611646576c18fb" />
-        <use fill="#FFF" xlinkHref="#a1d611646576c18fb" />
+        <use fill="#000" filter="url(#a8f1f60b84751758a)" xlinkHref="#a8f1f60b84751758b" />
+        <use fill="#FFF" xlinkHref="#a8f1f60b84751758b" />
         <g strokeLinecap="square">
-          <use fill="#000" filter="url(#a1d611646576c18fc)" xlinkHref="#a1d611646576c18fd" />
-          <use fill="#FFF" xlinkHref="#a1d611646576c18fd" />
+          <use fill="#000" filter="url(#a8f1f60b84751758c)" xlinkHref="#a8f1f60b84751758d" />
+          <use fill="#FFF" xlinkHref="#a8f1f60b84751758d" />
           <rect strokeOpacity={0.098} stroke="#140B2F" x={-0.5} y={-0.5} width={369} height={97} rx={3} />
         </g>
         <g transform="translate(16 16)">
-          <use fill="#000" filter="url(#a1d611646576c18fe)" xlinkHref="#a1d611646576c18ff" />
-          <use fill="#5182F8" xlinkHref="#a1d611646576c18ff" />
+          <use fill="#000" filter="url(#a8f1f60b84751758e)" xlinkHref="#a8f1f60b84751758f" />
+          <use fill="#5182F8" xlinkHref="#a8f1f60b84751758f" />
           <rect stroke="#5182F8" x={0.5} y={0.5} width={23} height={23} rx={3} />
         </g>
         <path d="M18 18h20v20H18z" />
@@ -115,16 +115,16 @@ export default createSvg((width = 400, height = 320): React.ReactElement<Props> 
         <rect fill="#512DA8" x={248} y={64} width={104} height={12} rx={3} />
       </g>
       <g transform="translate(16 208)">
-        <use fill="#000" filter="url(#a1d611646576c18fg)" xlinkHref="#a1d611646576c18fh" />
-        <use fill="#FFF" xlinkHref="#a1d611646576c18fh" />
+        <use fill="#000" filter="url(#a8f1f60b84751758g)" xlinkHref="#a8f1f60b84751758h" />
+        <use fill="#FFF" xlinkHref="#a8f1f60b84751758h" />
         <g strokeLinecap="square">
-          <use fill="#000" filter="url(#a1d611646576c18fi)" xlinkHref="#a1d611646576c18fj" />
-          <use fill="#FFF" xlinkHref="#a1d611646576c18fj" />
+          <use fill="#000" filter="url(#a8f1f60b84751758i)" xlinkHref="#a8f1f60b84751758j" />
+          <use fill="#FFF" xlinkHref="#a8f1f60b84751758j" />
           <rect strokeOpacity={0.098} stroke="#140B2F" x={-0.5} y={-0.5} width={369} height={97} rx={3} />
         </g>
         <g transform="translate(16 16)">
-          <use fill="#000" filter="url(#a1d611646576c18fk)" xlinkHref="#a1d611646576c18fl" />
-          <use fill="#5182F8" xlinkHref="#a1d611646576c18fl" />
+          <use fill="#000" filter="url(#a8f1f60b84751758k)" xlinkHref="#a8f1f60b84751758l" />
+          <use fill="#5182F8" xlinkHref="#a8f1f60b84751758l" />
           <rect stroke="#5182F8" x={0.5} y={0.5} width={23} height={23} rx={3} />
         </g>
         <path d="M18 18h20v20H18z" />
@@ -139,27 +139,27 @@ export default createSvg((width = 400, height = 320): React.ReactElement<Props> 
         <rect fill="#512DA8" x={280} y={64} width={72} height={12} rx={3} />
       </g>
       <g transform="translate(16 16)">
-        <use filter="url(#a1d611646576c18fm)" xlinkHref="#a1d611646576c18fn" fill="#000" />
+        <use filter="url(#a8f1f60b84751758m)" xlinkHref="#a8f1f60b84751758n" fill="#000" />
         <rect fill="#5B93FF" width={368} height={64} rx={3} />
         <g strokeLinecap="square" transform="translate(17 13)">
-          <use fill="#000" filter="url(#a1d611646576c18fo)" xlinkHref="#a1d611646576c18fp" />
-          <use fill="#FFF" xlinkHref="#a1d611646576c18fp" />
+          <use fill="#000" filter="url(#a8f1f60b84751758o)" xlinkHref="#a8f1f60b84751758p" />
+          <use fill="#FFF" xlinkHref="#a8f1f60b84751758p" />
           <rect strokeOpacity={0.098} stroke="#140B2F" x={-0.5} y={-0.5} width={49} height={41} rx={3} />
         </g>
         <g strokeWidth={2} stroke="#726D82" strokeLinecap="round" strokeLinejoin="round">
           <path d="M49 33H33M39 39l-6-6 6-6" />
         </g>
         <g strokeLinecap="square" transform="translate(304 13)">
-          <use fill="#000" filter="url(#a1d611646576c18fq)" xlinkHref="#a1d611646576c18fr" />
-          <use fill="#FFF" xlinkHref="#a1d611646576c18fr" />
+          <use fill="#000" filter="url(#a8f1f60b84751758q)" xlinkHref="#a8f1f60b84751758r" />
+          <use fill="#FFF" xlinkHref="#a8f1f60b84751758r" />
           <rect strokeOpacity={0.098} stroke="#140B2F" x={-0.5} y={-0.5} width={49} height={41} rx={3} />
         </g>
         <g strokeWidth={2} stroke="#726D82" strokeLinecap="round" strokeLinejoin="round">
           <path d="M319 27h18M335 27v14a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V27m3 0v-2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
         </g>
         <g strokeLinecap="square" transform="translate(248 13)">
-          <use fill="#000" filter="url(#a1d611646576c18fs)" xlinkHref="#a1d611646576c18ft" />
-          <use fill="#FFF" xlinkHref="#a1d611646576c18ft" />
+          <use fill="#000" filter="url(#a8f1f60b84751758s)" xlinkHref="#a8f1f60b84751758t" />
+          <use fill="#FFF" xlinkHref="#a8f1f60b84751758t" />
           <rect strokeOpacity={0.098} stroke="#140B2F" x={-0.5} y={-0.5} width={49} height={41} rx={3} />
         </g>
         <g strokeWidth={2} stroke="#726D82" strokeLinecap="round" strokeLinejoin="round">
@@ -169,8 +169,8 @@ export default createSvg((width = 400, height = 320): React.ReactElement<Props> 
         </g>
         <g>
           <g strokeLinecap="square" transform="translate(192 13)">
-            <use fill="#000" filter="url(#a1d611646576c18fu)" xlinkHref="#a1d611646576c18fv" />
-            <use fill="#FFF" xlinkHref="#a1d611646576c18fv" />
+            <use fill="#000" filter="url(#a8f1f60b84751758u)" xlinkHref="#a8f1f60b84751758v" />
+            <use fill="#FFF" xlinkHref="#a8f1f60b84751758v" />
             <rect strokeOpacity={0.098} stroke="#140B2F" x={-0.5} y={-0.5} width={49} height={41} rx={3} />
           </g>
           <g strokeWidth={2} stroke="#726D82" strokeLinecap="round" strokeLinejoin="round">
