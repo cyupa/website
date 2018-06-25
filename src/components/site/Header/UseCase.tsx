@@ -9,14 +9,15 @@ import { style } from "typestyle";
 interface Props {
   image: React.ReactNode;
   location: LocationDescriptor;
+  onClick: () => void;
   title: string;
 }
 
 export class UseCase extends React.PureComponent<Props> {
   public render() {
-    const { image, location, title } = this.props;
+    const { image, location, onClick, title } = this.props;
     return (
-      <LocationLink className={linkClassName} location={location}>
+      <LocationLink className={linkClassName} location={location} onClick={onClick}>
         <Flex styled={{ gap: 16, layout: "column" }}>
           <Item>{image}</Item>
           <Item>{title}</Item>

@@ -97,6 +97,7 @@ export default class extends React.PureComponent {
               <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
                 <Item>
                   <FeatureHero
+                    color={COLORS.p40}
                     image={<IllustrationSentimentText size="100%" />}
                     imagePosition="right"
                     text="Dovetail automatically analyzes the sentiment of incoming customer feedback and applies the relevant tags for you at the sentence level."
@@ -105,6 +106,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
+                    color={COLORS.p40}
                     image={<IllustrationSentimentChart size="100%" />}
                     imagePosition="left"
                     text="Keep track of changes in customer satisfaction and anticipate popular feature requests with powerful historical charts."

@@ -3,16 +3,14 @@ import {
   Button,
   ButtonLink,
   COLORS,
-  FlipFlop,
-  IconChevronDown,
-  Layer,
-  Portal,
+  Flex,
+  Flow,
+  IconChevronDownMini,
+  Item,
+  Menu,
   SubtleButton,
   SubtleButtonLink
 } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
-import { Flex } from "@heydovetail/ui-components";
-import { Flow } from "@heydovetail/ui-components";
 import { ThemeColor } from "@heydovetail/website/components/site/Header";
 import { GoToApp } from "@heydovetail/website/components/site/Header/goToApp";
 import { MobileMenu } from "@heydovetail/website/components/site/MobileMenu";
@@ -40,29 +38,25 @@ export class Navigation extends React.PureComponent<Props> {
             <Item>
               <Flex styled={{ gap: 4 }}>
                 <Item>
-                  <FlipFlop>
-                    {({ active, toggle }) => (
-                      <WaitForJs>
+                  <WaitForJs>
+                    <Menu
+                      align="right"
+                      trigger={props => (
                         <ThemeColor styled={{ dark }}>
-                          <SubtleButton id="UseCasesDropdown" onClick={toggle}>
+                          <SubtleButton {...props}>
                             <Flow styled={{ gap: 4 }}>
                               <Item>Use cases</Item>
                               <Item>
-                                <IconChevronDown />
+                                <IconChevronDownMini />
                               </Item>
                             </Flow>
                           </SubtleButton>
                         </ThemeColor>
-                        {active ? (
-                          <Portal>
-                            <Layer align="right" onDismissAttempt={toggle} parentId="UseCasesDropdown">
-                              <UseCasesDropdown />
-                            </Layer>
-                          </Portal>
-                        ) : null}
-                      </WaitForJs>
-                    )}
-                  </FlipFlop>
+                      )}
+                    >
+                      {({ dismiss }) => <UseCasesDropdown onDismiss={dismiss} />}
+                    </Menu>
+                  </WaitForJs>
                 </Item>
                 <Item>
                   <ThemeColor styled={{ dark }}>
@@ -95,22 +89,18 @@ export class Navigation extends React.PureComponent<Props> {
           </Flex>
         </DesktopNavigation>
         <MobileNavigation>
-          <FlipFlop>
-            {({ active, toggle }) => (
-              <WaitForJs>
-                <Button id="MenuDropdown" height={32} onClick={toggle}>
+          <WaitForJs>
+            <Menu
+              align="right"
+              trigger={props => (
+                <Button height={32} {...props}>
                   Menu
                 </Button>
-                {active ? (
-                  <Portal>
-                    <Layer align="right" onOutsideClick={toggle} parentId="MenuDropdown">
-                      <MobileMenu onClose={toggle} loggedIn={loggedIn} />
-                    </Layer>
-                  </Portal>
-                ) : null}
-              </WaitForJs>
-            )}
-          </FlipFlop>
+              )}
+            >
+              {({ dismiss }) => <MobileMenu onClose={dismiss} loggedIn={loggedIn} />}
+            </Menu>
+          </WaitForJs>
         </MobileNavigation>
       </>
     );
