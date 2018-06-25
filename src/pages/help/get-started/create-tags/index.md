@@ -1,11 +1,11 @@
 ---
 path: "/help/tags"
-date: "2018-04-11"
+date: "2018-06-25"
 title: "Create tags"
 weight: 2
 ---
 
-The power of Dovetail lies in inline tagging, which we call **annotating**. There are two types of highlights: [**tags**](/help/tags) and [**insights**](/help/insights).
+The power of Dovetail lies in inline tagging, which we call **highlighting**. There are two types of highlights: [**tags**](/help/tags) and [**insights**](/help/insights).
 
 Highlights are added to content inside **notes**. Unlike other products, with Dovetail, you could highlight a single word, sentence, or paragraph with a tag or insight. This means you can add more granular tags or insights to content.
 
@@ -40,7 +40,7 @@ To create a new tag in Dovetail:
 To add an existing tag to text in Dovetail:
 
 1.  Open a **note**.
-1.  With your mouse or keyboard, highlight the text you’d like to tag.
+1.  With your mouse or keyboard, select the text you’d like to tag.
 1.  On the right, click **Type to create** (or use the **TAB** key).
 1.  Type the name of your existing tag.
 1.  Click the existing tag (or use the **up / down arrows**).
@@ -49,7 +49,7 @@ To add an existing tag to text in Dovetail:
 
 ![Screenshot of all the highlights for a single tag](./highlights.png)
 
-To see everything with a particular tag:
+To see all highlights on a particular tag:
 
 1.  Open a **project**.
 1.  Click the **Tags** tab.

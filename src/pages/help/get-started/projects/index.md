@@ -1,6 +1,6 @@
 ---
 path: "/help/projects"
-date: "2018-04-11"
+date: "2018-06-25"
 title: "Create projects and notes"
 weight: 1
 ---
@@ -15,8 +15,6 @@ Teams, projects, groups, and notes / tags / insights exist in a hierarchy:
 
 ## Projects
 
-![Screenshot of a list of projects](./projects.png)
-
 In Dovetail, projects can represent many things. For example, a project could contain:
 
 * A set of customer interviews.
@@ -24,6 +22,8 @@ In Dovetail, projects can represent many things. For example, a project could co
 * A collection of ongoing user feedback.
 * A collection of feedback from other apps.
 * A large research project covering many methods.
+
+**Note:** Tags are project-specific. Create a new project when you want to create a new set of tags, or continue using the same project if you’d like to share tags.
 
 ### Create a new project
 
@@ -33,7 +33,16 @@ To create a new project:
 
 1.  Click the **logo** in the top left to visit **[all projects](/projects)**.
 1.  Click **New project**.
-1.  Enter a **title** for your project near the top left of the screen.
+
+### Edit a project
+
+![Screenshot of cursor over the project title](./edit-project.png)
+
+To edit a project:
+
+1.  Click the **project title** near the top left to open the **project dropdown**.
+1.  Type to edit the title of the project, and hit **Enter** to save.
+1.  You can also import, export, archive, delete, and do more from this menu.
 
 ## Groups
 

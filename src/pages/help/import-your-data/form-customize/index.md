@@ -1,5 +1,5 @@
 ---
-date: "2018-05-21"
+date: "2018-06-25"
 path: "/help/form-customize"
 title: "Create an embeddable feedback form"
 weight: 5
@@ -42,8 +42,6 @@ To customize a form, click the **Customize** button on the form. You can customi
 ## Manage forms for a project
 
 Each project can have multiple feedback forms with different customization options. This can be useful if you’d like to have a separate form for different features in your product or different sections on your website.
-
-![Screenshot of the form list screen in Dovetail](./manage-forms.png)
 
 ## Add the form to your website
 

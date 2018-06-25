@@ -1,5 +1,5 @@
 ---
-date: "2018-04-26"
+date: "2018-06-25"
 path: "/help/export-highlights"
 title: "Download a spreadsheet of highlights"
 weight: 1

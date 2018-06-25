@@ -1,11 +1,11 @@
 ---
 path: "/help/insights"
-date: "2018-04-11"
+date: "2018-06-25"
 title: "Create insights"
 weight: 3
 ---
 
-The power of Dovetail lies in inline tagging, which we call **annotating**. There are two types of highlights: [**tags**](/help/tags) and [**insights**](/help/insights).
+The power of Dovetail lies in inline tagging, which we call **highlighting**. There are two types of highlights: [**tags**](/help/tags) and [**insights**](/help/insights).
 
 Highlights are added to content inside **notes**. Unlike other products, with Dovetail, you could highlight a single word, sentence, or paragraph with a tag or insight. This means you can add more granular tags or insights to content.
 
