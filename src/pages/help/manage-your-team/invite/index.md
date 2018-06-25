@@ -1,5 +1,5 @@
 ---
-date: "2018-04-11"
+date: "2018-06-25"
 path: "/help/invite"
 title: "Invite people to your team"
 weight: 2

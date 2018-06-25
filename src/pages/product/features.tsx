@@ -41,8 +41,8 @@ export default class extends React.PureComponent {
                 text: "Take notes in our easy-to-use rich text editor"
               },
               {
-                title: "Annotations",
-                text: "Add tags to data using inline annotations"
+                title: "Highlights",
+                text: "Add tags to data using inline highlights"
               },
               {
                 title: "Real time editing",

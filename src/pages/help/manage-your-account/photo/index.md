@@ -1,14 +1,12 @@
 ---
 path: "/help/photo"
-date: "2018-04-11"
+date: "2018-06-25"
 title: "Update your profile photo"
 ---
 
 By default we use your [Gravatar](https://en.gravatar.com/) as your profile photo in Dovetail. To change your photo, you can change your gravatar or upload a new photo to Dovetail.
 
 ## Upload a photo
-
-![Screenshot of a cursor over the ‘Choose file’ button](./upload.png)
 
 To upload a new photo:
 
@@ -17,8 +15,6 @@ To upload a new photo:
 1.  Wait a few seconds for your photo to update.
 
 ## Remove an uploaded photo
-
-![Screenshot of a cursor over the ‘Remove’ button](./remove.png)
 
 To remove an uploaded photo:
 

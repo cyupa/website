@@ -1,5 +1,5 @@
 ---
-date: "2018-04-11"
+date: "2018-06-25"
 path: "/help/beta"
 title: "Enable beta features"
 weight: 6

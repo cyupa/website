@@ -75,7 +75,9 @@ cssRule("li", {
 });
 
 cssRule("button, input, textarea", {
-  fontFamily: FONT_FAMILY
+  fontFamily: FONT_FAMILY,
+  // tslint:disable-next-line:no-any
+  fontWeight: "500 !important" as any
 });
 
 cssRule("::-webkit-input-placeholder", {

@@ -10,7 +10,7 @@ storiesOf("Site/PageGroup", module).add("default", () => (
         path: "/help/create"
       },
       {
-        title: "Create annotations, tags, and insights",
+        title: "Create highlights, tags, and insights",
         path: "/help/create-more"
       },
       {
@@ -18,7 +18,7 @@ storiesOf("Site/PageGroup", module).add("default", () => (
         path: "/help/organize"
       },
       {
-        title: "Bulk edit annotations and merge tags",
+        title: "Bulk edit highlights and merge tags",
         path: "/help/bulk-edit"
       }
     ]}

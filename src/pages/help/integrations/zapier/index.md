@@ -25,7 +25,7 @@ Dovetail supports the following Zapier Actions:
 
 ## Triggers
 
-Triggers help you get data **out of** Dovetail and into other apps. For example, using a Dovetail Trigger, you could backup annotations to Google Sheets, create new cards in Trello for new notes, or post new insights to a Slack room.
+Triggers help you get data **out of** Dovetail and into other apps. For example, using a Dovetail Trigger, you could backup highlights to Google Sheets, create new cards in Trello for new notes, or post new insights to a Slack room.
 
 Dovetail supports the following Zapier Triggers:
 
@@ -34,8 +34,8 @@ Dovetail supports the following Zapier Triggers:
 | **New Note**                        | Triggers when a new note is created in a project.                        |
 | **New Tag**                         | Triggers when a new tag is created in a project.                         |
 | **New Insight**                     | Triggers when a new insight is created in a project.                     |
-| **New Annotation With Any Tag**     | Triggers when a new annotation is created with any tag in a project.     |
-| **New Annotation With Any Insight** | Triggers when a new annotation is created with any insight in a project. |
+| **New Highlight With Any Tag**     | Triggers when a new highlight is created with any tag in a project.     |
+| **New Highlight With Any Insight** | Triggers when a new highlight is created with any insight in a project. |
 
 ---
 

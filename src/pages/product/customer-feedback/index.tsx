@@ -1,7 +1,7 @@
 import hero from "!file-loader!./hero.png";
 import { COLORS, Flex, Item } from "@heydovetail/ui-components";
-import IllustrationAnnotationsFeedback from "@heydovetail/website/components/illustrations/IllustrationAnnotationsFeedback";
 import IllustrationBoard from "@heydovetail/website/components/illustrations/IllustrationBoard";
+import IllustrationHighlightsFeedback from "@heydovetail/website/components/illustrations/IllustrationHighlightsFeedback";
 import IllustrationProjectsFeedback from "@heydovetail/website/components/illustrations/IllustrationProjectsFeedback";
 import IllustrationSentimentChart from "@heydovetail/website/components/illustrations/IllustrationSentimentChart";
 import IllustrationSentimentText from "@heydovetail/website/components/illustrations/IllustrationSentimentText";
@@ -97,6 +97,7 @@ export default class extends React.PureComponent {
               <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
                 <Item>
                   <FeatureHero
+                    color={COLORS.p40}
                     image={<IllustrationSentimentText size="100%" />}
                     imagePosition="right"
                     text="Dovetail automatically analyzes the sentiment of incoming customer feedback and applies the relevant tags for you at the sentence level."
@@ -105,6 +106,7 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHero
+                    color={COLORS.p40}
                     image={<IllustrationSentimentChart size="100%" />}
                     imagePosition="left"
                     text="Keep track of changes in customer satisfaction and anticipate popular feature requests with powerful historical charts."
@@ -131,9 +133,9 @@ export default class extends React.PureComponent {
                 </Item>
                 <Item>
                   <FeatureHeroLarge
-                    image={<IllustrationAnnotationsFeedback />}
+                    image={<IllustrationHighlightsFeedback />}
                     text="Tag sentences in feedback to categorize pain points, feature requests, research insights, and more."
-                    title="Categorize feedback with annotations."
+                    title="Categorize feedback with highlights."
                   />
                 </Item>
               </Flex>
@@ -150,8 +152,8 @@ export default class extends React.PureComponent {
                         title: "Editor"
                       },
                       {
-                        text: "Quickly tag feedback using inline annotations",
-                        title: "Annotations"
+                        text: "Quickly tag feedback using inline highlights",
+                        title: "Highlights"
                       },
                       {
                         text: "Import images and files to organize and analyze",

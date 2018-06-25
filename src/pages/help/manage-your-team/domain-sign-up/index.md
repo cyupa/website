@@ -1,5 +1,5 @@
 ---
-date: "2018-04-11"
+date: "2018-06-25"
 path: "/help/domain-sign-up"
 title: "Enable domain-restricted sign up"
 weight: 5

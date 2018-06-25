@@ -20,7 +20,7 @@ These are our current technical limitations. We can’t guarantee the performanc
 
 * Up to 200 characters for the title
 * Up to 100,000 characters for the body
-* Up to 4,000 annotations
+* Up to 4,000 highlights
 * Up to 10 concurrent editors
 
 ### Files
