@@ -1,5 +1,5 @@
 ---
-date: "2018-06-25"
+date: "2018-06-28"
 path: "/help/invite"
 title: "Invite people to your team"
 weight: 2
@@ -13,8 +13,8 @@ Anyone on the team can invite new people and it won’t affect your bill. We cha
 
 To invite someone to your team:
 
-1.  Click your profile menu in the top right.
-1.  Click **[Team members](/team/members)**.
+1.  Click **Menu (☰)**.
+1.  Click **[Members](/team/members)**.
 1.  Under **Invite someone**, type an email address.
 1.  Click **Send invite**.
 

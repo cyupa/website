@@ -11,24 +11,24 @@ You can download a spreadsheet of highlights for your entire project, or only hi
 
 This spreadsheet includes all highlights for all tags or insights in a project.
 
-![Screenshot of the project ‘More’ menu](./project-export.png)
+![Screenshot of the project ‘Actions’ menu](./project-export.png)
 
 To download a spreadsheet of all highlights in a project:
 
 1.  Open a project.
-1.  Click the **More** menu (three dots) near the top right.
+1.  Click the **project title** near the top left.
 1.  Click **Export to CSV**.
 
 ## Export some highlights
 
 This spreadsheet includes all highlights for a specific tag or insight.
 
-![Screenshot of the highlights ‘More’ menu](./tag-export.png)
+![Screenshot of the highlights ‘Actions’ menu](./tag-export.png)
 
 To download a spreadsheet of highlights for a tag or insight:
 
 1.  Open a tag or insight with highlights.
-1.  Click the **More** menu (three dots) to the right of **Highlights**.
+1.  Click the **Actions (···)** menu to the right of **Highlights**.
 1.  Click **Export to CSV**.
 
-If you would like to sort your export before downloading, use the **Sort highlights** button to the left of the More menu, then click **Export to CSV**.
+If you would like to sort your export before downloading, use the **Sort highlights** button to the left of the **Actions (···)** menu, then click **Export to CSV**.

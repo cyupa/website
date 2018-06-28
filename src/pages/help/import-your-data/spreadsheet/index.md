@@ -1,6 +1,6 @@
 ---
 path: "/help/spreadsheet"
-date: "2018-06-25"
+date: "2018-06-28"
 title: "Upload data using a spreadsheet"
 weight: 2
 ---
@@ -35,7 +35,7 @@ You can map this field to one column. We support all UTF-8 characters, including
 
 ### Choose your file
 
-Once you’ve got your CSV file ready, open the project you’d like to import your data into and click the **project title** in the top left, then **Import**:
+Once you’ve got your CSV file ready, open the project you’d like to import your data into and click **Import data** near the top right of the screen:
 
 ![Screenshot of a cursor over the project menu in a project](./import.png)
 

@@ -19,15 +19,15 @@ Dovetail supports all files, however only images show previews. Feel free to add
 
 ### Opening and downloading a file
 
-To download a file, click **Open** (Diagonal arrow) or click the **More menu**, then **Open**. Dovetail generates a secure access URL for you to open and download files. For security purposes, this URL expires after 15 minutes.
+To download a file, click **Open** (Diagonal arrow) or click the **Actions (···)** menu, then **Open**. Dovetail generates a secure access URL for you to open and download files. For security purposes, this URL expires after 15 minutes.
 
 ![Screenshot of the Open button on a file in Dovetail](./open.png)
 
 ### Image previews
 
-Dovetail will automatically generate image previews for JPEG, PNG, WebP, TIFF, GIF and SVG files. You can hide the image preview by clicking the **More menu** in the top right of an image, then choosing **Hide preview**.
+Dovetail will automatically generate image previews for JPEG, PNG, WebP, TIFF, GIF and SVG files. Click the **Actions (···)** menu in the top right of an image, then click **Hide preview** to hide the image preview.
 
-![Screenshot of the More menu on an image in Dovetail](./preview.png)
+![Screenshot of the Actions (···) menu on an image in Dovetail](./preview.png)
 
 ### Managing files
 

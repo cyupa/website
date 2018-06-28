@@ -2,7 +2,7 @@
 path: "/help/organize"
 date: "2018-04-11"
 title: "Tips for organizing your content"
-weight: 6
+weight: 7
 ---
 
 Not unlike Trello, Google Docs, or a spreadsheet, Dovetail is intentionally designed to be a very flexible tool in order to work with a variety of use cases for customer feedback and user research organization and analysis.
