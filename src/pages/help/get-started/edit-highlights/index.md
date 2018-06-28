@@ -1,5 +1,5 @@
 ---
-path: "/help/bulk-edit"
+path: "/help/edit-highlights"
 date: "2018-06-25"
 title: "Edit and merge highlights"
 weight: 4
@@ -43,5 +43,5 @@ To remove the existing tag or insight from multiple highlights:
 
 1.  Click the checkbox on the first highlight you’d like to modify.
 1.  Select other highlights, or hold **Shift** and click to select a range.
-1.  Click **More (···)** then **Remove** in the top right of the bulk edit header.
+1.  Click **Actions (···)** then **Remove** in the top right of the bulk edit header.
 1.  The current tag or insight will be removed from the selected highlights, and they will disappear from this screen.

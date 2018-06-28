@@ -1,6 +1,6 @@
 ---
 path: "/help/insights"
-date: "2018-06-25"
+date: "2018-06-28"
 title: "Create insights"
 weight: 3
 ---

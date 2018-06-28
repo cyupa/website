@@ -1,6 +1,6 @@
 ---
 path: "/help/tags"
-date: "2018-06-25"
+date: "2018-06-28"
 title: "Create tags"
 weight: 2
 ---

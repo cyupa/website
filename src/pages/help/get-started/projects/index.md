@@ -1,7 +1,7 @@
 ---
 path: "/help/projects"
-date: "2018-06-25"
-title: "Create projects and notes"
+date: "2018-06-28"
+title: "Create projects"
 weight: 1
 ---
 
@@ -44,6 +44,15 @@ To edit a project:
 1.  Type to edit the title of the project, and hit **Enter** to save.
 1.  You can also import, export, archive, delete, and do more from this menu.
 
+### Switch projects
+
+![Screenshot of the Menu (☰)](./switch-projects.png)
+
+To switch projects:
+
+1.  Click **Menu (☰)**.
+1.  Click the project you’d like to switch to.
+
 ## Groups
 
 ![Screenshot of a board of groups](./groups.png)
@@ -60,27 +69,3 @@ To create a new group in a project:
 
 1.  Click the **Notes**, **Tags**, or **Insights** tab.
 1.  Click the **Plus (+)** at the end of the list or board.
-
-## Notes
-
-![Screenshot of a note with tags](./notes.png)
-
-In Dovetail, notes represent your ‘raw data’. Depending on the context of your project, a note could represent many things. For example:
-
-* Notes from a customer interview.
-* Notes from a user testing session.
-* A piece of feedback submitted through the [feedback form](/help/form-customize).
-* A tweet from a [Zapier integration](/help/zapier).
-* A research plan or runbook.
-
-### Create a new note
-
-![Screenshot of cursor over ‘+ New note](./create-note.png)
-
-Notes can be imported in bulk by [uploading a spreadsheet](/help/spreadsheet), [connecting an integration via Zapier](/help/zapier), or collecting feedback on your website through our [feedback form](/help/form-customize).
-
-You can also create new blank notes in groups:
-
-1.  Open the **project** you’d like to create a note in.
-1.  Click the **Notes** tab.
-1.  At the bottom of a group, click **+ New note**.
