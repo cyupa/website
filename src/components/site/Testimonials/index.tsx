@@ -12,7 +12,12 @@ export class Testimonials extends React.PureComponent<Props> {
     const { testimonials } = this.props;
 
     return (
-      <Masonry containerWidth={WIDTH} gap={32} items={testimonials.map(t => <Testimonial {...t} />)} minColumnWidth={260} />
+      <Masonry
+        containerWidth={WIDTH}
+        gap={32}
+        items={testimonials.map((t, i) => ({ key: i, node: <Testimonial {...t} /> }))}
+        minColumnWidth={300}
+      />
     );
   }
 }
