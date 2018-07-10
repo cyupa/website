@@ -30,7 +30,7 @@ export class DocumentIndex extends React.PureComponent<Props> {
               <HeroText title={title} text={text} />
             </Item>
             <Item>
-              <Masonry containerWidth={WIDTH} gap={32} items={items} minColumnWidth={264} />
+              <Masonry containerWidth={WIDTH} gap={32} items={items} minColumnWidth={304} />
             </Item>
           </Flex>
         </Container>

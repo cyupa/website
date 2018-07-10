@@ -13,18 +13,22 @@ interface Props {
 
 export default class extends React.PureComponent<Props> {
   public render() {
-    const cards = createPageHierarchy(this.props.data.allMarkdownRemark, "src/pages/legal").map(parent => (
-      <PageGroup pages={parent.children} title={parent.title} />
-    ));
+    const cards = createPageHierarchy(this.props.data.allMarkdownRemark, "src/pages/legal").map(parent => ({
+      key: parent.title,
+      node: <PageGroup pages={parent.children} title={parent.title} />
+    }));
 
-    cards.push(
-      <ActionCard
-        title="Contact us"
-        text="Get in touch with us if you have questions about our legal documents."
-        buttonText="Email us"
-        buttonLocation={locations.email()}
-      />
-    );
+    cards.push({
+      key: "contact",
+      node: (
+        <ActionCard
+          title="Contact us"
+          text="Get in touch with us if you have questions about our legal documents."
+          buttonText="Email us"
+          buttonLocation={locations.email()}
+        />
+      )
+    });
 
     return (
       <DocumentIndex items={cards} text="One place for our legal documentation and policies." title="Terms and policies" />

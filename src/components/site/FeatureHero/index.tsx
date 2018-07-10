@@ -71,6 +71,7 @@ const Wrapper = styled("div", ({ imagePosition }: { imagePosition: "left" | "rig
     {
       alignItems: "center",
       display: "flex",
+      justifyContent: "space-between",
       flexDirection: imagePosition === "right" ? "row" : "row-reverse"
     },
     media(

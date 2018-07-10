@@ -14,56 +14,61 @@ interface Props {
 
 export default class extends React.PureComponent<Props> {
   public render() {
-    const cards = createPageHierarchy(this.props.data.allMarkdownRemark, "src/pages/help").map(parent => (
-      <PageGroup pages={parent.children} title={parent.title} />
-    ));
+    const cards = createPageHierarchy(this.props.data.allMarkdownRemark, "src/pages/help").map(parent => ({
+      key: parent.title,
+      node: <PageGroup pages={parent.children} title={parent.title} />
+    }));
 
-    cards.splice(
-      1,
-      0,
-      <ActionCard
-        buttonLocation={locations.email()}
-        buttonText="Email support"
-        showPeople
-        text="Say hi! We’re based in Sydney and usually respond within a couple of hours."
-        title="Contact us"
-      />
-    );
+    cards.splice(1, 0, {
+      key: "email",
+      node: (
+        <ActionCard
+          buttonLocation={locations.email()}
+          buttonText="Email support"
+          showPeople
+          text="Say hi! We’re based in Sydney and usually respond within a couple of hours."
+          title="Contact us"
+        />
+      )
+    });
 
-    cards.splice(
-      2,
-      0,
-      <ActionCard
-        buttonColor={COLORS.green}
-        buttonLocation={locations.slack()}
-        buttonText="Join our Slack"
-        text="Join our open Slack community to chat with us and other Dovetail users."
-        title="Chat with us on Slack"
-      />
-    );
+    cards.splice(2, 0, {
+      key: "slack",
+      node: (
+        <ActionCard
+          buttonColor={COLORS.green}
+          buttonLocation={locations.slack()}
+          buttonText="Join our Slack"
+          text="Join our open Slack community to chat with us and other Dovetail users."
+          title="Chat with us on Slack"
+        />
+      )
+    });
 
-    cards.splice(
-      4,
-      0,
-      <ActionCard
-        buttonColor={COLORS.blue}
-        buttonLocation={locations.twitter()}
-        buttonText="Follow us on Twitter"
-        text="Follow @hidovetail for product updates, news, and answers to your questions."
-        title="Find us on Twitter"
-      />
-    );
+    cards.splice(4, 0, {
+      key: "twitter",
+      node: (
+        <ActionCard
+          buttonColor={COLORS.blue}
+          buttonLocation={locations.twitter()}
+          buttonText="Follow us on Twitter"
+          text="Follow @hidovetail for product updates, news, and answers to your questions."
+          title="Find us on Twitter"
+        />
+      )
+    });
 
-    cards.splice(
-      9,
-      0,
-      <ActionCard
-        buttonLocation={locations.blog()}
-        buttonText="Visit blog"
-        text="Check out our Medium blog for product updates, company news, and tips &amp; tricks."
-        title="Learn more"
-      />
-    );
+    cards.splice(9, 0, {
+      key: "blog",
+      node: (
+        <ActionCard
+          buttonLocation={locations.blog()}
+          buttonText="Visit blog"
+          text="Check out our Medium blog for product updates, company news, and tips &amp; tricks."
+          title="Learn more"
+        />
+      )
+    });
 
     return (
       <DocumentIndex
