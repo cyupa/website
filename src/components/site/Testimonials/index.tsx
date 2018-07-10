@@ -16,7 +16,7 @@ export class Testimonials extends React.PureComponent<Props> {
         containerWidth={WIDTH}
         gap={32}
         items={testimonials.map((t, i) => ({ key: i, node: <Testimonial {...t} /> }))}
-        minColumnWidth={300}
+        minColumnWidth={304}
       />
     );
   }

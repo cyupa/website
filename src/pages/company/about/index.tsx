@@ -106,7 +106,7 @@ export default class extends React.PureComponent {
                         )
                       }
                     ]}
-                    minColumnWidth={300}
+                    minColumnWidth={304}
                   />
                 </Item>
               </Flex>
