@@ -11,7 +11,7 @@
       "./node_modules/.bin/apollo-codegen introspect-schema --output src/graphql/schema.json http://localhost:8000/___graphql && ./node_modules/.bin/apollo-codegen print-schema --schema src/graphql/schema.json --output src/graphql/schema.graphql && ./node_modules/.bin/apollo-codegen generate --schema src/graphql/schema.json --target typescript --output src/graphql/types.tsx --tag-name graphql 'src/**/*.tsx'",
     "generate:svgs": "svg-to-react src",
     "generate:zapier": "ts-node ./bin/fetch-zapier-templates.ts",
-    "jest": "./node_modules/.bin/jest -u",
+    "jest": "./node_modules/.bin/jest",
     "precommit": "lint-staged",
     "postmerge": "./bin/post-merge-update-dependencies",
     "serve": "./node_modules/.bin/gatsby serve",
