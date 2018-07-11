@@ -6,6 +6,7 @@ import { DocumentIndex } from "@heydovetail/website/sections/DocumentIndex";
 import { createPageHierarchy } from "@heydovetail/website/util/createPageHierarchy";
 import { graphql } from "@heydovetail/website/util/graphql";
 import React from "react";
+import { ButtonLink, COLORS } from "../../../node_modules/@heydovetail/ui-components";
 
 interface Props {
   data: LegalIndexQuery;
@@ -22,10 +23,13 @@ export default class extends React.PureComponent<Props> {
       key: "contact",
       node: (
         <ActionCard
+          actions={[
+            <ButtonLink color={COLORS.purple} location={locations.email()}>
+              Email us
+            </ButtonLink>
+          ]}
           title="Contact us"
           text="Get in touch with us if you have questions about our legal documents."
-          buttonText="Email us"
-          buttonLocation={locations.email()}
         />
       )
     });

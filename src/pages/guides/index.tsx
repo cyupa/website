@@ -1,4 +1,4 @@
-import { COLORS } from "@heydovetail/ui-components";
+import { ButtonLink, COLORS } from "@heydovetail/ui-components";
 import { ActionCard } from "@heydovetail/website/components/site/ActionCard";
 import { PageGroup } from "@heydovetail/website/components/site/PageGroup";
 import { GuideIndexQuery } from "@heydovetail/website/graphql/types";
@@ -23,11 +23,13 @@ export default class extends React.PureComponent<Props> {
       key: "slack",
       node: (
         <ActionCard
+          actions={[
+            <ButtonLink color={COLORS.green} location={locations.slack()}>
+              Join our Slack
+            </ButtonLink>
+          ]}
           title="Join our Slack community"
           text="Join our open Slack community to chat with us and other designers and researchers."
-          buttonColor={COLORS.green}
-          buttonText="Join our Slack"
-          buttonLocation={locations.slack()}
         />
       )
     });
@@ -36,10 +38,13 @@ export default class extends React.PureComponent<Props> {
       key: "blog",
       node: (
         <ActionCard
+          actions={[
+            <ButtonLink color={COLORS.purple} location={locations.blog()}>
+              Visit blog
+            </ButtonLink>
+          ]}
           title="Read our blog"
           text="Follow us on Medium for posts about design, research, product development, and more."
-          buttonText="Visit blog"
-          buttonLocation={locations.blog()}
         />
       )
     });
