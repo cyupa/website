@@ -112,6 +112,7 @@ function external(url: string, options: { openInNewTab?: boolean } = {}): Extern
 export const locations = {
   about: () => internal("/company/about"),
   blog: () => external("https://dovetail.blog", { openInNewTab: true }),
+  capterra: () => external("https://www.capterra.com/p/174077/Dovetail/", { openInNewTab: true }),
   customers: () => internal("/product/customers"),
   demo: () => external("https://calendly.com/benjaminhumphrey/demo/", { openInNewTab: true }),
   email: () => external("mailto:hello@dovetailapp.com", { openInNewTab: true }),
