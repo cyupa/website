@@ -1,10 +1,8 @@
-import { COLORS } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
-import { Flow } from "@heydovetail/ui-components";
-import { Flex } from "@heydovetail/ui-components";
+import { COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { LinkList } from "@heydovetail/website/components/site/LinkList";
 import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
+import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
 import { styled } from "typestyle-react";
@@ -21,7 +19,7 @@ export class Footer extends React.PureComponent<Props> {
     const { dark = false } = this.props;
 
     const footer = (
-      <Flex styled={{ gap: 64, layout: "column" }}>
+      <Flex styled={{ gap: 48, layout: "column" }}>
         <Item>
           <Flow styled={{ gap: 64, rowGap: 64 }}>
             <Item style={{ verticalAlign: "top" }}>
@@ -94,6 +92,11 @@ export class Footer extends React.PureComponent<Props> {
             </Item>
           </Flex>
         </Item>
+        <Item>
+          <LocationLink location={locations.capterra()}>
+            <CapterraBadge />
+          </LocationLink>
+        </Item>
       </Flex>
     );
 
@@ -122,4 +125,12 @@ const FooterFinePrint = styled("p", {
   fontSize: "12px",
   fontWeight: 400,
   opacity: 0.4
+});
+
+const CapterraBadge = styled("div", {
+  backgroundImage: "url(https://assets.capterra.com/badge/c16c98c3691afd79ec3e6b52daa034ba.png)",
+  backgroundSize: "contain",
+  display: "inline-block",
+  height: 50,
+  width: 75
 });
