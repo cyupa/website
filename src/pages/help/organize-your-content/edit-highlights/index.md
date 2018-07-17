@@ -2,7 +2,7 @@
 path: "/help/edit-highlights"
 date: "2018-06-25"
 title: "Edit and merge highlights"
-weight: 4
+weight: 3
 ---
 
 ![Screenshot of multiple selected highlights](./bulk-edit.png)

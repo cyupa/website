@@ -2,7 +2,7 @@
 path: "/help/edit-mulitple"
 date: "2018-06-28"
 title: "Edit multiple notes, tags, or insights"
-weight: 5
+weight: 2
 ---
 
 ![Screenshot of multiple selected notes](./bulk-edit.png)

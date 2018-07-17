@@ -2,7 +2,7 @@
 path: "/help/archive"
 date: "2018-06-28"
 title: "Archive completed projects"
-weight: 8
+weight: 4
 ---
 
 Completed projects can be **archived** to keep your list of projects tidy and signal to others that the project has ended. A few things to note:

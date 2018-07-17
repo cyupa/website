@@ -40,7 +40,7 @@ const Content = styled("div", {
       fontWeight: 500
     },
     code: {
-      backgroundColor: COLORS.i04,
+      backgroundColor: COLORS.p08,
       borderRadius: BORDER_RADIUS,
       padding: "0 4px"
     },
@@ -77,7 +77,7 @@ const Content = styled("div", {
       outline: `2px solid ${COLORS.white}`,
       padding: "8px 12px",
       textOverflow: "ellipsis",
-      verticalAlign: "top"
+      verticalAlign: "baseline"
     },
     td: {
       backgroundColor: COLORS.p04
