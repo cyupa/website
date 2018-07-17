@@ -1,4 +1,4 @@
 ---
 title: "Connect other apps"
-weight: 2
+weight: 5
 ---

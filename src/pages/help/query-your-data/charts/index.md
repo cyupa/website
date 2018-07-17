@@ -1,8 +1,8 @@
 ---
 path: "/help/charts"
 date: "2018-06-25"
-title: "See your tag usage as a bar or line chart"
-weight: 6
+title: "See tag usage as a bar or line chart"
+weight: 2
 ---
 
 ![Screenshot of a bar chart in Dovetail](./bar.png)

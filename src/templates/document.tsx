@@ -38,7 +38,7 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
       </Helmet>
       <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
         <div style={{ maxWidth: WIDTH * 0.75 }}>
-          <div style={{ fontWeight: 500 }}>
+          <div style={{ color: COLORS.i60, fontWeight: 500 }}>
             <Breadcrumbs
               crumbs={pathContext.breadcrumb.map(breadcrumb => ({
                 location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,

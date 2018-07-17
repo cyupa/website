@@ -69,7 +69,7 @@ export default class extends React.PureComponent<Props, State> {
       )
     });
 
-    cards.splice(2, 0, {
+    cards.splice(4, 0, {
       key: "slack",
       node: (
         <ActionCard
@@ -84,7 +84,7 @@ export default class extends React.PureComponent<Props, State> {
       )
     });
 
-    cards.splice(4, 0, {
+    cards.splice(7, 0, {
       key: "twitter",
       node: (
         <ActionCard
@@ -99,7 +99,7 @@ export default class extends React.PureComponent<Props, State> {
       )
     });
 
-    cards.splice(9, 0, {
+    cards.splice(10, 0, {
       key: "blog",
       node: (
         <ActionCard
