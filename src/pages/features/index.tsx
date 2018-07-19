@@ -1,9 +1,8 @@
-import { COLORS, Flex, Item } from "@heydovetail/ui-components";
-import { Container } from "@heydovetail/website/components/layout/Container";
+import { COLORS } from "@heydovetail/ui-components";
 import { Features } from "@heydovetail/website/components/site/Features";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
-import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
+import { WIDTH } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
 import React from "react";
@@ -25,15 +24,15 @@ export default class extends React.PureComponent {
             content="Features designed to help you organize and analyze customer feedback and user research data."
           />
         </Helmet>
-        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
+        <LightContainer>
           <HeroText
             center={false}
             maxWidth={WIDTH / 2}
             text="Features designed to help you organize and analyze customer feedback and user research data."
             title="All features"
           />
-        </Container>
-        <LightContainer backgroundColor={COLORS.p04} maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+        </LightContainer>
+        <LightContainer backgroundColor={COLORS.p04}>
           <Features
             features={[
               {
@@ -135,16 +134,10 @@ export default class extends React.PureComponent {
             ]}
           />
         </LightContainer>
-        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: VERTICAL_GAP } }}>
-          <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
-            <Item>
-              <UseCases showTitle />
-            </Item>
-            <Item>
-              <CenteredSignUp />
-            </Item>
-          </Flex>
-        </Container>
+        <LightContainer>
+          <UseCases showTitle />
+          <CenteredSignUp />
+        </LightContainer>
       </>
     );
   }
