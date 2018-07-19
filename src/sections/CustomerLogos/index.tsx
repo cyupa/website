@@ -13,7 +13,7 @@ export class CustomerLogos extends React.PureComponent<Props> {
     const { color = COLORS.i60, customers } = this.props;
     return (
       <div style={{ color: color }}>
-        <FlexWrap styled={{ gap: 32, justifyContent: "center" }}>
+        <FlexWrap styled={{ gap: 64, justifyContent: "center" }}>
           {customers.map((c, i) => (
             <Item key={i}>
               <Link href={c.url} target="_blank">
