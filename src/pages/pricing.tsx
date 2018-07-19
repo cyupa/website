@@ -31,7 +31,7 @@ export default class extends React.PureComponent {
             content="Simple, transparent, and affordable pricing. Pay the same price each month regardless of your team size."
           />
         </Helmet>
-        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
+        <LightContainer>
           <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
             <Item>
               <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
@@ -70,71 +70,67 @@ export default class extends React.PureComponent {
               </Flex>
             </Item>
           </Flex>
-        </Container>
-        <LightContainer backgroundColor={COLORS.p04} maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
+        </LightContainer>
+        <LightContainer backgroundColor={COLORS.p04}>
           <TeamSizeSlider />
         </LightContainer>
-        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: VERTICAL_GAP } }}>
-          <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
-            <Item>
-              <FrequentlyAskedQuestions
-                faqs={[
-                  <Faq
-                    question="What does “per team” mean?"
-                    answer={`You might be used to paying fees or licenses for each of your users. With Dovetail, whether you have 5 or 500 users, the price is always ${MONTHLY_PRICE} / month.`}
-                  />,
-                  <Faq
-                    question="What does “all current &amp; future features” mean?"
-                    answer="Cloud-based software means you don’t have to pay to download the latest version. All new features we release are included in your subscription."
-                  />,
-                  <Faq
-                    question="How safe is our data?"
-                    answer="We use industry-standard cloud infrastructure along with extra safeguards to ensure your data remains private and secure."
-                    location={locations.security()}
-                  />,
-                  <Faq
-                    question="Will we be charged when the trial’s up?"
-                    answer="No, we don’t require a card upfront. If you want to continue using Dovetail at the end of your trial, we’ll ask for your credit card then."
-                  />,
-                  <Faq
-                    question="What if we need a longer trial?"
-                    answer="We’re happy to extend your trial for as long as you need. Just let us know if you need more time and we’ll sort it out straight away."
-                  />,
-                  <Faq
-                    question="Can we cancel at any time?"
-                    answer="Yes. You can cancel your subscription whenever you like, however we do not offer refunds if for a billing period you’ve already paid for."
-                  />,
-                  <Faq
-                    question="Can we pay yearly?"
-                    answer="Yes. When upgrading your team, you can choose to pay monthly or yearly. If you’re not sure, you can switch from monthly to yearly billing later on."
-                  />,
-                  <Faq
-                    question="Do you offer product demos?"
-                    answer="We sure do. We’re happy to give you a walkthrough over a video call, or if you’re in Sydney, we can pop into your office."
-                    location={locations.demo()}
-                    linkText="Schedule a demo →"
-                  />,
-                  <Faq
-                    question="How do you compare to similar tools?"
-                    answer="Depending on what you’re thinking of, Dovetail might be more collaborative, more intuitive, or cheaper."
-                    location={{
-                      internal: false,
-                      url:
-                        "https://www.quora.com/How-does-Dovetail-compare-to-other-research-software-on-the-market/answer/Benjamin-Humphrey",
-                      openInNewTab: true
-                    }}
-                    linkText="Check out our answer on Quora →"
-                  />,
-                  <Faq
-                    question="What’s the catch?"
-                    answer="There isn’t one! We’re simply tired of expensive, unintuitive software with lock-in contracts, annoying salespeople, and opaque pricing."
-                  />
-                ]}
+        <LightContainer>
+          <FrequentlyAskedQuestions
+            faqs={[
+              <Faq
+                question="What does “per team” mean?"
+                answer={`You might be used to paying fees or licenses for each of your users. With Dovetail, whether you have 5 or 500 users, the price is always ${MONTHLY_PRICE} / month.`}
+              />,
+              <Faq
+                question="What does “all current &amp; future features” mean?"
+                answer="Cloud-based software means you don’t have to pay to download the latest version. All new features we release are included in your subscription."
+              />,
+              <Faq
+                question="How safe is our data?"
+                answer="We use industry-standard cloud infrastructure along with extra safeguards to ensure your data remains private and secure."
+                location={locations.security()}
+              />,
+              <Faq
+                question="Will we be charged when the trial’s up?"
+                answer="No, we don’t require a card upfront. If you want to continue using Dovetail at the end of your trial, we’ll ask for your credit card then."
+              />,
+              <Faq
+                question="What if we need a longer trial?"
+                answer="We’re happy to extend your trial for as long as you need. Just let us know if you need more time and we’ll sort it out straight away."
+              />,
+              <Faq
+                question="Can we cancel at any time?"
+                answer="Yes. You can cancel your subscription whenever you like, however we do not offer refunds if for a billing period you’ve already paid for."
+              />,
+              <Faq
+                question="Can we pay yearly?"
+                answer="Yes. When upgrading your team, you can choose to pay monthly or yearly. If you’re not sure, you can switch from monthly to yearly billing later on."
+              />,
+              <Faq
+                question="Do you offer product demos?"
+                answer="We sure do. We’re happy to give you a walkthrough over a video call, or if you’re in Sydney, we can pop into your office."
+                location={locations.demo()}
+                linkText="Schedule a demo →"
+              />,
+              <Faq
+                question="How do you compare to similar tools?"
+                answer="Depending on what you’re thinking of, Dovetail might be more collaborative, more intuitive, or cheaper."
+                location={{
+                  internal: false,
+                  url:
+                    "https://www.quora.com/How-does-Dovetail-compare-to-other-research-software-on-the-market/answer/Benjamin-Humphrey",
+                  openInNewTab: true
+                }}
+                linkText="Check out our answer on Quora →"
+              />,
+              <Faq
+                question="What’s the catch?"
+                answer="There isn’t one! We’re simply tired of expensive, unintuitive software with lock-in contracts, annoying salespeople, and opaque pricing."
               />
-            </Item>
-          </Flex>
-        </Container>
-        <LightContainer backgroundColor={COLORS.teal} maxWidth={WIDTH} padding={{ x: PADDING, y: HALF_GAP }}>
+            ]}
+          />
+        </LightContainer>
+        <LightContainer backgroundColor={COLORS.teal}>
           <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
             <Item>
               <CustomerLogos
@@ -158,13 +154,9 @@ export default class extends React.PureComponent {
             </Item>
           </Flex>
         </LightContainer>
-        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: VERTICAL_GAP } }}>
-          <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
-            <Item>
-              <CenteredSignUp />
-            </Item>
-          </Flex>
-        </Container>
+        <LightContainer>
+          <CenteredSignUp />
+        </LightContainer>
       </>
     );
   }

@@ -2,12 +2,12 @@ import { Flex, Item } from "@heydovetail/ui-components";
 import * as customers from "@heydovetail/website/components/icons/customers";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { Container } from "@heydovetail/website/components/layout/Container";
+import { Wrapper } from "@heydovetail/website/components/layout/Wrapper";
 import { TestimonialProps } from "@heydovetail/website/components/site/Testimonial";
 import { Testimonials } from "@heydovetail/website/components/site/Testimonials";
 import { HALF_GAP, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
 import React from "react";
-import { styled } from "typestyle-react";
 
 interface Props {
   testimonials: TestimonialProps[];
@@ -54,7 +54,3 @@ export class SocialProof extends React.PureComponent<Props> {
     );
   }
 }
-
-const Wrapper = styled("div", {
-  padding: `${HALF_GAP}px 0`
-});

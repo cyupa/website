@@ -1,5 +1,6 @@
 import { BREAKPOINT_TABLET, ButtonLink, COLORS, Flex, Flow, Item, SmallText } from "@heydovetail/ui-components";
-import { HALF_GAP, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
+import { Wrapper } from "@heydovetail/website/components/layout/Wrapper";
+import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
 import { styled } from "typestyle-react";
@@ -61,10 +62,6 @@ export class Hero extends React.PureComponent<Props> {
     );
   }
 }
-
-const Wrapper = styled("div", {
-  padding: `0 0 ${HALF_GAP}px`
-});
 
 const Heading = styled("h1", {
   marginTop: "32px"

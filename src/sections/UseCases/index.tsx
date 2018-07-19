@@ -4,11 +4,11 @@ import PictogramQda from "@heydovetail/website/components/icons/pictograms/Picto
 import PictogramRepository from "@heydovetail/website/components/icons/pictograms/PictogramRepository";
 import PictogramResearch from "@heydovetail/website/components/icons/pictograms/PictogramResearch";
 import { Center } from "@heydovetail/website/components/layout/Center";
+import { Wrapper } from "@heydovetail/website/components/layout/Wrapper";
 import { UseCaseCard } from "@heydovetail/website/components/site/UseCaseCard";
 import { HALF_GAP } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
-import { styled } from "../../../node_modules/typestyle-react";
 
 interface Props {
   onClick?: () => void;
@@ -72,7 +72,3 @@ export class UseCases extends React.PureComponent<Props> {
     } else return <Wrapper>{useCases}</Wrapper>;
   }
 }
-
-const Wrapper = styled("div", {
-  padding: `${HALF_GAP}px 0`
-});
