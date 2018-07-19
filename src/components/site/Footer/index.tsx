@@ -37,9 +37,9 @@ export class Footer extends React.PureComponent<Props> {
               <LinkList
                 heading="Product"
                 links={[
-                  { label: "Pricing", location: locations.pricing() },
-                  { label: "Integrations", location: locations.integrations() },
                   { label: "Features", location: locations.features() },
+                  { label: "Integrations", location: locations.integrations() },
+                  { label: "Pricing", location: locations.pricing() },
                   { label: "Security", location: locations.security() }
                 ]}
               />

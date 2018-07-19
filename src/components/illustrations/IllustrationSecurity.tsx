@@ -9,7 +9,7 @@ import * as React from "react";
 export default createSvg((width = 400, height = 320): React.ReactElement<Props> => (
   <svg width={width} height={height} viewBox="0 0 400 320">
     <defs>
-      <linearGradient x1="53.603%" y1="58.556%" x2="60.853%" y2="93.447%" id="a3c23764c78d319ba">
+      <linearGradient x1="53.603%" y1="58.556%" x2="60.853%" y2="93.447%" id="afec9d1b7faaa6daa">
         <stop stopColor="#332DB2" stopOpacity={0.2} offset="0%" />
         <stop stopColor="#332DB2" offset="100%" />
       </linearGradient>
@@ -65,7 +65,7 @@ export default createSvg((width = 400, height = 320): React.ReactElement<Props> 
       />
       <path
         d="M38.412 82.287h117.562v120.51c-.005 15.675-12.722 28.381-28.412 28.387H65.745a28.436 28.436 0 0 1-20.104-8.313 28.38 28.38 0 0 1-8.328-20.081V83.372a1.087 1.087 0 0 1 1.099-1.085z"
-        fill="url(#a3c23764c78d319ba)"
+        fill="url(#afec9d1b7faaa6daa)"
         fillRule="nonzero"
         style={{ mixBlendMode: "multiply" }}
       />

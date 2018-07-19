@@ -5,7 +5,7 @@ import { Container } from "@heydovetail/website/components/layout/Container";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { Testimonials } from "@heydovetail/website/components/site/Testimonials";
-import { HALF_GAP, PADDING, testimonials, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, testimonials, WIDTH } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
 import React from "react";
@@ -35,7 +35,7 @@ export default class extends React.PureComponent {
             title="Our customers"
           />
         </Container>
-        <LightContainer backgroundColor={COLORS.teal} maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
+        <LightContainer backgroundColor={COLORS.teal}>
           <CustomerLogos
             color={COLORS.white}
             customers={[
@@ -66,14 +66,12 @@ export default class extends React.PureComponent {
             ]}
           />
         </LightContainer>
-        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: VERTICAL_GAP } }}>
+        <LightContainer>
           <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
             <Item>
-              <Container styled={{ maxWidth: WIDTH * 0.75, padding: { x: 0, y: 0 } }}>
-                <Center>
-                  <h2>Here’s why they love Dovetail.</h2>
-                </Center>
-              </Container>
+              <Center>
+                <h2>Here’s why they love Dovetail.</h2>
+              </Center>
             </Item>
             <Item>
               <Testimonials
@@ -93,10 +91,8 @@ export default class extends React.PureComponent {
               />
             </Item>
           </Flex>
-        </Container>
-        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
           <CenteredSignUp />
-        </Container>
+        </LightContainer>
       </>
     );
   }

@@ -1,4 +1,4 @@
 ---
 title: "Organize your content"
-weight: 2
+weight: 3
 ---

@@ -1,9 +1,7 @@
-import { BREAKPOINT_TABLET } from "@heydovetail/ui-components";
-import { Flex } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
+import { BREAKPOINT_TABLET, Flex, Item } from "@heydovetail/ui-components";
 import { Lozenge } from "@heydovetail/website/components/site/Lozenge";
 import { ActionTextWithArrow } from "@heydovetail/website/components/util/ActionTextWithArrow";
-import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
+import { HALF_GAP, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { LocationDescriptor, locations } from "@heydovetail/website/routing/locations";
 import React from "react";
 import { extend, media } from "typestyle";
@@ -72,7 +70,8 @@ const Wrapper = styled("div", ({ imagePosition }: { imagePosition: "left" | "rig
       alignItems: "center",
       display: "flex",
       justifyContent: "space-between",
-      flexDirection: imagePosition === "right" ? "row" : "row-reverse"
+      flexDirection: imagePosition === "right" ? "row" : "row-reverse",
+      padding: `${HALF_GAP}px 0`
     },
     media(
       { maxWidth: BREAKPOINT },

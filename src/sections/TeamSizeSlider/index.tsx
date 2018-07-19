@@ -8,43 +8,43 @@ import { styled } from "typestyle-react";
 const COMPARISONS = [
   {
     value: 0.8,
-    text: "a pack of gum"
+    text: "a pack of gum 🍬"
   },
   {
     value: 1.0,
-    text: "a New York city hot dog"
+    text: "a New York city hot dog 🌭"
   },
   {
     value: 1.5,
-    text: "a cheeseburger"
+    text: "a cheeseburger 🍔"
   },
   {
     value: 2.0,
-    text: "a ride on the bus"
+    text: "a ride on the bus 🚌"
   },
   {
     value: 3.0,
-    text: "a regular coffee"
+    text: "a regular coffee ️️☕️"
   },
   {
     value: 5.0,
-    text: "smashed avocado on toast"
+    text: "smashed avocado on toast 🥑"
   },
   {
     value: 8.0,
-    text: "a burrito"
+    text: "a burrito 🌯"
   },
   {
     value: 15.0,
-    text: "a tee shirt"
+    text: "a tee shirt 👕"
   },
   {
     value: 20.0,
-    text: "a bottle of wine"
+    text: "a bottle of wine 🍷"
   },
   {
     value: 40.0,
-    text: "a dinner out"
+    text: "a dinner out 🍽"
   }
 ];
 
@@ -55,7 +55,7 @@ interface State {
 
 export class TeamSizeSlider extends React.PureComponent<{}, State> {
   public state: State = {
-    count: 20,
+    count: 15,
     disabled: true
   };
 
@@ -75,6 +75,7 @@ export class TeamSizeSlider extends React.PureComponent<{}, State> {
         <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
           <Item>
             <Slider
+              defaultValue={15}
               disabled={this.state.disabled}
               max={100}
               maxLabel="100+ people"

@@ -1,11 +1,10 @@
-import { Flex } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
-import { FlexWrap } from "@heydovetail/ui-components";
+import { Flex, FlexWrap, Item } from "@heydovetail/ui-components";
 import PictogramFeedback from "@heydovetail/website/components/icons/pictograms/PictogramFeedback";
 import PictogramQda from "@heydovetail/website/components/icons/pictograms/PictogramQda";
 import PictogramRepository from "@heydovetail/website/components/icons/pictograms/PictogramRepository";
 import PictogramResearch from "@heydovetail/website/components/icons/pictograms/PictogramResearch";
 import { Center } from "@heydovetail/website/components/layout/Center";
+import { Wrapper } from "@heydovetail/website/components/layout/Wrapper";
 import { UseCaseCard } from "@heydovetail/website/components/site/UseCaseCard";
 import { HALF_GAP } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
@@ -59,15 +58,17 @@ export class UseCases extends React.PureComponent<Props> {
 
     if (showTitle) {
       return (
-        <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
-          <Item>
-            <Center>
-              <h2>Explore use cases</h2>
-            </Center>
-          </Item>
-          <Item>{useCases}</Item>
-        </Flex>
+        <Wrapper>
+          <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
+            <Item>
+              <Center>
+                <h2>Explore use cases</h2>
+              </Center>
+            </Item>
+            <Item>{useCases}</Item>
+          </Flex>
+        </Wrapper>
       );
-    } else return useCases;
+    } else return <Wrapper>{useCases}</Wrapper>;
   }
 }

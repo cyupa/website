@@ -1,8 +1,5 @@
-import { COLORS } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
-import { FlexWrap } from "@heydovetail/ui-components";
+import { COLORS, FlexWrap, Item } from "@heydovetail/ui-components";
 import { Customer } from "@heydovetail/website/components/icons/customers";
-import { HALF_GAP } from "@heydovetail/website/constants";
 import React from "react";
 import { styled } from "typestyle-react";
 
@@ -16,7 +13,7 @@ export class CustomerLogos extends React.PureComponent<Props> {
     const { color = COLORS.i60, customers } = this.props;
     return (
       <div style={{ color: color }}>
-        <FlexWrap styled={{ gap: HALF_GAP, justifyContent: "center" }}>
+        <FlexWrap styled={{ gap: 64, justifyContent: "center" }}>
           {customers.map((c, i) => (
             <Item key={i}>
               <Link href={c.url} target="_blank">

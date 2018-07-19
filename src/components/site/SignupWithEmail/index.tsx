@@ -1,20 +1,25 @@
-import { ButtonLink, COLORS, SmallText, TextInput } from "@heydovetail/ui-components";
-import { Flex } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
+import { ButtonLink, COLORS, Flex, Item, SmallText, TextInput } from "@heydovetail/ui-components";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
+
+interface Props {
+  buttonColor?: string;
+  shade?: "light" | "dark" | "darker";
+}
 
 interface State {
   email: string | undefined;
 }
 
-export class SignupWithEmail extends React.PureComponent {
+export class SignupWithEmail extends React.PureComponent<Props, State> {
   public state: State = {
     email: undefined
   };
 
   public render() {
+    const { buttonColor = COLORS.purple, shade } = this.props;
+
     const url =
       this.state.email !== undefined
         ? `${locations.signUp().url}?email=${encodeURIComponent(this.state.email)}`
@@ -33,14 +38,14 @@ export class SignupWithEmail extends React.PureComponent {
                 />
               </Item>
               <Item style={{ flexGrow: 0 }}>
-                <ButtonLink color={COLORS.purple} location={{ internal: false, url: url }}>
+                <ButtonLink color={buttonColor} location={{ internal: false, url: url }}>
                   Try now for free
                 </ButtonLink>
               </Item>
             </Flex>
           </Item>
           <Item>
-            <SmallText>14 day free trial, no credit card required.</SmallText>
+            <SmallText shade={shade}>14 day free trial, no credit card required.</SmallText>
           </Item>
         </Flex>
       </Center>
