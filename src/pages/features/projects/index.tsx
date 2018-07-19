@@ -1,5 +1,5 @@
 import { Flex, Item } from "@heydovetail/ui-components";
-import IllustrationFilesLarge from "@heydovetail/website/components/illustrations/IllustrationFilesLarge";
+import IllustrationBoardLarge from "@heydovetail/website/components/illustrations/IllustrationBoardLarge";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
 import { Features } from "@heydovetail/website/components/site/Features";
@@ -14,15 +14,15 @@ export default class extends React.PureComponent {
     return (
       <>
         <Helmet>
-          <title>Images and Files – Dovetail</title>
-          <meta property="og:title" content="Images and Files – Dovetail" />
+          <title>Projects – Dovetail</title>
+          <meta property="og:title" content="Projects – Dovetail" />
           <meta
             property="og:description"
-            content="Drag and drop images, recordings, videos, presentations, and more into notes and insights."
+            content="Organize feedback and research with a drag and drop board, integrations, charts, insights, and more."
           />
           <meta
             name="description"
-            content="Drag and drop images, recordings, videos, presentations, and more into notes and insights."
+            content="Organize feedback and research with a drag and drop board, integrations, charts, insights, and more."
           />
         </Helmet>
         <DarkContainer>
@@ -30,12 +30,12 @@ export default class extends React.PureComponent {
             <Flex styled={{ gap: HALF_GAP / 2, layout: "column" }}>
               <Item>
                 <HeroText
-                  title="Keep your files in context."
-                  text="Drag and drop images, recordings, videos, presentations, and more into notes and insights."
+                  title="Your project’s HQ."
+                  text="Organize feedback and research with a drag and drop board, integrations, charts, insights, and more."
                 />
               </Item>
               <Item>
-                <IllustrationFilesLarge />
+                <IllustrationBoardLarge />
               </Item>
             </Flex>
           </Center>
@@ -43,23 +43,23 @@ export default class extends React.PureComponent {
             features={[
               {
                 text:
-                  "Insert images of all shapes and sizes. Dovetail generates device-specific previews and handles SVGs and retina images.",
-                title: "Images"
+                  "Use a drag & drop board to organize notes, tags, and insights. Create colorful groups to represent workflow, themes, or categories.",
+                title: "Boards"
               },
               {
                 text:
-                  "Drag and drop any file type into notes, tags, or insights. Keep audio and video recordings with transcripts or reference PDFs and slide decks.",
-                title: "Files"
+                  "Create workflows to automatically import data into projects from thousands of apps. Choose where content should go and how it should look.",
+                title: "Integrations"
               },
               {
                 text:
-                  "Drag and drop multiple files at once and Dovetail will upload them seamlessly in the background so you can keep working without interruption.",
-                title: "Bulk upload"
+                  "Visualize your tag usage over time with the line chart, or understand your research at a glance with a beautiful bar chart.",
+                title: "Charts"
               },
               {
                 text:
-                  "All files are encrpyted in the database. Image and file URLs are dynamically generated with a 15 minute access window for extra security.",
-                title: "Secure access"
+                  "Summarize your findings and actions as insights. Organize them into categories, add images and files, and link them to your raw data.",
+                title: "Insights"
               }
             ]}
             large

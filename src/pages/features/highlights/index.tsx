@@ -1,5 +1,5 @@
 import { Flex, Item } from "@heydovetail/ui-components";
-import IllustrationFilesLarge from "@heydovetail/website/components/illustrations/IllustrationFilesLarge";
+import IllustrationHighlightsFeedback from "@heydovetail/website/components/illustrations/IllustrationHighlightsFeedback";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
 import { Features } from "@heydovetail/website/components/site/Features";
@@ -14,15 +14,15 @@ export default class extends React.PureComponent {
     return (
       <>
         <Helmet>
-          <title>Images and Files – Dovetail</title>
-          <meta property="og:title" content="Images and Files – Dovetail" />
+          <title>Highlights – Dovetail</title>
+          <meta property="og:title" content="Highlights – Dovetail" />
           <meta
             property="og:description"
-            content="Drag and drop images, recordings, videos, presentations, and more into notes and insights."
+            content="Highlight text in our collaborative editor and turn sentences into structured data."
           />
           <meta
             name="description"
-            content="Drag and drop images, recordings, videos, presentations, and more into notes and insights."
+            content="Highlight text in our collaborative editor and turn sentences into structured data."
           />
         </Helmet>
         <DarkContainer>
@@ -30,12 +30,12 @@ export default class extends React.PureComponent {
             <Flex styled={{ gap: HALF_GAP / 2, layout: "column" }}>
               <Item>
                 <HeroText
-                  title="Keep your files in context."
-                  text="Drag and drop images, recordings, videos, presentations, and more into notes and insights."
+                  title="Categorize qualitative data."
+                  text="Highlight text in our collaborative editor and turn sentences into structured, tagged data."
                 />
               </Item>
               <Item>
-                <IllustrationFilesLarge />
+                <IllustrationHighlightsFeedback />
               </Item>
             </Flex>
           </Center>
@@ -43,23 +43,23 @@ export default class extends React.PureComponent {
             features={[
               {
                 text:
-                  "Insert images of all shapes and sizes. Dovetail generates device-specific previews and handles SVGs and retina images.",
-                title: "Images"
+                  "Take notes with your teammates during customer interviews and user testing sessions and tag sentences as you identify patterns.",
+                title: "Collaborative editor"
               },
               {
                 text:
-                  "Drag and drop any file type into notes, tags, or insights. Keep audio and video recordings with transcripts or reference PDFs and slide decks.",
-                title: "Files"
+                  "Simply select text to highlight it with a tag or insight. See everything you’ve tagged in one view, across projects and notes.",
+                title: "Highlights"
               },
               {
                 text:
-                  "Drag and drop multiple files at once and Dovetail will upload them seamlessly in the background so you can keep working without interruption.",
-                title: "Bulk upload"
+                  "Organically evolve your tagging system with bulk editing. Select multiple highlights and add, replace, and remove tags and insights with ease.",
+                title: "Bulk editing"
               },
               {
                 text:
-                  "All files are encrpyted in the database. Image and file URLs are dynamically generated with a 15 minute access window for extra security.",
-                title: "Secure access"
+                  "Let Dovetail do the work for you. Enable automatic sentiment analysis and Dovetail will add positive and negative tags for you.",
+                title: "Sentiment analysis"
               }
             ]}
             large

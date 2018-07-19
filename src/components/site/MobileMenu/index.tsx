@@ -58,18 +58,18 @@ export class MobileMenu extends React.PureComponent<Props> {
                 <Item style={{ verticalAlign: "top" }}>
                   <LinkList
                     links={[
+                      { label: "Features", location: locations.features(), onClick: onClose },
                       { label: "Pricing", location: locations.pricing(), onClick: onClose },
-                      { label: "Security", location: locations.security(), onClick: onClose },
-                      { label: "Support", location: locations.help(), onClick: onClose }
+                      { label: "Security", location: locations.security(), onClick: onClose }
                     ]}
                   />
                 </Item>
                 <Item style={{ verticalAlign: "top" }}>
                   <LinkList
                     links={[
-                      { label: "About", location: locations.about(), onClick: onClose },
+                      { label: "Support", location: locations.help(), onClick: onClose },
                       { label: "Customers", location: locations.customers(), onClick: onClose },
-                      { label: "Our blog", location: locations.blog(), onClick: onClose }
+                      { label: "About", location: locations.about(), onClick: onClose }
                     ]}
                   />
                 </Item>

@@ -1,12 +1,11 @@
 import { ButtonLink, COLORS, Flex, Flow, Item, PricingCard } from "@heydovetail/ui-components";
 import * as customers from "@heydovetail/website/components/icons/customers";
 import { Center } from "@heydovetail/website/components/layout/Center";
-import { Container } from "@heydovetail/website/components/layout/Container";
 import { Faq } from "@heydovetail/website/components/site/Faq";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { ActionTextWithArrow } from "@heydovetail/website/components/util/ActionTextWithArrow";
-import { HALF_GAP, MONTHLY_PRICE, MONTHLY_PRICE_IN_CENTS, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
+import { HALF_GAP, MONTHLY_PRICE, MONTHLY_PRICE_IN_CENTS, VERTICAL_GAP } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";

@@ -60,12 +60,12 @@ export class Navigation extends React.PureComponent<Props> {
                 </Item>
                 <Item>
                   <ThemeColor styled={{ dark }}>
-                    <SubtleButtonLink location={locations.pricing()}>Pricing</SubtleButtonLink>
+                    <SubtleButtonLink location={locations.features()}>Features</SubtleButtonLink>
                   </ThemeColor>
                 </Item>
                 <Item>
                   <ThemeColor styled={{ dark }}>
-                    <SubtleButtonLink location={locations.help()}>Support</SubtleButtonLink>
+                    <SubtleButtonLink location={locations.pricing()}>Pricing</SubtleButtonLink>
                   </ThemeColor>
                 </Item>
                 {loggedIn ? null : (
