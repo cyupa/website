@@ -1,10 +1,11 @@
 import { COLORS } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
-import { HALF_GAP, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
+import { HALF_GAP, LIGHT_TEXT_OPACITY, PADDING, WIDTH } from "@heydovetail/website/constants";
 import React from "react";
 import { styled } from "typestyle-react";
 
 interface Props {
+  backgroundColor?: string;
   maxWidth?: number;
   overflowBottom?: boolean;
   padding?: { x: number; y: number };
@@ -12,24 +13,30 @@ interface Props {
 
 export class DarkContainer extends React.PureComponent<Props> {
   public render() {
-    const { overflowBottom = false, maxWidth, padding, children } = this.props;
+    const {
+      backgroundColor = COLORS.indigo,
+      overflowBottom = false,
+      maxWidth = WIDTH,
+      padding = { x: PADDING, y: HALF_GAP },
+      children
+    } = this.props;
     return (
-      <Wrapper styled={{ overflowBottom }}>
+      <Wrapper styled={{ backgroundColor, overflowBottom }}>
         <Container styled={{ maxWidth, padding }} children={children} />
       </Wrapper>
     );
   }
 }
 
-const Wrapper = styled("div", ({ overflowBottom }: { overflowBottom: boolean }) => ({
-  backgroundColor: COLORS.indigo,
+const Wrapper = styled("div", ({ backgroundColor, overflowBottom }: { backgroundColor: string; overflowBottom: boolean }) => ({
+  backgroundColor,
   background: overflowBottom
     ? `${
         COLORS.indigo
-      } url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGP6DwABBQECz6AuzQAAAABJRU5ErkJggg==') no-repeat bottom/100% 360px`
+      } url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGP6DwABBQECz6AuzQAAAABJRU5ErkJggg==') no-repeat bottom/100% 400px`
     : COLORS.indigo,
   color: COLORS.white,
-  marginBottom: overflowBottom ? "-180px" : undefined,
+  marginBottom: overflowBottom ? "-200px" : undefined,
   paddingBottom: overflowBottom ? undefined : HALF_GAP,
 
   $nest: {

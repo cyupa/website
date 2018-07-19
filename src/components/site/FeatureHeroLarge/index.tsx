@@ -1,8 +1,6 @@
-import { BREAKPOINT_PHABLET } from "@heydovetail/ui-components";
-import { Flex } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
+import { BREAKPOINT_PHABLET, Flex, Item } from "@heydovetail/ui-components";
 import { Center } from "@heydovetail/website/components/layout/Center";
-import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
+import { HALF_GAP, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import React from "react";
 import { styled } from "typestyle-react";
 import { extend, media } from "typestyle/lib";
@@ -43,6 +41,7 @@ export class FeatureHeroLarge extends React.PureComponent<Props> {
 const Wrapper = styled("div", ({ center }: { center: boolean }) =>
   extend(
     {
+      padding: `${HALF_GAP}px 0`,
       textAlign: center ? "center" : "left"
     },
     media(

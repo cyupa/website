@@ -9,127 +9,144 @@ import * as React from "react";
 export default createSvg((width = 832, height = 536): React.ReactElement<Props> => (
   <svg width={width} height={height} viewBox="0 0 832 536" xmlnsXlink="http://www.w3.org/1999/xlink">
     <defs>
-      <rect id="a7a6514a3ee4f45cb" x={2} y={2} width={276} height={212} rx={3} />
-      <filter x="-2.5%" y="-2.4%" width="105.1%" height="106.6%" filterUnits="objectBoundingBox" id="a7a6514a3ee4f45ca">
+      <rect id="a2e3fea3632acf19b" x={2} y={2} width={252} height={172} rx={4} />
+      <filter x="-2.8%" y="-2.9%" width="105.6%" height="108.1%" filterUnits="objectBoundingBox" id="a2e3fea3632acf19a">
         <feOffset dy={2} in="SourceAlpha" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={2} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1" />
       </filter>
-      <rect id="a7a6514a3ee4f45cd" width={280} height={216} rx={3} />
-      <filter x="-1.6%" y="-1.6%" width="103.2%" height="104.2%" filterUnits="objectBoundingBox" id="a7a6514a3ee4f45cc">
+      <rect id="a2e3fea3632acf19d" width={256} height={176} rx={4} />
+      <filter x="-1.8%" y="-2%" width="103.5%" height="105.1%" filterUnits="objectBoundingBox" id="a2e3fea3632acf19c">
         <feMorphology radius={1} operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1" />
         <feOffset dy={1} in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={1} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" in="shadowBlurOuter1" />
       </filter>
-      <circle id="a7a6514a3ee4f45ce" cx={12} cy={12} r={12} />
-      <rect id="a7a6514a3ee4f45ch" x={2} y={2} width={276} height={132} rx={3} />
-      <filter x="-2.5%" y="-3.8%" width="105.1%" height="110.6%" filterUnits="objectBoundingBox" id="a7a6514a3ee4f45cg">
+      <circle id="a2e3fea3632acf19e" cx={12} cy={12} r={12} />
+      <rect id="a2e3fea3632acf19h" x={2} y={2} width={252} height={116} rx={4} />
+      <filter x="-2.8%" y="-4.3%" width="105.6%" height="112.1%" filterUnits="objectBoundingBox" id="a2e3fea3632acf19g">
         <feOffset dy={2} in="SourceAlpha" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={2} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1" />
       </filter>
-      <rect id="a7a6514a3ee4f45cj" width={280} height={136} rx={3} />
-      <filter x="-1.6%" y="-2.6%" width="103.2%" height="106.6%" filterUnits="objectBoundingBox" id="a7a6514a3ee4f45ci">
+      <rect id="a2e3fea3632acf19j" width={256} height={120} rx={4} />
+      <filter x="-1.8%" y="-2.9%" width="103.5%" height="107.5%" filterUnits="objectBoundingBox" id="a2e3fea3632acf19i">
         <feMorphology radius={1} operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1" />
         <feOffset dy={1} in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={1} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" in="shadowBlurOuter1" />
       </filter>
-      <circle id="a7a6514a3ee4f45ck" cx={12} cy={12} r={12} />
-      <rect id="a7a6514a3ee4f45cn" x={2} y={2} width={244} height={164} rx={3} />
-      <filter x="-2.9%" y="-3%" width="105.7%" height="108.5%" filterUnits="objectBoundingBox" id="a7a6514a3ee4f45cm">
+      <circle id="a2e3fea3632acf19k" cx={12} cy={12} r={12} />
+      <rect id="a2e3fea3632acf19n" x={2} y={2} width={252} height={144} rx={4} />
+      <filter x="-2.8%" y="-3.5%" width="105.6%" height="109.7%" filterUnits="objectBoundingBox" id="a2e3fea3632acf19m">
         <feOffset dy={2} in="SourceAlpha" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={2} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1" />
       </filter>
-      <rect id="a7a6514a3ee4f45cp" width={248} height={168} rx={3} />
-      <filter x="-1.8%" y="-2.1%" width="103.6%" height="105.4%" filterUnits="objectBoundingBox" id="a7a6514a3ee4f45co">
+      <rect id="a2e3fea3632acf19p" width={256} height={148} rx={4} />
+      <filter x="-1.8%" y="-2.4%" width="103.5%" height="106.1%" filterUnits="objectBoundingBox" id="a2e3fea3632acf19o">
         <feMorphology radius={1} operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1" />
         <feOffset dy={1} in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={1} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" in="shadowBlurOuter1" />
       </filter>
-      <circle id="a7a6514a3ee4f45cq" cx={12} cy={12} r={12} />
-      <rect id="a7a6514a3ee4f45ct" x={2} y={2} width={236} height={164} rx={3} />
-      <filter x="-3%" y="-3%" width="105.9%" height="108.5%" filterUnits="objectBoundingBox" id="a7a6514a3ee4f45cs">
+      <circle id="a2e3fea3632acf19q" cx={12} cy={12} r={12} />
+      <rect id="a2e3fea3632acf19t" x={2} y={2} width={252} height={144} rx={4} />
+      <filter x="-2.8%" y="-3.5%" width="105.6%" height="109.7%" filterUnits="objectBoundingBox" id="a2e3fea3632acf19s">
         <feOffset dy={2} in="SourceAlpha" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={2} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1" />
       </filter>
-      <rect id="a7a6514a3ee4f45cv" width={240} height={168} rx={3} />
-      <filter x="-1.9%" y="-2.1%" width="103.8%" height="105.4%" filterUnits="objectBoundingBox" id="a7a6514a3ee4f45cu">
+      <rect id="a2e3fea3632acf19v" width={256} height={148} rx={4} />
+      <filter x="-1.8%" y="-2.4%" width="103.5%" height="106.1%" filterUnits="objectBoundingBox" id="a2e3fea3632acf19u">
         <feMorphology radius={1} operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1" />
         <feOffset dy={1} in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={1} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" in="shadowBlurOuter1" />
       </filter>
-      <circle id="a7a6514a3ee4f45cw" cx={12} cy={12} r={12} />
-      <rect id="a7a6514a3ee4f45cz" x={2} y={2} width={244} height={164} rx={3} />
-      <filter x="-2.9%" y="-3%" width="105.7%" height="108.5%" filterUnits="objectBoundingBox" id="a7a6514a3ee4f45cy">
+      <circle id="a2e3fea3632acf19w" cx={12} cy={12} r={12} />
+      <circle id="a2e3fea3632acf19z" cx={12} cy={12} r={12} />
+      <filter x="-27.1%" y="-22.9%" width="154.2%" height="154.2%" filterUnits="objectBoundingBox" id="a2e3fea3632acf19y">
+        <feOffset dy={1} in="SourceAlpha" result="shadowOffsetOuter1" />
+        <feGaussianBlur stdDeviation={2} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+        <feColorMatrix
+          values="0 0 0 0 0.141176471 0 0 0 0 0.0705882353 0 0 0 0 0.301960784 0 0 0 0.16 0"
+          in="shadowBlurOuter1"
+        />
+      </filter>
+      <rect id="a2e3fea3632acf19B" x={2} y={2} width={252} height={144} rx={4} />
+      <filter x="-2.8%" y="-3.5%" width="105.6%" height="109.7%" filterUnits="objectBoundingBox" id="a2e3fea3632acf19A">
         <feOffset dy={2} in="SourceAlpha" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={2} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1" />
       </filter>
-      <rect id="a7a6514a3ee4f45cB" width={248} height={168} rx={3} />
-      <filter x="-1.8%" y="-2.1%" width="103.6%" height="105.4%" filterUnits="objectBoundingBox" id="a7a6514a3ee4f45cA">
+      <rect id="a2e3fea3632acf19D" width={256} height={148} rx={4} />
+      <filter x="-1.8%" y="-2.4%" width="103.5%" height="106.1%" filterUnits="objectBoundingBox" id="a2e3fea3632acf19C">
         <feMorphology radius={1} operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1" />
         <feOffset dy={1} in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={1} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" in="shadowBlurOuter1" />
       </filter>
-      <circle id="a7a6514a3ee4f45cC" cx={12} cy={12} r={12} />
-      <rect id="a7a6514a3ee4f45cF" x={2} y={2} width={244} height={132} rx={3} />
-      <filter x="-2.9%" y="-3.8%" width="105.7%" height="110.6%" filterUnits="objectBoundingBox" id="a7a6514a3ee4f45cE">
+      <circle id="a2e3fea3632acf19E" cx={12} cy={12} r={12} />
+      <rect id="a2e3fea3632acf19H" x={2} y={2} width={252} height={172} rx={4} />
+      <filter x="-2.8%" y="-2.9%" width="105.6%" height="108.1%" filterUnits="objectBoundingBox" id="a2e3fea3632acf19G">
         <feOffset dy={2} in="SourceAlpha" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={2} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1" />
       </filter>
-      <rect id="a7a6514a3ee4f45cH" width={248} height={136} rx={3} />
-      <filter x="-1.8%" y="-2.6%" width="103.6%" height="106.6%" filterUnits="objectBoundingBox" id="a7a6514a3ee4f45cG">
+      <rect id="a2e3fea3632acf19J" width={256} height={176} rx={4} />
+      <filter x="-1.8%" y="-2%" width="103.5%" height="105.1%" filterUnits="objectBoundingBox" id="a2e3fea3632acf19I">
         <feMorphology radius={1} operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1" />
         <feOffset dy={1} in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={1} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" in="shadowBlurOuter1" />
       </filter>
-      <circle id="a7a6514a3ee4f45cI" cx={12} cy={12} r={12} />
-      <rect id="a7a6514a3ee4f45cL" x={2} y={2} width={236} height={164} rx={3} />
-      <filter x="-3%" y="-3%" width="105.9%" height="108.5%" filterUnits="objectBoundingBox" id="a7a6514a3ee4f45cK">
+      <circle id="a2e3fea3632acf19K" cx={12} cy={12} r={12} />
+      <circle id="a2e3fea3632acf19N" cx={12} cy={12} r={12} />
+      <filter x="-27.1%" y="-22.9%" width="154.2%" height="154.2%" filterUnits="objectBoundingBox" id="a2e3fea3632acf19M">
+        <feOffset dy={1} in="SourceAlpha" result="shadowOffsetOuter1" />
+        <feGaussianBlur stdDeviation={2} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+        <feColorMatrix
+          values="0 0 0 0 0.141176471 0 0 0 0 0.0705882353 0 0 0 0 0.301960784 0 0 0 0.16 0"
+          in="shadowBlurOuter1"
+        />
+      </filter>
+      <rect id="a2e3fea3632acf19P" x={2} y={2} width={252} height={144} rx={4} />
+      <filter x="-2.8%" y="-3.5%" width="105.6%" height="109.7%" filterUnits="objectBoundingBox" id="a2e3fea3632acf19O">
         <feOffset dy={2} in="SourceAlpha" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={2} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1" />
       </filter>
-      <rect id="a7a6514a3ee4f45cN" width={240} height={168} rx={3} />
-      <filter x="-1.9%" y="-2.1%" width="103.8%" height="105.4%" filterUnits="objectBoundingBox" id="a7a6514a3ee4f45cM">
+      <rect id="a2e3fea3632acf19R" width={256} height={148} rx={4} />
+      <filter x="-1.8%" y="-2.4%" width="103.5%" height="106.1%" filterUnits="objectBoundingBox" id="a2e3fea3632acf19Q">
         <feMorphology radius={1} operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1" />
         <feOffset dy={1} in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
         <feGaussianBlur stdDeviation={1} in="shadowOffsetOuter1" result="shadowBlurOuter1" />
         <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0" in="shadowBlurOuter1" />
       </filter>
-      <circle id="a7a6514a3ee4f45cO" cx={12} cy={12} r={12} />
+      <circle id="a2e3fea3632acf19S" cx={12} cy={12} r={12} />
     </defs>
     <g fill="none" fillRule="evenodd">
       <g transform="translate(16 88)">
-        <use fill="#000" filter="url(#a7a6514a3ee4f45ca)" xlinkHref="#a7a6514a3ee4f45cb" />
-        <use fill="#FFF" xlinkHref="#a7a6514a3ee4f45cb" />
+        <use fill="#000" filter="url(#a2e3fea3632acf19a)" xlinkHref="#a2e3fea3632acf19b" />
+        <use fill="#FFF" xlinkHref="#a2e3fea3632acf19b" />
         <g strokeLinecap="square">
-          <use fill="#000" filter="url(#a7a6514a3ee4f45cc)" xlinkHref="#a7a6514a3ee4f45cd" />
-          <use fill="#FFF" xlinkHref="#a7a6514a3ee4f45cd" />
-          <rect strokeOpacity={0.098} stroke="#140B2F" x={-0.5} y={-0.5} width={281} height={217} rx={3} />
+          <use fill="#000" filter="url(#a2e3fea3632acf19c)" xlinkHref="#a2e3fea3632acf19d" />
+          <rect strokeOpacity={0.098} stroke="#140B2F" fill="#FFF" x={-0.5} y={-0.5} width={257} height={177} rx={4} />
         </g>
         <g transform="translate(16 16)">
-          <mask id="a7a6514a3ee4f45cf" fill="#fff">
-            <use xlinkHref="#a7a6514a3ee4f45ce" />
+          <mask id="a2e3fea3632acf19f" fill="#fff">
+            <use xlinkHref="#a2e3fea3632acf19e" />
           </mask>
-          <use fill="#A5A5D8" opacity={0.3} xlinkHref="#a7a6514a3ee4f45ce" />
-          <g mask="url(#a7a6514a3ee4f45cf)">
+          <use fill="#A5A5D8" opacity={0.3} xlinkHref="#a2e3fea3632acf19e" />
+          <g mask="url(#a2e3fea3632acf19f)">
             <path
               d="M15.22 5.23c.523.333.977.764 1.32 1.276a8.42 8.42 0 0 1 1.273 3.083c.144.724.238 1.462.367 2.177l.082.794a.33.33 0 0 1-.134.307L15 15l-3-3.5-3.02 4.052-1.976-1.227-.85-.512a.263.263 0 0 1-.108-.19 18.705 18.705 0 0 1 .006-2.71c.071-.96.255-1.907.548-2.822a6.388 6.388 0 0 1 1.37-2.412 4.612 4.612 0 0 1 2.703-1.494c.692-.112 1.422-.14 2.12-.185.026 0 .051.008.074.021a.266.266 0 0 1 .088.073c.102.15.191.31.267.474.026.08.078.148.149.193a.416.416 0 0 0 .215.039 3.22 3.22 0 0 1 1.635.43z"
               fill="#7878AB"
@@ -166,26 +183,25 @@ export default createSvg((width = 832, height = 536): React.ReactElement<Props> 
           fill="#24124D"
           opacity={0.5}
         />
-        <rect fill="#DCD5EE" x={16} y={64} width={248} height={12} rx={3} />
-        <rect fill="#DCD5EE" x={16} y={96} width={136} height={12} rx={3} />
-        <rect fill="#DCD5EE" x={16} y={160} width={136} height={12} rx={3} />
-        <rect fill="#512DA8" x={168} y={96} width={96} height={12} rx={3} />
-        <rect fill="#512DA8" x={16} y={128} width={248} height={12} rx={3} />
+        <rect fill="#DCD5EE" x={16} y={64} width={224} height={12} rx={4} />
+        <rect fill="#DCD5EE" x={16} y={92} width={136} height={12} rx={4} />
+        <rect fill="#DCD5EE" x={16} y={148} width={136} height={12} rx={4} />
+        <rect fill="#512DA8" x={168} y={92} width={72} height={12} rx={4} />
+        <rect fill="#512DA8" x={16} y={120} width={224} height={12} rx={4} />
       </g>
-      <g transform="translate(16 320)">
-        <use fill="#000" filter="url(#a7a6514a3ee4f45cg)" xlinkHref="#a7a6514a3ee4f45ch" />
-        <use fill="#FFF" xlinkHref="#a7a6514a3ee4f45ch" />
+      <g transform="translate(16 280)">
+        <use fill="#000" filter="url(#a2e3fea3632acf19g)" xlinkHref="#a2e3fea3632acf19h" />
+        <use fill="#FFF" xlinkHref="#a2e3fea3632acf19h" />
         <g strokeLinecap="square">
-          <use fill="#000" filter="url(#a7a6514a3ee4f45ci)" xlinkHref="#a7a6514a3ee4f45cj" />
-          <use fill="#FFF" xlinkHref="#a7a6514a3ee4f45cj" />
-          <rect strokeOpacity={0.098} stroke="#140B2F" x={-0.5} y={-0.5} width={281} height={137} rx={3} />
+          <use fill="#000" filter="url(#a2e3fea3632acf19i)" xlinkHref="#a2e3fea3632acf19j" />
+          <rect strokeOpacity={0.098} stroke="#140B2F" fill="#FFF" x={-0.5} y={-0.5} width={257} height={121} rx={4} />
         </g>
         <g transform="translate(16 16)">
-          <mask id="a7a6514a3ee4f45cl" fill="#fff">
-            <use xlinkHref="#a7a6514a3ee4f45ck" />
+          <mask id="a2e3fea3632acf19l" fill="#fff">
+            <use xlinkHref="#a2e3fea3632acf19k" />
           </mask>
-          <use fill="#A5A5D8" opacity={0.3} xlinkHref="#a7a6514a3ee4f45ck" />
-          <g mask="url(#a7a6514a3ee4f45cl)">
+          <use fill="#A5A5D8" opacity={0.3} xlinkHref="#a2e3fea3632acf19k" />
+          <g mask="url(#a2e3fea3632acf19l)">
             <path
               d="M15.22 5.23c.523.333.977.764 1.32 1.276a8.42 8.42 0 0 1 1.273 3.083c.144.724.238 1.462.367 2.177l.082.794a.33.33 0 0 1-.134.307L15 15l-3-3.5-3.02 4.052-1.976-1.227-.85-.512a.263.263 0 0 1-.108-.19 18.705 18.705 0 0 1 .006-2.71c.071-.96.255-1.907.548-2.822a6.388 6.388 0 0 1 1.37-2.412 4.612 4.612 0 0 1 2.703-1.494c.692-.112 1.422-.14 2.12-.185.026 0 .051.008.074.021a.266.266 0 0 1 .088.073c.102.15.191.31.267.474.026.08.078.148.149.193a.416.416 0 0 0 .215.039 3.22 3.22 0 0 1 1.635.43z"
               fill="#7878AB"
@@ -222,24 +238,23 @@ export default createSvg((width = 832, height = 536): React.ReactElement<Props> 
           fill="#24124D"
           opacity={0.5}
         />
-        <rect fill="#DCD5EE" x={16} y={64} width={248} height={12} rx={3} />
-        <rect fill="#DCD5EE" x={16} y={96} width={136} height={12} rx={3} />
-        <rect fill="#512DA8" x={168} y={96} width={96} height={12} rx={3} />
+        <rect fill="#DCD5EE" x={16} y={64} width={224} height={12} rx={4} />
+        <rect fill="#DCD5EE" x={16} y={92} width={136} height={12} rx={4} />
+        <rect fill="#512DA8" x={168} y={92} width={72} height={12} rx={4} />
       </g>
-      <g transform="translate(312 16)">
-        <use fill="#000" filter="url(#a7a6514a3ee4f45cm)" xlinkHref="#a7a6514a3ee4f45cn" />
-        <use fill="#FFF" xlinkHref="#a7a6514a3ee4f45cn" />
+      <g transform="translate(288 16)">
+        <use fill="#000" filter="url(#a2e3fea3632acf19m)" xlinkHref="#a2e3fea3632acf19n" />
+        <use fill="#FFF" xlinkHref="#a2e3fea3632acf19n" />
         <g strokeLinecap="square">
-          <use fill="#000" filter="url(#a7a6514a3ee4f45co)" xlinkHref="#a7a6514a3ee4f45cp" />
-          <use fill="#FFF" xlinkHref="#a7a6514a3ee4f45cp" />
-          <rect strokeOpacity={0.098} stroke="#140B2F" x={-0.5} y={-0.5} width={249} height={169} rx={3} />
+          <use fill="#000" filter="url(#a2e3fea3632acf19o)" xlinkHref="#a2e3fea3632acf19p" />
+          <rect strokeOpacity={0.098} stroke="#140B2F" fill="#FFF" x={-0.5} y={-0.5} width={257} height={149} rx={4} />
         </g>
         <g transform="translate(16 16)">
-          <mask id="a7a6514a3ee4f45cr" fill="#fff">
-            <use xlinkHref="#a7a6514a3ee4f45cq" />
+          <mask id="a2e3fea3632acf19r" fill="#fff">
+            <use xlinkHref="#a2e3fea3632acf19q" />
           </mask>
-          <use fill="#A5A5D8" opacity={0.3} xlinkHref="#a7a6514a3ee4f45cq" />
-          <g mask="url(#a7a6514a3ee4f45cr)">
+          <use fill="#A5A5D8" opacity={0.3} xlinkHref="#a2e3fea3632acf19q" />
+          <g mask="url(#a2e3fea3632acf19r)">
             <path
               d="M15.22 5.23c.523.333.977.764 1.32 1.276a8.42 8.42 0 0 1 1.273 3.083c.144.724.238 1.462.367 2.177l.082.794a.33.33 0 0 1-.134.307L15 15l-3-3.5-3.02 4.052-1.976-1.227-.85-.512a.263.263 0 0 1-.108-.19 18.705 18.705 0 0 1 .006-2.71c.071-.96.255-1.907.548-2.822a6.388 6.388 0 0 1 1.37-2.412 4.612 4.612 0 0 1 2.703-1.494c.692-.112 1.422-.14 2.12-.185.026 0 .051.008.074.021a.266.266 0 0 1 .088.073c.102.15.191.31.267.474.026.08.078.148.149.193a.416.416 0 0 0 .215.039 3.22 3.22 0 0 1 1.635.43z"
               fill="#7878AB"
@@ -276,25 +291,26 @@ export default createSvg((width = 832, height = 536): React.ReactElement<Props> 
           fill="#24124D"
           opacity={0.5}
         />
-        <rect fill="#DCD5EE" x={16} y={64} width={216} height={12} rx={3} />
-        <rect fill="#DCD5EE" x={16} y={96} width={136} height={12} rx={3} />
-        <rect fill="#512DA8" x={16} y={128} width={96} height={12} rx={3} />
-        <rect fill="#512DA8" x={168} y={96} width={64} height={12} rx={3} />
+        <rect fill="#DCD5EE" x={16} y={64} width={224} height={12} rx={4} />
+        <rect fill="#DCD5EE" x={16} y={92} width={136} height={12} rx={4} />
+        <rect fill="#512DA8" x={16} y={120} width={96} height={12} rx={4} />
+        <rect fill="#512DA8" x={168} y={92} width={72} height={12} rx={4} />
       </g>
-      <g transform="translate(576 40)">
-        <use fill="#000" filter="url(#a7a6514a3ee4f45cs)" xlinkHref="#a7a6514a3ee4f45ct" />
-        <use fill="#FFF" xlinkHref="#a7a6514a3ee4f45ct" />
-        <g strokeLinecap="square">
-          <use fill="#000" filter="url(#a7a6514a3ee4f45cu)" xlinkHref="#a7a6514a3ee4f45cv" />
-          <use fill="#FFF" xlinkHref="#a7a6514a3ee4f45cv" />
-          <rect strokeOpacity={0.098} stroke="#140B2F" x={-0.5} y={-0.5} width={241} height={169} rx={3} />
+      <g transform="translate(552 47)">
+        <g transform="translate(8 9)">
+          <use fill="#000" filter="url(#a2e3fea3632acf19s)" xlinkHref="#a2e3fea3632acf19t" />
+          <use fill="#FFF" xlinkHref="#a2e3fea3632acf19t" />
         </g>
-        <g transform="translate(16 16)">
-          <mask id="a7a6514a3ee4f45cx" fill="#fff">
-            <use xlinkHref="#a7a6514a3ee4f45cw" />
+        <g strokeLinecap="square" transform="translate(8 9)">
+          <use fill="#000" filter="url(#a2e3fea3632acf19u)" xlinkHref="#a2e3fea3632acf19v" />
+          <rect strokeOpacity={0.098} stroke="#140B2F" fill="#FFF" x={-0.5} y={-0.5} width={257} height={149} rx={4} />
+        </g>
+        <g transform="translate(24 25)">
+          <mask id="a2e3fea3632acf19x" fill="#fff">
+            <use xlinkHref="#a2e3fea3632acf19w" />
           </mask>
-          <use fill="#A5A5D8" opacity={0.3} xlinkHref="#a7a6514a3ee4f45cw" />
-          <g mask="url(#a7a6514a3ee4f45cx)">
+          <use fill="#A5A5D8" opacity={0.3} xlinkHref="#a2e3fea3632acf19w" />
+          <g mask="url(#a2e3fea3632acf19x)">
             <path
               d="M15.75 6c.522.332 0 3.5.25 4.5.207.83-1.126-.004-4-2.5-1.493.851-2.493 1.351-3 1.5-1.889.555-1.639-1.065-1.5-1.5.275-.895-.128-1.306.5-2 .699-.792 1.623-.64 2.673-.815.692-.112 1.422-.14 2.12-.185.026 0 .051.008.074.021a.266.266 0 0 1 .088.073c.102.15.191.31.267.474.026.08.078.148.149.193a.416.416 0 0 0 .215.039c.572-.005 1.667-.087 2.164.2z"
               fill="#7E7EB1"
@@ -328,29 +344,42 @@ export default createSvg((width = 832, height = 536): React.ReactElement<Props> 
           </g>
         </g>
         <path
-          d="M58.555 32h-1.512v-8.455h1.512V32zm1.933 0v-6.41h1.4v1.025h.1c.305-.715 1.055-1.154 2.016-1.154 1.43 0 2.232.861 2.232 2.39V32H64.79v-3.803c0-.978-.445-1.47-1.324-1.47-.938 0-1.524.597-1.524 1.54V32h-1.453zm7.934-7.94h1.447v1.57h1.406v1.161H69.87v3.146c0 .633.27.915.879.915.205 0 .31-.012.48-.03v1.137c-.205.041-.468.07-.75.07-1.47 0-2.056-.498-2.056-1.74v-3.498h-1.043v-1.16h1.043v-1.57zm6.96 2.555c-.866 0-1.476.621-1.54 1.559h3.017c-.029-.95-.603-1.559-1.476-1.559zm1.49 3.621h1.376c-.275 1.166-1.336 1.893-2.848 1.893-1.886 0-3.023-1.248-3.023-3.31 0-2.063 1.154-3.358 3.012-3.358 1.828 0 2.924 1.213 2.924 3.234v.47h-4.477v.075c.035 1.067.65 1.735 1.605 1.735.721 0 1.22-.264 1.43-.739zm2.9 1.764v-6.41h1.4v.996h.1c.175-.633.86-1.102 1.681-1.102.205 0 .457.024.598.065v1.347c-.112-.04-.51-.082-.739-.082-.931 0-1.587.586-1.587 1.483V32H79.77zm4.365-6.41h1.558l1.483 4.957h.1l1.47-4.957h1.535L88.016 32h-1.6l-2.28-6.41zM91.525 32v-6.41h1.448V32h-1.448zm.721-7.453c-.527 0-.896-.34-.896-.803s.369-.803.896-.803c.533 0 .897.34.897.803s-.364.803-.897.803zm5.215 2.068c-.867 0-1.477.621-1.541 1.559h3.017c-.029-.95-.603-1.559-1.476-1.559zm1.488 3.621h1.377c-.275 1.166-1.336 1.893-2.847 1.893-1.887 0-3.024-1.248-3.024-3.31 0-2.063 1.154-3.358 3.012-3.358 1.828 0 2.924 1.213 2.924 3.234v.47h-4.477v.075c.035 1.067.65 1.735 1.606 1.735.72 0 1.218-.264 1.43-.739zm11.485-4.646L108.699 32h-1.53l-1.247-4.617h-.1L104.58 32h-1.512l-1.734-6.41h1.465l1.066 4.787h.1l1.23-4.787h1.389l1.242 4.787h.1l1.06-4.787h1.448zm13.048 0L121.748 32h-1.53l-1.247-4.617h-.1L117.63 32h-1.512l-1.734-6.41h1.465l1.066 4.787h.1l1.23-4.787h1.389l1.242 4.787h.1l1.06-4.787h1.447zm1.98 8.18h-1.317l2.478-10.225h1.342l-2.502 10.225zm7.032-10.225h3.17c2.514 0 3.979 1.535 3.979 4.19 0 2.712-1.448 4.265-3.979 4.265h-3.17v-8.455zm1.512 1.307v5.841h1.459c1.681 0 2.637-1.048 2.637-2.935 0-1.846-.979-2.906-2.637-2.906h-1.46zm7.91 9.48c-.088 0-.48-.006-.574-.023v-1.184c.082.012.299.018.398.018.615 0 .961-.24 1.149-.832l.076-.282-2.291-6.44h1.594l1.5 5.005h.1l1.493-5.004h1.535l-2.314 6.615c-.545 1.594-1.23 2.127-2.666 2.127zm8.918-7.717c-.867 0-1.477.621-1.541 1.559h3.018c-.03-.95-.604-1.559-1.477-1.559zm1.488 3.621h1.377c-.275 1.166-1.336 1.893-2.847 1.893-1.887 0-3.024-1.248-3.024-3.31 0-2.063 1.154-3.358 3.012-3.358 1.828 0 2.924 1.213 2.924 3.234v.47h-4.477v.075c.035 1.067.65 1.735 1.606 1.735.72 0 1.218-.264 1.43-.739zM162.19 32h-1.511v-7.148h-2.602v-1.307h6.72v1.307h-2.607V32zm9.75-6.41V32h-1.4v-1.02h-.1c-.31.733-1.037 1.149-1.986 1.149-1.412 0-2.285-.873-2.285-2.39v-4.15h1.453v3.804c0 .984.463 1.459 1.336 1.459.938 0 1.53-.58 1.53-1.53V25.59h1.452zm1.782 6.41v-6.41h1.4v1.037h.1c.275-.732.931-1.166 1.781-1.166.885 0 1.5.445 1.77 1.166h.1c.315-.703 1.054-1.166 1.944-1.166 1.284 0 2.057.803 2.057 2.133V32h-1.447v-4.037c0-.826-.393-1.236-1.172-1.236-.756 0-1.254.55-1.254 1.283V32h-1.412v-4.143c0-.703-.445-1.13-1.16-1.13-.721 0-1.254.591-1.254 1.377V32h-1.453zm13.564-5.385c-.867 0-1.476.621-1.54 1.559h3.017c-.03-.95-.604-1.559-1.477-1.559zm1.488 3.621h1.377c-.275 1.166-1.336 1.893-2.847 1.893-1.887 0-3.024-1.248-3.024-3.31 0-2.063 1.155-3.358 3.012-3.358 1.828 0 2.924 1.213 2.924 3.234v.47h-4.477v.075c.035 1.067.65 1.735 1.606 1.735.72 0 1.219-.264 1.43-.739zm2.96 1.764v-8.889h1.453V32h-1.454zm6.052-1.09c1.014 0 1.588-.773 1.588-2.115 0-1.336-.58-2.115-1.588-2.115-1.014 0-1.594.779-1.594 2.115 0 1.342.58 2.115 1.594 2.115zm0 1.219c-1.922 0-3.082-1.254-3.082-3.334 0-2.068 1.178-3.334 3.082-3.334 1.91 0 3.082 1.26 3.082 3.334 0 2.08-1.166 3.334-3.082 3.334z"
+          d="M66.555 41h-1.512v-8.455h1.512V41zm1.933 0v-6.41h1.4v1.025h.1c.305-.715 1.055-1.154 2.016-1.154 1.43 0 2.232.861 2.232 2.39V41H72.79v-3.803c0-.978-.445-1.47-1.324-1.47-.938 0-1.524.597-1.524 1.54V41h-1.453zm7.934-7.94h1.447v1.57h1.406v1.161H77.87v3.147c0 .632.27.914.879.914.205 0 .31-.012.48-.03v1.137c-.205.041-.468.07-.75.07-1.47 0-2.056-.498-2.056-1.74v-3.498h-1.043v-1.16h1.043v-1.57zm6.96 2.555c-.866 0-1.476.621-1.54 1.559h3.017c-.029-.95-.603-1.559-1.476-1.559zm1.49 3.621h1.376c-.275 1.166-1.336 1.893-2.848 1.893-1.886 0-3.023-1.248-3.023-3.31 0-2.063 1.154-3.358 3.012-3.358 1.828 0 2.924 1.213 2.924 3.234v.47h-4.477v.075c.035 1.067.65 1.735 1.605 1.735.721 0 1.22-.264 1.43-.739zm2.9 1.764v-6.41h1.4v.996h.1c.175-.633.86-1.102 1.681-1.102.205 0 .457.024.598.065v1.347c-.112-.04-.51-.082-.739-.082-.931 0-1.587.586-1.587 1.483V41H87.77zm4.365-6.41h1.558l1.483 4.957h.1l1.47-4.957h1.535L96.016 41h-1.6l-2.28-6.41zM99.525 41v-6.41h1.448V41h-1.448zm.721-7.453c-.527 0-.896-.34-.896-.803s.369-.803.896-.803c.533 0 .897.34.897.803s-.364.803-.897.803zm5.215 2.068c-.867 0-1.477.621-1.541 1.559h3.017c-.029-.95-.603-1.559-1.476-1.559zm1.488 3.621h1.377c-.275 1.166-1.336 1.893-2.847 1.893-1.887 0-3.024-1.248-3.024-3.31 0-2.063 1.154-3.358 3.012-3.358 1.828 0 2.924 1.213 2.924 3.234v.47h-4.477v.075c.035 1.067.65 1.735 1.606 1.735.72 0 1.218-.264 1.43-.739zm11.485-4.646L116.699 41h-1.53l-1.247-4.617h-.1L112.58 41h-1.512l-1.734-6.41h1.465l1.066 4.787h.1l1.23-4.787h1.389l1.242 4.787h.1l1.06-4.787h1.448zm13.048 0L129.748 41h-1.53l-1.247-4.617h-.1L125.63 41h-1.512l-1.734-6.41h1.465l1.066 4.787h.1l1.23-4.787h1.389l1.242 4.787h.1l1.06-4.787h1.447zm1.98 8.18h-1.317l2.478-10.225h1.342l-2.502 10.225zm7.032-10.225h3.17c2.514 0 3.979 1.535 3.979 4.19 0 2.712-1.448 4.265-3.979 4.265h-3.17v-8.455zm1.512 1.307v5.841h1.459c1.681 0 2.637-1.048 2.637-2.935 0-1.846-.979-2.906-2.637-2.906h-1.46zm7.91 9.48c-.088 0-.48-.006-.574-.023v-1.184c.082.012.299.018.398.018.615 0 .961-.24 1.149-.832l.076-.282-2.291-6.44h1.594l1.5 5.005h.1l1.493-5.004h1.535l-2.314 6.615c-.545 1.594-1.23 2.127-2.666 2.127zm8.918-7.717c-.867 0-1.477.621-1.541 1.559h3.018c-.03-.95-.604-1.559-1.477-1.559zm1.488 3.621h1.377c-.275 1.166-1.336 1.893-2.847 1.893-1.887 0-3.024-1.248-3.024-3.31 0-2.063 1.154-3.358 3.012-3.358 1.828 0 2.924 1.213 2.924 3.234v.47h-4.477v.075c.035 1.067.65 1.735 1.606 1.735.72 0 1.218-.264 1.43-.739zM170.19 41h-1.511v-7.148h-2.602v-1.307h6.72v1.307h-2.607V41zm9.75-6.41V41h-1.4v-1.02h-.1c-.31.733-1.037 1.149-1.986 1.149-1.412 0-2.285-.873-2.285-2.39v-4.15h1.453v3.804c0 .984.463 1.459 1.336 1.459.938 0 1.53-.58 1.53-1.53V34.59h1.452zm1.782 6.41v-6.41h1.4v1.037h.1c.275-.732.931-1.166 1.781-1.166.885 0 1.5.445 1.77 1.166h.1c.315-.703 1.054-1.166 1.944-1.166 1.284 0 2.057.803 2.057 2.133V41h-1.447v-4.037c0-.826-.393-1.236-1.172-1.236-.756 0-1.254.55-1.254 1.283V41h-1.412v-4.143c0-.703-.445-1.13-1.16-1.13-.721 0-1.254.591-1.254 1.377V41h-1.453zm13.564-5.385c-.867 0-1.476.621-1.54 1.559h3.017c-.03-.95-.604-1.559-1.477-1.559zm1.488 3.621h1.377c-.275 1.166-1.336 1.893-2.847 1.893-1.887 0-3.024-1.248-3.024-3.31 0-2.063 1.155-3.358 3.012-3.358 1.828 0 2.924 1.213 2.924 3.234v.47h-4.477v.075c.035 1.067.65 1.735 1.606 1.735.72 0 1.219-.264 1.43-.739zm2.96 1.764v-8.889h1.453V41h-1.454zm6.052-1.09c1.014 0 1.588-.773 1.588-2.115 0-1.336-.58-2.115-1.588-2.115-1.014 0-1.594.779-1.594 2.115 0 1.342.58 2.115 1.594 2.115zm0 1.219c-1.922 0-3.082-1.254-3.082-3.334 0-2.068 1.178-3.334 3.082-3.334 1.91 0 3.082 1.26 3.082 3.334 0 2.08-1.166 3.334-3.082 3.334z"
           fill="#24124D"
           opacity={0.5}
         />
-        <rect fill="#DCD5EE" x={16} y={64} width={208} height={12} rx={3} />
-        <rect fill="#512DA8" x={16} y={96} width={136} height={12} rx={3} />
-        <rect fill="#DCD5EE" x={16} y={128} width={208} height={12} rx={3} />
-        <rect fill="#DCD5EE" x={168} y={96} width={56} height={12} rx={3} />
+        <rect fill="#DCD5EE" x={24} y={73} width={224} height={12} rx={4} />
+        <rect fill="#512DA8" x={24} y={101} width={136} height={12} rx={4} />
+        <rect fill="#DCD5EE" x={24} y={129} width={224} height={12} rx={4} />
+        <rect fill="#DCD5EE" x={176} y={101} width={72} height={12} rx={4} />
+        <rect fillOpacity={0.1} fill="#5182F8" fillRule="nonzero" x={7} y={8} width={258} height={150} rx={4} />
+        <g>
+          <g fillRule="nonzero">
+            <use fill="#000" filter="url(#a2e3fea3632acf19y)" xlinkHref="#a2e3fea3632acf19z" />
+            <use fill="#5182F8" xlinkHref="#a2e3fea3632acf19z" />
+          </g>
+          <path
+            d="M17.333 8.667L10 16l-3.333-3.333"
+            stroke="#FFF"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+          />
+        </g>
       </g>
-      <g transform="translate(312 200)">
-        <use fill="#000" filter="url(#a7a6514a3ee4f45cy)" xlinkHref="#a7a6514a3ee4f45cz" />
-        <use fill="#FFF" xlinkHref="#a7a6514a3ee4f45cz" />
+      <g transform="translate(288 180)">
+        <use fill="#000" filter="url(#a2e3fea3632acf19A)" xlinkHref="#a2e3fea3632acf19B" />
+        <use fill="#FFF" xlinkHref="#a2e3fea3632acf19B" />
         <g strokeLinecap="square">
-          <use fill="#000" filter="url(#a7a6514a3ee4f45cA)" xlinkHref="#a7a6514a3ee4f45cB" />
-          <use fill="#FFF" xlinkHref="#a7a6514a3ee4f45cB" />
-          <rect strokeOpacity={0.098} stroke="#140B2F" x={-0.5} y={-0.5} width={249} height={169} rx={3} />
+          <use fill="#000" filter="url(#a2e3fea3632acf19C)" xlinkHref="#a2e3fea3632acf19D" />
+          <rect strokeOpacity={0.098} stroke="#140B2F" fill="#FFF" x={-0.5} y={-0.5} width={257} height={149} rx={4} />
         </g>
         <g transform="translate(16 16)">
-          <mask id="a7a6514a3ee4f45cD" fill="#fff">
-            <use xlinkHref="#a7a6514a3ee4f45cC" />
+          <mask id="a2e3fea3632acf19F" fill="#fff">
+            <use xlinkHref="#a2e3fea3632acf19E" />
           </mask>
-          <use fill="#A5A5D8" opacity={0.3} xlinkHref="#a7a6514a3ee4f45cC" />
-          <g mask="url(#a7a6514a3ee4f45cD)">
+          <use fill="#A5A5D8" opacity={0.3} xlinkHref="#a2e3fea3632acf19E" />
+          <g mask="url(#a2e3fea3632acf19F)">
             <path
               d="M15.75 6c.522.332 0 3.5.25 4.5.207.83-1.126-.004-4-2.5-1.493.851-2.493 1.351-3 1.5-1.889.555-1.639-1.065-1.5-1.5.275-.895-.128-1.306.5-2 .699-.792 1.623-.64 2.673-.815.692-.112 1.422-.14 2.12-.185.026 0 .051.008.074.021a.266.266 0 0 1 .088.073c.102.15.191.31.267.474.026.08.078.148.149.193a.416.416 0 0 0 .215.039c.572-.005 1.667-.087 2.164.2z"
               fill="#7E7EB1"
@@ -388,25 +417,26 @@ export default createSvg((width = 832, height = 536): React.ReactElement<Props> 
           fill="#24124D"
           opacity={0.5}
         />
-        <rect fill="#DCD5EE" x={16} y={64} width={208} height={12} rx={3} />
-        <rect fill="#DCD5EE" x={16} y={96} width={136} height={12} rx={3} />
-        <rect fill="#512DA8" x={168} y={96} width={56} height={12} rx={3} />
-        <rect fill="#512DA8" x={16} y={128} width={96} height={12} rx={3} />
+        <rect fill="#DCD5EE" x={16} y={64} width={224} height={12} rx={4} />
+        <rect fill="#DCD5EE" x={16} y={92} width={136} height={12} rx={4} />
+        <rect fill="#512DA8" x={168} y={92} width={72} height={12} rx={4} />
+        <rect fill="#512DA8" x={16} y={120} width={96} height={12} rx={4} />
       </g>
-      <g transform="translate(312 384)">
-        <use fill="#000" filter="url(#a7a6514a3ee4f45cE)" xlinkHref="#a7a6514a3ee4f45cF" />
-        <use fill="#FFF" xlinkHref="#a7a6514a3ee4f45cF" />
-        <g strokeLinecap="square">
-          <use fill="#000" filter="url(#a7a6514a3ee4f45cG)" xlinkHref="#a7a6514a3ee4f45cH" />
-          <use fill="#FFF" xlinkHref="#a7a6514a3ee4f45cH" />
-          <rect strokeOpacity={0.098} stroke="#140B2F" x={-0.5} y={-0.5} width={249} height={137} rx={3} />
+      <g transform="translate(280 335)">
+        <g transform="translate(8 9)">
+          <use fill="#000" filter="url(#a2e3fea3632acf19G)" xlinkHref="#a2e3fea3632acf19H" />
+          <use fill="#FFF" xlinkHref="#a2e3fea3632acf19H" />
         </g>
-        <g transform="translate(16 16)">
-          <mask id="a7a6514a3ee4f45cJ" fill="#fff">
-            <use xlinkHref="#a7a6514a3ee4f45cI" />
+        <g strokeLinecap="square" transform="translate(8 9)">
+          <use fill="#000" filter="url(#a2e3fea3632acf19I)" xlinkHref="#a2e3fea3632acf19J" />
+          <rect strokeOpacity={0.098} stroke="#140B2F" fill="#FFF" x={-0.5} y={-0.5} width={257} height={177} rx={4} />
+        </g>
+        <g transform="translate(24 25)">
+          <mask id="a2e3fea3632acf19L" fill="#fff">
+            <use xlinkHref="#a2e3fea3632acf19K" />
           </mask>
-          <use fill="#A5A5D8" opacity={0.3} xlinkHref="#a7a6514a3ee4f45cI" />
-          <g mask="url(#a7a6514a3ee4f45cJ)">
+          <use fill="#A5A5D8" opacity={0.3} xlinkHref="#a2e3fea3632acf19K" />
+          <g mask="url(#a2e3fea3632acf19L)">
             <path
               d="M15.22 5.23c.523.333.977.764 1.32 1.276a8.42 8.42 0 0 1 1.273 3.083c.144.724.238 1.462.367 2.177l.082.794a.33.33 0 0 1-.134.307L15 15l-3-3.5-3.02 4.052-1.976-1.227-.85-.512a.263.263 0 0 1-.108-.19 18.705 18.705 0 0 1 .006-2.71c.071-.96.255-1.907.548-2.822a6.388 6.388 0 0 1 1.37-2.412 4.612 4.612 0 0 1 2.703-1.494c.692-.112 1.422-.14 2.12-.185.026 0 .051.008.074.021a.266.266 0 0 1 .088.073c.102.15.191.31.267.474.026.08.078.148.149.193a.416.416 0 0 0 .215.039 3.22 3.22 0 0 1 1.635.43z"
               fill="#7878AB"
@@ -439,27 +469,43 @@ export default createSvg((width = 832, height = 536): React.ReactElement<Props> 
           </g>
         </g>
         <path
-          d="M60.693 23.334c2.455 0 3.99 1.705 3.99 4.436 0 2.724-1.523 4.44-3.99 4.44-2.484 0-4.007-1.71-4.007-4.44 0-2.73 1.552-4.436 4.007-4.436zm0 1.342c-1.505 0-2.46 1.201-2.46 3.094 0 1.886.931 3.1 2.46 3.1 1.506 0 2.444-1.214 2.444-3.1 0-1.893-.944-3.094-2.444-3.094zM66.723 32v-5.209H65.68v-1.16h1.043v-.639c0-1.3.673-1.828 2.08-1.828.258 0 .51.023.767.065v1.084a2.857 2.857 0 0 0-.556-.047c-.569 0-.868.246-.868.82v.545h1.39v1.16H68.17V32h-1.447zm4.693 0v-5.209h-1.043v-1.16h1.043v-.639c0-1.3.674-1.828 2.08-1.828.258 0 .51.023.768.065v1.084a2.857 2.857 0 0 0-.557-.047c-.568 0-.867.246-.867.82v.545h1.389v1.16h-1.366V32h-1.447zm4.248 0v-6.41h1.447V32h-1.447zm.72-7.453c-.527 0-.896-.34-.896-.803s.37-.803.897-.803c.533 0 .896.34.896.803s-.363.803-.896.803zm8.063 3.2h-1.383c-.134-.622-.615-1.067-1.412-1.067-.996 0-1.588.767-1.588 2.097 0 1.348.598 2.133 1.588 2.133.756 0 1.26-.357 1.412-1.025h1.383c-.158 1.342-1.166 2.244-2.789 2.244-1.928 0-3.064-1.242-3.064-3.352 0-2.08 1.13-3.316 3.058-3.316 1.647 0 2.643.937 2.795 2.285zm4.078-1.132c-.867 0-1.476.621-1.54 1.559h3.017c-.03-.95-.604-1.559-1.477-1.559zm1.489 3.621h1.377c-.276 1.166-1.336 1.893-2.848 1.893-1.887 0-3.023-1.248-3.023-3.31 0-2.063 1.154-3.358 3.011-3.358 1.828 0 2.924 1.213 2.924 3.234v.47H86.98v.075c.035 1.067.65 1.735 1.605 1.735.72 0 1.219-.264 1.43-.739zm5.543-4.646h1.558l1.483 4.957h.1l1.47-4.957h1.535L99.436 32h-1.6l-2.28-6.41zm7.388 6.41v-6.41h1.448V32h-1.448zm.721-7.453c-.527 0-.896-.34-.896-.803s.369-.803.896-.803c.533 0 .897.34.897.803s-.364.803-.897.803zm2.379 2.877c0-1.16 1.055-1.963 2.566-1.963 1.524 0 2.479.674 2.584 1.84h-1.365c-.105-.451-.533-.738-1.213-.738-.662 0-1.16.316-1.16.779 0 .363.305.586.95.732l1.13.258c1.225.275 1.793.803 1.793 1.746 0 1.23-1.13 2.05-2.73 2.05s-2.608-.69-2.72-1.857h1.436c.141.475.592.756 1.319.756.732 0 1.242-.322 1.242-.797 0-.363-.275-.591-.885-.726l-1.137-.264c-1.23-.281-1.81-.85-1.81-1.816zM112.818 32v-6.41h1.448V32h-1.448zm.721-7.453c-.527 0-.896-.34-.896-.803s.369-.803.896-.803c.533 0 .897.34.897.803s-.364.803-.897.803zm2.988-.486h1.448v1.57h1.406v1.16h-1.406v3.146c0 .633.27.915.879.915.205 0 .31-.012.48-.03v1.137c-.205.041-.469.07-.75.07-1.47 0-2.057-.498-2.057-1.74v-3.498h-1.043v-1.16h1.043v-1.57z"
+          d="M68.693 32.334c2.455 0 3.99 1.705 3.99 4.436 0 2.724-1.523 4.44-3.99 4.44-2.484 0-4.007-1.71-4.007-4.44 0-2.73 1.552-4.436 4.007-4.436zm0 1.342c-1.505 0-2.46 1.201-2.46 3.094 0 1.886.931 3.1 2.46 3.1 1.506 0 2.444-1.214 2.444-3.1 0-1.893-.944-3.094-2.444-3.094zM74.723 41v-5.209H73.68v-1.16h1.043v-.639c0-1.3.673-1.828 2.08-1.828.258 0 .51.023.767.065v1.084a2.857 2.857 0 0 0-.556-.047c-.569 0-.868.246-.868.82v.545h1.39v1.16H76.17V41h-1.447zm4.693 0v-5.209h-1.043v-1.16h1.043v-.639c0-1.3.674-1.828 2.08-1.828.258 0 .51.023.768.065v1.084a2.857 2.857 0 0 0-.557-.047c-.568 0-.867.246-.867.82v.545h1.389v1.16h-1.366V41h-1.447zm4.248 0v-6.41h1.447V41h-1.447zm.72-7.453c-.527 0-.896-.34-.896-.803s.37-.803.897-.803c.533 0 .896.34.896.803s-.363.803-.896.803zm8.063 3.2h-1.383c-.134-.622-.615-1.067-1.412-1.067-.996 0-1.588.767-1.588 2.097 0 1.348.598 2.133 1.588 2.133.756 0 1.26-.357 1.412-1.025h1.383c-.158 1.342-1.166 2.244-2.789 2.244-1.928 0-3.064-1.242-3.064-3.352 0-2.08 1.13-3.316 3.058-3.316 1.647 0 2.643.937 2.795 2.285zm4.078-1.132c-.867 0-1.476.621-1.54 1.559h3.017c-.03-.95-.604-1.559-1.477-1.559zm1.489 3.621h1.377c-.276 1.166-1.336 1.893-2.848 1.893-1.887 0-3.023-1.248-3.023-3.31 0-2.063 1.154-3.358 3.011-3.358 1.828 0 2.924 1.213 2.924 3.234v.47H94.98v.075c.035 1.067.65 1.735 1.605 1.735.72 0 1.219-.264 1.43-.739zm5.543-4.646h1.558l1.483 4.957h.1l1.47-4.957h1.535L107.436 41h-1.6l-2.28-6.41zm7.388 6.41v-6.41h1.448V41h-1.448zm.721-7.453c-.527 0-.896-.34-.896-.803s.369-.803.896-.803c.533 0 .897.34.897.803s-.364.803-.897.803zm2.379 2.877c0-1.16 1.055-1.963 2.566-1.963 1.524 0 2.479.674 2.584 1.84h-1.365c-.105-.451-.533-.739-1.213-.739-.662 0-1.16.317-1.16.78 0 .363.305.586.95.732l1.13.258c1.225.275 1.793.803 1.793 1.746 0 1.23-1.13 2.05-2.73 2.05s-2.608-.69-2.72-1.857h1.436c.141.475.592.756 1.319.756.732 0 1.242-.322 1.242-.797 0-.363-.275-.591-.885-.726l-1.137-.264c-1.23-.281-1.81-.85-1.81-1.816zM120.818 41v-6.41h1.448V41h-1.448zm.721-7.453c-.527 0-.896-.34-.896-.803s.369-.803.896-.803c.533 0 .897.34.897.803s-.364.803-.897.803zm2.988-.486h1.448v1.57h1.406v1.16h-1.406v3.147c0 .632.27.914.879.914.205 0 .31-.012.48-.03v1.137c-.205.041-.469.07-.75.07-1.47 0-2.057-.498-2.057-1.74v-3.498h-1.043v-1.16h1.043v-1.57z"
           fill="#24124D"
           opacity={0.5}
         />
-        <rect fill="#512DA8" x={16} y={64} width={208} height={12} rx={3} />
-        <rect fill="#DCD5EE" x={16} y={96} width={136} height={12} rx={3} />
+        <rect fill="#512DA8" x={24} y={73} width={224} height={12} rx={4} />
+        <rect fill="#DCD5EE" x={24} y={101} width={136} height={12} rx={4} />
+        <rect fill="#DCD5EE" x={24} y={129} width={72} height={12} rx={4} />
+        <rect fill="#DCD5EE" x={112} y={129} width={136} height={12} rx={4} />
+        <rect fill="#DCD5EE" x={24} y={157} width={120} height={12} rx={4} />
+        <rect fillOpacity={0.1} fill="#5182F8" fillRule="nonzero" x={7} y={8} width={258} height={178} rx={4} />
+        <g>
+          <g fillRule="nonzero">
+            <use fill="#000" filter="url(#a2e3fea3632acf19M)" xlinkHref="#a2e3fea3632acf19N" />
+            <use fill="#5182F8" xlinkHref="#a2e3fea3632acf19N" />
+          </g>
+          <path
+            d="M17.333 8.667L10 16l-3.333-3.333"
+            stroke="#FFF"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+          />
+        </g>
       </g>
-      <g transform="translate(576 224)">
-        <use fill="#000" filter="url(#a7a6514a3ee4f45cK)" xlinkHref="#a7a6514a3ee4f45cL" />
-        <use fill="#FFF" xlinkHref="#a7a6514a3ee4f45cL" />
+      <g transform="translate(560 220)">
+        <use fill="#000" filter="url(#a2e3fea3632acf19O)" xlinkHref="#a2e3fea3632acf19P" />
+        <use fill="#FFF" xlinkHref="#a2e3fea3632acf19P" />
         <g strokeLinecap="square">
-          <use fill="#000" filter="url(#a7a6514a3ee4f45cM)" xlinkHref="#a7a6514a3ee4f45cN" />
-          <use fill="#FFF" xlinkHref="#a7a6514a3ee4f45cN" />
-          <rect strokeOpacity={0.098} stroke="#140B2F" x={-0.5} y={-0.5} width={241} height={169} rx={3} />
+          <use fill="#000" filter="url(#a2e3fea3632acf19Q)" xlinkHref="#a2e3fea3632acf19R" />
+          <rect strokeOpacity={0.098} stroke="#140B2F" fill="#FFF" x={-0.5} y={-0.5} width={257} height={149} rx={4} />
         </g>
         <g transform="translate(16 16)">
-          <mask id="a7a6514a3ee4f45cP" fill="#fff">
-            <use xlinkHref="#a7a6514a3ee4f45cO" />
+          <mask id="a2e3fea3632acf19T" fill="#fff">
+            <use xlinkHref="#a2e3fea3632acf19S" />
           </mask>
-          <use fill="#A5A5D8" opacity={0.3} xlinkHref="#a7a6514a3ee4f45cO" />
-          <g mask="url(#a7a6514a3ee4f45cP)">
+          <use fill="#A5A5D8" opacity={0.3} xlinkHref="#a2e3fea3632acf19S" />
+          <g mask="url(#a2e3fea3632acf19T)">
             <path
               d="M15.22 5.23c.523.333.977.764 1.32 1.276a8.42 8.42 0 0 1 1.273 3.083c.144.724.238 1.462.367 2.177l.082.794a.33.33 0 0 1-.134.307L15 15l-3-3.5-3.02 4.052-1.976-1.227-.85-.512a.263.263 0 0 1-.108-.19 18.705 18.705 0 0 1 .006-2.71c.071-.96.255-1.907.548-2.822a6.388 6.388 0 0 1 1.37-2.412 4.612 4.612 0 0 1 2.703-1.494c.692-.112 1.422-.14 2.12-.185.026 0 .051.008.074.021a.266.266 0 0 1 .088.073c.102.15.191.31.267.474.026.08.078.148.149.193a.416.416 0 0 0 .215.039 3.22 3.22 0 0 1 1.635.43z"
               fill="#7878AB"
@@ -496,10 +542,10 @@ export default createSvg((width = 832, height = 536): React.ReactElement<Props> 
           fill="#24124D"
           opacity={0.5}
         />
-        <rect fill="#DCD5EE" x={16} y={128} width={96} height={12} rx={3} />
-        <rect fill="#DCD5EE" x={128} y={128} width={96} height={12} rx={3} />
-        <rect fill="#512DA8" x={16} y={96} width={136} height={12} rx={3} />
-        <rect fill="#512DA8" x={16} y={64} width={208} height={12} rx={3} />
+        <rect fill="#DCD5EE" x={16} y={120} width={96} height={12} rx={4} />
+        <rect fill="#DCD5EE" x={128} y={120} width={112} height={12} rx={4} />
+        <rect fill="#512DA8" x={16} y={92} width={136} height={12} rx={4} />
+        <rect fill="#512DA8" x={16} y={64} width={224} height={12} rx={4} />
       </g>
       <g transform="translate(16 32)">
         <rect fill="#512DA8" width={24} height={24} rx={3} />

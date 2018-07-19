@@ -1,5 +1,6 @@
 import { COLORS } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
+import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import React from "react";
 import { styled } from "typestyle-react";
 
@@ -11,7 +12,7 @@ interface Props {
 
 export class LightContainer extends React.PureComponent<Props> {
   public render() {
-    const { backgroundColor = COLORS.white, maxWidth, padding, children } = this.props;
+    const { backgroundColor = COLORS.white, maxWidth = WIDTH, padding = { x: PADDING, y: HALF_GAP }, children } = this.props;
 
     return (
       <Wrapper styled={{ backgroundColor }}>

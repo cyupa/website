@@ -1,8 +1,5 @@
-import { BREAKPOINT_TABLET, ButtonLink, COLORS, SmallText } from "@heydovetail/ui-components";
-import { Flex } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
-import { Flow } from "@heydovetail/ui-components";
-import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
+import { BREAKPOINT_TABLET, ButtonLink, COLORS, Flex, Flow, Item, SmallText } from "@heydovetail/ui-components";
+import { HALF_GAP, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
 import { styled } from "typestyle-react";
@@ -21,47 +18,53 @@ export class Hero extends React.PureComponent<Props> {
   public render() {
     const { children, image, showSignUp = true, text, title } = this.props;
     return (
-      <Flex styled={{ gap: 32 }}>
-        <Item style={{ flex: "0 1 464px" }}>
-          <Flex styled={{ gap: 40, layout: "column" }}>
-            <Item>
-              <Flex styled={{ gap: 24, layout: "column" }}>
-                <Item>
-                  <Heading>{title}</Heading>
-                </Item>
-                {text !== undefined ? (
-                  <Item>
-                    <p style={{ opacity: LIGHT_TEXT_OPACITY }}>{text}</p>
-                  </Item>
-                ) : null}
-              </Flex>
-            </Item>
-            {children !== undefined ? <Item>{children}</Item> : null}
-            {showSignUp ? (
+      <Wrapper>
+        <Flex styled={{ gap: 32 }}>
+          <Item style={{ flex: "0 1 464px" }}>
+            <Flex styled={{ gap: 40, layout: "column" }}>
               <Item>
-                <Flow styled={{ gap: 24, rowGap: 24 }}>
+                <Flex styled={{ gap: 24, layout: "column" }}>
                   <Item>
-                    <ButtonLink color={COLORS.purple} location={locations.signUp()}>
-                      Try now for free
-                    </ButtonLink>
+                    <Heading>{title}</Heading>
                   </Item>
-                  <Item>
-                    <SmallText>14 day free trial, no credit card required.</SmallText>
-                  </Item>
-                </Flow>
+                  {text !== undefined ? (
+                    <Item>
+                      <p style={{ opacity: LIGHT_TEXT_OPACITY }}>{text}</p>
+                    </Item>
+                  ) : null}
+                </Flex>
               </Item>
-            ) : null}
-          </Flex>
-        </Item>
-        <HeroImage>
-          <Item>
-            <Image>{typeof image === "string" ? <img src={image} width="100%" /> : image}</Image>
+              {children !== undefined ? <Item>{children}</Item> : null}
+              {showSignUp ? (
+                <Item>
+                  <Flow styled={{ gap: 24, rowGap: 24 }}>
+                    <Item>
+                      <ButtonLink color={COLORS.purple} location={locations.signUp()}>
+                        Try now for free
+                      </ButtonLink>
+                    </Item>
+                    <Item>
+                      <SmallText>14 day free trial, no credit card required.</SmallText>
+                    </Item>
+                  </Flow>
+                </Item>
+              ) : null}
+            </Flex>
           </Item>
-        </HeroImage>
-      </Flex>
+          <HeroImage>
+            <Item>
+              <Image>{typeof image === "string" ? <img src={image} width="100%" /> : image}</Image>
+            </Item>
+          </HeroImage>
+        </Flex>
+      </Wrapper>
     );
   }
 }
+
+const Wrapper = styled("div", {
+  padding: `0 0 ${HALF_GAP}px`
+});
 
 const Heading = styled("h1", {
   marginTop: "32px"

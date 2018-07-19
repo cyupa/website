@@ -1,15 +1,14 @@
-import { Flex } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
+import { Flex, Item } from "@heydovetail/ui-components";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { SignupWithEmail } from "@heydovetail/website/components/site/SignupWithEmail";
-import { HALF_GAP, WIDTH } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import React from "react";
 
 export class CenteredSignUp extends React.PureComponent {
   public render() {
     return (
-      <Container styled={{ maxWidth: WIDTH / 2, padding: { x: 0, y: 0 } }}>
+      <Container styled={{ maxWidth: WIDTH / 2, padding: { x: PADDING, y: HALF_GAP } }}>
         <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
           <Item>
             <Center>

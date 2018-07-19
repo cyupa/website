@@ -1,5 +1,4 @@
-import { COLORS, Flex } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
+import { COLORS } from "@heydovetail/ui-components";
 import IllustrationSecurity from "@heydovetail/website/components/illustrations/IllustrationSecurity";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { Features } from "@heydovetail/website/components/site/Features";
@@ -45,22 +44,19 @@ export const ADVANCED_SECURITY_FEATURES = [
 export class Security extends React.PureComponent {
   public render() {
     return (
-      <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
-        <Item>
-          <FeatureHero
-            color={COLORS.p40}
-            image={<IllustrationSecurity size="100%" />}
-            imagePosition="right"
-            location={locations.security()}
-            linkText="Learn more"
-            text="Dovetail is built on modern cloud infrastructure with privacy and security features designed to ensure the safety of your data."
-            title="We take your privacy and security seriously."
-          />
-        </Item>
-        <Item>
-          <Features features={BASE_SECURITY_FEATURES} large />
-        </Item>
-      </Flex>
+      // Offset the padding baked into <FeatureHero />
+      <div style={{ marginTop: -HALF_GAP }}>
+        <FeatureHero
+          color={COLORS.p40}
+          image={<IllustrationSecurity size="100%" />}
+          imagePosition="right"
+          location={locations.security()}
+          linkText="Learn more"
+          text="Dovetail is built on modern cloud infrastructure with privacy and security features designed to ensure the safety of your data."
+          title="We take your privacy and security seriously."
+        />
+        <Features features={BASE_SECURITY_FEATURES} large />
+      </div>
     );
   }
 }
