@@ -1,7 +1,7 @@
 ---
 path: "/help/spreadsheet"
 date: "2018-06-28"
-title: "Upload data using a spreadsheet"
+title: "Import data using a spreadsheet"
 weight: 2
 ---
 

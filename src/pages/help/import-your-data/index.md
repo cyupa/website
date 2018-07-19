@@ -1,4 +1,4 @@
 ---
 title: "Import your data"
-weight: 4
+weight: 2
 ---
