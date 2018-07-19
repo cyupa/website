@@ -41,7 +41,7 @@ export default class extends React.PureComponent {
             image={<IllustrationLineChart size="100%" />}
             imagePosition="right"
             location={locations.feedbackManagement()}
-            linkText="Feedback management"
+            linkText="Learn more"
             text="Import feedback from hundreds of apps, automatically analyze sentiment, tag feature requests, and measure changes over time."
             title="Understand your customer feedback."
           />
@@ -49,7 +49,7 @@ export default class extends React.PureComponent {
             image={<IllustrationFiles size="100%" />}
             imagePosition="left"
             location={locations.researchRepository()}
-            linkText="User research repository"
+            linkText="Learn more"
             text="Save notes, images, audio, and video in one place. Organize, search, and analyze all of your research data, past and present."
             title="Keep all of your user research in one place."
           />
@@ -57,7 +57,7 @@ export default class extends React.PureComponent {
             image={<IllustrationBarChart size="100%" />}
             imagePosition="right"
             location={locations.qualitativeDataAnalysis()}
-            linkText="Qualitative data analysis"
+            linkText="Learn more"
             text="Use intuitive analysis tools to tag themes across data. Visualize your findings with beautiful charts and summarize them as insights."
             title="Analyze qualitative data and discover insights."
           />
@@ -65,7 +65,7 @@ export default class extends React.PureComponent {
             image={<IllustrationTeam size="100%" />}
             imagePosition="left"
             location={locations.userResearch()}
-            linkText="Collaborative user research"
+            linkText="Learn more"
             text="Invite your whole organization to browse user feedback and research, collaborate on analysis, search raw data, and consume insights."
             title="Invite your whole team."
           />
