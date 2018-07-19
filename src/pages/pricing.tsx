@@ -43,11 +43,11 @@ export default class extends React.PureComponent {
                 <Item>
                   <PricingCard
                     features={[
+                      "All features",
                       "Unlimited projects",
                       "Unlimited users",
                       "Unlimited integrations",
-                      "Premium support",
-                      "All features"
+                      "Premium support"
                     ]}
                     price={MONTHLY_PRICE_IN_CENTS}
                   />
