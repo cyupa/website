@@ -2,6 +2,7 @@
 path: "/help/password"
 date: "2018-04-11"
 title: "Reset your password"
+weight: 1
 ---
 
 ## While logged out

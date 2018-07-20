@@ -2,6 +2,7 @@
 path: "/help/photo"
 date: "2018-06-25"
 title: "Update your profile photo"
+weight: 2
 ---
 
 By default we use your [Gravatar](https://en.gravatar.com/) as your profile photo in Dovetail. To change your photo, you can change your gravatar or upload a new photo to Dovetail.

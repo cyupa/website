@@ -1,7 +1,4 @@
-import { COLORS, SubtleButtonLink } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
-import { FlexWrap } from "@heydovetail/ui-components";
-import { Flex } from "@heydovetail/ui-components";
+import { COLORS, Flex, FlexWrap, Flow, Item, SmallText, SubtleButtonLink } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
@@ -9,7 +6,6 @@ import IllustrationEmail from "@heydovetail/website/pages/confirm/IllustrationEm
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
 import { Helmet } from "react-helmet";
-import { styled } from "typestyle-react";
 
 export default class extends React.PureComponent {
   public render() {
@@ -34,16 +30,17 @@ export default class extends React.PureComponent {
                   <HeroText center={false} title="You’ve got mail." />
                 </Item>
                 <Item>
-                  <p>
-                    We need to confirm your email address. Please follow the instructions conveniently located in your inbox.
-                  </p>
+                  <p>We need to confirm your email address. Please follow the instructions in your inbox to continue.</p>
                 </Item>
-                <Item>
-                  <ButtonWrapper>
-                    <SubtleButtonLink location={locations.resendConfirmation()}>
-                      Not there? Resend confirmation
-                    </SubtleButtonLink>
-                  </ButtonWrapper>
+                <Item style={{ color: COLORS.purple, marginLeft: -8 }}>
+                  <Flow>
+                    <Item>
+                      <SubtleButtonLink location={locations.resendConfirmation()}>Send it again</SubtleButtonLink>
+                    </Item>
+                    <Item>
+                      <SubtleButtonLink location={{ internal: true, path: "/help/emails" }}>Get help</SubtleButtonLink>
+                    </Item>
+                  </Flow>
                 </Item>
               </Flex>
             </Item>
@@ -56,14 +53,3 @@ export default class extends React.PureComponent {
     );
   }
 }
-
-const ButtonWrapper = styled("span", {
-  color: COLORS.i40,
-  marginLeft: "-8px",
-
-  $nest: {
-    "&:hover": {
-      color: COLORS.purple
-    }
-  }
-});
