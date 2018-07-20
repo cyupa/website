@@ -1,4 +1,4 @@
-import { COLORS, Flex, FlexWrap, Flow, Item, SmallText, SubtleButtonLink } from "@heydovetail/ui-components";
+import { COLORS, Flex, FlexWrap, Flow, Item, SubtleButtonLink } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
