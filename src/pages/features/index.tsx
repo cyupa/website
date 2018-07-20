@@ -1,4 +1,5 @@
 import { COLORS } from "@heydovetail/ui-components";
+import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
 import IllustrationBoard from "@heydovetail/website/components/illustrations/IllustrationBoard";
 import IllustrationEditor from "@heydovetail/website/components/illustrations/IllustrationEditor";
 import IllustrationFiles from "@heydovetail/website/components/illustrations/IllustrationFiles";
@@ -69,6 +70,14 @@ export default class extends React.PureComponent {
             linkText="Learn more"
             text="Organize feedback and user research with an intuitive drag and drop board, integrations, charts, insights, and more."
             title="Projects"
+          />
+          <FeatureHero
+            image={<IllustrationBarChart size="100%" />}
+            imagePosition="right"
+            location={locations.featuresCharts()}
+            linkText="Learn more"
+            text="Visualize tag usage in a quick snapshot or identify trends over time with our beautiful, colorful bar and line charts."
+            title="Charts"
           />
         </LightContainer>
         <LightContainer backgroundColor={COLORS.p04}>
