@@ -1,13 +1,9 @@
-import { COLORS } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
-import { Flow } from "@heydovetail/ui-components";
-import { Flex } from "@heydovetail/ui-components";
+import { COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { IntegrationIcon } from "@heydovetail/website/components/site/IntegrationIcon";
 import { IntegrationIllustration } from "@heydovetail/website/components/site/IntegrationIllustration";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
-import { PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { IntegrationByPathQuery } from "@heydovetail/website/graphql/types";
 import { locations } from "@heydovetail/website/routing/locations";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
@@ -36,7 +32,7 @@ export default function IntegrationTemplate({ data }: Props) {
         <meta property="og:description" content={description} />
         <meta property="og:title" content={`Connect ${from.title} and Dovetail`} />
       </Helmet>
-      <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
+      <LightContainer>
         <Center>
           <Flex styled={{ gap: 48, layout: "column" }}>
             <Item>
@@ -57,7 +53,7 @@ export default function IntegrationTemplate({ data }: Props) {
           </Flex>
         </Center>
       </LightContainer>
-      <LightContainer backgroundColor={COLORS.p04} maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
+      <LightContainer backgroundColor={COLORS.p04}>
         <FeatureHero
           image={<IntegrationIllustration color={from.color!} icon={from.icon!} />}
           linkText={loggedIn ? "Configure in Dovetail" : undefined}
@@ -66,7 +62,7 @@ export default function IntegrationTemplate({ data }: Props) {
           text={description}
         />
       </LightContainer>
-      <LightContainer maxWidth={WIDTH} padding={{ x: PADDING, y: VERTICAL_GAP }}>
+      <LightContainer>
         <UseCases showTitle />
       </LightContainer>
     </>
