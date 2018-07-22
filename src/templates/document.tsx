@@ -67,7 +67,7 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
             </Item>
             <HorizontalRule />
             <Item>
-              <div style={{ fontWeight: 500 }}>
+              <div style={{ color: COLORS.i60, fontWeight: 500 }}>
                 <Breadcrumbs
                   crumbs={pathContext.breadcrumb.map(breadcrumb => ({
                     location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,

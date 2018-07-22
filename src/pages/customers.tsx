@@ -1,11 +1,10 @@
 import { COLORS, Flex, Item } from "@heydovetail/ui-components";
 import * as customers from "@heydovetail/website/components/icons/customers";
 import { Center } from "@heydovetail/website/components/layout/Center";
-import { Container } from "@heydovetail/website/components/layout/Container";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { Testimonials } from "@heydovetail/website/components/site/Testimonials";
-import { HALF_GAP, PADDING, testimonials, WIDTH } from "@heydovetail/website/constants";
+import { HALF_GAP, testimonials, WIDTH } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
 import React from "react";
@@ -27,14 +26,14 @@ export default class extends React.PureComponent {
             content="Loved by product managers, designers, and researchers worldwide, from organizations like Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
           />
         </Helmet>
-        <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
+        <LightContainer>
           <HeroText
             center={false}
             maxWidth={WIDTH / 2}
             text="Designers, researchers, and product managers from all over the globe use Dovetail to organize and analyze customer feedback and user research."
             title="Our customers"
           />
-        </Container>
+        </LightContainer>
         <LightContainer backgroundColor={COLORS.teal}>
           <CustomerLogos
             color={COLORS.white}
@@ -44,12 +43,14 @@ export default class extends React.PureComponent {
               customers.atlassian,
               customers.barnardos,
               customers.bcg,
+              customers.careship,
               customers.csiro,
               customers.deloitte,
               customers.elsevier,
               customers.enigma,
               customers.freshworks,
               customers.ftw,
+              customers.harvard,
               customers.hotelscombined,
               customers.ideo,
               customers.kickstand,
@@ -60,7 +61,9 @@ export default class extends React.PureComponent {
               customers.pearson,
               customers.rbs,
               customers.rmit,
+              customers.schibsted,
               customers.scout24,
+              customers.spotify,
               customers.uniqa,
               customers.westpac
             ]}
@@ -91,6 +94,8 @@ export default class extends React.PureComponent {
               />
             </Item>
           </Flex>
+        </LightContainer>
+        <LightContainer>
           <CenteredSignUp />
         </LightContainer>
       </>

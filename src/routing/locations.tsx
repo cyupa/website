@@ -117,6 +117,7 @@ export const locations = {
   demo: () => external("https://calendly.com/benjaminhumphrey/demo/", { openInNewTab: true }),
   email: () => external("mailto:hello@dovetailapp.com", { openInNewTab: true }),
   features: () => internal("/features"),
+  featuresCharts: () => internal("/features/charts"),
   featuresFiles: () => internal("/features/files"),
   featuresHighlights: () => internal("/features/highlights"),
   featuresProjects: () => internal("/features/projects"),
