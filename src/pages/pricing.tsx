@@ -34,7 +34,7 @@ export default class extends React.PureComponent {
           <Flex styled={{ gap: HALF_GAP / 2, layout: "column" }}>
             <Item>
               <HeroText
-                title="Simple and affordable pricing."
+                title="Fixed price per team."
                 text="Pay the same transparent price each month regardless of your team size."
               />
             </Item>
