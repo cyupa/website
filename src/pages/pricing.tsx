@@ -5,7 +5,7 @@ import { Faq } from "@heydovetail/website/components/site/Faq";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { ActionTextWithArrow } from "@heydovetail/website/components/util/ActionTextWithArrow";
-import { HALF_GAP, MONTHLY_PRICE, MONTHLY_PRICE_IN_CENTS, VERTICAL_GAP } from "@heydovetail/website/constants";
+import { HALF_GAP, MONTHLY_PRICE, MONTHLY_PRICE_IN_CENTS } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
@@ -31,42 +31,38 @@ export default class extends React.PureComponent {
           />
         </Helmet>
         <LightContainer>
-          <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
+          <Flex styled={{ gap: HALF_GAP / 2, layout: "column" }}>
             <Item>
-              <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
-                <Item>
-                  <HeroText
-                    title="Simple and affordable pricing."
-                    text="Pay the same transparent price each month regardless of your team size."
-                  />
-                </Item>
-                <Item>
-                  <PricingCard
-                    features={[
-                      "All features",
-                      "Unlimited projects",
-                      "Unlimited users",
-                      "Unlimited integrations",
-                      "Premium support"
-                    ]}
-                    price={MONTHLY_PRICE_IN_CENTS}
-                  />
-                </Item>
-                <Item>
-                  <Center>
-                    <Flow>
-                      <Item>
-                        <ButtonLink color={COLORS.purple} location={locations.signUp()}>
-                          Start free trial
-                        </ButtonLink>
-                      </Item>
-                      <Item>
-                        <ButtonLink location={locations.demo()}>Book a demo</ButtonLink>
-                      </Item>
-                    </Flow>
-                  </Center>
-                </Item>
-              </Flex>
+              <HeroText
+                title="Simple and affordable pricing."
+                text="Pay the same transparent price each month regardless of your team size."
+              />
+            </Item>
+            <Item>
+              <PricingCard
+                features={[
+                  "All features",
+                  "Unlimited projects",
+                  "Unlimited users",
+                  "Unlimited integrations",
+                  "Premium support"
+                ]}
+                price={MONTHLY_PRICE_IN_CENTS}
+              />
+            </Item>
+            <Item>
+              <Center>
+                <Flow>
+                  <Item>
+                    <ButtonLink color={COLORS.purple} location={locations.signUp()}>
+                      Start free trial
+                    </ButtonLink>
+                  </Item>
+                  <Item>
+                    <ButtonLink location={locations.demo()}>Book a demo</ButtonLink>
+                  </Item>
+                </Flow>
+              </Center>
             </Item>
           </Flex>
         </LightContainer>

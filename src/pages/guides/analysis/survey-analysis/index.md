@@ -2,7 +2,7 @@
 date: "2018-04-11"
 path: "/guides/survey-analysis"
 title: "How to analyze open-ended survey questions"
-weight: 1
+weight: 3
 ---
 
 ![Photo of a laptop sitting on a sofa showing statistics and charts](./laptop.jpg)
