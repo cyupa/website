@@ -17,3 +17,8 @@ declare module "*.svg" {
   const url: string;
   export = url;
 }
+
+declare module "*.md" {
+  const text: string;
+  export = text;
+}

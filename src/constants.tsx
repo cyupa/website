@@ -18,7 +18,9 @@ export const PADDING = 24;
 export const WIDTH = 880;
 export const VERTICAL_GAP = 160;
 export const HALF_GAP = VERTICAL_GAP / 2;
+export const QUARTER_GAP = VERTICAL_GAP / 4;
 export const PADDING_BOTTOM = 64;
+
 export const FONT_FAMILY = "Rubik, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif";
 
 export const LIGHT_TEXT_OPACITY = 0.6;
