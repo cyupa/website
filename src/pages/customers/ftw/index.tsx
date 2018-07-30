@@ -1,8 +1,8 @@
-import ArticleHero from "@heydovetail/website/components/site/ArticleHero";
-import ArticleStats from "@heydovetail/website/components/site/ArticleStats";
+import { ArticleHero } from "@heydovetail/website/components/site/ArticleHero";
+import { ArticleStats } from "@heydovetail/website/components/site/ArticleStats";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { StyledContent } from "@heydovetail/website/components/site/PageContent";
-import PhotoGrid from "@heydovetail/website/components/site/PhotoGrid";
+import { PhotoGrid } from "@heydovetail/website/components/site/PhotoGrid";
 import { PADDING, QUARTER_GAP } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";

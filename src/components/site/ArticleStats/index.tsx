@@ -13,7 +13,7 @@ interface Props {
   stats: Stat[];
 }
 
-export default function ArticleStats(props: Props) {
+export function ArticleStats(props: Props) {
   const { stats } = props;
 
   return (

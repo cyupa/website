@@ -9,7 +9,7 @@ interface Props {
   text: string;
 }
 
-export default function ArticleHero(props: Props) {
+export function ArticleHero(props: Props) {
   const { backLocation, title, text } = props;
 
   return (

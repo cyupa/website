@@ -10,7 +10,7 @@ interface Props {
   image3: string;
 }
 
-export default function PhotoGrid(props: Props) {
+export function PhotoGrid(props: Props) {
   const { direction = "row", image1, image2, image3 } = props;
 
   return (
