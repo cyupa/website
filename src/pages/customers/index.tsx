@@ -12,26 +12,23 @@ import { Helmet } from "react-helmet";
 
 export default class extends React.PureComponent {
   public render() {
+    const title = "Customers";
+    const description =
+      "Loved by product managers, designers, and researchers worldwide, from organizations like Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more.";
+
     return (
       <>
         <Helmet>
-          <title>Our customers – Dovetail</title>
-          <meta property="og:title" content="Our customers – Dovetail" />
-          <meta
-            name="description"
-            content="Loved by product managers, designers, and researchers worldwide, from organizations like Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
-          />
-          <meta
-            property="og:description"
-            content="Loved by product managers, designers, and researchers worldwide, from organizations like Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."
-          />
+          <title>{title} – Dovetail</title>
+          <meta property="og:title" content={`${title} – Dovetail`} />
+          <meta name="description" content={description} />
+          <meta property="og:description" content={description} />
         </Helmet>
         <LightContainer>
           <HeroText
             center={false}
-            maxWidth={WIDTH / 2}
-            text="Designers, researchers, and product managers from all over the globe use Dovetail to organize and analyze customer feedback and user research."
-            title="Our customers"
+            text="See how organizations of all shapes and sizes get value from Dovetail."
+            title="Customer stories"
           />
         </LightContainer>
         <LightContainer backgroundColor={COLORS.teal}>

@@ -1,38 +1,37 @@
-import { ArticleHero } from "@heydovetail/website/components/site/ArticleHero";
 import { ArticleStats } from "@heydovetail/website/components/site/ArticleStats";
+import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { StyledContent } from "@heydovetail/website/components/site/PageContent";
 import { PhotoGrid } from "@heydovetail/website/components/site/PhotoGrid";
-import { PADDING, QUARTER_GAP } from "@heydovetail/website/constants";
-import { locations } from "@heydovetail/website/routing/locations";
+import { ARTICLE_WIDTH, PADDING, QUARTER_GAP } from "@heydovetail/website/constants";
 import React from "react";
 import { Helmet } from "react-helmet";
 import image1 from "./1.jpg";
 import image2 from "./2.jpg";
-import image3 from "./3.png";
 import logo from "./logo.png";
+import screenshot from "./screenshot.png";
 
 export default class extends React.PureComponent {
   public render() {
-    const name = "For the Win";
+    const title = "For the Win";
     const description =
-      "This small Brooklyn consultancy helps high growth startups nail their employee onboarding experience by using Dovetail for research analysis";
+      "This New York based consultancy helps high growth startups nail their employee onboarding experience by using Dovetail for research analysis";
 
     return (
       <>
         <Helmet>
-          <title>{name} – Customers – Dovetail</title>
-          <meta property="og:title" content={`${name} – Customers – Dovetail`} />
+          <title>{title} – Customers – Dovetail</title>
+          <meta property="og:title" content={`${title} – Customers – Dovetail`} />
           <meta name="description" content={description} />
           <meta property="og:description" content={description} />
         </Helmet>
-        <LightContainer maxWidth={648} padding={{ x: PADDING, y: 0 }}>
-          <ArticleHero backLocation={locations.customers()} title={name} text={description} />
+        <LightContainer maxWidth={ARTICLE_WIDTH}>
+          <HeroText center={false} title={title} text={description} />
         </LightContainer>
         <LightContainer padding={{ x: PADDING, y: 0 }}>
           <PhotoGrid image1={image1} image2={image2} image3={logo} />
         </LightContainer>
-        <LightContainer maxWidth={648} padding={{ x: PADDING, y: QUARTER_GAP }}>
+        <LightContainer maxWidth={ARTICLE_WIDTH} padding={{ x: PADDING, y: QUARTER_GAP }}>
           <ArticleStats
             stats={[
               {
@@ -97,7 +96,7 @@ export default class extends React.PureComponent {
               sorts the tags by frequency and looks for any that span all or most transcripts. As he sees interesting trends, he
               pulls out quotes that back up the core idea and copies them to a new insight.
             </p>
-            <img className="gatsby-resp-image-wrapper" src={image3} style={{ width: "100%" }} />
+            <img className="gatsby-resp-image-wrapper" src={screenshot} style={{ width: "100%" }} />
             <blockquote>
               “I had checked out a bunch of competing products, and it was obvious from the first week using Dovetail that it
               was way more polished and usable than anything else.”

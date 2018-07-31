@@ -37,7 +37,7 @@ const Wrapper = styled("div", ({ direction }: { direction?: Props["direction"] }
     {
       display: "flex",
       flexDirection: direction,
-      margin: -8
+      margin: "0 -8px"
     },
     media(
       { maxWidth: BREAKPOINT_PHABLET },
@@ -62,7 +62,7 @@ const Secondary = styled("div", {
 const ImageWrapper = styled("div", {
   display: "flex",
   flex: "1 1 100%",
-  minHeight: 176,
+  minHeight: 160,
   padding: 8
 });
 

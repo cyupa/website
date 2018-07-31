@@ -1,10 +1,9 @@
-import { ArticleHero } from "@heydovetail/website/components/site/ArticleHero";
 import { ArticleStats } from "@heydovetail/website/components/site/ArticleStats";
+import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { StyledContent } from "@heydovetail/website/components/site/PageContent";
 import { PhotoGrid } from "@heydovetail/website/components/site/PhotoGrid";
-import { PADDING, QUARTER_GAP } from "@heydovetail/website/constants";
-import { locations } from "@heydovetail/website/routing/locations";
+import { ARTICLE_WIDTH, PADDING, QUARTER_GAP } from "@heydovetail/website/constants";
 import React from "react";
 import { Helmet } from "react-helmet";
 import image1 from "./1.jpg";
@@ -13,25 +12,25 @@ import logo from "./logo.png";
 
 export default class extends React.PureComponent {
   public render() {
-    const name = "Careship";
+    const title = "Careship";
     const description =
       "This Berlin-based startup wants to fundamentally change the way care is delivered, and user research with Dovetail plays a critical role";
 
     return (
       <>
         <Helmet>
-          <title>{name} – Customers – Dovetail</title>
-          <meta property="og:title" content={`${name} – Customers – Dovetail`} />
+          <title>{title} – Customers – Dovetail</title>
+          <meta property="og:title" content={`${title} – Customers – Dovetail`} />
           <meta name="description" content={description} />
           <meta property="og:description" content={description} />
         </Helmet>
-        <LightContainer maxWidth={648} padding={{ x: PADDING, y: 0 }}>
-          <ArticleHero backLocation={locations.customers()} title={name} text={description} />
+        <LightContainer maxWidth={ARTICLE_WIDTH}>
+          <HeroText center={false} title={title} text={description} />
         </LightContainer>
         <LightContainer padding={{ x: PADDING, y: 0 }}>
           <PhotoGrid image1={image1} image2={image2} image3={logo} />
         </LightContainer>
-        <LightContainer maxWidth={648} padding={{ x: PADDING, y: QUARTER_GAP }}>
+        <LightContainer maxWidth={ARTICLE_WIDTH} padding={{ x: PADDING, y: QUARTER_GAP }}>
           <ArticleStats
             stats={[
               {

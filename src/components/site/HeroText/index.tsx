@@ -1,10 +1,7 @@
-import { BREAKPOINT_PHABLET } from "@heydovetail/ui-components";
-import { Flex } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
-import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
+import { BREAKPOINT_PHABLET, COLORS, Flex, Item } from "@heydovetail/ui-components";
 import React from "react";
+import { extend, media } from "typestyle";
 import { styled } from "typestyle-react";
-import { extend, media } from "typestyle/lib";
 
 interface Props {
   center?: boolean;
@@ -22,10 +19,10 @@ export class HeroText extends React.PureComponent<Props> {
         <Wrapper styled={{ center, maxWidth }}>
           <Flex styled={{ gap: 24, layout: "column" }}>
             <Item>
-              <h1>{title}</h1>
+              <Heading>{title}</Heading>
             </Item>
             <Item>
-              <p style={{ opacity: LIGHT_TEXT_OPACITY }}>{text}</p>
+              <Subheading>{text}</Subheading>
             </Item>
           </Flex>
         </Wrapper>
@@ -33,7 +30,7 @@ export class HeroText extends React.PureComponent<Props> {
     } else {
       return (
         <Wrapper styled={{ center, maxWidth }}>
-          <h1>{title}</h1>
+          <Heading>{title}</Heading>
         </Wrapper>
       );
     }
@@ -43,7 +40,7 @@ export class HeroText extends React.PureComponent<Props> {
 const Wrapper = styled("div", ({ center, maxWidth }: { center: boolean; maxWidth?: number }) =>
   extend(
     {
-      margin: center ? "32px auto 0" : "32px 0 0",
+      margin: center ? "0 auto 0" : "0",
       maxWidth: maxWidth,
       textAlign: center ? "center" : "left"
     },
@@ -55,3 +52,14 @@ const Wrapper = styled("div", ({ center, maxWidth }: { center: boolean; maxWidth
     )
   )
 );
+
+const Heading = styled("h1", {
+  margin: 0
+});
+
+const Subheading = styled("h2", {
+  color: COLORS.i60,
+  fontSize: 24,
+  lineHeight: "32px",
+  margin: 0
+});
