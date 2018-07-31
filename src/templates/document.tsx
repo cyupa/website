@@ -38,15 +38,17 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
       </Helmet>
       <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
         <div style={{ maxWidth: WIDTH * 0.75 }}>
-          <div style={{ color: COLORS.i60, fontWeight: 500 }}>
-            <Breadcrumbs
-              crumbs={pathContext.breadcrumb.map(breadcrumb => ({
-                location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
-                text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
-              }))}
-            />
-          </div>
           <Flex styled={{ gap: 16, layout: "column" }}>
+            <Item>
+              <div style={{ color: COLORS.i60, fontWeight: 500 }}>
+                <Breadcrumbs
+                  crumbs={pathContext.breadcrumb.map(breadcrumb => ({
+                    location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
+                    text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
+                  }))}
+                />
+              </div>
+            </Item>
             <Item>
               <HeroText center={false} title={frontmatter!.title!} />
             </Item>

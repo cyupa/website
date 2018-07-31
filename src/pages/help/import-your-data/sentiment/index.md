@@ -19,9 +19,9 @@ Dovetail will add _Positive_ and _Negative_ tags to sentences in notes that expr
 
 Automatic sentiment analysis can be enabled when you import data using any of the following methods:
 
-* [Uploading a spreadsheet with data]()
-* [Collecting feedback through an embeddable form]()
-* [Importing data through a Zapier integration]()
+* [Uploading a spreadsheet with data](/help/spreadsheet)
+* [Collecting feedback through an embeddable form](/help/form-customize)
+* [Importing data through a Zapier integration](/help/zapier)
 
 For detailed instructions, follow the relevant help article.
 
