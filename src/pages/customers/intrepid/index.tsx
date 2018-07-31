@@ -1,5 +1,5 @@
+import { ArticleHero } from "@heydovetail/website/components/site/ArticleHero";
 import { ArticleStats } from "@heydovetail/website/components/site/ArticleStats";
-import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { StyledContent } from "@heydovetail/website/components/site/PageContent";
 import { PhotoGrid } from "@heydovetail/website/components/site/PhotoGrid";
@@ -27,9 +27,7 @@ export default class extends React.PureComponent {
           <meta name="description" content={description} />
           <meta property="og:description" content={description} />
         </Helmet>
-        <LightContainer maxWidth={ARTICLE_WIDTH}>
-          <HeroText center={false} title={title} text={description} />
-        </LightContainer>
+        <ArticleHero title={title} text={description} />
         <LightContainer padding={{ x: PADDING, y: 0 }}>
           <PhotoGrid image1={image1} image2={image2} image3={logo} />
         </LightContainer>
@@ -79,12 +77,6 @@ export default class extends React.PureComponent {
             </p>
             <br />
             <PhotoGrid direction="row-reverse" image1={image5} image2={image3} image3={image4} />
-            <br />
-            <h3>How Dovetail helps</h3>
-            <p>
-              Intrepid Group’s mission is to “Change the Way People See the World”. Their range of B2C and B2B brands like
-              Intrepid Travel, Adventure Tours Australia, and Peregrine cater for all ages, budgets and appetites for adventure.
-            </p>
           </StyledContent>
         </LightContainer>
       </>

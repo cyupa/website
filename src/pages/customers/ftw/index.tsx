@@ -1,5 +1,5 @@
+import { ArticleHero } from "@heydovetail/website/components/site/ArticleHero";
 import { ArticleStats } from "@heydovetail/website/components/site/ArticleStats";
-import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { StyledContent } from "@heydovetail/website/components/site/PageContent";
 import { PhotoGrid } from "@heydovetail/website/components/site/PhotoGrid";
@@ -25,9 +25,7 @@ export default class extends React.PureComponent {
           <meta name="description" content={description} />
           <meta property="og:description" content={description} />
         </Helmet>
-        <LightContainer maxWidth={ARTICLE_WIDTH}>
-          <HeroText center={false} title={title} text={description} />
-        </LightContainer>
+        <ArticleHero title={title} text={description} />
         <LightContainer padding={{ x: PADDING, y: 0 }}>
           <PhotoGrid image1={image1} image2={image2} image3={logo} />
         </LightContainer>

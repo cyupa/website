@@ -1,14 +1,22 @@
-import { COLORS, Flex, Item } from "@heydovetail/ui-components";
+import { BREAKPOINT_PHABLET, COLORS, Flex, Item } from "@heydovetail/ui-components";
 import * as customers from "@heydovetail/website/components/icons/customers";
-import { Center } from "@heydovetail/website/components/layout/Center";
+import { Article } from "@heydovetail/website/components/site/Article";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { Testimonials } from "@heydovetail/website/components/site/Testimonials";
-import { HALF_GAP, testimonials, WIDTH } from "@heydovetail/website/constants";
+import { HALF_GAP, testimonials } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
 import React from "react";
 import { Helmet } from "react-helmet";
+import { styled } from "typestyle-react";
+import { media } from "../../../node_modules/typestyle/lib";
+import careshipHero from "./careship/1.jpg";
+import careshipLogo from "./careship/logo.png";
+import ftwHero from "./ftw/1.jpg";
+import ftwLogo from "./ftw/logo.png";
+import intrepidHero from "./intrepid/1.jpg";
+import intrepidLogo from "./intrepid/logo.png";
 
 export default class extends React.PureComponent {
   public render() {
@@ -25,15 +33,53 @@ export default class extends React.PureComponent {
           <meta property="og:description" content={description} />
         </Helmet>
         <LightContainer>
-          <HeroText
-            center={false}
-            text="See how organizations of all shapes and sizes get value from Dovetail."
-            title="Customer stories"
-          />
+          <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
+            <Item>
+              <HeroText
+                center={false}
+                text="See how organizations of all shapes and sizes get value from Dovetail."
+                title="Customer stories"
+              />
+            </Item>
+            <Item>
+              <Articles>
+                <Article
+                  image={careshipHero}
+                  insetImage={careshipLogo}
+                  location={{ internal: true, path: "/customers/careship" }}
+                  title={
+                    <>
+                      <b>Careship</b> are fundamentally changing care in Europe
+                    </>
+                  }
+                />
+                <Article
+                  image={ftwHero}
+                  insetImage={ftwLogo}
+                  location={{ internal: true, path: "/customers/ftw" }}
+                  title={
+                    <>
+                      <b>For the Win</b> helps startups nail their employee onboarding
+                    </>
+                  }
+                />
+                <Article
+                  image={intrepidHero}
+                  insetImage={intrepidLogo}
+                  location={{ internal: true, path: "/customers/intrepid" }}
+                  title={
+                    <>
+                      <b>Intrepid Group</b> are the world’s largest adventure travel provider
+                    </>
+                  }
+                />
+              </Articles>
+            </Item>
+          </Flex>
         </LightContainer>
-        <LightContainer backgroundColor={COLORS.teal}>
+        <LightContainer backgroundColor={COLORS.p04}>
           <CustomerLogos
-            color={COLORS.white}
+            color={COLORS.indigo}
             customers={[
               customers.airteam,
               customers.arm,
@@ -69,9 +115,11 @@ export default class extends React.PureComponent {
         <LightContainer>
           <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
             <Item>
-              <Center>
-                <h2>Here’s why they love Dovetail.</h2>
-              </Center>
+              <HeroText
+                center={false}
+                text="Testimonials from happy researchers, product managers, and designers using Dovetail every day."
+                title="Loved by users"
+              />
             </Item>
             <Item>
               <Testimonials
@@ -99,3 +147,18 @@ export default class extends React.PureComponent {
     );
   }
 }
+
+const Articles = styled(
+  "div",
+  {
+    display: "grid",
+    gridGap: 48,
+    gridTemplateColumns: "1fr"
+  },
+  media(
+    { minWidth: BREAKPOINT_PHABLET },
+    {
+      gridTemplateColumns: "1fr 1fr"
+    }
+  )
+);

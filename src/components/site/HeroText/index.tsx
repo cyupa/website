@@ -17,7 +17,7 @@ export class HeroText extends React.PureComponent<Props> {
     if (text !== undefined) {
       return (
         <Wrapper styled={{ center, maxWidth }}>
-          <Flex styled={{ gap: 24, layout: "column" }}>
+          <Flex styled={{ gap: 16, layout: "column" }}>
             <Item>
               <Heading>{title}</Heading>
             </Item>
