@@ -27,7 +27,7 @@ const Wrapper = styled("div", {
 });
 
 const Heading = styled("h1", {
-  margin: "12px 0"
+  margin: "16px 0"
 });
 
 const Subheading = styled("h2", {
