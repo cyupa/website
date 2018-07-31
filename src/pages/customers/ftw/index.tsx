@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet";
 import image1 from "./1.jpg";
 import image2 from "./2.jpg";
 import image3 from "./3.png";
-import image4 from "./4.png";
+import logo from "./logo.png";
 
 export default class extends React.PureComponent {
   public render() {
@@ -30,7 +30,7 @@ export default class extends React.PureComponent {
           <ArticleHero backLocation={locations.customers()} title={name} text={description} />
         </LightContainer>
         <LightContainer padding={{ x: PADDING, y: 0 }}>
-          <PhotoGrid image1={image1} image2={image2} image3={image3} />
+          <PhotoGrid image1={image1} image2={image2} image3={logo} />
         </LightContainer>
         <LightContainer maxWidth={648} padding={{ x: PADDING, y: QUARTER_GAP }}>
           <ArticleStats
@@ -41,7 +41,7 @@ export default class extends React.PureComponent {
               },
               {
                 title: "Location",
-                text: "New York City"
+                text: "New York City, USA"
               },
               {
                 location: { internal: false, url: "https://ftw.nyc", openInNewTab: true },
@@ -97,7 +97,7 @@ export default class extends React.PureComponent {
               sorts the tags by frequency and looks for any that span all or most transcripts. As he sees interesting trends, he
               pulls out quotes that back up the core idea and copies them to a new insight.
             </p>
-            <img className="gatsby-resp-image-wrapper" src={image4} style={{ width: "100%" }} />
+            <img className="gatsby-resp-image-wrapper" src={image3} style={{ width: "100%" }} />
             <blockquote>
               “I had checked out a bunch of competing products, and it was obvious from the first week using Dovetail that it
               was way more polished and usable than anything else.”
