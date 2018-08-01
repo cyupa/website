@@ -63,7 +63,7 @@ const InsetImage = styled("div", ({ image }: { image: string }) => ({
   backgroundPosition: "50% 50%",
   backgroundSize: "cover",
   borderRadius: BORDER_RADIUS,
-  boxShadow: "0 0 0 4px rgba(36, 18, 77, 0.1)",
+  boxShadow: "0 0 0 1px rgba(36, 18, 77, 0.1)",
   bottom: 8,
   height: 48,
   position: "absolute",
