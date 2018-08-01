@@ -10698,9 +10698,9 @@ react-is@^16.3.1:
   version "16.3.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.3.1.tgz#ee66e6d8283224a83b3030e110056798488359ba"
 
-react-masonry-responsive@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/react-masonry-responsive/-/react-masonry-responsive-2.0.1.tgz#7b43108c5261d7763da5dbbe1b859ff4e54bce66"
+react-masonry-responsive@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-masonry-responsive/-/react-masonry-responsive-2.1.1.tgz#9a93c6eb275f84e5487737d01666a997a6ccdf84"
   dependencies:
     tslib "^1.8.1"
 
