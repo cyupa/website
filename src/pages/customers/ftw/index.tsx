@@ -15,7 +15,7 @@ export default class extends React.PureComponent {
   public render() {
     const title = "For the Win";
     const description =
-      "This New York based consultancy helps high growth startups nail their employee onboarding experience by using Dovetail for research analysis";
+      "This New York based consultancy helps early-stage startups build a great workplace by using Dovetail for user research analysis";
 
     return (
       <>
@@ -59,13 +59,14 @@ export default class extends React.PureComponent {
             <h3>Challenge</h3>
             <p>
               For the Win is a Brooklyn-based consulting firm for early-stage startups led by principal Benjamin Jackson.
-              Benjamin and For the Win consult with fast growing startups to refine their employee recruiting and onboarding
-              process. In Benjamin’s words, “we exist to make people feel awesome about going to work.”
+              Benjamin and For the Win consult with fast growing startups to design lightweight processes that keep things
+              moving without slowing people down. In Benjamin’s words, “we exist to make people feel awesome about going to
+              work.”
             </p>
             <p>
               User research is an important part of how Benjamin works with clients to identify and fix gaps in their people
-              processes. Every week he conducts dozens of entry and exit interviews, organizes engagement surveys for employees,
-              and observes people during their onboarding process at his client’s offices. Identifying patterns across these
+              processes. With each client, he conducts dozens of interviews, organizes engagement surveys for employees, and
+              observes people during their onboarding process at his client’s offices. Identifying patterns across these
               different sources is a critical part of his analysis process.
             </p>
             <blockquote>

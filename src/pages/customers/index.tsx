@@ -44,6 +44,16 @@ export default class extends React.PureComponent {
             <Item>
               <Articles>
                 <Article
+                  image={intrepidHero}
+                  insetImage={intrepidLogo}
+                  location={{ internal: true, path: "/customers/intrepid" }}
+                  title={
+                    <>
+                      <b>Intrepid Group</b> are the world’s largest adventure travel provider
+                    </>
+                  }
+                />
+                <Article
                   image={careshipHero}
                   insetImage={careshipLogo}
                   location={{ internal: true, path: "/customers/careship" }}
@@ -59,17 +69,7 @@ export default class extends React.PureComponent {
                   location={{ internal: true, path: "/customers/ftw" }}
                   title={
                     <>
-                      <b>For the Win</b> helps startups nail their employee onboarding
-                    </>
-                  }
-                />
-                <Article
-                  image={intrepidHero}
-                  insetImage={intrepidLogo}
-                  location={{ internal: true, path: "/customers/intrepid" }}
-                  title={
-                    <>
-                      <b>Intrepid Group</b> are the world’s largest adventure travel provider
+                      <b>For the Win</b> help early-stage startups build a great workplace
                     </>
                   }
                 />
