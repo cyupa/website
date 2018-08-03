@@ -52,7 +52,7 @@ export default class extends React.PureComponent {
               },
               {
                 title: "Company size",
-                text: "1,700 people"
+                text: "1,800 people"
               },
               {
                 title: "Design & research",
@@ -68,14 +68,14 @@ export default class extends React.PureComponent {
             </p>
             <p>
               Recently, they’ve been building up their user experience and research muscle. Gemma Sherwood, Intrepid Group’s UX
-              Manager told us that in 2017, the company started focusing on “better understanding our customers so that we could
-              provide them with the best travel experience possible.”
+              Manager told us that the company is now focusing on “better understanding our customers so that we could provide
+              them with the best travel experience possible.”
             </p>
             <p>
-              This focus is reflected in stats from their annual report. In 2017 alone, Gemma and her team collected and
-              analyzed more than 50,000 pieces of feedback from customers around their overall experience, and throughout their
-              entire customer journey. They grew their UX team by 250% and run 88 individual usability testing sessions on three
-              continents, resulting in 368 videos and 3,000 minutes of footage.
+              This focus is reflected in stats from their recent annual report. In one year alone, Gemma and her team collected
+              and analyzed more than 50,000 pieces of feedback from customers around their overall experience, and throughout
+              their entire customer journey. They grew their UX team by 250% and run 88 individual usability testing sessions on
+              three continents, resulting in 368 videos and 3,000 minutes of footage.
             </p>
             <p>
               Like many companies today, the growth of Intrepid Group’s UX team shows no sign of slowing down. Gemma’s planning
@@ -116,7 +116,7 @@ export default class extends React.PureComponent {
             <p>
               With researchers and designers onboard, and the research repository growing, Gemma says the UX team have turned
               their attention to other departments like Marketing and Insights, with the goal to get them involved by the end of
-              2018.
+              the year.
             </p>
             <blockquote>
               “Our broader goal is for the Insights and Marketing departments to utilize Dovetail as a searchable research
