@@ -46,7 +46,7 @@ export default class extends React.PureComponent {
                 text: "Melbourne, Australia"
               },
               {
-                location: { internal: false, url: "https://intrepidgroup.travel", openInNewTab: true },
+                location: { internal: false, url: "https://www.intrepidgroup.travel", openInNewTab: true },
                 title: "Website",
                 text: "intrepidgroup.travel"
               },
