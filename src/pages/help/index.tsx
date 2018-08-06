@@ -114,13 +114,7 @@ export default class extends React.PureComponent<Props, State> {
       )
     });
 
-    return (
-      <DocumentIndex
-        items={cards}
-        text="Browse our help documentation and find ways to get in touch with us."
-        title="Help Center"
-      />
-    );
+    return <DocumentIndex items={cards} text="Read our help docs and find ways to get in touch with us." title="Help Center" />;
   }
 }
 

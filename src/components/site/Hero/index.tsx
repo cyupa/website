@@ -67,7 +67,7 @@ const Wrapper = styled("div", {
 });
 
 const Heading = styled("h1", {
-  marginTop: "32px"
+  margin: 0
 });
 
 const Image = styled("div", {

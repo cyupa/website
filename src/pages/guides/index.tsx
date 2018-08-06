@@ -52,7 +52,7 @@ export default class extends React.PureComponent<Props> {
     return (
       <DocumentIndex
         items={cards}
-        text="Browse our design, startup, and research guides, or join our free Slack community to learn more."
+        text="Practical articles about design, research and startups."
         title="Design &amp; research guides"
       />
     );

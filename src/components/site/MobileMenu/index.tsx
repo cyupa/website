@@ -59,8 +59,8 @@ export class MobileMenu extends React.PureComponent<Props> {
                   <LinkList
                     links={[
                       { label: "Features", location: locations.features(), onClick: onClose },
-                      { label: "Pricing", location: locations.pricing(), onClick: onClose },
-                      { label: "Security", location: locations.security(), onClick: onClose }
+                      { label: "Customers", location: locations.customers(), onClick: onClose },
+                      { label: "Pricing", location: locations.pricing(), onClick: onClose }
                     ]}
                   />
                 </Item>
@@ -68,7 +68,7 @@ export class MobileMenu extends React.PureComponent<Props> {
                   <LinkList
                     links={[
                       { label: "Support", location: locations.help(), onClick: onClose },
-                      { label: "Customers", location: locations.customers(), onClick: onClose },
+                      { label: "Security", location: locations.security(), onClick: onClose },
                       { label: "About", location: locations.about(), onClick: onClose }
                     ]}
                   />

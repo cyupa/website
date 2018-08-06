@@ -1,7 +1,7 @@
 ---
-date: "2018-08-06"
-path: "/legal/customer-terms"
-title: "Customer Terms of Service"
+date: "2018-02-05"
+path: "/legal/archive/customer-terms/2018-02-05"
+title: "Customer Terms of Service (2018-02-05)"
 weight: 1
 ---
 
@@ -129,89 +129,7 @@ The Customer represents and warrants that it has validly entered into the Contra
 
 ## Limitation of liability
 
-To the extent permissible at law, we are not liable for any indirect, punitive, incidental, special, consequential damages including without limitation any claims, losses, liability, loss of data, loss of profits, revenue, business or goodwill arising out of or in any way connected with the provision of or failure to provide the Services under these Customer Terms.
-
-To the extent permitted by law, we exclude all representations, guarantees, warranties or terms (whether express or implied) other than those expressly set out in these Customer Terms, and the Australian Consumer Law to the extent applicable.
-
-We cannot guarantee specific results for our Services. It is the Customer’s sole responsibility to determine that the Services or any part of these meet the Customer’s needs or are otherwise suitable for the purposes for which they are used.
-
-These Customer Terms are to be read subject to any legislation that prohibits or restricts the exclusion, restriction or modification of any implied warranties, conditions, guarantees or obligations. If such legislation applies, to the extent possible we limit our liability as follows, at our option: for any claims relating to these Customer Terms, to the fees payable under this agreement (if applicable) for the preceding one (1) month; in the case of products including any digital products (a) the replacement of the products or the supply of equivalent products; (b) the repair of the products; (c) the payment of the cost of replacing the products or of acquiring equivalent products; or (d) the payment of having the products repaired; or in the case of services, the supply of the services again or the payment of the cost of having the services supplied again.
-
-This limitation applies to any supply under or related to these Customer Terms including the supply of the Services and covers loss of Customer Data, any viruses or other disabling features that affect Customer access to or use of our Services, incompatibility between the Services and Customer hardware or software, delays or failures the Customer may have in using the Services including any connections or transmissions that fail or are not completed in an accurate or timely manner.
-
-This clause survives the termination or expiry of these Customer Terms for whatever reason.
-
-## Our indemnification of Customer
-
-We agree to defend, indemnify and hold the Customer harmless from any losses or damages (**“Claims”**) brought against or sustained by the Customer by a third party, which relates to the infringement of a third-party Intellectual Property Rights caused by the Customer’s use of the Services.
-
-Our indemnity does not include any actions, suits, claims, demands, liabilities, costs, expenses, losses and damage (including reasonable legal fees) brought against or sustained by the Customer by a third party, which:
-
-**(a)** relates to Customer Data;
-
-**(b)** relates to a product or service of another entity;
-
-**(c)** arises out of any unlawful modification of the Services;
-
-**(d)** arises out of any breach by the Customer of these Customer Terms; or
-
-**(e)** arises from an admission or settlement by the Customer without our prior written consent.
-
-For any Claims arising under this clause, the Customer must:
-
-**(a)** provide us with prompt notice of any Claim brought against the Customer;
-
-**(b)** provide reasonable assistance to defend the Claim, including providing us with any relevant documents or evidence that we request;
-
-**(c)** allow us to maintain exclusive control over the Claim, including as to any settlements that we may agree upon.
-
-This clause is the Customer’s exclusive remedy and our sole liability against any Claim brought against or sustained by the Customer by a third party.
-
-This clause survives the termination or expiry of these Customer Terms for whatever reason.
-
-## Customer indemnification of Us
-
-The Customer agrees to defend, indemnify and hold us, our affiliates, employees, agents, contributors, third party content providers and licensors harmless from and against all actions, suits, claims, demands, liabilities, costs, expenses, losses and damage (including legal fees on a full indemnity basis) brought against or sustained by us, which:
-
-**(a)** is directly or indirectly caused by the Customer’s breach of these Terms;
-
-**(b)** is directly or indirectly caused by any willful, reckless or negligent act of the Customer;
-
-**(c)** concerns personal injury to any person caused or contributed to by the Customer;
-
-**(d)** is caused by the Customer’s act or omission and constitutes a loss of or damage to property;
-
-**(e)** is brought by any third-party in respect of personal injury, death or damage to third-party property; or
-
-**(f)** arises from the Customer’s act or omission.
-
-Except as required by law, we will not be liable for any claim, loss or liability for personal injury, death or damage to the Customer or its property however it may be caused.
-
-We reserve the right, at our own expense, to assume the exclusive defence and control of any matter otherwise subject to indemnification by the Customer, and in such case, the Customer agrees to cooperate with our defence of such claim.
-
-In no event will we be liable to the Customer for any indirect, incidental or consequential damages including, without limitation, direct, indirect, special, punitive, or exemplary damages.
-
-## Confidentiality
-
-In these Customer Terms, **“Confidential Information”** means information that:
-
-**(a)** is by its nature confidential; or
-
-**(b)** is designated by a party as confidential; and
-
-**(c)** the party knows or ought to know is confidential;
-
-but does not include information which:
-
-**(d)** is or becomes public knowledge other than by breach of these Customer Terms or by any other unlawful means;
-
-**(e)** is in the possession of the party without restriction in relation to disclosure before the date of receipt from the other party; or
-
-**(f)** has been independently developed or acquired by the other party.
-
-A party who receives Confidential Information under these Customer Terms agrees not to disclose it to any other party without the prior written consent of the other party.
-
-We will restrict disclosure of such Confidential Information only to such of our employees, agents or subcontractors that need to know it for discharging our obligations under these Customer Terms, and shall ensure that such employees, agents or subcontractors are subject to the same obligations of confidentiality.
+To the extent permitted by law, we exclude all liability for any loss, damage, costs or expense, whether direct, indirect, incidental, special and/or consequential including loss of profits, suffered by you or any third party, or claims made against you or any third party which result from any use of or access to, or any inability to use or access, the Services. To the extent permitted by law, we exclude all representations, guarantees, warranties or terms (whether express or implied) other than those expressly set out in these Customer Terms, and the Australian Consumer Law to the extent applicable.
 
 ## Severability
 
@@ -239,7 +157,7 @@ Your use of the Services and any dispute arising out of your use of it is subjec
 
 ## Entire agreement
 
-The Contract, including these Customer Terms and all referenced pages constitutes the entire agreement between the parties and supersedes all prior and contemporaneous agreements, proposals or representations, written or oral, concerning its subject matter. Without limiting the foregoing, the Contract supersedes the terms of any online agreement electronically accepted by the Customer or any Authorized Users. However, to the extent of any conflict or inconsistency between the provisions in these Customer Terms and any other documents or pages referenced in these Customer Terms, the following order of precedence will apply: (1) the portions of the [Customer-Specific Supplement](/legal/supplement) that apply to the Customer (if any), (2) the Customer Terms, and (3) any other documents or pages referenced in the Terms.
+The Contract, including these Customer Terms and all referenced pages constitutes the entire agreement between the parties and supersedes all prior and contemporaneous agreements, proposals or representations, written or oral, concerning its subject matter. Without limiting the foregoing, the Contract supersedes the terms of any online agreement electronically accepted by the Customer or any Authorized Users. However, to the extent of any conflict or inconsistency between the provisions in these Customer Terms and any other documents or pages referenced in these Customer Terms, the following order of precedence will apply: (1) the portions of the [Customer-Specific Supplement](/legal/supplement) that apply to Customer (if any), (2) the Customer Terms, and (3) any other documents or pages referenced in the Terms.
 
 ---
 

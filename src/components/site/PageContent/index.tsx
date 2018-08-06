@@ -8,11 +8,11 @@ interface Props {
 
 export class PageContent extends React.PureComponent<Props> {
   public render() {
-    return <Content dangerouslySetInnerHTML={{ __html: this.props.html }} />;
+    return <StyledContent dangerouslySetInnerHTML={{ __html: this.props.html }} />;
   }
 }
 
-const Content = styled("div", {
+export const StyledContent = styled("div", {
   $nest: {
     p: {
       margin: "16px 0"
@@ -45,10 +45,11 @@ const Content = styled("div", {
       padding: "0 4px"
     },
     blockquote: {
-      borderLeft: `2px solid ${COLORS.indigo}`,
-      padding: "0 32px",
-      margin: "32px",
-      fontStyle: "italic"
+      color: COLORS.purple,
+      fontSize: 24,
+      fontStyle: "italic",
+      margin: "32px 0",
+      lineHeight: "36px"
     },
     hr: {
       backgroundColor: COLORS.i04,
@@ -85,9 +86,6 @@ const Content = styled("div", {
     th: {
       backgroundColor: COLORS.p08,
       fontWeight: 500
-    },
-    ".anchor": {
-      display: "none" // Hide the link icon added by gatsby-remark-autolink-headers
     }
   }
 });

@@ -16,27 +16,21 @@ import { Helmet } from "react-helmet";
 
 export default class extends React.PureComponent {
   public render() {
+    const title = "Pricing";
+    const description = "Pay the same price each month regardless of your team size.";
+
     return (
       <>
         <Helmet>
-          <title>Pricing – Dovetail</title>
-          <meta property="og:title" content="Pricing – Dovetail" />
-          <meta
-            property="og:description"
-            content="Simple, transparent, and affordable pricing. Pay the same price each month regardless of your team size."
-          />
-          <meta
-            name="description"
-            content="Simple, transparent, and affordable pricing. Pay the same price each month regardless of your team size."
-          />
+          <title>{title} – Dovetail</title>
+          <meta property="og:title" content={`${title} – Dovetail`} />
+          <meta property="og:description" content={description} />
+          <meta name="description" content={description} />
         </Helmet>
         <LightContainer>
           <Flex styled={{ gap: HALF_GAP / 2, layout: "column" }}>
             <Item>
-              <HeroText
-                title="Simple and affordable pricing."
-                text="Pay the same transparent price each month regardless of your team size."
-              />
+              <HeroText title="Fixed price per team." text={description} />
             </Item>
             <Item>
               <PricingCard

@@ -9,7 +9,6 @@ import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { Features } from "@heydovetail/website/components/site/Features";
 import { HeroText } from "@heydovetail/website/components/site/HeroText";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
-import { WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
@@ -18,27 +17,20 @@ import { Helmet } from "react-helmet";
 
 export default class extends React.PureComponent {
   public render() {
+    const title = "Features";
+    const description =
+      "Powerful features designed to help you organize and analyze qualitative customer feedback and user research data.";
+
     return (
       <>
         <Helmet>
-          <title>Features – Dovetail</title>
-          <meta property="og:title" content="Features – Dovetail" />
-          <meta
-            name="description"
-            content="Dovetail has plenty of powerful features purpose-built to help you organize and analyze qualitative customer feedback and user research data."
-          />
-          <meta
-            property="og:description"
-            content="Dovetail has plenty of powerful features purpose-built to help you organize and analyze qualitative customer feedback and user research data."
-          />
+          <title>{title} – Dovetail</title>
+          <meta property="og:title" content={`${title} – Dovetail`} />
+          <meta name="description" content={description} />
+          <meta property="og:description" content={description} />
         </Helmet>
         <LightContainer>
-          <HeroText
-            center={false}
-            maxWidth={WIDTH / 2}
-            text="Dovetail has plenty of powerful features purpose-built to help you organize and analyze qualitative customer feedback and user research data."
-            title="Features"
-          />
+          <HeroText center={false} text={description} title={title} />
           <FeatureHero
             image={<IllustrationEditor size="100%" />}
             imagePosition="right"
