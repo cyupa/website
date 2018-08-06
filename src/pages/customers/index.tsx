@@ -9,10 +9,10 @@ import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
 import React from "react";
 import { Helmet } from "react-helmet";
+import { media } from "typestyle";
 import { styled } from "typestyle-react";
-import { media } from "../../../node_modules/typestyle/lib";
-import careshipHero from "./careship/1.jpg";
-import careshipLogo from "./careship/logo.png";
+// import careshipHero from "./careship/1.jpg";
+// import careshipLogo from "./careship/logo.png";
 import ftwHero from "./ftw/1.jpg";
 import ftwLogo from "./ftw/logo.png";
 import intrepidHero from "./intrepid/1.jpg";
@@ -53,7 +53,7 @@ export default class extends React.PureComponent {
                     </>
                   }
                 />
-                <Article
+                {/* <Article
                   image={careshipHero}
                   insetImage={careshipLogo}
                   location={{ internal: true, path: "/customers/careship" }}
@@ -62,7 +62,7 @@ export default class extends React.PureComponent {
                       <b>Careship</b> are fundamentally changing care in Europe
                     </>
                   }
-                />
+                /> */}
                 <Article
                   image={ftwHero}
                   insetImage={ftwLogo}
