@@ -21,8 +21,8 @@ export class Faq extends React.PureComponent<Props> {
           <h4>{question}</h4>
         </Item>
         <Item>
-          <p style={{ opacity: LIGHT_TEXT_OPACITY }}>
-            <span>{answer}</span>
+          <p>
+            <span style={{ opacity: LIGHT_TEXT_OPACITY }}>{answer}</span>
             {location !== undefined ? (
               <>
                 {" "}
