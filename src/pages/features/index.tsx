@@ -7,7 +7,7 @@ import IllustrationSearch from "@heydovetail/website/components/illustrations/Il
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { Features } from "@heydovetail/website/components/site/Features";
-import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
@@ -30,7 +30,7 @@ export default class extends React.PureComponent {
           <meta property="og:description" content={description} />
         </Helmet>
         <LightContainer>
-          <HeroText center={false} text={description} title={title} />
+          <Hero subtitle={description} title={title} />
           <FeatureHero
             image={<IllustrationEditor size="100%" />}
             imagePosition="right"

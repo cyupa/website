@@ -38,14 +38,14 @@ export class SocialProof extends React.PureComponent<Props> {
           <Item>
             <CustomerLogos
               customers={[
-                customers.atlassian,
-                customers.deloitte,
-                customers.nike,
-                customers.uniqa,
-                customers.csiro,
-                customers.enigma,
+                customers.barnardos,
+                customers.elsevier,
                 customers.freshworks,
-                customers.westpac
+                customers.hotelscombined,
+                customers.ocado,
+                customers.monotype,
+                customers.spotify,
+                customers.schibsted
               ]}
             />
           </Item>

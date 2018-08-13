@@ -1,6 +1,6 @@
 import { COLORS } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
-import { HALF_GAP, LIGHT_TEXT_OPACITY, PADDING, WIDTH } from "@heydovetail/website/constants";
+import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import React from "react";
 import { styled } from "typestyle-react";
 
@@ -42,9 +42,6 @@ const Wrapper = styled("div", ({ backgroundColor, overflowBottom }: { background
   $nest: {
     a: {
       color: COLORS.p40
-    },
-    p: {
-      opacity: LIGHT_TEXT_OPACITY
     }
   }
 }));

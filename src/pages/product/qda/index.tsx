@@ -43,7 +43,7 @@ export default class extends React.PureComponent {
           />
         </Helmet>
         <LightContainer>
-          <Hero image={<IllustrationAnalysis />} title="Easily analyze qualitative data in the cloud." />
+          <Hero image={<IllustrationAnalysis />} title="Easily analyze qualitative data in the cloud." showSignUp />
           <FeatureHero
             image={<IllustrationEditor size="100%" />}
             imagePosition="right"

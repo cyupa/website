@@ -44,7 +44,7 @@ export default class extends React.PureComponent {
           />
         </Helmet>
         <LightContainer>
-          <Hero image={<IllustrationCollaboration />} title="Get everyone involved in user research." />
+          <Hero image={<IllustrationCollaboration />} title="Get everyone involved in user research." showSignUp />
           <FeatureHero
             image={<IllustrationRealtime size="100%" />}
             imagePosition="right"

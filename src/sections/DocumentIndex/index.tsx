@@ -1,7 +1,7 @@
 import { Flex } from "@heydovetail/ui-components";
 import { Item } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
-import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { Hero } from "@heydovetail/website/components/site/Hero";
 import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import React from "react";
 import { Helmet } from "react-helmet";
@@ -27,7 +27,7 @@ export class DocumentIndex extends React.PureComponent<Props> {
         <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
           <Flex styled={{ gap: 48, layout: "column" }}>
             <Item>
-              <HeroText title={title} text={text} />
+              <Hero center title={title} subtitle={text} />
             </Item>
             <Item>
               <Masonry containerWidth={WIDTH} gap={32} items={items} minColumnWidth={304} />

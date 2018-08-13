@@ -2,7 +2,7 @@ import { ButtonLink, COLORS, Flex, Flow, Item, PricingCard } from "@heydovetail/
 import * as customers from "@heydovetail/website/components/icons/customers";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { Faq } from "@heydovetail/website/components/site/Faq";
-import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { ActionTextWithArrow } from "@heydovetail/website/components/util/ActionTextWithArrow";
 import { HALF_GAP, MONTHLY_PRICE, MONTHLY_PRICE_IN_CENTS } from "@heydovetail/website/constants";
@@ -30,7 +30,7 @@ export default class extends React.PureComponent {
         <LightContainer>
           <Flex styled={{ gap: HALF_GAP / 2, layout: "column" }}>
             <Item>
-              <HeroText title="Fixed price per team." text={description} />
+              <Hero center title="Fixed price per team." subtitle={description} />
             </Item>
             <Item>
               <PricingCard

@@ -1,6 +1,6 @@
 import { Breadcrumbs, COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
-import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { Hero } from "@heydovetail/website/components/site/Hero";
 import { Lozenge } from "@heydovetail/website/components/site/Lozenge";
 import { PageContent } from "@heydovetail/website/components/site/PageContent";
 import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
@@ -50,7 +50,7 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
               </div>
             </Item>
             <Item>
-              <HeroText center={false} title={frontmatter!.title!} />
+              <Hero title={frontmatter!.title!} />
             </Item>
             {frontmatter!.date !== null && timeToRead !== null ? (
               <Item>

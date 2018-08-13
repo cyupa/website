@@ -1,6 +1,6 @@
 import { ButtonLink, COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
-import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { Hero } from "@heydovetail/website/components/site/Hero";
 import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
@@ -24,9 +24,8 @@ export default class extends React.PureComponent {
         <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
           <Flex styled={{ gap: 40, layout: "column" }}>
             <Item>
-              <HeroText
-                center={false}
-                maxWidth={WIDTH / 2}
+              <Hero
+                maxTextWidth={512}
                 title="Sorry, this page doesn’t exist."
                 text="It may have been moved or deleted. Check the URL is correct in the address bar, and get in touch with us if you continue to have issues."
               />

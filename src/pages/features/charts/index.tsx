@@ -3,7 +3,7 @@ import IllustrationChartsLarge from "@heydovetail/website/components/illustratio
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
 import { Features } from "@heydovetail/website/components/site/Features";
-import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { Hero } from "@heydovetail/website/components/site/Hero";
 import { HALF_GAP } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import React from "react";
@@ -29,7 +29,7 @@ export default class extends React.PureComponent {
           <Center>
             <Flex styled={{ gap: HALF_GAP / 2, layout: "column" }}>
               <Item>
-                <HeroText
+                <Hero
                   title="Visualize your analysis."
                   text="Visualize tag usage in a quick snapshot or identify trends over time with our beautiful charts."
                 />

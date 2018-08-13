@@ -1,6 +1,6 @@
 import { COLORS, Flex, FlexWrap, Flow, Item, SubtleButtonLink } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
-import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { Hero } from "@heydovetail/website/components/site/Hero";
 import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import IllustrationEmail from "@heydovetail/website/pages/confirm/IllustrationEmail";
 import { locations } from "@heydovetail/website/routing/locations";
@@ -27,7 +27,7 @@ export default class extends React.PureComponent {
             <Item style={{ maxWidth: 416 }}>
               <Flex styled={{ gap: 40, layout: "column" }}>
                 <Item>
-                  <HeroText center={false} title="You’ve got mail." />
+                  <Hero center={false} title="You’ve got mail." />
                 </Item>
                 <Item>
                   <p>We need to confirm your email address. Please follow the instructions in your inbox to continue.</p>

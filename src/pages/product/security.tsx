@@ -4,7 +4,7 @@ import { DarkContainer } from "@heydovetail/website/components/site/DarkContaine
 import { Faq } from "@heydovetail/website/components/site/Faq";
 import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
-import { WIDTH } from "@heydovetail/website/constants";
+import { LIGHT_TEXT_OPACITY, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { FrequentlyAskedQuestions } from "@heydovetail/website/sections/FrequentlyAskedQuestions";
 import { ADVANCED_SECURITY_FEATURES, BASE_SECURITY_FEATURES } from "@heydovetail/website/sections/Security";
@@ -28,29 +28,36 @@ export default class extends React.PureComponent {
           />
         </Helmet>
         <DarkContainer>
-          <Hero image={<IllustrationSecurity />} showSignUp={false} title="Dovetail security and privacy.">
-            <Flex styled={{ gap: 24, layout: "column" }}>
-              <Item>
-                <p>
-                  We understand you’ll be trusting us with research and customer feedback data, including potentially sensitive
-                  information about your own customers or participants.
-                </p>
-              </Item>
-              <Item>
-                <p>
-                  Our application is built on world-class, modern cloud infrastructure designed to ensure the safety of your
-                  data. We have chosen proven third party cloud providers with a great security track record. We also employ
-                  extra measures including regular backups, data encryption, sanitized logging, and common attack prevention.
-                </p>
-              </Item>
-              <Item>
-                <p>
-                  We’re not in the business of selling your data (anonymized or otherwise). You own your data and we will never
-                  sell it to third parties. We also won’t look at your data unless you give us permission for a support case.
-                </p>
-              </Item>
-            </Flex>
-          </Hero>
+          <Hero
+            image={<IllustrationSecurity />}
+            maxTextWidth={464}
+            showSignUp={false}
+            text={
+              <Flex styled={{ gap: 24, layout: "column" }}>
+                <Item>
+                  <p>
+                    We understand you’ll be trusting us with research and customer feedback data, including potentially
+                    sensitive information about your own customers or participants.
+                  </p>
+                </Item>
+                <Item>
+                  <p>
+                    Our application is built on world-class, modern cloud infrastructure designed to ensure the safety of your
+                    data. We have chosen proven third party cloud providers with a great security track record. We also employ
+                    extra measures including regular backups, data encryption, sanitized logging, and common attack prevention.
+                  </p>
+                </Item>
+                <Item>
+                  <p>
+                    We’re not in the business of selling your data (anonymized or otherwise). You own your data and we will
+                    never sell it to third parties. We also won’t look at your data unless you give us permission for a support
+                    case.
+                  </p>
+                </Item>
+              </Flex>
+            }
+            title="Dovetail security and privacy."
+          />
           <Features features={[...BASE_SECURITY_FEATURES, ...ADVANCED_SECURITY_FEATURES]} large />
           <FrequentlyAskedQuestions
             faqs={[
@@ -90,7 +97,7 @@ export default class extends React.PureComponent {
           />
           <Flex styled={{ gap: 24, layout: "column" }}>
             <Item>
-              <p style={{ maxWidth: WIDTH / 2 }}>
+              <p style={{ maxWidth: WIDTH / 2, opacity: LIGHT_TEXT_OPACITY }}>
                 Find our privacy policies, terms of service, and list of third party data subprocessors in our legal help
                 center.
               </p>

@@ -1,4 +1,4 @@
-import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { ARTICLE_WIDTH, HALF_GAP, PADDING, QUARTER_GAP } from "@heydovetail/website/constants";
 import React from "react";
@@ -14,7 +14,7 @@ export function ArticleHero(props: Props) {
   return (
     <LightContainer maxWidth={ARTICLE_WIDTH} padding={{ x: 0, y: 0 }}>
       <div style={{ paddingBottom: QUARTER_GAP, paddingLeft: PADDING, paddingRight: PADDING, paddingTop: HALF_GAP }}>
-        <HeroText center={false} title={props.title} text={props.text} />
+        <Hero title={props.title} subtitle={props.text} />
       </div>
     </LightContainer>
   );

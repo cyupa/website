@@ -1,6 +1,6 @@
 import { ButtonLink, COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
-import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { Hero } from "@heydovetail/website/components/site/Hero";
 import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
@@ -24,11 +24,10 @@ export default class extends React.PureComponent {
         <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
           <Flex styled={{ gap: 40, layout: "column" }}>
             <Item>
-              <HeroText
-                center={false}
-                maxWidth={WIDTH / 2}
+              <Hero
+                maxTextWidth={512}
                 title="We’ll be back soon. Don’t panic!"
-                text="Dovetail might be undergoing maintenance or an upgrade. No doubt we’re working on restoring service, so please try again in a few minutes."
+                text="Dovetail might be undergoing maintenance or an upgrade. No doubt we’re working on restoring service, so try again in a few minutes."
               />
             </Item>
             <Item>

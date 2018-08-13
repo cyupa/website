@@ -30,6 +30,7 @@ export default class extends React.PureComponent {
           <Hero
             image={<IllustrationHero />}
             text="Dovetail combines customer feedback and user research in one place, making it easy to see patterns, discover insights, and decide what to do next."
+            showSignUp
             title="Understand your customers."
           />
         </LightContainer>

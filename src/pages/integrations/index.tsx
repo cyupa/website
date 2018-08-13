@@ -1,6 +1,6 @@
 import { Flex } from "@heydovetail/ui-components";
 import { Item } from "@heydovetail/ui-components";
-import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { Hero } from "@heydovetail/website/components/site/Hero";
 import { IntegrationCard } from "@heydovetail/website/components/site/IntegrationCard";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
@@ -38,10 +38,7 @@ export default class extends React.PureComponent<Props> {
             <Item>
               <Flex styled={{ gap: 48, layout: "column" }}>
                 <Item>
-                  <HeroText
-                    title="Integrations"
-                    text="Connect thousands of your favorite apps through our Zapier integration and templates."
-                  />
+                  <Hero center title="Integrations" subtitle="Connect thousands of your favorite apps." />
                 </Item>
                 <Item>
                   <Masonry
