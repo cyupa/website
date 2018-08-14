@@ -80,7 +80,6 @@ export default class extends React.PureComponent {
         </LightContainer>
         <LightContainer backgroundColor={COLORS.p04}>
           <CustomerLogos
-            color={COLORS.i60}
             customers={[
               customers.airteam,
               customers.arm,

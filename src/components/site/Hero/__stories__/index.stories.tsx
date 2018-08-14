@@ -1,4 +1,4 @@
-import IllustrationSpace from "@heydovetail/website/components/illustrations/IllustrationSpace";
+import illustrationSpace from "@heydovetail/website/components/illustrations/space.svg";
 import { storiesOf } from "@heydovetail/website/util/stories";
 import React from "react";
 import { Hero } from "../";
@@ -27,7 +27,7 @@ storiesOf("Site/Hero", module)
   ))
   .add("Image", () => (
     <Hero
-      image={<IllustrationSpace />}
+      image={illustrationSpace}
       title="Understand your customers."
       text="Dovetail combines customer feedback and user research in one place, making it easy to see patterns, discover insights, and decide what to do next."
       showSignUp
