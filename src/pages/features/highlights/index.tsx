@@ -1,5 +1,5 @@
 import { Flex, Item } from "@heydovetail/ui-components";
-import IllustrationHighlightsFeedback from "@heydovetail/website/components/illustrations/IllustrationHighlightsFeedback";
+import illustrationHighlightsFeedback from "@heydovetail/website/components/illustrations/highlights-feedback.svg";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
@@ -36,7 +36,7 @@ export default class extends React.PureComponent {
                 />
               </Item>
               <Item>
-                <IllustrationHighlightsFeedback />
+                <img src={illustrationHighlightsFeedback} width="100%" />
               </Item>
             </Flex>
           </Center>

@@ -7,7 +7,7 @@ import { extend, media } from "typestyle/lib";
 
 interface Props {
   center?: boolean;
-  image: React.ReactNode;
+  image: React.ReactNode | string;
   text: string;
   title: string;
 }
@@ -25,7 +25,7 @@ export class FeatureHeroLarge extends React.PureComponent<Props> {
           <Item>
             <p style={{ opacity: LIGHT_TEXT_OPACITY }}>{text}</p>
           </Item>
-          <Item>{image}</Item>
+          <Item>{typeof image === "string" ? <img src={image} width="100%" /> : image}</Item>
         </Flex>
       </Wrapper>
     );

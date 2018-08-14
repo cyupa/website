@@ -1,5 +1,5 @@
 import { Flex, Item } from "@heydovetail/ui-components";
-import IllustrationFilesLarge from "@heydovetail/website/components/illustrations/IllustrationFilesLarge";
+import illustrationFilesLarge from "@heydovetail/website/components/illustrations/files-large.svg";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
@@ -36,7 +36,7 @@ export default class extends React.PureComponent {
                 />
               </Item>
               <Item>
-                <IllustrationFilesLarge />
+                <img src={illustrationFilesLarge} width="100%" />
               </Item>
             </Flex>
           </Center>

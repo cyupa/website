@@ -12,8 +12,7 @@ const GAP = "72px";
 
 interface Props {
   color?: string;
-  // tslint:disable-next-line:no-any
-  image: React.ReactElement<any> | string;
+  image: React.ReactNode | string;
   imagePosition?: "left" | "right";
   launched?: boolean;
   location?: LocationDescriptor;

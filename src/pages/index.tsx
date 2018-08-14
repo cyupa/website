@@ -1,16 +1,16 @@
 import hero from "!file-loader!./hero.png";
-import illustrationHero from "!file-loader!@heydovetail/website/components/illustrations/__svgs__/hero.svg";
 import { COLORS } from "@heydovetail/ui-components";
 import * as customers from "@heydovetail/website/components/icons/customers";
-import illustrationBarChart from "@heydovetail/website/components/illustrations/__svgs__/bar-chart.svg";
-import illustrationFiles from "@heydovetail/website/components/illustrations/__svgs__/files.svg";
-import illustrationLineChart from "@heydovetail/website/components/illustrations/__svgs__/line-chart.svg";
-import illustrationTeam from "@heydovetail/website/components/illustrations/__svgs__/team.svg";
+import illustrationBarChart from "@heydovetail/website/components/illustrations/bar-chart.svg";
+import illustrationFiles from "@heydovetail/website/components/illustrations/files.svg";
+import illustrationHero from "@heydovetail/website/components/illustrations/hero.svg";
+import illustrationLineChart from "@heydovetail/website/components/illustrations/line-chart.svg";
+import illustrationTeam from "@heydovetail/website/components/illustrations/team.svg";
 import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
-import { testimonials } from "@heydovetail/website/constants";
+import { HERO_TEXT_WIDTH, testimonials } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
@@ -30,7 +30,7 @@ export default class extends React.PureComponent {
         <LightContainer>
           <Hero
             image={illustrationHero}
-            maxTextWidth={464}
+            maxTextWidth={HERO_TEXT_WIDTH}
             text="Dovetail combines customer feedback and user research in one place, making it easy to see patterns, discover insights, and decide what to do next."
             showSignUp
             title="Understand your customers."

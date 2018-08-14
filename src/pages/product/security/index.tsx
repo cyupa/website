@@ -1,11 +1,11 @@
 import { ButtonLink, COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
-import IllustrationSecurity from "@heydovetail/website/components/illustrations/IllustrationSecurity";
+import illustrationSecurity from "@heydovetail/website/components/illustrations/security.svg";
 import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
 import { Faq } from "@heydovetail/website/components/site/Faq";
 import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
-import { LIGHT_TEXT_OPACITY, WIDTH } from "@heydovetail/website/constants";
+import { HERO_TEXT_WIDTH, LIGHT_TEXT_OPACITY, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { FrequentlyAskedQuestions } from "@heydovetail/website/sections/FrequentlyAskedQuestions";
 import { ADVANCED_SECURITY_FEATURES, BASE_SECURITY_FEATURES } from "@heydovetail/website/sections/Security";
@@ -30,8 +30,8 @@ export default class extends React.PureComponent {
         </Helmet>
         <DarkContainer>
           <Hero
-            image={<IllustrationSecurity />}
-            maxTextWidth={464}
+            image={illustrationSecurity}
+            maxTextWidth={HERO_TEXT_WIDTH}
             showSignUp={false}
             text={
               <Flex styled={{ gap: 24, layout: "column" }}>

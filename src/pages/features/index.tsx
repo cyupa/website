@@ -1,9 +1,9 @@
 import { COLORS } from "@heydovetail/ui-components";
-import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
-import IllustrationBoard from "@heydovetail/website/components/illustrations/IllustrationBoard";
-import IllustrationEditor from "@heydovetail/website/components/illustrations/IllustrationEditor";
-import IllustrationFiles from "@heydovetail/website/components/illustrations/IllustrationFiles";
-import IllustrationSearch from "@heydovetail/website/components/illustrations/IllustrationSearch";
+import illustrationBarChart from "@heydovetail/website/components/illustrations/bar-chart.svg";
+import illustrationBoard from "@heydovetail/website/components/illustrations/board.svg";
+import illustrationEditor from "@heydovetail/website/components/illustrations/editor.svg";
+import illustrationFiles from "@heydovetail/website/components/illustrations/files.svg";
+import illustrationSearch from "@heydovetail/website/components/illustrations/search.svg";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
@@ -33,7 +33,7 @@ export default class extends React.PureComponent {
         <LightContainer>
           <Hero subtitle={description} title={title} />
           <FeatureHero
-            image={<IllustrationEditor size="100%" />}
+            image={illustrationEditor}
             imagePosition="right"
             location={locations.featuresHighlights()}
             linkText="Learn more"
@@ -41,7 +41,7 @@ export default class extends React.PureComponent {
             title="Highlights"
           />
           <FeatureHero
-            image={<IllustrationSearch size="100%" />}
+            image={illustrationSearch}
             imagePosition="left"
             location={locations.featuresSearch()}
             linkText="Learn more"
@@ -49,7 +49,7 @@ export default class extends React.PureComponent {
             title="Full-text search"
           />
           <FeatureHero
-            image={<IllustrationFiles size="100%" />}
+            image={illustrationFiles}
             imagePosition="right"
             location={locations.featuresFiles()}
             linkText="Learn more"
@@ -57,7 +57,7 @@ export default class extends React.PureComponent {
             title="Images and files"
           />
           <FeatureHero
-            image={<IllustrationBoard size="100%" />}
+            image={illustrationBoard}
             imagePosition="left"
             location={locations.featuresProjects()}
             linkText="Learn more"
@@ -65,7 +65,7 @@ export default class extends React.PureComponent {
             title="Projects"
           />
           <FeatureHero
-            image={<IllustrationBarChart size="100%" />}
+            image={illustrationBarChart}
             imagePosition="right"
             location={locations.featuresCharts()}
             linkText="Learn more"

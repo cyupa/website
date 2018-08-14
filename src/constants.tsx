@@ -16,6 +16,7 @@ export const BOX_SHADOW_LARGE = "0 16px 32px -4px rgba(36, 18, 77, .2)";
 
 export const PADDING = 24;
 export const ARTICLE_WIDTH = 688;
+export const HERO_TEXT_WIDTH = 464;
 export const WIDTH = 880;
 export const VERTICAL_GAP = 160;
 export const HALF_GAP = VERTICAL_GAP / 2;

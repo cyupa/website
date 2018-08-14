@@ -1,5 +1,5 @@
 import { COLORS } from "@heydovetail/ui-components";
-import IllustrationSecurity from "@heydovetail/website/components/illustrations/IllustrationSecurity";
+import illustrationSecurity from "@heydovetail/website/components/illustrations/security.svg";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { Features } from "@heydovetail/website/components/site/Features";
 import { HALF_GAP } from "@heydovetail/website/constants";
@@ -48,7 +48,7 @@ export class Security extends React.PureComponent {
       <div style={{ marginTop: -HALF_GAP }}>
         <FeatureHero
           color={COLORS.p40}
-          image={<IllustrationSecurity size="100%" />}
+          image={illustrationSecurity}
           imagePosition="right"
           location={locations.security()}
           linkText="Learn more"
