@@ -1,82 +1,76 @@
-import { BREAKPOINT_TABLET, ButtonLink, COLORS, Flex, Flow, Item, SmallText } from "@heydovetail/ui-components";
-import { HALF_GAP, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
-import { locations } from "@heydovetail/website/routing/locations";
+import { BREAKPOINT_PHONE, BREAKPOINT_TABLET, Flex, Item } from "@heydovetail/ui-components";
+import { Image } from "@heydovetail/website/components/util/Image";
 import React from "react";
+import { extend, media } from "typestyle";
 import { styled } from "typestyle-react";
-import { media } from "typestyle/lib";
+import { HeroText } from "./HeroText";
+import { SignUpButton } from "./SignUpButton";
 
 interface Props {
-  children?: React.ReactNode;
-  // tslint:disable-next-line:no-any
-  image: React.ReactElement<any> | string;
+  center?: boolean;
+  image?: React.ReactNode | string;
+  maxTextWidth?: number;
   showSignUp?: boolean;
-  text?: string;
+  text?: React.ReactNode | string;
+  subtitle?: string;
   title: string;
 }
 
 export class Hero extends React.PureComponent<Props> {
   public render() {
-    const { children, image, showSignUp = true, text, title } = this.props;
+    const { center = false, image, maxTextWidth, showSignUp = false, subtitle, text, title } = this.props;
+
     return (
-      <Wrapper>
-        <Flex styled={{ gap: 32 }}>
-          <Item style={{ flex: "0 1 464px" }}>
-            <Flex styled={{ gap: 40, layout: "column" }}>
-              <Item>
-                <Flex styled={{ gap: 24, layout: "column" }}>
-                  <Item>
-                    <Heading>{title}</Heading>
-                  </Item>
-                  {text !== undefined ? (
-                    <Item>
-                      <p style={{ opacity: LIGHT_TEXT_OPACITY }}>{text}</p>
-                    </Item>
-                  ) : null}
-                </Flex>
-              </Item>
-              {children !== undefined ? <Item>{children}</Item> : null}
-              {showSignUp ? (
-                <Item>
-                  <Flow styled={{ gap: 24, rowGap: 24 }}>
-                    <Item>
-                      <ButtonLink color={COLORS.purple} location={locations.signUp()}>
-                        Try now for free
-                      </ButtonLink>
-                    </Item>
-                    <Item>
-                      <SmallText>14 day free trial, no credit card required.</SmallText>
-                    </Item>
-                  </Flow>
-                </Item>
-              ) : null}
-            </Flex>
-          </Item>
-          <HeroImage>
+      <Wrapper styled={{ center }}>
+        <Left styled={{ maxTextWidth }}>
+          <Flex styled={{ gap: 32, layout: "column" }}>
             <Item>
-              <Image>{typeof image === "string" ? <img src={image} width="100%" /> : image}</Image>
+              <HeroText subtitle={subtitle} text={text} title={title} />
             </Item>
-          </HeroImage>
-        </Flex>
+            {showSignUp ? (
+              <Item>
+                <SignUpButton />
+              </Item>
+            ) : null}
+          </Flex>
+        </Left>
+        {image !== undefined ? (
+          <Right>
+            <Item>
+              <ImageWrapper>{typeof image === "string" ? <Image src={image} text={title} width="100%" /> : image}</ImageWrapper>
+            </Item>
+          </Right>
+        ) : null}
       </Wrapper>
     );
   }
 }
 
-const Wrapper = styled("div", {
-  padding: `0 0 ${HALF_GAP}`
-});
+const Wrapper = styled("div", ({ center }: { center: boolean }) =>
+  extend(
+    {
+      display: "flex",
+      flexDirection: "row",
+      textAlign: center ? "center" : undefined
+    },
+    media(
+      { maxWidth: BREAKPOINT_PHONE },
+      {
+        textAlign: "left"
+      }
+    )
+  )
+);
 
-const Heading = styled("h1", {
-  margin: 0
-});
+const Left = styled("div", ({ maxTextWidth }: { maxTextWidth?: number }) => ({
+  flex: maxTextWidth !== undefined ? `0 1 ${maxTextWidth}px` : "1 1 auto"
+}));
 
-const Image = styled("div", {
-  marginRight: "-280px"
-});
-
-const HeroImage = styled(
+const Right = styled(
   "div",
-  {},
+  {
+    marginLeft: 48
+  },
   media(
     { maxWidth: BREAKPOINT_TABLET },
     {
@@ -84,3 +78,7 @@ const HeroImage = styled(
     }
   )
 );
+
+const ImageWrapper = styled("div", {
+  marginRight: "-280px"
+});

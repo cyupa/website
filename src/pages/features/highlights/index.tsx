@@ -1,9 +1,11 @@
 import { Flex, Item } from "@heydovetail/ui-components";
-import IllustrationHighlightsFeedback from "@heydovetail/website/components/illustrations/IllustrationHighlightsFeedback";
+import illustrationHighlightsFeedback from "@heydovetail/website/components/illustrations/highlights-feedback.svg";
 import { Center } from "@heydovetail/website/components/layout/Center";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
 import { Features } from "@heydovetail/website/components/site/Features";
-import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { Hero } from "@heydovetail/website/components/site/Hero";
+import { Image } from "@heydovetail/website/components/util/Image";
 import { HALF_GAP } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import React from "react";
@@ -12,7 +14,7 @@ import { Helmet } from "react-helmet";
 export default class extends React.PureComponent {
   public render() {
     return (
-      <>
+      <PageLayout dark>
         <Helmet>
           <title>Highlights – Dovetail</title>
           <meta property="og:title" content="Highlights – Dovetail" />
@@ -29,13 +31,13 @@ export default class extends React.PureComponent {
           <Center>
             <Flex styled={{ gap: HALF_GAP / 2, layout: "column" }}>
               <Item>
-                <HeroText
+                <Hero
                   title="Categorize qualitative data."
                   text="Highlight text in our collaborative editor and turn sentences into structured, tagged data."
                 />
               </Item>
               <Item>
-                <IllustrationHighlightsFeedback />
+                <Image src={illustrationHighlightsFeedback} />
               </Item>
             </Flex>
           </Center>
@@ -66,7 +68,7 @@ export default class extends React.PureComponent {
           />
           <CenteredSignUp dark />
         </DarkContainer>
-      </>
+      </PageLayout>
     );
   }
 }

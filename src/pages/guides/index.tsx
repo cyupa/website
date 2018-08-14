@@ -50,11 +50,7 @@ export default class extends React.PureComponent<Props> {
     });
 
     return (
-      <DocumentIndex
-        items={cards}
-        text="Practical articles about design, research and startups."
-        title="Design &amp; research guides"
-      />
+      <DocumentIndex items={cards} text="Practical articles about design, research and startups." title="Research guides" />
     );
   }
 }

@@ -1,15 +1,16 @@
 import hero from "!file-loader!./hero.png";
 import { COLORS } from "@heydovetail/ui-components";
 import * as customers from "@heydovetail/website/components/icons/customers";
-import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
-import IllustrationFiles from "@heydovetail/website/components/illustrations/IllustrationFiles";
-import IllustrationHero from "@heydovetail/website/components/illustrations/IllustrationHero";
-import IllustrationLineChart from "@heydovetail/website/components/illustrations/IllustrationLineChart";
-import IllustrationTeam from "@heydovetail/website/components/illustrations/IllustrationTeam";
+import illustrationBarChart from "@heydovetail/website/components/illustrations/bar-chart.svg";
+import illustrationFiles from "@heydovetail/website/components/illustrations/files.svg";
+import illustrationHero from "@heydovetail/website/components/illustrations/hero.svg";
+import illustrationLineChart from "@heydovetail/website/components/illustrations/line-chart.svg";
+import illustrationTeam from "@heydovetail/website/components/illustrations/team.svg";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
-import { testimonials } from "@heydovetail/website/constants";
+import { HERO_TEXT_WIDTH, testimonials } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
@@ -21,15 +22,17 @@ import { Helmet } from "react-helmet";
 export default class extends React.PureComponent {
   public render() {
     return (
-      <>
+      <PageLayout>
         <Helmet>
           <meta name="twitter:card" content="summary_large_image" />
           <meta property="og:image" content={process.env.GATSBY_BASE_URL + hero} />
         </Helmet>
         <LightContainer>
           <Hero
-            image={<IllustrationHero />}
+            image={illustrationHero}
+            maxTextWidth={HERO_TEXT_WIDTH}
             text="Dovetail combines customer feedback and user research in one place, making it easy to see patterns, discover insights, and decide what to do next."
+            showSignUp
             title="Understand your customers."
           />
         </LightContainer>
@@ -38,7 +41,7 @@ export default class extends React.PureComponent {
         </LightContainer>
         <LightContainer>
           <FeatureHero
-            image={<IllustrationLineChart size="100%" />}
+            image={illustrationLineChart}
             imagePosition="right"
             location={locations.feedbackManagement()}
             linkText="Learn more"
@@ -46,7 +49,7 @@ export default class extends React.PureComponent {
             title="Understand your customer feedback."
           />
           <FeatureHero
-            image={<IllustrationFiles size="100%" />}
+            image={illustrationFiles}
             imagePosition="left"
             location={locations.researchRepository()}
             linkText="Learn more"
@@ -54,7 +57,7 @@ export default class extends React.PureComponent {
             title="Keep all of your user research in one place."
           />
           <FeatureHero
-            image={<IllustrationBarChart size="100%" />}
+            image={illustrationBarChart}
             imagePosition="right"
             location={locations.qualitativeDataAnalysis()}
             linkText="Learn more"
@@ -62,7 +65,7 @@ export default class extends React.PureComponent {
             title="Analyze qualitative data and discover insights."
           />
           <FeatureHero
-            image={<IllustrationTeam size="100%" />}
+            image={illustrationTeam}
             imagePosition="left"
             location={locations.userResearch()}
             linkText="Learn more"
@@ -87,7 +90,7 @@ export default class extends React.PureComponent {
           <UseCases showTitle />
           <CenteredSignUp />
         </LightContainer>
-      </>
+      </PageLayout>
     );
   }
 }

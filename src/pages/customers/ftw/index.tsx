@@ -1,3 +1,4 @@
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { ArticleHero } from "@heydovetail/website/components/site/ArticleHero";
 import { ArticleStats } from "@heydovetail/website/components/site/ArticleStats";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
@@ -18,7 +19,7 @@ export default class extends React.PureComponent {
       "This New York based consultancy helps early-stage startups build a great workplace by using Dovetail for user research analysis";
 
     return (
-      <>
+      <PageLayout>
         <Helmet>
           <title>{title} – Customers – Dovetail</title>
           <meta property="og:title" content={`${title} – Customers – Dovetail`} />
@@ -102,7 +103,7 @@ export default class extends React.PureComponent {
             </blockquote>
           </StyledContent>
         </LightContainer>
-      </>
+      </PageLayout>
     );
   }
 }

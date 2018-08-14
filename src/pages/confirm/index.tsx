@@ -1,6 +1,7 @@
 import { COLORS, Flex, FlexWrap, Flow, Item, SubtleButtonLink } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
-import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
+import { Hero } from "@heydovetail/website/components/site/Hero";
 import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import IllustrationEmail from "@heydovetail/website/pages/confirm/IllustrationEmail";
 import { locations } from "@heydovetail/website/routing/locations";
@@ -10,7 +11,7 @@ import { Helmet } from "react-helmet";
 export default class extends React.PureComponent {
   public render() {
     return (
-      <>
+      <PageLayout>
         <Helmet>
           <title>Confirm your email address – Dovetail</title>
           <meta
@@ -27,7 +28,7 @@ export default class extends React.PureComponent {
             <Item style={{ maxWidth: 416 }}>
               <Flex styled={{ gap: 40, layout: "column" }}>
                 <Item>
-                  <HeroText center={false} title="You’ve got mail." />
+                  <Hero center={false} title="You’ve got mail." />
                 </Item>
                 <Item>
                   <p>We need to confirm your email address. Please follow the instructions in your inbox to continue.</p>
@@ -49,7 +50,7 @@ export default class extends React.PureComponent {
             </Item>
           </FlexWrap>
         </Container>
-      </>
+      </PageLayout>
     );
   }
 }

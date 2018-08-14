@@ -1,4 +1,5 @@
 import { BORDER_RADIUS, BOX_SHADOW_BORDER_LIGHTER, COLORS } from "@heydovetail/ui-components";
+import { Image } from "@heydovetail/website/components/util/Image";
 import { BOX_SHADOW_LARGE } from "@heydovetail/website/constants";
 import React from "react";
 import { styled } from "typestyle-react";
@@ -13,7 +14,7 @@ export class IntegrationIcon extends React.PureComponent<Props> {
     const { icon, size } = this.props;
     return (
       <Box>
-        <img height={size} src={icon} width={size} />
+        <Image height={size} src={icon} text="Integration" width={size} />
       </Box>
     );
   }

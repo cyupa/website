@@ -1,7 +1,8 @@
 import { BREAKPOINT_PHABLET, COLORS, Flex, Item } from "@heydovetail/ui-components";
 import * as customers from "@heydovetail/website/components/icons/customers";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { Article } from "@heydovetail/website/components/site/Article";
-import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { Testimonials } from "@heydovetail/website/components/site/Testimonials";
 import { HALF_GAP, testimonials } from "@heydovetail/website/constants";
@@ -25,7 +26,7 @@ export default class extends React.PureComponent {
       "Loved by product managers, designers, and researchers worldwide, from organizations like Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more.";
 
     return (
-      <>
+      <PageLayout>
         <Helmet>
           <title>{title} – Dovetail</title>
           <meta property="og:title" content={`${title} – Dovetail`} />
@@ -35,9 +36,9 @@ export default class extends React.PureComponent {
         <LightContainer>
           <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
             <Item>
-              <HeroText
+              <Hero
                 center={false}
-                text="See how organizations of all shapes and sizes get value from Dovetail."
+                subtitle="See how organizations of all shapes and sizes get value from Dovetail."
                 title="Customer stories"
               />
             </Item>
@@ -79,7 +80,6 @@ export default class extends React.PureComponent {
         </LightContainer>
         <LightContainer backgroundColor={COLORS.p04}>
           <CustomerLogos
-            color={COLORS.indigo}
             customers={[
               customers.airteam,
               customers.arm,
@@ -115,9 +115,9 @@ export default class extends React.PureComponent {
         <LightContainer>
           <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
             <Item>
-              <HeroText
+              <Hero
                 center={false}
-                text="Testimonials from happy researchers, product managers, and designers using Dovetail every day."
+                subtitle="Testimonials from happy researchers, product managers, and designers using Dovetail every day."
                 title="Loved by users"
               />
             </Item>
@@ -143,7 +143,7 @@ export default class extends React.PureComponent {
         <LightContainer>
           <CenteredSignUp />
         </LightContainer>
-      </>
+      </PageLayout>
     );
   }
 }

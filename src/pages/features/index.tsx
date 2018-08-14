@@ -1,13 +1,14 @@
 import { COLORS } from "@heydovetail/ui-components";
-import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
-import IllustrationBoard from "@heydovetail/website/components/illustrations/IllustrationBoard";
-import IllustrationEditor from "@heydovetail/website/components/illustrations/IllustrationEditor";
-import IllustrationFiles from "@heydovetail/website/components/illustrations/IllustrationFiles";
-import IllustrationSearch from "@heydovetail/website/components/illustrations/IllustrationSearch";
+import illustrationBarChart from "@heydovetail/website/components/illustrations/bar-chart.svg";
+import illustrationBoard from "@heydovetail/website/components/illustrations/board.svg";
+import illustrationEditor from "@heydovetail/website/components/illustrations/editor.svg";
+import illustrationFiles from "@heydovetail/website/components/illustrations/files.svg";
+import illustrationSearch from "@heydovetail/website/components/illustrations/search.svg";
 import { Center } from "@heydovetail/website/components/layout/Center";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { Features } from "@heydovetail/website/components/site/Features";
-import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
@@ -22,7 +23,7 @@ export default class extends React.PureComponent {
       "Powerful features designed to help you organize and analyze qualitative customer feedback and user research data.";
 
     return (
-      <>
+      <PageLayout>
         <Helmet>
           <title>{title} – Dovetail</title>
           <meta property="og:title" content={`${title} – Dovetail`} />
@@ -30,9 +31,9 @@ export default class extends React.PureComponent {
           <meta property="og:description" content={description} />
         </Helmet>
         <LightContainer>
-          <HeroText center={false} text={description} title={title} />
+          <Hero subtitle={description} title={title} />
           <FeatureHero
-            image={<IllustrationEditor size="100%" />}
+            image={illustrationEditor}
             imagePosition="right"
             location={locations.featuresHighlights()}
             linkText="Learn more"
@@ -40,7 +41,7 @@ export default class extends React.PureComponent {
             title="Highlights"
           />
           <FeatureHero
-            image={<IllustrationSearch size="100%" />}
+            image={illustrationSearch}
             imagePosition="left"
             location={locations.featuresSearch()}
             linkText="Learn more"
@@ -48,7 +49,7 @@ export default class extends React.PureComponent {
             title="Full-text search"
           />
           <FeatureHero
-            image={<IllustrationFiles size="100%" />}
+            image={illustrationFiles}
             imagePosition="right"
             location={locations.featuresFiles()}
             linkText="Learn more"
@@ -56,7 +57,7 @@ export default class extends React.PureComponent {
             title="Images and files"
           />
           <FeatureHero
-            image={<IllustrationBoard size="100%" />}
+            image={illustrationBoard}
             imagePosition="left"
             location={locations.featuresProjects()}
             linkText="Learn more"
@@ -64,7 +65,7 @@ export default class extends React.PureComponent {
             title="Projects"
           />
           <FeatureHero
-            image={<IllustrationBarChart size="100%" />}
+            image={illustrationBarChart}
             imagePosition="right"
             location={locations.featuresCharts()}
             linkText="Learn more"
@@ -112,7 +113,7 @@ export default class extends React.PureComponent {
           <UseCases showTitle />
           <CenteredSignUp />
         </LightContainer>
-      </>
+      </PageLayout>
     );
   }
 }

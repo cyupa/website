@@ -1,6 +1,4 @@
-import { BREAKPOINT_TABLET } from "@heydovetail/ui-components";
-import { Flex } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
+import { BREAKPOINT_TABLET, Flex, Item } from "@heydovetail/ui-components";
 import { Lozenge } from "@heydovetail/website/components/site/Lozenge";
 import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import React from "react";

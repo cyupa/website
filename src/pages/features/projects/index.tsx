@@ -1,9 +1,11 @@
 import { Flex, Item } from "@heydovetail/ui-components";
-import IllustrationBoardLarge from "@heydovetail/website/components/illustrations/IllustrationBoardLarge";
+import illustrationBoardLarge from "@heydovetail/website/components/illustrations/board-large.svg";
 import { Center } from "@heydovetail/website/components/layout/Center";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
 import { Features } from "@heydovetail/website/components/site/Features";
-import { HeroText } from "@heydovetail/website/components/site/HeroText";
+import { Hero } from "@heydovetail/website/components/site/Hero";
+import { Image } from "@heydovetail/website/components/util/Image";
 import { HALF_GAP } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import React from "react";
@@ -12,7 +14,7 @@ import { Helmet } from "react-helmet";
 export default class extends React.PureComponent {
   public render() {
     return (
-      <>
+      <PageLayout dark>
         <Helmet>
           <title>Projects – Dovetail</title>
           <meta property="og:title" content="Projects – Dovetail" />
@@ -29,13 +31,13 @@ export default class extends React.PureComponent {
           <Center>
             <Flex styled={{ gap: HALF_GAP / 2, layout: "column" }}>
               <Item>
-                <HeroText
+                <Hero
                   title="Your project’s HQ."
                   text="Organize feedback and research with a drag and drop board, integrations, charts, insights, and more."
                 />
               </Item>
               <Item>
-                <IllustrationBoardLarge />
+                <Image src={illustrationBoardLarge} />
               </Item>
             </Flex>
           </Center>
@@ -66,7 +68,7 @@ export default class extends React.PureComponent {
           />
           <CenteredSignUp dark />
         </DarkContainer>
-      </>
+      </PageLayout>
     );
   }
 }

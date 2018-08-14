@@ -1,6 +1,7 @@
 import { COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { LinkList } from "@heydovetail/website/components/site/LinkList";
+import { Image } from "@heydovetail/website/components/util/Image";
 import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { locations } from "@heydovetail/website/routing/locations";
@@ -9,6 +10,7 @@ import { styled } from "typestyle-react";
 import { DarkContainer } from "../DarkContainer";
 import { LightContainer } from "../LightContainer";
 import Wave from "../Wave/Wave";
+import capterraBadge from "./capterra-badge.png";
 
 interface Props {
   dark?: boolean;
@@ -94,7 +96,7 @@ export class Footer extends React.PureComponent<Props> {
         </Item>
         <Item>
           <LocationLink location={locations.capterra()}>
-            <CapterraBadge />
+            <Image height={50} src={capterraBadge} text="Visit us on Capterra" width={75} />
           </LocationLink>
         </Item>
       </Flex>
@@ -123,14 +125,6 @@ export class Footer extends React.PureComponent<Props> {
 const FooterFinePrint = styled("p", {
   color: "inherit",
   fontSize: "12px",
-  fontWeight: 400,
-  opacity: 0.4
-});
-
-const CapterraBadge = styled("div", {
-  backgroundImage: "url(https://assets.capterra.com/badge/c16c98c3691afd79ec3e6b52daa034ba.png)",
-  backgroundSize: "contain",
-  display: "inline-block",
-  height: 50,
-  width: 75
+  fontWeight: 500,
+  opacity: 0.8
 });

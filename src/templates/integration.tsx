@@ -1,5 +1,6 @@
 import { COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
 import { Center } from "@heydovetail/website/components/layout/Center";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { IntegrationIcon } from "@heydovetail/website/components/site/IntegrationIcon";
 import { IntegrationIllustration } from "@heydovetail/website/components/site/IntegrationIllustration";
@@ -25,7 +26,7 @@ export default function IntegrationTemplate({ data }: Props) {
   const loggedIn = getLoggedInStateFromLocalStorage();
 
   return (
-    <>
+    <PageLayout>
       <Helmet>
         <title>Connect {from.title} and Dovetail</title>
         <meta name="description" content={description} />
@@ -65,7 +66,7 @@ export default function IntegrationTemplate({ data }: Props) {
       <LightContainer>
         <UseCases showTitle />
       </LightContainer>
-    </>
+    </PageLayout>
   );
 }
 

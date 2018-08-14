@@ -1,8 +1,5 @@
-import { BORDER_RADIUS, COLORS, SubtleButtonLink } from "@heydovetail/ui-components";
-import { Flex } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
+import { BORDER_RADIUS, COLORS, Flex, Item, SubtleButtonLink } from "@heydovetail/ui-components";
 import { IntegrationIcon } from "@heydovetail/website/components/site/IntegrationIcon";
-import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import React from "react";
 import { styled } from "typestyle-react";
 
@@ -27,7 +24,7 @@ export class IntegrationCard extends React.PureComponent<Props> {
             <App>{app}</App>
           </Item>
           <Item>
-            <p style={{ opacity: LIGHT_TEXT_OPACITY }}>{title}.</p>
+            <p>{title}.</p>
           </Item>
           <Item style={{ color: COLORS.purple }}>
             <SubtleButtonLink location={{ internal: true, path }}>Learn more</SubtleButtonLink>

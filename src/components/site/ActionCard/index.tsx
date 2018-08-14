@@ -1,6 +1,5 @@
 import { Flex, Item } from "@heydovetail/ui-components";
 import { Card } from "@heydovetail/website/components/layout/Card";
-import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import React from "react";
 
 interface Props {
@@ -20,7 +19,7 @@ export class ActionCard extends React.PureComponent<Props> {
             <h4>{title}</h4>
           </Item>
           <Item>
-            <p style={{ opacity: LIGHT_TEXT_OPACITY }}>{text}</p>
+            <p>{text}</p>
           </Item>
           {actions !== undefined && actions.length > 0 ? (
             <Item>
