@@ -1,11 +1,11 @@
 import hero from "!file-loader!./hero.png";
+import illustrationHero from "!file-loader!@heydovetail/website/components/illustrations/__svgs__/hero.svg";
 import { COLORS } from "@heydovetail/ui-components";
 import * as customers from "@heydovetail/website/components/icons/customers";
-import IllustrationBarChart from "@heydovetail/website/components/illustrations/IllustrationBarChart";
-import IllustrationFiles from "@heydovetail/website/components/illustrations/IllustrationFiles";
-import IllustrationHero from "@heydovetail/website/components/illustrations/IllustrationHero";
-import IllustrationLineChart from "@heydovetail/website/components/illustrations/IllustrationLineChart";
-import IllustrationTeam from "@heydovetail/website/components/illustrations/IllustrationTeam";
+import illustrationBarChart from "@heydovetail/website/components/illustrations/__svgs__/bar-chart.svg";
+import illustrationFiles from "@heydovetail/website/components/illustrations/__svgs__/files.svg";
+import illustrationLineChart from "@heydovetail/website/components/illustrations/__svgs__/line-chart.svg";
+import illustrationTeam from "@heydovetail/website/components/illustrations/__svgs__/team.svg";
 import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { Hero } from "@heydovetail/website/components/site/Hero";
@@ -29,7 +29,8 @@ export default class extends React.PureComponent {
         </Helmet>
         <LightContainer>
           <Hero
-            image={<IllustrationHero />}
+            image={illustrationHero}
+            maxTextWidth={464}
             text="Dovetail combines customer feedback and user research in one place, making it easy to see patterns, discover insights, and decide what to do next."
             showSignUp
             title="Understand your customers."
@@ -40,7 +41,7 @@ export default class extends React.PureComponent {
         </LightContainer>
         <LightContainer>
           <FeatureHero
-            image={<IllustrationLineChart size="100%" />}
+            image={illustrationLineChart}
             imagePosition="right"
             location={locations.feedbackManagement()}
             linkText="Learn more"
@@ -48,7 +49,7 @@ export default class extends React.PureComponent {
             title="Understand your customer feedback."
           />
           <FeatureHero
-            image={<IllustrationFiles size="100%" />}
+            image={illustrationFiles}
             imagePosition="left"
             location={locations.researchRepository()}
             linkText="Learn more"
@@ -56,7 +57,7 @@ export default class extends React.PureComponent {
             title="Keep all of your user research in one place."
           />
           <FeatureHero
-            image={<IllustrationBarChart size="100%" />}
+            image={illustrationBarChart}
             imagePosition="right"
             location={locations.qualitativeDataAnalysis()}
             linkText="Learn more"
@@ -64,7 +65,7 @@ export default class extends React.PureComponent {
             title="Analyze qualitative data and discover insights."
           />
           <FeatureHero
-            image={<IllustrationTeam size="100%" />}
+            image={illustrationTeam}
             imagePosition="left"
             location={locations.userResearch()}
             linkText="Learn more"
