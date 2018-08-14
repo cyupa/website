@@ -33,6 +33,8 @@ export class LocationLink extends React.Component<LocationLinkProps> {
         className={combinedClassName}
         href={url(location)}
         target={location.openInNewTab === true ? "_blank" : "_self"}
+        // https://developers.google.com/web/tools/lighthouse/audits/noopener
+        rel={location.openInNewTab === true ? "noopener" : undefined}
         {...other}
       />
     );
