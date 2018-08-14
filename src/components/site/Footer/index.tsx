@@ -124,7 +124,7 @@ const FooterFinePrint = styled("p", {
   color: "inherit",
   fontSize: "12px",
   fontWeight: 400,
-  opacity: 0.4
+  opacity: 0.6
 });
 
 const CapterraBadge = styled("div", {
