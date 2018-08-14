@@ -1,5 +1,6 @@
 import { FlexWrap, Item, LocationLink } from "@heydovetail/ui-components";
 import { Customer } from "@heydovetail/website/components/icons/customers";
+import { Image } from "@heydovetail/website/components/util/Image";
 import React from "react";
 import { style } from "typestyle-react";
 
@@ -15,7 +16,7 @@ export class CustomerLogos extends React.PureComponent<Props> {
         {customers.map((c, i) => (
           <Item key={i}>
             <LocationLink className={linkClassName} location={{ internal: false, url: c.url, openInNewTab: true }}>
-              <img alt={c.url} src={c.logo} title={c.url} width="100%" />
+              <Image src={c.logo} text={c.url} width="100%" />
             </LocationLink>
           </Item>
         ))}

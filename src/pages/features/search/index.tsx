@@ -5,6 +5,7 @@ import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
 import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
+import { Image } from "@heydovetail/website/components/util/Image";
 import { HALF_GAP } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import React from "react";
@@ -36,7 +37,7 @@ export default class extends React.PureComponent {
                 />
               </Item>
               <Item>
-                <img src={illustrationSearchLarge} width="100%" />
+                <Image src={illustrationSearchLarge} />
               </Item>
             </Flex>
           </Center>

@@ -1,4 +1,5 @@
 import { BREAKPOINT_PHONE, BREAKPOINT_TABLET, Flex, Item } from "@heydovetail/ui-components";
+import { Image } from "@heydovetail/website/components/util/Image";
 import React from "react";
 import { extend, media } from "typestyle";
 import { styled } from "typestyle-react";
@@ -36,7 +37,7 @@ export class Hero extends React.PureComponent<Props> {
         {image !== undefined ? (
           <Right>
             <Item>
-              <Image>{typeof image === "string" ? <img src={image} width="100%" /> : image}</Image>
+              <ImageWrapper>{typeof image === "string" ? <Image src={image} text={title} width="100%" /> : image}</ImageWrapper>
             </Item>
           </Right>
         ) : null}
@@ -78,6 +79,6 @@ const Right = styled(
   )
 );
 
-const Image = styled("div", {
+const ImageWrapper = styled("div", {
   marginRight: "-280px"
 });

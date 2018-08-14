@@ -1,6 +1,7 @@
 import { BREAKPOINT_TABLET, Flex, Item } from "@heydovetail/ui-components";
 import { Lozenge } from "@heydovetail/website/components/site/Lozenge";
 import { ActionTextWithArrow } from "@heydovetail/website/components/util/ActionTextWithArrow";
+import { Image } from "@heydovetail/website/components/util/Image";
 import { HALF_GAP, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { LocationDescriptor, locations } from "@heydovetail/website/routing/locations";
 import React from "react";
@@ -57,7 +58,7 @@ export class FeatureHero extends React.PureComponent<Props> {
             </Item>
           </Flex>
         </Text>
-        <Image>{typeof image === "string" ? <img src={image} width="100%" /> : image}</Image>
+        <ImageWrapper>{typeof image === "string" ? <Image src={image} text={title} width="100%" /> : image}</ImageWrapper>
       </Wrapper>
     );
   }
@@ -92,7 +93,7 @@ const Text = styled("div", ({ imagePosition }: { imagePosition: "left" | "right"
   )
 );
 
-const Image = styled(
+const ImageWrapper = styled(
   "div",
   {
     minWidth: "400px"

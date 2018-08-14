@@ -1,5 +1,6 @@
 import { BREAKPOINT_PHABLET, Flex, Item } from "@heydovetail/ui-components";
 import { Center } from "@heydovetail/website/components/layout/Center";
+import { Image } from "@heydovetail/website/components/util/Image";
 import { HALF_GAP, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import React from "react";
 import { styled } from "typestyle-react";
@@ -25,7 +26,7 @@ export class FeatureHeroLarge extends React.PureComponent<Props> {
           <Item>
             <p style={{ opacity: LIGHT_TEXT_OPACITY }}>{text}</p>
           </Item>
-          <Item>{typeof image === "string" ? <img src={image} width="100%" /> : image}</Item>
+          <Item>{typeof image === "string" ? <Image src={image} text={title} width="100%" /> : image}</Item>
         </Flex>
       </Wrapper>
     );
