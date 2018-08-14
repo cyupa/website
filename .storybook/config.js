@@ -1,6 +1,6 @@
 import { configure } from "@storybook/react";
 import { cssRule } from "typestyle";
-import "../src/globalstyles";
+import "../src/components/layout/PageLayout/globalstyles";
 
 cssRule("body", {
   margin: "48px"
