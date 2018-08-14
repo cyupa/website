@@ -1,9 +1,5 @@
 import * as path from "path";
 
-export async function onCreatePage({ page, boundActionCreators }) {
-  const { createPage } = boundActionCreators;
-}
-
 export async function createPages({ boundActionCreators, graphql }) {
   const { createPage } = boundActionCreators;
   await createDocumentPages(createPage, graphql);
