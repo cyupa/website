@@ -123,8 +123,8 @@ export class Footer extends React.PureComponent<Props> {
 const FooterFinePrint = styled("p", {
   color: "inherit",
   fontSize: "12px",
-  fontWeight: 400,
-  opacity: 0.6
+  fontWeight: 500,
+  opacity: 0.8
 });
 
 const CapterraBadge = styled("div", {
