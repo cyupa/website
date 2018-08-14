@@ -1,6 +1,7 @@
-import { FlexWrap, Item, LocationLink } from "@heydovetail/ui-components";
+import { FlexWrap, Item } from "@heydovetail/ui-components";
 import { Customer } from "@heydovetail/website/components/icons/customers";
 import { Image } from "@heydovetail/website/components/util/Image";
+import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import React from "react";
 import { style } from "typestyle-react";
 
