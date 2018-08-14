@@ -53,7 +53,7 @@ export default class extends React.PureComponent {
           />
           <FeatureHero
             image={illustrationRealtime}
-            imagePosition="right"
+            imagePosition="left"
             text="Take notes with your teammates during customer interviews and user testing sessions in real time, like Google Docs."
             title="Collaborate on research notes in real time."
           />
