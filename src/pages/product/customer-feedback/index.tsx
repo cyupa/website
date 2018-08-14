@@ -9,6 +9,7 @@ import IllustrationSentimentChart from "@heydovetail/website/components/illustra
 import IllustrationSentimentText from "@heydovetail/website/components/illustrations/IllustrationSentimentText";
 import IllustrationSpace from "@heydovetail/website/components/illustrations/IllustrationSpace";
 import IllustrationTeam from "@heydovetail/website/components/illustrations/IllustrationTeam";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { FeatureHeroLarge } from "@heydovetail/website/components/site/FeatureHeroLarge";
@@ -29,7 +30,7 @@ import { Helmet } from "react-helmet";
 export default class extends React.PureComponent {
   public render() {
     return (
-      <>
+      <PageLayout>
         <Helmet>
           <title>Feedback management – Dovetail</title>
           <meta name="twitter:card" content="summary_large_image" />
@@ -125,7 +126,7 @@ export default class extends React.PureComponent {
           <UseCases showTitle />
           <CenteredSignUp />
         </LightContainer>
-      </>
+      </PageLayout>
     );
   }
 }

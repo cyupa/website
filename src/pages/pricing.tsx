@@ -1,6 +1,7 @@
 import { ButtonLink, COLORS, Flex, Flow, Item, PricingCard } from "@heydovetail/ui-components";
 import * as customers from "@heydovetail/website/components/icons/customers";
 import { Center } from "@heydovetail/website/components/layout/Center";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { Faq } from "@heydovetail/website/components/site/Faq";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
@@ -20,7 +21,7 @@ export default class extends React.PureComponent {
     const description = "Pay the same price each month regardless of your team size.";
 
     return (
-      <>
+      <PageLayout>
         <Helmet>
           <title>{title} – Dovetail</title>
           <meta property="og:title" content={`${title} – Dovetail`} />
@@ -146,7 +147,7 @@ export default class extends React.PureComponent {
         <LightContainer>
           <CenteredSignUp />
         </LightContainer>
-      </>
+      </PageLayout>
     );
   }
 }

@@ -5,6 +5,7 @@ import IllustrationEditor from "@heydovetail/website/components/illustrations/Il
 import IllustrationFiles from "@heydovetail/website/components/illustrations/IllustrationFiles";
 import IllustrationSearch from "@heydovetail/website/components/illustrations/IllustrationSearch";
 import { Center } from "@heydovetail/website/components/layout/Center";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
@@ -22,7 +23,7 @@ export default class extends React.PureComponent {
       "Powerful features designed to help you organize and analyze qualitative customer feedback and user research data.";
 
     return (
-      <>
+      <PageLayout>
         <Helmet>
           <title>{title} – Dovetail</title>
           <meta property="og:title" content={`${title} – Dovetail`} />
@@ -112,7 +113,7 @@ export default class extends React.PureComponent {
           <UseCases showTitle />
           <CenteredSignUp />
         </LightContainer>
-      </>
+      </PageLayout>
     );
   }
 }

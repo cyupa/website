@@ -1,6 +1,7 @@
 import { Flex, Item } from "@heydovetail/ui-components";
 import IllustrationSearchLarge from "@heydovetail/website/components/illustrations/IllustrationSearchLarge";
 import { Center } from "@heydovetail/website/components/layout/Center";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
 import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
@@ -12,7 +13,7 @@ import { Helmet } from "react-helmet";
 export default class extends React.PureComponent {
   public render() {
     return (
-      <>
+      <PageLayout dark>
         <Helmet>
           <title>Search – Dovetail</title>
           <meta property="og:title" content="Search – Dovetail" />
@@ -66,7 +67,7 @@ export default class extends React.PureComponent {
           />
           <CenteredSignUp dark />
         </DarkContainer>
-      </>
+      </PageLayout>
     );
   }
 }

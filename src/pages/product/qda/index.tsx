@@ -10,6 +10,7 @@ import IllustrationImport from "@heydovetail/website/components/illustrations/Il
 import IllustrationInsights from "@heydovetail/website/components/illustrations/IllustrationInsights";
 import IllustrationProjectsResearch from "@heydovetail/website/components/illustrations/IllustrationProjectsResearch";
 import IllustrationSearchLarge from "@heydovetail/website/components/illustrations/IllustrationSearchLarge";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { FeatureHeroLarge } from "@heydovetail/website/components/site/FeatureHeroLarge";
@@ -27,7 +28,7 @@ import { Helmet } from "react-helmet";
 export default class extends React.PureComponent {
   public render() {
     return (
-      <>
+      <PageLayout>
         <Helmet>
           <title>Qualitative data analysis – Dovetail</title>
           <meta name="twitter:card" content="summary_large_image" />
@@ -113,7 +114,7 @@ export default class extends React.PureComponent {
           <UseCases showTitle />
           <CenteredSignUp />
         </LightContainer>
-      </>
+      </PageLayout>
     );
   }
 }

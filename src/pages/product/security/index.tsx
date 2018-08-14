@@ -1,5 +1,6 @@
 import { ButtonLink, COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
 import IllustrationSecurity from "@heydovetail/website/components/illustrations/IllustrationSecurity";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
 import { Faq } from "@heydovetail/website/components/site/Faq";
 import { Features } from "@heydovetail/website/components/site/Features";
@@ -14,7 +15,7 @@ import { Helmet } from "react-helmet";
 export default class extends React.PureComponent {
   public render() {
     return (
-      <>
+      <PageLayout dark>
         <Helmet>
           <title>Security and privacy – Dovetail</title>
           <meta property="og:title" content="Security and privacy – Dovetail" />
@@ -113,7 +114,7 @@ export default class extends React.PureComponent {
             </Item>
           </Flex>
         </DarkContainer>
-      </>
+      </PageLayout>
     );
   }
 }

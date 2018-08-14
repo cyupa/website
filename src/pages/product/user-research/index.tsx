@@ -11,6 +11,7 @@ import IllustrationProjectsResearch from "@heydovetail/website/components/illust
 import IllustrationRealtime from "@heydovetail/website/components/illustrations/IllustrationRealtime";
 import IllustrationSearch from "@heydovetail/website/components/illustrations/IllustrationSearch";
 import IllustrationTeam from "@heydovetail/website/components/illustrations/IllustrationTeam";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { FeatureHeroLarge } from "@heydovetail/website/components/site/FeatureHeroLarge";
@@ -28,7 +29,7 @@ import { Helmet } from "react-helmet";
 export default class extends React.PureComponent {
   public render() {
     return (
-      <>
+      <PageLayout>
         <Helmet>
           <title>Collaborative user research – Dovetail</title>
           <meta name="twitter:card" content="summary_large_image" />
@@ -129,7 +130,7 @@ export default class extends React.PureComponent {
           <UseCases showTitle />
           <CenteredSignUp />
         </LightContainer>
-      </>
+      </PageLayout>
     );
   }
 }

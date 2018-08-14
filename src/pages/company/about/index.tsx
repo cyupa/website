@@ -1,5 +1,6 @@
 import { ButtonLink, COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { StaffMemberCard } from "@heydovetail/website/components/site/StaffMemberCard";
 import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
@@ -13,7 +14,7 @@ import brad from "./brad.jpg";
 export default class extends React.PureComponent {
   public render() {
     return (
-      <>
+      <PageLayout>
         <Helmet>
           <title>About us – Dovetail</title>
           <meta
@@ -143,7 +144,7 @@ export default class extends React.PureComponent {
             </Item>
           </Flex>
         </Container>
-      </>
+      </PageLayout>
     );
   }
 }

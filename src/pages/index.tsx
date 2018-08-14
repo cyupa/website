@@ -6,6 +6,7 @@ import IllustrationFiles from "@heydovetail/website/components/illustrations/Ill
 import IllustrationHero from "@heydovetail/website/components/illustrations/IllustrationHero";
 import IllustrationLineChart from "@heydovetail/website/components/illustrations/IllustrationLineChart";
 import IllustrationTeam from "@heydovetail/website/components/illustrations/IllustrationTeam";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
@@ -21,7 +22,7 @@ import { Helmet } from "react-helmet";
 export default class extends React.PureComponent {
   public render() {
     return (
-      <>
+      <PageLayout>
         <Helmet>
           <meta name="twitter:card" content="summary_large_image" />
           <meta property="og:image" content={process.env.GATSBY_BASE_URL + hero} />
@@ -88,7 +89,7 @@ export default class extends React.PureComponent {
           <UseCases showTitle />
           <CenteredSignUp />
         </LightContainer>
-      </>
+      </PageLayout>
     );
   }
 }

@@ -2,11 +2,6 @@ import * as path from "path";
 
 export async function onCreatePage({ page, boundActionCreators }) {
   const { createPage } = boundActionCreators;
-
-  if (page.path.match(/^\/(features\/|product\/security)/)) {
-    page.layout = "dark";
-    createPage(page);
-  }
 }
 
 export async function createPages({ boundActionCreators, graphql }) {

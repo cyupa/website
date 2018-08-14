@@ -1,5 +1,6 @@
 import { BREAKPOINT_PHABLET, COLORS, Flex, Item } from "@heydovetail/ui-components";
 import * as customers from "@heydovetail/website/components/icons/customers";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { Article } from "@heydovetail/website/components/site/Article";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
@@ -25,7 +26,7 @@ export default class extends React.PureComponent {
       "Loved by product managers, designers, and researchers worldwide, from organizations like Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more.";
 
     return (
-      <>
+      <PageLayout>
         <Helmet>
           <title>{title} – Dovetail</title>
           <meta property="og:title" content={`${title} – Dovetail`} />
@@ -143,7 +144,7 @@ export default class extends React.PureComponent {
         <LightContainer>
           <CenteredSignUp />
         </LightContainer>
-      </>
+      </PageLayout>
     );
   }
 }

@@ -1,6 +1,6 @@
-import { Flex } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
+import { Flex, Item } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import React from "react";
@@ -18,7 +18,7 @@ export class DocumentIndex extends React.PureComponent<Props> {
     const { items, text, title } = this.props;
 
     return (
-      <>
+      <PageLayout>
         <Helmet>
           <title>{title} – Dovetail</title>
           <meta name="description" content={text} />
@@ -34,7 +34,7 @@ export class DocumentIndex extends React.PureComponent<Props> {
             </Item>
           </Flex>
         </Container>
-      </>
+      </PageLayout>
     );
   }
 }

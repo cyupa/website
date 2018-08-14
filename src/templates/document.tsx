@@ -1,5 +1,6 @@
 import { Breadcrumbs, COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { Lozenge } from "@heydovetail/website/components/site/Lozenge";
 import { PageContent } from "@heydovetail/website/components/site/PageContent";
@@ -27,7 +28,7 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
   };
 
   return (
-    <>
+    <PageLayout>
       <Helmet>
         <title>{frontmatter!.title} – Dovetail</title>
         <meta name="description" content={excerpt !== null ? excerpt : undefined} />
@@ -81,7 +82,7 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
           </Flex>
         </div>
       </Container>
-    </>
+    </PageLayout>
   );
 }
 

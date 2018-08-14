@@ -1,5 +1,5 @@
-import { Flex } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
+import { Flex, Item } from "@heydovetail/ui-components";
+import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { IntegrationCard } from "@heydovetail/website/components/site/IntegrationCard";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
@@ -21,7 +21,7 @@ export default class extends React.PureComponent<Props> {
     const { edges = [] } = this.props.data!.allIntegrationsJson!;
 
     return (
-      <>
+      <PageLayout>
         <Helmet>
           <title>Integrations – Dovetail</title>
           <meta
@@ -68,7 +68,7 @@ export default class extends React.PureComponent<Props> {
             </Item>
           </Flex>
         </LightContainer>
-      </>
+      </PageLayout>
     );
   }
 }

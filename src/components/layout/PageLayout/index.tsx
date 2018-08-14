@@ -3,36 +3,34 @@ import { Footer } from "@heydovetail/website/components/site/Footer";
 import { Header } from "@heydovetail/website/components/site/Header";
 import { DefaultMetaTags } from "@heydovetail/website/components/util/DefaultMetaTags";
 import { ErrorBoundary } from "@heydovetail/website/components/util/ErrorBoundary";
-import * as React from "react";
+import React from "react";
 import "typeface-rubik";
 import { styled } from "typestyle-react";
-import "../globalstyles";
+import "./globalstyles";
 
 interface Props {
-  children: () => React.ReactNode;
+  dark?: boolean;
 }
 
-export default class extends React.PureComponent<Props> {
-  public componentDidMount() {
-    document.body.style.backgroundColor = COLORS.indigo;
-  }
-
+export class PageLayout extends React.PureComponent<Props> {
   public render() {
+    const { dark = false } = this.props;
+
     return (
       <ErrorBoundary>
         <DefaultMetaTags />
-        <Header dark />
-        <Dark>
-          {this.props.children()}
-          <Footer dark />
-        </Dark>
+        <Header dark={dark} />
+        <Wrapper styled={{ dark }}>
+          {this.props.children}
+          <Footer dark={dark} />
+        </Wrapper>
       </ErrorBoundary>
     );
   }
 }
 
-const Dark = styled("div", {
-  backgroundColor: COLORS.indigo,
-  color: COLORS.white,
+const Wrapper = styled("div", ({ dark }: { dark: boolean }) => ({
+  backgroundColor: dark ? COLORS.indigo : COLORS.white,
+  color: dark ? COLORS.white : COLORS.indigo,
   overflow: "hidden"
-});
+}));
