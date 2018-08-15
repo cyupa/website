@@ -1,6 +1,6 @@
 import { Flex, Item } from "@heydovetail/ui-components";
+import { LocationLink } from "@heydovetail/ui-components";
 import { LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
-import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
 import React from "react";
 

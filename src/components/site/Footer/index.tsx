@@ -1,9 +1,9 @@
 import { COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
+import { LocationLink } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { LinkList } from "@heydovetail/website/components/site/LinkList";
 import { Image } from "@heydovetail/website/components/util/Image";
 import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
-import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
 import { styled } from "typestyle-react";

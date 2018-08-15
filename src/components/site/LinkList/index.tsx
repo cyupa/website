@@ -1,6 +1,6 @@
 import { Flex } from "@heydovetail/ui-components";
 import { Item } from "@heydovetail/ui-components";
-import { LocationLink } from "@heydovetail/website/routing/LocationLink";
+import { LocationLink } from "@heydovetail/ui-components";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
 import React from "react";
 import { style } from "typestyle";

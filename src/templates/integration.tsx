@@ -8,8 +8,8 @@ import { LightContainer } from "@heydovetail/website/components/site/LightContai
 import { IntegrationByPathQuery } from "@heydovetail/website/graphql/types";
 import { locations } from "@heydovetail/website/routing/locations";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
-import { graphql } from "@heydovetail/website/util/graphql";
 import { getLoggedInStateFromLocalStorage } from "@heydovetail/website/util/loggedIn";
+import { graphql } from "gatsby";
 import React from "react";
 import Helmet from "react-helmet";
 
@@ -48,7 +48,9 @@ export default function IntegrationTemplate({ data }: Props) {
             </Item>
             <Item>
               <h1>
-                {from.title} + Dovetail.<br />Better together.
+                {from.title} + Dovetail.
+                <br />
+                Better together.
               </h1>
             </Item>
           </Flex>
@@ -71,7 +73,7 @@ export default function IntegrationTemplate({ data }: Props) {
 }
 
 export const integrationQuery = graphql`
-  query IntegrationByPath($path: String!) {
+  query($path: String!) {
     integrationsJson(path: { eq: $path }) {
       createUrl
       descriptionPlain

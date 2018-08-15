@@ -7,7 +7,7 @@ import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/con
 import { IntegrationIndexQuery } from "@heydovetail/website/graphql/types";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { omitNull, sortComparatorAsc } from "@heydovetail/website/util/array";
-import { graphql } from "@heydovetail/website/util/graphql";
+import { graphql } from "gatsby";
 import React from "react";
 import Helmet from "react-helmet";
 import { Masonry } from "react-masonry-responsive";
@@ -74,7 +74,7 @@ export default class extends React.PureComponent<Props> {
 }
 
 export const pageQuery = graphql`
-  query IntegrationIndex {
+  {
     allIntegrationsJson {
       edges {
         node {

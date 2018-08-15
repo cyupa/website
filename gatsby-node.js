@@ -1,7 +1,7 @@
 import * as path from "path";
 
-export async function createPages({ boundActionCreators, graphql }) {
-  const { createPage } = boundActionCreators;
+export async function createPages({ actions, graphql }) {
+  const { createPage } = actions;
   await createDocumentPages(createPage, graphql);
   await createIntegrationPages(createPage, graphql);
 }
@@ -110,29 +110,29 @@ async function createIntegrationPages(createPage, graphql) {
   });
 }
 
-export function modifyWebpackConfig({ config, stage }) {
-  const timestamp = Date.now();
+export function onCreateWebpackConfig({ actions, stage }) {
+  // const timestamp = Date.now();
 
-  if (stage === "build-javascript") {
-    config.merge({
-      output: {
-        filename: `[name]-${timestamp}-[chunkhash].js`,
-        chunkFilename: `[name]-${timestamp}-[chunkhash].js`
+  // if (stage === "build-javascript") {
+  //   actions.setWebpackConfig({
+  //     output: {
+  //       filename: `[name]-${timestamp}-[chunkhash].js`,
+  //       chunkFilename: `[name]-${timestamp}-[chunkhash].js`
+  //     }
+  //   });
+  // }
+
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        "@heydovetail/website": path.resolve(__dirname, "./src")
       }
-    });
-  }
+    }
+  });
+  // }
+  // .loader("url-loader", {
+  //   query: { limit: 1 }
+  // });
 
-  config
-    .merge({
-      resolve: {
-        alias: {
-          "@heydovetail/website": path.resolve(__dirname, "./src")
-        }
-      }
-    })
-    .loader("url-loader", {
-      query: { limit: 1 }
-    });
-
-  return config;
+  // return config;
 }

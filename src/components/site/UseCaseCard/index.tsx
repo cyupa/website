@@ -1,8 +1,8 @@
 import { BORDER_RADIUS, BOX_SHADOW_FOCUS, COLORS } from "@heydovetail/ui-components";
 import { Flex } from "@heydovetail/ui-components";
 import { Item } from "@heydovetail/ui-components";
+import { LocationLink } from "@heydovetail/ui-components";
 import { ActionTextWithArrow } from "@heydovetail/website/components/util/ActionTextWithArrow";
-import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
 import React from "react";
 import { style } from "typestyle";

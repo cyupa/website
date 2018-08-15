@@ -1,7 +1,7 @@
+import favicon from "!file-loader!./favicon.png";
+import thumbnail from "!file-loader!./thumbnail.png";
 import React from "react";
 import { Helmet } from "react-helmet";
-import favicon from "../../../favicon.png";
-import thumbnail from "./thumbnail.png";
 
 // These are the default meta tags for every page.
 // If a page uses Helmet to specify something more specific,
@@ -11,6 +11,9 @@ export class DefaultMetaTags extends React.PureComponent {
   public render() {
     return (
       <Helmet>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Dovetail – Customer feedback &amp; research platform for teams</title>
         <link rel="shortcut icon" href={favicon} type="image/x-icon" />
         <meta
