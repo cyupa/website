@@ -19,7 +19,7 @@ export class Header extends React.PureComponent<Props> {
         <Justify>
           <Item style={{ marginLeft: "-8px" }}>
             <ThemeColor styled={{ dark }}>
-              <SubtleButtonLink height={40} location={locations.home()}>
+              <SubtleButtonLink ariaLabel="Dovetail logo" height={40} location={locations.home()}>
                 <DovetailLogo color={dark ? COLORS.white : COLORS.purple} />
               </SubtleButtonLink>
             </ThemeColor>

@@ -32,6 +32,7 @@ export class SignupWithEmail extends React.PureComponent<Props, State> {
             <Flex styled={{ gap: 8 }}>
               <Item>
                 <TextInput
+                  ariaLabel="Your email address"
                   onChange={event => this.setState({ email: event.target.value })}
                   placeholder="you@company.com"
                   value={this.state.email}
