@@ -50,12 +50,14 @@ export default class extends React.PureComponent {
               <Center>
                 <Flow>
                   <Item>
-                    <ButtonLink color={COLORS.purple} location={locations.signUp()}>
+                    <ButtonLink color={COLORS.purple} height={40} location={locations.signUp()}>
                       Start free trial
                     </ButtonLink>
                   </Item>
                   <Item>
-                    <ButtonLink location={locations.demo()}>Book a demo</ButtonLink>
+                    <ButtonLink height={40} location={locations.demo()}>
+                      Book a demo
+                    </ButtonLink>
                   </Item>
                 </Flow>
               </Center>
