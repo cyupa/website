@@ -6,7 +6,7 @@ export function SignUpButton() {
   return (
     <Flow styled={{ gap: 24, rowGap: 24 }}>
       <Item>
-        <ButtonLink color={COLORS.purple} location={locations.signUp()}>
+        <ButtonLink color={COLORS.purple} height={40} location={locations.signUp()}>
           Try now for free
         </ButtonLink>
       </Item>
