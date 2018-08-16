@@ -28,13 +28,13 @@ aliases:
     restore_cache:
       name: Restore public folder cache
       keys:
-        - public-folder
+        - public-folder-{{ checksum "public/chunk-manifest.json" }}
 
   # https://twitter.com/gatsbyjs/status/1001812098928730112
   cache_public_folder: &cache_public_folder
     save_cache:
       name: Save public folder
-      key: public-folder
+      key: public-folder-{{ checksum "public/chunk-manifest.json" }}
       paths:
         - public
 
