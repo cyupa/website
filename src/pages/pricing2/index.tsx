@@ -7,7 +7,7 @@ import { Hero } from "@heydovetail/website/components/site/Hero";
 import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { Plans } from "@heydovetail/website/components/site/Plans";
 import { ActionTextWithArrow } from "@heydovetail/website/components/util/ActionTextWithArrow";
-import { HALF_GAP, MONTHLY_PRICE } from "@heydovetail/website/constants";
+import { HALF_GAP } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
