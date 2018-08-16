@@ -81,20 +81,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        background_color: "#512da8",
-        description:
-          "Dovetail combines customer feedback and user research in one place, making it easy to see patterns, discover insights, and decide what to do next.",
-        display: "standalone",
-        icon: "./src/icon.png",
-        name: "Dovetail",
-        short_name: "Dovetail",
-        start_url: "/projects",
-        theme_color: "#512da8"
-      }
-    },
-    {
       resolve: "gatsby-plugin-robots-txt",
       options:
         process.env.PREVENT_CRAWLING === "true"
