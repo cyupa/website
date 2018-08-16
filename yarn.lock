@@ -59,9 +59,9 @@
   dependencies:
     tslint-microsoft-contrib "^5.0.2"
 
-"@heydovetail/ui-components@^3.1.4":
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/@heydovetail/ui-components/-/ui-components-3.1.4.tgz#32b04b47e5ae2eae0d1a17b5eccfcde98b076870"
+"@heydovetail/ui-components@^3.1.5":
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/@heydovetail/ui-components/-/ui-components-3.1.5.tgz#3f74f1d006418f61af74d577865fc912b6d99b33"
   dependencies:
     "@heydovetail/svg-to-react" "^1.1.1"
     "@types/react-resize-detector" "^3.1.0"
