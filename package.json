@@ -7,7 +7,8 @@
     "build": "ts-node ./node_modules/.bin/gatsby build",
     "develop": "ts-node ./node_modules/.bin/gatsby develop",
     "fix": "./node_modules/.bin/tslint -p tsconfig.json --fix",
-    "generate:types": "./node_modules/.bin/apollo-codegen introspect-schema --output src/graphql/schema.json http://localhost:8000/___graphql && ./node_modules/.bin/apollo-codegen print-schema --schema src/graphql/schema.json --output src/graphql/schema.graphql && ./node_modules/.bin/apollo-codegen generate --schema src/graphql/schema.json --target typescript --output src/graphql/types.tsx --tag-name graphql 'src/**/*.tsx'",
+    "generate:types":
+      "./node_modules/.bin/apollo-codegen introspect-schema --output src/graphql/schema.json http://localhost:8000/___graphql && ./node_modules/.bin/apollo-codegen print-schema --schema src/graphql/schema.json --output src/graphql/schema.graphql && ./node_modules/.bin/apollo-codegen generate --schema src/graphql/schema.json --target typescript --output src/graphql/types.tsx --tag-name graphql 'src/**/*.tsx'",
     "generate:svgs": "svg-to-react src",
     "generate:zapier": "ts-node ./bin/fetch-zapier-templates.ts",
     "jest": "./node_modules/.bin/jest",
@@ -16,7 +17,8 @@
     "serve": "./node_modules/.bin/gatsby serve",
     "start": "ts-node ./node_modules/.bin/gatsby develop",
     "storybook": "ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook",
-    "test": "./node_modules/.bin/tsc --noEmit && ./node_modules/.bin/tslint -p tsconfig.json && ./node_modules/.bin/jest --runInBand && ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook --smoke-test"
+    "test":
+      "./node_modules/.bin/tsc --noEmit && ./node_modules/.bin/tslint -p tsconfig.json && ./node_modules/.bin/jest --runInBand && ts-node ./node_modules/.bin/start-storybook -p 9003 -c .storybook --smoke-test"
   },
   "engines": {
     "node": "10.3.0",
@@ -35,30 +37,19 @@
       },
       "NODE_ENV": "test"
     },
-    "moduleFileExtensions": [
-      "js",
-      "ts",
-      "tsx",
-      "json"
-    ],
+    "moduleFileExtensions": ["js", "ts", "tsx", "json"],
     "moduleNameMapper": {
       ".*\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/.jest/imageMock.tsx",
       "@heydovetail/website/(.*)": "<rootDir>/src/$1"
     },
-    "setupFiles": [
-      "<rootDir>/.jest/setup.tsx"
-    ],
+    "setupFiles": ["<rootDir>/.jest/setup.tsx"],
     "testRegex": "src/.*(/__specs__/.*|\\.spec)\\.tsx?$",
     "transform": {
       "\\.tsx?$": "ts-jest"
     }
   },
   "lint-staged": {
-    "*.tsx": [
-      "prettier --write",
-      "tslint -p tsconfig.json --fix",
-      "git add"
-    ]
+    "*.tsx": ["prettier --write", "tslint -p tsconfig.json --fix", "git add"]
   },
   "prettier": {
     "printWidth": 128
@@ -70,22 +61,24 @@
     "@heydovetail/ui-components": "^3.1.5",
     "@storybook/addon-storyshots": "^3.4.0",
     "@storybook/react": "^3.4.0",
+    "@types/date-fns": "^2.6.0",
     "@types/jest": "^22.2.2",
     "@types/lodash.groupby": "^4.6.3",
-    "@types/react": "^16.3.4",
+    "@types/node-fetch": "^1.6.9",
     "@types/react-dom": "^16.0.4",
     "@types/react-helmet": "^5.0.5",
     "@types/react-resize-detector": "^2.1.0",
     "@types/react-test-renderer": "^16.0.1",
     "@types/react-transition-group": "^1.1.4",
+    "@types/react": "^16.3.4",
     "@types/storybook__addon-actions": "^3.0.3",
     "@types/storybook__addon-storyshots": "^3.4.0",
     "@types/storybook__react": "^3.0.7",
+    "@types/yargs": "^11.0.0",
     "apollo-codegen": "^0.19.1",
     "awesome-typescript-loader": "^4.0.1",
     "babel-loader": "^6.4.1",
     "date-fns": "^1.29.0",
-    "gatsby": "^1.9.259",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-canonical-urls": "^1.0.18",
     "gatsby-plugin-google-tagmanager": "^1.0.18",
@@ -99,19 +92,19 @@
     "gatsby-plugin-sharp": "^1.6.42",
     "gatsby-plugin-sitemap": "^1.2.22",
     "gatsby-plugin-typescript": "^1.4.19",
-    "gatsby-remark-autolink-headers": "^1.4.18",
     "gatsby-remark-copy-linked-files": "^1.5.32",
     "gatsby-remark-images": "^1.5.61",
     "gatsby-source-filesystem": "^1.5.31",
     "gatsby-transformer-json": "^1.0.17",
     "gatsby-transformer-remark": "^1.7.39",
+    "gatsby": "^1.9.259",
     "husky": "^0.14.3",
-    "jest": "^22.4.3",
     "jest-cli": "^22.4.3",
+    "jest": "^22.4.3",
     "lint-staged": "7.1.3",
     "lodash.groupby": "^4.6.0",
+    "node-fetch": "^2.1.2",
     "prettier": "^1.11.1",
-    "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-helmet": "^5.2.0",
     "react-masonry-responsive": "^2.1.1",
@@ -119,21 +112,16 @@
     "react-router-dom": "^4.2.2",
     "react-test-renderer": "^16.3.1",
     "react-transition-group": "^2.3.1",
+    "react": "^16.3.1",
     "storybook-router": "^0.3.4",
     "ts-jest": "^22.4.2",
     "ts-node": "^5.0.1",
     "tslib": "^1.9.0",
     "tslint": "^5.9.1",
     "typeface-rubik": "^0.0.54",
-    "typestyle": "^1.7.2",
-    "typestyle-react": "^1.2.0"
-  },
-  "devDependencies": {
-    "@types/date-fns": "^2.6.0",
-    "@types/node-fetch": "^1.6.9",
-    "@types/yargs": "^11.0.0",
-    "node-fetch": "^2.1.2",
     "typescript": "^2.9.1",
+    "typestyle-react": "^1.2.0",
+    "typestyle": "^1.7.2",
     "yargs": "^11.0.0"
   },
   "resolutions": {

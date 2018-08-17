@@ -33,16 +33,16 @@ When you import this spreadsheet into Dovetail, choose the **Name** column as th
 
 Dovetail will append each ‘taggable content’ column to the note, from left-to-right, as it appeared in the spreadsheet. Your imported notes will end up looking like this:
 
-> ### Jane
->
-> **Question 1**
->
-> Answer to question 1
->
-> **Question 2**
->
-> Anwer to question 2
->
-> **Question 3**
->
-> Answer to question 3
+### Jane
+
+**Question 1**
+
+Answer to question 1
+
+**Question 2**
+
+Anwer to question 2
+
+**Question 3**
+
+Answer to question 3

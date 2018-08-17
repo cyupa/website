@@ -55,14 +55,12 @@ jobs:
       - <<: *restore_node_modules
       - <<: *install_node_modules
       - <<: *cache_node_modules
-      - <<: *restore_public_folder
       - run:
           name: Configure build
           command: |
             echo "export SENTRY_RELEASE=$(git log -n 1 --pretty=format:"%H")" >> $BASH_ENV
       - run: yarn build
       - run: yarn test
-      - <<: *cache_public_folder
       - run:
           name: Configure deployment
           command: |
@@ -83,13 +81,11 @@ jobs:
       - <<: *restore_node_modules
       - <<: *install_node_modules
       - <<: *cache_node_modules
-      - <<: *restore_public_folder
       - run:
           name: Configure build
           command: |
             echo "export SENTRY_RELEASE=$(git log -n 1 --pretty=format:"%H")" >> $BASH_ENV
       - run: yarn build
-      - <<: *cache_public_folder
       - run:
           name: Configure deployment
           command: |
