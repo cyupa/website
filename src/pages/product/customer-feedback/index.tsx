@@ -9,12 +9,12 @@ import illustrationSentimentChart from "@heydovetail/website/components/illustra
 import illustrationSentimentText from "@heydovetail/website/components/illustrations/sentiment-text.svg";
 import illustrationSpace from "@heydovetail/website/components/illustrations/space.svg";
 import illustrationTeam from "@heydovetail/website/components/illustrations/team.svg";
+import { DarkContainer } from "@heydovetail/website/components/layout/DarkContainer";
+import { LightContainer } from "@heydovetail/website/components/layout/LightContainer";
 import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
-import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { FeatureHeroLarge } from "@heydovetail/website/components/site/FeatureHeroLarge";
 import { Hero } from "@heydovetail/website/components/site/Hero";
-import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import Wave from "@heydovetail/website/components/site/Wave/Wave";
 import { ColorWheel } from "@heydovetail/website/components/util/ColorWheel";
 import IllustrationFormColor from "@heydovetail/website/components/util/ColorWheel/IllustrationFormColor";

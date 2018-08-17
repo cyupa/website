@@ -1,5 +1,7 @@
 import { COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
+import { DarkContainer } from "@heydovetail/website/components/layout/DarkContainer";
+import { LightContainer } from "@heydovetail/website/components/layout/LightContainer";
 import { LinkList } from "@heydovetail/website/components/site/LinkList";
 import { Image } from "@heydovetail/website/components/util/Image";
 import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
@@ -7,8 +9,6 @@ import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
 import { styled } from "typestyle-react";
-import { DarkContainer } from "../DarkContainer";
-import { LightContainer } from "../LightContainer";
 import Wave from "../Wave/Wave";
 import capterraBadge from "./capterra-badge.png";
 

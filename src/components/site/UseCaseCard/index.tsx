@@ -1,5 +1,5 @@
 import { BORDER_RADIUS, BOX_SHADOW_FOCUS, COLORS, Flex, Item } from "@heydovetail/ui-components";
-import { ActionTextWithArrow } from "@heydovetail/website/components/util/ActionTextWithArrow";
+import { ActionTextWithArrow } from "@heydovetail/website/components/site/ActionTextWithArrow";
 import { Image } from "@heydovetail/website/components/util/Image";
 import { LocationLink } from "@heydovetail/website/routing/LocationLink";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";

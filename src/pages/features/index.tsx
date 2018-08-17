@@ -5,11 +5,11 @@ import illustrationEditor from "@heydovetail/website/components/illustrations/ed
 import illustrationFiles from "@heydovetail/website/components/illustrations/files.svg";
 import illustrationSearch from "@heydovetail/website/components/illustrations/search.svg";
 import { Center } from "@heydovetail/website/components/layout/Center";
+import { LightContainer } from "@heydovetail/website/components/layout/LightContainer";
 import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
-import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { UseCases } from "@heydovetail/website/sections/UseCases";

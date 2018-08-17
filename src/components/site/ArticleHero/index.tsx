@@ -1,5 +1,5 @@
+import { LightContainer } from "@heydovetail/website/components/layout/LightContainer";
 import { Hero } from "@heydovetail/website/components/site/Hero";
-import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { ARTICLE_WIDTH, HALF_GAP, PADDING, QUARTER_GAP } from "@heydovetail/website/constants";
 import React from "react";
 

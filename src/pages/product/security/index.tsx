@@ -1,7 +1,7 @@
 import { ButtonLink, COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
 import illustrationSecurity from "@heydovetail/website/components/illustrations/security.svg";
+import { DarkContainer } from "@heydovetail/website/components/layout/DarkContainer";
 import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
-import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
 import { Faq } from "@heydovetail/website/components/site/Faq";
 import { Features } from "@heydovetail/website/components/site/Features";
 import { Hero } from "@heydovetail/website/components/site/Hero";
