@@ -1,8 +1,8 @@
 import { Flex, FlexWrap, Item } from "@heydovetail/ui-components";
-import PictogramFeedback from "@heydovetail/website/components/icons/pictograms/PictogramFeedback";
-import PictogramQda from "@heydovetail/website/components/icons/pictograms/PictogramQda";
-import PictogramRepository from "@heydovetail/website/components/icons/pictograms/PictogramRepository";
-import PictogramResearch from "@heydovetail/website/components/icons/pictograms/PictogramResearch";
+import pictogramFeedback from "@heydovetail/website/components/icons/pictograms/feedback.svg";
+import pictogramQda from "@heydovetail/website/components/icons/pictograms/qda.svg";
+import pictogramRepository from "@heydovetail/website/components/icons/pictograms/repository.svg";
+import pictogramResearch from "@heydovetail/website/components/icons/pictograms/research.svg";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { Wrapper } from "@heydovetail/website/components/layout/Wrapper";
 import { UseCaseCard } from "@heydovetail/website/components/site/UseCaseCard";
@@ -23,7 +23,7 @@ export class UseCases extends React.PureComponent<Props> {
       <FlexWrap styled={{ growItems: true, maxChildWidth: 336, gap: 32 }}>
         <Item style={{ minWidth: 0 }}>
           <UseCaseCard
-            image={<PictogramFeedback />}
+            image={pictogramFeedback}
             location={locations.feedbackManagement()}
             onClick={onClick}
             text="Feedback management"
@@ -31,7 +31,7 @@ export class UseCases extends React.PureComponent<Props> {
         </Item>
         <Item style={{ minWidth: 0 }}>
           <UseCaseCard
-            image={<PictogramRepository />}
+            image={pictogramRepository}
             location={locations.researchRepository()}
             onClick={onClick}
             text="User research repository"
@@ -39,7 +39,7 @@ export class UseCases extends React.PureComponent<Props> {
         </Item>
         <Item style={{ minWidth: 0 }}>
           <UseCaseCard
-            image={<PictogramQda />}
+            image={pictogramQda}
             location={locations.qualitativeDataAnalysis()}
             onClick={onClick}
             text="Qualitative data analysis"
@@ -47,7 +47,7 @@ export class UseCases extends React.PureComponent<Props> {
         </Item>
         <Item style={{ minWidth: 0 }}>
           <UseCaseCard
-            image={<PictogramResearch />}
+            image={pictogramResearch}
             location={locations.userResearch()}
             onClick={onClick}
             text="Collaborative user research"

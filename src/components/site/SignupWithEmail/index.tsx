@@ -32,13 +32,15 @@ export class SignupWithEmail extends React.PureComponent<Props, State> {
             <Flex styled={{ gap: 8 }}>
               <Item>
                 <TextInput
+                  ariaLabel="Your email address"
+                  height={40}
                   onChange={event => this.setState({ email: event.target.value })}
                   placeholder="you@company.com"
                   value={this.state.email}
                 />
               </Item>
               <Item style={{ flexGrow: 0 }}>
-                <ButtonLink color={buttonColor} location={{ internal: false, url: url }}>
+                <ButtonLink color={buttonColor} height={40} location={{ internal: false, url: url }}>
                   Try now for free
                 </ButtonLink>
               </Item>
