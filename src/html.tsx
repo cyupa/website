@@ -31,6 +31,7 @@ class Html extends React.PureComponent<Props> {
     return (
       <html lang="en">
         <head>
+          <meta charSet="utf-8" />
           {headComponents}
           {css}
         </head>
