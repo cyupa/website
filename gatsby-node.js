@@ -111,17 +111,6 @@ async function createIntegrationPages(createPage, graphql) {
 }
 
 export function onCreateWebpackConfig({ actions, stage }) {
-  // const timestamp = Date.now();
-
-  // if (stage === "build-javascript") {
-  //   actions.setWebpackConfig({
-  //     output: {
-  //       filename: `[name]-${timestamp}-[chunkhash].js`,
-  //       chunkFilename: `[name]-${timestamp}-[chunkhash].js`
-  //     }
-  //   });
-  // }
-
   actions.setWebpackConfig({
     resolve: {
       alias: {
@@ -129,10 +118,4 @@ export function onCreateWebpackConfig({ actions, stage }) {
       }
     }
   });
-  // }
-  // .loader("url-loader", {
-  //   query: { limit: 1 }
-  // });
-
-  // return config;
 }
