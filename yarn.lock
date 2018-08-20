@@ -59,15 +59,11 @@
   dependencies:
     tslint-microsoft-contrib "^5.0.2"
 
-"@heydovetail/ui-components@^3.1.5":
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/@heydovetail/ui-components/-/ui-components-3.1.5.tgz#3f74f1d006418f61af74d577865fc912b6d99b33"
+"@heydovetail/ui-components@^3.1.6":
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/@heydovetail/ui-components/-/ui-components-3.1.6.tgz#e67345fa96f6105f49f3e422b32c93e73dba8be3"
   dependencies:
     "@heydovetail/svg-to-react" "^1.1.1"
-    "@types/react-resize-detector" "^3.1.0"
-    "@types/react-router-dom" "^4.2.6"
-    "@types/react-textarea-autosize" "^4.3.2"
-    color-shorthand-hex-to-six-digit "^2.1.0"
     csx "^9.0.0"
     react-resize-detector "^3.1.1"
     react-router-dom "^4.2.2"
@@ -393,13 +389,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-resize-detector@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@types/react-resize-detector/-/react-resize-detector-3.1.0.tgz#cd63abdd7b358855d3058d2e03569450992d5c0a"
-  dependencies:
-    "@types/react" "*"
-
-"@types/react-router-dom@^4.2.2", "@types/react-router-dom@^4.2.6":
+"@types/react-router-dom@^4.2.2":
   version "4.2.6"
   resolved "https://registry.yarnpkg.com/@types/react-router-dom/-/react-router-dom-4.2.6.tgz#9f7eb3c0e6661a9607d878ff8675cc4ea95cd276"
   dependencies:
@@ -417,12 +407,6 @@
 "@types/react-test-renderer@^16.0.1":
   version "16.0.1"
   resolved "https://registry.yarnpkg.com/@types/react-test-renderer/-/react-test-renderer-16.0.1.tgz#36ee8c4fe33c61d460ad0e7bc42a2d0ddcc775a1"
-  dependencies:
-    "@types/react" "*"
-
-"@types/react-textarea-autosize@^4.3.2":
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/@types/react-textarea-autosize/-/react-textarea-autosize-4.3.2.tgz#0cc9e381d77a9f58984cead1b046200d6907419b"
   dependencies:
     "@types/react" "*"
 
@@ -2920,15 +2904,6 @@ color-convert@^1.3.0, color-convert@^1.9.0, color-convert@^1.9.1:
 color-name@^1.0.0, color-name@^1.1.1:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
-
-color-shorthand-hex-to-six-digit@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/color-shorthand-hex-to-six-digit/-/color-shorthand-hex-to-six-digit-2.1.0.tgz#9933144996a92785d6068dcd5fc039339ab6784f"
-  dependencies:
-    hex-color-regex "*"
-    lodash.clonedeep "*"
-    lodash.isplainobject "*"
-    lodash.isstring "*"
 
 color-string@^0.3.0:
   version "0.3.0"
@@ -6209,10 +6184,6 @@ header-case@^1.0.0:
     no-case "^2.2.0"
     upper-case "^1.1.3"
 
-hex-color-regex@*:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
-
 history@^4.6.2, history@^4.7.2:
   version "4.7.2"
   resolved "https://registry.yarnpkg.com/history/-/history-4.7.2.tgz#22b5c7f31633c5b8021c7f4a8a954ac139ee8d5b"
@@ -8043,7 +8014,7 @@ lodash.camelcase@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
 
-lodash.clonedeep@*, lodash.clonedeep@^4.5.0:
+lodash.clonedeep@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
 
@@ -8109,11 +8080,11 @@ lodash.isfunction@^3.0.9:
   version "3.0.9"
   resolved "https://registry.yarnpkg.com/lodash.isfunction/-/lodash.isfunction-3.0.9.tgz#06de25df4db327ac931981d1bdb067e5af68d051"
 
-lodash.isplainobject@*, lodash.isplainobject@^4.0.6:
+lodash.isplainobject@^4.0.6:
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
 
-lodash.isstring@*, lodash.isstring@^4.0.1:
+lodash.isstring@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/lodash.isstring/-/lodash.isstring-4.0.1.tgz#d527dfb5456eca7cc9bb95d5daeaf88ba54a5451"
 
