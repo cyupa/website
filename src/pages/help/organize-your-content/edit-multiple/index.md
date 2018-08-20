@@ -1,6 +1,6 @@
 ---
 path: "/help/edit-mulitple"
-date: "2018-06-28"
+date: "2018-08-17"
 title: "Edit multiple notes, tags, or insights"
 weight: 2
 ---

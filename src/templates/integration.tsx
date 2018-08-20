@@ -1,10 +1,10 @@
 import { COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
 import { Center } from "@heydovetail/website/components/layout/Center";
+import { LightContainer } from "@heydovetail/website/components/layout/LightContainer";
 import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { IntegrationIcon } from "@heydovetail/website/components/site/IntegrationIcon";
 import { IntegrationIllustration } from "@heydovetail/website/components/site/IntegrationIllustration";
-import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { IntegrationByPathQuery } from "@heydovetail/website/graphql/types";
 import { locations } from "@heydovetail/website/routing/locations";
 import { UseCases } from "@heydovetail/website/sections/UseCases";

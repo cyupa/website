@@ -1,14 +1,12 @@
-import { BORDER_RADIUS, BOX_SHADOW_FOCUS, COLORS } from "@heydovetail/ui-components";
-import { Flex } from "@heydovetail/ui-components";
-import { Item } from "@heydovetail/ui-components";
-import { LocationLink } from "@heydovetail/ui-components";
-import { ActionTextWithArrow } from "@heydovetail/website/components/util/ActionTextWithArrow";
+import { BORDER_RADIUS, BOX_SHADOW_FOCUS, COLORS, Flex, Item, LocationLink } from "@heydovetail/ui-components";
+import { ActionTextWithArrow } from "@heydovetail/website/components/site/ActionTextWithArrow";
+import { Image } from "@heydovetail/website/components/util/Image";
 import { LocationDescriptor } from "@heydovetail/website/routing/locations";
 import React from "react";
 import { style } from "typestyle";
 
 interface Props {
-  image: React.ReactNode;
+  image: string;
   location: LocationDescriptor;
   onClick?: () => void;
   text: string;
@@ -20,7 +18,9 @@ export class UseCaseCard extends React.PureComponent<Props> {
     return (
       <LocationLink className={linkClassName} location={location} onClick={onClick}>
         <Flex styled={{ alignItems: "center", gap: 24 }}>
-          <Item style={{ flexGrow: 0 }}>{image}</Item>
+          <Item style={{ flexGrow: 0 }}>
+            <Image src={image} />
+          </Item>
           <Item style={{ minWidth: 0 }}>
             <Flex styled={{ gap: 8, layout: "column" }}>
               <Item

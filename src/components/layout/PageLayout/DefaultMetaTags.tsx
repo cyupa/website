@@ -14,8 +14,10 @@ export class DefaultMetaTags extends React.PureComponent {
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Dovetail – Customer feedback &amp; research platform for teams</title>
+        <title>Dovetail &ndash; Customer feedback &amp; research platform for teams</title>
         <link rel="shortcut icon" href={favicon} type="image/x-icon" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
           content="Dovetail combines customer feedback and user research in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Deloitte, Engima, HotelsCombined, Westpac, and more."

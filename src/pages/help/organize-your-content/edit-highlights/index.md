@@ -1,6 +1,6 @@
 ---
 path: "/help/edit-highlights"
-date: "2018-06-25"
+date: "2018-08-17"
 title: "Edit and merge highlights"
 weight: 3
 ---
@@ -9,7 +9,9 @@ weight: 3
 
 Dovetail offers a bulk editing mode to help you move highlights around and re-organize your tags and insights. Using bulk editing, you can merge two tags or insights together, add highlights to insights, or remove a tag or insight from multiple highlights at once.
 
-To enter bulk editing mode, visit a tag or insight and click the checkbox on an highlight card. The blue bulk editing header will appear at the top of the screen. To cancel what you’re doing, click the back arrow in the top left of the screen.
+To enter bulk editing mode, visit a tag or insight and click **Edit multiple**:
+
+![Screenshot of the ‘Edit multiple’ button on a tag or insight](./edit-multiple.png)
 
 ## Add a tag or insight
 

@@ -12,6 +12,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-typescript",
     "gatsby-plugin-typestyle",
+    "gatsby-transformer-json",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -30,12 +31,6 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
-          {
-            resolve: "gatsby-remark-autolink-headers",
-            options: {
-              offsetY: `120`
-            }
-          },
           "gatsby-remark-copy-linked-files",
           {
             resolve: "gatsby-remark-images",
@@ -90,7 +85,6 @@ module.exports = {
               host: null
             }
           : { policy: [{ userAgent: "*", disallow: ["/confirm", "/404", "/504", "/users/*"] }] }
-    },
-    "gatsby-transformer-json"
+    }
   ]
 };

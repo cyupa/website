@@ -10,12 +10,12 @@ import illustrationProjectsResearch from "@heydovetail/website/components/illust
 import illustrationSearchLarge from "@heydovetail/website/components/illustrations/search-large.svg";
 import illustrationSoftware from "@heydovetail/website/components/illustrations/software.svg";
 import illustrationTeam from "@heydovetail/website/components/illustrations/team.svg";
+import { DarkContainer } from "@heydovetail/website/components/layout/DarkContainer";
+import { LightContainer } from "@heydovetail/website/components/layout/LightContainer";
 import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
-import { DarkContainer } from "@heydovetail/website/components/site/DarkContainer";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { FeatureHeroLarge } from "@heydovetail/website/components/site/FeatureHeroLarge";
 import { Hero } from "@heydovetail/website/components/site/Hero";
-import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import Wave from "@heydovetail/website/components/site/Wave/Wave";
 import { HERO_TEXT_WIDTH, testimonials } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";

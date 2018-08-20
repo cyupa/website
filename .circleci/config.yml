@@ -24,6 +24,20 @@ aliases:
       paths:
         - node_modules
 
+  restore_public_folder: &restore_public_folder
+    restore_cache:
+      name: Restore public folder cache
+      keys:
+        - public-folder-{{ checksum "public/chunk-manifest.json" }}
+
+  # https://twitter.com/gatsbyjs/status/1001812098928730112
+  cache_public_folder: &cache_public_folder
+    save_cache:
+      name: Save public folder
+      key: public-folder-{{ checksum "public/chunk-manifest.json" }}
+      paths:
+        - public
+
   deploy: &deploy
     run:
       name: Deploy
@@ -92,8 +106,10 @@ jobs:
       - <<: *restore_node_modules
       - <<: *install_node_modules
       - <<: *cache_node_modules
+      - <<: *restore_public_folder
       - run: yarn build
       - run: yarn test
+      - <<: *cache_public_folder
 
 workflows:
   version: 2
@@ -122,4 +138,3 @@ workflows:
               ignore:
                 - /deploy\/.+/
                 - master
-

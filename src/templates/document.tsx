@@ -41,7 +41,7 @@ export default function DocumentTemplate({ data, pageContext }: Props) {
         <div style={{ maxWidth: WIDTH * 0.75 }}>
           <Flex styled={{ gap: 16, layout: "column" }}>
             <Item>
-              <div style={{ color: COLORS.i60, fontWeight: 500 }}>
+              <div style={{ color: COLORS.i60 }}>
                 <Breadcrumbs
                   crumbs={pageContext.breadcrumb.map(breadcrumb => ({
                     location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
@@ -70,7 +70,7 @@ export default function DocumentTemplate({ data, pageContext }: Props) {
             </Item>
             <HorizontalRule />
             <Item>
-              <div style={{ color: COLORS.i60, fontWeight: 500 }}>
+              <div style={{ color: COLORS.i60 }}>
                 <Breadcrumbs
                   crumbs={pageContext.breadcrumb.map(breadcrumb => ({
                     location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
