@@ -12,6 +12,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-typescript",
     "gatsby-plugin-typestyle",
+    "gatsby-transformer-json",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -85,6 +86,12 @@ module.exports = {
             }
           : { policy: [{ userAgent: "*", disallow: ["/confirm", "/404", "/504", "/users/*"] }] }
     },
-    "gatsby-transformer-json"
+    {
+      resolve: "gatsby-plugin-webpack-bundle-analyzer",
+      options: {
+        disable: true,
+        generateStatsFile: true
+      }
+    }
   ]
 };

@@ -96,6 +96,7 @@
     "gatsby-plugin-sharp": "^1.6.42",
     "gatsby-plugin-sitemap": "^1.2.22",
     "gatsby-plugin-typescript": "^1.4.19",
+    "gatsby-plugin-webpack-bundle-analyzer": "^0.1.1",
     "gatsby-remark-copy-linked-files": "^1.5.32",
     "gatsby-remark-images": "^1.5.61",
     "gatsby-source-filesystem": "^1.5.31",
