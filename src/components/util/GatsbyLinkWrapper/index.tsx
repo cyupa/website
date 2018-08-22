@@ -1,9 +1,20 @@
-import { LinkProps } from "@heydovetail/ui-components";
 import { Link } from "gatsby";
 import React from "react";
 
-interface Props extends LinkProps {
+// HACK: This should really come from react-router-dom
+// via @heydovetail/ui-components
+interface LocationDescriptorObject {
+  hash?: string;
+  key?: string;
+  pathname?: string;
+  search?: string;
+  // tslint:disable-next-line:no-any
+  state?: any;
+}
+
+interface Props {
   className: string;
+  to: LocationDescriptorObject;
 }
 
 export class GatsbyLinkWrapper extends React.PureComponent<Props> {
