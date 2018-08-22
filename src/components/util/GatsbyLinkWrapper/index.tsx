@@ -36,7 +36,7 @@ export class GatsbyLinkWrapper extends React.PureComponent<Props> {
     }
 
     return (
-      <Link className={className} to={url}>
+      <Link className={className} rel="noopener" to={url}>
         {this.props.children}
       </Link>
     );

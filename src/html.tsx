@@ -9,7 +9,7 @@ interface Props {
 export default class HTML extends React.PureComponent<Props> {
   render() {
     return (
-      <html>
+      <html lang="en">
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
