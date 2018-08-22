@@ -43,7 +43,24 @@ export function createPageHierarchy(
     const nodes = omitNull(omitNull(allMarkdownRemark.edges).map(edge => edge.node));
     for (const { fileAbsolutePath, frontmatter } of nodes) {
       if (fileAbsolutePath !== null && frontmatter !== null) {
-        const fileRelPath = relative(absoluteFilePathPrefix, dirname(fileAbsolutePath));
+        let fileRelPath = relative(absoluteFilePathPrefix, dirname(fileAbsolutePath));
+
+        // The line above returns different things depending on whether Gatsby is building static pages
+        // during server build, or whether it's running when JS loads in the browser.
+        //
+        // During server build it looks like this:
+        // fileRelPath:  terms/customer-terms
+        //
+        // But when run in the browser, it looks like this:
+        // fileRelPath:  ../../../Users/humphreybc/Code/dovetail-website/src/pages/legal/terms/customer-terms
+        //
+        // I'm not sure if this is a bug in Gatsby v2 or not.
+        // For now, this is the workaround:
+
+        if (fileRelPath.includes("pages")) {
+          fileRelPath = fileRelPath.split(absoluteFilePathPrefix)[1].replace(/^\/+/g, "");
+        }
+
         const { path, title, weight } = frontmatter;
 
         if (title === null) {
