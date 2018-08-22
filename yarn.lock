@@ -788,9 +788,9 @@
   dependencies:
     tslint-microsoft-contrib "^5.0.2"
 
-"@heydovetail/ui-components@^3.1.6":
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/@heydovetail/ui-components/-/ui-components-3.1.6.tgz#e67345fa96f6105f49f3e422b32c93e73dba8be3"
+"@heydovetail/ui-components@^3.1.7":
+  version "3.1.7"
+  resolved "https://registry.yarnpkg.com/@heydovetail/ui-components/-/ui-components-3.1.7.tgz#fb81fe1fce404da0fe2b2bf6c6f6ade1f00db3b4"
   dependencies:
     "@heydovetail/svg-to-react" "^1.1.1"
     csx "^9.0.0"

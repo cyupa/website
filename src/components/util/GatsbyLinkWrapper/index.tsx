@@ -1,10 +1,14 @@
+import { LinkProps } from "@heydovetail/ui-components";
 import { Link } from "gatsby";
 import React from "react";
-import { LinkProps } from "react-router-dom";
 
-export class GatsbyLinkWrapper extends React.PureComponent<LinkProps> {
+interface Props extends LinkProps {
+  className: string;
+}
+
+export class GatsbyLinkWrapper extends React.PureComponent<Props> {
   public render() {
-    const { to } = this.props;
+    const { className, to } = this.props;
 
     let url = "";
 
@@ -20,6 +24,10 @@ export class GatsbyLinkWrapper extends React.PureComponent<LinkProps> {
       url = `${url}#${to.hash}`;
     }
 
-    return <Link to={url}>{this.props.children}</Link>;
+    return (
+      <Link className={className} to={url}>
+        {this.props.children}
+      </Link>
+    );
   }
 }
