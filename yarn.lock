@@ -13807,31 +13807,17 @@ typeface-rubik@^0.0.54:
   version "0.0.54"
   resolved "https://registry.yarnpkg.com/typeface-rubik/-/typeface-rubik-0.0.54.tgz#301d18b2efe57495beb5ef096632212b23f4faaf"
 
-typescript@^2.9.1:
-  version "2.9.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
+typescript@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.0.1.tgz#43738f29585d3a87575520a4b93ab6026ef11fdb"
 
-typestyle-react@^1.2.0:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/typestyle-react/-/typestyle-react-1.2.3.tgz#89c2d1c3ef7933424ddb48546b609c10f949690f"
-  dependencies:
-    debounce-microtask "^1.0.0"
-    tslib "^1.9.0"
-    typestyle "^1.7.2"
-
-typestyle-react@^2.0.2:
+typestyle-react@^2.0.1, typestyle-react@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/typestyle-react/-/typestyle-react-2.0.3.tgz#229487a47b47042798c58cca4f4f24eaeb955345"
   dependencies:
     debounce-microtask "^1.0.0"
     tslib "^1.9.0"
     typestyle "^2.0.1"
-
-typestyle@^1.7.2:
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/typestyle/-/typestyle-1.7.2.tgz#22ca9dfeaf334f755030cc6d7799b468bb1ee132"
-  dependencies:
-    free-style "2.5.1"
 
 typestyle@^2.0.1:
   version "2.0.1"

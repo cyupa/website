@@ -11,9 +11,6 @@ export class DefaultMetaTags extends React.PureComponent {
   public render() {
     return (
       <Helmet>
-        <meta charSet="utf-8" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Dovetail &ndash; Customer feedback &amp; research platform for teams</title>
         <link rel="shortcut icon" href={favicon} type="image/x-icon" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
