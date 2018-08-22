@@ -53,6 +53,7 @@
       "<rootDir>/.jest/setup.tsx"
     ],
     "testRegex": "src/.*(/__specs__/.*|\\.spec)\\.tsx?$",
+    "testURL": "http://localhost/",
     "transform": {
       "\\.tsx?$": "ts-jest"
     }
