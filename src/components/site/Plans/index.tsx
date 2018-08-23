@@ -18,8 +18,8 @@ interface Plan {
 
 export const PLAN_DETAILS: Plan[] = [
   {
-    amountMonthly: 3900,
-    amountYearly: 1900,
+    amountMonthly: 1900,
+    amountYearly: 900,
     coreFeatures: ["Only 1 project", "Only text and images", "Unlimited users"],
     current: false,
     extraFeatures: ["Knowledge base", "Slack community"],
