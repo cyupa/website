@@ -134,10 +134,12 @@
     "yarn": "1.7.0"
   },
   "lint-staged": {
-    "*.tsx": [
-      "prettier --write",
-      "tslint -p tsconfig.json --fix",
-      "git add"
-    ]
+    "linters": {
+      "*.tsx": [
+        "prettier --write",
+        "tslint -p tsconfig.json --fix",
+        "git add"
+      ]
+    }
   }
 }
