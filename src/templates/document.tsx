@@ -10,7 +10,6 @@ import { internal } from "@heydovetail/website/routing/locations";
 import { graphql } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet";
-import { styled } from "typestyle-react";
 
 interface Props {
   data: DocumentByPathQuery;
@@ -80,13 +79,6 @@ export default function DocumentTemplate({ data, pageContext }: Props) {
     </PageLayout>
   );
 }
-
-const HorizontalRule = styled("hr", {
-  backgroundColor: COLORS.i04,
-  border: 0,
-  margin: "32px 0",
-  height: "2px"
-});
 
 export const pageQuery = graphql`
   query($path: String!) {
