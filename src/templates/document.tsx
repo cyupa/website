@@ -40,15 +40,13 @@ export default function DocumentTemplate({ data, pageContext }: Props) {
       <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
         <div style={{ maxWidth: WIDTH * 0.75 }}>
           <Flex styled={{ gap: 16, layout: "column" }}>
-            <Item>
-              <div style={{ color: COLORS.i60 }}>
-                <Breadcrumbs
-                  crumbs={pageContext.breadcrumb.map(breadcrumb => ({
-                    location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
-                    text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
-                  }))}
-                />
-              </div>
+            <Item style={{ color: COLORS.i60 }}>
+              <Breadcrumbs
+                crumbs={pageContext.breadcrumb.map(breadcrumb => ({
+                  location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
+                  text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
+                }))}
+              />
             </Item>
             <Item>
               <Hero title={frontmatter!.title!} />
@@ -69,15 +67,13 @@ export default function DocumentTemplate({ data, pageContext }: Props) {
               <PageContent html={html!} />
             </Item>
             <HorizontalRule />
-            <Item>
-              <div style={{ color: COLORS.i60 }}>
-                <Breadcrumbs
-                  crumbs={pageContext.breadcrumb.map(breadcrumb => ({
-                    location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
-                    text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
-                  }))}
-                />
-              </div>
+            <Item style={{ color: COLORS.i60 }}>
+              <Breadcrumbs
+                crumbs={pageContext.breadcrumb.map(breadcrumb => ({
+                  location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
+                  text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
+                }))}
+              />
             </Item>
           </Flex>
         </div>
