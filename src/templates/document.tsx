@@ -7,17 +7,17 @@ import { PageContent } from "@heydovetail/website/components/site/PageContent";
 import { HALF_GAP, PADDING, WIDTH } from "@heydovetail/website/constants";
 import { DocumentByPathQuery } from "@heydovetail/website/graphql/types";
 import { internal } from "@heydovetail/website/routing/locations";
-import { graphql } from "@heydovetail/website/util/graphql";
+import { graphql } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet";
 import { styled } from "typestyle-react";
 
 interface Props {
   data: DocumentByPathQuery;
-  pathContext: { breadcrumb: Array<{ path: string | null; title: string | null }> };
+  pageContext: { breadcrumb: Array<{ path: string | null; title: string | null }> };
 }
 
-export default function DocumentTemplate({ data, pathContext }: Props) {
+export default function DocumentTemplate({ data, pageContext }: Props) {
   const { markdownRemark } = data;
   const { excerpt, frontmatter, html, timeToRead } = markdownRemark!;
 
@@ -43,7 +43,7 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
             <Item>
               <div style={{ color: COLORS.i60 }}>
                 <Breadcrumbs
-                  crumbs={pathContext.breadcrumb.map(breadcrumb => ({
+                  crumbs={pageContext.breadcrumb.map(breadcrumb => ({
                     location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
                     text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
                   }))}
@@ -72,7 +72,7 @@ export default function DocumentTemplate({ data, pathContext }: Props) {
             <Item>
               <div style={{ color: COLORS.i60 }}>
                 <Breadcrumbs
-                  crumbs={pathContext.breadcrumb.map(breadcrumb => ({
+                  crumbs={pageContext.breadcrumb.map(breadcrumb => ({
                     location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
                     text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
                   }))}
@@ -94,7 +94,7 @@ const HorizontalRule = styled("hr", {
 });
 
 export const pageQuery = graphql`
-  query DocumentByPath($path: String!) {
+  query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       excerpt
       frontmatter {

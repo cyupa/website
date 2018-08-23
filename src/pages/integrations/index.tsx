@@ -1,13 +1,13 @@
 import { Flex, Item } from "@heydovetail/ui-components";
+import { LightContainer } from "@heydovetail/website/components/layout/LightContainer";
 import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { IntegrationCard } from "@heydovetail/website/components/site/IntegrationCard";
-import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { IntegrationIndexQuery } from "@heydovetail/website/graphql/types";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { omitNull, sortComparatorAsc } from "@heydovetail/website/util/array";
-import { graphql } from "@heydovetail/website/util/graphql";
+import { graphql } from "gatsby";
 import React from "react";
 import Helmet from "react-helmet";
 import { Masonry } from "react-masonry-responsive";
@@ -74,7 +74,7 @@ export default class extends React.PureComponent<Props> {
 }
 
 export const pageQuery = graphql`
-  query IntegrationIndex {
+  {
     allIntegrationsJson {
       edges {
         node {

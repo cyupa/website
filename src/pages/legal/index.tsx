@@ -4,7 +4,7 @@ import { LegalIndexQuery } from "@heydovetail/website/graphql/types";
 import { locations } from "@heydovetail/website/routing/locations";
 import { DocumentIndex } from "@heydovetail/website/sections/DocumentIndex";
 import { createPageHierarchy } from "@heydovetail/website/util/createPageHierarchy";
-import { graphql } from "@heydovetail/website/util/graphql";
+import { graphql } from "gatsby";
 import React from "react";
 import { ButtonLink, COLORS } from "../../../node_modules/@heydovetail/ui-components";
 
@@ -41,7 +41,7 @@ export default class extends React.PureComponent<Props> {
 }
 
 export const pageQuery = graphql`
-  query LegalIndex {
+  {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { fileAbsolutePath: { regex: "^src/pages/legal/.+\\.md$/" } }

@@ -1,15 +1,15 @@
 import { COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
 import { Center } from "@heydovetail/website/components/layout/Center";
+import { LightContainer } from "@heydovetail/website/components/layout/LightContainer";
 import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { IntegrationIcon } from "@heydovetail/website/components/site/IntegrationIcon";
 import { IntegrationIllustration } from "@heydovetail/website/components/site/IntegrationIllustration";
-import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { IntegrationByPathQuery } from "@heydovetail/website/graphql/types";
 import { locations } from "@heydovetail/website/routing/locations";
 import { UseCases } from "@heydovetail/website/sections/UseCases";
-import { graphql } from "@heydovetail/website/util/graphql";
 import { getLoggedInStateFromLocalStorage } from "@heydovetail/website/util/loggedIn";
+import { graphql } from "gatsby";
 import React from "react";
 import Helmet from "react-helmet";
 
@@ -48,7 +48,9 @@ export default function IntegrationTemplate({ data }: Props) {
             </Item>
             <Item>
               <h1>
-                {from.title} + Dovetail.<br />Better together.
+                {from.title} + Dovetail.
+                <br />
+                Better together.
               </h1>
             </Item>
           </Flex>
@@ -71,7 +73,7 @@ export default function IntegrationTemplate({ data }: Props) {
 }
 
 export const integrationQuery = graphql`
-  query IntegrationByPath($path: String!) {
+  query($path: String!) {
     integrationsJson(path: { eq: $path }) {
       createUrl
       descriptionPlain

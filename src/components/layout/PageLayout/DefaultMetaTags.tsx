@@ -1,7 +1,7 @@
+import favicon from "!file-loader!./favicon.png";
+import thumbnail from "!file-loader!./thumbnail.png";
 import React from "react";
 import { Helmet } from "react-helmet";
-import favicon from "./favicon.png";
-import thumbnail from "./thumbnail.png";
 
 // These are the default meta tags for every page.
 // If a page uses Helmet to specify something more specific,

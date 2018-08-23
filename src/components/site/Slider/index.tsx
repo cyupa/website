@@ -11,6 +11,7 @@ import {
 } from "@heydovetail/ui-components";
 import * as React from "react";
 import { styled } from "typestyle-react";
+import { NestedCSSProperties } from "typestyle/lib/types";
 
 interface Props {
   defaultValue?: number;
@@ -45,7 +46,7 @@ export class Slider extends React.PureComponent<Props> {
   }
 }
 
-const track = {
+const track: NestedCSSProperties = {
   $unique: true,
   background: COLORS.p12,
   borderRadius: BORDER_RADIUS,
@@ -55,7 +56,7 @@ const track = {
   width: "100%"
 };
 
-const thumb = {
+const thumb: NestedCSSProperties = {
   $unique: true,
   "-webkit-appearance": "none",
   backgroundColor: COLORS.purple,
@@ -71,12 +72,12 @@ const thumb = {
   width: "40px"
 };
 
-const thumbFocus = {
+const thumbFocus: NestedCSSProperties = {
   boxShadow: BOX_SHADOW_FOCUS,
   $unique: true
 };
 
-const thumbDisabled = {
+const thumbDisabled: NestedCSSProperties = {
   backgroundColor: COLORS.p60,
   $unique: true
 };
@@ -84,7 +85,7 @@ const thumbDisabled = {
 const Range = styled("input", {
   background: "transparent",
   "-webkit-appearance": "none",
-  margin: "0",
+  margin: 0,
   width: "100%",
 
   $nest: {

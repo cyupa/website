@@ -1,6 +1,6 @@
 import { BREAKPOINT_TABLET, Flex, Item } from "@heydovetail/ui-components";
+import { ActionTextWithArrow } from "@heydovetail/website/components/site/ActionTextWithArrow";
 import { Lozenge } from "@heydovetail/website/components/site/Lozenge";
-import { ActionTextWithArrow } from "@heydovetail/website/components/util/ActionTextWithArrow";
 import { Image } from "@heydovetail/website/components/util/Image";
 import { HALF_GAP, LIGHT_TEXT_OPACITY } from "@heydovetail/website/constants";
 import { LocationDescriptor, locations } from "@heydovetail/website/routing/locations";

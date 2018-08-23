@@ -6,10 +6,10 @@ import illustrationFiles from "@heydovetail/website/components/illustrations/fil
 import illustrationHero from "@heydovetail/website/components/illustrations/hero.svg";
 import illustrationLineChart from "@heydovetail/website/components/illustrations/line-chart.svg";
 import illustrationTeam from "@heydovetail/website/components/illustrations/team.svg";
+import { LightContainer } from "@heydovetail/website/components/layout/LightContainer";
 import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { FeatureHero } from "@heydovetail/website/components/site/FeatureHero";
 import { Hero } from "@heydovetail/website/components/site/Hero";
-import { LightContainer } from "@heydovetail/website/components/site/LightContainer";
 import { HERO_TEXT_WIDTH, testimonials } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";

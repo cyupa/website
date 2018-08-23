@@ -1,7 +1,8 @@
-import { COLORS } from "@heydovetail/ui-components";
+import { COLORS, Link } from "@heydovetail/ui-components";
 import { Footer } from "@heydovetail/website/components/site/Footer";
 import { Header } from "@heydovetail/website/components/site/Header";
 import { ErrorBoundary } from "@heydovetail/website/components/util/ErrorBoundary";
+import { GatsbyLinkWrapper } from "@heydovetail/website/components/util/GatsbyLinkWrapper";
 import React from "react";
 import "typeface-rubik";
 import { styled } from "typestyle-react";
@@ -16,14 +17,20 @@ export class PageLayout extends React.PureComponent<Props> {
   public render() {
     const { dark = false } = this.props;
 
+    // Types don't match for GatsbyLink… seems to work anyway?
+    // tslint:disable-next-line:no-any
+    const GatsbyLinkHack = GatsbyLinkWrapper as any;
+
     return (
       <ErrorBoundary>
-        <DefaultMetaTags />
-        <Header dark={dark} />
-        <Wrapper styled={{ dark }}>
-          {this.props.children}
-          <Footer dark={dark} />
-        </Wrapper>
+        <Link.Provider value={GatsbyLinkHack}>
+          <DefaultMetaTags />
+          <Header dark={dark} />
+          <Wrapper styled={{ dark }}>
+            {this.props.children}
+            <Footer dark={dark} />
+          </Wrapper>
+        </Link.Provider>
       </ErrorBoundary>
     );
   }
