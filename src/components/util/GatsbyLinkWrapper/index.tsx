@@ -1,42 +1,31 @@
+import { LinkProps } from "@heydovetail/ui-components";
 import { Link } from "gatsby";
 import React from "react";
 
-// HACK: This should really come from react-router-dom
-// via @heydovetail/ui-components
-interface LocationDescriptorObject {
-  hash?: string;
-  key?: string;
-  pathname?: string;
-  search?: string;
-  // tslint:disable-next-line:no-any
-  state?: any;
-}
-
-interface Props {
-  className: string;
-  to: LocationDescriptorObject;
-}
-
-export class GatsbyLinkWrapper extends React.PureComponent<Props> {
+export class GatsbyLinkWrapper extends React.PureComponent<LinkProps> {
   public render() {
-    const { className, to } = this.props;
+    const { className, to, style } = this.props;
 
     let url = "";
 
-    if (to.pathname !== undefined) {
-      url = to.pathname;
-    }
+    if (typeof to === "string") {
+      url = to;
+    } else {
+      if (to.pathname !== undefined) {
+        url = to.pathname;
+      }
 
-    if (to.search !== undefined) {
-      url = `${url}?${to.search}`;
-    }
+      if (to.search !== undefined) {
+        url = `${to}?${to.search}`;
+      }
 
-    if (to.hash !== undefined) {
-      url = `${url}#${to.hash}`;
+      if (to.hash !== undefined) {
+        url = `${to}#${to.hash}`;
+      }
     }
 
     return (
-      <Link className={className} rel="noopener" to={url}>
+      <Link className={className} to={url} style={style}>
         {this.props.children}
       </Link>
     );

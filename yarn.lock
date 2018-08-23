@@ -788,11 +788,12 @@
   dependencies:
     tslint-microsoft-contrib "^5.0.2"
 
-"@heydovetail/ui-components@^3.1.7":
-  version "3.1.7"
-  resolved "https://registry.yarnpkg.com/@heydovetail/ui-components/-/ui-components-3.1.7.tgz#fb81fe1fce404da0fe2b2bf6c6f6ade1f00db3b4"
+"@heydovetail/ui-components@^3.1.9":
+  version "3.1.9"
+  resolved "https://registry.yarnpkg.com/@heydovetail/ui-components/-/ui-components-3.1.9.tgz#e4a309c7fc6617beccd458b97cf9e199f3505193"
   dependencies:
     "@heydovetail/svg-to-react" "^1.1.1"
+    "@types/react-router-dom" "^4.2.6"
     csx "^9.0.0"
     react-resize-detector "^3.1.1"
     react-router-dom "^4.2.2"
@@ -1077,6 +1078,10 @@
   version "0.12.6"
   resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-0.12.6.tgz#3d619198585fcabe5f4e1adfb5cf5f3388c66c13"
 
+"@types/history@*":
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.0.tgz#2fac51050c68f7d6f96c5aafc631132522f4aa3f"
+
 "@types/jest@^22.2.2":
   version "22.2.3"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-22.2.3.tgz#0157c0316dc3722c43a7b71de3fdf3acbccef10d"
@@ -1143,6 +1148,21 @@
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@types/react-resize-detector/-/react-resize-detector-2.2.0.tgz#1ac39fcc0c8098106249f8f5765b76f6c94da96e"
   dependencies:
+    "@types/react" "*"
+
+"@types/react-router-dom@^4.2.6":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@types/react-router-dom/-/react-router-dom-4.3.0.tgz#c91796d02deb3a5b24bc1c5db4a255df0d18b8b5"
+  dependencies:
+    "@types/history" "*"
+    "@types/react" "*"
+    "@types/react-router" "*"
+
+"@types/react-router@*":
+  version "4.0.30"
+  resolved "https://registry.yarnpkg.com/@types/react-router/-/react-router-4.0.30.tgz#64bcd886befd1f932779b74d17954adbefb7a3a7"
+  dependencies:
+    "@types/history" "*"
     "@types/react" "*"
 
 "@types/react-test-renderer@^16.0.1":

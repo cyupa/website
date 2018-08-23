@@ -62,7 +62,7 @@
     "@heydovetail/editorconfig": "^2.0.0",
     "@heydovetail/svg-to-react": "^1.1.1",
     "@heydovetail/tslint-config": "^2.1.1",
-    "@heydovetail/ui-components": "^3.1.7",
+    "@heydovetail/ui-components": "^3.1.9",
     "@storybook/addon-storyshots": "^3.4.0",
     "@storybook/react": "^3.4.0",
     "@types/date-fns": "^2.6.0",
