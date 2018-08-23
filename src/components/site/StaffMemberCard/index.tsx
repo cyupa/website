@@ -16,20 +16,20 @@ export class StaffMemberCard extends React.PureComponent<Props> {
 
     return (
       <Card styled={{ padding: 32 }}>
-        <Flex styled={{ alignItems: "center", gap: 24, layout: "column" }}>
-          <Item style={{ lineHeight: 0 }}>
-            <Image src={image} height={128} rounded width={128} />
+        <Flex styled={{ gap: 32 }}>
+          <Item>
+            <Image src={image} height={64} rounded width={64} />
           </Item>
           <Item>
-            <Flex styled={{ alignItems: "center", gap: 16, layout: "column" }}>
-              <Item>
+            <Flex styled={{ gap: 12, layout: "column" }}>
+              <Item style={{ lineHeight: 0 }}>
                 <h3>{name}</h3>
               </Item>
-              <Item>
+              <Item style={{ lineHeight: 0 }}>
                 <SmallText>{role}</SmallText>
               </Item>
               <Item>
-                <p style={{ fontSize: "14px", textAlign: "center" }}>{bio}</p>
+                <p style={{ fontSize: "14px" }}>{bio}</p>
               </Item>
             </Flex>
           </Item>
