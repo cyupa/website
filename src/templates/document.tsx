@@ -66,7 +66,6 @@ export default function DocumentTemplate({ data, pageContext }: Props) {
             <Item>
               <PageContent html={html!} />
             </Item>
-            <HorizontalRule />
             <Item style={{ color: COLORS.i60 }}>
               <Breadcrumbs
                 crumbs={pageContext.breadcrumb.map(breadcrumb => ({
