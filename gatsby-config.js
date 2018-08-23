@@ -6,7 +6,6 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-react-next",
     "gatsby-plugin-remove-trailing-slashes",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
