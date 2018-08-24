@@ -60,7 +60,7 @@ export const StyledContent = styled("div", {
     ".gatsby-resp-image-wrapper": {
       borderRadius: BORDER_RADIUS,
       boxShadow: `0 0 0 1px ${COLORS.i08}`,
-      margin: "32px 0",
+      margin: "16px 0",
       overflow: "hidden"
     },
     table: {

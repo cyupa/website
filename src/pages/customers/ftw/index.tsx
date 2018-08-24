@@ -10,7 +10,9 @@ import { Helmet } from "react-helmet";
 import image1 from "./1.jpg";
 import image2 from "./2.jpg";
 import logo from "./logo.png";
-import screenshot from "./screenshot.png";
+import screenshotInsight from "./screenshot-insight.png";
+import screenshotInsights from "./screenshot-insights.png";
+import screenshotNote from "./screenshot-note.png";
 
 export default class extends React.PureComponent {
   public render() {
@@ -74,8 +76,14 @@ export default class extends React.PureComponent {
               “We are focusing more and more on embedding research best practices into our clients’ day to day.”
             </blockquote>
             <p>
-              The type of data For the Win deals with means it needs to be kept secure and carefully anonymized before reporting
-              since transcripts and notes contain confidential information and feedback from employees.
+              Because For the Win works with startups, timelines are often much shorter than for larger research teams working
+              with later-stage clients. Clients need quick turnaround on insights so they can move on to fixing the issues that
+              come up during research.
+            </p>
+            <p>
+              Similar issues come up often, so Benjamin is constantly reviewing data from past projects to find trends that
+              might apply to the current studies. Combing through research notes spread across multiple sources was tedious,
+              time-consuming work.
             </p>
             <h3>How Dovetail helps</h3>
             <blockquote>“It’s where most of the hard work happens.”</blockquote>
@@ -83,6 +91,7 @@ export default class extends React.PureComponent {
               Dovetail acts as a searchable research repository allowing Benjamin to aggregate, store, and analyze data from
               multiple sources like engagement surveys, onboarding and exit interviews, research notes, and insights.
             </p>
+            <img className="gatsby-resp-image-wrapper" src={screenshotNote} style={{ width: "100%" }} />
             <p>
               With Dovetail, Benjamin highlights patterns across multiple pieces of data. He then creates insights that he uses
               to report back to the startup’s management team, along with suggestions for process improvements.
@@ -96,7 +105,12 @@ export default class extends React.PureComponent {
               sorts the tags by frequency and looks for any that span all or most transcripts. As he sees interesting trends, he
               pulls out quotes that back up the core idea and copies them to a new insight.
             </p>
-            <img className="gatsby-resp-image-wrapper" src={screenshot} style={{ width: "100%" }} />
+            <p>
+              The end result is a nicely presented board of all insights from the project, with each insight connected to the
+              relevant source material with quotes, images, and files.
+            </p>
+            <img className="gatsby-resp-image-wrapper" src={screenshotInsights} style={{ width: "100%" }} />
+            <img className="gatsby-resp-image-wrapper" src={screenshotInsight} style={{ width: "100%" }} />
             <blockquote>
               “I had checked out a bunch of competing products, and it was obvious from the first week using Dovetail that it
               was way more polished and usable than anything else.”
