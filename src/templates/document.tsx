@@ -10,7 +10,6 @@ import { internal } from "@heydovetail/website/routing/locations";
 import { graphql } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet";
-import { styled } from "typestyle-react";
 
 interface Props {
   data: DocumentByPathQuery;
@@ -40,15 +39,13 @@ export default function DocumentTemplate({ data, pageContext }: Props) {
       <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
         <div style={{ maxWidth: WIDTH * 0.75 }}>
           <Flex styled={{ gap: 16, layout: "column" }}>
-            <Item>
-              <div style={{ color: COLORS.i60 }}>
-                <Breadcrumbs
-                  crumbs={pageContext.breadcrumb.map(breadcrumb => ({
-                    location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
-                    text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
-                  }))}
-                />
-              </div>
+            <Item style={{ color: COLORS.i60 }}>
+              <Breadcrumbs
+                crumbs={pageContext.breadcrumb.map(breadcrumb => ({
+                  location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
+                  text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
+                }))}
+              />
             </Item>
             <Item>
               <Hero title={frontmatter!.title!} />
@@ -68,16 +65,13 @@ export default function DocumentTemplate({ data, pageContext }: Props) {
             <Item>
               <PageContent html={html!} />
             </Item>
-            <HorizontalRule />
-            <Item>
-              <div style={{ color: COLORS.i60 }}>
-                <Breadcrumbs
-                  crumbs={pageContext.breadcrumb.map(breadcrumb => ({
-                    location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
-                    text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
-                  }))}
-                />
-              </div>
+            <Item style={{ color: COLORS.i60 }}>
+              <Breadcrumbs
+                crumbs={pageContext.breadcrumb.map(breadcrumb => ({
+                  location: breadcrumb.path !== null ? internal(breadcrumb.path) : undefined,
+                  text: breadcrumb.title !== null ? breadcrumb.title : "Untitled article"
+                }))}
+              />
             </Item>
           </Flex>
         </div>
@@ -85,13 +79,6 @@ export default function DocumentTemplate({ data, pageContext }: Props) {
     </PageLayout>
   );
 }
-
-const HorizontalRule = styled("hr", {
-  backgroundColor: COLORS.i04,
-  border: 0,
-  margin: "32px 0",
-  height: "2px"
-});
 
 export const pageQuery = graphql`
   query($path: String!) {

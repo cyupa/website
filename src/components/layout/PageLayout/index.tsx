@@ -1,4 +1,4 @@
-import { COLORS, Link } from "@heydovetail/ui-components";
+import { COLORS, Link, Uid } from "@heydovetail/ui-components";
 import { Footer } from "@heydovetail/website/components/site/Footer";
 import { Header } from "@heydovetail/website/components/site/Header";
 import { ErrorBoundary } from "@heydovetail/website/components/util/ErrorBoundary";
@@ -23,14 +23,16 @@ export class PageLayout extends React.PureComponent<Props> {
 
     return (
       <ErrorBoundary>
-        <Link.Provider value={GatsbyLinkHack}>
-          <DefaultMetaTags />
-          <Header dark={dark} />
-          <Wrapper styled={{ dark }}>
-            {this.props.children}
-            <Footer dark={dark} />
-          </Wrapper>
-        </Link.Provider>
+        <Uid.Context.Provider value={{ counter: 0 }}>
+          <Link.Provider value={GatsbyLinkHack}>
+            <DefaultMetaTags />
+            <Header dark={dark} />
+            <Wrapper styled={{ dark }}>
+              {this.props.children}
+              <Footer dark={dark} />
+            </Wrapper>
+          </Link.Provider>
+        </Uid.Context.Provider>
       </ErrorBoundary>
     );
   }

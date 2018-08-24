@@ -5,25 +5,20 @@ import React from "react";
 //
 // Used to avoid rendering components that rely on JavaScript to work.
 
-export class WaitForJs extends React.PureComponent {
-  private span: HTMLSpanElement | null = null;
+interface State {
+  mounted: boolean;
+}
+
+export class WaitForJs extends React.PureComponent<{}, State> {
+  public state: State = {
+    mounted: false
+  };
 
   public componentDidMount() {
-    if (this.span !== null) {
-      this.span.style.display = "block";
-    }
+    this.setState({ mounted: true });
   }
 
   public render() {
-    return (
-      <span
-        ref={span => {
-          this.span = span;
-        }}
-        style={{ display: "none" }}
-      >
-        {this.props.children}
-      </span>
-    );
+    return <span style={this.state.mounted ? undefined : { display: "none" }}>{this.props.children}</span>;
   }
 }

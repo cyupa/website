@@ -17,9 +17,7 @@ Throughout this User Privacy Policy:
 
 **User:** means any person who has registered an account on our Services, either through creating a new team themselves or being invited to an existing team by a Customer.
 
-**Personal Information** is as defined in the [Privacy Act 1988 (Cth)](https://www.legislation.gov.au/Series/C2004A03712) (Privacy Act). The Privacy Act defines ‘Personal Information’ as:
-
-> “Information or an opinion about an identified individual, or an individual who is reasonably identifiable: whether the information or opinion is true or not; and whether the information or opinion is recorded in a material form or not.”
+**Personal Information** is as defined in the [Privacy Act 1988 (Cth)](https://www.legislation.gov.au/Series/C2004A03712) (Privacy Act). The Privacy Act defines ‘Personal Information’ as _“Information or an opinion about an identified individual, or an individual who is reasonably identifiable: whether the information or opinion is true or not; and whether the information or opinion is recorded in a material form or not.”_
 
 **Project/Projects:** means any research project created by a User on the Services.
 
@@ -29,49 +27,49 @@ Throughout this User Privacy Policy:
 
 As a User of the Services, you provide information to us. This includes:
 
-* profile information like your name, email address, and profile photo;
-* content you provide through the Services, for instance projects, notes, tags, files;
-* when you subscribe to our paid services, your billing details including your address;
-* details of services we have provided to you or that you have enquired about;
-* your responses to questionnaires, surveys, or requests for feedback; and
-* additional Personal Information that you provide to us directly or indirectly through your use of our Services, associated social media platforms or accounts from which you permit us to collect information.
+- profile information like your name, email address, and profile photo;
+- content you provide through the Services, for instance projects, notes, tags, files;
+- when you subscribe to our paid services, your billing details including your address;
+- details of services we have provided to you or that you have enquired about;
+- your responses to questionnaires, surveys, or requests for feedback; and
+- additional Personal Information that you provide to us directly or indirectly through your use of our Services, associated social media platforms or accounts from which you permit us to collect information.
 
 ## What information we log about you
 
 We log information about your access and use of our Services. This includes:
 
-* your communications with our Services;
-* your behavior through analytics events;
-* your Internet Protocol (IP) address;
-* your approximate geographic location;
-* the storage of Internet cookies;
-* the type of browser you are using;
-* the type of device you are using; and
-* the type of operating system you are using.
+- your communications with our Services;
+- your behavior through analytics events;
+- your Internet Protocol (IP) address;
+- your approximate geographic location;
+- the storage of Internet cookies;
+- the type of browser you are using;
+- the type of device you are using; and
+- the type of operating system you are using.
 
 ## How we use information we collect
 
 We collect and use your information:
 
-* to enable you to access and use our Services;
-* to enable you to create Projects via the Services;
-* to enable you to add Customer Data to Projects via the Services;
-* to process your payments where you have signed up to a paid service;
-* to contact and communicate with you;
-* to improve our Services through research and development;
-* to prevent and address technical problems;
-* to provide you with support services if requested;
-* for internal record keeping; and
-* for advertising and marketing, including to send you information about our products and services.
+- to enable you to access and use our Services;
+- to enable you to create Projects via the Services;
+- to enable you to add Customer Data to Projects via the Services;
+- to process your payments where you have signed up to a paid service;
+- to contact and communicate with you;
+- to improve our Services through research and development;
+- to prevent and address technical problems;
+- to provide you with support services if requested;
+- for internal record keeping; and
+- for advertising and marketing, including to send you information about our products and services.
 
 ## Legal bases for processing (for EEA users)
 
 If you are an individual in the European Economic Area (EEA), we collect and process information about you only where we have legal bases for doing so under applicable EU laws. The legal bases depend on the Services you use and how you use them. This means we collect and use your information only where:
 
-* we need it to provide you the Services, including to operate the Services, provide customer support and personalized features and to protect the safety and security of the Services;
-* it satisfies a legitimate interest (which is not overridden by your data protection interests), such as for research and development, to market and promote the Services and to protect our legal rights and interests;
-* you give us consent to do so for a specific purpose; or
-* we need to process your data to comply with a legal obligation.
+- we need it to provide you the Services, including to operate the Services, provide customer support and personalized features and to protect the safety and security of the Services;
+- it satisfies a legitimate interest (which is not overridden by your data protection interests), such as for research and development, to market and promote the Services and to protect our legal rights and interests;
+- you give us consent to do so for a specific purpose; or
+- we need to process your data to comply with a legal obligation.
 
 If you have consented to our use of information about you for a specific purpose, you have the right to change your mind at any time, but this will not affect any processing that has already taken place.
 
@@ -91,8 +89,8 @@ Certain information will be shared with other members of your team. These people
 
 The information shared with teammates includes:
 
-* profile information like your name, email address, and profile photo; and
-* content you add to the Services, for example files, notes, projects, and tags.
+- profile information like your name, email address, and profile photo; and
+- content you add to the Services, for example files, notes, projects, and tags.
 
 ### Sharing with third parties
 
@@ -100,13 +98,13 @@ As part of providing our Services, we use third party services to store and proc
 
 We share your data with third party services in the following ways:
 
-* [Amazon Web Services](https://aws.amazon.com) for hosting, logging, and storage.
-* [ChartMogul](https://chartmogul.com) for storing payment analytics information.
-* [Heroku](https://heroku.com) for hosting, logging, and storage.
-* [Mailchimp](https://mailchimp.com) for sending you promotional emails and product news.
-* [Mixpanel](https://mixpanel.com) for tracking your behavior through analytics events.
-* [Sendgrid](https://sendgrid.com) for sending you transactional email communication.
-* [Stripe](https://stripe.com) for storing your billing details, address and postcode.
+- [Amazon Web Services](https://aws.amazon.com) for hosting, logging, and storage.
+- [ChartMogul](https://chartmogul.com) for storing payment analytics information.
+- [Heroku](https://heroku.com) for hosting, logging, and storage.
+- [Mailchimp](https://mailchimp.com) for sending you promotional emails and product news.
+- [Mixpanel](https://mixpanel.com) for tracking your behavior through analytics events.
+- [Sendgrid](https://sendgrid.com) for sending you transactional email communication.
+- [Stripe](https://stripe.com) for storing your billing details, address and postcode.
 
 For more information on our use of third parties, including the geographic location of each, see our [list of Data Subprocessors](/legal/data-subprocessors).
 
@@ -114,9 +112,9 @@ For more information on our use of third parties, including the geographic locat
 
 In addition, we may disclose Personal Information to:
 
-* credit reporting agencies and courts, tribunals and regulatory authorities where you fail to pay for goods or services provided to you;
-* courts, tribunals, regulatory authorities and law enforcement officers as required by law, in connection with any actual or prospective legal proceedings, or in order to establish, exercise or defend our legal rights; and
-* third parties, including agents or sub-contractors, who assist us in providing information, products, services or direct marketing to you. This may include parties located, or that store data, outside of Australia.
+- credit reporting agencies and courts, tribunals and regulatory authorities where you fail to pay for goods or services provided to you;
+- courts, tribunals, regulatory authorities and law enforcement officers as required by law, in connection with any actual or prospective legal proceedings, or in order to establish, exercise or defend our legal rights; and
+- third parties, including agents or sub-contractors, who assist us in providing information, products, services or direct marketing to you. This may include parties located, or that store data, outside of Australia.
 
 If there is a change of control of our business or a sale or transfer of business assets, we reserve the right to transfer our user databases, together with any Personal Information and non-Personal Information contained in those databases, to the extent permissible by law. This information may be disclosed to a potential purchaser. We would seek to only disclose information in good faith.
 

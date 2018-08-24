@@ -5,6 +5,7 @@ import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { Article } from "@heydovetail/website/components/site/Article";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { Testimonials } from "@heydovetail/website/components/site/Testimonials";
+import Wave from "@heydovetail/website/components/site/Wave/Wave";
 import { HALF_GAP, testimonials } from "@heydovetail/website/constants";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
@@ -78,6 +79,7 @@ export default class extends React.PureComponent {
             </Item>
           </Flex>
         </LightContainer>
+        <Wave color={COLORS.p04} size="100%" />
         <LightContainer backgroundColor={COLORS.p04}>
           <CustomerLogos
             customers={[

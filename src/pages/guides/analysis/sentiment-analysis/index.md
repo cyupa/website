@@ -47,17 +47,17 @@ Sentiment analysis works best with **large data sets written in the first person
 
 ### Pros
 
-* Great for **quickly analyzing** thousands—or even millions—of pieces of data where topic categorization is less important than an overall indication of sentiment.
-* Can give you **a starting point** in qualitative data analyis by extracting strongly positive or negative sentences out of documents.
-* Works particularly well with data where the author **clearly expresses an opinion** (e.g. app reviews, political views, user feedback).
-* Somewhat **context-agnostic** – it doesn’t matter if the data is about politics, mobile phone reviews, cooking recipes, or anything.
-* Some providers (e.g. Google and Amazon) have support for **multiple languages**.
+- Great for **quickly analyzing** thousands—or even millions—of pieces of data where topic categorization is less important than an overall indication of sentiment.
+- Can give you **a starting point** in qualitative data analyis by extracting strongly positive or negative sentences out of documents.
+- Works particularly well with data where the author **clearly expresses an opinion** (e.g. app reviews, political views, user feedback).
+- Somewhat **context-agnostic** – it doesn’t matter if the data is about politics, mobile phone reviews, cooking recipes, or anything.
+- Some providers (e.g. Google and Amazon) have support for **multiple languages**.
 
 ### Cons
 
-* **Not a replacement for ML auto-categorization** as it will only categorize text based on its sentiment, not the topic discussed.
-* Does not work well on **text written in the third person** (e.g. user testing observations) or where the data is not someone’s opinion on a product or service.
-* Can struggle with **complex sentences** involving double negatives, sarcasm, adverbials, unknown proper nouns and brand names, and greetings (e.g. “Best wishes!” or “Looking forward to your response” in email signatures).
+- **Not a replacement for ML auto-categorization** as it will only categorize text based on its sentiment, not the topic discussed.
+- Does not work well on **text written in the third person** (e.g. user testing observations) or where the data is not someone’s opinion on a product or service.
+- Can struggle with **complex sentences** involving double negatives, sarcasm, adverbials, unknown proper nouns and brand names, and greetings (e.g. “Best wishes!” or “Looking forward to your response” in email signatures).
 
 ![A Macbook Pro touch bar showing a selection of emoji](./keyboard.jpg)
 
@@ -81,24 +81,26 @@ A hybrid approach uses a combination of the above techniques, with the addition 
 
 Sentiment analysis is one of many NLP techniques. Other techniques that are helpful for user research and qualitative data analysis include:
 
-* [Automatic summarization](https://en.wikipedia.org/wiki/Automatic_summarization)
-* [Machine translation](https://en.wikipedia.org/wiki/Machine_translation)
-* [Named entity recognition (NER)](https://en.wikipedia.org/wiki/Named_entity_recognition)
-* [Optical character recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition)
-* [Part-of-speech tagging](https://en.wikipedia.org/wiki/Part-of-speech_tagging)
-* [Question answering](https://en.wikipedia.org/wiki/Question_answering)
-* [Sentence breaking](https://en.wikipedia.org/wiki/Sentence_boundary_disambiguation)
-* [Topic segmentation](https://en.wikipedia.org/wiki/Topic_segmentation)
+- [Automatic summarization](https://en.wikipedia.org/wiki/Automatic_summarization)
+- [Machine translation](https://en.wikipedia.org/wiki/Machine_translation)
+- [Named entity recognition (NER)](https://en.wikipedia.org/wiki/Named_entity_recognition)
+- [Optical character recognition (OCR)](https://en.wikipedia.org/wiki/Optical_character_recognition)
+- [Part-of-speech tagging](https://en.wikipedia.org/wiki/Part-of-speech_tagging)
+- [Question answering](https://en.wikipedia.org/wiki/Question_answering)
+- [Sentence breaking](https://en.wikipedia.org/wiki/Sentence_boundary_disambiguation)
+- [Topic segmentation](https://en.wikipedia.org/wiki/Topic_segmentation)
 
 ## Start using sentiment analysis today
 
 You can start using sentiment analysis in a variety of ways:
 
-* **Open source tools.** While free and flexible, these often require significant setup and may only run on certain operating systems.
-* **Online APIs**. [Amazon Comprehend](https://aws.amazon.com/comprehend/), [Google Cloud](https://cloud.google.com/natural-language/), and [Microsoft Azure](https://azure.microsoft.com/en-au/services/cognitive-services/text-analytics/) offer paid Natural Language APIs which are designed for large scale operation but require programming experience to configure.
-* **SaaS products**. Companies like [Dovetail](https://dovetailapp.com) include sentiment analysis in easy-to-use features that require no data science or programming experience.
+- **Open source tools.** While free and flexible, these often require significant setup and may only run on certain operating systems.
+- **Online APIs**. [Amazon Comprehend](https://aws.amazon.com/comprehend/), [Google Cloud](https://cloud.google.com/natural-language/), and [Microsoft Azure](https://azure.microsoft.com/en-au/services/cognitive-services/text-analytics/) offer paid Natural Language APIs which are designed for large scale operation but require programming experience to configure.
+- **SaaS products**. Companies like [Dovetail](https://dovetailapp.com) include sentiment analysis in easy-to-use features that require no data science or programming experience.
 
 ![A colorful photo of a person standing in front of a wall holding some emoji balloons](./emoji.jpg)
+
+---
 
 #### Liked this article?
 

@@ -7,6 +7,7 @@ import { ActionTextWithArrow } from "@heydovetail/website/components/site/Action
 import { Faq } from "@heydovetail/website/components/site/Faq";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { Plans } from "@heydovetail/website/components/site/Plans";
+import Wave from "@heydovetail/website/components/site/Wave/Wave";
 import { HALF_GAP } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
@@ -38,18 +39,19 @@ export default class extends React.PureComponent {
             </Item>
           </Flex>
         </LightContainer>
+        <Wave color={COLORS.p04} size="100%" />
         <LightContainer backgroundColor={COLORS.p04}>
           <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
             <Item>
               <CustomerLogos
                 customers={[
-                  customers.airteam,
                   customers.arm,
-                  customers.enigma,
+                  customers.careship,
                   customers.freshworks,
                   customers.hotelscombined,
-                  customers.monotype,
+                  customers.ocado,
                   customers.rbs,
+                  customers.spotify,
                   customers.uniqa
                 ]}
               />

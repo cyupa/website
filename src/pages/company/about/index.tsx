@@ -13,30 +13,28 @@ import brad from "./brad.jpg";
 
 export default class extends React.PureComponent {
   public render() {
+    const title = "About Dovetail";
+    const description =
+      "Dovetail was created in 2017 by two ex-Atlassians: Benjamin Humphrey and Brad Ayers. We started Dovetail because we believe that deeply understanding one’s customers is the secret ingredient to making great products.";
+
     return (
       <PageLayout>
         <Helmet>
-          <title>About us – Dovetail</title>
-          <meta
-            name="description"
-            content="Dovetail was created in 2017 by two ex-Atlassians: Benjamin Humphrey and Brad Ayers. We started Dovetail because we believe that deeply understanding one’s customers is the secret ingredient to making great products."
-          />
-          <meta
-            property="og:description"
-            content="Dovetail was created in 2017 by two ex-Atlassians: Benjamin Humphrey and Brad Ayers. We started Dovetail because we believe that deeply understanding one’s customers is the secret ingredient to making great products."
-          />
+          <title>{title}</title>
+          <meta name="description" content={description} />
+          <meta property="og:description" content={description} />
         </Helmet>
         <Container styled={{ maxWidth: WIDTH, padding: { x: PADDING, y: HALF_GAP } }}>
           <Flex styled={{ gap: VERTICAL_GAP, layout: "column" }}>
             <Item>
               <Flex styled={{ gap: 32, layout: "column" }}>
                 <Item>
-                  <Hero title="About us" />
+                  <Hero title={title} />
                 </Item>
                 <Item>
                   <Flex styled={{ gap: 24, layout: "column" }}>
                     <Item>
-                      <p>Dovetail was created in 2017 by two ex-Atlassians: Benjamin Humphrey and Brad Ayers.</p>
+                      <p>Dovetail was created in 2017 by two ex-Atlassians: Benjamin Humphrey and Bradley Ayers.</p>
                     </Item>
                     <Item>
                       <p>
@@ -65,7 +63,7 @@ export default class extends React.PureComponent {
                       </ButtonLink>
                     </Item>
                     <Item>
-                      <ButtonLink location={locations.slack()}>Join our Slack</ButtonLink>
+                      <ButtonLink location={locations.slack()}>Chat with us on Slack</ButtonLink>
                     </Item>
                   </Flow>
                 </Item>
@@ -85,7 +83,7 @@ export default class extends React.PureComponent {
                         key: "benjamin",
                         node: (
                           <StaffMemberCard
-                            bio="Benjamin is a kiwi designer, developer, and entrepreneur living in Sydney. He loves creating world-class products and believes in the power of user research to do so. Previously Benjamin has led design projects at Atlassian, Delicious, and Ubuntu."
+                            bio="Benjamin is a designer, developer, and entrepreneur. Benjamin has worked in Australia, New Zealand, and the SF bay area leading projects at Atlassian, Delicious, and Ubuntu."
                             image={benjamin}
                             name="Benjamin Humphrey"
                             role="CEO / Designer / Developer"
@@ -96,9 +94,9 @@ export default class extends React.PureComponent {
                         key: "brad",
                         node: (
                           <StaffMemberCard
-                            bio="Brad’s a talented software architect living in Sydney. He has a Bachelor of Engineering from Griffith University and previously worked as an architect at Atlassian. If you’re reading this then the site is up, so well done Brad. Keep it up."
+                            bio="Brad’s a software architect living in Sydney. He has a Bachelor of Engineering from Griffith University and previously worked as an architect at Atlassian."
                             image={brad}
-                            name="Brad Ayers"
+                            name="Bradley Ayers"
                             role="CTO / Developer"
                           />
                         )

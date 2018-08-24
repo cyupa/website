@@ -87,7 +87,7 @@ export class Footer extends React.PureComponent<Props> {
               <FooterFinePrint>Made in Australia by 🐨Auzzies and 🥝Kiwis</FooterFinePrint>
             </Item>
             <Item>
-              <FooterFinePrint>© Dovetail Research Pty Ltd</FooterFinePrint>
+              <FooterFinePrint>© Dovetail Research Pty. Ltd.</FooterFinePrint>
             </Item>
             <Item>
               <FooterFinePrint>ABN: 84 615 270 025</FooterFinePrint>
