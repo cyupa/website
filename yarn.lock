@@ -781,9 +781,9 @@
   dependencies:
     tslint-microsoft-contrib "^5.0.2"
 
-"@heydovetail/ui-components@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@heydovetail/ui-components/-/ui-components-3.2.0.tgz#948b0fd863ce1f607b95a4cc96e245e11f913a98"
+"@heydovetail/ui-components@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@heydovetail/ui-components/-/ui-components-3.2.1.tgz#802211cb5f85e6550d24fe83e4142b8806f9dc1b"
   dependencies:
     "@heydovetail/svg-to-react" "^1.1.1"
     "@types/react-router-dom" "^4.2.6"

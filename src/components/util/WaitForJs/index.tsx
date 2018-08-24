@@ -14,13 +14,8 @@ export class WaitForJs extends React.PureComponent<{}, State> {
     mounted: false
   };
 
-  // private span: HTMLSpanElement | null = null;
-
   public componentDidMount() {
     this.setState({ mounted: true });
-    // if (this.span !== null) {
-    //   this.span.style.display = "block";
-    // }
   }
 
   public render() {
