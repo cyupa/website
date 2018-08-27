@@ -9,19 +9,19 @@ As part of your organization’s procurement process for new cloud software, you
 
 ### Resources
 
-* [Security overview](/product/security)
-* [Customer Terms of Service](/legal/customer-terms)
-* [User Privacy Policy](/legal/privacy)
-* [Information on GDPR](/legal/gdpr)
-* [Data Subprocessors](/legal/data-subprocessors)
-* [Data Processing Agreement](/legal/dpa)
+- [Security overview](/security)
+- [Customer Terms of Service](/legal/customer-terms)
+- [User Privacy Policy](/legal/privacy)
+- [Information on GDPR](/legal/gdpr)
+- [Data Subprocessors](/legal/data-subprocessors)
+- [Data Processing Agreement](/legal/dpa)
 
 ### Company details
 
-* **Company name:** Dovetail Research Pty. Ltd.
-* **Location:** Kirribilli, NSW 2061, Australia
-* **ABN:** 84 615 270 025
-* **ACN:** 615 270 025
+- **Company name:** Dovetail Research Pty. Ltd.
+- **Location:** Kirribilli, NSW 2061, Australia
+- **ABN:** 84 615 270 025
+- **ACN:** 615 270 025
 
 ### Additional information
 
