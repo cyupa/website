@@ -1,8 +1,9 @@
-import { ButtonLink, COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
+import { ButtonLink, COLORS, Flex, Flow, Item, LocationLink } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { Hero } from "@heydovetail/website/components/site/Hero";
 import { StaffMemberCard } from "@heydovetail/website/components/site/StaffMemberCard";
+import { Image } from "@heydovetail/website/components/util/Image";
 import { HALF_GAP, PADDING, VERTICAL_GAP, WIDTH } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
@@ -10,6 +11,7 @@ import { Helmet } from "react-helmet";
 import { Masonry } from "react-masonry-responsive";
 import benjamin from "./benjamin.jpg";
 import brad from "./brad.jpg";
+import map from "./map.png";
 
 export default class extends React.PureComponent {
   public render() {
@@ -136,6 +138,29 @@ export default class extends React.PureComponent {
                     marketing or sales. We prefer building intuitive experiences over documentation and tutorials. We prefer
                     building a great set of features that “sell themselves” over hiring a sales team. When we do work on things
                     that aren’t the product (for example, this website), we hold ourselves to a high standard.
+                  </p>
+                </Item>
+              </Flex>
+            </Item>
+            <Item>
+              <Flex styled={{ gap: 24, layout: "column" }}>
+                <Item>
+                  <h2>Our location</h2>
+                </Item>
+                <Item>
+                  <LocationLink location={{ internal: false, url: "https://goo.gl/maps/Zj7xnZzWLYG2", openInNewTab: true }}>
+                    <Image src={map} />
+                  </LocationLink>
+                </Item>
+                <Item>
+                  <p>
+                    <b>Dovetail</b>
+                    <br />
+                    251 Riley Street
+                    <br />
+                    Surry Hills NSW 2010
+                    <br />
+                    Sydney, Australia
                   </p>
                 </Item>
               </Flex>
