@@ -1,7 +1,7 @@
 ---
-date: "2018-09-07"
-path: "/legal/customer-terms"
-title: "Customer Terms of Service"
+date: "2018-08-06"
+path: "/legal/archive/customer-terms/2018-08-06"
+title: "Customer Terms of Service (2018-08-06)"
 weight: 1
 ---
 
@@ -71,13 +71,9 @@ We will use commercially reasonable efforts to make the Services available 24 ho
 
 The protection of Customer Data is a top priority for us so we will maintain administrative, physical, and technical safeguards. Those safeguards will include measures for preventing unauthorized access, use, modification, deletion and disclosure of Customer Data by our personnel. Before sharing Customer Data with any of our third party service providers, we will ensure that the third party maintains, at a minimum, reasonable data practices for maintaining the confidentiality and security of Customer Data and preventing unauthorized access. The Customer (not us) bears sole responsibility for adequate security, protection and backup of Customer Data when in the Customer’s or its representatives’ or agents’ possession or control. We are not responsible for what the Customer’s Authorized Users do with Customer Data. That is the Customer’s responsibility.
 
-We will notify Customer of any unauthorized access or misuse of Customer Data (a **“Data Breach”**) as soon as reasonably possible after discovery of the Data Breach. We will not notify any third-parties of the involvement of Customer’s Data in the Data Breach other than Customer without Customer’s prior written permission. We will immediately investigate and take appropriate remedial actions to mitigate the effects of the Data Breach. Such investigation and remediation activities shall be in accordance with applicable laws, regulations, industry standards, and industry best practices. Upon request, we will provide Customer with a summary report of its investigation and remediation activities.
-
 ## Data portability and deletion
 
-During the term of a team subscription, the Customer will be permitted to export or share certain Customer Data from the Services. However, because we have multiple, complex features, and the Customer has different retention options, the Customer acknowledges and agrees that the ability to export or share Customer Data may be limited or unavailable.
-
-Following termination or expiration of a team subscription, we will provide a period for Customer to download Customer Data, in so far as possible. Customer will have at least thirty (30) days to conduct the download (**“30-day download period”**). After the 30-day download period, we will have no obligation to maintain or provide any Customer Data and may thereafter, unless legally prohibited, delete all Customer Data in our systems or otherwise in our possession or under our control.
+During the term of a team subscription, the Customer will be permitted to export or share certain Customer Data from the Services. However, because we have multiple, complex features, and the Customer has different retention options, the Customer acknowledges and agrees that the ability to export or share Customer Data may be limited or unavailable. Following termination or expiration of a team’s subscriptions, we will have no obligation to maintain or provide any Customer Data and may thereafter, unless legally prohibited, delete all Customer Data in our systems or otherwise in our possession or under our control.
 
 ## Privacy Policies
 
@@ -216,8 +212,6 @@ but does not include information which:
 A party who receives Confidential Information under these Customer Terms agrees not to disclose it to any other party without the prior written consent of the other party.
 
 We will restrict disclosure of such Confidential Information only to such of our employees, agents or subcontractors that need to know it for discharging our obligations under these Customer Terms, and shall ensure that such employees, agents or subcontractors are subject to the same obligations of confidentiality.
-
-All Customer Data is Confidential Information for Customer. We shall use a commercially reasonable effort to protect Customer Data as they would protect their own data.
 
 ## Severability
 
