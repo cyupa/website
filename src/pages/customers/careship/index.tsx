@@ -77,8 +77,7 @@ export default class extends React.PureComponent {
               Instead I invite colleagues to frequently participate in user testing sessions.”
             </p>
             <blockquote>
-              “I want everyone at Careship to engage with our users and have their own first-hand learning experiences and
-              insights.”
+              “I want everyone at Careship to engage with our users and have their own first-hand learning experiences.”
             </blockquote>
             <p>
               The company is growing. Within the last six months Careship almost doubled in size—going from a small startup to a
