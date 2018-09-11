@@ -13,8 +13,8 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { media } from "typestyle";
 import { styled } from "typestyle-react";
-// import careshipHero from "./careship/1.jpg";
-// import careshipLogo from "./careship/logo.png";
+import careshipHero from "./careship/1.jpg";
+import careshipLogo from "./careship/logo.png";
 import ftwHero from "./ftw/1.jpg";
 import ftwLogo from "./ftw/logo.png";
 import intrepidHero from "./intrepid/1.jpg";
@@ -46,6 +46,16 @@ export default class extends React.PureComponent {
             <Item>
               <Articles>
                 <Article
+                  image={careshipHero}
+                  insetImage={careshipLogo}
+                  location={{ internal: true, path: "/customers/careship" }}
+                  title={
+                    <>
+                      <b>Careship</b> are fundamentally changing care in Europe
+                    </>
+                  }
+                />
+                <Article
                   image={intrepidHero}
                   insetImage={intrepidLogo}
                   location={{ internal: true, path: "/customers/intrepid" }}
@@ -55,16 +65,6 @@ export default class extends React.PureComponent {
                     </>
                   }
                 />
-                {/* <Article
-                  image={careshipHero}
-                  insetImage={careshipLogo}
-                  location={{ internal: true, path: "/customers/careship" }}
-                  title={
-                    <>
-                      <b>Careship</b> are fundamentally changing care in Europe
-                    </>
-                  }
-                /> */}
                 <Article
                   image={ftwHero}
                   insetImage={ftwLogo}

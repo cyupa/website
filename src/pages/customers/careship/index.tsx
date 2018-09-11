@@ -9,6 +9,9 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import image1 from "./1.jpg";
 import image2 from "./2.jpg";
+import image3 from "./3.jpg";
+import image4 from "./4.jpg";
+import image5 from "./5.jpg";
 import logo from "./logo.png";
 
 export default class extends React.PureComponent {
@@ -58,14 +61,14 @@ export default class extends React.PureComponent {
           <StyledContent>
             <h3>Challenge</h3>
             <p>
-              “We want to fundamentally change the way care is delivered”, according to Anne Büttner, a User Experience
-              Researcher at the Berlin-based startup Careship. They know that research is critical in order to become “the
-              largest and most used platform for care booking in Europe.”
+              Careship’s mission is to “fundamentally change the way care is delivered”, according to Anne Büttner, a User
+              Experience Researcher at the Berlin-based startup. Anne says Careship know that user research is critical for them
+              to become “the largest and most used platform for care booking in Europe.”
             </p>
             <p>
-              User research is employed at every step of the product development process. In the discovery phase, researchers
-              dig into their target group’s needs and pain points to identify product opportunities. They continue with
-              prototyping and testing to see which ideas solve their target group’s problems best, and for their finished
+              At Careship, user research is employed at every step of the product development process. In the discovery phase,
+              researchers dig into their target group’s needs and pain points to identify product opportunities. They continue
+              with prototyping and testing to see which ideas solve their target group’s problems best, and for their finished
               product, Careship conducts usability testing to continuously improve their user’s experience with their products.
             </p>
             <p>
@@ -90,6 +93,7 @@ export default class extends React.PureComponent {
               They are starting to enable product managers to conduct their own usability tests. This frees up Anne and the
               research &amp; design team to give them more time to engage in long-term strategic research projects.
             </p>
+            <PhotoGrid direction="row-reverse" image1={image3} image2={image4} image3={image5} />
             <h3>How Dovetail helps</h3>
             <blockquote>
               “Dovetail enables us to make use of research data even while the study is still running. This allows us to turn
@@ -112,16 +116,16 @@ export default class extends React.PureComponent {
               easy and adjustable! With the tagging system I can quickly gather all data of interest for very different teams”),
               and real time collaboration (“I feed all my data into Dovetail immediately so my colleagues can review it”).
             </p>
-            <blockquote>
-              “It’s easy to share insights in digestible bites. When more background information is needed we can access the
-              context of the insight with just one click.”
-            </blockquote>
             <p>
               Most of all, Dovetail lets Anne and her team share bite-sized user research insights with the rest of the
               organization, while keeping them directly linked to the raw source material. This lets Careship efficiently share
               knowledge around, helping them offer customers and caregivers the best tools to effectively organize, deliver and
               manage individual care across Europe.
             </p>
+            <blockquote>
+              “It’s easy to share insights in digestible bites. When more background information is needed we can access the
+              context of the insight with just one click.”
+            </blockquote>
           </StyledContent>
         </LightContainer>
       </PageLayout>
