@@ -11,7 +11,7 @@ export function SignUpButton() {
         </ButtonLink>
       </Item>
       <Item>
-        <SmallText>14 day free trial, no credit card required.</SmallText>
+        <SmallText>30 day free trial, no credit card required.</SmallText>
       </Item>
     </Flow>
   );

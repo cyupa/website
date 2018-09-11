@@ -15,7 +15,7 @@ export class IntervalToggle extends React.PureComponent<Props> {
       <Wrapper>
         <Label styled={{ yearly: !yearly }}>Pay monthly</Label>
         <ToggleSwitch alwaysPurple on={yearly} onToggle={onToggle} />
-        <Label styled={{ yearly }}>Pay yearly</Label>
+        <Label styled={{ yearly }}>Pay yearly (save 50%)</Label>
       </Wrapper>
     );
   }

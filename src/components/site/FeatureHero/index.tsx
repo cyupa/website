@@ -30,7 +30,7 @@ export class FeatureHero extends React.PureComponent<Props> {
       imagePosition = "right",
       launched = true,
       location,
-      linkText = "Try free for 14 days",
+      linkText = "Try free for 30 days",
       text,
       title
     } = this.props;

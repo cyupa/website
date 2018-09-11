@@ -47,7 +47,7 @@ export class SignupWithEmail extends React.PureComponent<Props, State> {
             </Flex>
           </Item>
           <Item>
-            <SmallText shade={shade}>14 day free trial, no credit card required.</SmallText>
+            <SmallText shade={shade}>30 day free trial, no credit card required.</SmallText>
           </Item>
         </Flex>
       </Center>
