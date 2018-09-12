@@ -1,4 +1,4 @@
-import { ButtonLink, COLORS, Flex, Flow, Item } from "@heydovetail/ui-components";
+import { COLORS, Flex, Item } from "@heydovetail/ui-components";
 import * as customers from "@heydovetail/website/components/icons/customers";
 import { Center } from "@heydovetail/website/components/layout/Center";
 import { LightContainer } from "@heydovetail/website/components/layout/LightContainer";
@@ -6,20 +6,20 @@ import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { ActionTextWithArrow } from "@heydovetail/website/components/site/ActionTextWithArrow";
 import { Faq } from "@heydovetail/website/components/site/Faq";
 import { Hero } from "@heydovetail/website/components/site/Hero";
-import { PricingCardOld } from "@heydovetail/website/components/site/PricingCardOld";
-import { HALF_GAP, MONTHLY_PRICE, MONTHLY_PRICE_IN_CENTS } from "@heydovetail/website/constants";
+import { Plans } from "@heydovetail/website/components/site/Plans";
+import Wave from "@heydovetail/website/components/site/Wave/Wave";
+import { HALF_GAP } from "@heydovetail/website/constants";
 import { locations } from "@heydovetail/website/routing/locations";
 import { CenteredSignUp } from "@heydovetail/website/sections/CenteredSignUp";
 import { CustomerLogos } from "@heydovetail/website/sections/CustomerLogos";
 import { FrequentlyAskedQuestions } from "@heydovetail/website/sections/FrequentlyAskedQuestions";
-import { TeamSizeSlider } from "@heydovetail/website/sections/TeamSizeSlider";
 import React from "react";
 import { Helmet } from "react-helmet";
 
 export default class extends React.PureComponent {
   public render() {
     const title = "Pricing";
-    const description = "Pay the same price each month regardless of your team size.";
+    const description = "Affordable plans for organizations of every stage, shape, and size.";
 
     return (
       <PageLayout>
@@ -29,112 +29,29 @@ export default class extends React.PureComponent {
           <meta property="og:description" content={description} />
           <meta name="description" content={description} />
         </Helmet>
-        <LightContainer>
+        <LightContainer maxWidth={976}>
           <Flex styled={{ gap: HALF_GAP / 2, layout: "column" }}>
             <Item>
-              <Hero center title="Fixed price per team." subtitle={description} />
+              <Hero center title="Simple, affordable pricing." text={description} />
             </Item>
             <Item>
-              <PricingCardOld
-                features={[
-                  "All features",
-                  "Unlimited projects",
-                  "Unlimited users",
-                  "Unlimited integrations",
-                  "Premium support"
-                ]}
-                price={MONTHLY_PRICE_IN_CENTS}
-              />
-            </Item>
-            <Item>
-              <Center>
-                <Flow>
-                  <Item>
-                    <ButtonLink color={COLORS.purple} height={40} location={locations.signUp()}>
-                      Start free trial
-                    </ButtonLink>
-                  </Item>
-                  <Item>
-                    <ButtonLink height={40} location={locations.demo()}>
-                      Book a demo
-                    </ButtonLink>
-                  </Item>
-                </Flow>
-              </Center>
+              <Plans />
             </Item>
           </Flex>
         </LightContainer>
-        <LightContainer backgroundColor={COLORS.p04}>
-          <TeamSizeSlider />
-        </LightContainer>
-        <LightContainer>
-          <FrequentlyAskedQuestions
-            faqs={[
-              <Faq
-                question="What does “per team” mean?"
-                answer={`You might be used to paying fees or licenses for each of your users. With Dovetail, whether you have 5 or 500 users, the price is always ${MONTHLY_PRICE} / month.`}
-              />,
-              <Faq
-                question="What does “all current &amp; future features” mean?"
-                answer="Cloud-based software means you don’t have to pay to download the latest version. All new features we release are included in your subscription."
-              />,
-              <Faq
-                question="How safe is our data?"
-                answer="We use industry-standard cloud infrastructure along with extra safeguards to ensure your data remains private and secure."
-                location={locations.security()}
-              />,
-              <Faq
-                question="Will we be charged when the trial’s up?"
-                answer="No, we don’t require a card upfront. If you want to continue using Dovetail at the end of your trial, we’ll ask for your credit card then."
-              />,
-              <Faq
-                question="What if we need a longer trial?"
-                answer="We’re happy to extend your trial for as long as you need. Just let us know if you need more time and we’ll sort it out straight away."
-              />,
-              <Faq
-                question="Can we cancel at any time?"
-                answer="Yes. You can cancel your subscription whenever you like, however we do not offer refunds if for a billing period you’ve already paid for."
-              />,
-              <Faq
-                question="Can we pay yearly?"
-                answer="Yes. When upgrading your team, you can choose to pay monthly or yearly. If you’re not sure, you can switch from monthly to yearly billing later on."
-              />,
-              <Faq
-                question="Do you offer product demos?"
-                answer="We sure do. We’re happy to give you a walkthrough over a video call, or if you’re in Sydney, we can pop into your office."
-                location={locations.demo()}
-                linkText="Schedule a demo →"
-              />,
-              <Faq
-                question="How do you compare to similar tools?"
-                answer="Depending on what you’re thinking of, Dovetail might be more collaborative, more intuitive, or cheaper."
-                location={{
-                  internal: false,
-                  url:
-                    "https://www.quora.com/How-does-Dovetail-compare-to-other-research-software-on-the-market/answer/Benjamin-Humphrey",
-                  openInNewTab: true
-                }}
-                linkText="Check out our answer on Quora →"
-              />,
-              <Faq
-                question="What’s the catch?"
-                answer="There isn’t one! We’re simply tired of expensive, unintuitive software with lock-in contracts, annoying salespeople, and opaque pricing."
-              />
-            ]}
-          />
-        </LightContainer>
+        <Wave color={COLORS.p04} size="100%" />
         <LightContainer backgroundColor={COLORS.p04}>
           <Flex styled={{ gap: HALF_GAP, layout: "column" }}>
             <Item>
               <CustomerLogos
                 customers={[
-                  customers.airteam,
                   customers.arm,
-                  customers.enigma,
+                  customers.careship,
                   customers.freshworks,
                   customers.hotelscombined,
-                  customers.monotype,
+                  customers.ocado,
                   customers.rbs,
+                  customers.spotify,
                   customers.uniqa
                 ]}
               />
@@ -147,6 +64,65 @@ export default class extends React.PureComponent {
           </Flex>
         </LightContainer>
         <LightContainer>
+          <FrequentlyAskedQuestions
+            faqs={[
+              <Faq
+                question="What’s a project?"
+                answer="A project is a container for your work. A single project might contain a set of user testing sessions, customer interviews, NPS feedback, etc."
+              />,
+              <Faq
+                question="What do you mean by unlimited users?"
+                answer="You might be used to buying one software license for every user. With Dovetail, whether you have 5 or 500 users, the price is always the same."
+              />,
+              <Faq
+                question="What if we need a longer trial?"
+                answer="We’re happy to extend your trial for as long as you need. Just let us know if you need more time and we’ll sort it out straight away."
+              />,
+              <Faq
+                question="Will we be charged when the trial’s up?"
+                answer="No, we don’t require a card upfront. If you want to continue using Dovetail at the end of your trial, we’ll ask for your credit card then."
+              />,
+              <Faq
+                question="Do you offer product demos?"
+                answer="We sure do. We’re happy to give you a walkthrough over a video call, or if you’re in Sydney, we can pop into your office."
+                location={locations.demo()}
+                linkText="Schedule a demo →"
+              />,
+              <Faq
+                question="Can we cancel at any time?"
+                answer="Yes. You can cancel your subscription whenever you like, however we do not offer refunds for a billing period you’ve already paid for."
+              />,
+              <Faq
+                question="How safe is our data?"
+                answer="We use industry-standard cloud infrastructure along with extra safeguards to ensure your data remains private and secure."
+                linkText="Security →"
+                location={locations.security()}
+              />,
+              <Faq
+                question="Are you GDPR compliant?"
+                answer="Yes. We’re GDPR ready with a privacy-by-design architecture, clear privacy policies, and an optional DPA available if required."
+                linkText="Terms and policies →"
+                location={locations.legal()}
+              />,
+              <Faq
+                question="Do you have any case studies?"
+                answer="Yes. See how other companies get value out of Dovetail by checking out our customer success stories and testimonials."
+                linkText="Customer stories →"
+                location={locations.customers()}
+              />,
+              <Faq
+                question="How do you compare to similar tools?"
+                answer="Depending on what you’re thinking of, Dovetail might be more collaborative, more intuitive, or cheaper."
+                linkText="Check out our answer on Quora →"
+                location={{
+                  internal: false,
+                  url:
+                    "https://www.quora.com/How-does-Dovetail-compare-to-other-research-software-on-the-market/answer/Benjamin-Humphrey",
+                  openInNewTab: true
+                }}
+              />
+            ]}
+          />
           <CenteredSignUp />
         </LightContainer>
       </PageLayout>

@@ -18,7 +18,7 @@ interface Plan {
 
 export const PLAN_DETAILS: Plan[] = [
   {
-    amountMonthly: 1900,
+    amountMonthly: 1800,
     amountYearly: 900,
     coreFeatures: ["Only 1 project", "Only text and images", "Unlimited users"],
     current: false,
@@ -28,7 +28,7 @@ export const PLAN_DETAILS: Plan[] = [
     projectLimit: 1
   },
   {
-    amountMonthly: 7900,
+    amountMonthly: 9800,
     amountYearly: 4900,
     coreFeatures: ["Up to 3 projects", "Text, images, files", "Unlimited users"],
     current: false,
@@ -38,7 +38,7 @@ export const PLAN_DETAILS: Plan[] = [
     projectLimit: 3
   },
   {
-    amountMonthly: 9900,
+    amountMonthly: 15800,
     amountYearly: 7900,
     coreFeatures: ["Up to 10 projects", "Text, images, files", "Unlimited users"],
     current: false,
@@ -48,7 +48,7 @@ export const PLAN_DETAILS: Plan[] = [
     projectLimit: 10
   },
   {
-    amountMonthly: 24900,
+    amountMonthly: 39800,
     amountYearly: 19900,
     coreFeatures: ["Up to 100 projects", "Text, images, files", "Unlimited users"],
     current: false,
