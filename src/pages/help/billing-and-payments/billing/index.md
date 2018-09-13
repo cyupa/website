@@ -1,5 +1,5 @@
 ---
-date: "2018-04-11"
+date: "2018-09-13"
 path: "/help/billing"
 title: "Upgrade to a paid subscription"
 weight: 1
