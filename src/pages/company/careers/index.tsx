@@ -1,4 +1,4 @@
-import { ButtonLink, COLORS, Flex, Flow, Item, SmallText } from "@heydovetail/ui-components";
+import { ButtonLink, COLORS, Flex, Item, SmallText } from "@heydovetail/ui-components";
 import { Container } from "@heydovetail/website/components/layout/Container";
 import { PageLayout } from "@heydovetail/website/components/layout/PageLayout";
 import { Hero } from "@heydovetail/website/components/site/Hero";
