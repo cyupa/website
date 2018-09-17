@@ -113,6 +113,7 @@ export const locations = {
   about: () => internal("/company/about"),
   blog: () => external("https://dovetail.blog", { openInNewTab: true }),
   capterra: () => external("https://www.capterra.com/p/174077/Dovetail/", { openInNewTab: true }),
+  careers: () => internal("/company/careers"),
   customers: () => internal("/customers"),
   demo: () => external("https://calendly.com/benjaminhumphrey/demo/", { openInNewTab: true }),
   email: () => external("mailto:hello@dovetailapp.com", { openInNewTab: true }),
