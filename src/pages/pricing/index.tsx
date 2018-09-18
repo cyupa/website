@@ -71,7 +71,15 @@ export default class extends React.PureComponent {
                 answer="A project is a container for your work. A single project might contain a set of user testing sessions, customer interviews, NPS feedback, etc."
               />,
               <Faq
-                question="What do you mean by unlimited users?"
+                question="What does the project limit include?"
+                answer="Each plan’s project limit is the total number of projects in your team at any one time. This includes both active and archived projects."
+              />,
+              <Faq
+                question="How many projects do we need?"
+                answer="It depends how you’d like to segment your work and how much data you have. We recommend teams start with 1 – 3 projects and see how it goes."
+              />,
+              <Faq
+                question="What does unlimited users mean?"
                 answer="You might be used to buying one software license for every user. With Dovetail, whether you have 5 or 500 users, the price is always the same."
               />,
               <Faq
