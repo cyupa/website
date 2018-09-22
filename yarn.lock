@@ -750,9 +750,9 @@
     tslib "^1.9.0"
     yargs "^11.0.0"
 
-"@heydovetail/tslint-config@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@heydovetail/tslint-config/-/tslint-config-2.1.1.tgz#5d246e41af89221829b05e85534ecf4fe5b22def"
+"@heydovetail/tslint-config@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@heydovetail/tslint-config/-/tslint-config-2.3.1.tgz#677e9dcfe8165598e1663faec28f9f17bd1b2a14"
   dependencies:
     tslint-microsoft-contrib "^5.0.2"
 
