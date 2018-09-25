@@ -30,7 +30,7 @@ export const PLAN_DETAILS: Plan[] = [
   {
     amountMonthly: 9800,
     amountYearly: 4900,
-    coreFeatures: ["Up to 3 projects", "Text, images, files", "Unlimited users"],
+    coreFeatures: ["3 projects total", "Text, images, files", "Unlimited users"],
     current: false,
     extraFeatures: ["Email support", "Knowledge base", "Slack community"],
     highlighted: false,
@@ -40,7 +40,7 @@ export const PLAN_DETAILS: Plan[] = [
   {
     amountMonthly: 15800,
     amountYearly: 7900,
-    coreFeatures: ["Up to 10 projects", "Text, images, files", "Unlimited users"],
+    coreFeatures: ["10 projects total", "Text, images, files", "Unlimited users"],
     current: false,
     extraFeatures: ["Priority email support", "Knowledge base", "Slack community"],
     highlighted: true,
@@ -50,7 +50,7 @@ export const PLAN_DETAILS: Plan[] = [
   {
     amountMonthly: 39800,
     amountYearly: 19900,
-    coreFeatures: ["Up to 100 projects", "Text, images, files", "Unlimited users"],
+    coreFeatures: ["100 projects total", "Text, images, files", "Unlimited users"],
     current: false,
     extraFeatures: ["Account manager", "Pay by invoice", "Priority email support", "Knowledge base", "Slack community"],
     highlighted: false,
