@@ -98,7 +98,7 @@ export default class extends React.PureComponent<{}, State> {
                         answer="A project is a container for your work. A single project might contain a set of user testing sessions, customer interviews, NPS feedback, etc."
                       />,
                       <Faq
-                        question="What does the project limit include?"
+                        question="What does “projects total” include?"
                         answer="Each plan’s project limit is the total number of projects in your team at any one time. This includes both active and archived projects."
                       />,
                       <Faq
@@ -106,7 +106,11 @@ export default class extends React.PureComponent<{}, State> {
                         answer="It depends how you’d like to segment your work and how much data you have. We recommend teams start with 1 – 3 projects and see how it goes."
                       />,
                       <Faq
-                        question="What does unlimited users mean?"
+                        question="What does “file upload limit” mean?"
+                        answer="You can add unlimited files to Dovetail notes and insights, however the file upload limit restricts the maximum size each file can be."
+                      />,
+                      <Faq
+                        question="What does “unlimited users” mean?"
                         answer="You might be used to buying one software license for every user. With Dovetail, whether you have 5 or 500 users, the price is always the same."
                       />,
                       <Faq
@@ -122,10 +126,6 @@ export default class extends React.PureComponent<{}, State> {
                         answer="We sure do. We’re happy to give you a walkthrough over a video call, or if you’re in Sydney, we can pop into your office."
                         location={locations.demo()}
                         linkText="Schedule a demo →"
-                      />,
-                      <Faq
-                        question="Can we cancel at any time?"
-                        answer="Yes. You can cancel your subscription whenever you like, however we do not offer refunds for a billing period you’ve already paid for."
                       />,
                       <Faq
                         question="How safe is our data?"
@@ -155,6 +155,14 @@ export default class extends React.PureComponent<{}, State> {
                             "https://www.quora.com/How-does-Dovetail-compare-to-other-research-software-on-the-market/answer/Benjamin-Humphrey",
                           openInNewTab: true
                         }}
+                      />,
+                      <Faq
+                        question="Can we cancel at any time?"
+                        answer="Yes. You can cancel your subscription whenever you like, however we do not offer refunds for a billing period you’ve already paid for."
+                      />,
+                      <Faq
+                        question="What happens if we cancel?"
+                        answer="If you choose to cancel your subscription, all of your projects will become read only (not editable) until you subscribe again."
                       />
                     ]}
                   />
