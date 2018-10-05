@@ -72,14 +72,14 @@ export default class extends React.PureComponent<{}, State> {
                     <Item>
                       <CustomerLogos
                         customers={[
+                          customers.airbnb,
                           customers.arm,
-                          customers.careship,
                           customers.freshworks,
-                          customers.hotelscombined,
+                          customers.hotelsCombined,
                           customers.ocado,
                           customers.rbs,
                           customers.spotify,
-                          customers.uniqa
+                          customers.wework
                         ]}
                       />
                     </Item>

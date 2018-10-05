@@ -41,7 +41,7 @@ export class SocialProof extends React.PureComponent<Props> {
                 customers.barnardos,
                 customers.elsevier,
                 customers.freshworks,
-                customers.hotelscombined,
+                customers.hotelsCombined,
                 customers.ocado,
                 customers.monotype,
                 customers.spotify,

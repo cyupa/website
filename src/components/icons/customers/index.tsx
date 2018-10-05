@@ -1,3 +1,4 @@
+import logoAirbnb from "./logos/airbnb.svg";
 import logoAirteam from "./logos/airteam.svg";
 import logoArm from "./logos/arm.svg";
 import logoAtlassian from "./logos/atlassian.svg";
@@ -12,7 +13,7 @@ import logoEnigma from "./logos/enigma.svg";
 import logoFreshworks from "./logos/freshworks.svg";
 import logoFtw from "./logos/ftw.svg";
 import logoHarvard from "./logos/harvard.svg";
-import logoHotelscombined from "./logos/hotelscombined.svg";
+import logoHotelsCombined from "./logos/hotelscombined.svg";
 import logoIbm from "./logos/ibm.svg";
 import logoIdeo from "./logos/ideo.svg";
 import logoKickstand from "./logos/kickstand.svg";
@@ -25,13 +26,17 @@ import logoOcado from "./logos/ocado.svg";
 import logoPearson from "./logos/pearson.svg";
 import logoRbs from "./logos/rbs.svg";
 import logoRmit from "./logos/rmit.svg";
+import logoSalesforce from "./logos/salesforce.svg";
 import logoSchibsted from "./logos/schibsted.svg";
 import logoScout24 from "./logos/scout24.svg";
 import logoSeek from "./logos/seek.svg";
+import logoShopify from "./logos/shopify.svg";
+import logoSkillsoft from "./logos/skillsoft.svg";
 import logoSpotify from "./logos/spotify.svg";
 import logoUcSanDiego from "./logos/uc-san-diego.svg";
 import logoUniqa from "./logos/uniqa.svg";
 import logoWestpac from "./logos/westpac.svg";
+import logoWework from "./logos/wework.svg";
 import logoZillow from "./logos/zillow.svg";
 
 export interface Customer {
@@ -39,6 +44,7 @@ export interface Customer {
   url: string;
 }
 
+export const airbnb: Customer = { logo: logoAirbnb, url: "https://airbnb.com" };
 export const airteam: Customer = { logo: logoAirteam, url: "https://airteam.com.au" };
 export const arm: Customer = { logo: logoArm, url: "https://arm.com" };
 export const atlassian: Customer = { logo: logoAtlassian, url: "https://atlassian.com" };
@@ -53,7 +59,7 @@ export const enigma: Customer = { logo: logoEnigma, url: "https://enigma.swiss/e
 export const freshworks: Customer = { logo: logoFreshworks, url: "https://freshworks.com" };
 export const ftw: Customer = { logo: logoFtw, url: "https://ftw.nyc" };
 export const harvard: Customer = { logo: logoHarvard, url: "https://harvard.edu" };
-export const hotelscombined: Customer = { logo: logoHotelscombined, url: "https://hotelscombined.com" };
+export const hotelsCombined: Customer = { logo: logoHotelsCombined, url: "https://hotelscombined.com" };
 export const ibm: Customer = { logo: logoIbm, url: "https://ibm.com" };
 export const ideo: Customer = { logo: logoIdeo, url: "https://ideo.com" };
 export const kickstand: Customer = { logo: logoKickstand, url: "http://kickstand.design" };
@@ -66,11 +72,15 @@ export const ocado: Customer = { logo: logoOcado, url: "https://ocado.com" };
 export const pearson: Customer = { logo: logoPearson, url: "https://pearson.com" };
 export const rbs: Customer = { logo: logoRbs, url: "https://rbs.com" };
 export const rmit: Customer = { logo: logoRmit, url: "https://rmit.edu.au" };
+export const salesforce: Customer = { logo: logoSalesforce, url: "https://salesforce.com" };
 export const schibsted: Customer = { logo: logoSchibsted, url: "https://schibsted.com/" };
 export const scout24: Customer = { logo: logoScout24, url: "https://scout24.ch" };
 export const seek: Customer = { logo: logoSeek, url: "https://seek.com" };
+export const shopify: Customer = { logo: logoShopify, url: "https://shopify.com" };
+export const skillsoft: Customer = { logo: logoSkillsoft, url: "https://skillsoft.com" };
 export const spotify: Customer = { logo: logoSpotify, url: "https://spotify.com" };
 export const ucSanDiego: Customer = { logo: logoUcSanDiego, url: "https://ucsd.edu" };
 export const uniqa: Customer = { logo: logoUniqa, url: "http://uniqagroup.com" };
-export const westpac: Customer = { logo: logoWestpac, url: "https://www.westpac.com.au" };
-export const zillow: Customer = { logo: logoZillow, url: "https://www.zillow.com" };
+export const westpac: Customer = { logo: logoWestpac, url: "https://westpac.com.au" };
+export const wework: Customer = { logo: logoWework, url: "https://wework.com" };
+export const zillow: Customer = { logo: logoZillow, url: "https://zillow.com" };

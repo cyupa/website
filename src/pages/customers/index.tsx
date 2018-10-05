@@ -83,6 +83,7 @@ export default class extends React.PureComponent {
         <LightContainer backgroundColor={COLORS.p04}>
           <CustomerLogos
             customers={[
+              customers.airbnb,
               customers.airteam,
               customers.arm,
               customers.atlassian,
@@ -96,7 +97,7 @@ export default class extends React.PureComponent {
               customers.freshworks,
               customers.ftw,
               customers.harvard,
-              customers.hotelscombined,
+              customers.hotelsCombined,
               customers.ideo,
               customers.kickstand,
               customers.monotype,
@@ -106,10 +107,13 @@ export default class extends React.PureComponent {
               customers.pearson,
               customers.rbs,
               customers.rmit,
+              customers.salesforce,
               customers.schibsted,
               customers.scout24,
+              customers.shopify,
               customers.spotify,
               customers.uniqa,
+              customers.wework,
               customers.westpac
             ]}
           />
