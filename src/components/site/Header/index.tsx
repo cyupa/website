@@ -42,7 +42,7 @@ export class Header extends React.PureComponent<Props> {
 const Wrapper = styled("div", ({ dark }: { dark: boolean }) => ({
   backgroundColor: dark ? COLORS.indigo : COLORS.white,
   color: COLORS.i60,
-  padding: "16px 24px"
+  padding: "12px 24px"
 }));
 
 export const ThemeColor = styled("div", ({ dark }: { dark: boolean }) => ({
