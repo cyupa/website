@@ -38,7 +38,7 @@ export default class extends React.PureComponent<Props> {
             <Item>
               <Flex styled={{ gap: 48, layout: "column" }}>
                 <Item>
-                  <Hero center title="Integrations" subtitle="Connect thousands of your favorite apps." />
+                  <Hero center title="Integrations" subtitle="Connect thousands of your favorite apps through Zapier." />
                 </Item>
                 <Item>
                   <Masonry
