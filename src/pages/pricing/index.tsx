@@ -85,7 +85,11 @@ export default class extends React.PureComponent<{}, State> {
                     </Item>
                     <Item>
                       <Center>
-                        <ActionTextWithArrow color={COLORS.purple} location={locations.customers()} text="See our customers" />
+                        <ActionTextWithArrow
+                          color={COLORS.purple}
+                          location={locations.customers()}
+                          text="Learn more about our customers"
+                        />
                       </Center>
                     </Item>
                   </Flex>
