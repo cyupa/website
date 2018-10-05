@@ -38,7 +38,7 @@ export class MobileMenu extends React.PureComponent<Props> {
             </Item>
             <Item>
               <LinkList
-                heading="Use cases"
+                heading="Product"
                 links={[
                   { label: "Qualitative data analysis", location: locations.qualitativeDataAnalysis(), onClick: onClose },
                   { label: "Collaborative user research", location: locations.userResearch(), onClick: onClose },

@@ -32,19 +32,22 @@ export class UseCase extends React.PureComponent<Props> {
 
 const linkClassName = style({
   borderRadius: BORDER_RADIUS,
-  color: COLORS.indigo,
+  color: COLORS.i60,
   display: "block",
+  fontWeight: 500,
   lineHeight: "20px",
   textAlign: "center",
   padding: "8px 12px",
 
   $nest: {
     "&:hover": {
-      backgroundColor: COLORS.i04
+      backgroundColor: COLORS.i04,
+      color: COLORS.purple
     },
     "&:focus": {
       backgroundColor: COLORS.i04,
-      boxShadow: BOX_SHADOW_FOCUS
+      boxShadow: BOX_SHADOW_FOCUS,
+      color: COLORS.purple
     }
   }
 });

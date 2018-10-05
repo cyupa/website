@@ -26,22 +26,28 @@ export class Footer extends React.PureComponent<Props> {
           <Flow styled={{ gap: 64, rowGap: 64 }}>
             <Item style={{ verticalAlign: "top" }}>
               <LinkList
-                heading="Use cases"
+                heading="Product"
                 links={[
                   { label: "Qualitative data analysis", location: locations.qualitativeDataAnalysis() },
                   { label: "Collaborative user research", location: locations.userResearch() },
-                  { label: "Research repository", location: locations.researchRepository() }
+                  { label: "User research repository", location: locations.researchRepository() },
+                  { label: "Customers", location: locations.customers() },
+                  { label: "Features", location: locations.features() },
+                  { label: "Integrations", location: locations.integrations() },
+                  { label: "Pricing", location: locations.pricing() }
                 ]}
               />
             </Item>
             <Item style={{ verticalAlign: "top" }}>
               <LinkList
-                heading="Product"
+                heading="Company"
                 links={[
-                  { label: "Features", location: locations.features() },
-                  { label: "Integrations", location: locations.integrations() },
-                  { label: "Pricing", location: locations.pricing() },
-                  { label: "Security", location: locations.security() }
+                  { label: "About us", location: locations.about() },
+                  { label: "Careers", location: locations.careers() },
+                  { label: "Open source", location: locations.github() },
+                  { label: "Slack community", location: locations.slack() },
+                  { label: "Medium blog", location: locations.blog() },
+                  { label: "Twitter", location: locations.twitter() }
                 ]}
               />
             </Item>
@@ -51,30 +57,18 @@ export class Footer extends React.PureComponent<Props> {
                 links={[
                   { label: "Help Center", location: locations.help() },
                   { label: "Research Guides", location: locations.guides() },
-                  { label: "Terms of Service", location: locations.termsCustomer() },
-                  { label: "Privacy Policy", location: locations.privacy() }
+                  { label: "Security", location: locations.security() },
+                  { label: "Log in", location: locations.logIn() }
                 ]}
               />
             </Item>
             <Item style={{ verticalAlign: "top" }}>
               <LinkList
-                heading="Contact"
+                heading="Legal"
                 links={[
-                  { label: "Blog", location: locations.blog() },
-                  { label: "Slack", location: locations.slack() },
-                  { label: "Twitter", location: locations.twitter() },
-                  { label: "Email", location: locations.email() }
-                ]}
-              />
-            </Item>
-            <Item style={{ verticalAlign: "top" }}>
-              <LinkList
-                heading="Company"
-                links={[
-                  { label: "About us", location: locations.about() },
-                  { label: "Customers", location: locations.customers() },
-                  { label: "Open source", location: locations.github() },
-                  { label: "We’re hiring!", location: locations.careers() }
+                  { label: "Customer Terms of Service", location: locations.termsCustomer() },
+                  { label: "Website Visitor Privacy Policy", location: locations.websitePrivacy() },
+                  { label: "User Privacy Policy", location: locations.privacy() }
                 ]}
               />
             </Item>

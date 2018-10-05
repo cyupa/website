@@ -40,7 +40,7 @@ export default class extends React.PureComponent {
               <Hero
                 center={false}
                 subtitle="See how organizations of all shapes and sizes get value from Dovetail."
-                title="Customer stories"
+                title="Customers"
               />
             </Item>
             <Item>

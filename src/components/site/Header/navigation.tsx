@@ -45,7 +45,7 @@ export class Navigation extends React.PureComponent<Props> {
                         <ThemeColor styled={{ dark }}>
                           <SubtleButton {...props}>
                             <Flow styled={{ gap: 4 }}>
-                              <Item>Use cases</Item>
+                              <Item>Product</Item>
                               <Item>
                                 <IconChevronDownMini />
                               </Item>
@@ -60,12 +60,12 @@ export class Navigation extends React.PureComponent<Props> {
                 </Item>
                 <Item>
                   <ThemeColor styled={{ dark }}>
-                    <SubtleButtonLink location={locations.features()}>Features</SubtleButtonLink>
+                    <SubtleButtonLink location={locations.customers()}>Customers</SubtleButtonLink>
                   </ThemeColor>
                 </Item>
                 <Item>
                   <ThemeColor styled={{ dark }}>
-                    <SubtleButtonLink location={locations.customers()}>Customers</SubtleButtonLink>
+                    <SubtleButtonLink location={locations.features()}>Features</SubtleButtonLink>
                   </ThemeColor>
                 </Item>
                 <Item>
