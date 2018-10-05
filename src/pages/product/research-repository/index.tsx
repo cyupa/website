@@ -8,7 +8,7 @@ import illustrationImport from "@heydovetail/website/components/illustrations/im
 import illustrationInsights from "@heydovetail/website/components/illustrations/insights.svg";
 import illustrationProjectsResearch from "@heydovetail/website/components/illustrations/projects-research.svg";
 import illustrationSearchLarge from "@heydovetail/website/components/illustrations/search-large.svg";
-import illustrationSoftware from "@heydovetail/website/components/illustrations/software.svg";
+import illustrationSpace from "@heydovetail/website/components/illustrations/space.svg";
 import illustrationTeam from "@heydovetail/website/components/illustrations/team.svg";
 import { DarkContainer } from "@heydovetail/website/components/layout/DarkContainer";
 import { LightContainer } from "@heydovetail/website/components/layout/LightContainer";
@@ -46,7 +46,7 @@ export default class extends React.PureComponent {
         </Helmet>
         <LightContainer>
           <Hero
-            image={illustrationSoftware}
+            image={illustrationSpace}
             maxTextWidth={HERO_TEXT_WIDTH}
             title="Keep all of your user research in one place."
             showSignUp

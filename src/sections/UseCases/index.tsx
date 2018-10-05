@@ -1,5 +1,4 @@
 import { Flex, FlexWrap, Item } from "@heydovetail/ui-components";
-import pictogramFeedback from "@heydovetail/website/components/icons/pictograms/feedback.svg";
 import pictogramQda from "@heydovetail/website/components/icons/pictograms/qda.svg";
 import pictogramRepository from "@heydovetail/website/components/icons/pictograms/repository.svg";
 import pictogramResearch from "@heydovetail/website/components/icons/pictograms/research.svg";
@@ -20,23 +19,7 @@ export class UseCases extends React.PureComponent<Props> {
     const { onClick, showTitle = false } = this.props;
 
     const useCases = (
-      <FlexWrap styled={{ growItems: true, maxChildWidth: 336, gap: 32 }}>
-        <Item style={{ minWidth: 0 }}>
-          <UseCaseCard
-            image={pictogramFeedback}
-            location={locations.feedbackManagement()}
-            onClick={onClick}
-            text="Feedback management"
-          />
-        </Item>
-        <Item style={{ minWidth: 0 }}>
-          <UseCaseCard
-            image={pictogramRepository}
-            location={locations.researchRepository()}
-            onClick={onClick}
-            text="User research repository"
-          />
-        </Item>
+      <FlexWrap styled={{ growItems: true, maxChildWidth: 256, gap: 32 }}>
         <Item style={{ minWidth: 0 }}>
           <UseCaseCard
             image={pictogramQda}
@@ -51,6 +34,14 @@ export class UseCases extends React.PureComponent<Props> {
             location={locations.userResearch()}
             onClick={onClick}
             text="Collaborative user research"
+          />
+        </Item>
+        <Item style={{ minWidth: 0 }}>
+          <UseCaseCard
+            image={pictogramRepository}
+            location={locations.researchRepository()}
+            onClick={onClick}
+            text="User research repository"
           />
         </Item>
       </FlexWrap>

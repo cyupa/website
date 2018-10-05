@@ -17,27 +17,23 @@ export class UseCaseCard extends React.PureComponent<Props> {
     const { image, location, onClick, text } = this.props;
     return (
       <LocationLink className={linkClassName} location={location} onClick={onClick}>
-        <Flex styled={{ alignItems: "center", gap: 24 }}>
+        <Flex styled={{ alignItems: "center", gap: 16, layout: "column" }}>
           <Item style={{ flexGrow: 0 }}>
             <Image src={image} />
           </Item>
-          <Item style={{ minWidth: 0 }}>
-            <Flex styled={{ gap: 8, layout: "column" }}>
-              <Item
-                style={{
-                  color: COLORS.indigo,
-                  lineHeight: "24px",
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                  whiteSpace: "nowrap"
-                }}
-              >
-                {text}
-              </Item>
-              <Item style={{ color: COLORS.purple, fontSize: "14px" }}>
-                <ActionTextWithArrow />
-              </Item>
-            </Flex>
+          <Item
+            style={{
+              color: COLORS.indigo,
+              lineHeight: "24px",
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+              whiteSpace: "nowrap"
+            }}
+          >
+            {text}
+          </Item>
+          <Item style={{ color: COLORS.purple, fontSize: "14px" }}>
+            <ActionTextWithArrow />
           </Item>
         </Flex>
       </LocationLink>

@@ -28,10 +28,9 @@ export class Footer extends React.PureComponent<Props> {
               <LinkList
                 heading="Use cases"
                 links={[
-                  { label: "Feedback management", location: locations.feedbackManagement() },
-                  { label: "Research repository", location: locations.researchRepository() },
                   { label: "Qualitative data analysis", location: locations.qualitativeDataAnalysis() },
-                  { label: "Collaborative user research", location: locations.userResearch() }
+                  { label: "Collaborative user research", location: locations.userResearch() },
+                  { label: "Research repository", location: locations.researchRepository() }
                 ]}
               />
             </Item>

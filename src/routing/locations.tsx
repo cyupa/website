@@ -123,7 +123,6 @@ export const locations = {
   featuresHighlights: () => internal("/features/highlights"),
   featuresProjects: () => internal("/features/projects"),
   featuresSearch: () => internal("/features/search"),
-  feedbackManagement: () => internal("/product/customer-feedback"),
   github: () => external("https://github.com/heydovetail", { openInNewTab: true }),
   guides: () => internal("/guides"),
   help: () => internal("/help"),

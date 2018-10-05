@@ -40,7 +40,7 @@ export class Navigation extends React.PureComponent<Props> {
                 <Item>
                   <WaitForJs>
                     <Menu
-                      align="right"
+                      align="left"
                       trigger={props => (
                         <ThemeColor styled={{ dark }}>
                           <SubtleButton {...props}>

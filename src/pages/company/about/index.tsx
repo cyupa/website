@@ -42,7 +42,7 @@ export default class extends React.PureComponent {
                       <p>
                         We started Dovetail because we believe that deeply understanding one’s customers is the secret
                         ingredient to making great products. Therefore our mission is to help teams collect, organize, analyze,
-                        and collaborate on customer feedback and user research.
+                        and collaborate on user research data.
                       </p>
                     </Item>
                     <Item>

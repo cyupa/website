@@ -5,7 +5,7 @@ title: "Tips for organizing your content"
 weight: 1
 ---
 
-Not unlike Trello, Google Docs, or a spreadsheet, Dovetail is intentionally designed to be a very flexible tool in order to work with a variety of use cases for customer feedback and user research organization and analysis.
+Not unlike Trello, Google Docs, or a spreadsheet, Dovetail is intentionally designed to be a very flexible tool in order to work with a variety of use cases for user research organization and analysis.
 
 It’s important to understand the purpose of each of the key features and concepts present in the product — and how they relate to one another — so you can make an informed decision on how to organize content for your use case.
 

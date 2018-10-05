@@ -20,7 +20,7 @@ export default class extends React.PureComponent {
   public render() {
     const title = "Features";
     const description =
-      "Powerful features designed to help you organize and analyze qualitative customer feedback and user research data.";
+      "Powerful features designed to help you organize, analyze, and share qualitative user research and insights.";
 
     return (
       <PageLayout>
@@ -61,7 +61,7 @@ export default class extends React.PureComponent {
             imagePosition="left"
             location={locations.featuresProjects()}
             linkText="Learn more"
-            text="Organize feedback and user research with an intuitive drag and drop board, integrations, charts, insights, and more."
+            text="Organize your user research data with an intuitive drag and drop board, integrations, charts, insights, and more."
             title="Projects"
           />
           <FeatureHero
@@ -92,16 +92,13 @@ export default class extends React.PureComponent {
               { title: "Import", text: "Create notes, tags, and insights via a spreadsheet" },
               { title: "Insights", text: "Summarize and share research insights during analysis" },
               { title: "Knowledge base", text: "Detailed help documentation with walkthroughs" },
-              { title: "Line chart", text: "Keep track of changes in your data over time" },
               { title: "Mobile", text: "Browse notes, tags, and insights on your phone or tablet" },
               { title: "Notes", text: "Take notes in our easy-to-use rich text editor" },
               { title: "Premium support", text: "Quick responses to questions and issues via email" },
               { title: "Projects", text: "Organize data into projects and create unique tag sets" },
               { title: "Real time collaboration", text: "Collaborate on notes with others in real time" },
               { title: "Quick edit", text: "Edit notes, tags, and insights without leaving your context" },
-              { title: "Search match types", text: "Filter search results by fuzzy or exact matches" },
               { title: "Sentiment analysis", text: "Automatically analyze the sentiment of text" },
-              { title: "Single sign-on", text: "Let people join your team with domain-restricted sign up" },
               { title: "Slack community", text: "Chat with our team and other researchers on Slack" },
               { title: "Teams", text: "Collaborate with people across your organization" },
               { title: "Unlimited users", text: "Invite as many users as you like for no extra cost" },

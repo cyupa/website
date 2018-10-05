@@ -95,7 +95,7 @@ export default class extends React.PureComponent<{}, State> {
                     faqs={[
                       <Faq
                         question="What’s a project?"
-                        answer="A project is a container for your work. A single project might contain a set of user testing sessions, customer interviews, NPS feedback, etc."
+                        answer="A project is a container for your work. A single project might contain a set of user testing sessions, customer interviews, NPS responses, etc."
                       />,
                       <Faq
                         question="What does “projects total” include?"

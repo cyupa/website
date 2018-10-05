@@ -4,32 +4,32 @@ import React from "react";
 import { Hero } from "../";
 
 storiesOf("Site/Hero", module)
-  .add("Centered", () => <Hero center title="Understand your customers" />)
-  .add("Simple", () => <Hero title="Understand your customers" />)
+  .add("Centered", () => <Hero center title="The research platform for teams." />)
+  .add("Simple", () => <Hero title="The research platform for teams." />)
   .add("Subtitle", () => (
     <Hero
-      title="Understand your customers."
-      subtitle="Dovetail combines customer feedback and user research in one place, making it easy to see patterns, discover insights, and decide what to do next."
+      title="The research platform for teams."
+      subtitle="Dovetail helps you store, analyze, and collaborate on user research in one place, making it easy to see patterns, discover insights, and decide what to do next."
     />
   ))
   .add("Text", () => (
     <Hero
-      title="Understand your customers."
-      text="Dovetail combines customer feedback and user research in one place, making it easy to see patterns, discover insights, and decide what to do next."
+      title="The research platform for teams."
+      text="Dovetail helps you store, analyze, and collaborate on user research in one place, making it easy to see patterns, discover insights, and decide what to do next."
     />
   ))
   .add("Sign up button", () => (
     <Hero
-      title="Understand your customers."
-      text="Dovetail combines customer feedback and user research in one place, making it easy to see patterns, discover insights, and decide what to do next."
+      title="The research platform for teams."
+      text="Dovetail helps you store, analyze, and collaborate on user research in one place, making it easy to see patterns, discover insights, and decide what to do next."
       showSignUp
     />
   ))
   .add("Image", () => (
     <Hero
       image={illustrationSpace}
-      title="Understand your customers."
-      text="Dovetail combines customer feedback and user research in one place, making it easy to see patterns, discover insights, and decide what to do next."
+      title="The research platform for teams."
+      text="Dovetail helps you store, analyze, and collaborate on user research in one place, making it easy to see patterns, discover insights, and decide what to do next."
       showSignUp
     />
   ));

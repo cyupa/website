@@ -1,5 +1,5 @@
 import hero from "!file-loader!./hero.png";
-import illustrationAnalysis from "@heydovetail/website/components/illustrations/analysis.svg";
+import illustrationSoftware from "@heydovetail/website/components/illustrations/software.svg";
 import illustrationBarChart from "@heydovetail/website/components/illustrations/bar-chart.svg";
 import illustrationBoardLarge from "@heydovetail/website/components/illustrations/board-large.svg";
 import illustrationEditor from "@heydovetail/website/components/illustrations/editor.svg";
@@ -45,7 +45,7 @@ export default class extends React.PureComponent {
         </Helmet>
         <LightContainer>
           <Hero
-            image={illustrationAnalysis}
+            image={illustrationSoftware}
             maxTextWidth={HERO_TEXT_WIDTH}
             title="Easily analyze qualitative data in the cloud."
             showSignUp

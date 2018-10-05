@@ -3,5 +3,5 @@ import React from "react";
 import { Feature } from "../";
 
 storiesOf("Site/Feature", module).add("default", () => (
-  <Feature text="Import customer feedback from thousands of apps" title="Zapier integration" />
+  <Feature text="Turn sentences into structured, tagged data" title="Highlights" />
 ));

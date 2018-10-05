@@ -11,7 +11,7 @@ export default class extends React.PureComponent {
   public render() {
     const title = "Jobs at Dovetail";
     const description =
-      "Build the future of customer feedback and user research as one of our first employees. Work on an exciting, fast growing product with hundreds of happy customers worldwide.";
+      "Build the future of user research as one of our first employees. Work on an exciting, fast growing product with hundreds of happy customers worldwide.";
 
     return (
       <PageLayout>

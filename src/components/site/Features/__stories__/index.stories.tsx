@@ -6,16 +6,16 @@ storiesOf("Site/Features", module).add("default", () => (
   <Features
     features={[
       {
-        text: "Import customer feedback from thousands of apps",
-        title: "Zapier integration"
+        text: "Understand your research projects at a glance",
+        title: "Bar chart"
       },
       {
-        text: "Add simple feedback forms to your website or product",
-        title: "Embeddable form"
+        text: "View notes, tags, and insights on a drag & drop board",
+        title: "Boards"
       },
       {
-        text: "Bulk import customer feedback from a spreadsheet",
-        title: "Spreadsheet upload"
+        text: "Your data is encrypted in our database and backups",
+        title: "Encrypted data"
       }
     ]}
   />

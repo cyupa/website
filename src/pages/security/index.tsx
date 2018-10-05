@@ -37,8 +37,8 @@ export default class extends React.PureComponent {
               <Flex styled={{ gap: 24, layout: "column" }}>
                 <Item>
                   <p>
-                    We understand you’ll be trusting us with research and customer feedback data, including potentially
-                    sensitive information about your own customers or participants.
+                    We understand you’ll be trusting us with your user research data, including potentially sensitive
+                    information about your own customers or participants.
                   </p>
                 </Item>
                 <Item>

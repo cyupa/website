@@ -19,11 +19,11 @@ export class UseCase extends React.PureComponent<Props> {
     const { image, location, onClick, title } = this.props;
     return (
       <LocationLink className={linkClassName} location={location} onClick={onClick}>
-        <Flex styled={{ gap: 16, layout: "column" }}>
-          <Item>
-            <Image height={48} src={image} width={48} />
+        <Flex styled={{ alignItems: "center", justifyContent: "flex-start", gap: 16 }}>
+          <Item style={{ flexGrow: 0, lineHeight: 0 }}>
+            <Image height={24} src={image} width={24} />
           </Item>
-          <Item>{title}</Item>
+          <Item style={{ flexGrow: 0 }}>{title}</Item>
         </Flex>
       </LocationLink>
     );
@@ -36,7 +36,7 @@ const linkClassName = style({
   display: "block",
   lineHeight: "20px",
   textAlign: "center",
-  padding: "16px",
+  padding: "8px 12px",
 
   $nest: {
     "&:hover": {
