@@ -7,6 +7,8 @@ weight: 3
 
 To support delivery of our Services, Dovetail may engage and use data processors with access to certain Customer Data or Personal Information (each, a **“Subprocessor”**). This page provides information about the identity, location and role of each Subprocessor.
 
+Please email [security@dovetailapp.com](mailto:security@dovetailapp.com) if you have any questions.
+
 ---
 
 ## Amazon Web Services
@@ -78,7 +80,3 @@ To support delivery of our Services, Dovetail may engage and use data processors
 - **Data processed:** Billing contact name, email, address, card details.
 - **Use:** Payments and subscription management.
 - **DPA signed:** Yes – 8 October 2018.
-
----
-
-For questions and notices, please email [legal@dovetailapp.com](mailto:legal@dovetailapp.com).
