@@ -79,7 +79,7 @@ export default class extends React.PureComponent<{}, State> {
                           customers.ocado,
                           customers.rbs,
                           customers.spotify,
-                          customers.wework
+                          customers.weightWatchers
                         ]}
                       />
                     </Item>

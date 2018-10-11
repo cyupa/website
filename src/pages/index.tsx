@@ -36,7 +36,7 @@ export default class extends React.PureComponent {
           />
         </LightContainer>
         <LightContainer backgroundColor={COLORS.p04}>
-          <CustomerLogos customers={[customers.atlassian, customers.shopify, customers.nike, customers.wework]} />
+          <CustomerLogos customers={[customers.atlassian, customers.shopify, customers.nike, customers.uniqa]} />
         </LightContainer>
         <LightContainer>
           <FeatureHero

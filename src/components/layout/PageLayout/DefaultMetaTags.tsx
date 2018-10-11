@@ -17,7 +17,7 @@ export class DefaultMetaTags extends React.PureComponent {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Dovetail helps you store, analyze, and collaborate on user research in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Airbnb, Deloitte, HotelsCombined, Shopify, Spotify, Westpac, WeWork, and more."
+          content="Dovetail helps you store, analyze, and collaborate on user research in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Airbnb, Deloitte, HotelsCombined, Shopify, Spotify, Westpac, and more."
         />
         <meta
           name="keywords"
@@ -30,7 +30,7 @@ export class DefaultMetaTags extends React.PureComponent {
         <meta property="og:image" content={process.env.GATSBY_BASE_URL + thumbnail} />
         <meta
           property="og:description"
-          content="Dovetail helps you store, analyze, and collaborate on user research in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Airbnb, Deloitte, HotelsCombined, Shopify, Spotify, Westpac, WeWork, and more."
+          content="Dovetail helps you store, analyze, and collaborate on user research in one place, making it easy to see patterns, discover insights, and decide what to do next. Our customers include Atlassian, Airbnb, Deloitte, HotelsCombined, Shopify, Spotify, Westpac, and more."
         />
       </Helmet>
     );

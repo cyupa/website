@@ -40,10 +40,10 @@ export class SocialProof extends React.PureComponent<Props> {
               customers={[
                 customers.barnardos,
                 customers.elsevier,
+                customers.esri,
                 customers.freshworks,
                 customers.hotelsCombined,
                 customers.ocado,
-                customers.monotype,
                 customers.spotify,
                 customers.schibsted
               ]}

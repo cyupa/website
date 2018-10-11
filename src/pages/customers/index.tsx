@@ -84,7 +84,6 @@ export default class extends React.PureComponent {
           <CustomerLogos
             customers={[
               customers.airbnb,
-              customers.airteam,
               customers.arm,
               customers.atlassian,
               customers.barnardos,
@@ -94,26 +93,23 @@ export default class extends React.PureComponent {
               customers.deloitte,
               customers.elsevier,
               customers.enigma,
+              customers.esri,
               customers.freshworks,
               customers.ftw,
               customers.harvard,
               customers.hotelsCombined,
-              customers.ideo,
-              customers.kickstand,
-              customers.monotype,
               customers.nike,
-              customers.nubank,
               customers.ocado,
               customers.pearson,
+              customers.remax,
               customers.rbs,
               customers.rmit,
               customers.salesforce,
               customers.schibsted,
-              customers.scout24,
               customers.shopify,
               customers.spotify,
               customers.uniqa,
-              customers.wework,
+              customers.weightWatchers,
               customers.westpac
             ]}
           />
