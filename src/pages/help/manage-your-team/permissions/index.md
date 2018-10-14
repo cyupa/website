@@ -1,11 +1,11 @@
 ---
-date: "2018-09-13"
+date: "2018-10-15"
 path: "/help/permissions"
 title: "Team permissions"
 weight: 7
 ---
 
-**Note:** We have plans on [our roadmap](https://trello.com/b/B0Mua1tB/public-roadmap) to replace this system with a new permissions feature with multiple admins, billing access control, and per-project access control.
+**Note:** We have plans on [our roadmap](https://dovetailapp.com/roadmap) to replace this system with a new permissions feature with multiple admins, billing access control, and per-project access control.
 
 **Everyone** in the team can:
 
