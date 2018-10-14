@@ -9,17 +9,17 @@ weight: 2
 
 In Dovetail, notes represent your ‘raw data’. Depending on the context of your project, a note could represent many things. For example:
 
-* Notes from a customer interview.
-* Notes from a user testing session.
-* A piece of feedback submitted through the [feedback form](/help/form-customize).
-* A tweet from a [Zapier integration](/help/zapier).
-* A research plan or runbook.
+- Notes from a customer interview.
+- Notes from a user testing session.
+- Feedback imported from a [spreadsheet](/help/spreadsheet).
+- A tweet from a [Zapier integration](/help/zapier).
+- A research plan or runbook.
 
 ### Create a new note
 
 ![Screenshot of cursor over ‘+ New note](./create-note.png)
 
-Notes can be imported in bulk by [uploading a spreadsheet](/help/spreadsheet), [connecting an integration via Zapier](/help/zapier), or collecting feedback on your website through our [feedback form](/help/form-customize).
+Notes can be imported in bulk by [uploading a spreadsheet](/help/spreadsheet) or [connecting an integration via Zapier](/help/zapier).
 
 You can also create new blank notes in projects:
 

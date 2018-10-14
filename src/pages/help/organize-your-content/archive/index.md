@@ -7,7 +7,7 @@ weight: 4
 
 Completed projects can be **archived** to keep your list of projects tidy and signal to others that the project has ended. A few things to note:
 
-- Archived projects are **read only**, however any feedback forms or outstanding Zapier integrations will continue to work normally.
+- Archived projects are **read only**, however any Zapier integrations will continue to work normally.
 - Once a project is archived, a lozenge will appear next to the project title.
 - Projects must be archived before they can be deleted.
 

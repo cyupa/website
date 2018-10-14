@@ -32,7 +32,7 @@ Below are two example workflows for how you might use Dovetail.
 
 Create a new project for your product or group of features.
 
-1.  Configure [Zapier integrations](/help/zapier) or a [feedback form](/help/form-customize) to automatically import notes in real time. Alternatively, [upload a spreadsheet](/help/spreadsheet) of customer feedback.
+1.  Configure [Zapier integrations](/help/zapier) to automatically import notes in real time. Alternatively, [upload a spreadsheet](/help/spreadsheet) of customer feedback.
 1.  Annotate your notes with tags.
 1.  Use tag groups to organize your tags into categories or higher level themes, for example **Value proposition**, **Feature requests**, or **Usability**.
 1.  Write about your findings in insights, and cherry-pick specific highlights.

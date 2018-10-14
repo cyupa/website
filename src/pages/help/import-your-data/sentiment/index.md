@@ -1,5 +1,5 @@
 ---
-date: "2018-04-11"
+date: "2018-10-15"
 path: "/help/sentiment"
 title: "Analyze the sentiment of imported data"
 weight: 4
@@ -19,9 +19,8 @@ Dovetail will add _Positive_ and _Negative_ tags to sentences in notes that expr
 
 Automatic sentiment analysis can be enabled when you import data using any of the following methods:
 
-* [Uploading a spreadsheet with data](/help/spreadsheet)
-* [Collecting feedback through an embeddable form](/help/form-customize)
-* [Importing data through a Zapier integration](/help/zapier)
+- [Uploading a spreadsheet with data](/help/spreadsheet)
+- [Importing data through a Zapier integration](/help/zapier)
 
 For detailed instructions, follow the relevant help article.
 
@@ -29,13 +28,13 @@ For detailed instructions, follow the relevant help article.
 
 Automatic sentiment analysis works on text in the following languages:
 
-* Chinese (Simplified)
-* Chinese (Traditional)
-* English
-* French
-* German
-* Italian
-* Japanese
-* Korean
-* Portuguese
-* Spanish
+- Chinese (Simplified)
+- Chinese (Traditional)
+- English
+- French
+- German
+- Italian
+- Japanese
+- Korean
+- Portuguese
+- Spanish
