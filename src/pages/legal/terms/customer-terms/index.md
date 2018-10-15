@@ -1,5 +1,5 @@
 ---
-date: "2018-09-07"
+date: "2018-10-15"
 path: "/legal/customer-terms"
 title: "Customer Terms of Service"
 weight: 1
@@ -11,17 +11,17 @@ If you are a Customer (defined below), these Customer Terms govern your access a
 
 ## Introduction
 
-The **“Customer”** is the organization that you represent in agreeing to the Contract (e.g. your employer). If your team is being set up by someone who is not formally affiliated with an organization, the Customer is the individual creating the team.
+**“Customer”** is the organization that you represent in agreeing to the Contract (e.g. your employer). If your team is being set up by someone who is not formally affiliated with an organization, Customer is the individual creating the team.
 
-These Customer Terms form a binding **“Contract”** between the Customer and us. If any terms in the [Customer-Specific Supplement](/legal/supplement) apply to the Customer, those terms also form part of the Contract.
+These Customer Terms form a binding **“Contract”** between Customer and us. If any terms in the [Customer-Specific Supplement](/legal/supplement) apply to Customer, those terms also form part of the Contract.
 
-## You represent the Customer
+## You represent Customer
 
-If you personally create a team (a digital space where a group of users may access the Services), purchase team subscription(s), or use or allow use of that team after being notified of a change to these Customer Terms, you acknowledge your understanding of the Contract and agree to the Contract on behalf of the Customer.
+If you personally create a team (a digital space where a group of users may access the Services), purchase team subscription(s), or use or allow use of that team after being notified of a change to these Customer Terms, you acknowledge your understanding of the Contract and agree to the Contract on behalf of Customer.
 
 ## Customers give access to Authorized Users
 
-Individuals authorized by the Customer to access the Services (an **“Authorized User”**) may submit content to the Services, such as textual data or files (**“Customer Data”**). The Customer will:
+Individuals authorized by Customer to access the Services (an **“Authorized User”**) may submit content to the Services, such as textual data or files (**“Customer Data”**). Customer will:
 
 **(a)** inform Authorized Users of all Customer policies and practices that are relevant to their use of the Services; and
 
@@ -29,7 +29,7 @@ Individuals authorized by the Customer to access the Services (an **“Authorize
 
 ## Upgrading to a paid subscription
 
-A paid subscription allows a Customer and its Authorized Users to access the Services (the **“team subscription”**). You may upgrade to a team subscription during, or at the end of, your trial period. Team subscriptions commence immediately and continue for the term specified in the “billing” interface. Each team subscription is for a single team for a specified term.
+A paid subscription allows Customer and its Authorized Users to access the Services (the **“team subscription”**). You may upgrade to a team subscription during, or at the end of, your trial period. Team subscriptions commence immediately and continue for the term specified in the “billing” interface. Each team subscription is for a single team for a specified term.
 
 ## Purchase based on now; not the future
 
@@ -37,55 +37,55 @@ We may share information about our future product plans (e.g. linking to our pub
 
 ## Your feedback
 
-If a Customer sends us any feedback or suggestions regarding the Services, there is a chance we will use it, so the Customer grants us (for itself and all of its Authorized Users and other Customer personnel) an unlimited, irrevocable, perpetual, sublicensable, transferable, royalty-free license to use any such feedback or suggestions for any purpose without any obligation or compensation to the Customer, any Authorized User or other Customer personnel.
+If Customer sends us any feedback or suggestions regarding the Services, there is a chance we will use it, so Customer grants us (for itself and all of its Authorized Users and other Customer personnel) an unlimited, irrevocable, perpetual, sublicensable, transferable, royalty-free license to use any such feedback or suggestions for any purpose without any obligation or compensation to Customer, any Authorized User or other Customer personnel.
 
 ## You’re responsible for your content
 
-The Customer must comply with the Contract and ensure that its Authorized Users comply with the Contract and the User Terms. We aren't responsible for the content of any Customer Data or the way the Customer or its Authorized Users choose to use the Services to store or process any Customer Data.
+Customer must comply with the Contract and ensure that its Authorized Users comply with the Contract and the User Terms. Except as stated herein, we aren’t responsible for the content of any Customer Data or the way Customer or its Authorized Users choose to use the Services to store or process any Customer Data.
 
 ## Our removal rights
 
-If we believe that there is a violation of the Contract that can be remedied, we will, in most cases, ask the Customer to take direct action rather than intervene. However, we may directly step in and take what we determine to be appropriate action, if the Customer does not take appropriate action, or if we believe there is a credible risk of harm to us, the Services, Authorized Users, or any third parties.
+If we believe there is a violation of the Contract that can be remedied, we will, in most cases, ask Customer to take direct action rather than intervene. However, we may directly step in and take what we determine to be appropriate action, if Customer does not take appropriate action, or if we believe there is a credible risk of harm to us, the Services, Authorized Users, or any third parties.
 
 ## Payment terms
 
-Fees are specified in the “billing” interface and must be paid in advance. Payment obligations are non-cancelable and fees paid are non-refundable. For clarity, in the event the Customer cancels any subscriptions, the Customer will remain responsible for any unpaid fees under the paid subscription, and Services under the paid subscription will be deemed fully performed and delivered upon expiration of the initial team subscription term. If you decide to cancel part way through your subscription term, we will not refund you for the remainder of the term.
+Fees are specified in the “billing” interface and must be paid in advance. Payment obligations are non-cancelable and fees paid are non-refundable except as stated herein. For clarity, in the event Customer cancels any subscriptions for convenience, Customer will remain responsible for any unpaid fees under the paid subscription, and Services under the paid subscription will be deemed fully performed and delivered upon expiration of the initial team subscription term. If you decide to cancel part way through your subscription term, we will not refund you for the remainder of the term unless termination is due to our breach.
 
 ## Auto-renewal
 
-All team subscriptions automatically renew (without the need to go through the Services “billing” interface) for additional periods equal to the preceding term.
+Team subscriptions paid by credit card automatically renew for additional periods equal to the preceding term, without the need to go through the Services “billing” interface. Team subscriptions paid by invoice will renew immediately after the invoice has been paid by Customer, or, in the case of a bank transfer, once the funds arrive in our account.
 
 ## Downgrade for non-payment
 
-If any fees owed to us by the Customer are three (3) days or more overdue, we may, without limiting our other rights and remedies, pause any team subscriptions until those amounts are paid in full. The Customer acknowledges and agrees that pausing their team subscription will result in a temporary loss of access to Customer Data.
+If any fees owed to us by Customer remain unpaid seven (7) days after written notice of non-payment, we may, without limiting our other rights and remedies, pause any team subscriptions until those amounts are paid in full. Customer acknowledges and agrees that pausing their team subscription will result in a temporary loss of edit rights to Customer Data.
 
 ## We’ll provide the Services
 
-We will make the Services available to the Customer and its Authorized Users as described in the Contract; and not use or process Customer Data for any purpose without the Customer’s prior written instructions; provided, however, that “prior written instructions” will be deemed to include use of the Services by Authorized Users and any processing related to such use or otherwise necessary for the performance of the Contract.
+We will make the Services available to Customer and its Authorized Users as described in the Contract; and not use or process Customer Data for any purpose without Customer’s prior written instructions; provided, however, that “prior written instructions” will be deemed to include use of the Services by Authorized Users and any processing related to such use or otherwise necessary for the performance of the Contract.
 
 ## We’ll keep the Services available
 
-We will use commercially reasonable efforts to make the Services available 24 hours a day, 7 days a week, excluding planned downtime. We expect planned downtime to be infrequent but will endeavor to provide the Customer with advance notice if we think it may exceed sixty (60) continuous minutes.
+We will use commercially reasonable efforts to make the Services available 24 hours a day, 7 days a week, excluding planned downtime. We expect planned downtime to be infrequent but will endeavor to provide Customer with advance notice if we think it may exceed sixty (60) continuous minutes.
 
 ## We’ll protect your Customer Data
 
-The protection of Customer Data is a top priority for us so we will maintain administrative, physical, and technical safeguards. Those safeguards will include measures for preventing unauthorized access, use, modification, deletion and disclosure of Customer Data by our personnel. Before sharing Customer Data with any of our third party service providers, we will ensure that the third party maintains, at a minimum, reasonable data practices for maintaining the confidentiality and security of Customer Data and preventing unauthorized access. The Customer (not us) bears sole responsibility for adequate security, protection and backup of Customer Data when in the Customer’s or its representatives’ or agents’ possession or control. We are not responsible for what the Customer’s Authorized Users do with Customer Data. That is the Customer’s responsibility.
+The protection of Customer Data is a top priority for us so we will maintain administrative, physical, and technical safeguards in accordance with industry best practices. Those safeguards will include measures for preventing unauthorized access, use, modification, deletion and disclosure of Customer Data by our personnel. Before sharing Customer Data with any of our third party service providers, we will ensure that the third party maintains, at a minimum, reasonable data practices for maintaining the confidentiality and security of Customer Data and preventing unauthorized access. Customer (not us) bears sole responsibility for adequate security, protection and backup of Customer Data when in Customer’s or its representatives’ or agents’ possession or control. We are not responsible for what Customer’s Authorized Users do with Customer Data. That is solely Customer’s responsibility.
 
-We will notify the Customer of any unauthorized access or misuse of Customer Data (a **“Data Breach”**) as soon as reasonably possible after discovery of the Data Breach. We will not notify any third-parties of the involvement of the Customer’s Data in the Data Breach other than the Customer without the Customer’s prior written permission. We will immediately investigate and take appropriate remedial actions to mitigate the effects of the Data Breach. Such investigation and remediation activities shall be in accordance with applicable laws, regulations, industry standards, and industry best practices. Upon request, we will provide the Customer with a summary report of its investigation and remediation activities.
+We will notify Customer of any unauthorized access or misuse of Customer Data (a **“Data Breach”**) as soon as reasonably possible after discovery of the Data Breach. We will not notify any third-parties of the involvement of Customer’s Data in the Data Breach other than Customer without Customer’s prior written permission. We will immediately investigate and take appropriate remedial actions to mitigate the effects of the Data Breach. Such investigation and remediation activities shall be in accordance with applicable laws, regulations, industry standards, and industry best practices. Upon request, we will provide Customer with a summary report of its investigation and remediation activities.
 
 ## Data portability and deletion
 
-During the term of a team subscription, the Customer will be permitted to export or share certain Customer Data from the Services. However, because we have multiple, complex features, and the Customer has different retention options, the Customer acknowledges and agrees that the ability to export or share Customer Data may be limited or unavailable.
+At any time, Customer will be permitted to export or share certain Customer Data from the Services. However, because we have multiple, complex features, and Customer has different retention options, Customer acknowledges and agrees that the ability to export or share Customer Data may be limited or unavailable.
 
-Following termination or expiration of a team subscription, we will provide a period for the Customer to download Customer Data, in so far as possible. The Customer will have at least thirty (30) days to conduct the download (**“30-day download period”**). After the 30-day download period, we will have no obligation to maintain or provide any Customer Data and may thereafter, unless legally prohibited, delete all Customer Data in our systems or otherwise in our possession or under our control.
+Following termination or expiration of a team subscription, we will provide a period for Customer to download Customer Data, in so far as possible. Customer will have at least thirty (30) days to conduct the download (**“30-day download period”**). After the 30-day download period, we will have no obligation to maintain or provide any Customer Data and may thereafter, unless legally prohibited, delete all Customer Data in our systems or otherwise in our possession or under our control.
 
 ## Privacy Policies
 
-Please review our [User Privacy Policy](/legal/privacy) and [Website Visitor Privacy Policy](/legal/website-privacy) for more information on how we collect and use data relating to the use of the Services.
+Our [User Privacy Policy](/legal/privacy) and [Website Visitor Privacy Policy](/legal/website-privacy) states how we collect and use Personal Information relating to the use of the Services.
 
 ## You own your Customer Data
 
-The Customer will own all Customer Data. Subject to the terms and conditions of the Contract, the Customer (for itself and all of its Authorized Users) grants us a worldwide, non-exclusive, limited term license to access, use, process, copy, distribute, perform, export and display Customer Data, only as reasonably necessary:
+Customer will own all Customer Data. Subject to the terms and conditions of the Contract, Customer (for itself and all of its Authorized Users) grants us a worldwide, non-exclusive, limited term license to access, use, process, copy, distribute, perform, export and display Customer Data, only as reasonably necessary:
 
 **(a)** to provide, maintain and update the Services;
 
@@ -93,13 +93,13 @@ The Customer will own all Customer Data. Subject to the terms and conditions of 
 
 **(c)** as required by law; and
 
-**(d)** as expressly permitted in writing by the Customer. The Customer represents and warrants that it has secured all rights in and to Customer Data from its Authorized Users as may be necessary to grant this license.
+**(d)** as expressly permitted in writing by Customer. Customer represents and warrants that it has secured all rights in and to Customer Data from its Authorized Users as may be necessary to grant this license.
 
 ## We own our Services
 
-We own and will continue to own our Services, including all related intellectual property rights. We grant to the Customer a non-sublicensable, non-transferable, non-exclusive, limited license for the Customer and its Authorized Users to use the object code version of these components, but solely as necessary to use the Services and in accordance with the Contract and the User Terms. All of our rights not expressly granted by this license are hereby retained.
+We own and will continue to own our Services, including all related intellectual property rights. We grant to Customer a non-sublicensable, non-transferable, non-exclusive, limited license for Customer and its Authorized Users to use the object code version of these components, but solely as necessary to use the Services and in accordance with the Contract and the User Terms. All of our rights not expressly granted by this license are hereby retained.
 
-The Customer and its Authorized Users must not breach any copyright or intellectual property rights connected with the Services. This includes but is not limited to:
+Customer and its Authorized Users must not breach any copyright or intellectual property rights connected with the Services. This includes but is not limited to:
 
 **(a)** altering or modifying any of the code in the Services;
 
@@ -119,9 +119,9 @@ As further described below, a team subscription has a term that may expire or be
 
 ## Termination for cause
 
-We or the Customer may terminate the Contract on notice to the other party if the other party materially breaches the Contract and such breach is not cured within thirty (30) days after the non-breaching party provides notice of the breach. The Customer is responsible for its Authorized Users, including for any breaches of this Contract caused by its Authorized Users. We may terminate the Contract immediately on notice to the Customer if we reasonably believe that the Services are being used by the Customer or its Authorized Users in violation of applicable law.
+We or Customer may terminate the Contract on notice to the other party if the other party materially breaches the Contract and such breach is not cured within thirty (30) days after the non-breaching party provides notice of the breach. Customer is responsible for its Authorized Users, including for any breaches of this Contract caused by its Authorized Users. We may terminate the Contract immediately on notice to Customer if we are notified, or reasonably believe, that the Services are being used by Customer or its Authorized Users in violation of applicable law.
 
-Upon any termination for cause by the Customer, we will refund the Customer any prepaid fees covering the remainder of the term of all subscriptions after the effective date of termination. Upon any termination for cause by us, the Customer will pay any unpaid fees covering the remainder of the term of those subscriptions after the effective date of termination. In no event will any termination relieve the Customer of the obligation to pay any fees payable to us for the period prior to the effective date of termination.
+Upon any termination for cause by Customer, we will refund Customer any prepaid fees covering the remainder of the term of all subscriptions after the effective date of termination. Upon any termination for cause by us, the Customer will pay any unpaid fees covering the remainder of the term of those subscriptions after the effective date of termination. In no event will any termination relieve Customer of the obligation to pay any fees payable to us for the period prior to the effective date of termination.
 
 ## Termination without cause
 
@@ -129,71 +129,81 @@ Customer may terminate its team subscriptions immediately without cause. We may 
 
 ## Representations disclaimer of warranties
 
-The Customer represents and warrants that it has validly entered into the Contract and has the legal power to do so. The Customer further represents and warrants that it is responsible for the conduct of its Authorized Users and their compliance with the terms of this Contract and the User Terms.
+Customer represents and warrants that it has validly entered into the Contract and has the legal power to do so. Customer further represents and warrants that it is responsible for the conduct of its Authorized Users and their compliance with the terms of this Contract and the User Terms.
 
 ## Limitation of liability
 
-To the extent permissible at law, we are not liable for any indirect, punitive, incidental, special, consequential damages including without limitation any claims, losses, liability, loss of data, loss of profits, revenue, business or goodwill arising out of or in any way connected with the provision of or failure to provide the Services under these Customer Terms.
+To the extent permissible at law, each party is not liable for any indirect, punitive, incidental, special, consequential damages including without limitation any claims, losses, liability, loss of data, loss of profits, revenue, business or goodwill arising out of or in any way connected with the provision of or failure to provide the Services under these Customer Terms.
 
 To the extent permitted by law, we exclude all representations, guarantees, warranties or terms (whether express or implied) other than those expressly set out in these Customer Terms, and the Australian Consumer Law to the extent applicable.
 
-We cannot guarantee specific results for our Services. It is the Customer’s sole responsibility to determine that the Services or any part of these meet the Customer’s needs or are otherwise suitable for the purposes for which they are used.
+We cannot guarantee specific results for our Services. It is Customer’s sole responsibility to determine that the Services or any part of these meet Customer’s needs or are otherwise suitable for the purposes for which they are used.
 
-These Customer Terms are to be read subject to any legislation that prohibits or restricts the exclusion, restriction or modification of any implied warranties, conditions, guarantees or obligations. If such legislation applies, to the extent possible we limit our liability as follows, at our option: for any claims relating to these Customer Terms, to the fees payable under this agreement (if applicable) for the preceding one (1) month; in the case of products including any digital products (a) the replacement of the products or the supply of equivalent products; (b) the repair of the products; (c) the payment of the cost of replacing the products or of acquiring equivalent products; or (d) the payment of having the products repaired; or in the case of services, the supply of the services again or the payment of the cost of having the services supplied again.
+These Customer Terms are to be read subject to any legislation that prohibits or restricts the exclusion, restriction or modification of any implied warranties, conditions, guarantees or obligations. Subject to such legislation, each party limits liability for any claims relating to these Customer Terms to the fees payable under this agreement (if applicable) for the preceding one (1) month.
 
-This limitation applies to any supply under or related to these Customer Terms including the supply of the Services and covers loss of Customer Data, any viruses or other disabling features that affect Customer access to or use of our Services, incompatibility between the Services and Customer hardware or software, delays or failures the Customer may have in using the Services including any connections or transmissions that fail or are not completed in an accurate or timely manner.
+The foregoing limitations do not apply with respect to (a) our breach of our obligations under the section titled ‘We’ll protect your Customer Data’, (b) our obligations under the section titled ‘Our indemnification of Customer’, (c) Customer’s obligations under the section titled ‘Customer indemnification of Us’ or (d) either party’s breach of the section titled Confidentiality.
 
 This clause survives the termination or expiry of these Customer Terms for whatever reason.
 
 ## Our indemnification of Customer
 
-We agree to defend, indemnify and hold the Customer harmless from any losses or damages (**“Claims”**) brought against or sustained by the Customer by a third party, which relates to the infringement of a third-party Intellectual Property Rights caused by the Customer’s use of the Services.
+We agree to defend, indemnify and hold Customer harmless from any losses or damages (**“Claims”**) brought against or sustained by Customer by a third party, which relates to the infringement of a third-party Intellectual Property Rights caused by Customer’s use of the Services.
 
-Our indemnity does not include any actions, suits, claims, demands, liabilities, costs, expenses, losses and damage (including reasonable legal fees) brought against or sustained by the Customer by a third party, which:
+Our indemnity does not include any actions, suits, claims, demands, liabilities, costs, expenses, losses and damage (including reasonable legal fees) brought against or sustained by Customer by a third party, which:
 
-**(a)** relates to Customer Data;
+**(a)** relates to unmodified Customer Data;
 
-**(b)** relates to a product or service of another entity;
+**(b)** relates to a product or service of another entity to the extent such third party product or service is not reasonably necessary for the use of our service; or
 
 **(c)** arises out of any unlawful modification of the Services;
 
-**(d)** arises out of any breach by the Customer of these Customer Terms; or
+**(d)** arises out of any breach by Customer of these Customer Terms; or
 
-**(e)** arises from an admission or settlement by the Customer without our prior written consent.
+**(e)** arises from an admission or settlement by Customer without our prior written consent.
 
-For any Claims arising under this clause, the Customer must:
+For any Claims arising under this clause, Customer must:
 
-**(a)** provide us with prompt notice of any Claim brought against the Customer;
+**(a)** provide us with prompt notice of any Claim brought against Customer;
 
 **(b)** provide reasonable assistance to defend the Claim, including providing us with any relevant documents or evidence that we request;
 
-**(c)** allow us to maintain exclusive control over the Claim, including as to any settlements that we may agree upon.
+**(c)** allow us to maintain exclusive control over the Claim, including as to any settlements that we may agree upon; provided that we may not settle any Claim that requires Customer to admit fault, take any action, or pay any monies without Customer’s written consent signed by an authorized officer.
 
-This clause is the Customer’s exclusive remedy and our sole liability against any Claim brought against or sustained by the Customer by a third party.
+This clause is Customer’s exclusive remedy and our sole liability against any Claim brought against or sustained by Customer by a third party.
 
 This clause survives the termination or expiry of these Customer Terms for whatever reason.
 
 ## Customer indemnification of Us
 
-The Customer agrees to defend, indemnify and hold us, our affiliates, employees, agents, contributors, third party content providers and licensors harmless from and against all actions, suits, claims, demands, liabilities, costs, expenses, losses and damage (including legal fees on a full indemnity basis) brought against or sustained by us, which:
+Customer agrees to defend, indemnify and hold us, our affiliates, employees, agents, contributors, third party content providers and licensors harmless from and against all actions, suits, claims, demands, liabilities, costs, expenses, losses and damage (including legal fees on a full indemnity basis) brought against or sustained by us, which:
 
-**(a)** is directly or indirectly caused by the Customer’s breach of these Terms;
+**(a)** is directly or indirectly caused by Customer’s breach of these Terms;
 
-**(b)** is directly or indirectly caused by any willful, reckless or negligent act of the Customer;
+**(b)** is directly or indirectly caused by any willful, reckless or negligent act of Customer;
 
-**(c)** concerns personal injury to any person caused or contributed to by the Customer;
+**(c)** concerns personal injury to any person caused or contributed to by Customer;
 
-**(d)** is caused by the Customer’s act or omission and constitutes a loss of or damage to property;
+**(d)** is caused by Customer’s act or omission and constitutes a loss of or damage to property;
 
 **(e)** is brought by any third-party in respect of personal injury, death or damage to third-party property; or
 
-**(f)** arises from the Customer’s act or omission.
+**(f)** arises from Customer’s act or omission.
 
-Except as required by law, we will not be liable for any claim, loss or liability for personal injury, death or damage to the Customer or its property however it may be caused.
+For any claims arising under this clause, we must:
 
-We reserve the right, at our own expense, to assume the exclusive defence and control of any matter otherwise subject to indemnification by the Customer, and in such case, the Customer agrees to cooperate with our defence of such claim.
+**(a)** provide Customer with prompt notice of any claim brought against us;
 
-In no event will we be liable to the Customer for any indirect, incidental or consequential damages including, without limitation, direct, indirect, special, punitive, or exemplary damages.
+**(b)** provide reasonable assistance to defend the claim at Customer’s expense, including providing Customer with any relevant documents or evidence that Customer requests;
+
+**(c)** allow Customer to maintain exclusive control over the claim, including as to any settlements that Customer may agree upon; provided that Customer may not settle any claim that requires us to admit fault, take any action, or pay any monies without our written consent signed by an authorized officer.
+
+This clause is Customer’s exclusive remedy and our sole liability against any Claim brought against or sustained by Customer by a third party.
+
+Except as required by law, we will not be liable for any claim, loss or liability for personal injury, death or damage to Customer or its property however it may be caused.
+
+We reserve the right, at our own expense, to assume the exclusive defence and control of any matter otherwise subject to indemnification by Customer, and in such case, Customer agrees to cooperate with our defence of such claim.
+
+In no event will we be liable to Customer for any indirect, incidental or consequential damages including, without limitation, direct, indirect, special, punitive, or exemplary damages.
 
 ## Confidentiality
 
@@ -201,9 +211,9 @@ In these Customer Terms, **“Confidential Information”** means information th
 
 **(a)** is by its nature confidential; or
 
-**(b)** is designated by a party as confidential; and
+**(b)** is designated by a party as confidential; or
 
-**(c)** the party knows or ought to know is confidential;
+**(c)** the receiving party knows or ought to know is confidential;
 
 but does not include information which:
 
@@ -217,7 +227,7 @@ A party who receives Confidential Information under these Customer Terms agrees 
 
 We will restrict disclosure of such Confidential Information only to such of our employees, agents or subcontractors that need to know it for discharging our obligations under these Customer Terms, and shall ensure that such employees, agents or subcontractors are subject to the same obligations of confidentiality.
 
-All Customer Data is Confidential Information for the Customer. We shall use a commercially reasonable effort to protect Customer Data as they would protect their own data.
+All Customer Data is Confidential Information for Customer. We shall use a commercially reasonable effort to protect Customer Data as they would protect their own data.
 
 ## Severability
 
@@ -229,7 +239,7 @@ You agree to use your best endeavors to use mediation and negotiation to resolve
 
 ## Publicity
 
-The Customer grants us the right to use the Customer’s company name and logo as a reference for marketing or promotional purposes on our website and in other public or private communications with our existing or potential customers, subject to Customer’s standard trademark usage guidelines. The Customer may send us an email to [legal@dovetailapp.com](mailto:legal@dovetailapp.com) stating that it does not wish to be used as a reference.
+The Customer grants us the right to use the Customer’s company name and logo as a reference for marketing or promotional purposes on our website and in other public or private communications with our existing or potential customers. Customer may send an email to [legal@dovetailapp.com](mailto:legal@dovetailapp.com) stating that it does not wish to be used as a reference and we will cease using Customer’s name and logo in any marketing or promotional material.
 
 ## Relationship of the Parties
 

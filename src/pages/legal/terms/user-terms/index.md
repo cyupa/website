@@ -2,7 +2,7 @@
 date: "2018-02-05"
 path: "/legal/user-terms"
 title: "User Terms of Service"
-weight: 2
+weight: 3
 ---
 
 These User Terms of Service (the **“User Terms”**) govern your access and use of our online feedback management and user research analysis tools (the **“Services“**).
@@ -27,11 +27,11 @@ As an Authorized User, you must not:
 
 **(a)** Use the Services for any activities, or add any content to the Services:
 
-* unless you hold all necessary rights, licences and consents to do so;
-* that infringes the intellectual property or other rights of any person;
-* that would cause you or us to breach any law, regulation, rule, code or other legal obligation;
-* that defames, harasses, threatens, menaces, offends or restricts any person;
-* that is or could reasonably be considered to be obscene, inappropriate, defamatory, disparaging, indecent, seditious, offensive, pornographic, threatening, abusive, liable to incite racial hatred, discriminatory, blasphemous, in breach of confidence or in breach of privacy; or that would bring us or the Services, into disrepute;
+- unless you hold all necessary rights, licences and consents to do so;
+- that infringes the intellectual property or other rights of any person;
+- that would cause you or us to breach any law, regulation, rule, code or other legal obligation;
+- that defames, harasses, threatens, menaces, offends or restricts any person;
+- that is or could reasonably be considered to be obscene, inappropriate, defamatory, disparaging, indecent, seditious, offensive, pornographic, threatening, abusive, liable to incite racial hatred, discriminatory, blasphemous, in breach of confidence or in breach of privacy; or that would bring us or the Services, into disrepute;
 
 **(b)** Interfere with or inhibit any user from using the Services;
 

@@ -20,7 +20,7 @@ export class PageGroup extends React.PureComponent<Props> {
     const { pages, title } = this.props;
 
     return (
-      <Card styled={{ padding: 32 }}>
+      <Card styled={{ padding: 24 }}>
         <Flex styled={{ gap: 16, layout: "column" }}>
           <Item>
             <h4>{title}</h4>
