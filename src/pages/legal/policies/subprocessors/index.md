@@ -33,7 +33,7 @@ Please email [security@dovetailapp.com](mailto:security@dovetailapp.com) if you 
 
 ## Google Cloud
 
-[cloud.google.com](cloud.google.com)
+[cloud.google.com](https://cloud.google.com)
 
 - **Location:** Mountain View, United States.
 - **Data security certifications:** Privacy Shield, ISO27001, SOC3.
