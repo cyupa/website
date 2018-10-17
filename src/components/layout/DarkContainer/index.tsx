@@ -41,7 +41,11 @@ const Wrapper = styled("div", ({ backgroundColor, overflowBottom }: { background
 
   $nest: {
     a: {
-      color: COLORS.p40
+      color: COLORS.p40,
+
+      "&:hover": {
+        color: `${COLORS.p40} !important`
+      }
     }
   }
 }));

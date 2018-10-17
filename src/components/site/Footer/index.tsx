@@ -68,7 +68,8 @@ export class Footer extends React.PureComponent<Props> {
                 links={[
                   { label: "Customer Terms of Service", location: locations.termsCustomer() },
                   { label: "Website Visitor Privacy Policy", location: locations.websitePrivacy() },
-                  { label: "User Privacy Policy", location: locations.privacy() }
+                  { label: "User Privacy Policy", location: locations.privacy() },
+                  { label: "All legal articles", location: locations.legal() }
                 ]}
               />
             </Item>

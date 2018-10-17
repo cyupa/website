@@ -72,7 +72,7 @@ export default class extends React.PureComponent {
               />,
               <Faq
                 question="Is data encrypted in transit over networks?"
-                answer="Yes. Data is encrypted while moving between us and your browser with Transport Level Security (TLS). SSL certificates are issued and managed through Amazon Web Services (AWS), and we enable HTTP Strict Transport Security (HSTS)."
+                answer="Data is encrypted while moving between us and the browser with Transport Level Security (TLS). SSL certificates are issued and managed through Amazon Web Services (AWS), and we enable HTTP Strict Transport Security (HSTS)."
               />,
               <Faq
                 question="Can staff read customer data?"
@@ -87,12 +87,20 @@ export default class extends React.PureComponent {
                 answer="Our user authentication system uses BCrypt to hash and salt user passwords. Each password has a uniquely generated salt, and the ‘pepper’ is stored independently from the database."
               />,
               <Faq
+                question="What third party data subprocessors do you use?"
+                answer="We use a number of industry-standard cloud vendors to run Dovetail, including Amazon Web Services (AWS), Heroku, and Stripe. Please visit our legal center for a complete list."
+              />,
+              <Faq
                 question="Do you track issues in open source software?"
                 answer="We employ an automated service called Greenkeeper to stay up-to-date with open source dependencies, and GitHub Security Alerts for vulnerability alerts in dependencies."
               />,
               <Faq
+                question="What security features are on your roadmap?"
+                answer="New security features are high on our roadmap. These include Two-Factor Authentication (2FA), Single Sign-On (SSO), project-level permissions, password policies, and more."
+              />,
+              <Faq
                 question="Do you have a point of contact for security?"
-                answer="You can email security@dovetailapp.com with any concerns, questions, or vulnerability notices."
+                answer="Please email security@dovetailapp.com with any concerns, questions, or vulnerability notices."
               />
             ]}
           />
