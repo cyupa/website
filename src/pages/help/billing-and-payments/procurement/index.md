@@ -1,5 +1,5 @@
 ---
-date: "2018-06-12"
+date: "2018-10-22"
 path: "/help/procurement"
 title: "Documents for the procurement process"
 weight: 2
@@ -18,8 +18,11 @@ As part of your organization’s procurement process for new cloud software, you
 
 ### Company details
 
+Dovetail is an Australian company.
+
+- **Trading name:** Dovetail
 - **Company name:** Dovetail Research Pty. Ltd.
-- **Location:** Kirribilli, NSW 2061, Australia
+- **Address:** 251 Riley Street, Surry Hills, NSW 2010, Australia
 - **ABN:** 84 615 270 025
 - **ACN:** 615 270 025
 
