@@ -144,6 +144,12 @@ export default class extends React.PureComponent<{}, State> {
                         location={locations.legal()}
                       />,
                       <Faq
+                        question="Will you negotiate your terms?"
+                        answer="No. We do not negotiate terms or sign NDAs. All customers must agree to our standard Customer Terms of Service."
+                        linkText="Terms and policies →"
+                        location={locations.legal()}
+                      />,
+                      <Faq
                         question="Do you have any case studies?"
                         answer="Yes. See how other companies get value out of Dovetail by checking out our customer success stories and testimonials."
                         linkText="Customer stories →"
@@ -163,10 +169,6 @@ export default class extends React.PureComponent<{}, State> {
                       <Faq
                         question="Can we cancel at any time?"
                         answer="Yes. You can cancel your subscription whenever you like, however we do not offer refunds for a billing period you’ve already paid for."
-                      />,
-                      <Faq
-                        question="What happens if we cancel?"
-                        answer="If you choose to cancel your subscription, all of your projects will become read only (not editable) until you subscribe again."
                       />
                     ]}
                   />

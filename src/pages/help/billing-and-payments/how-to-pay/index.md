@@ -1,8 +1,8 @@
 ---
 date: "2018-09-14"
 path: "/help/how-to-pay"
-title: "How to pay"
-weight: 4
+title: "How to pay for your subscription"
+weight: 3
 ---
 
 You can pay for your subscription automatically with a credit card or by invoice. Please note that invoice-based billing is only available on our Enterprise plan.

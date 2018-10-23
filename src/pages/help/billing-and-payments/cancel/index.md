@@ -2,7 +2,7 @@
 date: "2018-09-13"
 path: "/help/cancel"
 title: "Cancel your subscription"
-weight: 3
+weight: 5
 ---
 
 Before you cancel, we’d love it if you could get in touch with us to see if we can help with anything or resolve any issues. You can cancel your subscription at any time by clicking **Cancel** in the Subscription **Actions (···)** on the team billing page.

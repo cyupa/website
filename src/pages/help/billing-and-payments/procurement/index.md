@@ -1,20 +1,26 @@
 ---
 date: "2018-10-22"
 path: "/help/procurement"
-title: "Documents for the procurement process"
-weight: 2
+title: "The procurement process"
+weight: 1
 ---
 
-As part of your organization’s procurement process for new cloud software, you may be asked to provide certain documents for your IT, Legal, or Security teams.
+As part of your organization’s software procurement process you may be asked to provide certain documents for your IT, Legal, or Security teams. In addition, they may have specific questions or needs from us a new cloud vendor.
 
-### Resources
+### What we will and won’t do
 
-- [Security overview](/security)
-- [Customer Terms of Service](/legal/customer-terms)
-- [User Privacy Policy](/legal/privacy)
-- [Information on GDPR](/legal/gdpr)
-- [Data Subprocessors](/legal/data-subprocessors)
-- [Data Processing Agreement](/legal/dpa)
+**We are happy to:**
+
+- Answer questions about subscriptions and payments
+- Answer questions about our data security processes
+- Talk about upcoming features on [our public roadmap](/roadmap)
+
+**We will not:**
+
+- Negotiate our [standard terms or privacy policies](/legal)
+- Engage in any bespoke contracts for your organization, including NDAs
+- Commit to prioritizing specific features on our roadmap
+- Commit to any timeline for releasing new features
 
 ### Company details
 
@@ -26,6 +32,15 @@ Dovetail is an Australian company.
 - **ABN:** 84 615 270 025
 - **ACN:** 615 270 025
 
+### Resources
+
+- [Security overview](/security)
+- [Customer Terms of Service](/legal/customer-terms)
+- [User Privacy Policy](/legal/privacy)
+- [Information on GDPR](/legal/gdpr)
+- [Data Subprocessors](/legal/data-subprocessors)
+- [Data Processing Agreement](/legal/dpa)
+
 ### Additional information
 
-If your organization has specific security or privacy questions, don’t hesitate to reach out to us at [hello@dovetailapp.com](mailto:hello@dovetailapp.com).
+If your organization has specific security, privacy, or purchasing questions, don’t hesitate to reach out to us at [hello@dovetailapp.com](mailto:hello@dovetailapp.com).
