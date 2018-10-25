@@ -5,7 +5,7 @@ title: "The procurement process"
 weight: 1
 ---
 
-As part of your organization’s software procurement process you may be asked to provide certain documents for your IT, Legal, or Security teams. In addition, they may have specific questions or needs from us a new cloud vendor.
+As part of your organization’s software procurement process you may be asked to provide certain documents for your IT, Legal, or Security teams. In addition, they may have specific questions or needs from us as a new cloud vendor.
 
 ### What we will and won’t do
 
