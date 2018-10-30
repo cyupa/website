@@ -3,7 +3,7 @@ import { IntervalToggle } from "@heydovetail/website/components/site/Plans/Inter
 import { locations } from "@heydovetail/website/routing/locations";
 import React from "react";
 
-type ProductId = "solo" | "team" | "business" | "enterprise";
+type ProductId = "starter" | "team" | "business" | "enterprise";
 
 interface Plan {
   amountMonthly: number;
@@ -20,11 +20,11 @@ export const PLAN_DETAILS: Plan[] = [
   {
     amountMonthly: 1800,
     amountYearly: 900,
-    coreFeatures: ["Only 1 project", "Only text and images", "10MB file upload limit", "Up to 10 users"],
+    coreFeatures: ["Only 1 project", "Only text and images", "10MB file upload limit", "Up to 5 users"],
     current: false,
     extraFeatures: ["Knowledge base", "Slack community"],
     highlighted: false,
-    productId: "solo",
+    productId: "starter",
     projectLimit: 1
   },
   {
@@ -38,8 +38,8 @@ export const PLAN_DETAILS: Plan[] = [
     projectLimit: 3
   },
   {
-    amountMonthly: 15800,
-    amountYearly: 7900,
+    amountMonthly: 19800,
+    amountYearly: 9900,
     coreFeatures: ["10 projects total", "Text, images, files", "2GB file upload limit", "Unlimited users"],
     current: false,
     extraFeatures: ["Priority email support", "Knowledge base", "Slack community"],
